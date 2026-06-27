@@ -1,0 +1,73 @@
+# Hermes config TEMPLATE for the `commander` profile.
+# Copy to your profile dir, then edit. NEVER put real keys here — keys live in .env.
+# Field names are EXAMPLES — VERIFY against:
+#   https://hermes-agent.nousresearch.com/docs/user-guide/configuring-models
+#   https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/profiles.md
+
+profile: commander
+
+# --- Model routing (mirror MODEL_ROUTER.md) ---
+# Default to cheapest capable model; escalate only when needed.
+models:
+  default: tier1            # cheap hosted for normal work
+  tiers:
+    tier0_local:            # nearly free, low-stakes only
+      provider: ollama
+      model: qwen2.5:1.5b   # VERIFY available on host
+      base_url: http://localhost:11434/v1
+    tier1_cheap:            # general agent work
+      provider: openrouter  # or nous_portal / venice
+      model: VERIFY         # pick a cheap capable model
+      api_key_env: OPENROUTER_API_KEY
+    tier2_premium:          # hard / high-value only
+      provider: anthropic   # or openai / premium openrouter
+      model: VERIFY
+      api_key_env: ANTHROPIC_API_KEY
+
+# --- Safety: minimal tool surface first (see MCP_PLAN.md / SECURITY.md) ---
+tools:
+  builtin: minimal
+  filesystem:
+    mode: read_only
+    roots:
+      - .                   # scope to the command-center repo only
+  destructive: false
+
+# --- Source of truth: which files the agent reads first ---
+context:
+  read_order:
+    - README.md
+    - GOALS.md
+    - NOW.md
+    - TASK_QUEUE.md
+    - MODEL_ROUTER.md
+    - SECURITY.md
+
+# --- Approvals (see SECURITY.md) ---
+approvals:
+  required_for:
+    - sudo
+    - package_install
+    - delete
+    - public_ports
+    - add_secret
+    - spend_api_credits
+    - git_push
+    - deploy
+    - send_message
+
+# --- Cost logging ---
+logging:
+  model_usage_csv: logs/model_usage.csv
+  daily_progress_md: logs/daily_progress.md
+
+# --- Daily loop (see MONEY_OPS.md). Enable cron only after approval. ---
+daily_loop:
+  enabled: false
+  steps:
+    - read NOW.md
+    - review TASK_QUEUE.md
+    - pick highest-leverage safe money task
+    - execute if safe, else draft next action
+    - update logs/daily_progress.md
+    - suggest one cost/automation improvement

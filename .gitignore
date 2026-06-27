@@ -1,0 +1,46 @@
+# Secrets — NEVER commit
+.env
+*.env
+!configs/*_template.env
+*.key
+*.pem
+*.p12
+*_secret*
+*secret*.json
+*.wallet
+*wallet*seed*
+secrets/
+credentials/
+
+# Hermes runtime / state
+.hermes/
+*.sqlite
+*.sqlite3
+*.db
+sessions/
+memories/
+
+# Logs (keep the dir + templates, ignore generated content)
+logs/*
+!logs/.gitkeep
+!logs/*.md
+!logs/*.csv
+
+# Local model / cache junk
+*.gguf
+models/
+.ollama/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Python / Node
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
