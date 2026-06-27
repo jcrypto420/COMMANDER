@@ -2,17 +2,16 @@
 # install_hermes.sh — CAUTIOUS helper to install Hermes Agent.
 #
 # This script does NOT install anything by default. It guards you.
-# Steps:
-#   1. Verify the current install command in the docs (see HERMES_SETUP.md).
-#   2. Paste that exact command into INSTALL_CMD below.
-#   3. Re-run with:  CONFIRM=yes bash scripts/install_hermes.sh
+# Run with:  CONFIRM=yes bash scripts/install_hermes.sh
+# It will NOT install without CONFIRM=yes. Ask Josh first.
 #
-# It will NOT run sudo or installs without CONFIRM=yes. Ask Josh first.
+# Command verified 2026-06-27 from the official docs (see HERMES_SETUP.md).
+# The installer bundles its own Python and does not require sudo.
 
 set -euo pipefail
 
-# >>> PASTE THE VERIFIED INSTALL COMMAND HERE (leave empty until verified) <<<
-INSTALL_CMD=""
+# Verified official installer for Linux/ARM64 (Raspberry Pi works):
+INSTALL_CMD="curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash"
 
 DOCS="https://hermes-agent.nousresearch.com/docs/  |  https://github.com/NousResearch/hermes-agent"
 
@@ -40,4 +39,8 @@ fi
 echo "CONFIRM=yes set. Running install command in 5s (Ctrl-C to abort)..."
 sleep 5
 eval "$INSTALL_CMD"
-echo "Install command finished. Next: create the 'commander' profile (HERMES_SETUP.md step 2)."
+echo
+echo "Done. Now reload your shell:   source ~/.bashrc"
+echo "Then continue with HERMES_SETUP.md:"
+echo "  hermes setup --portal            # connect a model provider"
+echo "  hermes profile create commander  # create the commander profile"

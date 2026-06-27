@@ -18,10 +18,12 @@ else
 fi
 
 echo
-echo "Looking for the 'commander' profile (paths VERIFY against docs):"
-for p in "$HOME/.hermes/commander" "$HOME/.config/hermes/commander" "./.hermes/commander"; do
-  if [ -d "$p" ]; then echo "  found: $p"; fi
-done
+echo "Looking for the 'commander' profile:"
+if [ -d "$HOME/.hermes/profiles/commander" ]; then
+  echo "  found: $HOME/.hermes/profiles/commander"
+else
+  echo "  not found — create it with: hermes profile create commander"
+fi
 
 echo
 echo "Reminder: a local .env with at least one provider key must exist (git-ignored)."

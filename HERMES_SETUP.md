@@ -2,19 +2,18 @@
 
 How to install Hermes Agent and create the `commander` profile **safely**.
 
-> ⚠️ **Do not hardcode stale install commands.** The commands below are marked
-> **VERIFY** until checked against the live docs. Verify first, then fill in the
-> exact command, then ask Josh before running anything that installs or uses
-> `sudo`.
+> **Verified 2026-06-27** against the official docs + GitHub README.
+> Hermes supports Linux **ARM64**, so the Raspberry Pi 4 (`aarch64`) works.
+> The installer bundles its own Python 3.11+. Run all of this **on the Pi**
+> (over SSH), not on the Windows laptop.
 
-## Docs to verify (open these first)
+## Docs (source of these commands)
 
 - https://hermes-agent.nousresearch.com/docs/
-- https://hermes-agent.nousresearch.com/docs/integrations/providers
-- https://hermes-agent.nousresearch.com/docs/user-guide/configuring-models
-- https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp
 - https://github.com/NousResearch/hermes-agent
 - https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/profiles.md
+- https://hermes-agent.nousresearch.com/docs/integrations/providers
+- https://hermes-agent.nousresearch.com/docs/user-guide/configuring-models
 
 ## Step 0 — Inventory (safe, no changes)
 
@@ -22,56 +21,72 @@ How to install Hermes Agent and create the `commander` profile **safely**.
 bash scripts/pi_inventory.sh
 ```
 
-Confirm: arch (`aarch64`), RAM, disk, Docker, Python/Node versions. This tells
-us which Hermes install method fits the Pi.
+Confirm: arch is `aarch64`, plus RAM/disk. (Python/Node are NOT required — the
+installer bundles Python.)
 
-## Step 1 — Pick install method (VERIFY)
+## Step 1 — Install Hermes (needs Josh's approval)
 
-Check the docs for the supported install on Linux/ARM64. It is likely one of:
-
-- a published package / installer script, or
-- a Docker image, or
-- a source/checkout install.
-
-Record the **verified** command here:
+The official installer (it sets up its own Python; does not need sudo):
 
 ```bash
-# VERIFY: replace with the exact command from the docs
-# e.g. (placeholder) curl -fsSL <official-url> | sh
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+source ~/.bashrc          # reload shell so the `hermes` command is found
 ```
 
-Then run the cautious helper (it only prints/guards by default):
+Cautious wrapper (same command, but guarded — won't run until you opt in):
 
 ```bash
-bash scripts/install_hermes.sh
+CONFIRM=yes bash scripts/install_hermes.sh
 ```
 
-> `install_hermes.sh` will NOT install until you set `CONFIRM=yes` and have
-> pasted the verified command into it. See the script header.
-
-## Step 2 — Create the `commander` profile (after approval)
-
-Use the templates (copy, then fill secrets locally — never commit):
+## Step 2 — Connect a model provider (easiest first)
 
 ```bash
-cp configs/hermes_config_template.yaml ~/.hermes/commander/config.yaml   # path VERIFY
-cp configs/hermes_env_template.env      ~/.hermes/commander/.env          # path VERIFY
+hermes setup --portal
 ```
 
-Edit `config.yaml` for the day-one provider (see `PROVIDERS.md`) and set the
-model tiers from `MODEL_ROUTER.md`. Put the API key only in the local `.env`.
+This does one OAuth login to **Nous Portal** and gives you a model plus tool
+features (web search, image gen, TTS, browser) — the fastest path to a working
+agent on day one. (Alternative: `hermes setup` for manual provider/key entry;
+`hermes model` to switch providers/models later — OpenRouter, Anthropic, OpenAI,
+Ollama/your own endpoint, etc. See `PROVIDERS.md` / `MODEL_ROUTER.md`.)
 
-## Step 3 — Verify (safe)
+## Step 3 — Create the `commander` profile
+
+```bash
+hermes profile create commander      # makes ~/.hermes/profiles/commander/
+hermes profile use commander         # make it the default (optional)
+```
+
+Each profile has its own `config.yaml`, `.env`, `SOUL.md`, memories, sessions,
+skills, cron, and state DB in `~/.hermes/profiles/commander/`.
+
+Optionally seed it from our templates (then edit; **never commit secrets**):
+
+```bash
+cp configs/hermes_config_template.yaml ~/.hermes/profiles/commander/config.yaml
+cp configs/hermes_env_template.env      ~/.hermes/profiles/commander/.env
+```
+
+Put API keys only in that local `.env`.
+
+## Step 4 — Verify (safe)
 
 ```bash
 bash scripts/verify_hermes.sh
+hermes profile use commander && hermes --version   # confirm profile + binary
 ```
 
-Confirms the binary/container responds and the `commander` profile is detected.
+## Step 5 — First safe Hermes task (read-only)
 
-## Step 4 — First safe Hermes task (read-only)
+Start the agent on the profile, pointed at this repo:
 
-Give Hermes this task (no edits, no shell):
+```bash
+cd ~/COMMANDER         # wherever you cloned command-center
+commander chat         # or: hermes -p commander chat
+```
+
+Then give it this task (no edits, no shell):
 
 ```text
 Read README.md, GOALS.md, NOW.md, PROJECTS.md, TASK_QUEUE.md,
