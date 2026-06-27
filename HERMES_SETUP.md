@@ -64,11 +64,13 @@ skills, cron, and state DB in `~/.hermes/profiles/commander/`.
 Optionally seed it from our templates (then edit; **never commit secrets**):
 
 ```bash
-cp configs/hermes_config_template.yaml ~/.hermes/profiles/commander/config.yaml
-cp configs/hermes_env_template.env      ~/.hermes/profiles/commander/.env
+cp configs/hermes_config_template.yaml  ~/.hermes/profiles/commander/config.yaml
+cp configs/hermes_env_template.env       ~/.hermes/profiles/commander/.env
+cp configs/commander_soul_template.md    ~/.hermes/profiles/commander/SOUL.md
 ```
 
-Put API keys only in that local `.env`.
+Put API keys only in that local `.env`. `SOUL.md` gives the agent its standing
+instructions + safety rules.
 
 ## Step 4 — Verify (safe)
 
