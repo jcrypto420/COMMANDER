@@ -53,3 +53,8 @@ One short entry per working day. What advanced + estimated spend.
 - Telegram setup is blocked on Josh creating/providing a BotFather token through
   a safe local secret-entry path; no token should be committed.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Saved public Joycat / Mog / Mogcoin research to
+  `projects/badboys-joycat-research.md` and folded key brand guardrails into
+  `projects/badboys-launch-loop.md`.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

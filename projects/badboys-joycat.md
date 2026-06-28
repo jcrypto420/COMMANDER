@@ -46,6 +46,7 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 
 - Sprint plan: `../SPRINT_69.md`
 - Launch loop draft: `badboys-launch-loop.md`
+- Public research brief: `badboys-joycat-research.md`
 - Asset intake: `../assets/badboys/README.md`
 
 ## Backlog

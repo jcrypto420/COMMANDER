@@ -20,6 +20,29 @@ The fastest safe path is not a full game first. It is an audience + offer loop:
    offer.
 4. Repeat daily with low cost and tight feedback.
 
+## Research-informed brand guardrails
+
+Use the Mog/Joycat lane as cultural inspiration, not as affiliation or copying.
+
+- Lean into: unbothered confidence, absurd victory, joy, meme-native repetition,
+  and “good-hearted menace.”
+- Avoid: investment advice, token price talk, “buy now,” guaranteed upside, or
+  anything that sounds like financial promotion.
+- Avoid: body-shaming, incel-adjacent “alpha” framing, cruelty, hate, harassment,
+  racism, misogyny, or explicit content.
+- Avoid copying official Mog/Joycat art, Pit Viper marks, or the Moggles product
+  design. Use original characters and broad meme motifs only.
+- Safer definition of “bad”: mischievous/pro-social rebellion — bad for good.
+
+Useful motifs to test in original form:
+
+- Cat / joy-creature mascot energy.
+- Pointing-at-viewer compositions.
+- Laughing-cat reaction energy.
+- Bold CT sticker/PFP remix aesthetics.
+- High-confidence short maxims: “Moggers Mog,” “Stay joycat,” “Be Bad For Da
+  Good of Humanity.”
+
 ## First 14-day draft cadence
 
 | Day | Draft output | Purpose | Approval needed before public action? |
@@ -69,3 +92,7 @@ Reply: APPROVE / DENY / EDIT
 - Existing pseudonymous account handles.
 - Domains/storefronts, if any.
 - Any hard boundaries for character use, tone, or public associations.
+
+## Linked research
+
+- `badboys-joycat-research.md`

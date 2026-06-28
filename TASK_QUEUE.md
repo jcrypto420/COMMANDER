@@ -18,7 +18,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-11 | Command Center | 1 | Apply approved onboarding intake doc updates | done | GOALS/NOW/project files updated from INTAKE.md | no |
 | REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see SPRINT_69.md | no |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
-| BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | todo | research CT context; ask Josh for Bad Boys files | no |
+| BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | doing | public research brief drafted; waiting for Josh assets | no |
 | BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | todo | draft content cadence + offer; no posting | no |
 | BB-3 | Bad Boys/Joycat | 2 | Inventory Josh-provided Bad Boys assets | todo | add assets under assets/badboys/; update inventory.md | no |
 | TG-1 | Command Center | 1 | Telegram phone approval channel | blocked | waiting for Josh to create BotFather token; never commit token | **yes** |
