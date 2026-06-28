@@ -17,6 +17,9 @@ passed.
 3. Optional: Nous Portal (`hermes login`) for bundled web/browser tools.
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
+_Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
+(`logs/daily_progress.md`) via a repo-scoped deploy key — readable from any
+device, no notifications/exposure. View on GitHub or `commander chat` on phone._
 
 ## Current blockers
 
