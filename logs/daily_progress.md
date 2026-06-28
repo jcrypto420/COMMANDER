@@ -14,3 +14,12 @@ One short entry per working day. What advanced + estimated spend.
 - First safe read-only task passed (Commander summarized its own repo).
 - Estimated spend: $0.00 (Codex rides ChatGPT plan; no API tokens billed).
 - Next: add OpenRouter as cheap fallback tier; build daily make-money loop.
+
+## 2026-06-28
+
+- Chosen task: CC-8 — Daily make-money loop as cron (draft-only), since it unlocks the highest-leverage daily income workflow with no sending or spend.
+- Next action:
+  - Review `MONEY_OPS.md` and identify the single safest draft-only cron step.
+  - Draft the cron command and guardrails so it only reads state, writes logs, and never sends anything.
+  - Verify the task fits the current `commander` defaults and approval rules.
+- Cost/automation idea: keep the loop read-only and reuse one cheap local/default model for summaries; only escalate if a check fails.
