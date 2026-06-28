@@ -35,6 +35,7 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 - [ ] Bad Boys asset inventory from Josh-provided files
 - [ ] First audience/sales launch loop draft
 - [ ] Phone approval channel connected before public posting cadence
+- [ ] First public approval packet prepared
 
 ## First-win metrics
 
@@ -47,6 +48,8 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 - Sprint plan: `../SPRINT_69.md`
 - Launch loop draft: `badboys-launch-loop.md`
 - Public research brief: `badboys-joycat-research.md`
+- Brand one-pager draft: `badboys-brand-onepager.md`
+- Content hooks draft: `badboys-content-hooks.md`
 - Asset intake: `../assets/badboys/README.md`
 
 ## Backlog

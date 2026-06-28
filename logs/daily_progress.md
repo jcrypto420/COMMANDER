@@ -72,3 +72,8 @@ One short entry per working day. What advanced + estimated spend.
   proactively route tasks, delegate narrow subtasks, integrate results, run
   review/safety passes, and escalate to GPT-5.5 only when justified.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Returned focus to BB-2 after pausing MoA research. Drafted
+  `projects/badboys-brand-onepager.md` and `projects/badboys-content-hooks.md`
+  as no-posting/no-spend launch materials for Josh approval.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
