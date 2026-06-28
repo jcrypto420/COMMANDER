@@ -17,6 +17,8 @@ passed.
    of truth plus phone summaries/blockers/approval requests only. (CC-10)
 3. Draft the first Bad Boys / Joycat / Mog launch loop: content cadence, first
    offer, approval checkpoints, and no public posting yet. (BB-2)
+4. Apply model delegation / token-budget workflow so GPT-5.5 is used only for
+   high-leverage checkpoints and daily work continues on cheaper models. (CC-12)
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
@@ -26,6 +28,8 @@ _Done: onboarding interview saved to `INTAKE.md`; approved follow-up doc edits
 are being applied._
 _Done: REV-1 selected Bad Boys / Joycat / Mog as the primary 69-day sprint;
 see `SPRINT_69.md`. Phone/autonomy plan drafted in `PHONE_AUTONOMY.md`._
+_Done: model delegation plan drafted in `MODEL_DELEGATION.md` to prevent premium
+usage blockages._
 
 ## Current blockers
 

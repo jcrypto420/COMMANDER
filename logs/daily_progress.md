@@ -58,3 +58,12 @@ One short entry per working day. What advanced + estimated spend.
   `projects/badboys-joycat-research.md` and folded key brand guardrails into
   `projects/badboys-launch-loop.md`.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Drafted `MODEL_DELEGATION.md` and updated model/cost docs so daily execution
+  runs on cheaper models, GPT-5.5 is reserved for review/escalation, and
+  subagents use narrow toolsets with compact summaries.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Created `logs/model_usage.csv` header so future model/provider/cost usage can
+  be tracked in the repo.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

@@ -47,3 +47,15 @@ drafting, final review of important materials, debugging stuck issues, strategy.
 4. On provider error/timeout: fall back to the next provider in the same tier.
 5. Log provider/model/tokens/cost every call (logs/model_usage.csv).
 ```
+
+## Delegation rule
+
+See `MODEL_DELEGATION.md` for the operating workflow.
+
+- Daily execution defaults to `gpt-5.4-mini` / cheap Tier 1.
+- GPT-5.5 is reserved for high-leverage checkpoints, final review, hard
+  debugging, or strategy after cheaper attempts fail.
+- Subagents should use restricted toolsets and return compact summaries; do not
+  use premium subagents for bulk research or repetitive content generation.
+- If premium usage is blocked, continue with cheap models, file briefs,
+  no-agent scripts, and compact subagent tasks instead of stopping.
