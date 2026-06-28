@@ -23,3 +23,11 @@ One short entry per working day. What advanced + estimated spend.
   - Draft the cron command and guardrails so it only reads state, writes logs, and never sends anything.
   - Verify the task fits the current `commander` defaults and approval rules.
 - Cost/automation idea: keep the loop read-only and reuse one cheap local/default model for summaries; only escalate if a check fails.
+
+- Chosen task: IN-1 — First lead list + 1 outreach draft, because it is the highest-leverage safe income step and stays draft-only.
+- Next action:
+  - Define one narrow target profile for the best-paying lead.
+  - Collect 5–10 candidate leads from existing notes or public sources.
+  - Draft one tailored outreach message plus one follow-up variant.
+  - Save the lead list and drafts for review; do not send anything.
+- Cost/automation idea: standardize a reusable outreach template so future drafts can be auto-filled from the lead list.
