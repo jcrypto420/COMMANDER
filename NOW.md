@@ -11,13 +11,12 @@ passed.
 
 ## Next 3 tasks
 
-1. Choose the first **69-day revenue sprint** experiment: compare Bad Boys /
-   Joycat / Mog, career-income leverage, Primoscapes, and Weather Oracle by
-   speed to revenue, cost, risk, and Josh time required. (REV-1)
-2. Gather Bad Boys / Joycat / Mog context: public CT research plus any
+1. Gather Bad Boys / Joycat / Mog context: public CT research plus any
    Josh-provided brand assets, logos, domains, accounts, and files. (BB-1)
-3. Decide the safest phone-convenient interaction path: GitHub/logs as source
+2. Decide the safest phone-convenient interaction path: GitHub/logs as source
    of truth plus phone summaries/blockers/approval requests only. (CC-10)
+3. Draft the first Bad Boys / Joycat / Mog launch loop: content cadence, first
+   offer, approval checkpoints, and no public posting yet. (BB-2)
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
@@ -25,6 +24,8 @@ _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
 device, no notifications/exposure. View on GitHub or `commander chat` on phone._
 _Done: onboarding interview saved to `INTAKE.md`; approved follow-up doc edits
 are being applied._
+_Done: REV-1 selected Bad Boys / Joycat / Mog as the primary 69-day sprint;
+see `SPRINT_69.md`. Phone/autonomy plan drafted in `PHONE_AUTONOMY.md`._
 
 ## Current blockers
 
