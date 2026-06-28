@@ -5,12 +5,15 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
-| CC-1 | Command Center | 1 | Create repo scaffolding | done | Review files | no |
-| CC-2 | Command Center | 1 | Run `pi_inventory.sh` on Pi | todo | `bash scripts/pi_inventory.sh` | no |
-| CC-3 | Command Center | 1 | Verify Hermes install command vs live docs | todo | Check docs links in HERMES_SETUP.md | no |
-| CC-4 | Command Center | 1 | Install Hermes on Pi | blocked | Wait for CC-3 + Josh approval | **yes** |
-| CC-5 | Command Center | 1 | Create `commander` profile + 1 provider | blocked | After CC-4 | **yes** |
-| CC-6 | Command Center | 1 | Run first safe Hermes task (read-only summary) | blocked | After CC-5 | no |
+| CC-1 | Command Center | 1 | Create repo scaffolding | done | — | no |
+| CC-2 | Command Center | 1 | Inventory the Pi | done | aarch64, Debian 12, 31G free | no |
+| CC-3 | Command Center | 1 | Verify Hermes install command vs live docs | done | verified 2026-06-27 | no |
+| CC-4 | Command Center | 1 | Install Hermes on Pi | done | v0.17.0 in ~/.local/bin | yes |
+| CC-5 | Command Center | 1 | Create `commander` profile + provider | done | Codex/ChatGPT OAuth | yes |
+| CC-6 | Command Center | 1 | Run first safe Hermes task (read-only) | done | summary passed | no |
+| CC-7 | Command Center | 1 | Add OpenRouter as cheap fallback tier | todo | `commander setup model` or add key to profile .env | yes |
+| CC-8 | Command Center | 1 | Daily make-money loop as cron (draft-only) | todo | see MONEY_OPS.md + `hermes cron` | yes |
+| IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
 
 ## Notes
 

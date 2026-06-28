@@ -1,23 +1,26 @@
 # NOW.md
 
-**Active focus:** Priority 1 — Command Center / Hermes setup.
+**Active focus:** Priority 1 wrap-up → Priority 2 (career/income). Commander is
+live on the Pi.
 
-**Today's desired outcome:** Repo scaffolding in place; Pi inventory run;
-Hermes install path verified and ready for approval.
+**Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
+created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
+default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
+passed.
 
 ## Next 3 tasks
 
-1. Run `scripts/pi_inventory.sh` on the Pi and paste results into a comment on
-   `TASK_QUEUE.md` task CC-2.
-2. Verify the current Hermes install command against the docs links in
-   `HERMES_SETUP.md`; fill in the verified command.
-3. Choose the day-one provider (Nous Portal or OpenRouter) and add the key to a
-   local `.env` from `configs/hermes_env_template.env` (never commit it).
+1. Add **OpenRouter** as the cheap/bulk fallback tier (Tier 0/1) so heavy
+   repetitive work doesn't burn ChatGPT rate limits.
+2. Stand up the **daily make-money loop** (see `MONEY_OPS.md`) as a cron job,
+   read-only/draft-only until trusted.
+3. Start **Priority 2** (career/income): first lead list + one outreach draft
+   (drafts only — no sending).
 
 ## Current blockers
 
-- Network/Hermes-docs not reachable from the build environment — install
-  commands in `HERMES_SETUP.md` are marked **VERIFY** until checked on the Pi.
-- Need Josh's approval before any install / `sudo` / paid provider key.
+- None blocking. Optional: Nous Portal (`hermes login`) for bundled web/browser
+  tools; add when needed.
+- Spending/sending actions still require Josh's approval (see `SECURITY.md`).
 
 _Update this file at the start and end of each working session._
