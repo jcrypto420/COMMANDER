@@ -16,7 +16,8 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-9 | Command Center | 1 | Gateway service (cron scheduler) | done | user-level (non-root), linger on, NO listening ports | yes |
 | CC-10 | Command Center | 1 | Private phone access (Tailscale-first) | todo | try Tailscale SSH / dashboard before any chat platform | **yes** |
 | CC-11 | Command Center | 1 | Apply approved onboarding intake doc updates | done | GOALS/NOW/project files updated from INTAKE.md | no |
-| CC-12 | Command Center | 1 | Model delegation and token-budget workflow | doing | use MODEL_DELEGATION.md; reserve GPT-5.5 for escalation/review | no |
+| CC-12 | Command Center | 1 | Model delegation and token-budget workflow | done | project-lead protocol added to MODEL_DELEGATION.md | no |
+| CC-13 | Command Center | 1 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
 | REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see SPRINT_69.md | no |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
 | BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | doing | public research brief drafted; waiting for Josh assets | no |

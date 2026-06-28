@@ -59,3 +59,7 @@ See `MODEL_DELEGATION.md` for the operating workflow.
   use premium subagents for bulk research or repetitive content generation.
 - If premium usage is blocked, continue with cheap models, file briefs,
   no-agent scripts, and compact subagent tasks instead of stopping.
+
+Commander should operate as the project lead: route, delegate, integrate,
+review, and only escalate to premium when the task meets the triggers in
+`MODEL_DELEGATION.md`.

@@ -67,3 +67,8 @@ One short entry per working day. What advanced + estimated spend.
 - Created `logs/model_usage.csv` header so future model/provider/cost usage can
   be tracked in the repo.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Expanded `MODEL_DELEGATION.md` into a project-lead protocol: Commander should
+  proactively route tasks, delegate narrow subtasks, integrate results, run
+  review/safety passes, and escalate to GPT-5.5 only when justified.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

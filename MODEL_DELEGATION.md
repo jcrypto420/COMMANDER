@@ -2,6 +2,9 @@
 
 Purpose: keep Commander moving every day without burning premium usage or hitting
 GPT-5.5 blockage. Default posture: **premium is a scalpel, not a shovel**.
+Commander should operate like a project lead: route tasks to the right model,
+delegate narrow subtasks, integrate results, scrutinize/review, and keep the
+repo source of truth updated.
 
 ## Core policy
 
@@ -29,6 +32,50 @@ GPT-5.5 blockage. Default posture: **premium is a scalpel, not a shovel**.
    - Start new sessions from files instead of carrying giant chats.
    - Use `session_search` only when needed to recover prior conversation details.
 
+5. **Josh should not micromanage model choice**
+   - Commander should proactively choose the cheapest capable model/workflow.
+   - Explain escalations only when they affect cost, risk, approvals, or timing.
+   - Keep moving with cheaper routes when premium usage is blocked.
+
+## Practical Hermes capability map
+
+- The active chat model can be chosen when starting a session with
+  `commander chat -m <model>` or changed interactively with `/model`.
+- The built-in `delegate_task` tool runs subagents in isolated contexts, but
+  child model selection is inherited from Hermes delegation config; this tool is
+  best for narrow parallel work with compact summaries.
+- When a specific model is needed for an isolated subtask, Commander can spawn a
+  separate one-shot Hermes process with `/home/josh/.local/bin/hermes chat -q ...
+  -m <model> --provider <provider>` and a restricted toolset. Use this sparingly
+  and log the decision.
+- Cron jobs can pin model/provider per job when needed; recurring jobs should
+  default cheap and use restricted toolsets.
+
+## Project-lead workflow
+
+For any non-trivial task, Commander should run this loop:
+
+1. **Triage** — classify the task: mechanical, research, creative draft, coding,
+   strategy, safety/legal/financial-adjacent, or final review.
+2. **Route** — pick model/toolset:
+   - mechanical/status → script or cheap model,
+   - research/extraction → cheap subagent with narrow tools,
+   - first drafts → cheap model,
+   - hard synthesis/final review → premium only when justified.
+3. **Delegate** — split independent subtasks into small briefs with explicit
+   output shape, source requirements, and tool limits.
+4. **Integrate** — parent Commander merges results into repo files or a compact
+   decision brief; do not dump raw subagent sprawl into the final answer.
+5. **Scrutinize** — run at least one review pass for important outputs:
+   - factual/source check for research,
+   - safety/approval check for public/outbound/financial/system actions,
+   - quality/brand check for Bad Boys/Joycat content,
+   - test/lint check for code.
+6. **Escalate if needed** — use GPT-5.5 only when the cheap route is uncertain,
+   high-impact, or failed twice.
+7. **Update truth** — write the decision/result to repo docs, logs, and task
+   queue so future cheap sessions can continue without loading old chat.
+
 ## Routing table
 
 | Work type | Default route | Escalate when |
@@ -42,6 +89,30 @@ GPT-5.5 blockage. Default posture: **premium is a scalpel, not a shovel**.
 | Phone summaries | no-agent script or cheap model | never |
 | Final public/outbound copy | Tier 1 draft, optional GPT-5.5 review | before major launch only |
 
+## Review lanes
+
+| Output | First pass | Review pass | Approval before action |
+|--------|------------|-------------|-------------------------|
+| Research brief | cheap web subagent | parent source/safety check | no, unless used publicly |
+| Social/content drafts | cheap creative draft | brand + safety review | yes before posting |
+| Launch plan | cheap synthesis | premium or parent strategic review | yes before public/spend |
+| Code/scripts | cheap coding/session | tests/lint + parent review | depends on side effects |
+| Phone/cron summary | script or cheap model | parent sanity check | no for local/log, yes for sending until channel approved |
+| Financial/DeFi content | cheap draft/research | premium review if important | yes; never final advice/autonomous action |
+
+## Escalation triggers
+
+Escalate to GPT-5.5 or another premium model only when one is true:
+
+- A decision could materially affect the 69-day sprint path.
+- A draft will be public, high-visibility, or reputationally sensitive.
+- A cheaper model produced conflicting/low-confidence results twice.
+- The task is architecture/security-sensitive.
+- The work is legal/financial-adjacent and needs careful review as a draft.
+
+Do **not** escalate for volume, formatting, routine summaries, bulk captions, or
+open-ended browsing.
+
 ## Subagent patterns
 
 ### Good delegation
@@ -50,6 +121,8 @@ GPT-5.5 blockage. Default posture: **premium is a scalpel, not a shovel**.
 - “Extract action items from these files.”
 - “Compare 4 sprint options in a table.”
 - “Draft 20 post hooks from this brief.”
+- “Review this launch packet for safety/approval risks only.”
+- “Check these 8 claims against their source links and flag weak claims.”
 
 ### Bad delegation
 
@@ -57,6 +130,7 @@ GPT-5.5 blockage. Default posture: **premium is a scalpel, not a shovel**.
 - “Use premium model to generate 100 captions.”
 - “Spawn several unrestricted agents with all tools.”
 - “Let subagents decide strategy without parent review.”
+- “Spawn a premium model because we have many small tasks.”
 
 ## Toolset discipline
 
@@ -67,6 +141,27 @@ Use the smallest toolset that can complete the job:
 - Code work: `file`, `terminal`, maybe `coding`.
 - Browser only when a page requires interaction.
 - Avoid loading all tools into cron jobs or subagents unless necessary.
+
+## One-shot model-specific worker pattern
+
+Use this only when the model must differ from the active session and the task is
+bounded. Prefer `delegate_task` for quick inherited-model subtasks.
+
+```bash
+/home/josh/.local/bin/hermes chat \
+  --provider openai-codex \
+  -m gpt-5.4-mini \
+  -t file,terminal \
+  -q "Read MODEL_DELEGATION.md and review TASK_QUEUE.md for stale statuses. Return only a 10-bullet summary; do not edit files."
+```
+
+Rules:
+
+- Give the worker a compact brief and exact output shape.
+- Restrict toolsets.
+- Prefer read-only unless edits are explicitly needed.
+- Parent Commander verifies any claimed file edits or external side effects.
+- Log meaningful model usage to `logs/model_usage.csv` where possible.
 
 ## Cron discipline
 
