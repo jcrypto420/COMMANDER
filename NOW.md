@@ -10,12 +10,13 @@ passed.
 
 ## Next 3 tasks
 
-1. Add **OpenRouter** as the cheap/bulk fallback tier (Tier 0/1) so heavy
-   repetitive work doesn't burn ChatGPT rate limits.
-2. Stand up the **daily make-money loop** (see `MONEY_OPS.md`) as a cron job,
-   read-only/draft-only until trusted.
-3. Start **Priority 2** (career/income): first lead list + one outreach draft
-   (drafts only — no sending).
+1. Stand up the **daily make-money loop** (see `MONEY_OPS.md`) as a cron job,
+   read-only/draft-only until trusted. (CC-8)
+2. Start **Priority 2** (career/income): first lead list + one outreach draft
+   (drafts only — no sending). (IN-1)
+3. Optional: Nous Portal (`hermes login`) for bundled web/browser tools.
+
+_Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 
 ## Current blockers
 

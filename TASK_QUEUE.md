@@ -11,7 +11,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-4 | Command Center | 1 | Install Hermes on Pi | done | v0.17.0 in ~/.local/bin | yes |
 | CC-5 | Command Center | 1 | Create `commander` profile + provider | done | Codex/ChatGPT OAuth | yes |
 | CC-6 | Command Center | 1 | Run first safe Hermes task (read-only) | done | summary passed | no |
-| CC-7 | Command Center | 1 | Add OpenRouter as cheap fallback tier | todo | `commander setup model` or add key to profile .env | yes |
+| CC-7 | Command Center | 1 | Add OpenRouter as cheap fallback tier | done | fallback: codex → gemini-2.5-flash → llama-3.1-8b | yes |
 | CC-8 | Command Center | 1 | Daily make-money loop as cron (draft-only) | todo | see MONEY_OPS.md + `hermes cron` | yes |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
 
