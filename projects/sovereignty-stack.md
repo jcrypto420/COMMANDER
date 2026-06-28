@@ -1,7 +1,7 @@
 # Project: Sovereignty Stack (Priority 7)
 
-**Goal:** Improve the private infrastructure **only when it helps the
-money-making system.**
+**Goal:** Keep the private infrastructure working reliably, safely, and securely
+**only when it helps the money-making system.**
 
 ## Outputs
 
@@ -12,6 +12,7 @@ money-making system.**
 - Storage
 - Dashboards
 - Automation plumbing
+- Phone-convenient access/security
 
 ## Status
 
@@ -22,4 +23,4 @@ money-making system.**
 ## Rule
 
 Do infra work here only if it directly unblocks or accelerates a higher-priority
-money project. Otherwise defer.
+money project. Otherwise defer. Avoid endless upkeep, debugging, or tinkering.

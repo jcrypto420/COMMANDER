@@ -31,3 +31,11 @@ One short entry per working day. What advanced + estimated spend.
   - Draft one tailored outreach message plus one follow-up variant.
   - Save the lead list and drafts for review; do not send anything.
 - Cost/automation idea: standardize a reusable outreach template so future drafts can be auto-filled from the lead list.
+
+- Completed onboarding interview and saved strategic intake to `INTAKE.md`.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Applied Josh-approved intake follow-up edits to GOALS/NOW/TASK_QUEUE and
+  project files, aligning the repo around the 69-day $6.9K sprint and the
+  Bad Boys/Joycat/Mog high-upside revenue lane.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

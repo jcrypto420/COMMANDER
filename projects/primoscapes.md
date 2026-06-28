@@ -8,12 +8,12 @@
 
 ## Sub-projects
 
-> List each distinct sub-project here with its own scope. Keep notes for one
-> sub-project out of the others.
+No active client projects yet. Do not invent distinct sub-projects until a real
+scope exists. Josh is operating with solo-capacity constraints.
 
 | Sub-project | Scope | Connected to others? |
 |-------------|-------|----------------------|
-| (define) | | no (default) |
+| Native Prairie installations | Fall site prep, winter plantings, chop/drop mulching, direct planting with native perennials | no (default) |
 
 ## Outputs
 
@@ -28,9 +28,10 @@
 
 ## Status
 
-- [ ] Confirm the distinct sub-projects with Josh
+- [ ] Confirm whether Native Prairie installations are the first offer
 - [ ] First service page draft
 - [ ] First local lead list
+- [ ] Confirm service area, tools, licensing, insurance, and partner options
 
 ## Trackers
 

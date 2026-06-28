@@ -15,7 +15,12 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-8 | Command Center | 1 | Daily make-money loop as cron (draft-only) | done | live; fires 7am daily; test run produced correct draft | yes |
 | CC-9 | Command Center | 1 | Gateway service (cron scheduler) | done | user-level (non-root), linger on, NO listening ports | yes |
 | CC-10 | Command Center | 1 | Private phone access (Tailscale-first) | todo | try Tailscale SSH / dashboard before any chat platform | **yes** |
+| CC-11 | Command Center | 1 | Apply approved onboarding intake doc updates | done | GOALS/NOW/project files updated from INTAKE.md | no |
+| REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | todo | compare speed to revenue, cost, risk, Josh time | no |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
+| BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | todo | research CT context; ask Josh for Bad Boys files | no |
+| BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | todo | draft content cadence + offer; no posting | no |
+| WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles | no |
 
 ## Notes
 

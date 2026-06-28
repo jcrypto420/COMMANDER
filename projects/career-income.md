@@ -2,6 +2,15 @@
 
 **Goal:** Protect and increase Josh's income.
 
+## Known leverage
+
+- S&P Global background.
+- Published/contributed crypto research papers.
+- Hands-on DeFi experience.
+- Long-time Chainlink knowledge and conviction.
+- Josh may provide LinkedIn/resume artifacts later; learn details over time
+  instead of forcing this lane all at once.
+
 ## Outputs
 
 - Resume / portfolio updates
@@ -17,6 +26,8 @@
 - [ ] Set up application/lead tracker (table below)
 - [ ] First outreach draft
 - [ ] Resume refresh pass
+- [ ] Ingest LinkedIn/resume artifact when Josh provides it
+- [ ] Identify one consulting/freelance/portfolio leverage angle
 
 ## Tracker
 
