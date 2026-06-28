@@ -34,12 +34,19 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 - [ ] Public Joycat / Mog / Mogcoin research brief
 - [ ] Bad Boys asset inventory from Josh-provided files
 - [ ] First audience/sales launch loop draft
+- [ ] Phone approval channel connected before public posting cadence
 
 ## First-win metrics
 
 - Followers / audience growth.
 - Sales.
 - Shipped experiments that can become offers or content.
+
+## Linked files
+
+- Sprint plan: `../SPRINT_69.md`
+- Launch loop draft: `badboys-launch-loop.md`
+- Asset intake: `../assets/badboys/README.md`
 
 ## Backlog
 

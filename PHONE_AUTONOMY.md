@@ -90,6 +90,8 @@ Why:
 Tailscale/SSH remains useful for emergency direct access, but it is not the
 friendliest daily interaction surface.
 
+Setup checklist: `TELEGRAM_SETUP.md`.
+
 ## Setup steps that require Josh approval
 
 - Pick the phone channel: Telegram is the recommended first test.

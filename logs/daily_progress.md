@@ -46,3 +46,10 @@ One short entry per working day. What advanced + estimated spend.
   from Josh's phone while keeping spending, sending, posting, secrets, service
   changes, and financial actions approval-gated.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Started BB-1/BB-2/CC-10 execution: created Bad Boys asset intake files,
+  drafted `projects/badboys-launch-loop.md`, and documented Telegram setup in
+  `TELEGRAM_SETUP.md`.
+- Telegram setup is blocked on Josh creating/providing a BotFather token through
+  a safe local secret-entry path; no token should be committed.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

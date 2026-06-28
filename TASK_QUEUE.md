@@ -20,6 +20,8 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
 | BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | todo | research CT context; ask Josh for Bad Boys files | no |
 | BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | todo | draft content cadence + offer; no posting | no |
+| BB-3 | Bad Boys/Joycat | 2 | Inventory Josh-provided Bad Boys assets | todo | add assets under assets/badboys/; update inventory.md | no |
+| TG-1 | Command Center | 1 | Telegram phone approval channel | blocked | waiting for Josh to create BotFather token; never commit token | **yes** |
 | WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles | no |
 
 ## Notes
