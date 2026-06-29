@@ -2,74 +2,51 @@
 
 Status: for Josh review. No account creation, posting, uploading, scheduling, spending, or public action until Josh approves.
 
-## What to review first
-
-Start here:
-
-1. Current recommended direction — v3 Artifact Lab
-   - Plan: `projects/badboys-tiktok-week1-v3-artifact-lab-packet.md`
-   - Assets: `assets/badboys/tiktok/week1-v3-artifact-lab/`
-   - Gallery: `assets/badboys/tiktok/week1-v3-artifact-lab/review-gallery.html`
-
-2. Mogging / anti-corn strategy
-   - `projects/badboys-mogging-tactics-playbook.md`
-   - `projects/badboys-mogging-marketing-research.md`
-
-3. Account creation guardrails
-   - `projects/badboys-tiktok-account-creation-runbook.md`
-
-4. First product-shaped signal test
-   - Brief: `projects/badboys-first-sticker-pack-brief.md`
-   - Assets: `assets/badboys/sticker-pack-v0/`
-   - Preview: `assets/badboys/sticker-pack-v0/preview-sheet.svg`
-
-5. Product / signal system
-   - Product backlog: `projects/badboys-product-backlog-v0.md`
-   - Signal dashboard: `projects/badboys-signal-dashboard.md`
-
 ## Current recommendation
 
-Do not create the TikTok account until Josh approves or edits these items:
+Use the real Josh-provided asset setup. Do not launch with the generated v1/v2/v3 SVG/card packs unless Josh explicitly revives them.
+
+Review only these first:
+
+1. Avatar candidate
+   - `assets/badboys/account-ready-real-assets-v0/avatar-primary-insideface.png`
+2. First post candidate
+   - `assets/badboys/account-ready-real-assets-v0/post-candidate-thunder-up.png`
+3. Local review gallery
+   - `assets/badboys/account-ready-real-assets-v0/review-gallery.html`
+4. Reset plan
+   - `projects/badboys-refocus-stop-the-wank.md`
+5. Tomorrow hard-start packet
+   - `projects/tomorrow-hard-start-2026-06-29.md`
+
+## Account setup if approved
 
 - handle: `bebad4good`
 - bio: `Be bad for da good of humanity.`
-- creative direction: v3 Artifact Lab
-- first-week format: BAD SAMPLE / FIELD TEST / KEEP-KILL
-- no token/finance talk
-- no Josh personal-name exposure
-- no posting until final asset/caption approval
+- avatar: `avatar-primary-insideface.png`
+- first post image: `post-candidate-thunder-up.png`
+- first caption: `testing this.`
+- first comment / signal question: `keep or kill?`
 
-## V3 Artifact Lab files
+## Why this direction
 
-Preferred current pack:
+The prior generated launch packs drifted into fake marketing energy. The real asset setup is tighter: one recognizable face mark, one loud existing graphic, and almost no copy. Let the object carry the signal.
 
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-001-field-test.svg`
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-002-warning-label.svg`
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-003-joycat-sample.svg`
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-004-line-test.svg`
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-005-drop-candidate.svg`
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-006-world-test.svg`
-- `assets/badboys/tiktok/week1-v3-artifact-lab/badboys-007-vote.svg`
+## Quick asset notes
 
-Local gallery:
-
-- `assets/badboys/tiktok/week1-v3-artifact-lab/review-gallery.html`
-
-## Older directions for comparison
-
-These are not the current recommendation, but Josh can compare them:
-
-- v1 hardmode: `assets/badboys/tiktok/week1-v1-hardmode/review-gallery.html`
-- v2 less-corny: `assets/badboys/tiktok/week1-v2-lesscorny/review-gallery.html`
-- original PNG month pack: `assets/badboys/tiktok/png/review-gallery.html`
+- `avatar-primary-insideface.png` is the strongest canonical mark but may need a simple high-contrast circle/background test for small TikTok display.
+- `post-candidate-thunder-up.png` has the best immediate visual impact for a first signal post.
+- `post-candidate-basketball.png` is a later sports/niche variant.
+- `post-candidate-bet-on-yourself.jpeg` needs caution because the gambling/slot-machine vibe may create the wrong association.
 
 ## Decision request
 
 Josh should reply with one of:
 
-- `APPROVE V3 ACCOUNT PREP` — Commander may proceed with prep docs/avatars, but Josh still handles credentials and verification.
-- `EDIT V3: <notes>` — Commander revises the pack before account creation.
-- `REJECT V3` — Commander discards the artifact-lab direction and drafts a new one.
+- `APPROVE REAL ASSET ACCOUNT PREP` — Commander may prepare final checklist/background variants, but Josh still handles credentials and verification.
+- `EDIT REAL ASSETS: <notes>` — Commander revises the pack before account creation.
+- `REJECT REAL ASSETS` — Commander stops this path and asks for a new direction.
+- `MAKE AVATAR BACKGROUND TEST` — Commander creates a small internal avatar-background comparison using the real face mark.
 - `APPROVE COMMIT ONLY` — Commander commits/pushes the current review packet for easier viewing on GitHub, but still does not create/post.
 
 ## Safety boundaries

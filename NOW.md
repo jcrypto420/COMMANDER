@@ -11,14 +11,16 @@ passed.
 
 ## Next 3 tasks
 
-1. Refocus Bad Boys on real Josh-provided assets, not generated launch-card packs;
-   review `projects/badboys-refocus-stop-the-wank.md` and
+1. Tomorrow hard start: review `projects/tomorrow-hard-start-2026-06-29.md`,
+   then inspect only the two real Bad Boys assets in
    `assets/badboys/account-ready-real-assets-v0/review-gallery.html`.
 2. If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from
    phone/laptop; credentials, age-gate, verification, password, recovery, and
    2FA stay Josh-controlled.
 3. First post candidate is the real `Thunder Up` asset with minimal copy
-   (`testing this.` / `keep or kill?`), no manifesto.
+   (`testing this.` / `keep or kill?`), no manifesto. IN-1 revenue backstop
+   draft now lives at `projects/in-1-lead-list-outreach-draft-2026-06-29.md`;
+   verify named leads before any sending.
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub

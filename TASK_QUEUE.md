@@ -19,7 +19,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-12 | Command Center | 1 | Model delegation and token-budget workflow | done | project-lead protocol added to MODEL_DELEGATION.md | no |
 | CC-13 | Command Center | 1 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
 | REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see SPRINT_69.md | no |
-| IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
+| IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | done | draft saved in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; verify named leads before any sending | no |
 | BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | done | strategist package inspected; brand consistency draft next | no |
 | BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | done | approval packet drafted; waiting on Josh review for any public action | no |
 | BB-3 | Bad Boys/Joycat | 2 | Inventory Josh-provided Bad Boys assets | done | received 27 files; inventory.md updated | no |

@@ -173,3 +173,19 @@ One short entry per working day. What advanced + estimated spend.
 - Josh called the generated TikTok plans/assets wank. Refocused the sprint on real Josh-provided Bad Boys assets instead of generated launch cards.
 - Created `assets/badboys/account-ready-real-assets-v0/` with copied real asset candidates and review gallery.
 - Created `projects/badboys-refocus-stop-the-wank.md`: new recommendation is avatar from `INSIDEFACE NOBG.png`, first post candidate from `BBTHUNDER_UP_-removebg-preview.png`, minimal copy only.
+
+- Night-before hard-start prep: created `projects/tomorrow-hard-start-2026-06-29.md`, updated `projects/badboys-review-before-account.md` to point away from generated packs and toward the real-asset review, and verified the two priority assets by file metadata + visual inspection.
+- Updated `NOW.md` so tomorrow starts with one decision path: Josh reviews two assets; if approved, he creates TikTok `bebad4good` on his own device; if stalled, Commander runs IN-1 draft-only lead/outreach as revenue backstop.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Corrected the morning automation expectation after Josh clarified the Pi is powered off nightly: verified `hermes-gateway-commander.service` is enabled, `linger=yes`, and Hermes cron status is healthy; updated `daily-money-loop` from a missing script-only job into an agent-driven cold-start job for `/home/josh/COMMANDER` at 7am with safe doc/log-only commit/push guardrails.
+- After Josh approved boot-start automation, installed a user-level catch-up timer: `/home/josh/.config/systemd/user/commander-boot-daily-loop.timer` runs `/home/josh/.local/bin/commander-boot-daily-loop.sh` 5 minutes after boot. The script skips before 07:00 local, waits for Hermes cron health, and triggers the daily money loop only as a catch-up path if the 7am run was missed.
+- Patched the `commander-command-center-ops` skill so future sessions remember the Pi is powered off nightly and the morning automation must survive cold boot.
+
+## 2026-06-29
+
+- Cold-start daily money loop ran at `2026-06-29T07:01:26-05:00` on branch `feat/command-center-scaffolding`. Working tree already had local doc/log changes, so Commander did **not** run `git pull --ff-only` to avoid overwriting local work.
+- Bad Boys remains grounded on the two real Josh-provided assets in `assets/badboys/account-ready-real-assets-v0/review-gallery.html`; no account creation, posting, public upload, spending, or messaging was performed.
+- Because Bad Boys is waiting on Josh approval, executed the safe revenue backstop: created `projects/in-1-lead-list-outreach-draft-2026-06-29.md` with a narrow crypto/data-infrastructure research-support offer, five lead lanes to verify, and one outreach draft. Nothing was sent.
+- Updated `NOW.md` and `TASK_QUEUE.md` to point to the IN-1 draft and keep named-lead verification approval-gated.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
