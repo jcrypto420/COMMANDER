@@ -211,3 +211,7 @@ One short entry per working day. What advanced + estimated spend.
 - `npm audit --omit=dev` still reports 2 moderate PostCSS advisories through Next's dependency tree; `npm audit fix --force` suggests a breaking downgrade and was not run.
 - Safety: no public ports, no service install, no secrets, no posting/sending/spending/trading/account action.
 - Estimated spend: $0.00 incremental API spend; npm package install used local approved network/package-manager action.
+
+- Chose the easiest Mission Control access path for Josh: LAN from HP laptop at `http://192.168.1.189:3011`, using `npm run dev:lan`. Verified Tailscale CLI is not installed and port `3010` is already occupied by an existing dashboard/login service, so Mission Control should use `3011` for now.
+- Added `dev:lan` and `start:lan` npm scripts plus `docs/dashboard-access-plan.md`; permanent user service remains approval-gated.
+- Estimated spend: $0.00 incremental API spend.

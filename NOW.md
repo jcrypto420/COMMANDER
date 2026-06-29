@@ -17,7 +17,7 @@ passed.
 2. If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from
    phone/laptop; credentials, age-gate, verification, password, recovery, and
    2FA stay Josh-controlled.
-3. Next dashboard step: decide whether to run Mission Control as a local/Tailscale service. Current Next.js v0 is built and verified; service install/exposure still requires approval.
+3. Next dashboard step: easiest access is LAN on port 3011 (`npm run dev:lan`, then open `http://192.168.1.189:3011`). Permanent user service still requires approval.
 
 _Done: Telegram phone approval channel is live and locked to Josh's Telegram ID; daily money loop and Weekly Money / Revenue Review now deliver to Telegram._
 _Done: `weekly-money-review` cron is live Mondays at 8am and first run created `WEEKLY_MONEY_REVIEW.md`._

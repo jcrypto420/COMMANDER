@@ -21,6 +21,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-14 | Command Center | 1 | Command Center Dashboard v0 | done | Next.js mission-control dashboard scaffold built; state generator + production build verified | no |
 | CC-15 | Command Center | 1 | Commander operating rhythm v1 | done | drafted `COMMANDER_OPERATING_RHYTHM_V1.md` | no |
 | CC-16 | Command Center | 1 | Weekly Money / Revenue Review Telegram report | done | cron `weekly-money-review` live Mondays 8am; first run created `WEEKLY_MONEY_REVIEW.md` | yes |
+| CC-17 | Command Center | 1 | Mission Control access plan | done | easiest path documented: LAN port 3011 from HP laptop; permanent user service approval phrase ready | yes |
 | REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see `SPRINT_69.md` | no |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | done | draft saved in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; verify named leads before any sending | no |
 | BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | done | strategist package inspected; brand consistency draft next | no |

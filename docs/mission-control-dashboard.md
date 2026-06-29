@@ -36,11 +36,20 @@ Default local dev URL:
 http://127.0.0.1:3010
 ```
 
-Note: port `3010` may already be used by Josh's existing Sovereignty Stack dashboard. For ad-hoc testing, use:
+Easiest HP-laptop-on-home-WiFi access:
 
 ```bash
-npm run dev -- -H 127.0.0.1 -p 3011
+npm run dashboard:state
+npm run dev:lan
 ```
+
+Then open:
+
+```text
+http://192.168.1.189:3011
+```
+
+Note: port `3010` is already used by Josh's existing Sovereignty Stack dashboard/login service. Mission Control should use port `3011` unless that changes.
 
 ## Current verification
 
