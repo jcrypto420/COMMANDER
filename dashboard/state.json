@@ -1,0 +1,698 @@
+{
+  "generated_at": "2026-06-29T20:59:50.630082+00:00",
+  "host": {
+    "name": "commandcenter",
+    "lan_ip": "192.168.1.189",
+    "cwd": "/home/josh/COMMANDER"
+  },
+  "goals": {
+    "sprint_target": "$6.9K in 69 days",
+    "passive_income_target": "$6.9K/month in 1 year",
+    "weekly_time_budget": "10–20 hrs/week",
+    "weekly_cash_budget": "~$100/week"
+  },
+  "focus": {
+    "active": "Command Center reliability + 69-day revenue sprint discovery.",
+    "next3": [
+      "Tomorrow hard start: review `projects/tomorrow-hard-start-2026-06-29.md`,",
+      "If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from",
+      "Build Command Center Dashboard v0 from `projects/command-center-dashboard-v0.md`"
+    ],
+    "money_move": "Made the morning loop easier to scan: one top-level brief, one decision, clear status, no log-diving.",
+    "review": [
+      "Open: `assets/badboys/account-ready-real-assets-v0/review-gallery.html`",
+      "Decide: `APPROVE REAL ASSET ACCOUNT PREP` or `RUN IN-1 LEAD VERIFY`"
+    ]
+  },
+  "tasks": {
+    "all": [
+      {
+        "id": "CC-1",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Create repo scaffolding",
+        "status": "done",
+        "next_action": "—",
+        "approval": "no"
+      },
+      {
+        "id": "CC-2",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Inventory the Pi",
+        "status": "done",
+        "next_action": "aarch64, Debian 12, 31G free",
+        "approval": "no"
+      },
+      {
+        "id": "CC-3",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Verify Hermes install command vs live docs",
+        "status": "done",
+        "next_action": "verified 2026-06-27",
+        "approval": "no"
+      },
+      {
+        "id": "CC-4",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Install Hermes on Pi",
+        "status": "done",
+        "next_action": "v0.17.0 in ~/.local/bin",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-5",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Create `commander` profile + provider",
+        "status": "done",
+        "next_action": "Codex/ChatGPT OAuth",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-6",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Run first safe Hermes task (read-only)",
+        "status": "done",
+        "next_action": "summary passed",
+        "approval": "no"
+      },
+      {
+        "id": "CC-7",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Add OpenRouter as cheap fallback tier",
+        "status": "done",
+        "next_action": "fallback: codex → gemini-2.5-flash → llama-3.1-8b",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-8",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Daily make-money loop as cron (draft-only)",
+        "status": "done",
+        "next_action": "live; fires 7am daily; test run produced correct draft",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-9",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Gateway service (cron scheduler)",
+        "status": "done",
+        "next_action": "user-level (non-root), linger on, NO listening ports",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-10",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Private phone access (Tailscale-first)",
+        "status": "todo",
+        "next_action": "try Tailscale SSH / dashboard before any chat platform",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-11",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Apply approved onboarding intake doc updates",
+        "status": "done",
+        "next_action": "GOALS/NOW/project files updated from INTAKE.md",
+        "approval": "no"
+      },
+      {
+        "id": "CC-12",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Model delegation and token-budget workflow",
+        "status": "done",
+        "next_action": "project-lead protocol added to MODEL_DELEGATION.md",
+        "approval": "no"
+      },
+      {
+        "id": "CC-13",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Test model-specific worker pattern",
+        "status": "todo",
+        "next_action": "run one cheap read-only worker and log result",
+        "approval": "no"
+      },
+      {
+        "id": "CC-14",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Command Center Dashboard v0",
+        "status": "doing",
+        "next_action": "static prototype + integration plan drafted; next build read-only state generator",
+        "approval": "no"
+      },
+      {
+        "id": "CC-15",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Commander operating rhythm v1",
+        "status": "done",
+        "next_action": "drafted `COMMANDER_OPERATING_RHYTHM_V1.md",
+        "approval": "no"
+      },
+      {
+        "id": "CC-16",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Weekly Money / Revenue Review Telegram report",
+        "status": "done",
+        "next_action": "cron `weekly-money-review` live Mondays 8am; first run created `WEEKLY_MONEY_REVIEW.md",
+        "approval": "yes"
+      },
+      {
+        "id": "REV-1",
+        "project": "Revenue Sprint",
+        "priority": "1",
+        "task": "Choose first 69-day revenue sprint experiment",
+        "status": "done",
+        "next_action": "selected Bad Boys/Joycat/Mog primary sprint; see `SPRINT_69.md",
+        "approval": "no"
+      },
+      {
+        "id": "IN-1",
+        "project": "Career/Income",
+        "priority": "2",
+        "task": "First lead list + 1 outreach draft",
+        "status": "done",
+        "next_action": "draft saved in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; verify named leads before any sending",
+        "approval": "no"
+      },
+      {
+        "id": "BB-1",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Public Joycat/Mog/Mogcoin research + asset inventory",
+        "status": "done",
+        "next_action": "strategist package inspected; brand consistency draft next",
+        "approval": "no"
+      },
+      {
+        "id": "BB-2",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "First audience/sales launch loop draft",
+        "status": "done",
+        "next_action": "approval packet drafted; waiting on Josh review for any public action",
+        "approval": "no"
+      },
+      {
+        "id": "BB-3",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Inventory Josh-provided Bad Boys assets",
+        "status": "done",
+        "next_action": "received 27 files; inventory.md updated",
+        "approval": "no"
+      },
+      {
+        "id": "BB-4",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Ops plan for content creation, post scheduling, and long-term planning",
+        "status": "done",
+        "next_action": "reusable draft workflow documented; account creation stays approval-gated",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-5",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok account-creation packet",
+        "status": "done",
+        "next_action": "platform, handle, bio, icon, and first-post rules drafted",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-6",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "First TikTok post batch",
+        "status": "done",
+        "next_action": "7-day batch drafted; ready for approval packet refinement",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-7",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Reusable weekly TikTok batch template",
+        "status": "done",
+        "next_action": "fill-in template created for future weeks",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-8",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "30-day TikTok rollout plan",
+        "status": "done",
+        "next_action": "month-long identity → mascot → product → world-building sequence",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-9",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "30-day day-by-day TikTok map",
+        "status": "done",
+        "next_action": "concrete daily queue for the rollout",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-10",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "30-day rollout approval packet",
+        "status": "done",
+        "next_action": "month approval language and checklist ready",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-11",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok posting / scheduling SOP",
+        "status": "done",
+        "next_action": "repeatable posting workflow and review questions ready",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-12",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok production board",
+        "status": "done",
+        "next_action": "asset queue and status tracker for the month rollout",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-13",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok asset checklist",
+        "status": "done",
+        "next_action": "exact filenames and creation order for the 30-day rollout",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-14",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Week 1 TikTok prompt pack",
+        "status": "done",
+        "next_action": "exact generation prompts for the first seven assets",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-15",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Asset prompt manifest",
+        "status": "done",
+        "next_action": "map filenames to the prompt source docs",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-16",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Month 1 draft PNG assets",
+        "status": "done",
+        "next_action": "all 30 SVGs exported to TikTok-ready PNGs; posting remains approval-gated",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-17",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Week 1 manual posting packet",
+        "status": "doing",
+        "next_action": "v1 hardmode SVGs + captions drafted; export/approval next",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-18",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Product backlog v0",
+        "status": "done",
+        "next_action": "first revenue candidates ranked; sticker/PFP pack selected as fastest signal product",
+        "approval": "no"
+      },
+      {
+        "id": "BB-19",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Week 1 v2 less-corny TikTok pack",
+        "status": "done",
+        "next_action": "colder hooks + 7 SVGs drafted after Josh rejected corny v1 hooks",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-20",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "First sticker/PFP mini-pack draft",
+        "status": "done",
+        "next_action": "six-pack SVG source + preview sheet created; public release approval-gated",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-21",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Mogging marketing tactics study",
+        "status": "done",
+        "next_action": "public sources checked; artifact-first tactic playbook created",
+        "approval": "no"
+      },
+      {
+        "id": "BB-22",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Week 1 v3 artifact-lab TikTok pack",
+        "status": "done",
+        "next_action": "no-hook artifact format drafted after v2 still felt corny",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-23",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok account creation runbook",
+        "status": "blocked",
+        "next_action": "Josh must perform credentials/verification/2FA; Pi browser unavailable",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "Refocus on real assets",
+        "status": "doing",
+        "next_action": "generated TikTok packs demoted; real asset account-ready pack created",
+        "approval": "yes"
+      },
+      {
+        "id": "TG-1",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Telegram phone approval channel",
+        "status": "done",
+        "next_action": "live and locked to Josh's Telegram ID; daily + weekly report delivery enabled",
+        "approval": "yes"
+      },
+      {
+        "id": "WO-1",
+        "project": "Weather Oracle",
+        "priority": "4",
+        "task": "Revenue-option scan before build",
+        "status": "todo",
+        "next_action": "identify profitable/grant/leverage angles",
+        "approval": "no"
+      }
+    ],
+    "doing": [
+      {
+        "id": "CC-14",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Command Center Dashboard v0",
+        "status": "doing",
+        "next_action": "static prototype + integration plan drafted; next build read-only state generator",
+        "approval": "no"
+      },
+      {
+        "id": "BB-17",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Week 1 manual posting packet",
+        "status": "doing",
+        "next_action": "v1 hardmode SVGs + captions drafted; export/approval next",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "Refocus on real assets",
+        "status": "doing",
+        "next_action": "generated TikTok packs demoted; real asset account-ready pack created",
+        "approval": "yes"
+      }
+    ],
+    "blocked": [
+      {
+        "id": "BB-23",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok account creation runbook",
+        "status": "blocked",
+        "next_action": "Josh must perform credentials/verification/2FA; Pi browser unavailable",
+        "approval": "yes"
+      }
+    ],
+    "todo": [
+      {
+        "id": "CC-10",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Private phone access (Tailscale-first)",
+        "status": "todo",
+        "next_action": "try Tailscale SSH / dashboard before any chat platform",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-13",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Test model-specific worker pattern",
+        "status": "todo",
+        "next_action": "run one cheap read-only worker and log result",
+        "approval": "no"
+      },
+      {
+        "id": "WO-1",
+        "project": "Weather Oracle",
+        "priority": "4",
+        "task": "Revenue-option scan before build",
+        "status": "todo",
+        "next_action": "identify profitable/grant/leverage angles",
+        "approval": "no"
+      }
+    ],
+    "approval": [
+      {
+        "id": "CC-10",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Private phone access (Tailscale-first)",
+        "status": "todo",
+        "next_action": "try Tailscale SSH / dashboard before any chat platform",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-17",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "Week 1 manual posting packet",
+        "status": "doing",
+        "next_action": "v1 hardmode SVGs + captions drafted; export/approval next",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-23",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "TikTok account creation runbook",
+        "status": "blocked",
+        "next_action": "Josh must perform credentials/verification/2FA; Pi browser unavailable",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "Refocus on real assets",
+        "status": "doing",
+        "next_action": "generated TikTok packs demoted; real asset account-ready pack created",
+        "approval": "yes"
+      }
+    ],
+    "counts": {
+      "doing": 3,
+      "blocked": 1,
+      "todo": 3,
+      "done": 37
+    }
+  },
+  "hermes": {
+    "raw_ok": true,
+    "provider": "OpenAI Codex",
+    "model": "gpt-5.5",
+    "telegram": "configured",
+    "gateway": "running",
+    "scheduled_jobs": "2 active, 2 total",
+    "active_sessions": "2 session(s)"
+  },
+  "cron": {
+    "ok": true,
+    "daily_loop_active": true,
+    "next_run": "2026-06-30T07:00:00-05:00",
+    "deliver": "telegram:398335714",
+    "last_run": "2026-06-29T07:02:41.435280-05:00  ok"
+  },
+  "git": {
+    "branch": "feat/command-center-scaffolding",
+    "head": "6062923",
+    "dirty_count": 18,
+    "changes": [
+      "M NOW.md",
+      " M TASK_QUEUE.md",
+      " M logs/daily_progress.md",
+      " M logs/model_usage.csv",
+      " M package-lock.json",
+      " M package.json",
+      "?? .next/",
+      "?? COMMANDER_OPERATING_RHYTHM_V1.md",
+      "?? WEEKLY_MONEY_REVIEW.md",
+      "?? app/",
+      "?? assets/badboys/generated/",
+      "?? dashboard/"
+    ]
+  },
+  "sovereignty": {
+    "path": "/home/josh/sovereignty_stack",
+    "services": [
+      {
+        "name": "CasaOS",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Immich",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Grafana",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Uptime Kuma",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Tailscale",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "ticker-service",
+        "status": "code present",
+        "present": true
+      },
+      {
+        "name": "wallet-service",
+        "status": "code present",
+        "present": true
+      },
+      {
+        "name": "resource-service",
+        "status": "code present",
+        "present": true
+      }
+    ],
+    "docker": {
+      "available": true,
+      "containers": [
+        {
+          "name": "resource-service",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:8789->8789/tcp, [::]:8789->8789/tcp"
+        },
+        {
+          "name": "wallet-service",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:8788->8788/tcp, [::]:8788->8788/tcp"
+        },
+        {
+          "name": "ticker-service",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp"
+        },
+        {
+          "name": "big-bear-nexterm",
+          "status": "Restarting (1) 51 seconds ago",
+          "ports": ""
+        },
+        {
+          "name": "grafana",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:3010->3000/tcp, [::]:3010->3000/tcp"
+        },
+        {
+          "name": "navidrome",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:4533->4533/tcp, [::]:4533->4533/tcp"
+        },
+        {
+          "name": "prometheus",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp"
+        },
+        {
+          "name": "node-exporter",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp"
+        },
+        {
+          "name": "homepage",
+          "status": "Up 18 hours (healthy)",
+          "ports": "0.0.0.0:3005->3000/tcp, [::]:3005->3000/tcp"
+        },
+        {
+          "name": "big-bear-glances",
+          "status": "Up 18 hours",
+          "ports": "0.0.0.0:61208->61208/tcp, [::]:61208->61208/tcp, 61209/tcp"
+        },
+        {
+          "name": "immich-server",
+          "status": "Up 18 hours (healthy)",
+          "ports": "0.0.0.0:2283->2283/tcp, [::]:2283->2283/tcp"
+        },
+        {
+          "name": "immich-postgres",
+          "status": "Up 18 hours (healthy)",
+          "ports": "5432/tcp"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  },
+  "learning": {
+    "today": "Dashboards are decision systems: surface the next action, hide the noise.",
+    "qol": "Telegram for quick steering; dashboard for cockpit review; PuTTY only for maintenance.",
+    "system_rule": "Private/Tailscale first. Read-only before action buttons."
+  },
+  "safety": [
+    "no public ports",
+    "no secrets displayed",
+    "no spending",
+    "no outbound posting/sending without approval"
+  ]
+}

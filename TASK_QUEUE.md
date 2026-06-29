@@ -18,7 +18,10 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-11 | Command Center | 1 | Apply approved onboarding intake doc updates | done | GOALS/NOW/project files updated from INTAKE.md | no |
 | CC-12 | Command Center | 1 | Model delegation and token-budget workflow | done | project-lead protocol added to MODEL_DELEGATION.md | no |
 | CC-13 | Command Center | 1 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
-| REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see SPRINT_69.md | no |
+| CC-14 | Command Center | 1 | Command Center Dashboard v0 | done | Next.js mission-control dashboard scaffold built; state generator + production build verified | no |
+| CC-15 | Command Center | 1 | Commander operating rhythm v1 | done | drafted `COMMANDER_OPERATING_RHYTHM_V1.md` | no |
+| CC-16 | Command Center | 1 | Weekly Money / Revenue Review Telegram report | done | cron `weekly-money-review` live Mondays 8am; first run created `WEEKLY_MONEY_REVIEW.md` | yes |
+| REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see `SPRINT_69.md` | no |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | done | draft saved in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; verify named leads before any sending | no |
 | BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | done | strategist package inspected; brand consistency draft next | no |
 | BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | done | approval packet drafted; waiting on Josh review for any public action | no |
@@ -44,7 +47,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | BB-22 | Bad Boys/Joycat | 2 | Week 1 v3 artifact-lab TikTok pack | done | no-hook artifact format drafted after v2 still felt corny | yes |
 | BB-23 | Bad Boys/Joycat | 2 | TikTok account creation runbook | blocked | Josh must perform credentials/verification/2FA; Pi browser unavailable | **yes** |
 | BB-24 | Bad Boys/Joycat | 1 | Refocus on real assets | doing | generated TikTok packs demoted; real asset account-ready pack created | yes |
-| TG-1 | Command Center | 1 | Telegram phone approval channel | blocked | waiting for Josh to create BotFather token; never commit token | **yes** |
+| TG-1 | Command Center | 1 | Telegram phone approval channel | done | live and locked to Josh's Telegram ID; daily + weekly report delivery enabled | **yes** |
 | WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles | no |
 
 ## Notes

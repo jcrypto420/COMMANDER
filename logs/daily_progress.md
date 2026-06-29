@@ -192,4 +192,22 @@ One short entry per working day. What advanced + estimated spend.
 
 - Tightened morning-report UX after Josh's feedback: created top-level `MORNING_REPORT.md`, documented the under-60-line format in `docs/morning-report-format.md`, and updated the 7am `daily-money-loop` cron prompt to rewrite that brief each morning instead of forcing Josh through long logs.
 - Current report now gives one money move, 1–3 done bullets, one 60-second review path, copy/paste decision phrases, safety status, GitHub visibility, and the next safe action.
+- Telegram is now live for Commander, locked to Josh's Telegram user ID, and `daily-money-loop` delivers morning reports to Telegram.
+- Drafted Command Center Dashboard v0: `projects/command-center-dashboard-v0.md` defines the private read-only build path; `prototypes/command-center-dashboard-v0.html` is a Linear/VoltAgent-inspired static mockup for goals, tasks, Hermes health, approvals, subagents, learning/QOL, and Sovereignty Stack integration.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Completed follow-up operating-rhythm calibration with Josh: Daily Dispatch + Weekly Money Review first, Telegram as near-term delivery, Gentle Passive Operator Mode when Josh is busy, and printable/PDF dispatch as a later implementation after message content is useful.
+- Created `COMMANDER_OPERATING_RHYTHM_V1.md` and added CC-15 to `TASK_QUEUE.md` as done. No spending, posting, sending, service changes, or account actions performed.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Josh approved the Weekly Money Review Telegram report. Created `weekly-money-review` cron (`10663c0ba8d8`) for Mondays at 8am local, delivered to Telegram, and ran the first report successfully.
+- First run created `WEEKLY_MONEY_REVIEW.md`; added `docs/weekly-money-review-format.md`; updated `NOW.md` and `TASK_QUEUE.md` to show weekly report delivery is live.
+- Recommendation from first report: unblock one concrete market signal path this week — approve real Bad Boys asset account prep or run IN-1 named-lead verification as the paid-research backstop.
+- Safety: report/draft-only; no posting, sending, spending, secrets, trades, account creation, service changes, or public uploads performed.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Josh approved building Mission Control as a Next.js dashboard and approved local npm install/build. Created the Next.js app (`app/`, `next.config.mjs`, updated `package.json`/lock), kept the server local-only by default, and documented usage in `docs/mission-control-dashboard.md`.
+- Verified `npm run dashboard:state`, `npm run build`, and a local dev render on `127.0.0.1:3011` via curl. Port `3010` is already occupied by an existing local dashboard/login service, so no service change was made.
+- `npm audit --omit=dev` still reports 2 moderate PostCSS advisories through Next's dependency tree; `npm audit fix --force` suggests a breaking downgrade and was not run.
+- Safety: no public ports, no service install, no secrets, no posting/sending/spending/trading/account action.
+- Estimated spend: $0.00 incremental API spend; npm package install used local approved network/package-manager action.

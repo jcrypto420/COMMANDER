@@ -1,5 +1,17 @@
 {
+  "name": "commander-mission-control",
+  "private": true,
+  "scripts": {
+    "dashboard:state": "python3 scripts/build_dashboard_state.py",
+    "dev": "next dev -H 127.0.0.1 -p 3010",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3010",
+    "export:badboys": "node scripts/export_badboys_svgs_to_png.js"
+  },
   "dependencies": {
-    "@resvg/resvg-js": "^2.6.2"
+    "@resvg/resvg-js": "^2.6.2",
+    "next": "^16.2.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

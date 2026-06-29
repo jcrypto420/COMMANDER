@@ -17,10 +17,11 @@ passed.
 2. If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from
    phone/laptop; credentials, age-gate, verification, password, recovery, and
    2FA stay Josh-controlled.
-3. First post candidate is the real `Thunder Up` asset with minimal copy
-   (`testing this.` / `keep or kill?`), no manifesto. IN-1 revenue backstop
-   draft now lives at `projects/in-1-lead-list-outreach-draft-2026-06-29.md`;
-   verify named leads before any sending.
+3. Next dashboard step: decide whether to run Mission Control as a local/Tailscale service. Current Next.js v0 is built and verified; service install/exposure still requires approval.
+
+_Done: Telegram phone approval channel is live and locked to Josh's Telegram ID; daily money loop and Weekly Money / Revenue Review now deliver to Telegram._
+_Done: `weekly-money-review` cron is live Mondays at 8am and first run created `WEEKLY_MONEY_REVIEW.md`._
+_Done: Mission Control Dashboard v0 is now a Next.js app with read-only `dashboard/state.json`, Commander reports, task queue, Hermes/cron status, and Sovereignty Stack panels. `npm run build` passed; no service install or public exposure._
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
@@ -37,7 +38,7 @@ requiring Telegram._
 
 ## Current blockers
 
-- None blocking. Optional: Nous Portal (`hermes login`) for bundled web/browser
+- Optional: Nous Portal (`hermes login`) for bundled web/browser
   tools; add when needed.
 - Spending/sending actions still require Josh's approval (see `SECURITY.md`).
 - Josh's availability may be sporadic around the birth of his son; prefer
