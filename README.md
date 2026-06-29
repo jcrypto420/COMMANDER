@@ -44,6 +44,7 @@ require Josh's approval (see `HERMES_SETUP.md` and `SECURITY.md`).
 | Path | Purpose |
 |------|---------|
 | `GOALS.md` / `NOW.md` | Mission + current focus |
+| `MORNING_REPORT.md` | Latest 60-second morning brief from the daily loop |
 | `PROJECTS.md` / `projects/` | Money-making projects (kept separate) |
 | `TASK_QUEUE.md` | Simple task board |
 | `HERMES_SETUP.md` | Verified Hermes install + `commander` profile |

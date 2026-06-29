@@ -189,3 +189,7 @@ One short entry per working day. What advanced + estimated spend.
 - Because Bad Boys is waiting on Josh approval, executed the safe revenue backstop: created `projects/in-1-lead-list-outreach-draft-2026-06-29.md` with a narrow crypto/data-infrastructure research-support offer, five lead lanes to verify, and one outreach draft. Nothing was sent.
 - Updated `NOW.md` and `TASK_QUEUE.md` to point to the IN-1 draft and keep named-lead verification approval-gated.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Tightened morning-report UX after Josh's feedback: created top-level `MORNING_REPORT.md`, documented the under-60-line format in `docs/morning-report-format.md`, and updated the 7am `daily-money-loop` cron prompt to rewrite that brief each morning instead of forcing Josh through long logs.
+- Current report now gives one money move, 1–3 done bullets, one 60-second review path, copy/paste decision phrases, safety status, GitHub visibility, and the next safe action.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
