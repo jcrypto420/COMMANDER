@@ -20,9 +20,23 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | CC-13 | Command Center | 1 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
 | REV-1 | Revenue Sprint | 1 | Choose first 69-day revenue sprint experiment | done | selected Bad Boys/Joycat/Mog primary sprint; see SPRINT_69.md | no |
 | IN-1 | Career/Income | 2 | First lead list + 1 outreach draft | todo | drafts only, no sending | no |
-| BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | doing | public research brief drafted; waiting for Josh assets | no |
-| BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | doing | brand one-pager + hook bank drafted; prepare approval packet next | no |
-| BB-3 | Bad Boys/Joycat | 2 | Inventory Josh-provided Bad Boys assets | todo | add assets under assets/badboys/; update inventory.md | no |
+| BB-1 | Bad Boys/Joycat | 2 | Public Joycat/Mog/Mogcoin research + asset inventory | done | strategist package inspected; brand consistency draft next | no |
+| BB-2 | Bad Boys/Joycat | 2 | First audience/sales launch loop draft | done | approval packet drafted; waiting on Josh review for any public action | no |
+| BB-3 | Bad Boys/Joycat | 2 | Inventory Josh-provided Bad Boys assets | done | received 27 files; inventory.md updated | no |
+| BB-4 | Bad Boys/Joycat | 2 | Ops plan for content creation, post scheduling, and long-term planning | done | reusable draft workflow documented; account creation stays approval-gated | yes |
+| BB-5 | Bad Boys/Joycat | 2 | TikTok account-creation packet | done | platform, handle, bio, icon, and first-post rules drafted | yes |
+| BB-6 | Bad Boys/Joycat | 2 | First TikTok post batch | done | 7-day batch drafted; ready for approval packet refinement | yes |
+| BB-7 | Bad Boys/Joycat | 2 | Reusable weekly TikTok batch template | done | fill-in template created for future weeks | yes |
+| BB-8 | Bad Boys/Joycat | 2 | 30-day TikTok rollout plan | done | month-long identity → mascot → product → world-building sequence | yes |
+| BB-9 | Bad Boys/Joycat | 2 | 30-day day-by-day TikTok map | done | concrete daily queue for the rollout | yes |
+| BB-10 | Bad Boys/Joycat | 2 | 30-day rollout approval packet | done | month approval language and checklist ready | yes |
+| BB-11 | Bad Boys/Joycat | 2 | TikTok posting / scheduling SOP | done | repeatable posting workflow and review questions ready | yes |
+| BB-12 | Bad Boys/Joycat | 2 | TikTok production board | done | asset queue and status tracker for the month rollout | yes |
+| BB-13 | Bad Boys/Joycat | 2 | TikTok asset checklist | done | exact filenames and creation order for the 30-day rollout | yes |
+| BB-14 | Bad Boys/Joycat | 2 | Week 1 TikTok prompt pack | done | exact generation prompts for the first seven assets | yes |
+| BB-15 | Bad Boys/Joycat | 2 | Asset prompt manifest | done | map filenames to the prompt source docs | yes |
+| BB-16 | Bad Boys/Joycat | 2 | Month 1 draft PNG assets | done | all 30 SVGs exported to TikTok-ready PNGs; posting remains approval-gated | yes |
+| BB-17 | Bad Boys/Joycat | 2 | Week 1 manual posting packet | doing | PNGs and captions paired for first 7 posts | yes |
 | TG-1 | Command Center | 1 | Telegram phone approval channel | blocked | waiting for Josh to create BotFather token; never commit token | **yes** |
 | WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles | no |
 

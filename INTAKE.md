@@ -24,6 +24,7 @@ Josh wants Commander to help build real financial freedom without sacrificing fa
 
 - Scale the passive-income/freedom vision to the point where Josh can spend his time exactly how he wants with zero constraints.
 - Increase capacity to contribute to public goods and aligned ecosystem work.
+- Make learning and overall daily quality-of-life improvement a standing long-term goal for both Josh and Commander/system. Principle: consistent, intentional improvement = enjoyment of life.
 
 ## Constraints
 

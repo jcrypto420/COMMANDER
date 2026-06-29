@@ -29,13 +29,20 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 ## Status
 
 - [ ] Product backlog v0
-- [ ] Brand consistency doc
-- [ ] First social calendar week
-- [ ] Public Joycat / Mog / Mogcoin research brief
-- [ ] Bad Boys asset inventory from Josh-provided files
-- [ ] First audience/sales launch loop draft
+- [x] Brand consistency doc
+- [x] First social calendar week
+- [x] TikTok account-creation packet
+- [x] 30-day TikTok rollout plan
+- [x] 30-day approval packet
+- [x] TikTok production board
+- [x] TikTok asset checklist
+- [x] Week 1 TikTok prompt pack
+- [x] Week 2–4 TikTok prompt pack
+- [x] Public Joycat / Mog / Mogcoin research brief
+- [x] Bad Boys asset inventory from Josh-provided files
+- [x] First audience/sales launch loop draft
 - [ ] Phone approval channel connected before public posting cadence
-- [ ] First public approval packet prepared
+- [x] First public approval packet prepared
 
 ## First-win metrics
 

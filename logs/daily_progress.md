@@ -77,3 +77,60 @@ One short entry per working day. What advanced + estimated spend.
   `projects/badboys-brand-onepager.md` and `projects/badboys-content-hooks.md`
   as no-posting/no-spend launch materials for Josh approval.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Pulled Josh-added Bad Boys assets from GitHub: 27 files under
+  `assets/badboys/`, including logos/art variants, an 85-page PDF brand guide,
+  and a strategist ZIP package. Updated `assets/badboys/inventory.md`.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Added Josh's long-term goal/principle to `GOALS.md`, `INTAKE.md`, and
+  `NOW.md`: learning and consistent daily quality-of-life improvement for both
+  Josh and Commander/system; consistent, intentional improvement = enjoyment of
+  life.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Drafted `projects/badboys-approval-packet.md` to package the first public-test
+  review into one concise approval-ready artifact, while leaving Telegram setup
+  for later.
+- Inspected the Bad Boys strategist package / brand guide, confirmed the OG face
+  logo is the source of truth, and created `projects/badboys-brand-consistency.md`
+  as the next draft step.
+- Drafted `projects/badboys-social-calendar-week1.md` from the brand standard,
+  focusing week one on manifesto, identity, Joycat crossover, product seed, and
+  world-building signal tests.
+- Built `projects/badboys-ops-plan.md` to cover content creation, post
+  scheduling, long-term planning, and account-creation prep as a reusable
+  operating system.
+- Drafted `projects/badboys-tiktok-30-day-rollout.md` with week-by-week themes
+  for identity, mascot, product seed, and world-building signal tests.
+- Added `projects/badboys-tiktok-week2-4-prompt-pack.md` and
+  `projects/badboys-tiktok-asset-prompt-manifest.md` to cover the remaining
+  assets and map each filename to its prompt source.
+- Created seven zero-cost local SVG draft assets under
+  `assets/badboys/tiktok/week1/` for the first TikTok content week.
+- Created the remaining 23 local SVG draft assets under
+  `assets/badboys/tiktok/month1/`, completing the full 30-day internal draft
+  asset set.
+- Added `projects/badboys-tiktok-month1-asset-generation-order.md` to track the
+  full draft asset set and the remaining PNG export/tooling gate.
+- Added `projects/badboys-tiktok-month1-posting-queue.md` pairing all 30 draft
+  assets with captions, CTAs, and approval-gated statuses.
+- Installed local no-sudo PNG export tooling with `@resvg/resvg-js`, added
+  `scripts/export_badboys_svgs_to_png.js`, exported all 30 assets to
+  `assets/badboys/tiktok/png/`, and verified they are 1080x1920 PNGs.
+- Visual spot-check caught footer/CTA/image-reference issues in the first export;
+  rebuilt canonical SVG sources under `assets/badboys/tiktok/svg/`, embedded the
+  face mark, removed stale footer copy, re-exported all PNGs, and re-verified
+  30 valid 1080x1920 outputs.
+- Added `projects/badboys-tiktok-week1-manual-posting-packet.md` and
+  `projects/badboys-tiktok-png-export-toolchain.md`.
+- Added `projects/badboys-tiktok-account-readiness.md` and
+  `projects/badboys-tiktok-week1-asset-generation-order.md` so account setup and
+  Week 1 production are explicit while remaining approval-gated.
+- Revised TikTok account docs after Josh rejected the first handle set, removed
+  “Moggers mog” from the bio direction, and locked `bebad4good` as the preferred
+  TikTok handle.
+- Updated `TASK_QUEUE.md` and `NOW.md` to move active work into Week 1 asset
+  review/export and account readiness.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex
+  session.

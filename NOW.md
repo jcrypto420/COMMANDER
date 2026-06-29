@@ -11,14 +11,10 @@ passed.
 
 ## Next 3 tasks
 
-1. Gather Bad Boys / Joycat / Mog context: public CT research plus any
-   Josh-provided brand assets, logos, domains, accounts, and files. (BB-1)
-2. Decide the safest phone-convenient interaction path: GitHub/logs as source
-   of truth plus phone summaries/blockers/approval requests only. (CC-10)
-3. Draft the first Bad Boys / Joycat / Mog launch loop: content cadence, first
-   offer, approval checkpoints, and no public posting yet. (BB-2)
-4. Apply model delegation / token-budget workflow so GPT-5.5 is used only for
-   high-leverage checkpoints and daily work continues on cheaper models. (CC-12)
+1. Use the Week 1 manual posting packet to create/prepare TikTok account
+   `bebad4good`; stop at credentials, verification, or 2FA steps Josh must own.
+2. Review the 30 exported PNG assets and refine any weak first-week creative.
+3. After account prep, run the Week 1 final approval checkpoint before any post.
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
@@ -30,6 +26,8 @@ _Done: REV-1 selected Bad Boys / Joycat / Mog as the primary 69-day sprint;
 see `SPRINT_69.md`. Phone/autonomy plan drafted in `PHONE_AUTONOMY.md`._
 _Done: model delegation plan drafted in `MODEL_DELEGATION.md` to prevent premium
 usage blockages._
+_Done: Bad Boys / Joycat / Mog approval packet drafted for later review without
+requiring Telegram._
 
 ## Current blockers
 
@@ -38,5 +36,10 @@ usage blockages._
 - Spending/sending actions still require Josh's approval (see `SECURITY.md`).
 - Josh's availability may be sporadic around the birth of his son; prefer
   asynchronous systems, queues, drafts, and approval checkpoints.
+
+## Standing long-term principle
+
+- Learning and daily quality-of-life improvement matter alongside money goals:
+  consistent, intentional improvement = enjoyment of life.
 
 _Update this file at the start and end of each working session._

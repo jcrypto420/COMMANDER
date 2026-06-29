@@ -25,6 +25,8 @@ public goods, and spend his time with fewer constraints.
 - At least **$6.9K/month passive income** within 1 year.
 - Scale toward full time optionality and capacity to fund public goods / aligned
   ecosystem work.
+- Build a durable learning and quality-of-life improvement loop for both Josh
+  and Commander: consistent, intentional improvement = enjoyment of life.
 - Cheap-first model routing (local → cheap hosted → premium only when needed).
 - Stronger local inference offloaded to a Mac mini / custom PC; Pi stays the
   orchestrator.
