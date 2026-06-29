@@ -1,0 +1,799 @@
+{
+  "generated_at": "2026-09-27T16:24:21.931916+00:00",
+  "host": {
+    "name": "commandcenter",
+    "lan_ip": "192.168.1.189",
+    "cwd": "/home/josh/COMMANDER"
+  },
+  "goals": {
+    "sprint_target": "$6.9K in 69 days",
+    "passive_income_target": "$6.9K/month in 1 year",
+    "weekly_time_budget": "10–20 hrs/week",
+    "weekly_cash_budget": "~$100/week"
+  },
+  "focus": {
+    "active": "unknown",
+    "next3": [
+      "**Freedom Engine / Boring Report:** the bounded Aave V3 WETH feed-map evidence verifies locally against 91 hashed snapshots and now renders deterministically as a local Oracle & Collateral Change Log baseline pilot (Markdown/JSON/HTML). The 2026-08-16 second observation bundle is now captured; a new draft-only shortlist now favors WBTC first for the next bounded asset, but the real next step still waits on a fresh verified snapshot before any new comparison. On 2026-09-08, the CI-1 packet/brief/next-step note stayed current for morning re-entry while the live source surface remained anchored to the 2026-09-05 recheck; the reusable compare-only run note still keeps the next pass compact too. Next: compare the current bundle against the 2026-08-14 baseline, render only literal configuration changes, and still defer publication, payment, and account action. Plan: `projects/boring-report-prd.md`.",
+      "**CI-1 — Anchorage Digital Trading Operations, Transformation Lead:** the primary cash-runway decision surface. The official public Lever page was rechecked on 2026-09-26 (morning loop fresh recheck): posting ID `b3c332bc` is still open, **location changed from United States to Singapore** — a material scope change that fundamentally alters the prior remote-US premise. The live title has been \"Trading Operations, Transformation Lead\" since the 2026-09-22 title change. The packet, decision brief, source note, application-form preflight, and next-step note are all updated to the new title and the 2026-09-26 recheck. **CRITICAL 2026-09-26 findings:** (1) location changed from United States to Singapore — needs Josh's go/no-go on Singapore-based remote work and traveling to Singapore for the mandatory in-person onboarding; (2) in-person onboarding requirement confirmed on both Anchorage postings — \"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions.\" Compensation is still not disclosed; the role stays gated on the remote floor ($120K min / $150K preferred, with Singapore adding complexity) and Josh's scope + location verdict. Anchorage's board also lists a secondary live candidate — \"Member of Trading Operations\" (ID `0f13c760`) — which retained United States / Remote-US on the 2026-09-26 recheck (it did NOT change to Singapore) and is fully drafted ahead, ready as the next CI-1 surface if the Transformation Lead gate stays closed."
+    ],
+    "money_move": "Clean the operating loop before adding more features.",
+    "review": [
+      "Open: NOW.md"
+    ]
+  },
+  "tasks": {
+    "all": [
+      {
+        "id": "FE-1",
+        "project": "Family Freedom Engine / Boring Report",
+        "priority": "1",
+        "task": "First sellable proof — paid agent evidence primitive",
+        "status": "doing",
+        "next_action": "The filled-in WETH comparison result note at `products/boring-report/scorecard/output/aave-v3-comparison-result-note-2026-09-22.md` now documents the completed 2026-08-16 vs 2026-08-14 literal comparison (feed address and decimals unchanged; only latest-round fields moved; verifier rehashed 3 baseline + 91 Aave snapshots, 4 focused tests passed, deterministic renderer exact; no heartbeat/staleness/completeness/financial-advice claim). The new reentry note `products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-22.md` and the WBTC-first preflight note `products/boring-report/scorecard/output/aave-v3-wbtc-preflight-note-2026-09-22.md` keep the compare-only surface current and concrete for the next bounded asset. The new WBTC snapshot capture checklist `products/boring-report/scorecard/output/aave-v3-wbtc-capture-checklist-2026-09-22.md` turns the reusable templates into an operator-ready 6-step run sheet (prerequisites → WBTC anchors → 3 RPC captures → manifest → pre-comparison verification → comparison constraints). Next: wait for a fresh verified WBTC bundle before the WBTC-first comparison; keep publication/payment/account actions gated.",
+        "approval": "no"
+      },
+      {
+        "id": "CI-1",
+        "project": "Career/Income",
+        "priority": "1",
+        "task": "Global high-compensation cash runway",
+        "status": "todo",
+        "next_action": "Anchorage Digital **Trading Operations, Transformation Lead** (posting ID `b3c332bc`) is the primary decision packet: the official public Lever page was rechecked on 2026-09-26 and still shows the role as open, **Singapore, Remote** (Full-Time - Remote), under Global Operations → Trading Operations, title unchanged at **\"Trading Operations, Transformation Lead\"** since the 2026-09-22 title change. **CRITICAL 2026-09-26 finding:** the live posting's location changed from United States to **Singapore** — a material scope change that fundamentally alters the prior remote-US premise; needs Josh's go/no-go (Singapore-based remote + mandatory in-person onboarding travel to Singapore). The \"Transformation Lead\" framing is a positive fit signal vs. the prior title. Both Anchorage postings carry an in-person onboarding requirement (\"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions\") — confirmed on both live pages 2026-09-26. The packet, decision brief, source note, application-form preflight, next-step note are all updated to the new title and the 2026-09-26 recheck. Compensation is still not disclosed; the role stays gated on the floor (remote $120K min / $150K preferred, with Singapore adding complexity) and Josh's scope + location verdict. **DRAFT-AHEAD COMPLETE 2026-09-23:** the secondary candidate — **\"Member of Trading Operations\"** (ID `0f13c760`) — is fully drafted with packet + decision brief + source note, ready as the next CI-1 surface if the Transformation Lead gate stays closed. Note: the Member of Trading Operations role still shows United States / Remote-US on the 2026-09-26 recheck — it did NOT change to Singapore.",
+        "approval": "yes"
+      },
+      {
+        "id": "WO-2",
+        "project": "Weather Oracle",
+        "priority": "2",
+        "task": "Compounding capture loop",
+        "status": "blocked",
+        "next_action": "2026-08-27 upkeep: draft-only cleanup note at `projects/weather-oracle-repo-cleanup-draft.md` stays current; keep the packet / run sheet / result-note bundle aligned and leave build work parked until the Boring Report proves paid demand or a buyer/partner wedge makes Forecast Receipts commercially concrete.",
+        "approval": "no"
+      },
+      {
+        "id": "BB-25",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "CARTOON LAB",
+        "status": "blocked",
+        "next_action": "Reopen only after Family Freedom Engine proof or explicit Josh creative call. Prior experiments are rejected; no more composite-video churn.",
+        "approval": "no"
+      },
+      {
+        "id": "PS-1",
+        "project": "Primoscapes",
+        "priority": "2",
+        "task": "Fall Native Prairie prep",
+        "status": "blocked",
+        "next_action": "Reopen when Josh supplies price basis, licensing/insurance status, and public-name call; then turn it into one real offer and outreach test.",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-26",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "Idea-bank cron",
+        "status": "blocked",
+        "next_action": "Reopen only after one finished Bad Boys clip has been reviewed. Finished media outranks premise-bank automation.",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24/17/23",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "Merch/posting/account theory",
+        "status": "blocked",
+        "next_action": "Reopen after a real clip receives a keep verdict or public signal.",
+        "approval": "yes"
+      },
+      {
+        "id": "MA-1",
+        "project": "Market Activity",
+        "priority": "3",
+        "task": "Market activity tracker",
+        "status": "blocked",
+        "next_action": "2026-09-26 update: the config-wiring build step is implemented and smoke-tested in `scripts/fetch_market_activity.py` (live run wrote `dashboard/market_activity.json` at 5,257 bytes, 0 warnings); a new daily-snapshots design note at `projects/market-activity-snapshots-draft.md` converts the vague \"add daily snapshots\" next action into a concrete, build-ready design (recommended Option A: single capped history file `dashboard/market_activity_history.json` with 30-day cap, same-day overwrite, fetcher history-write step first, then a `/market` \"change vs yesterday\" panel). Keep the lane parked behind the CI-1 week-smooth reopen condition; when reopened, implement the fetcher history-write step, verify with a live run, then add the dashboard change panel.",
+        "approval": "no"
+      }
+    ],
+    "doing": [
+      {
+        "id": "FE-1",
+        "project": "Family Freedom Engine / Boring Report",
+        "priority": "1",
+        "task": "First sellable proof — paid agent evidence primitive",
+        "status": "doing",
+        "next_action": "The filled-in WETH comparison result note at `products/boring-report/scorecard/output/aave-v3-comparison-result-note-2026-09-22.md` now documents the completed 2026-08-16 vs 2026-08-14 literal comparison (feed address and decimals unchanged; only latest-round fields moved; verifier rehashed 3 baseline + 91 Aave snapshots, 4 focused tests passed, deterministic renderer exact; no heartbeat/staleness/completeness/financial-advice claim). The new reentry note `products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-22.md` and the WBTC-first preflight note `products/boring-report/scorecard/output/aave-v3-wbtc-preflight-note-2026-09-22.md` keep the compare-only surface current and concrete for the next bounded asset. The new WBTC snapshot capture checklist `products/boring-report/scorecard/output/aave-v3-wbtc-capture-checklist-2026-09-22.md` turns the reusable templates into an operator-ready 6-step run sheet (prerequisites → WBTC anchors → 3 RPC captures → manifest → pre-comparison verification → comparison constraints). Next: wait for a fresh verified WBTC bundle before the WBTC-first comparison; keep publication/payment/account actions gated.",
+        "approval": "no"
+      }
+    ],
+    "blocked": [
+      {
+        "id": "WO-2",
+        "project": "Weather Oracle",
+        "priority": "2",
+        "task": "Compounding capture loop",
+        "status": "blocked",
+        "next_action": "2026-08-27 upkeep: draft-only cleanup note at `projects/weather-oracle-repo-cleanup-draft.md` stays current; keep the packet / run sheet / result-note bundle aligned and leave build work parked until the Boring Report proves paid demand or a buyer/partner wedge makes Forecast Receipts commercially concrete.",
+        "approval": "no"
+      },
+      {
+        "id": "BB-25",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "CARTOON LAB",
+        "status": "blocked",
+        "next_action": "Reopen only after Family Freedom Engine proof or explicit Josh creative call. Prior experiments are rejected; no more composite-video churn.",
+        "approval": "no"
+      },
+      {
+        "id": "PS-1",
+        "project": "Primoscapes",
+        "priority": "2",
+        "task": "Fall Native Prairie prep",
+        "status": "blocked",
+        "next_action": "Reopen when Josh supplies price basis, licensing/insurance status, and public-name call; then turn it into one real offer and outreach test.",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-26",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "Idea-bank cron",
+        "status": "blocked",
+        "next_action": "Reopen only after one finished Bad Boys clip has been reviewed. Finished media outranks premise-bank automation.",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24/17/23",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "Merch/posting/account theory",
+        "status": "blocked",
+        "next_action": "Reopen after a real clip receives a keep verdict or public signal.",
+        "approval": "yes"
+      },
+      {
+        "id": "MA-1",
+        "project": "Market Activity",
+        "priority": "3",
+        "task": "Market activity tracker",
+        "status": "blocked",
+        "next_action": "2026-09-26 update: the config-wiring build step is implemented and smoke-tested in `scripts/fetch_market_activity.py` (live run wrote `dashboard/market_activity.json` at 5,257 bytes, 0 warnings); a new daily-snapshots design note at `projects/market-activity-snapshots-draft.md` converts the vague \"add daily snapshots\" next action into a concrete, build-ready design (recommended Option A: single capped history file `dashboard/market_activity_history.json` with 30-day cap, same-day overwrite, fetcher history-write step first, then a `/market` \"change vs yesterday\" panel). Keep the lane parked behind the CI-1 week-smooth reopen condition; when reopened, implement the fetcher history-write step, verify with a live run, then add the dashboard change panel.",
+        "approval": "no"
+      }
+    ],
+    "todo": [
+      {
+        "id": "CI-1",
+        "project": "Career/Income",
+        "priority": "1",
+        "task": "Global high-compensation cash runway",
+        "status": "todo",
+        "next_action": "Anchorage Digital **Trading Operations, Transformation Lead** (posting ID `b3c332bc`) is the primary decision packet: the official public Lever page was rechecked on 2026-09-26 and still shows the role as open, **Singapore, Remote** (Full-Time - Remote), under Global Operations → Trading Operations, title unchanged at **\"Trading Operations, Transformation Lead\"** since the 2026-09-22 title change. **CRITICAL 2026-09-26 finding:** the live posting's location changed from United States to **Singapore** — a material scope change that fundamentally alters the prior remote-US premise; needs Josh's go/no-go (Singapore-based remote + mandatory in-person onboarding travel to Singapore). The \"Transformation Lead\" framing is a positive fit signal vs. the prior title. Both Anchorage postings carry an in-person onboarding requirement (\"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions\") — confirmed on both live pages 2026-09-26. The packet, decision brief, source note, application-form preflight, next-step note are all updated to the new title and the 2026-09-26 recheck. Compensation is still not disclosed; the role stays gated on the floor (remote $120K min / $150K preferred, with Singapore adding complexity) and Josh's scope + location verdict. **DRAFT-AHEAD COMPLETE 2026-09-23:** the secondary candidate — **\"Member of Trading Operations\"** (ID `0f13c760`) — is fully drafted with packet + decision brief + source note, ready as the next CI-1 surface if the Transformation Lead gate stays closed. Note: the Member of Trading Operations role still shows United States / Remote-US on the 2026-09-26 recheck — it did NOT change to Singapore.",
+        "approval": "yes"
+      }
+    ],
+    "approval": [
+      {
+        "id": "CI-1",
+        "project": "Career/Income",
+        "priority": "1",
+        "task": "Global high-compensation cash runway",
+        "status": "todo",
+        "next_action": "Anchorage Digital **Trading Operations, Transformation Lead** (posting ID `b3c332bc`) is the primary decision packet: the official public Lever page was rechecked on 2026-09-26 and still shows the role as open, **Singapore, Remote** (Full-Time - Remote), under Global Operations → Trading Operations, title unchanged at **\"Trading Operations, Transformation Lead\"** since the 2026-09-22 title change. **CRITICAL 2026-09-26 finding:** the live posting's location changed from United States to **Singapore** — a material scope change that fundamentally alters the prior remote-US premise; needs Josh's go/no-go (Singapore-based remote + mandatory in-person onboarding travel to Singapore). The \"Transformation Lead\" framing is a positive fit signal vs. the prior title. Both Anchorage postings carry an in-person onboarding requirement (\"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions\") — confirmed on both live pages 2026-09-26. The packet, decision brief, source note, application-form preflight, next-step note are all updated to the new title and the 2026-09-26 recheck. Compensation is still not disclosed; the role stays gated on the floor (remote $120K min / $150K preferred, with Singapore adding complexity) and Josh's scope + location verdict. **DRAFT-AHEAD COMPLETE 2026-09-23:** the secondary candidate — **\"Member of Trading Operations\"** (ID `0f13c760`) — is fully drafted with packet + decision brief + source note, ready as the next CI-1 surface if the Transformation Lead gate stays closed. Note: the Member of Trading Operations role still shows United States / Remote-US on the 2026-09-26 recheck — it did NOT change to Singapore.",
+        "approval": "yes"
+      },
+      {
+        "id": "PS-1",
+        "project": "Primoscapes",
+        "priority": "2",
+        "task": "Fall Native Prairie prep",
+        "status": "blocked",
+        "next_action": "Reopen when Josh supplies price basis, licensing/insurance status, and public-name call; then turn it into one real offer and outreach test.",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-26",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "Idea-bank cron",
+        "status": "blocked",
+        "next_action": "Reopen only after one finished Bad Boys clip has been reviewed. Finished media outranks premise-bank automation.",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24/17/23",
+        "project": "Bad Boys/Joycat",
+        "priority": "3",
+        "task": "Merch/posting/account theory",
+        "status": "blocked",
+        "next_action": "Reopen after a real clip receives a keep verdict or public signal.",
+        "approval": "yes"
+      }
+    ],
+    "counts": {
+      "doing": 1,
+      "blocked": 6,
+      "todo": 1,
+      "done": 0
+    }
+  },
+  "projects": [
+    {
+      "id": "badboys-cartoon-lab",
+      "title": "BAD BOYS CARTOON LAB — Studio Pipeline v1 (2026-07-03)",
+      "path": "projects/badboys-cartoon-lab.md",
+      "status_lines": [
+        "State: ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+        "Last advanced: 2026-07-06 — Stage 4 (animation) + Stage 5 (cut/export) DONE for T+2 Ep.1. Final rendered+muxed short at assets/badboys/cartoon-lab/t2-ep1/t2ep1master.mp4 (18.0s, 1080x1920, VO+SFX muxed, caption burned in).",
+        "GATE 1 PASSED 2026-07-03 (evening): Josh SHIPPED all four pilots via widget verdict. Production order: P4 \"T+2\" first, then P2 → P1 → P3.",
+        "Next action: AWAITING JOSH GATE 2 on T+2 Ep.1 — ship/kill call on t2ep1master.mp4. Several creative calls made where the storyboard was ambiguous (see BB-25 task note / Claude's Gate 2 message) — flagged, not silently improvised."
+      ],
+      "state": "ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+      "last_advanced": "2026-07-06 — Stage 4 (animation) + Stage 5 (cut/export) DONE for T+2 Ep.1. Final rendered+muxed short at assets/badboys/cartoon-lab/t2-ep1/t2ep1master.mp4 (18.0s, 1080x1920, VO+SFX muxed, caption burned in).",
+      "next_action": "AWAITING JOSH GATE 2 on T+2 Ep.1 — ship/kill call on t2ep1master.mp4. Several creative calls made where the storyboard was ambiguous (see BB-25 task note / Claude's Gate 2 message) — flagged, not silently improvised.",
+      "waiting_on": ""
+    },
+    {
+      "id": "badboys-idea-bank-cron-draft",
+      "title": "Bad Boys / Joycat — Hermes idea-bank + MoA critics cron draft",
+      "path": "projects/badboys-idea-bank-cron-draft.md",
+      "status_lines": [
+        "State: DRAFT ONLY — internal design packet for BB-26; no cron enabled, no outbound actions, no public posting",
+        "Purpose: turn the existing Bad Boys constitution + pipeline into a cheap weekly idea-bank loop that pre-filters premises before Josh ever sees them",
+        "Source of truth: projects/badboys-cartoon-lab.md is authoritative for style/constitution; this packet only packages the cron draft",
+        "Draft progress 2026-07-09: added a concrete 10-premise seed set and a cheap implementation shape so the packet is closer to decision-ready"
+      ],
+      "state": "DRAFT ONLY — internal design packet for BB-26; no cron enabled, no outbound actions, no public posting",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "badboys-joycat",
+      "title": "Bad Boys / Joycat Creative Business",
+      "path": "projects/badboys-joycat.md",
+      "status_lines": [
+        "State: REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+        "Last advanced: 2026-07-11 — BB-24 decision packet selected Bad Boys Mark Sheet v0: a restrained three-piece die-cut sticker sheet from canonical/real assets. Fourthwall is the deferred storefront choice after a content signal; no account or sale path opened.",
+        "Next action: Josh may approve local print-ready masters + a preview only via APPROVE BB-24 STICKER SHEET DRAFT.",
+        "Waiting on: nothing for drafts; Josh's account decision for anything public"
+      ],
+      "state": "REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+      "last_advanced": "2026-07-11 — BB-24 decision packet selected Bad Boys Mark Sheet v0: a restrained three-piece die-cut sticker sheet from canonical/real assets. Fourthwall is the deferred storefront choice after a content signal; no account or sale path opened.",
+      "next_action": "Josh may approve local print-ready masters + a preview only via APPROVE BB-24 STICKER SHEET DRAFT.",
+      "waiting_on": "nothing for drafts; Josh's account decision for anything public"
+    },
+    {
+      "id": "boring-report-prd",
+      "title": "PRD — \"THE BORING REPORT\" (working title, Josh names it at Gate N1)",
+      "path": "projects/boring-report-prd.md",
+      "status_lines": [
+        "State: P0 + P1 SHIPPED (2026-07-05; W28 v0 generated, critic-fixed, verified — see products/boring-report/). P0.1 re-probe (2026-07-07, Mac) solved the one P0 blocker: Chainlink feed/PoR inventory is machine-readable via reference-data-directory.vercel.app JSON (315 mainnet feeds, 25 PoR) — see products/boring-report/SOURCES.md",
+        "Portfolio reset 2026-07-25: The Boring Report is now the flagship compounding data/product build (see projects/portfolio-reset-2026-07-25.md). P2 Oracle Scorecard v0 evidence baseline built 2026-07-27 and internally reviewed 2026-07-30: two protocol fact files, three SHA-256-verified source snapshots, deterministic scoring, rendered Markdown/JSON/HTML, and a fail-closed verifier live under products/boring-report/scorecard/. The acceptance note is products/boring-report/scorecard/internal-review-2026-07-30.md. It is deliberately architecture-evidence-only; the next increment is one traceable Aave V3 deployment feed map, followed by heartbeat observations and a sourced incident ledger before broader score claims. Draft support now exists in products/boring-report/scorecard/output/aave-v3-deployment-feed-map-draft.md with the official Aave address-book oracle anchor and the required fact-file shape, plus a reusable local run note at products/boring-report/scorecard/output/aave-v3-deployment-feed-map-run-note.md. The follow-up checklist now lives in products/boring-report/scorecard/output/aave-v3-second-observation-checklist.md, and the new draft-only shortlist note keeps WBTC first, one new bounded asset only, and the fresh verified bundle gate in place before any new snapshot run; the current re-entry note makes the next pass compare-only against the 2026-08-14 baseline before any future WBTC-first expansion. The compare-only handoff now also has a reusable result-note template at products/boring-report/scorecard/output/aave-v3-comparison-result-note-template.md, plus the current 2026-09-06 re-entry note at products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-06.md, a reusable local run note at products/boring-report/scorecard/output/aave-v3-comparison-run-note-2026-09-06.md, and the existing 2026-08-30 preflight note so the draft-only compare surface stays current without authorizing a new snapshot run. On 2026-08-14 the first bounded deployment row landed in products/boring-report/scorecard/facts/aave-v3-deployment-feed-map.json with a bounded WETH-only literal comparison surface; no heartbeat or completeness claim follows from the observed latest-round movement. On 2026-09-22 the compare-only handoff was refreshed to a new dated re-entry note at products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-22.md, the verifier and four focused tests were re-run locally and still pass, and a new WBTC-first snapshot preflight note was drafted at products/boring-report/scorecard/output/aave-v3-wbtc-preflight-note-2026-09-22.md to define the exact capture shape for the next bounded asset expansion when a fresh verified bundle exists; the existing 2026-08-14 WBTC baseline row remains the cited reference for that next pass.",
+        "Waiting on: Josh's Gate 1 verdict; Josh's name verdict at Gate N1"
+      ],
+      "state": "P0 + P1 SHIPPED (2026-07-05; W28 v0 generated, critic-fixed, verified — see products/boring-report/). P0.1 re-probe (2026-07-07, Mac) solved the one P0 blocker: Chainlink feed/PoR inventory is machine-readable via reference-data-directory.vercel.app JSON (315 mainnet feeds, 25 PoR) — see products/boring-report/SOURCES.md",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": "Josh's Gate 1 verdict; Josh's name verdict at Gate N1"
+    },
+    {
+      "id": "career-income",
+      "title": "Career / Income (Priority 1)",
+      "path": "projects/career-income.md",
+      "status_lines": [
+        "State: ACTIVE CASH RUNWAY — global $150K+ base search (CI-1); fully remote roles may clear at $120K+.",
+        "Portfolio role: one of two Family Freedom Engines alongside the owned Boring Report asset; employment supplies predictable cash/benefits while owned revenue compounds.",
+        "Exclusions: Coinbase Operations is killed by Josh taste call. No quota-heavy sales or low-compensation roles.",
+        "Next action: Anchorage Digital Trading Operations, Transformation Lead (posting ID b3c332bc) is the live CI-1 decision surface: the official public Lever page was rechecked on 2026-09-26 (morning loop fresh recheck) and still shows the role as open, but location changed from United States to Singapore — a material scope change. Title unchanged at \"Trading Operations, Transformation Lead\" since the 2026-09-22 recheck. The packet, decision brief, source note, application-form preflight, and next-step note are refreshed to the 2026-09-26 recheck. CRITICAL 2026-09-26 finding: the location field now shows Singapore instead of the United States documented in prior rechecks — this is a material scope change that fundamentally alters the remote-US premise. The public page also carries an in-person onboarding requirement — \"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions.\" Both findings need Josh's go/no-go. Compensation is still not disclosed, so it remains a strong settlement/reconciliation/control fit with a real transformation-lead stretch — confirm the location (Singapore vs US), the compensation floor, and the scope before any application discussion. Anchorage's board also lists a secondary live candidate — \"Member of Trading Operations\" (ID 0f13c760) — which retained United States location on the 2026-09-26 recheck (it did NOT change to Singapore) and is drafted ahead and ready as the next CI-1 surface if the Transformation Lead gate stays closed. Ripple remains a secondary hold only."
+      ],
+      "state": "ACTIVE CASH RUNWAY — global $150K+ base search (CI-1); fully remote roles may clear at $120K+.",
+      "last_advanced": "",
+      "next_action": "Anchorage Digital Trading Operations, Transformation Lead (posting ID b3c332bc) is the live CI-1 decision surface: the official public Lever page was rechecked on 2026-09-26 (morning loop fresh recheck) and still shows the role as open, but location changed from United States to Singapore — a material scope change. Title unchanged at \"Trading Operations, Transformation Lead\" since the 2026-09-22 recheck. The packet, decision brief, source note, application-form preflight, and next-step note are refreshed to the 2026-09-26 recheck. CRITICAL 2026-09-26 finding: the location field now shows Singapore instead of the United States documented in prior rechecks — this is a material scope change that fundamentally alters the remote-US premise. The public page also carries an in-person onboarding requirement — \"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions.\" Both findings need Josh's go/no-go. Compensation is still not disclosed, so it remains a strong settlement/reconciliation/control fit with a real transformation-lead stretch — confirm the location (Singapore vs US), the compensation floor, and the scope before any application discussion. Anchorage's board also lists a secondary live candidate — \"Member of Trading Operations\" (ID 0f13c760) — which retained United States location on the 2026-09-26 recheck (it did NOT change to Singapore) and is drafted ahead and ready as the next CI-1 surface if the Transformation Lead gate stays closed. Ripple remains a secondary hold only.",
+      "waiting_on": ""
+    },
+    {
+      "id": "command-center-dashboard-v0",
+      "title": "Commander Dashboard / Command Center UI v0",
+      "path": "projects/command-center-dashboard-v0.md",
+      "status_lines": [
+        "Current focus: CC-22 draft is still built locally — lane cards parsed from projects/.md, Gate Deck verdict flow wired to the inbox API, and install icons added.",
+        "CC-24 parser re-check passed again on the live report; MORNINGREPORT.md still holds the strict Open: / Decide: line-4 shape with one bolded Decision: line.",
+        "2026-07-10 parser re-check passed again: the live morning report still matches the exact 5-line CC-24 shape with Open: / Decide: on line 4 and one bolded Decision: on line 5.",
+        "Added a strict local re-check packet below so the next 07:30 pass can be rerun without re-deriving the criteria."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "defi-chainlink-research",
+      "title": "DeFi / Chainlink / Research Dashboards (Priority 5)",
+      "path": "projects/defi-chainlink-research.md",
+      "status_lines": [
+        "State: GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+        "Last advanced: 2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+        "Next action: DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+        "Waiting on: nothing; concepts only, no financial actions"
+      ],
+      "state": "GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+      "last_advanced": "2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+      "next_action": "DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+      "waiting_on": "nothing; concepts only, no financial actions"
+    },
+    {
+      "id": "market-activity-config-wiring-draft",
+      "title": "Market Activity config wiring draft",
+      "path": "projects/market-activity-config-wiring-draft.md",
+      "status_lines": [
+        "Draft-only support artifact for MA-1. 2026-09-25 update: the config-wiring build step is now implemented and smoke-tested in scripts/fetchmarketactivity.py; the fetcher reads configs/marketwatchlist.json as source of truth (verified with a live run that wrote dashboard/marketactivity.json at 5,257 bytes, 0 warnings). Lane stays todo and parked behind the CI-1 week-smooth reopen condition; next action is daily snapshots when reopened."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "market-activity-snapshots-draft",
+      "title": "Market Activity daily snapshots — draft design",
+      "path": "projects/market-activity-snapshots-draft.md",
+      "status_lines": [
+        "Draft-only support artifact for MA-1. Prepared 2026-09-26. Lane stays todo and parked behind the CI-1 week-smooth reopen condition. This note turns the vague \"add daily snapshots\" next action into a concrete, reviewable design so the lane is build-ready when reopened."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "market-activity-tracker",
+      "title": "Market Activity Tracker",
+      "path": "projects/market-activity-tracker.md",
+      "status_lines": [
+        "State: PARKED (MA-1 blocked) — config-wiring step implemented and smoke-tested; daily-snapshots design drafted; reopen after CI-1 loop runs smoothly for a week",
+        "Last advanced: 2026-09-26 — new daily-snapshots design note projects/market-activity-snapshots-draft.md written; converts the vague \"add daily snapshots\" next action into a concrete, build-ready design (Option A: single capped history file, fetcher history-write first, then /market change-vs-yesterday panel)",
+        "Next action (on reopen): implement the fetcher history-write step in scripts/fetchmarketactivity.py (write dashboard/marketactivityhistory.json with latest + capped snapshots[] array), verify with a live run, then add a small /market \"change vs yesterday\" panel",
+        "Waiting on: reopen condition (CI-1 week-smooth)"
+      ],
+      "state": "PARKED (MA-1 blocked) — config-wiring step implemented and smoke-tested; daily-snapshots design drafted; reopen after CI-1 loop runs smoothly for a week",
+      "last_advanced": "2026-09-26 — new daily-snapshots design note projects/market-activity-snapshots-draft.md written; converts the vague \"add daily snapshots\" next action into a concrete, build-ready design (Option A: single capped history file, fetcher history-write first, then /market change-vs-yesterday panel)",
+      "next_action": "",
+      "waiting_on": "reopen condition (CI-1 week-smooth)"
+    },
+    {
+      "id": "pons-robinhood-chain-alpha-filter",
+      "title": "Pons / Robinhood Chain alpha filter — read-only design",
+      "path": "projects/pons-robinhood-chain-alpha-filter.md",
+      "status_lines": [
+        "Implemented as a private Telegram watchlist monitor on 2026-09-02. It is a research filter, never a trading agent or recommendation engine."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "primoscapes",
+      "title": "Primoscapes (Priority 3)",
+      "path": "projects/primoscapes.md",
+      "status_lines": [
+        "State: ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+        "Last advanced: 2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+        "Next action: Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+        "Waiting on: Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+      ],
+      "state": "ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+      "last_advanced": "2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+      "next_action": "Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+      "waiting_on": "Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+    },
+    {
+      "id": "sovereignty-stack",
+      "title": "Sovereignty Stack (Priority 7)",
+      "path": "projects/sovereignty-stack.md",
+      "status_lines": [
+        "State: support-only — no tinkering unless it serves the money system",
+        "Last advanced: Mission Control dashboard service live on LAN port 3011",
+        "Next action: CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+        "Waiting on: Josh approval for Tailscale setup"
+      ],
+      "state": "support-only — no tinkering unless it serves the money system",
+      "last_advanced": "Mission Control dashboard service live on LAN port 3011",
+      "next_action": "CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+      "waiting_on": "Josh approval for Tailscale setup"
+    },
+    {
+      "id": "weather-oracle-repo-cleanup-draft",
+      "title": "Weather Oracle — Repo Cleanup Draft",
+      "path": "projects/weather-oracle-repo-cleanup-draft.md",
+      "status_lines": [
+        "2026-08-27: cleanup pass refreshed the narrow stale-line sweep in the project docs and queue wording to keep the WO-2 handoff pointed at the same single local-only Pi capture proof."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "weather-oracle",
+      "title": "Weather Oracle MVP (Priority 4)",
+      "path": "projects/weather-oracle.md",
+      "status_lines": [
+        "State: WO-1 revenue scan still stands as the concept anchor: \"Forecast Receipts\" (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.",
+        "Business model (Josh's framing): Josh sponsors the LINK/gas (testnet $0 now; mainnet = cheap L2 writes + CRE billing TBD, early access); money made another way: (1) Polymarket weather-trader audience; (2) deadpan weatherman-grading content flywheel → sponsorship; (3) Chainlink grant/showcase; (4) career proof-of-work side effect.",
+        "WO-2 draft artifact: the one-shot Pi capture verification packet now exists at projects/weather-oracle-capture-verification-packet.md.",
+        "WO-2 draft-only preflight: the live capturedaily.py gate and the packet now match — the run succeeds only if nwsforecast and openmeteomodels land in the manifest with 200 and source files present. The packet now also includes a Pi execution checklist so the first proof run is easy to audit."
+      ],
+      "state": "WO-1 revenue scan still stands as the concept anchor: \"Forecast Receipts\" (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    }
+  ],
+  "lanes": [
+    {
+      "id": "badboys-cartoon-lab",
+      "title": "BAD BOYS CARTOON LAB — Studio Pipeline v1 (2026-07-03)",
+      "path": "projects/badboys-cartoon-lab.md",
+      "status_lines": [
+        "State: ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+        "Last advanced: 2026-07-06 — Stage 4 (animation) + Stage 5 (cut/export) DONE for T+2 Ep.1. Final rendered+muxed short at assets/badboys/cartoon-lab/t2-ep1/t2ep1master.mp4 (18.0s, 1080x1920, VO+SFX muxed, caption burned in).",
+        "GATE 1 PASSED 2026-07-03 (evening): Josh SHIPPED all four pilots via widget verdict. Production order: P4 \"T+2\" first, then P2 → P1 → P3.",
+        "Next action: AWAITING JOSH GATE 2 on T+2 Ep.1 — ship/kill call on t2ep1master.mp4. Several creative calls made where the storyboard was ambiguous (see BB-25 task note / Claude's Gate 2 message) — flagged, not silently improvised."
+      ],
+      "state": "ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+      "last_advanced": "2026-07-06 — Stage 4 (animation) + Stage 5 (cut/export) DONE for T+2 Ep.1. Final rendered+muxed short at assets/badboys/cartoon-lab/t2-ep1/t2ep1master.mp4 (18.0s, 1080x1920, VO+SFX muxed, caption burned in).",
+      "next_action": "AWAITING JOSH GATE 2 on T+2 Ep.1 — ship/kill call on t2ep1master.mp4. Several creative calls made where the storyboard was ambiguous (see BB-25 task note / Claude's Gate 2 message) — flagged, not silently improvised.",
+      "waiting_on": ""
+    },
+    {
+      "id": "badboys-idea-bank-cron-draft",
+      "title": "Bad Boys / Joycat — Hermes idea-bank + MoA critics cron draft",
+      "path": "projects/badboys-idea-bank-cron-draft.md",
+      "status_lines": [
+        "State: DRAFT ONLY — internal design packet for BB-26; no cron enabled, no outbound actions, no public posting",
+        "Purpose: turn the existing Bad Boys constitution + pipeline into a cheap weekly idea-bank loop that pre-filters premises before Josh ever sees them",
+        "Source of truth: projects/badboys-cartoon-lab.md is authoritative for style/constitution; this packet only packages the cron draft",
+        "Draft progress 2026-07-09: added a concrete 10-premise seed set and a cheap implementation shape so the packet is closer to decision-ready"
+      ],
+      "state": "DRAFT ONLY — internal design packet for BB-26; no cron enabled, no outbound actions, no public posting",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "badboys-joycat",
+      "title": "Bad Boys / Joycat Creative Business",
+      "path": "projects/badboys-joycat.md",
+      "status_lines": [
+        "State: REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+        "Last advanced: 2026-07-11 — BB-24 decision packet selected Bad Boys Mark Sheet v0: a restrained three-piece die-cut sticker sheet from canonical/real assets. Fourthwall is the deferred storefront choice after a content signal; no account or sale path opened.",
+        "Next action: Josh may approve local print-ready masters + a preview only via APPROVE BB-24 STICKER SHEET DRAFT.",
+        "Waiting on: nothing for drafts; Josh's account decision for anything public"
+      ],
+      "state": "REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+      "last_advanced": "2026-07-11 — BB-24 decision packet selected Bad Boys Mark Sheet v0: a restrained three-piece die-cut sticker sheet from canonical/real assets. Fourthwall is the deferred storefront choice after a content signal; no account or sale path opened.",
+      "next_action": "Josh may approve local print-ready masters + a preview only via APPROVE BB-24 STICKER SHEET DRAFT.",
+      "waiting_on": "nothing for drafts; Josh's account decision for anything public"
+    },
+    {
+      "id": "boring-report-prd",
+      "title": "PRD — \"THE BORING REPORT\" (working title, Josh names it at Gate N1)",
+      "path": "projects/boring-report-prd.md",
+      "status_lines": [
+        "State: P0 + P1 SHIPPED (2026-07-05; W28 v0 generated, critic-fixed, verified — see products/boring-report/). P0.1 re-probe (2026-07-07, Mac) solved the one P0 blocker: Chainlink feed/PoR inventory is machine-readable via reference-data-directory.vercel.app JSON (315 mainnet feeds, 25 PoR) — see products/boring-report/SOURCES.md",
+        "Portfolio reset 2026-07-25: The Boring Report is now the flagship compounding data/product build (see projects/portfolio-reset-2026-07-25.md). P2 Oracle Scorecard v0 evidence baseline built 2026-07-27 and internally reviewed 2026-07-30: two protocol fact files, three SHA-256-verified source snapshots, deterministic scoring, rendered Markdown/JSON/HTML, and a fail-closed verifier live under products/boring-report/scorecard/. The acceptance note is products/boring-report/scorecard/internal-review-2026-07-30.md. It is deliberately architecture-evidence-only; the next increment is one traceable Aave V3 deployment feed map, followed by heartbeat observations and a sourced incident ledger before broader score claims. Draft support now exists in products/boring-report/scorecard/output/aave-v3-deployment-feed-map-draft.md with the official Aave address-book oracle anchor and the required fact-file shape, plus a reusable local run note at products/boring-report/scorecard/output/aave-v3-deployment-feed-map-run-note.md. The follow-up checklist now lives in products/boring-report/scorecard/output/aave-v3-second-observation-checklist.md, and the new draft-only shortlist note keeps WBTC first, one new bounded asset only, and the fresh verified bundle gate in place before any new snapshot run; the current re-entry note makes the next pass compare-only against the 2026-08-14 baseline before any future WBTC-first expansion. The compare-only handoff now also has a reusable result-note template at products/boring-report/scorecard/output/aave-v3-comparison-result-note-template.md, plus the current 2026-09-06 re-entry note at products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-06.md, a reusable local run note at products/boring-report/scorecard/output/aave-v3-comparison-run-note-2026-09-06.md, and the existing 2026-08-30 preflight note so the draft-only compare surface stays current without authorizing a new snapshot run. On 2026-08-14 the first bounded deployment row landed in products/boring-report/scorecard/facts/aave-v3-deployment-feed-map.json with a bounded WETH-only literal comparison surface; no heartbeat or completeness claim follows from the observed latest-round movement. On 2026-09-22 the compare-only handoff was refreshed to a new dated re-entry note at products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-22.md, the verifier and four focused tests were re-run locally and still pass, and a new WBTC-first snapshot preflight note was drafted at products/boring-report/scorecard/output/aave-v3-wbtc-preflight-note-2026-09-22.md to define the exact capture shape for the next bounded asset expansion when a fresh verified bundle exists; the existing 2026-08-14 WBTC baseline row remains the cited reference for that next pass.",
+        "Waiting on: Josh's Gate 1 verdict; Josh's name verdict at Gate N1"
+      ],
+      "state": "P0 + P1 SHIPPED (2026-07-05; W28 v0 generated, critic-fixed, verified — see products/boring-report/). P0.1 re-probe (2026-07-07, Mac) solved the one P0 blocker: Chainlink feed/PoR inventory is machine-readable via reference-data-directory.vercel.app JSON (315 mainnet feeds, 25 PoR) — see products/boring-report/SOURCES.md",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": "Josh's Gate 1 verdict; Josh's name verdict at Gate N1"
+    },
+    {
+      "id": "career-income",
+      "title": "Career / Income (Priority 1)",
+      "path": "projects/career-income.md",
+      "status_lines": [
+        "State: ACTIVE CASH RUNWAY — global $150K+ base search (CI-1); fully remote roles may clear at $120K+.",
+        "Portfolio role: one of two Family Freedom Engines alongside the owned Boring Report asset; employment supplies predictable cash/benefits while owned revenue compounds.",
+        "Exclusions: Coinbase Operations is killed by Josh taste call. No quota-heavy sales or low-compensation roles.",
+        "Next action: Anchorage Digital Trading Operations, Transformation Lead (posting ID b3c332bc) is the live CI-1 decision surface: the official public Lever page was rechecked on 2026-09-26 (morning loop fresh recheck) and still shows the role as open, but location changed from United States to Singapore — a material scope change. Title unchanged at \"Trading Operations, Transformation Lead\" since the 2026-09-22 recheck. The packet, decision brief, source note, application-form preflight, and next-step note are refreshed to the 2026-09-26 recheck. CRITICAL 2026-09-26 finding: the location field now shows Singapore instead of the United States documented in prior rechecks — this is a material scope change that fundamentally alters the remote-US premise. The public page also carries an in-person onboarding requirement — \"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions.\" Both findings need Josh's go/no-go. Compensation is still not disclosed, so it remains a strong settlement/reconciliation/control fit with a real transformation-lead stretch — confirm the location (Singapore vs US), the compensation floor, and the scope before any application discussion. Anchorage's board also lists a secondary live candidate — \"Member of Trading Operations\" (ID 0f13c760) — which retained United States location on the 2026-09-26 recheck (it did NOT change to Singapore) and is drafted ahead and ready as the next CI-1 surface if the Transformation Lead gate stays closed. Ripple remains a secondary hold only."
+      ],
+      "state": "ACTIVE CASH RUNWAY — global $150K+ base search (CI-1); fully remote roles may clear at $120K+.",
+      "last_advanced": "",
+      "next_action": "Anchorage Digital Trading Operations, Transformation Lead (posting ID b3c332bc) is the live CI-1 decision surface: the official public Lever page was rechecked on 2026-09-26 (morning loop fresh recheck) and still shows the role as open, but location changed from United States to Singapore — a material scope change. Title unchanged at \"Trading Operations, Transformation Lead\" since the 2026-09-22 recheck. The packet, decision brief, source note, application-form preflight, and next-step note are refreshed to the 2026-09-26 recheck. CRITICAL 2026-09-26 finding: the location field now shows Singapore instead of the United States documented in prior rechecks — this is a material scope change that fundamentally alters the remote-US premise. The public page also carries an in-person onboarding requirement — \"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions.\" Both findings need Josh's go/no-go. Compensation is still not disclosed, so it remains a strong settlement/reconciliation/control fit with a real transformation-lead stretch — confirm the location (Singapore vs US), the compensation floor, and the scope before any application discussion. Anchorage's board also lists a secondary live candidate — \"Member of Trading Operations\" (ID 0f13c760) — which retained United States location on the 2026-09-26 recheck (it did NOT change to Singapore) and is drafted ahead and ready as the next CI-1 surface if the Transformation Lead gate stays closed. Ripple remains a secondary hold only.",
+      "waiting_on": ""
+    },
+    {
+      "id": "command-center-dashboard-v0",
+      "title": "Commander Dashboard / Command Center UI v0",
+      "path": "projects/command-center-dashboard-v0.md",
+      "status_lines": [
+        "Current focus: CC-22 draft is still built locally — lane cards parsed from projects/.md, Gate Deck verdict flow wired to the inbox API, and install icons added.",
+        "CC-24 parser re-check passed again on the live report; MORNINGREPORT.md still holds the strict Open: / Decide: line-4 shape with one bolded Decision: line.",
+        "2026-07-10 parser re-check passed again: the live morning report still matches the exact 5-line CC-24 shape with Open: / Decide: on line 4 and one bolded Decision: on line 5.",
+        "Added a strict local re-check packet below so the next 07:30 pass can be rerun without re-deriving the criteria."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "defi-chainlink-research",
+      "title": "DeFi / Chainlink / Research Dashboards (Priority 5)",
+      "path": "projects/defi-chainlink-research.md",
+      "status_lines": [
+        "State: GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+        "Last advanced: 2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+        "Next action: DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+        "Waiting on: nothing; concepts only, no financial actions"
+      ],
+      "state": "GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+      "last_advanced": "2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+      "next_action": "DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+      "waiting_on": "nothing; concepts only, no financial actions"
+    },
+    {
+      "id": "market-activity-config-wiring-draft",
+      "title": "Market Activity config wiring draft",
+      "path": "projects/market-activity-config-wiring-draft.md",
+      "status_lines": [
+        "Draft-only support artifact for MA-1. 2026-09-25 update: the config-wiring build step is now implemented and smoke-tested in scripts/fetchmarketactivity.py; the fetcher reads configs/marketwatchlist.json as source of truth (verified with a live run that wrote dashboard/marketactivity.json at 5,257 bytes, 0 warnings). Lane stays todo and parked behind the CI-1 week-smooth reopen condition; next action is daily snapshots when reopened."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "market-activity-snapshots-draft",
+      "title": "Market Activity daily snapshots — draft design",
+      "path": "projects/market-activity-snapshots-draft.md",
+      "status_lines": [
+        "Draft-only support artifact for MA-1. Prepared 2026-09-26. Lane stays todo and parked behind the CI-1 week-smooth reopen condition. This note turns the vague \"add daily snapshots\" next action into a concrete, reviewable design so the lane is build-ready when reopened."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "market-activity-tracker",
+      "title": "Market Activity Tracker",
+      "path": "projects/market-activity-tracker.md",
+      "status_lines": [
+        "State: PARKED (MA-1 blocked) — config-wiring step implemented and smoke-tested; daily-snapshots design drafted; reopen after CI-1 loop runs smoothly for a week",
+        "Last advanced: 2026-09-26 — new daily-snapshots design note projects/market-activity-snapshots-draft.md written; converts the vague \"add daily snapshots\" next action into a concrete, build-ready design (Option A: single capped history file, fetcher history-write first, then /market change-vs-yesterday panel)",
+        "Next action (on reopen): implement the fetcher history-write step in scripts/fetchmarketactivity.py (write dashboard/marketactivityhistory.json with latest + capped snapshots[] array), verify with a live run, then add a small /market \"change vs yesterday\" panel",
+        "Waiting on: reopen condition (CI-1 week-smooth)"
+      ],
+      "state": "PARKED (MA-1 blocked) — config-wiring step implemented and smoke-tested; daily-snapshots design drafted; reopen after CI-1 loop runs smoothly for a week",
+      "last_advanced": "2026-09-26 — new daily-snapshots design note projects/market-activity-snapshots-draft.md written; converts the vague \"add daily snapshots\" next action into a concrete, build-ready design (Option A: single capped history file, fetcher history-write first, then /market change-vs-yesterday panel)",
+      "next_action": "",
+      "waiting_on": "reopen condition (CI-1 week-smooth)"
+    },
+    {
+      "id": "pons-robinhood-chain-alpha-filter",
+      "title": "Pons / Robinhood Chain alpha filter — read-only design",
+      "path": "projects/pons-robinhood-chain-alpha-filter.md",
+      "status_lines": [
+        "Implemented as a private Telegram watchlist monitor on 2026-09-02. It is a research filter, never a trading agent or recommendation engine."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "primoscapes",
+      "title": "Primoscapes (Priority 3)",
+      "path": "projects/primoscapes.md",
+      "status_lines": [
+        "State: ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+        "Last advanced: 2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+        "Next action: Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+        "Waiting on: Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+      ],
+      "state": "ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+      "last_advanced": "2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+      "next_action": "Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+      "waiting_on": "Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+    },
+    {
+      "id": "sovereignty-stack",
+      "title": "Sovereignty Stack (Priority 7)",
+      "path": "projects/sovereignty-stack.md",
+      "status_lines": [
+        "State: support-only — no tinkering unless it serves the money system",
+        "Last advanced: Mission Control dashboard service live on LAN port 3011",
+        "Next action: CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+        "Waiting on: Josh approval for Tailscale setup"
+      ],
+      "state": "support-only — no tinkering unless it serves the money system",
+      "last_advanced": "Mission Control dashboard service live on LAN port 3011",
+      "next_action": "CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+      "waiting_on": "Josh approval for Tailscale setup"
+    },
+    {
+      "id": "weather-oracle-repo-cleanup-draft",
+      "title": "Weather Oracle — Repo Cleanup Draft",
+      "path": "projects/weather-oracle-repo-cleanup-draft.md",
+      "status_lines": [
+        "2026-08-27: cleanup pass refreshed the narrow stale-line sweep in the project docs and queue wording to keep the WO-2 handoff pointed at the same single local-only Pi capture proof."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    },
+    {
+      "id": "weather-oracle",
+      "title": "Weather Oracle MVP (Priority 4)",
+      "path": "projects/weather-oracle.md",
+      "status_lines": [
+        "State: WO-1 revenue scan still stands as the concept anchor: \"Forecast Receipts\" (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.",
+        "Business model (Josh's framing): Josh sponsors the LINK/gas (testnet $0 now; mainnet = cheap L2 writes + CRE billing TBD, early access); money made another way: (1) Polymarket weather-trader audience; (2) deadpan weatherman-grading content flywheel → sponsorship; (3) Chainlink grant/showcase; (4) career proof-of-work side effect.",
+        "WO-2 draft artifact: the one-shot Pi capture verification packet now exists at projects/weather-oracle-capture-verification-packet.md.",
+        "WO-2 draft-only preflight: the live capturedaily.py gate and the packet now match — the run succeeds only if nwsforecast and openmeteomodels land in the manifest with 200 and source files present. The packet now also includes a Pi execution checklist so the first proof run is easy to audit."
+      ],
+      "state": "WO-1 revenue scan still stands as the concept anchor: \"Forecast Receipts\" (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.",
+      "last_advanced": "",
+      "next_action": "",
+      "waiting_on": ""
+    }
+  ],
+  "hermes": {
+    "raw_ok": true,
+    "provider": "ChatGPT or Codex Subscription",
+    "model": "gpt-5.6-terra",
+    "telegram": "configured",
+    "gateway": "running",
+    "scheduled_jobs": "14 active, 18 total",
+    "active_sessions": "1 session(s)"
+  },
+  "cron": {
+    "ok": true,
+    "daily_loop_active": true,
+    "next_run": "2026-09-27T13:00:00-05:00",
+    "deliver": "local",
+    "last_run": "2026-09-26T13:03:43.885497-05:00  ok"
+  },
+  "git": {
+    "branch": "unknown",
+    "head": "efa0fc1",
+    "dirty_count": 2,
+    "changes": [
+      "?? dashboard/",
+      "?? runtime/"
+    ]
+  },
+  "sovereignty": {
+    "path": "/home/josh/sovereignty_stack",
+    "services": [
+      {
+        "name": "CasaOS",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Immich",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Grafana",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Uptime Kuma",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "Tailscale",
+        "status": "known",
+        "present": true
+      },
+      {
+        "name": "ticker-service",
+        "status": "code present",
+        "present": true
+      },
+      {
+        "name": "wallet-service",
+        "status": "code present",
+        "present": true
+      },
+      {
+        "name": "resource-service",
+        "status": "code present",
+        "present": true
+      }
+    ],
+    "docker": {
+      "available": true,
+      "containers": [
+        {
+          "name": "resource-service",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:8789->8789/tcp, [::]:8789->8789/tcp"
+        },
+        {
+          "name": "wallet-service",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:8788->8788/tcp, [::]:8788->8788/tcp"
+        },
+        {
+          "name": "ticker-service",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp"
+        },
+        {
+          "name": "big-bear-nexterm",
+          "status": "Up 3 seconds",
+          "ports": "0.0.0.0:6989->6989/tcp, [::]:6989->6989/tcp"
+        },
+        {
+          "name": "grafana",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:3010->3000/tcp, [::]:3010->3000/tcp"
+        },
+        {
+          "name": "navidrome",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:4533->4533/tcp, [::]:4533->4533/tcp"
+        },
+        {
+          "name": "prometheus",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp"
+        },
+        {
+          "name": "node-exporter",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp"
+        },
+        {
+          "name": "homepage",
+          "status": "Up 7 minutes (healthy)",
+          "ports": "0.0.0.0:3005->3000/tcp, [::]:3005->3000/tcp"
+        },
+        {
+          "name": "big-bear-glances",
+          "status": "Up 7 minutes",
+          "ports": "0.0.0.0:61208->61208/tcp, [::]:61208->61208/tcp, 61209/tcp"
+        },
+        {
+          "name": "immich-server",
+          "status": "Up 7 minutes (healthy)",
+          "ports": "0.0.0.0:2283->2283/tcp, [::]:2283->2283/tcp"
+        },
+        {
+          "name": "immich-postgres",
+          "status": "Up 7 minutes (healthy)",
+          "ports": "5432/tcp"
+        }
+      ],
+      "ok": true,
+      "error": ""
+    }
+  },
+  "learning": {
+    "today": "Dashboards are decision systems: surface the next action, hide the noise.",
+    "qol": "Telegram for quick steering; dashboard for cockpit review; PuTTY only for maintenance.",
+    "system_rule": "Private/Tailscale first. Read-only before action buttons."
+  },
+  "safety": [
+    "no public ports",
+    "no secrets displayed",
+    "no spending",
+    "no outbound posting/sending without approval"
+  ]
+}
