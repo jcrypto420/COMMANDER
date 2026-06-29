@@ -169,3 +169,7 @@ One short entry per working day. What advanced + estimated spend.
 - Added `projects/badboys-tiktok-week1-v3-artifact-lab-packet.md` and
   `projects/badboys-tiktok-account-creation-runbook.md`. Account creation remains
   blocked on Josh-controlled credentials/verification/2FA and lack of interactive browser on the Pi.
+
+- Josh called the generated TikTok plans/assets wank. Refocused the sprint on real Josh-provided Bad Boys assets instead of generated launch cards.
+- Created `assets/badboys/account-ready-real-assets-v0/` with copied real asset candidates and review gallery.
+- Created `projects/badboys-refocus-stop-the-wank.md`: new recommendation is avatar from `INSIDEFACE NOBG.png`, first post candidate from `BBTHUNDER_UP_-removebg-preview.png`, minimal copy only.

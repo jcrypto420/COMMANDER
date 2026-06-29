@@ -43,6 +43,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | BB-21 | Bad Boys/Joycat | 2 | Mogging marketing tactics study | done | public sources checked; artifact-first tactic playbook created | no |
 | BB-22 | Bad Boys/Joycat | 2 | Week 1 v3 artifact-lab TikTok pack | done | no-hook artifact format drafted after v2 still felt corny | yes |
 | BB-23 | Bad Boys/Joycat | 2 | TikTok account creation runbook | blocked | Josh must perform credentials/verification/2FA; Pi browser unavailable | **yes** |
+| BB-24 | Bad Boys/Joycat | 1 | Refocus on real assets | doing | generated TikTok packs demoted; real asset account-ready pack created | yes |
 | TG-1 | Command Center | 1 | Telegram phone approval channel | blocked | waiting for Josh to create BotFather token; never commit token | **yes** |
 | WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles | no |
 

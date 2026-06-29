@@ -11,13 +11,14 @@ passed.
 
 ## Next 3 tasks
 
-1. Treat the Week 1 v3 artifact-lab pack as the active TikTok direction; export
-   and spot-check to PNG once local raster tooling is available/approved.
-2. Josh creates the TikTok account `bebad4good` from phone/laptop because
-   credentials, age-gate, verification, password, recovery, and 2FA must stay
-   Josh-controlled; use `projects/badboys-tiktok-account-creation-runbook.md`.
-3. Prepare the first sticker/PFP mini-pack from `assets/badboys/sticker-pack-v0/`
-   as the first product-shaped signal test; do not publish/sell without approval.
+1. Refocus Bad Boys on real Josh-provided assets, not generated launch-card packs;
+   review `projects/badboys-refocus-stop-the-wank.md` and
+   `assets/badboys/account-ready-real-assets-v0/review-gallery.html`.
+2. If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from
+   phone/laptop; credentials, age-gate, verification, password, recovery, and
+   2FA stay Josh-controlled.
+3. First post candidate is the real `Thunder Up` asset with minimal copy
+   (`testing this.` / `keep or kill?`), no manifesto.
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
