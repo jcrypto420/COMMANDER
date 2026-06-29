@@ -11,10 +11,13 @@ passed.
 
 ## Next 3 tasks
 
-1. Use the Week 1 manual posting packet to create/prepare TikTok account
-   `bebad4good`; stop at credentials, verification, or 2FA steps Josh must own.
-2. Review the 30 exported PNG assets and refine any weak first-week creative.
-3. After account prep, run the Week 1 final approval checkpoint before any post.
+1. Treat the Week 1 v3 artifact-lab pack as the active TikTok direction; export
+   and spot-check to PNG once local raster tooling is available/approved.
+2. Josh creates the TikTok account `bebad4good` from phone/laptop because
+   credentials, age-gate, verification, password, recovery, and 2FA must stay
+   Josh-controlled; use `projects/badboys-tiktok-account-creation-runbook.md`.
+3. Prepare the first sticker/PFP mini-pack from `assets/badboys/sticker-pack-v0/`
+   as the first product-shaped signal test; do not publish/sell without approval.
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub

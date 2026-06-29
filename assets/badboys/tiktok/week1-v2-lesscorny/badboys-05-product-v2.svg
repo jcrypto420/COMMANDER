@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="78%"><stop offset="0" stop-color="#24252b"/><stop offset=".55" stop-color="#101216"/><stop offset="1" stop-color="#050506"/></radialGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .09"/></feComponentTransfer></filter>
+<filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
+<style>text{font-family:Inter,Arial,Helvetica,sans-serif} .meta{letter-spacing:.18em} .tight{letter-spacing:-.018em}</style>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" filter="url(#grain)" opacity=".6"/>
+<rect x="48" y="48" width="984" height="1824" fill="none" stroke="#e42c2c" stroke-width="9"/>
+<text x="86" y="118" class="meta" font-size="27" fill="#e42c2c" font-weight="750">BAD BOYS / 05 / PRODUCT SIGNAL</text>
+<g>
+<rect x="130" y="320" width="220" height="300" rx="28" fill="#070708" stroke="#e42c2c" stroke-width="6"/><circle cx="240" cy="430" r="62" fill="#e42c2c"/><text x="240" y="552" text-anchor="middle" font-size="32" fill="#f7f3ea" font-weight="800">PFP</text>
+<rect x="430" y="320" width="220" height="300" rx="28" fill="#070708" stroke="#e42c2c" stroke-width="6"/><rect x="490" y="392" width="100" height="110" rx="18" fill="#f7f3ea"/><circle cx="540" cy="447" r="31" fill="#e42c2c"/><text x="540" y="552" text-anchor="middle" font-size="32" fill="#f7f3ea" font-weight="800">STICKER</text>
+<rect x="730" y="320" width="220" height="300" rx="28" fill="#070708" stroke="#e42c2c" stroke-width="6"/><path d="M790 388 H890 L912 470 H876 V545 H804 V470 H768 Z" fill="#f7f3ea"/><circle cx="840" cy="462" r="25" fill="#e42c2c"/><text x="840" y="552" text-anchor="middle" font-size="32" fill="#f7f3ea" font-weight="800">TEE</text>
+</g>
+<rect x="82" y="850" width="916" height="510" rx="30" fill="#050506" fill-opacity=".88" stroke="#e42c2c" stroke-width="4" filter="url(#shadow)"/>
+<text x="122" y="1010" font-size="76" font-weight="800" fill="#f7f3ea" class="tight">WHAT WOULD</text>
+<text x="122" y="1092" font-size="76" font-weight="800" fill="#f7f3ea" class="tight">YOU ACTUALLY USE?</text>
+<rect x="82" y="1458" width="916" height="190" rx="24" fill="#e42c2c" opacity=".95"/>
+<text x="126" y="1535" font-size="34" font-weight="850" fill="#050506">POST CAPTION</text>
+<text x="126" y="1600" font-size="38" font-weight="650" fill="#050506">pfp / sticker / tee</text>
+<text x="86" y="1788" class="meta" font-size="26" fill="#d7d1c7" opacity=".82">@BEBAD4GOOD</text>
+</svg>

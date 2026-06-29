@@ -25,10 +25,14 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 - Brand consistency docs
 - Social calendar
 - Launch checklists
+- Product backlog: `badboys-product-backlog-v0.md`
+- Signal dashboard: `badboys-signal-dashboard.md`
+- Week 1 v2 TikTok packet: `badboys-tiktok-week1-v2-manual-posting-packet.md`
+- First sticker pack brief: `badboys-first-sticker-pack-brief.md`
 
 ## Status
 
-- [ ] Product backlog v0
+- [x] Product backlog v0
 - [x] Brand consistency doc
 - [x] First social calendar week
 - [x] TikTok account-creation packet
@@ -43,6 +47,9 @@ and sales through meme-native IP, games, assets, content, merch, and community.
 - [x] First audience/sales launch loop draft
 - [ ] Phone approval channel connected before public posting cadence
 - [x] First public approval packet prepared
+- [x] Week 1 v2 less-corny/harder TikTok asset pack drafted
+- [x] First sticker/PFP pack brief drafted
+- [x] First sticker/PFP SVG source pack drafted
 
 ## First-win metrics
 

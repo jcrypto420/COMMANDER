@@ -21,6 +21,13 @@ Draft local assets live here:
 - [x] `badboys-05-pfp-sticker-pack.svg`
 - [x] `badboys-06-lore.svg`
 - [x] `badboys-07-poll.svg`
+- [x] `assets/badboys/tiktok/png/badboys-01-manifesto.png`
+- [x] `assets/badboys/tiktok/png/badboys-02-identity.png`
+- [x] `assets/badboys/tiktok/png/badboys-03-joycat.png`
+- [x] `assets/badboys/tiktok/png/badboys-04-philosophy.png`
+- [x] `assets/badboys/tiktok/png/badboys-05-pfp-sticker-pack.png`
+- [x] `assets/badboys/tiktok/png/badboys-06-lore.png`
+- [x] `assets/badboys/tiktok/png/badboys-07-poll.png`
 
 ## Creation order
 
@@ -41,16 +48,10 @@ Draft local assets live here:
 
 ## Current limitation
 
-These are SVG draft assets because the Pi currently has no local raster exporter detected:
+The first 7 SVG drafts have been exported to 1080x1920 PNGs, but the current shell cannot re-run the exporter because `node` is not on PATH in this session.
 
-- ImageMagick/convert: not detected
-- PIL/Pillow: not detected
-
-Next upgrade, if Josh approves package install or tooling setup:
-- install a safe raster path
-- export SVGs to PNG
-- make final 1080x1920 TikTok-ready image files
+Do not install tooling without Josh approval. If we need to regenerate PNGs, first verify whether Node is available in Josh's normal shell or use an approved no-sudo local toolchain.
 
 ## Next step
 
-Review the SVG drafts. If direction is approved, export to PNG and pair them with the Week 1 captions.
+Use `projects/badboys-tiktok-week1-creative-review.md` to refine the weaker first-week cards before any public posting.

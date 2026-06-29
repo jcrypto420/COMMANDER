@@ -134,3 +134,38 @@ One short entry per working day. What advanced + estimated spend.
   review/export and account readiness.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex
   session.
+
+- Committed and pushed the TikTok launch kit to GitHub at commit `0347aa2` on
+  `feat/command-center-scaffolding`, after verifying 30 valid 1080x1920 PNGs and
+  keeping Telegram token helper code untracked.
+- Reviewed Week 1 TikTok creative quality and created
+  `projects/badboys-tiktok-week1-creative-review.md`: Days 1/2/4/7 are postable
+  candidates; Days 3/5/6 should be improved before public posting if possible.
+- Updated Week 1 asset/checklist docs to reflect that PNGs now exist and the
+  remaining gate is creative refinement + Josh approval, not raw export.
+
+- Built the Week 1 v1 hardmode SVG asset pack under
+  `assets/badboys/tiktok/week1-v1-hardmode/`, replacing placeholder-heavy
+  Joycat/product/lore cards with stronger visual signal tests.
+- Added `projects/badboys-tiktok-harder-launch-push.md` to define the harder
+  launch stance while keeping all posting/account/spend actions approval-gated.
+
+- Josh rejected the v1 TikTok hooks as too corny and approved going harder.
+  Created the Week 1 v2 less-corny SVG pack under
+  `assets/badboys/tiktok/week1-v2-lesscorny/` with colder hooks and simpler
+  signal asks.
+- Completed more Bad Boys revenue tasks: drafted `projects/badboys-product-backlog-v0.md`,
+  `projects/badboys-signal-dashboard.md`, `projects/badboys-first-sticker-pack-brief.md`,
+  and `projects/badboys-tiktok-week1-v2-manual-posting-packet.md`.
+- Created first product-shaped source assets under `assets/badboys/sticker-pack-v0/`:
+  six sticker/PFP SVGs plus a preview sheet, all internal and approval-gated.
+
+- Josh said v2 still felt corny and approved going even harder plus TikTok account prep.
+  Studied public mogging/TikTok/meme-brand context and created
+  `projects/badboys-mogging-marketing-research.md` plus
+  `projects/badboys-mogging-tactics-playbook.md`.
+- Created Week 1 v3 Artifact Lab under `assets/badboys/tiktok/week1-v3-artifact-lab/`:
+  seven no-hook, artifact-first SVG posts using BAD SAMPLE / FIELD TEST / KEEP-KILL formats.
+- Added `projects/badboys-tiktok-week1-v3-artifact-lab-packet.md` and
+  `projects/badboys-tiktok-account-creation-runbook.md`. Account creation remains
+  blocked on Josh-controlled credentials/verification/2FA and lack of interactive browser on the Pi.

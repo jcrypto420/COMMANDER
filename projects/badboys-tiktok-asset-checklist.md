@@ -35,13 +35,13 @@ Make assets in this order:
 
 ### Week 1 — Identity
 
-- [ ] `badboys-01-manifesto.png` — OG face stamp on dark background
-- [ ] `badboys-02-identity.png` — bold slogan lockup
-- [ ] `badboys-03-joycat.png` — Joycat companion crop
-- [ ] `badboys-04-philosophy.png` — comic-panel frame
-- [ ] `badboys-05-pfp-sticker-pack.png` — three-up mockup sheet
-- [ ] `badboys-06-lore.png` — Roblox / badge / icon concept
-- [ ] `badboys-07-poll.png` — 3-option visual
+- [x] `badboys-01-manifesto.png` — OG face stamp on dark background; keep, brighten face later
+- [x] `badboys-02-identity.png` — bold slogan lockup; keep, brighten face later
+- [x] `badboys-03-joycat.png` — Joycat companion crop; rework before posting because it lacks actual Joycat art
+- [x] `badboys-04-philosophy.png` — comic-panel frame; keep
+- [x] `badboys-05-pfp-sticker-pack.png` — three-up mockup sheet; rework with real PFP/sticker/tee visuals
+- [x] `badboys-06-lore.png` — Roblox / badge / icon concept; rework with clearer lane visuals
+- [x] `badboys-07-poll.png` — 3-option visual; keep, upgrade later with mini visuals
 
 ### Week 2 — Mascot / Joycat
 
@@ -85,4 +85,4 @@ Make assets in this order:
 
 ## Next step
 
-Make Week 1 assets first, then reuse the same structure for Weeks 2–4.
+Use the Week 1 creative review to patch the weaker launch cards before asking Josh for final public-posting approval.

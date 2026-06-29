@@ -36,7 +36,13 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`)
 | BB-14 | Bad Boys/Joycat | 2 | Week 1 TikTok prompt pack | done | exact generation prompts for the first seven assets | yes |
 | BB-15 | Bad Boys/Joycat | 2 | Asset prompt manifest | done | map filenames to the prompt source docs | yes |
 | BB-16 | Bad Boys/Joycat | 2 | Month 1 draft PNG assets | done | all 30 SVGs exported to TikTok-ready PNGs; posting remains approval-gated | yes |
-| BB-17 | Bad Boys/Joycat | 2 | Week 1 manual posting packet | doing | PNGs and captions paired for first 7 posts | yes |
+| BB-17 | Bad Boys/Joycat | 2 | Week 1 manual posting packet | doing | v1 hardmode SVGs + captions drafted; export/approval next | yes |
+| BB-18 | Bad Boys/Joycat | 2 | Product backlog v0 | done | first revenue candidates ranked; sticker/PFP pack selected as fastest signal product | no |
+| BB-19 | Bad Boys/Joycat | 2 | Week 1 v2 less-corny TikTok pack | done | colder hooks + 7 SVGs drafted after Josh rejected corny v1 hooks | yes |
+| BB-20 | Bad Boys/Joycat | 2 | First sticker/PFP mini-pack draft | done | six-pack SVG source + preview sheet created; public release approval-gated | yes |
+| BB-21 | Bad Boys/Joycat | 2 | Mogging marketing tactics study | done | public sources checked; artifact-first tactic playbook created | no |
+| BB-22 | Bad Boys/Joycat | 2 | Week 1 v3 artifact-lab TikTok pack | done | no-hook artifact format drafted after v2 still felt corny | yes |
+| BB-23 | Bad Boys/Joycat | 2 | TikTok account creation runbook | blocked | Josh must perform credentials/verification/2FA; Pi browser unavailable | **yes** |
 | TG-1 | Command Center | 1 | Telegram phone approval channel | blocked | waiting for Josh to create BotFather token; never commit token | **yes** |
 | WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles | no |
 
