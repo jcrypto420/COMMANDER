@@ -10,7 +10,6 @@ Private Next.js dashboard for Josh's daily tasks, revenue sprint, Commander repo
 - Hermes / Telegram / cron status from the state generator
 - Sovereignty Stack service inventory and Docker container count
 - Safe interaction guidance for Telegram and future approval-gated actions
-- Clickable whitelisted repo artifacts from the 60-second review, task queue, and report links
 
 ## Safety model
 
@@ -20,7 +19,6 @@ Private Next.js dashboard for Josh's daily tasks, revenue sprint, Commander repo
 - No secrets displayed.
 - No posting, sending, spending, trading, account creation, or service changes from dashboard buttons.
 - Future action buttons should create approval packets first.
-- File links are served only from whitelisted repo paths and block secrets/tokens/wallet/private-key patterns.
 
 ## Commands
 
@@ -38,31 +36,17 @@ Default local dev URL:
 http://127.0.0.1:3010
 ```
 
-Easiest HP-laptop-on-home-WiFi access:
+Note: port `3010` may already be used by Josh's existing Sovereignty Stack dashboard. For ad-hoc testing, use:
 
 ```bash
-npm run dashboard:state
-npm run dev:lan
+npm run dev -- -H 127.0.0.1 -p 3011
 ```
-
-Then open:
-
-```text
-http://192.168.1.189:3011
-```
-
-Note: port `3010` is already used by Josh's existing Sovereignty Stack dashboard/login service. Mission Control should use port `3011` unless that changes.
 
 ## Current verification
 
 - `npm run dashboard:state` writes `dashboard/state.json` successfully.
 - `npm run build` completes successfully with Next.js 16.2.9.
-- `commander-mission-control.service` is enabled and running as a user service.
-- `curl http://127.0.0.1:3011/` returned rendered Next.js HTML during service test.
-- `/files/assets/badboys/account-ready-real-assets-v0/review-gallery.html` returns `200 OK`; blocked paths like `/files/.env` return `403 Forbidden`.
-
-Service details: `docs/mission-control-service.md`
-Interaction roadmap: `docs/mission-control-interaction-roadmap.md`
+- `curl http://127.0.0.1:3011/` returned the rendered Next.js HTML during local test.
 
 ## Known issue
 

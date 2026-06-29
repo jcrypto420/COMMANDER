@@ -1,9 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import CopyCommandButton from './components/CopyCommandButton';
-import CommanderInbox from './components/CommanderInbox';
-
-export const dynamic = 'force-dynamic';
 
 const ROOT = process.cwd();
 const STATE_PATH = path.join(ROOT, 'dashboard', 'state.json');
@@ -36,19 +32,6 @@ function readText(filePath, limit = 1800) {
   try { return fs.readFileSync(filePath, 'utf8').slice(0, limit); } catch { return ''; }
 }
 
-function readJsonl(filePath, limit = 8) {
-  try {
-    return fs.readFileSync(filePath, 'utf8')
-      .split('\n')
-      .filter(Boolean)
-      .slice(-limit)
-      .map((line) => JSON.parse(line))
-      .reverse();
-  } catch {
-    return [];
-  }
-}
-
 function stripMd(text) {
   return text.replace(/^#+\s*/gm, '').replace(/\*\*/g, '').replace(/`/g, '').trim();
 }
@@ -60,42 +43,13 @@ function statusClass(value) {
   return 'warn';
 }
 
-function fileHref(filePath) {
-  return `/files/${filePath.replace(/^\/+/, '').split('/').map(encodeURIComponent).join('/')}`;
-}
-
-function fileLabel(filePath) {
-  return filePath.split('/').filter(Boolean).slice(-2).join('/');
-}
-
-function repoPathFromText(text) {
-  const raw = String(text || '').replace(/`/g, '');
-  const match = raw.match(/(?:^|\s)([A-Za-z0-9_./-]+\.(?:html|md|json|png|svg|jpg|jpeg|gif|webp))/i);
-  if (!match) return null;
-  return match[1].replace(/^\/home\/josh\/COMMANDER\//, '').replace(/^\.\//, '');
-}
-
-function LinkifyText({ text }) {
-  const value = String(text || '');
-  const repoPath = repoPathFromText(value);
-  if (!repoPath) return value;
-  return (
-    <>
-      {value}{' '}
-      <a className="inline-link" href={fileHref(repoPath)} target="_blank" rel="noreferrer">
-        Open {fileLabel(repoPath)} ↗
-      </a>
-    </>
-  );
-}
-
 function TaskCard({ task }) {
   return (
     <div className="task-card">
       <div className="task-id">{task.id}</div>
       <div className="task-main">
         <div className="task-title">{task.task}</div>
-        <div className="task-sub"><LinkifyText text={`${task.project} · ${task.next_action}`} /></div>
+        <div className="task-sub">{task.project} · {task.next_action}</div>
       </div>
       <div className={`badge ${task.status}`}>{task.status}</div>
     </div>
@@ -117,7 +71,7 @@ function BriefLine({ icon, title, children }) {
       <div className="brief-icon">{icon}</div>
       <div>
         <b>{title}</b>
-        <p><LinkifyText text={children} /></p>
+        <p>{children}</p>
       </div>
     </div>
   );
@@ -127,7 +81,6 @@ export default function Dashboard() {
   const state = readJson(STATE_PATH, fallback);
   const weekly = stripMd(readText(WEEKLY_PATH));
   const morning = stripMd(readText(MORNING_PATH));
-  const inboxEntries = readJsonl(path.join(ROOT, 'dashboard', 'commander_inbox.jsonl'), 8);
   const doing = state.tasks?.doing || [];
   const blocked = state.tasks?.blocked || [];
   const todos = state.tasks?.todo || [];
@@ -135,35 +88,8 @@ export default function Dashboard() {
   const primaryTasks = [...doing, ...blocked, ...todos].slice(0, 8);
   const services = state.sovereignty?.services || [];
   const containers = state.sovereignty?.docker?.containers || [];
-  const projectCards = state.lanes || state.projects || [];
   const review = state.focus?.review?.length ? state.focus.review : ['Open: WEEKLY_MONEY_REVIEW.md', 'Decide: choose one signal path'];
   const approvalPhrase = approvals[0]?.next_action || 'APPROVE REAL ASSET ACCOUNT PREP or RUN IN-1 LEAD VERIFY';
-  const decisionCommands = [
-    {
-      label: 'Approve bone avatar account prep',
-      command: 'APPROVE BONE AVATAR ACCOUNT PREP',
-      href: fileHref('assets/badboys/account-ready-real-assets-v0/avatar-background-test/review.html'),
-      detail: 'Use if bone-circle.png passes taste check and you want the TikTok account-prep packet finalized around the real asset.'
-    },
-    {
-      label: 'Approve Bad Boys account prep',
-      command: 'APPROVE REAL ASSET ACCOUNT PREP',
-      href: fileHref('assets/badboys/account-ready-real-assets-v0/review-gallery.html'),
-      detail: 'Use if the real avatar + first-post asset are good enough for the first TikTok signal test.'
-    },
-    {
-      label: 'Run paid-research backstop',
-      command: 'RUN IN-1 LEAD VERIFY',
-      href: fileHref('projects/in-1-lead-list-outreach-draft-2026-06-29.md'),
-      detail: 'Use if Bad Boys is not ready or you want Commander to build 10 named paid-pilot prospects.'
-    },
-    {
-      label: 'Pause and improve dashboard',
-      command: 'PAUSE BAD BOYS — IMPROVE MISSION CONTROL',
-      href: fileHref('docs/mission-control-interaction-roadmap.md'),
-      detail: 'Use when the operating cockpit itself is the bottleneck.'
-    }
-  ];
 
   return (
     <main className="shell">
@@ -172,11 +98,6 @@ export default function Dashboard() {
           <div className="mark">C</div>
           <div>
             <div className="eyebrow">Commander / Mission Control</div>
-            <nav className="quick-nav">
-              <a href="/gate-deck">Gate deck</a>
-              <a href="/docs">Library</a>
-              <a href="/market">Market</a>
-            </nav>
             <h1>Daily tasks. Money moves. Infra health. One cockpit.</h1>
             <p className="hero-copy">Private, read-only-first dashboard for Josh’s 69-day revenue sprint and sovereignty stack. Buttons draft commands; risky actions stay approval-gated.</p>
           </div>
@@ -211,63 +132,6 @@ export default function Dashboard() {
             <code>{approvalPhrase}</code>
           </div>
         </div>
-      </section>
-
-      <section className="panel decision-console">
-        <div className="panel-label green">Decision console — review → copy → send to Commander</div>
-        <div className="decision-flow">
-          <div><span>1</span> Open the artifact</div>
-          <div><span>2</span> Pick the command</div>
-          <div><span>3</span> Paste it in Telegram or this chat</div>
-        </div>
-        <div className="decision-command-grid">
-          {decisionCommands.map((item) => (
-            <div className="decision-command" key={item.command}>
-              <div>
-                <b>{item.label}</b>
-                <p>{item.detail}</p>
-                <code>{item.command}</code>
-              </div>
-              <div className="decision-actions">
-                <a className="open-button" href={item.href} target="_blank" rel="noreferrer">Open artifact ↗</a>
-                <CopyCommandButton command={item.command} label="Copy command" />
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="decision-note">For now, Mission Control is the cockpit and Telegram/CLI is the throttle. Direct in-dashboard chat comes after auth + approval gates are designed.</p>
-      </section>
-
-      <section className="panel lane-panel">
-        <div className="panel-label green">Lane cards — parsed from project Status blocks</div>
-        <div className="lane-grid">
-          {projectCards.length ? projectCards.map((project) => (
-            <div className="lane-card" key={project.id}>
-              <div className="lane-card-head">
-                <div>
-                  <b>{project.title}</b>
-                  <div className="lane-subhead">
-                    <span className="lane-pill">{project.state || 'status unavailable'}</span>
-                    {project.last_advanced ? <span className="lane-pill muted">{project.last_advanced}</span> : null}
-                  </div>
-                </div>
-                <a className="lane-link" href={fileHref(project.path)} target="_blank" rel="noreferrer">Open ↗</a>
-              </div>
-              <div className="lane-state">{project.status_lines?.[0] || 'Status unavailable'}</div>
-              <ul>
-                {(project.status_lines || []).slice(1, 4).map((line) => <li key={line}>{line}</li>)}
-                {project.next_action ? <li><strong>Next:</strong> {project.next_action}</li> : null}
-                {project.waiting_on ? <li><strong>Wait:</strong> {project.waiting_on}</li> : null}
-              </ul>
-            </div>
-          )) : <p className="muted">No project status blocks parsed yet.</p>}
-        </div>
-      </section>
-
-      <section className="panel inbox-panel">
-        <div className="panel-label green">Commander Inbox — capture from phone, keep ideas separate</div>
-        <CommanderInbox initialEntries={inboxEntries} />
-        <p className="decision-note">This is capture-only: it writes to <code>COMMANDER_INBOX.md</code> and does not execute actions, run shell commands, post, send, spend, or touch secrets.</p>
       </section>
 
       <section className="triple-grid">
@@ -305,9 +169,6 @@ export default function Dashboard() {
             <div className="action-card"><b>Telegram steering</b><p>Use Telegram for quick replies, approvals, and mid-day idea dumps.</p><code>gm / approve phrase / new idea</code></div>
             <div className="action-card"><b>Daily task mode</b><p>Open the dashboard, pick the one move, then use the optional 15/30/60-minute extensions.</p><code>read → decide → execute</code></div>
             <div className="action-card"><b>Future action layer</b><p>Buttons will generate approval packets first. No direct posting, spending, trading, or service changes.</p><code>approval-gated</code></div>
-            <a className="action-card" href="/market"><b>Market activity tracker</b><p>Personal/open-source crypto + data-infra pulse: prices, DeFi TVL, GitHub activity, narrative heat.</p><code>open /market</code></a>
-            <a className="action-card" href="/gate-deck"><b>Gate Deck</b><p>Tap-to-verdict cards for pending decisions. Posts verdicts to the capture-only inbox API.</p><code>open /gate-deck</code></a>
-            <a className="action-card" href="/docs"><b>Library</b><p>The documents that matter: job tracker, packets, cartoon lab, reports — readable on any screen.</p><code>open /docs</code></a>
           </div>
         </div>
 

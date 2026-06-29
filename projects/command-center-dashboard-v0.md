@@ -1,30 +1,5 @@
 # Project: Commander Dashboard / Command Center UI v0
 
-## Status — 2026-07-24
-
-- Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
-- CC-24 parser re-check passed again on the live report; `MORNING_REPORT.md` still holds the strict `Open:` / `Decide:` line-4 shape with one bolded `Decision:` line.
-- 2026-07-10 parser re-check passed again: the live morning report still matches the exact 5-line CC-24 shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
-- Added a strict local re-check packet below so the next 07:30 pass can be rerun without re-deriving the criteria.
-- 2026-07-24 23:01 UTC draft-only verification: reran the strict parser check and the live morning report still passes the exact 5-line CC-24 shape.
-- Next action: rerun the 2026-07-25 07:30 parser check; if the file still passes, keep CC-24 as `todo` and continue the exact-shape freeze.
-- Safety: local docs only; no posting, sending, spending, or secrets.
-
-### CC-24 draft-only verification packet
-
-```bash
-python3 - <<'PY'
-from pathlib import Path
-lines = Path('/home/josh/COMMANDER/MORNING_REPORT.md').read_text().splitlines()
-assert len(lines) == 5, f'expected 5 lines, got {len(lines)}'
-assert 'Open:' in lines[3] and 'Decide:' in lines[3], 'line 4 must contain Open: and Decide:'
-assert lines[4].count('**Decision:**') == 1, 'line 5 must contain exactly one bolded Decision label'
-print('CC-24 check passed')
-PY
-```
-
-- Pass criteria: 5 lines total; line 4 contains both `Open:` and `Decide:`; line 5 contains exactly one `**Decision:**` label; no extra bullets.
-
 ## Why this matters
 
 Josh now has the core operator loop working: Commander on the Pi, Telegram access, morning cron, GitHub-visible repo state, and an older Sovereignty Stack already on the same machine.
@@ -201,17 +176,3 @@ It should include:
 - approval queue
 
 No installs. No server. No secrets. No deployment.
-
-## CC-24 draft target
-
-The morning brief should compress into one scan-friendly packet that fits a
-single phone screen:
-
-1. `Status: ...`
-2. `Shipped this week: ...`
-3. `CI-1 update: ...`
-4. `Open: ...` and `Decide: ...`
-5. `**Decision:** ...`
-
-Keep it under 60 seconds to read, with exactly one bolded decision and no extra
-bullets.

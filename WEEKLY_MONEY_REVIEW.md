@@ -1,45 +1,40 @@
-# 💸 Weekly Money / Revenue Review — 2026-09-22 → 2026-09-28
+# 💸 Weekly Money / Revenue Review — 2026-06-23 → 2026-06-29
 
 ## 📊 Scoreboard
-- **Shipped externally:** 0 this week.
-- **Realized revenue:** $0.
-- **Target cash-flow floor:** $12K/month after tax; still unmet.
-- **Cash-runway lane:** CI-1 / Anchorage Digital **Trading Operations, Transformation Lead** (posting ID `b3c332bc`) — live on official Lever feed 2026-09-26 recheck, **Singapore, Remote** (Full-Time - Remote), Global Operations → Trading Operations; title changed from "Team Lead" to "Transformation Lead" on 2026-09-22; **location changed from United States to Singapore on 2026-09-26** — a material scope change that alters the prior remote-US premise; needs Josh's go/no-go. **Both Anchorage postings carry an in-person onboarding mandate** (confirmed 2026-09-26 on both live pages). Compensation still undisclosed; lane stays draft-only. The secondary candidate — Member of Trading Operations — still shows United States / Remote-US (did not change to Singapore) and remains the fallback if the Transformation Lead gate stays closed.
-- **Owned asset lane:** FE-1 / The Boring Report — Aave V3 WETH compare-only result note filled (2026-09-22); verifier passes; WBTC-first capture checklist written; next step still gated on a fresh verified WBTC bundle. No new snapshot or publication.
-- **Safety state:** Draft-only. No posting, sending, spending, secrets, account actions, or public uploads.
+- **Top revenue lane:** Bad Boys / Joycat / Mog — fastest asymmetric upside, but only if grounded in Josh’s real assets.
+- **Current blocker:** Josh needs to approve or reject the real-asset TikTok setup before account/public steps.
+- **Metric / proxy:** 27 Bad Boys assets ingested; 2 real account-ready candidates isolated; 1 draft income-backstop outreach offer created.
+- **Safety state:** Draft-only. No posting, sending, spending, secrets, trades, account creation, or public uploads performed.
 
 ## ✅ What moved this week
-- **CI-1 (Anchorage):** Rechecked both Anchorage postings live on 2026-09-26 against official no-login Lever pages — both still open. **CRITICAL new finding on the primary Transformation Lead role:** the location changed from United States to **Singapore** — a material scope change that alters the prior remote-US premise and needs Josh's go/no-go (Singapore-based remote + mandatory in-person onboarding travel to Singapore). The secondary Member of Trading Operations role still shows United States / Remote-US — it did NOT change to Singapore. Both postings carry the in-person onboarding mandate confirmed on 2026-09-24 and reconfirmed 2026-09-26. Updated packet, decision brief, source note, application-form preflight, next-step note, tracker rows, queue wording, NOW, morning report, weekly review, and career project status to the 2026-09-26 ground truth. Compensation still undisclosed; lane gated on floor ($120K min / $150K preferred, with Singapore adding complexity) + Josh's scope + location + in-person onboarding go/no-go.
-- **CI-1 secondary:** Completed draft-ahead for the fallback Anchorage candidate — **Member of Trading Operations** (ID `0f13c760`) — packet + decision brief + source note all written and source-verified (2026-09-23); rechecked live 2026-09-26 — still shows United States / Remote-US (did NOT change to Singapore); same in-person onboarding finding confirmed.
-- **FE-1 (Boring Report):** Filled in the Aave V3 WETH compare-only result note (feed address/decimals unchanged; only latest-round fields moved; verifier rehashed 3 baseline + 91 Aave snapshots; 4 focused tests passed; deterministic renderer exact; explicit non-claims recorded). Wrote the WBTC-first snapshot preflight note and a concrete 6-step WBTC capture checklist — next pass shape is now concrete and operator-ready.
-- **MA-1 (Market Activity):** Implemented the config-wiring build step in `scripts/fetch_market_activity.py` (reads `configs/market_watchlist.json` as source of truth); smoke-tested with a live run that wrote `dashboard/market_activity.json` (5,257 bytes, 0 warnings). Lane stays parked behind the CI-1 week-smooth reopen condition.
-- **Org hygiene:** Weekly organization reset loop ran 2026-09-25 — corrected three stale lines (TASK_QUEUE CI-1 row, MORNING_REPORT CI-1 line, NOW.md active-focus date) that were still anchored to the 2026-09-22 recheck and omitting the in-person onboarding finding.
+- Commander became operational: Pi + `commander` profile + provider/fallback + Telegram + 7am cron + GitHub-visible morning loop.
+- Bad Boys sprint was reset away from generated launch-card wank and toward the real assets Josh actually provided.
+- Income backstop exists: `projects/in-1-lead-list-outreach-draft-2026-06-29.md` frames a $690 fixed-pilot research-support offer.
 
 ## 🧠 Money thesis
-The fastest path to more income is still one good-fit remote role with a real compensation floor, while The Boring Report compounds as the owned asset. CI-1 is the cash runway; FE-1 is the leverage asset. The new in-person onboarding finding on the Anchorage postings is the first material scope wrinkle — it may signal ongoing in-person presence despite the "Remote" label, or may mean travel for onboarding; either way it needs Josh's verdict before the lane advances.
+Best near-term leverage is **one real-world signal test**, not more planning: approve the real Bad Boys asset setup or pivot to verified paid-research leads.
 
 ## 🔪 Kill / scale / park
-- **Kill:** any new FE-1 snapshot, publication, payment, or account work until a fresh verified WBTC bundle exists and the compare-only surface proves literal change only.
-- **Scale:** the Anchorage CI-1 packet, but only after Josh resolves the in-person onboarding gate and confirms the compensation floor clears.
-- **Park:** Weather Oracle, Bad Boys, and dashboard churn unless they directly unblock cash or a shipped proof. MA-1 stays parked behind the CI-1 reopen condition.
+- **Kill:** More generated slogan/card systems for Bad Boys until real assets are exhausted.
+- **Scale:** The daily/weekly Commander reporting loop — it reduces stress and keeps decisions visible.
+- **Park:** Dashboard build after the next money decision; useful, but not the revenue bottleneck this week.
 
 ## 🎯 Next 7 days
-**Primary money move:** Get Josh a clean hold / tweak / kill read on the Anchorage Transformation Lead packet with the in-person onboarding finding surfaced explicitly — then only deepen the lane if compensation floor + scope + onboarding all clear.
+**Primary money move:** Get one concrete market signal path unblocked.
 
-- If Anchorage clears: keep the packet send-ready but unsent; tailor only on Josh's explicit call.
-- If Anchorage fails the screen (pay too low, scope wrong, or in-person onboarding is a hard no): move to the next best non-Coinbase cash-runway target instead of widening FE-1.
-- Keep FE-1 compare-only; do not run a new WBTC snapshot without the fresh verified bundle gate.
-- MA-1 stays parked; next action is daily snapshots only when the CI-1 week-smooth reopen condition clears.
+- **15 min:** Open `assets/badboys/account-ready-real-assets-v0/review-gallery.html` and decide if the avatar + first post are good enough to test.
+- **30 min:** If yes, Josh creates TikTok `bebad4good` with bio `Be bad for da good of humanity.` Credentials/2FA stay Josh-only.
+- **60 min:** If no or stalled, approve lead verification for IN-1 so Commander builds 10 named paid-pilot prospects; still no sending.
 
 ## ✅ Approval needed from Josh
 Copy/paste one:
 
-- `APPROVE ANCHORAGE TRANSFORMATION LEAD AS CASH RUNWAY (in-person onboarding accepted)`
-- `HOLD ANCHORAGE DRAFT-ONLY — IN-PERSON ONBOARDING NEEDS VERDICT`
-- `KILL ANCHORAGE — IN-PERSON ONBOARDING IS A HARD NO / PAY DOESN'T CLEAR — MOVE TO NEXT CASH TARGET`
+- `APPROVE REAL ASSET ACCOUNT PREP`
+- `RUN IN-1 LEAD VERIFY`
+- `PAUSE BAD BOYS — BUILD DASHBOARD STATE V0`
 
 ## 🧯 Commander accountability call-out
-Same anomaly as last week: lots of draft hygiene, zero external revenue shipped. This week the draft work was higher-quality (source-verified rechecks with a material new finding, a filled-in compare result note, a concrete WBTC run sheet, a working config-wired fetcher) but still no externally delivered unit. The cash-runway lane is the only one that can change that; the in-person onboarding finding is the open question.
+Risk this week: **overbuilding / fake productivity**. Dashboard, cron polish, and content systems are useful only if they serve one market test. The money bottleneck is not tooling now — it is choosing the next signal path.
 
 ## 🛡 Safety footer
 No posting. No sending. No spending. No secrets. No trades. No account actions. No financial advice. Drafts and repo artifacts only.
