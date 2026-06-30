@@ -222,5 +222,6 @@ One short entry per working day. What advanced + estimated spend.
 - Estimated spend: $0.00 incremental API spend.
 
 - Improved Mission Control convenience after Josh noticed 60-second review paths were not clickable. Added a safe `/files/...` route for whitelisted repo artifacts and linkified review/task paths so galleries/docs can open from the dashboard.
+- Added the first Decision Console: open the relevant artifact, copy an approval command, then paste it into Telegram or the CLI chat. This keeps Mission Control as cockpit and Telegram/CLI as the execution throttle until direct dashboard chat has auth/approval gates.
 - Documented the future in-dashboard Commander chat path in `docs/mission-control-interaction-roadmap.md`: Telegram remains the safe live control channel first; direct web chat needs auth/session/approval design before implementation.
 - Estimated spend: $0.00 incremental API spend.

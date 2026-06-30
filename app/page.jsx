@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import CopyCommandButton from './components/CopyCommandButton';
 
 const ROOT = process.cwd();
 const STATE_PATH = path.join(ROOT, 'dashboard', 'state.json');
@@ -119,6 +120,26 @@ export default function Dashboard() {
   const containers = state.sovereignty?.docker?.containers || [];
   const review = state.focus?.review?.length ? state.focus.review : ['Open: WEEKLY_MONEY_REVIEW.md', 'Decide: choose one signal path'];
   const approvalPhrase = approvals[0]?.next_action || 'APPROVE REAL ASSET ACCOUNT PREP or RUN IN-1 LEAD VERIFY';
+  const decisionCommands = [
+    {
+      label: 'Approve Bad Boys account prep',
+      command: 'APPROVE REAL ASSET ACCOUNT PREP',
+      href: fileHref('assets/badboys/account-ready-real-assets-v0/review-gallery.html'),
+      detail: 'Use if the real avatar + first-post asset are good enough for the first TikTok signal test.'
+    },
+    {
+      label: 'Run paid-research backstop',
+      command: 'RUN IN-1 LEAD VERIFY',
+      href: fileHref('projects/in-1-lead-list-outreach-draft-2026-06-29.md'),
+      detail: 'Use if Bad Boys is not ready or you want Commander to build 10 named paid-pilot prospects.'
+    },
+    {
+      label: 'Pause and improve dashboard',
+      command: 'PAUSE BAD BOYS — IMPROVE MISSION CONTROL',
+      href: fileHref('docs/mission-control-interaction-roadmap.md'),
+      detail: 'Use when the operating cockpit itself is the bottleneck.'
+    }
+  ];
 
   return (
     <main className="shell">
@@ -161,6 +182,31 @@ export default function Dashboard() {
             <code>{approvalPhrase}</code>
           </div>
         </div>
+      </section>
+
+      <section className="panel decision-console">
+        <div className="panel-label green">Decision console — review → copy → send to Commander</div>
+        <div className="decision-flow">
+          <div><span>1</span> Open the artifact</div>
+          <div><span>2</span> Pick the command</div>
+          <div><span>3</span> Paste it in Telegram or this chat</div>
+        </div>
+        <div className="decision-command-grid">
+          {decisionCommands.map((item) => (
+            <div className="decision-command" key={item.command}>
+              <div>
+                <b>{item.label}</b>
+                <p>{item.detail}</p>
+                <code>{item.command}</code>
+              </div>
+              <div className="decision-actions">
+                <a className="open-button" href={item.href} target="_blank" rel="noreferrer">Open artifact ↗</a>
+                <CopyCommandButton command={item.command} label="Copy command" />
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="decision-note">For now, Mission Control is the cockpit and Telegram/CLI is the throttle. Direct in-dashboard chat comes after auth + approval gates are designed.</p>
       </section>
 
       <section className="triple-grid">

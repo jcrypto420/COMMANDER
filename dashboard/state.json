@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T00:26:14.589677+00:00",
+  "generated_at": "2026-06-30T00:36:17.185225+00:00",
   "host": {
     "name": "commandcenter",
     "lan_ip": "192.168.1.189",
@@ -555,17 +555,15 @@
   },
   "git": {
     "branch": "feat/command-center-scaffolding",
-    "head": "8f228fb",
-    "dirty_count": 9,
+    "head": "577970c",
+    "dirty_count": 7,
     "changes": [
       "M app/globals.css",
       " M app/page.jsx",
-      " M dashboard/state.json",
-      " M docs/mission-control-dashboard.md",
+      " M docs/mission-control-interaction-roadmap.md",
       " M logs/daily_progress.md",
-      "?? app/files/",
+      "?? app/components/",
       "?? assets/badboys/generated/",
-      "?? docs/mission-control-interaction-roadmap.md",
       "?? scripts/set_telegram_token.py"
     ]
   },
@@ -618,62 +616,62 @@
       "containers": [
         {
           "name": "resource-service",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:8789->8789/tcp, [::]:8789->8789/tcp"
         },
         {
           "name": "wallet-service",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:8788->8788/tcp, [::]:8788->8788/tcp"
         },
         {
           "name": "ticker-service",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp"
         },
         {
           "name": "big-bear-nexterm",
-          "status": "Up 6 seconds",
-          "ports": "0.0.0.0:6989->6989/tcp, [::]:6989->6989/tcp"
+          "status": "Restarting (1) 53 seconds ago",
+          "ports": ""
         },
         {
           "name": "grafana",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:3010->3000/tcp, [::]:3010->3000/tcp"
         },
         {
           "name": "navidrome",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:4533->4533/tcp, [::]:4533->4533/tcp"
         },
         {
           "name": "prometheus",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp"
         },
         {
           "name": "node-exporter",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp"
         },
         {
           "name": "homepage",
-          "status": "Up 21 hours (healthy)",
+          "status": "Up 22 hours (healthy)",
           "ports": "0.0.0.0:3005->3000/tcp, [::]:3005->3000/tcp"
         },
         {
           "name": "big-bear-glances",
-          "status": "Up 21 hours",
+          "status": "Up 22 hours",
           "ports": "0.0.0.0:61208->61208/tcp, [::]:61208->61208/tcp, 61209/tcp"
         },
         {
           "name": "immich-server",
-          "status": "Up 21 hours (healthy)",
+          "status": "Up 22 hours (healthy)",
           "ports": "0.0.0.0:2283->2283/tcp, [::]:2283->2283/tcp"
         },
         {
           "name": "immich-postgres",
-          "status": "Up 21 hours (healthy)",
+          "status": "Up 22 hours (healthy)",
           "ports": "5432/tcp"
         }
       ],

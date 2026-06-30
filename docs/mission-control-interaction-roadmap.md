@@ -25,16 +25,21 @@ Blocked by design:
 
 ## v0.2 — action cards
 
-Add buttons that copy approval phrases or open the right artifact. Buttons still do not post, send, spend, trade, deploy, or change services.
+Status: implemented for first approval commands.
 
-Good first buttons:
+Mission Control now has a Decision Console:
 
-- Open real Bad Boys asset gallery
-- Open Weekly Money Review
-- Open Morning Brief
-- Copy `APPROVE REAL ASSET ACCOUNT PREP`
-- Copy `RUN IN-1 LEAD VERIFY`
-- Refresh dashboard state
+1. Open the artifact.
+2. Pick the command.
+3. Copy it and paste into Telegram or the CLI chat.
+
+Current command cards:
+
+- Open real Bad Boys asset gallery + copy `APPROVE REAL ASSET ACCOUNT PREP`
+- Open IN-1 paid-research backstop + copy `RUN IN-1 LEAD VERIFY`
+- Open this roadmap + copy `PAUSE BAD BOYS — IMPROVE MISSION CONTROL`
+
+Buttons still do not post, send, spend, trade, deploy, or change services.
 
 ## v0.3 — chat with Commander inside Mission Control
 
