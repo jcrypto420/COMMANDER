@@ -220,3 +220,7 @@ One short entry per working day. What advanced + estimated spend.
 - Phone access note: works from phone on the same home WiFi/LAN at `http://192.168.1.189:3011`; cellular/off-site access still requires later Tailscale/private-network setup approval.
 - Safety: no router/public exposure, no secrets, no posting/sending/spending/trading/account action.
 - Estimated spend: $0.00 incremental API spend.
+
+- Improved Mission Control convenience after Josh noticed 60-second review paths were not clickable. Added a safe `/files/...` route for whitelisted repo artifacts and linkified review/task paths so galleries/docs can open from the dashboard.
+- Documented the future in-dashboard Commander chat path in `docs/mission-control-interaction-roadmap.md`: Telegram remains the safe live control channel first; direct web chat needs auth/session/approval design before implementation.
+- Estimated spend: $0.00 incremental API spend.

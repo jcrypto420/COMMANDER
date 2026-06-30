@@ -43,13 +43,42 @@ function statusClass(value) {
   return 'warn';
 }
 
+function fileHref(filePath) {
+  return `/files/${filePath.replace(/^\/+/, '').split('/').map(encodeURIComponent).join('/')}`;
+}
+
+function fileLabel(filePath) {
+  return filePath.split('/').filter(Boolean).slice(-2).join('/');
+}
+
+function repoPathFromText(text) {
+  const raw = String(text || '').replace(/`/g, '');
+  const match = raw.match(/(?:^|\s)([A-Za-z0-9_./-]+\.(?:html|md|json|png|svg|jpg|jpeg|gif|webp))/i);
+  if (!match) return null;
+  return match[1].replace(/^\/home\/josh\/COMMANDER\//, '').replace(/^\.\//, '');
+}
+
+function LinkifyText({ text }) {
+  const value = String(text || '');
+  const repoPath = repoPathFromText(value);
+  if (!repoPath) return value;
+  return (
+    <>
+      {value}{' '}
+      <a className="inline-link" href={fileHref(repoPath)} target="_blank" rel="noreferrer">
+        Open {fileLabel(repoPath)} ↗
+      </a>
+    </>
+  );
+}
+
 function TaskCard({ task }) {
   return (
     <div className="task-card">
       <div className="task-id">{task.id}</div>
       <div className="task-main">
         <div className="task-title">{task.task}</div>
-        <div className="task-sub">{task.project} · {task.next_action}</div>
+        <div className="task-sub"><LinkifyText text={`${task.project} · ${task.next_action}`} /></div>
       </div>
       <div className={`badge ${task.status}`}>{task.status}</div>
     </div>
@@ -71,7 +100,7 @@ function BriefLine({ icon, title, children }) {
       <div className="brief-icon">{icon}</div>
       <div>
         <b>{title}</b>
-        <p>{children}</p>
+        <p><LinkifyText text={children} /></p>
       </div>
     </div>
   );
