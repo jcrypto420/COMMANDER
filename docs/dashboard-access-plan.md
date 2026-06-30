@@ -34,9 +34,15 @@ http://192.168.1.189:3011
 
 Stop it with `Ctrl+C` in that terminal.
 
-## More convenient permanent path
+## Permanent path is now installed
 
-After Josh approves service setup, install a user-level service that:
+Josh approved service setup. Mission Control now runs as a user-level service:
+
+```text
+commander-mission-control.service
+```
+
+It:
 
 - runs `npm run dashboard:state` before start
 - serves Mission Control on `0.0.0.0:3011`
@@ -44,11 +50,7 @@ After Josh approves service setup, install a user-level service that:
 - stays on LAN only unless router/firewall rules expose it, which Commander must not do
 - does not replace the existing `3010` Sovereignty Stack dashboard
 
-Suggested approval phrase:
-
-```text
-APPROVE MISSION CONTROL USER SERVICE ON PORT 3011
-```
+See: `docs/mission-control-service.md`
 
 ## Later upgrade
 

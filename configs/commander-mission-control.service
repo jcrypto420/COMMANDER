@@ -1,0 +1,17 @@
+[Unit]
+Description=Commander Mission Control Dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/josh/COMMANDER
+Environment=NODE_ENV=production
+Environment=PATH=/home/josh/.local/bin:/home/josh/.hermes/profiles/commander/home/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStartPre=/usr/bin/env bash -lc 'npm run dashboard:state'
+ExecStart=/usr/bin/env bash -lc 'npm run start:lan'
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

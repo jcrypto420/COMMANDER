@@ -215,3 +215,8 @@ One short entry per working day. What advanced + estimated spend.
 - Chose the easiest Mission Control access path for Josh: LAN from HP laptop at `http://192.168.1.189:3011`, using `npm run dev:lan`. Verified Tailscale CLI is not installed and port `3010` is already occupied by an existing dashboard/login service, so Mission Control should use `3011` for now.
 - Added `dev:lan` and `start:lan` npm scripts plus `docs/dashboard-access-plan.md`; permanent user service remains approval-gated.
 - Estimated spend: $0.00 incremental API spend.
+
+- Josh approved the permanent no-PuTTY path. Installed and enabled user service `commander-mission-control.service`, rebuilt Mission Control, restarted the service, verified status `active (running)`, and confirmed `curl http://127.0.0.1:3011/` returns rendered Next.js HTML.
+- Phone access note: works from phone on the same home WiFi/LAN at `http://192.168.1.189:3011`; cellular/off-site access still requires later Tailscale/private-network setup approval.
+- Safety: no router/public exposure, no secrets, no posting/sending/spending/trading/account action.
+- Estimated spend: $0.00 incremental API spend.

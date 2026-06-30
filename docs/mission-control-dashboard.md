@@ -55,7 +55,10 @@ Note: port `3010` is already used by Josh's existing Sovereignty Stack dashboard
 
 - `npm run dashboard:state` writes `dashboard/state.json` successfully.
 - `npm run build` completes successfully with Next.js 16.2.9.
-- `curl http://127.0.0.1:3011/` returned the rendered Next.js HTML during local test.
+- `commander-mission-control.service` is enabled and running as a user service.
+- `curl http://127.0.0.1:3011/` returned rendered Next.js HTML during service test.
+
+Service details: `docs/mission-control-service.md`
 
 ## Known issue
 

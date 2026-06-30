@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T20:59:50.630082+00:00",
+  "generated_at": "2026-06-30T00:05:47.994617+00:00",
   "host": {
     "name": "commandcenter",
     "lan_ip": "192.168.1.189",
@@ -16,7 +16,7 @@
     "next3": [
       "Tomorrow hard start: review `projects/tomorrow-hard-start-2026-06-29.md`,",
       "If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from",
-      "Build Command Center Dashboard v0 from `projects/command-center-dashboard-v0.md`"
+      "Next dashboard step: easiest access is LAN on port 3011 (`npm run dev:lan`, then open `http://192.168.1.189:3011`). Permanent user service still requires approval."
     ],
     "money_move": "Made the morning loop easier to scan: one top-level brief, one decision, clear status, no log-diving.",
     "review": [
@@ -148,8 +148,8 @@
         "project": "Command Center",
         "priority": "1",
         "task": "Command Center Dashboard v0",
-        "status": "doing",
-        "next_action": "static prototype + integration plan drafted; next build read-only state generator",
+        "status": "done",
+        "next_action": "Next.js mission-control dashboard scaffold built; state generator + production build verified",
         "approval": "no"
       },
       {
@@ -168,6 +168,15 @@
         "task": "Weekly Money / Revenue Review Telegram report",
         "status": "done",
         "next_action": "cron `weekly-money-review` live Mondays 8am; first run created `WEEKLY_MONEY_REVIEW.md",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-17",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Mission Control access plan",
+        "status": "done",
+        "next_action": "easiest path documented: LAN port 3011 from HP laptop; permanent user service approval phrase ready",
         "approval": "yes"
       },
       {
@@ -425,15 +434,6 @@
     ],
     "doing": [
       {
-        "id": "CC-14",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Command Center Dashboard v0",
-        "status": "doing",
-        "next_action": "static prototype + integration plan drafted; next build read-only state generator",
-        "approval": "no"
-      },
-      {
         "id": "BB-17",
         "project": "Bad Boys/Joycat",
         "priority": "2",
@@ -531,10 +531,10 @@
       }
     ],
     "counts": {
-      "doing": 3,
+      "doing": 2,
       "blocked": 1,
       "todo": 3,
-      "done": 37
+      "done": 39
     }
   },
   "hermes": {
@@ -555,21 +555,13 @@
   },
   "git": {
     "branch": "feat/command-center-scaffolding",
-    "head": "6062923",
-    "dirty_count": 18,
+    "head": "a41d098",
+    "dirty_count": 4,
     "changes": [
-      "M NOW.md",
-      " M TASK_QUEUE.md",
-      " M logs/daily_progress.md",
-      " M logs/model_usage.csv",
-      " M package-lock.json",
-      " M package.json",
-      "?? .next/",
-      "?? COMMANDER_OPERATING_RHYTHM_V1.md",
-      "?? WEEKLY_MONEY_REVIEW.md",
-      "?? app/",
+      "M dashboard/state.json",
+      " M next.config.mjs",
       "?? assets/badboys/generated/",
-      "?? dashboard/"
+      "?? scripts/set_telegram_token.py"
     ]
   },
   "sovereignty": {
@@ -621,62 +613,62 @@
       "containers": [
         {
           "name": "resource-service",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:8789->8789/tcp, [::]:8789->8789/tcp"
         },
         {
           "name": "wallet-service",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:8788->8788/tcp, [::]:8788->8788/tcp"
         },
         {
           "name": "ticker-service",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp"
         },
         {
           "name": "big-bear-nexterm",
-          "status": "Restarting (1) 51 seconds ago",
+          "status": "Restarting (1) 3 seconds ago",
           "ports": ""
         },
         {
           "name": "grafana",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:3010->3000/tcp, [::]:3010->3000/tcp"
         },
         {
           "name": "navidrome",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:4533->4533/tcp, [::]:4533->4533/tcp"
         },
         {
           "name": "prometheus",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp"
         },
         {
           "name": "node-exporter",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp"
         },
         {
           "name": "homepage",
-          "status": "Up 18 hours (healthy)",
+          "status": "Up 21 hours (healthy)",
           "ports": "0.0.0.0:3005->3000/tcp, [::]:3005->3000/tcp"
         },
         {
           "name": "big-bear-glances",
-          "status": "Up 18 hours",
+          "status": "Up 21 hours",
           "ports": "0.0.0.0:61208->61208/tcp, [::]:61208->61208/tcp, 61209/tcp"
         },
         {
           "name": "immich-server",
-          "status": "Up 18 hours (healthy)",
+          "status": "Up 21 hours (healthy)",
           "ports": "0.0.0.0:2283->2283/tcp, [::]:2283->2283/tcp"
         },
         {
           "name": "immich-postgres",
-          "status": "Up 18 hours (healthy)",
+          "status": "Up 21 hours (healthy)",
           "ports": "5432/tcp"
         }
       ],
