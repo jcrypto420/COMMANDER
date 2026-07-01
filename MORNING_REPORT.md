@@ -22,4 +22,4 @@ Clean the operating loop so Commander compounds progress instead of collecting p
 - Service restart: Josh approved, but runtime safety blocked `systemctl --user restart`; do not retry in this session.
 
 ➡️ NEXT IF YOU DO NOTHING
-I’ll finish the clean checkpoint, then build a draft-only daily job/application loop unless you redirect.
+I’ll build a draft-only daily job/application loop: scrape 3–5 best-fit roles, you pick the ones you’re feeling, then I tailor application packets.

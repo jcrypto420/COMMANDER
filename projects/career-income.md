@@ -35,13 +35,29 @@
 
 Goal: turn career/income defense into a calm daily habit, not a panic sprint.
 
-Draft-only v0 should include:
+Josh’s preferred flow:
 
-1. **One daily target:** identify or advance one high-fit role/lead per weekday.
-2. **One tracker row:** company, role, fit thesis, stage, next action, follow-up date.
-3. **One tailored packet:** resume/portfolio notes + short application/outreach draft.
-4. **One approval gate:** Josh approves before any application submission, message, email, public post, or credentialed account action.
-5. **One weekly review:** kill weak lanes, improve resume bullets, and pick the next best target cluster.
+1. **Daily scrape/research:** Commander finds 3–5 fresh roles/leads each weekday.
+2. **Fit ranking:** Commander ranks by fit, upside, flexibility, crypto/data-infra relevance, and application effort.
+3. **Josh taste gate:** Josh picks which roles he is actually feeling.
+4. **Tailored packet:** Commander tailors resume bullets, cover note, portfolio angle, and application/outreach draft for each selected role.
+5. **Approval gate:** Josh approves before any application submission, message, email, public post, credentialed account action, or paid job-board action.
+6. **Weekly review:** kill weak lanes, improve search terms, sharpen resume bullets, and pick the next best target cluster.
+
+Daily report format should be short:
+
+| Rank | Company | Role | Why Josh fits | Why it may suck | Commander rec |
+|------|---------|------|---------------|-----------------|---------------|
+
+Default ask to Josh: “Which 1–2 are you feeling today?”
+
+Clarifications that improve quality but do **not** block v0:
+
+- current resume / LinkedIn / portfolio source material
+- remote vs local vs hybrid preference and acceptable time zones
+- rough compensation floor / must-not-waste-time level
+- hard no-go filters: industries, company stages, travel, management load, sales-heavy roles
+- preferred job sources if Josh already has them; otherwise Commander starts with public/no-login sources
 
 Good first target clusters:
 
@@ -53,9 +69,9 @@ Good first target clusters:
 
 ## Tracker
 
-| Date | Company/Lead | Role | Stage | Next action | Follow-up |
-|------|--------------|------|-------|-------------|-----------|
-| | | | | | |
+| Date found | Company/Lead | Role | Fit rank | Josh feeling? | Stage | Next action | Follow-up |
+|------------|--------------|------|----------|---------------|-------|-------------|-----------|
+| | | | | | | | |
 
 ## Notes
 

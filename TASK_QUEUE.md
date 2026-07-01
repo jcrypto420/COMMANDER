@@ -11,7 +11,7 @@ Operating rule: keep exactly one `doing` task when possible. Parked lanes should
 |----|---------|-----|------|--------|-------------|----------|
 | CC-10 | Command Center | 1 | Private phone access (Tailscale-first) | todo | try Tailscale SSH / dashboard before any chat platform | **yes** |
 | CC-13 | Command Center | 1 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
-| CI-1 | Career/Income | 1 | Daily job/application process | blocked | next lane after OPS-1 checkpoint; build draft-only tracker/checklist, no submissions/messages without Josh approval | **yes** |
+| CI-1 | Career/Income | 1 | Daily job/application process | blocked | next lane after OPS-1 checkpoint; daily scrape 3–5 best-fit roles, Josh picks, then tailor application packets; no submissions/messages without approval | **yes** |
 | BB-17 | Bad Boys/Joycat | 2 | Week 1 manual posting packet | blocked | parked during systems reset; no public/account work unless Josh reopens Bad Boys | yes |
 | BB-23 | Bad Boys/Joycat | 2 | TikTok account creation runbook | blocked | Josh must perform credentials/verification/2FA; Pi browser unavailable | **yes** |
 | BB-24 | Bad Boys/Joycat | 2 | Refocus on real assets | blocked | parked while Josh shifts to market activity tracker; reopen only if approved | yes |
