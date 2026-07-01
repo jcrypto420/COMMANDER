@@ -34,6 +34,8 @@ Phone access:
 systemctl --user status commander-mission-control.service --no-pager
 systemctl --user restart commander-mission-control.service
 journalctl --user -u commander-mission-control.service -n 80 --no-pager
+systemctl --user status commander-mission-control-refresh.timer --no-pager
+journalctl --user -u commander-mission-control-refresh.service -n 40 --no-pager
 ```
 
 ## What it does
@@ -44,6 +46,16 @@ journalctl --user -u commander-mission-control.service -n 80 --no-pager
 - Does not touch existing port `3010` Sovereignty Stack dashboard.
 - Survives PuTTY disconnects.
 
+## Auto-refresh
+
+Approved and installed on 2026-06-30:
+
+- `commander-mission-control-refresh.timer` runs every 2 minutes.
+- It triggers `commander-mission-control-refresh.service`.
+- The refresh service runs `npm run dashboard:state` from `/home/josh/COMMANDER`.
+- The browser page includes a 120-second refresh so phone Mission Control catches new state without manual reloads.
+- This is read-only dashboard state generation; it does not post, send, spend, create accounts, expose ports, or touch secrets.
+
 ## Verification
 
 Verified on 2026-06-29:
@@ -52,10 +64,12 @@ Verified on 2026-06-29:
 - `systemctl --user restart commander-mission-control.service` succeeded.
 - service status showed `active (running)`.
 - `curl http://127.0.0.1:3011/` returned rendered Next.js HTML.
+- `commander-mission-control-refresh.timer` is enabled/active and refresh service completed successfully.
 
 ## Safety
 
 - No router/public exposure was configured.
 - No secrets displayed.
 - Dashboard action buttons remain approval-gated.
+- Commander Inbox is capture/triage only: it writes to `COMMANDER_INBOX.md` and local ignored `dashboard/commander_inbox.jsonl`; it does not execute commands, post, send, spend, or touch secrets.
 - Off-site access should be Tailscale/private-network only after approval.

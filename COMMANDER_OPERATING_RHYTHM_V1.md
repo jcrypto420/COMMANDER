@@ -2,6 +2,8 @@
 
 Purpose: make Commander easier to use, reduce Josh's stress, and turn ideas into revenue/health/family systems without creating another inbox to manage.
 
+Default execution loop: `COMMANDER_LOOP.md` is the compact source of truth for capture → clarify → rank → decide → execute → verify → log → park/archive. This rhythm doc explains the broader cadence; when there is conflict, use the compact loop for day-to-day execution.
+
 ## Operating split
 
 Josh owns:

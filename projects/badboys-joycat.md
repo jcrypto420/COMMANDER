@@ -1,73 +1,59 @@
-# Project: Bad Boys / Joycat Creative Business (High-upside revenue lane)
+# Project: Bad Boys / Joycat Creative Business
 
-**Goal:** Build a pseudonymous, brand-led creative business that grows audience
-and sales through meme-native IP, games, assets, content, merch, and community.
+**Goal:** Build a pseudonymous, brand-led creative business that grows audience and sales through meme-native IP, games, assets, content, merch, and community — without exposing Josh personally or taking public actions without approval.
 
-## Brand notes
+## Current operating rule
 
-- Do not post under Josh's personal name without approval.
-- Tone: playful, meme-native, sometimes controversial, but not super explicit.
-- Core phrases: "Moggers Mog" and "Be Bad For Da Good of Humanity."
-- Joycat / Mog / Mogcoin context should be researched mainly through Crypto
-  Twitter / CT culture.
-- Bad Boys is Josh's personal brand/IP; inventory Josh-provided logos, brand
-  identity, files, domains, accounts, and history before assuming details.
+Real assets beat generated launch-card wank.
 
-## Outputs
+The active path is one concrete public-signal setup using Josh-provided Bad Boys assets:
 
-- Product backlog
-- Roblox tasks
-- Steam / Unreal Engine experiment tasks
-- GTA6 creator-ecosystem opportunity notes
-- Merch concepts
-- Comic prompts
-- Short-form social prompts
-- Brand consistency docs
-- Social calendar
-- Launch checklists
-- Product backlog: `badboys-product-backlog-v0.md`
-- Signal dashboard: `badboys-signal-dashboard.md`
-- Week 1 v2 TikTok packet: `badboys-tiktok-week1-v2-manual-posting-packet.md`
-- First sticker pack brief: `badboys-first-sticker-pack-brief.md`
+1. Review the real asset gallery.
+2. Pick avatar variant.
+3. Josh creates TikTok account himself.
+4. Commander prepares only approval-gated posting/account packets.
+5. No posting, uploading, scheduling, spending, messaging, credentials, age-gate, verification, recovery, or 2FA handled by Commander.
+
+## Live files — use these first
+
+- Review before account creation: `badboys-review-before-account.md`
+- Avatar background test: `badboys-avatar-background-test-2026-06-30.md`
+- Reset / stop-the-wank note: `badboys-refocus-stop-the-wank.md`
+- TikTok account runbook: `badboys-tiktok-account-creation-runbook.md`
+- Asset gallery: `../assets/badboys/account-ready-real-assets-v0/review-gallery.html`
+- Avatar variants: `../assets/badboys/account-ready-real-assets-v0/avatar-background-test/review.html`
+- Main sprint: `../SPRINT_69.md`
+
+## Current recommendation
+
+- TikTok handle: `bebad4good`
+- Bio: `Be bad for da good of humanity.`
+- Avatar: `../assets/badboys/account-ready-real-assets-v0/avatar-background-test/bone-circle.png`
+- First post image: `../assets/badboys/account-ready-real-assets-v0/post-candidate-thunder-up.png`
+- First caption: `testing this.`
+- First comment / signal question: `keep or kill?`
 
 ## Status
 
-- [x] Product backlog v0
-- [x] Brand consistency doc
-- [x] First social calendar week
-- [x] TikTok account-creation packet
-- [x] 30-day TikTok rollout plan
-- [x] 30-day approval packet
-- [x] TikTok production board
-- [x] TikTok asset checklist
-- [x] Week 1 TikTok prompt pack
-- [x] Week 2–4 TikTok prompt pack
-- [x] Public Joycat / Mog / Mogcoin research brief
-- [x] Bad Boys asset inventory from Josh-provided files
-- [x] First audience/sales launch loop draft
-- [ ] Phone approval channel connected before public posting cadence
-- [x] First public approval packet prepared
-- [x] Week 1 v2 less-corny/harder TikTok asset pack drafted
-- [x] First sticker/PFP pack brief drafted
-- [x] First sticker/PFP SVG source pack drafted
+- [x] Bad Boys selected as current 69-day sprint experiment.
+- [x] Generated TikTok/card-pack direction demoted after Josh called it wank.
+- [x] Real Josh-provided asset pack created.
+- [x] Avatar background test created.
+- [ ] Josh approves avatar/account-prep direction.
+- [ ] Josh creates TikTok account on his own device.
+- [ ] Commander prepares first manual posting packet after approval.
+
+## Archived context
+
+Older drafts, generated TikTok packs, 30-day calendars, prompt packs, research notes, sticker/product backlog docs, and prior approval packets were moved to:
+
+- `archive/badboys/README.md`
+
+They are preserved for reference but should not be loaded by default. Load archive files only if Josh explicitly asks to revive or compare an older direction.
 
 ## First-win metrics
 
-- Followers / audience growth.
-- Sales.
-- Shipped experiments that can become offers or content.
-
-## Linked files
-
-- Sprint plan: `../SPRINT_69.md`
-- Launch loop draft: `badboys-launch-loop.md`
-- Public research brief: `badboys-joycat-research.md`
-- Brand one-pager draft: `badboys-brand-onepager.md`
-- Content hooks draft: `badboys-content-hooks.md`
-- Asset intake: `../assets/badboys/README.md`
-
-## Backlog
-
-| Idea | Type | Effort | Revenue potential | Next action |
-|------|------|--------|-------------------|-------------|
-| | | | | |
+- One real public signal test shipped safely.
+- A concrete keep/kill response from viewers.
+- Early followers, comments, saves, or clear taste feedback.
+- Product/merch/content direction chosen from signal, not theory.

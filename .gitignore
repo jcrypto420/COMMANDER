@@ -20,6 +20,20 @@ credentials/
 sessions/
 memories/
 
+# Generated dashboard/runtime state (local source-of-truth cache, not GitHub history)
+dashboard/state.json
+dashboard/commander_inbox.jsonl
+dashboard/market_activity.json
+
+# Local helper scripts that touch secrets/runtime profile state
+scripts/set_telegram_token.py
+
+# Private/generated one-off exports
+exports/home-inspection-*
+
+# Generated creative scratch/output that has not been curated for review
+assets/badboys/generated/
+
 # Logs (keep the dir + templates, ignore generated content)
 logs/*
 !logs/.gitkeep

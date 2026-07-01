@@ -1,22 +1,25 @@
-🌅 COMMANDER MORNING BRIEF — 2026-06-29
+🌅 COMMANDER RE-ENTRY BRIEF — 2026-06-30
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💰 TODAY'S MONEY MOVE
-Made the morning loop easier to scan: one top-level brief, one decision, clear status, no log-diving.
+💰 TODAY'S REAL MONEY MOVE
+Clean the operating loop so Commander compounds progress instead of collecting project sludge.
 
-✅ DONE WHILE YOU WERE AWAY
-- The 7am cron ran successfully and pushed the revenue backstop update to GitHub.
-- Bad Boys stays grounded on the two real Josh assets; no more generated launch-card wank unless you ask.
-- IN-1 backstop draft exists: `projects/in-1-lead-list-outreach-draft-2026-06-29.md`.
+✅ DONE THIS SESSION
+- Created `COMMANDER_LOOP.md`: capture → clarify → rank → decide → execute → verify → log → park/archive.
+- Shrunk `TASK_QUEUE.md` to active/backlog only and moved 39 completed rows to `TASK_ARCHIVE.md`.
+- Confirmed exactly one live `doing` task: `OPS-1 Anti-Slop Systems Reset`.
 
 👀 YOUR 60-SECOND REVIEW
-- Open: `assets/badboys/account-ready-real-assets-v0/review-gallery.html`
-- Decide: `APPROVE REAL ASSET ACCOUNT PREP` or `RUN IN-1 LEAD VERIFY`
+- Open: `COMMANDER_LOOP.md`
+- Then: `projects/systems-polish-reset-2026-06-30.md`
+- Next lane after reset: daily job/application process in `projects/career-income.md`
+- Decide: `KEEP CLEANING THE OPERATING LOOP`
 
 🚦 STATUS
-- Waiting on Josh: Bad Boys account/assets decision; Telegram token setup still later.
+- Active lane: Anti-Slop Systems Reset.
+- Parked: Bad Boys, market tracker, X/Grok/Cursor/MCP, paid research pilot.
 - Safety: no posting / no sending / no spending / no secrets.
-- GitHub: cron job succeeded earlier; this improved brief format is local until you approve commit+push.
+- Service restart: Josh approved, but runtime safety blocked `systemctl --user restart`; do not retry in this session.
 
 ➡️ NEXT IF YOU DO NOTHING
-Commander will keep advancing safe draft-only revenue backstops and keep each morning report under 60 lines.
+I’ll finish the clean checkpoint, then build a draft-only daily job/application loop unless you redirect.

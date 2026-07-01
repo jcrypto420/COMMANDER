@@ -8,13 +8,17 @@ const ALLOWED_PREFIXES = [
   'projects/',
   'docs/',
   'dashboard/',
+  'exports/',
   'prototypes/'
 ];
 const ALLOWED_ROOT_FILES = new Set([
   'MORNING_REPORT.md',
   'WEEKLY_MONEY_REVIEW.md',
   'COMMANDER_OPERATING_RHYTHM_V1.md',
+  'COMMANDER_LOOP.md',
+  'COMMANDER_INBOX.md',
   'TASK_QUEUE.md',
+  'TASK_ARCHIVE.md',
   'NOW.md',
   'GOALS.md'
 ]);

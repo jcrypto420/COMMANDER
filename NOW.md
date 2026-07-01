@@ -1,8 +1,9 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + 69-day revenue sprint discovery.
-Commander is live on the Pi and should turn Josh's intake into safe,
-low-cost execution.
+**Active focus:** Anti-Slop Systems Reset.
+For the rest of today, polish Commander’s processes, loops, source-of-truth docs,
+and shared operating agreement so we keep making real progress instead of
+accumulating bullshitSlop.
 
 **Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
 created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
@@ -11,17 +12,14 @@ passed.
 
 ## Next 3 tasks
 
-1. Tomorrow hard start: review `projects/tomorrow-hard-start-2026-06-29.md`,
-   then inspect only the two real Bad Boys assets in
-   `assets/badboys/account-ready-real-assets-v0/review-gallery.html`.
-2. If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from
-   phone/laptop; credentials, age-gate, verification, password, recovery, and
-   2FA stay Josh-controlled.
-3. Mission Control is live as a user service. Open on home WiFi from laptop/phone: `http://192.168.1.189:3011`. Off-site/cellular access needs later Tailscale approval.
+1. Systems reset is active: use `COMMANDER_LOOP.md` as the default loop and `projects/systems-polish-reset-2026-06-30.md` as today’s agreement.
+2. `TASK_QUEUE.md` is now active/backlog only; completed rows live in `TASK_ARCHIVE.md`. Keep exactly one `doing` task when possible.
+3. Mission Control service restart was approved by Josh but blocked by runtime safety; do not retry the service command in this session. Dashboard state/build files are verified locally.
 
 _Done: Telegram phone approval channel is live and locked to Josh's Telegram ID; daily money loop and Weekly Money / Revenue Review now deliver to Telegram._
 _Done: `weekly-money-review` cron is live Mondays at 8am and first run created `WEEKLY_MONEY_REVIEW.md`._
 _Done: Mission Control Dashboard v0 is now a Next.js app with read-only `dashboard/state.json`, Commander reports, task queue, Hermes/cron status, and Sovereignty Stack panels. `npm run build` passed; `commander-mission-control.service` is enabled/running on LAN port 3011._
+_Done: Bad Boys avatar background test created — `bone-circle.png` is the recommended TikTok avatar variant if Josh approves real-asset account prep._
 
 _Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
 _Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub

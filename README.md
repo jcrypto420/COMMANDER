@@ -44,9 +44,11 @@ require Josh's approval (see `HERMES_SETUP.md` and `SECURITY.md`).
 | Path | Purpose |
 |------|---------|
 | `GOALS.md` / `NOW.md` | Mission + current focus |
+| `COMMANDER_LOOP.md` | Capture → clarify → rank → execute → verify → log → park loop |
+| `COMMANDER_INBOX.md` | Capture-only messages submitted from Mission Control |
 | `MORNING_REPORT.md` | Latest 60-second morning brief from the daily loop |
 | `PROJECTS.md` / `projects/` | Money-making projects (kept separate) |
-| `TASK_QUEUE.md` | Simple task board |
+| `TASK_QUEUE.md` / `TASK_ARCHIVE.md` | Active task board + completed task archive |
 | `HERMES_SETUP.md` | Verified Hermes install + `commander` profile |
 | `MODEL_ROUTER.md` / `PROVIDERS.md` / `LOCAL_MODELS.md` | Cheap-first model routing |
 | `COST_CONTROL.md` | Token/spend discipline |

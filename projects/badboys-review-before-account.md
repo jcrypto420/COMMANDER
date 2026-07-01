@@ -14,9 +14,12 @@ Review only these first:
    - `assets/badboys/account-ready-real-assets-v0/post-candidate-thunder-up.png`
 3. Local review gallery
    - `assets/badboys/account-ready-real-assets-v0/review-gallery.html`
-4. Reset plan
+4. Avatar background test
+   - `assets/badboys/account-ready-real-assets-v0/avatar-background-test/review.html`
+   - Recommendation: use `bone-circle.png` if Josh wants the face mark to survive TikTok's tiny dark-UI avatar crop.
+5. Reset plan
    - `projects/badboys-refocus-stop-the-wank.md`
-5. Tomorrow hard-start packet
+6. Tomorrow hard-start packet
    - `projects/tomorrow-hard-start-2026-06-29.md`
 
 ## Account setup if approved
@@ -24,6 +27,7 @@ Review only these first:
 - handle: `bebad4good`
 - bio: `Be bad for da good of humanity.`
 - avatar: `avatar-primary-insideface.png`
+- avatar background variant if approved: `avatar-background-test/bone-circle.png`
 - first post image: `post-candidate-thunder-up.png`
 - first caption: `testing this.`
 - first comment / signal question: `keep or kill?`
@@ -34,7 +38,8 @@ The prior generated launch packs drifted into fake marketing energy. The real as
 
 ## Quick asset notes
 
-- `avatar-primary-insideface.png` is the strongest canonical mark but may need a simple high-contrast circle/background test for small TikTok display.
+- `avatar-primary-insideface.png` is the strongest canonical mark but may disappear in small dark-UI crops.
+- `avatar-background-test/bone-circle.png` is the current recommended avatar variant: same real mark, better contrast, warm background, orange ring.
 - `post-candidate-thunder-up.png` has the best immediate visual impact for a first signal post.
 - `post-candidate-basketball.png` is a later sports/niche variant.
 - `post-candidate-bet-on-yourself.jpeg` needs caution because the gambling/slot-machine vibe may create the wrong association.

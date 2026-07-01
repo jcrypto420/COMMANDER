@@ -1,6 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import CopyCommandButton from './components/CopyCommandButton';
+import CommanderInbox from './components/CommanderInbox';
+
+export const dynamic = 'force-dynamic';
 
 const ROOT = process.cwd();
 const STATE_PATH = path.join(ROOT, 'dashboard', 'state.json');
@@ -31,6 +34,19 @@ function readJson(filePath, defaultValue) {
 
 function readText(filePath, limit = 1800) {
   try { return fs.readFileSync(filePath, 'utf8').slice(0, limit); } catch { return ''; }
+}
+
+function readJsonl(filePath, limit = 8) {
+  try {
+    return fs.readFileSync(filePath, 'utf8')
+      .split('\n')
+      .filter(Boolean)
+      .slice(-limit)
+      .map((line) => JSON.parse(line))
+      .reverse();
+  } catch {
+    return [];
+  }
 }
 
 function stripMd(text) {
@@ -111,6 +127,7 @@ export default function Dashboard() {
   const state = readJson(STATE_PATH, fallback);
   const weekly = stripMd(readText(WEEKLY_PATH));
   const morning = stripMd(readText(MORNING_PATH));
+  const inboxEntries = readJsonl(path.join(ROOT, 'dashboard', 'commander_inbox.jsonl'), 8);
   const doing = state.tasks?.doing || [];
   const blocked = state.tasks?.blocked || [];
   const todos = state.tasks?.todo || [];
@@ -121,6 +138,12 @@ export default function Dashboard() {
   const review = state.focus?.review?.length ? state.focus.review : ['Open: WEEKLY_MONEY_REVIEW.md', 'Decide: choose one signal path'];
   const approvalPhrase = approvals[0]?.next_action || 'APPROVE REAL ASSET ACCOUNT PREP or RUN IN-1 LEAD VERIFY';
   const decisionCommands = [
+    {
+      label: 'Approve bone avatar account prep',
+      command: 'APPROVE BONE AVATAR ACCOUNT PREP',
+      href: fileHref('assets/badboys/account-ready-real-assets-v0/avatar-background-test/review.html'),
+      detail: 'Use if bone-circle.png passes taste check and you want the TikTok account-prep packet finalized around the real asset.'
+    },
     {
       label: 'Approve Bad Boys account prep',
       command: 'APPROVE REAL ASSET ACCOUNT PREP',
@@ -209,6 +232,12 @@ export default function Dashboard() {
         <p className="decision-note">For now, Mission Control is the cockpit and Telegram/CLI is the throttle. Direct in-dashboard chat comes after auth + approval gates are designed.</p>
       </section>
 
+      <section className="panel inbox-panel">
+        <div className="panel-label green">Commander Inbox — capture from phone, keep ideas separate</div>
+        <CommanderInbox initialEntries={inboxEntries} />
+        <p className="decision-note">This is capture-only: it writes to <code>COMMANDER_INBOX.md</code> and does not execute actions, run shell commands, post, send, spend, or touch secrets.</p>
+      </section>
+
       <section className="triple-grid">
         <div className="panel">
           <div className="panel-label">Task queue</div>
@@ -244,6 +273,7 @@ export default function Dashboard() {
             <div className="action-card"><b>Telegram steering</b><p>Use Telegram for quick replies, approvals, and mid-day idea dumps.</p><code>gm / approve phrase / new idea</code></div>
             <div className="action-card"><b>Daily task mode</b><p>Open the dashboard, pick the one move, then use the optional 15/30/60-minute extensions.</p><code>read → decide → execute</code></div>
             <div className="action-card"><b>Future action layer</b><p>Buttons will generate approval packets first. No direct posting, spending, trading, or service changes.</p><code>approval-gated</code></div>
+            <a className="action-card" href="/market"><b>Market activity tracker</b><p>Personal/open-source crypto + data-infra pulse: prices, DeFi TVL, GitHub activity, narrative heat.</p><code>open /market</code></a>
           </div>
         </div>
 

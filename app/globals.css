@@ -126,6 +126,24 @@ code { color: var(--green-soft); word-break: break-word; }
 .copy-button { border-color: rgba(119,114,255,.45); color: #c7d2fe; background: rgba(119,114,255,.09); }
 .open-button:hover, .copy-button:hover { filter: brightness(1.18); }
 .decision-note { margin: 12px 0 0; font-size: 13px; }
+.inbox-panel { margin-top: 14px; border-color: rgba(90,211,255,.26); }
+.inbox-console { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .8fr); gap: 12px; }
+.inbox-form { display: grid; gap: 10px; }
+.inbox-topline { display: flex; gap: 10px; align-items: center; }
+.inbox-topline select { border: 1px solid rgba(255,255,255,.1); background: #08090b; color: var(--soft); border-radius: 11px; padding: 9px 10px; font: 700 12px/1 'JetBrains Mono', monospace; }
+.inbox-form textarea { width: 100%; resize: vertical; min-height: 132px; border: 1px solid rgba(255,255,255,.09); border-radius: 16px; background: rgba(5,6,7,.78); color: var(--text); padding: 12px; font: 500 14px/1.45 Inter, sans-serif; outline: none; }
+.inbox-form textarea:focus { border-color: rgba(90,211,255,.5); box-shadow: 0 0 0 3px rgba(90,211,255,.08); }
+.inbox-meta { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font: 600 11px/1.35 'JetBrains Mono', monospace; }
+.inbox-list { display: grid; gap: 9px; max-height: 260px; overflow: auto; }
+.inbox-entry { border: 1px solid rgba(255,255,255,.065); background: rgba(255,255,255,.025); border-radius: 15px; padding: 10px; }
+.inbox-entry div { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.inbox-entry b { color: var(--green-soft); text-transform: uppercase; font: 800 11px/1 'JetBrains Mono', monospace; }
+.inbox-entry small { color: var(--low); font: 600 10px/1 'JetBrains Mono', monospace; }
+.inbox-entry p { margin: 7px 0 0; color: var(--soft); font-size: 13px; white-space: pre-wrap; }
+.inbox-entry-footer { margin-top: 9px; display: flex; justify-content: space-between; gap: 8px; align-items: center; flex-wrap: wrap; }
+.inbox-entry-footer span { display: flex; flex-wrap: wrap; gap: 6px; }
+.inbox-entry-footer button { border: 1px solid rgba(255,255,255,.09); color: var(--muted); background: rgba(255,255,255,.035); border-radius: 999px; padding: 5px 7px; font: 700 10px/1 'JetBrains Mono', monospace; cursor: pointer; }
+.inbox-entry-footer button:hover { border-color: rgba(90,211,255,.45); color: var(--soft); }
 
 .task-stack { display: grid; gap: 9px; }
 .task-card { display: grid; grid-template-columns: 62px 1fr auto; gap: 10px; align-items: center; border: 1px solid rgba(255,255,255,.065); background: rgba(255,255,255,.025); border-radius: 15px; padding: 10px; }
@@ -146,7 +164,7 @@ code { color: var(--green-soft); word-break: break-word; }
 .container-note { margin-top: 10px; color: var(--muted); font: 500 12px/1.4 'JetBrains Mono', monospace; }
 .lower { grid-template-columns: .88fr 1.12fr; }
 .action-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
-.action-card { border: 1px solid rgba(255,255,255,.065); background: rgba(255,255,255,.025); border-radius: 16px; padding: 12px; }
+.action-card { border: 1px solid rgba(255,255,255,.065); background: rgba(255,255,255,.025); border-radius: 16px; padding: 12px; text-decoration: none; color: inherit; }
 .action-card b { color: var(--soft); }
 .action-card p { margin: 8px 0; font-size: 13px; }
 .report-panel { max-height: 420px; overflow: auto; }
@@ -157,8 +175,36 @@ code { color: var(--green-soft); word-break: break-word; }
 .footer-meta { color: var(--low); font: 500 11px/1.4 'JetBrains Mono', monospace; text-align: right; }
 .muted { color: var(--muted); }
 
+.market-shell .market-hero { border-color: rgba(90, 211, 255, .26); }
+.market-stat {
+  min-height: 74px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.027);
+  padding: 12px;
+}
+.market-stat span { color: var(--muted); font: 600 11px/1 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .12em; }
+.market-stat strong { font-size: 19px; line-height: 1.1; }
+.market-stat small { font: 700 12px/1 'JetBrains Mono', monospace; color: var(--muted); }
+.market-stat.good, .market-row em.good { color: var(--green-soft); border-color: rgba(0,217,146,.36); }
+.market-stat.bad, .market-row em.bad { color: #fecdd3; border-color: rgba(251,113,133,.38); }
+.market-panel { border-color: rgba(90,211,255,.28); background: linear-gradient(180deg, rgba(90,211,255,.08), rgba(15,16,17,.76)); }
+.signal-stack { display: grid; gap: 9px; }
+.signal-row { border: 1px solid rgba(255,255,255,.075); background: rgba(255,255,255,.028); border-radius: 15px; padding: 12px; color: var(--soft); }
+.market-table { display: grid; gap: 9px; }
+.market-row { display: grid; grid-template-columns: minmax(86px, .7fr) minmax(80px, .8fr) auto; gap: 10px; align-items: center; border: 1px solid rgba(255,255,255,.065); background: rgba(255,255,255,.025); border-radius: 15px; padding: 10px; text-decoration: none; color: var(--soft); }
+.market-row span { color: var(--muted); font: 600 12px/1 'JetBrains Mono', monospace; }
+.market-row em { color: var(--muted); font: 700 12px/1 'JetBrains Mono', monospace; font-style: normal; }
+.link-row:hover, .repo-card:hover { border-color: rgba(90,211,255,.45); background: rgba(90,211,255,.06); }
+.repo-card { display: grid; gap: 5px; border: 1px solid rgba(255,255,255,.065); background: rgba(255,255,255,.025); border-radius: 15px; padding: 11px; text-decoration: none; color: var(--soft); }
+.repo-card span, .repo-card small { color: var(--muted); font: 500 12px/1.35 'JetBrains Mono', monospace; }
+.chip-grid { display: flex; flex-wrap: wrap; gap: 9px; }
+.chip { border: 1px solid rgba(90,211,255,.28); background: rgba(90,211,255,.06); border-radius: 999px; padding: 9px 11px; color: var(--soft); font-weight: 700; }
+.chip small { color: var(--muted); margin-left: 5px; font: 700 11px/1 'JetBrains Mono', monospace; }
+
 @media (max-width: 1120px) {
-  .hero, .command-grid, .triple-grid, .lower, .report-columns { grid-template-columns: 1fr; }
+  .hero, .command-grid, .triple-grid, .lower, .report-columns, .inbox-console { grid-template-columns: 1fr; }
   .action-grid, .decision-flow, .decision-command-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {

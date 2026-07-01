@@ -8,6 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta httpEquiv="refresh" content="120" />
+      </head>
       <body>{children}</body>
     </html>
   );

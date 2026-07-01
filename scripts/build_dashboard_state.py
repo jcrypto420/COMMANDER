@@ -63,6 +63,14 @@ def first_nonempty_lines(text: str, limit: int = 3) -> list[str]:
     return lines
 
 
+def first_section_lines(text: str, headings: list[str], limit: int = 3, fallback: str = '') -> list[str]:
+    for heading in headings:
+        lines = first_nonempty_lines(section_after(text, heading), limit)
+        if lines:
+            return lines
+    return [fallback] if fallback else []
+
+
 def parse_tasks(md: str) -> list[dict]:
     tasks = []
     for line in md.splitlines():
@@ -183,6 +191,19 @@ def main() -> None:
     todo = [t for t in tasks if t['status'] == 'todo']
     approval = [t for t in tasks if t['approval'] == 'yes' and t['status'] not in ('done',)]
 
+    money_lines = first_section_lines(
+        morning,
+        ["💰 TODAY'S MONEY MOVE", "💰 TODAY'S REAL MONEY MOVE"],
+        1,
+        'Clean the operating loop before adding more features.',
+    )
+    review_lines = first_section_lines(
+        morning,
+        ['👀 YOUR 60-SECOND REVIEW'],
+        4,
+        'Open: NOW.md',
+    )
+
     state = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'host': {'name': socket.gethostname(), 'lan_ip': local_ip(), 'cwd': str(ROOT)},
@@ -190,8 +211,8 @@ def main() -> None:
         'focus': {
             'active': (re.search(r'\*\*Active focus:\*\*\s*(.+)', now_md) or ['','unknown'])[1],
             'next3': re.findall(r'^\d+\.\s+(.+)', now_md, flags=re.M)[:3],
-            'money_move': first_nonempty_lines(section_after(morning, "💰 TODAY'S MONEY MOVE"), 1)[0] if morning else 'Build the dashboard into a real operating layer.',
-            'review': first_nonempty_lines(section_after(morning, '👀 YOUR 60-SECOND REVIEW'), 4),
+            'money_move': money_lines[0],
+            'review': review_lines,
         },
         'tasks': {'all': tasks, 'doing': doing, 'blocked': blocked, 'todo': todo[:8], 'approval': approval[:8], 'counts': {s: sum(1 for t in tasks if t['status'] == s) for s in ['doing','blocked','todo','done']}},
         'hermes': parse_hermes_status(),
