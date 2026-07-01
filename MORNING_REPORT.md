@@ -22,4 +22,15 @@ Clean the operating loop so Commander compounds progress instead of collecting p
 - Service restart: Josh approved, but runtime safety blocked `systemctl --user restart`; do not retry in this session.
 
 ➡️ NEXT IF YOU DO NOTHING
-I’ll build a draft-only daily job/application loop: scrape 3–5 best-fit roles, you pick the ones you’re feeling, then I tailor application packets.
+I’ll build a draft-only daily job/application loop: scrape 3–5 best-fit roles, you pick the ones you’re feeling, then I tailor application packets, and this will include a daily job slate in your morning report.
+
+### 🎯 TODAY’S JOB/APPLICATION SLATE (Coming Soon!)
+
+This section will contain 3-5 freshly sourced, highly-ranked roles or leads:
+
+- Brief summary of best role today & why
+- Ranked list of 3-5 roles with links, estimated comp, fit score, why it fits, and risks/gaps
+- Commanders recommendation
+- Clear decision prompt: "Which 1-2 are you feeling today? (A, B, or pass)"
+
+*No GitHub profiles will be linked in these shortlists or application packets unless you provide a specific, clean repo for a given application.*
