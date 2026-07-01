@@ -308,3 +308,9 @@ One short entry per working day. What advanced + estimated spend.
 - Updated `projects/systems-polish-reset-2026-06-30.md` and `MORNING_REPORT.md` so the reset ends with a clear handoff into career/income defense, not another shiny project lane.
 - Verified `npm run dashboard:state`, `npm run build`, and `git diff --check`; build passed with one existing Turbopack warning about the dynamic safe `/files/...` route tracing broad project files.
 - Safety: no applications submitted, no outreach sent, no accounts/credentials touched, no service restart attempted.
+
+## 2026-06-30 — Career/job loop preferences captured
+
+- Captured Josh’s job-loop clarifications in `projects/career-income.md`: LinkedIn source, remote preference, OKC openness, $75K minimum, creative sourcing allowed, and tailored applications only after Josh picks the roles he is feeling.
+- Added explicit research gaps for Commander: find/cite Josh’s 3 S&P Global crypto-related reports and translate crypto operations / DeFi usage into resume-ready proof points without inventing details.
+- Attempted public discovery for LinkedIn/S&P report sources; LinkedIn returned HTTP 999 and S&P search pages returned HTTP 403 from the Pi, so the report titles remain unverified and queued for alternate discovery.

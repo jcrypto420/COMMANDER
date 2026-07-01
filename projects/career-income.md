@@ -4,12 +4,26 @@
 
 ## Known leverage
 
+- LinkedIn: <https://www.linkedin.com/in/joshstokesberry/>
 - S&P Global background.
 - Published/contributed crypto research papers.
 - Hands-on DeFi experience.
 - Long-time Chainlink knowledge and conviction.
-- Josh may provide LinkedIn/resume artifacts later; learn details over time
-  instead of forcing this lane all at once.
+- Commander still needs to identify and cite Josh’s 3 contributed/published
+  crypto-related S&P Global research reports from public sources or Josh-provided
+  artifacts.
+- Commander still needs to convert Josh’s crypto operations / DeFi usage into
+  resume-ready proof points without inventing details.
+
+## Preferences / constraints
+
+- Location: strongly prefers remote; also open to roles in Oklahoma City / OKC.
+- Minimum compensation: $75K+.
+- Sources: find jobs from anywhere; be creative, but use public/no-login sources
+  unless Josh explicitly approves a credentialed source.
+- Application style: quality/tailored over spray-and-pray.
+- Safety: no applications, messages, emails, recruiter replies, paid boards,
+  account creation, or credentialed actions without Josh approval.
 
 ## Outputs
 
@@ -51,13 +65,20 @@ Daily report format should be short:
 
 Default ask to Josh: “Which 1–2 are you feeling today?”
 
+Known clarifications:
+
+- LinkedIn source: <https://www.linkedin.com/in/joshstokesberry/>
+- Location: remote preferred; OKC acceptable.
+- Compensation floor: $75K+.
+- Job sources: anywhere / creative sourcing allowed.
+
 Clarifications that improve quality but do **not** block v0:
 
-- current resume / LinkedIn / portfolio source material
-- remote vs local vs hybrid preference and acceptable time zones
-- rough compensation floor / must-not-waste-time level
+- current resume / portfolio source material beyond LinkedIn
+- acceptable time zones / travel constraints
 - hard no-go filters: industries, company stages, travel, management load, sales-heavy roles
-- preferred job sources if Josh already has them; otherwise Commander starts with public/no-login sources
+- the titles/links/PDFs for Josh’s 3 S&P Global crypto reports if public search stays blocked
+- concrete DeFi/crypto ops history: protocols used, risk controls, analytics, wallets/tools, dashboards, yield/LP/lending/staking/governance work, and any measurable outcomes
 
 Good first target clusters:
 
@@ -66,6 +87,16 @@ Good first target clusters:
 - Chainlink ecosystem / data oracle adjacent roles
 - S&P Global-adjacent research / market intelligence roles
 - flexible consulting/freelance research-support leads
+
+## Research/report discovery log
+
+- 2026-06-30: Josh provided LinkedIn URL and said there are 3 contributed/published
+  crypto-related S&P Global research reports to find.
+- Initial public web attempts from the Pi did not surface the reports by name;
+  direct S&P Global search pages returned HTTP 403 and LinkedIn returned HTTP 999.
+  Continue with alternative public search paths, PDFs, S&P article pages, web
+  caches/snippets, and Josh-provided artifacts if needed. Do not claim titles
+  until verified.
 
 ## Tracker
 
