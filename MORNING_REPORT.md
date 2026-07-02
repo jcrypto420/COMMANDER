@@ -24,7 +24,7 @@ Prepared today’s draft-only career slate and ranked Chainlink Labs — Data Ri
 🚦 STATUS
 - Waiting on Josh: pick 1–2 roles to tailor; I will draft packets only after selection.
 - Safety: no posting / no sending / no applications submitted / no spending / no secrets.
-- GitHub: local-only until verification/secret scan/commit step completes; pre-existing local changes detected, so I will not overwrite or pull.
+- GitHub: committed+pushed `MORNING_REPORT.md`, `projects/job-slate-2026-07-02.md`, and `logs/daily_progress.md`; pre-existing `NOW.md`/`TASK_QUEUE.md` changes and untracked `exports/` were left untouched.
 
 ➡️ NEXT IF YOU DO NOTHING
 I’ll keep the next safe move draft-only: deepen the top Chainlink packet and collect missing resume proof points without submitting anything.
