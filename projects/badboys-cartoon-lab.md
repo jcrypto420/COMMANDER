@@ -2,7 +2,7 @@
 
 ## Status — 2026-07-03
 - **State:** ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine
-- **Last advanced:** 2026-07-03 — pipeline spec v1 + 3 pilot script cards banked
+- **Last advanced:** 2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at `assets/badboys/rig/RIG_BRIEF.md`
 - **Next action:** Josh's script-gate verdict on the 3 pilots (8–9am window); Claude starts the Blender rig on the first approved script
 - **Waiting on:** script verdicts; BB-23 account creation (still the cork for publishing)
 
@@ -99,6 +99,16 @@ Beats: (1) Mascot in cowboy hat stares at a wall chart, line going up. SFX: gent
 chime. (2) Line plummets off the chart, through the floor. SFX: none — silence.
 (3) Mascot slowly places a SECOND cowboy hat on top of the first. (4) Holds stare.
 Caption: `risk management.` — Target: crypto grift/trader brain. Loops clean.
+
+### Pilot 4 — "BAD BOY BANKERS: T+2" · narrator mode · ~18s · cast: NEW pinstripe banker variant (Josh-ordered 2026-07-03)
+SERIES PREMISE (Josh): Bad Boys in old-school pinstripe suits — recurring segment,
+institutional-finance absurdity from lived settlement-ops experience. Ep 1 "T+2":
+Beats: (1) Two banker Bad Boys stand before a giant monitor: `WIRE STATUS: PENDING`.
+(2) Narrator, calm corporate: "Your funds are moving." (3) Nothing moves. One banker
+sips coffee. (4) Narrator: "Your funds have always been moving." (5) Screen updates:
+`PENDING`. (6) Smirks hold. Caption: `T+2.` — Target: institutional finance
+bureaucracy. Loops clean. NOTE: banker costume is a new asset — build in the rig
+session per Constitution §1 (canonical face, monoline suit, pinstripe line texture).
 
 ### Pilot 3 — "day 1" · narrator mode · ~25s · cast: plain face
 Beats: (1) Mascot lies perfectly still on the floor, smirking, the entire short.
