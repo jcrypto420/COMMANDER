@@ -2,7 +2,7 @@
 
 | Tool | Role |
 |------|------|
-| **ChatGPT** | Architect / strategist / project manager |
+| **ChatGPT** | Architect / strategist / project manager — ALSO runs a parallel job-search lane with Josh; its applications/searches MUST be recorded in `jobs/TRACKER.md` (dedupe: Chainlink was applied there while Hermes/Claude drafted for it) |
 | **Claude Code** | Primary builder / file editor / terminal helper — runs on Josh's Mac (MOGDROP toolchain), local clone at `~/COMMANDER`; syncs with Hermes via this repo (pull before work, push after) |
 | **Codex** | Second builder / reviewer / debugging assistant |
 | **GitHub** | Source of truth and task history |

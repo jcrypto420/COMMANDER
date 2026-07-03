@@ -16,8 +16,10 @@ recovered manually, never assumed.
 
 ## Next 3 tasks
 
-1. `CI-1` (doing): finish the draft-ahead FULL packets for slate roles 1–2
-   (Chainlink Data Risk Ops + Coinbase Billing Ops) — Josh's yes = send-ready.
+1. `CI-1` (doing): **SHIPPED ≥1 — Chainlink application was already submitted via
+   the ChatGPT lane** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
+   date). Packet is now interview prep. Next: Coinbase packet per
+   `jobs/SEARCH_PLAYBOOK.md`; check the tracker FIRST, always.
 2. `CC-24`: morning dispatch = 5 phone-screen lines, ONE bolded decision
    (being folded into the recreated 07:30 morning loop).
 3. Push lanes (midday/evening): `BB-24` first sellable artifact, `PS-1` fall
