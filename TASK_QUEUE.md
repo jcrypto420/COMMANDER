@@ -11,7 +11,8 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
-| CI-1 | Career/Income | 1 | Daily job/application process | doing | draft-ahead FULL packets for slate roles 1–2 (Chainlink Data Risk Ops, Coinbase Billing Ops); refresh slate each weekday; Josh gives same-day verdicts | **yes** to send |
+| CI-1 | Career/Income | 1 | Daily job/application process | todo | draft-ahead FULL packets for slate roles 1–2 (Chainlink Data Risk Ops, Coinbase Billing Ops); refresh slate each weekday; Josh gives same-day verdicts | **yes** to send |
+| CI-1 | Career/Income | 1 | Daily job/application process | todo | draft-ahead FULL packets for slate roles 1–2 (Chainlink Data Risk Ops, Coinbase Billing Ops); refresh slate each weekday; Josh gives same-day verdicts | **yes** to send |
 | CC-24 | Command Center | 1 | 5-line daily dispatch | todo | format folded into the recreated 07:30 morning loop prompt; verify tomorrow's dispatch actually arrives as 5 lines + ONE bolded decision, then archive | verify only |
 | BB-24 | Bad Boys/Joycat | 1 | Refocus on real assets — **REOPENED by Josh 2026-07-02** | todo | refresh the real-asset plan; pick the first sellable artifact (sticker-pack v0 leading candidate) and its storefront path; draft-only | no |
 | BB-17 | Bad Boys/Joycat | 2 | Week 1 posting packet | todo | rebuild packet around real assets + bone-circle avatar so it is post-ready the day Josh creates the account | yes to post |

@@ -1,5 +1,6 @@
 date,task_id,project,provider,model,input_tokens,output_tokens,estimated_cost,outcome,next_action
 2026-06-29T15:41:49-05:00,WEEKLY-MONEY-REVIEW,command-center,openai-codex,gpt-5.5,unknown,unknown,unknown,"created WEEKLY_MONEY_REVIEW.md and Telegram-ready weekly revenue report","Josh chooses real Bad Boys asset account prep or IN-1 lead verification"
+2026-07-03T00:00:00-05:00,CI-1-DRAFT,career-income,openai-codex,gpt-5.4-mini,unknown,unknown,unknown,"refreshed draft-only job slate packet for Chainlink Data Risk Ops and Coinbase Billing Ops","Josh picks 1-2 roles for tailored packet drafting"
 2026-06-28T19:38:13-05:00,BJ-TT-GIT,badboys-joycat,openai-codex,gpt-5.5,unknown,unknown,unknown,"verified TikTok launch docs/assets and prepared commit/push","monitor pushed branch / continue TikTok manual posting prep"
 2026-06-28T19:50:00-05:00,BB-HARDER,badboys-joycat,openai-codex,gpt-5.5,unknown,unknown,unknown,"created v2 less-corny TikTok pack, product backlog, signal dashboard, sticker/PFP source pack","export v2 assets to PNG when tooling path is available; get approval before posting"
 2026-06-28T20:00:00-05:00,BB-MOGGING-V3,badboys-joycat,openai-codex,gpt-5.5,unknown,unknown,unknown,"studied mogging tactics, created v3 artifact-lab pack and TikTok account runbook","Josh creates TikTok credentials; export/spot-check v3 assets to PNG"
