@@ -1,10 +1,10 @@
 # Project: DeFi / Chainlink / Research Dashboards (Priority 5)
 
 ## Status — 2026-07-02
-- **State:** warm — currently feeds career-lane proof points
+- **State:** ACTIVE draft lane (`DF-1`) — Josh redirected this from research-for-sale to PRODUCT ideation (killed the services pilot)
 - **Last advanced:** 2026-06-30 — 2 S&P reports verified HIGH confidence; report 3 needs URL/contribution details
-- **Next action:** verify report 3 contribution; convert DeFi ops history into resume-ready proof points
-- **Waiting on:** nothing
+- **Next action:** DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect
+- **Waiting on:** nothing; concepts only, no financial actions
 
 **Goal:** Produce research, dashboards, and intelligence supporting jobs,
 consulting, investing, governance, or portfolio value.

@@ -40,8 +40,8 @@ public goods, and spend his time with fewer constraints.
 3. Primoscapes revenue (bids, grants, leads) — sub-projects kept separate
 4. Weather Oracle MVP
 5. DeFi / Chainlink / research dashboards
-6. Bad Boys / Joycat creative business — **parked** until Josh reopens it;
-   assets and packets are ready in `projects/` + `assets/badboys/`
+6. Bad Boys / Joycat creative business — **reopened 2026-07-02** as a push
+   lane; first sellable artifact is the near-term goal
 7. Sovereignty Stack improvements that support the above
 
 The ladder is a default, not dogma. Commander should challenge it when a faster,

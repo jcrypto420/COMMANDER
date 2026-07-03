@@ -1,10 +1,10 @@
 # Project: Bad Boys / Joycat Creative Business
 
 ## Status — 2026-07-02
-- **State:** PARKED until Josh says "reopen Bad Boys" — assets + packets stay draft-ready
+- **State:** REOPENED — Josh named this a push lane in the 2026-07-02 calibration
 - **Last advanced:** 2026-06-30 — avatar background test done; `bone-circle.png` recommended
-- **Next action (on reopen):** BB-24 real-asset refocus → BB-17 week-1 posting packet → BB-23 account runbook (Josh does credentials/2FA)
-- **Waiting on:** Josh reopen decision
+- **Next action:** BB-24 refresh real-asset plan + pick first sellable artifact → BB-17 posting packet → BB-23 Josh creates account (~30 min)
+- **Waiting on:** nothing for drafts; Josh's account decision for anything public
 
 **Goal:** Build a pseudonymous, brand-led creative business that grows audience and sales through meme-native IP, games, assets, content, merch, and community — without exposing Josh personally or taking public actions without approval.
 

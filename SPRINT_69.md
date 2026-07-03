@@ -7,11 +7,11 @@ Math: $6,900 / 69 days = **$100/day** or about **$700/week**.
 
 ## Status — updated 2026-07-02 (~day 5)
 
-Revenue so far: **$0**. During the Anti-Slop Systems Reset the lanes swapped:
-**career/income (`CI-1`) is now the primary sprint lane** and Bad Boys is
-parked until Josh reopens it. A landed role or contract counts toward the
-sprint target. The Bad Boys plan below is retained as the reopen playbook —
-its assets and packets are draft-ready in `projects/` + `assets/badboys/`.
+Revenue so far: **$0** (~day 6). Career/income (`CI-1`) is the decision lane;
+a landed role counts toward the target. Josh's 2026-07-02 calibration reopened
+Bad Boys and activated Primoscapes fall prep + DeFi product ideation as the
+push lanes. Research-services offers are killed. The Bad Boys plan below is
+the active playbook again.
 
 ## Original recommendation (now the parked lane)
 

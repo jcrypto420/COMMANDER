@@ -1,10 +1,10 @@
 # Project: Primoscapes (Priority 3)
 
 ## Status — 2026-07-02
-- **State:** dormant — no active client projects; do not invent scope
+- **State:** ACTIVE draft lane (`PS-1`) — Josh named this a push lane 2026-07-02; fall prep window is now
 - **Last advanced:** 2026-06-29 — intake context captured (fall Native Prairie concept, solo capacity)
-- **Next action (on reopen):** define one tiny solo-deliverable fall offer + draft service page or local lead list
-- **Waiting on:** Josh — service area, capacity, and whether fall installs are the first offer
+- **Next action:** PS-1 — define ONE tiny solo fall offer + service one-pager + local lead list (draft-only)
+- **Waiting on:** nothing for drafts; Josh still owes service area + capacity details
 
 **Goal:** Turn regenerative landscaping / native installations into real revenue.
 
