@@ -3,8 +3,9 @@
 ## Status — 2026-07-03
 - **State:** ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine
 - **Last advanced:** 2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at `assets/badboys/rig/RIG_BRIEF.md`
-- **Next action:** Josh's script-gate verdict on the 3 pilots (8–9am window); Claude starts the Blender rig on the first approved script
-- **Waiting on:** script verdicts; BB-23 account creation (still the cork for publishing)
+- **GATE 1 PASSED 2026-07-03 (evening):** Josh SHIPPED all four pilots via widget verdict. Production order: P4 "T+2" first, then P2 → P1 → P3.
+- **Next action:** Stage 2+ on P4 — Josh rigs the puppet + banker costume (Blender/Claude Desktop, brief staged); Claude storyboards T+2 + casts narrator
+- **Waiting on:** rig test stills for on-model check; BB-23 account creation (publishing cork)
 
 Calibration (Josh, 2026-07-03): evergreen pipeline first (World Cup concept PARKED —
 undeveloped, window closes Jul 19; revisit only if the pipeline is live before then).
@@ -85,7 +86,7 @@ signal. Any new subscription = Josh approval per SECURITY.md.
 
 ---
 
-## PILOT SCRIPT CARDS — for Josh Gate 1 (verdict: ship / kill / one-liner each)
+## PILOT SCRIPT CARDS — GATE 1 PASSED: all four SHIPPED 2026-07-03; production order P4 → P2 → P1 → P3
 
 ### Pilot 1 — "PSA: content" · narrator mode · ~20s · cast: plain face
 Beats: (1) Flat color bg. Mascot stands center, holding a small sign: `content`.
