@@ -29,6 +29,13 @@ applies to what Josh must READ; it does not throttle what Commander DRAFTS.
 8. **Safety gates unchanged.** Harder means more drafts per day, never fewer
    approvals: no sending, posting, spending, secrets, accounts, or system
    changes without Josh (see `SECURITY.md`).
+9. **ARTIFACT RULE (2026-07-03).** Every draft-lane run must CREATE or
+   MATERIALLY EXTEND a real artifact file (a packet, offer, memo, or asset in
+   `projects/`). Updating queue rows, "refreshing" targets, "confirming"
+   priorities, or "identifying next steps" is NOT work — a run whose only
+   output is metadata is a FAILED run and must say so in its log entry.
+   Four consecutive runs "advanced" CI-1 without producing the packet; that
+   class of run is now banned.
 
 ## The loop
 

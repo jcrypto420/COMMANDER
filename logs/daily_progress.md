@@ -292,3 +292,4 @@ One short entry per working day. What advanced + estimated spend.
 - Advanced CI-1 decision lane by confirming the current top draft-ahead packet remains Chainlink Labs — Data Risk Operations Analyst.
 - Rewrote `MORNING_REPORT.md` into CC-24 format.
 - Draft-only job/slate pass: refreshed the CI-1 packet for the top two roles (Chainlink Data Risk Ops + Coinbase Billing Ops), logged model usage as gpt-5.4-mini, and left the task in todo with the next action set to Josh's 1–2 role pick.
+- Claude (Mac): added the ARTIFACT RULE to COMMANDER_LOOP.md intensity rules — every draft-lane run must create/extend a real file in projects/; metadata-only runs are failed runs. CI-1 queue row now names the owed artifact explicitly. Mac-side auto-tunnel LaunchAgent created; awaiting Hermes key install for permanent no-terminal dashboard access.
