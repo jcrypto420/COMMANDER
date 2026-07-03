@@ -53,7 +53,8 @@ After Josh approves a phone channel, Commander can:
   or "focus Bad Boys today".
 - Keep all public/outbound actions approval-gated.
 
-Suggested bounded push rule for GitHub:
+Bounded push rule for GitHub (**active** since CC-8/9 via repo-scoped deploy
+key; reaffirmed in the 2026-07-02 intensity rules):
 
 - Commander may auto-commit and push **docs/log/task updates only** when they are
   produced by the daily loop or explicitly approved by Josh.

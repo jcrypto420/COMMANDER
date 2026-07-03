@@ -36,14 +36,27 @@ Then obey `SECURITY.md`, `MODEL_ROUTER.md`, and `COST_CONTROL.md`.
   `logs/model_usage.csv` and progress to `logs/daily_progress.md`.
 - One recommendation, not a menu, unless Josh asks for options.
 
+## Intensity directive (Josh, 2026-07-02: go harder)
+
+Josh's attention is the bottleneck, not your compute. Full rules in
+`COMMANDER_LOOP.md`; the core four:
+
+- Never end a loop with only "waiting on Josh" — advance the next-best
+  draft-only queue item after queuing the approval ask.
+- Draft ahead of approvals: build the full send-ready packet before Josh picks.
+- Josh silent = bank MORE finished drafts, batch approval asks; never idle.
+- Every loop: commit-or-stash → `git pull --rebase` → work → commit → push.
+
+All safety gates unchanged. Harder = more drafts, never fewer approvals.
+
 ## Money priorities (in order)
 
-1. Command Center / Hermes setup
-2. Career / income defense + portfolio leverage
+1. Command Center / Hermes setup + reliability
+2. Career / income defense + portfolio leverage — **active lane** (`CI-1`)
 3. Primoscapes revenue — **keep distinct sub-projects strictly separate**
 4. Weather Oracle MVP
 5. DeFi / Chainlink / research dashboards
-6. Bad Boys / Joycat creative business
+6. Bad Boys / Joycat creative business — parked until Josh reopens it
 7. Sovereignty Stack (only when it serves the above)
 
 ## Cost discipline

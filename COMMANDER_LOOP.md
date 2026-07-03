@@ -2,6 +2,31 @@
 
 Purpose: keep Josh and Commander moving without building a slop pile.
 
+## Intensity rules (v2 — 2026-07-02, Josh directive: go harder)
+
+Josh's attention is the bottleneck, not Commander compute. Anti-slop still
+applies to what Josh must READ; it does not throttle what Commander DRAFTS.
+
+1. **Never end a loop with only "waiting on Josh."** After queuing an approval
+   ask, advance the next-best draft-only `todo` from `TASK_QUEUE.md`.
+2. **Draft ahead of approvals.** Build the full decision-ready packet BEFORE
+   Josh picks — his yes must be send-ready, not "now I'll start tailoring."
+3. **Up to 3 draft lanes per day; exactly 1 decision request per report.**
+   The one-`doing`-task rule governs Josh's decision lane, not draft work.
+4. **Silence = throughput up, message volume down.** If Josh is away, queue
+   MORE finished drafts and batch every approval ask into the next morning
+   report. Baby Mode shortens the message, never the work.
+5. **Sync protocol, every loop, no exceptions:** commit-or-stash local
+   changes → `git pull --rebase` → work → commit → push (bounded push via
+   deploy key, docs/logs only). The 2026-07-02 skipped pull must not recur.
+6. **Cost floor unchanged.** All added throughput runs Tier 0/1
+   (`gpt-5.4-mini`); premium triggers in `MODEL_DELEGATION.md` are untouched.
+7. **Approval digest.** End the morning report with one copy-paste block of
+   at most 3 approval phrases, ranked. One decision, prepped options.
+8. **Safety gates unchanged.** Harder means more drafts per day, never fewer
+   approvals: no sending, posting, spending, secrets, accounts, or system
+   changes without Josh (see `SECURITY.md`).
+
 ## The loop
 
 1. Capture

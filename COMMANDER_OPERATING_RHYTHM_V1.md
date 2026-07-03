@@ -87,20 +87,24 @@ Each should be a separate report, not one giant digest.
 
 ## If Josh disappears for a few days
 
-Default mode: Gentle Passive Operator Mode.
+Default mode: Silent Running (updated 2026-07-02 — gentle messages, hard work).
 
 Behavior:
 - keep sending daily/weekly/monthly reports if delivery is healthy
-- assume no response means continue monitoring/preparing, but do not escalate
+- no response means WORK MORE, MESSAGE LESS: work the draft-only `todo` rows
+  in `TASK_QUEUE.md` top-down and bank finished, decision-ready drafts
+  (see `COMMANDER_LOOP.md` intensity rules) — never idle in monitoring mode
 - do not create guilt or pressure during baby/family chaos
 - after 3+ days of no response, shorten dispatches into Baby Mode:
   - one tiny task
   - one health/family anchor
   - urgent approvals only
+  - Baby Mode shortens the message, never the work
 - when Josh returns, give a clean re-entry brief:
   - what matters
   - what to ignore
   - today’s one move
+  - the banked drafts ready for batch approval, ranked
 
 ## Report formats
 
