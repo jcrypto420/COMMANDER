@@ -13,9 +13,16 @@ Index of money-making projects, in priority order. Each links to its own file.
 | 6 | Bad Boys / Joycat | [badboys-joycat.md](projects/badboys-joycat.md) | Creative IP → products |
 | 7 | Sovereignty Stack | [sovereignty-stack.md](projects/sovereignty-stack.md) | Private infra that supports above |
 
-## Separation rules
+## Separation rules (all lanes, not just Primoscapes)
 
-- **Primoscapes:** distinct sub-projects are strictly separate. Do **not** merge
-  recommendations or context between them unless Josh explicitly says they are
-  connected.
-- Do not pull context from one project into another unless the task requires it.
+- **One lane per session/loop pass.** When working a lane, load ONLY that
+  lane's project file + its queue rows. Finish, log, commit — then a fresh
+  cheap session for the next lane. Concurrency happens across the day, not
+  inside one context window.
+- Do not pull context from one project into another unless the task requires
+  it. Do **not** merge recommendations between lanes unless Josh explicitly
+  says they are connected.
+- **Primoscapes:** distinct sub-projects are strictly separate, same rule one
+  level down.
+- Cross-lane synthesis happens in exactly one place: the morning report /
+  weekly review, where lanes are compared for priority — never blended.

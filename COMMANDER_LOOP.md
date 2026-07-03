@@ -13,6 +13,9 @@ applies to what Josh must READ; it does not throttle what Commander DRAFTS.
    Josh picks — his yes must be send-ready, not "now I'll start tailoring."
 3. **Up to 3 draft lanes per day; exactly 1 decision request per report.**
    The one-`doing`-task rule governs Josh's decision lane, not draft work.
+   Lanes run concurrently but SEPARATELY: one lane per session/loop pass,
+   loading only that lane's project file (see `PROJECTS.md` separation
+   rules). Cross-lane synthesis lives only in the morning report.
 4. **Silence = throughput up, message volume down.** If Josh is away, queue
    MORE finished drafts and batch every approval ask into the next morning
    report. Baby Mode shortens the message, never the work.
