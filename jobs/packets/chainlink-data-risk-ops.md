@@ -88,9 +88,8 @@ his exact thesis is the day job.
 
 ## Honesty guardrails (do not cross)
 
-- Do NOT claim authorship of the third S&P report (interoperability/tokenization)
-  — contribution unverified; it stays out of all materials.
-- "Contributor" phrasing only for the two verified reports — never "author."
+- Report 3 (interoperability/tokenization): Josh CONFIRMED contribution 2026-07-03
+  — "contributor" phrasing now allowed for ALL THREE reports; never "author."
 - Tooling stays "working foundations," never "proficient/expert."
 
 ## SEND checklist (Josh, ~15 minutes)

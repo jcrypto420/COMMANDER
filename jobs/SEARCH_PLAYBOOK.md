@@ -7,8 +7,11 @@ the shared method for ALL agents. Tracker first: `jobs/TRACKER.md`.
 
 Not "generic operations analyst." The angle is: **institutional financial
 operations + settlement/trade workflows + crypto/DeFi fluency + S&P-published
-research** (oracles, crypto/AI; interoperability/tokenization pending Josh's
-ruling — see TRACKER open items). Honest bridge, never overclaimed: institutional
+research on all three pillars: oracle risk, crypto/AI convergence, and blockchain
+interoperability/tokenization** (report 3 contribution confirmed by Josh 2026-07-03).
+Combined phrasing (ChatGPT's, now fully usable): "Contributed to S&P Global
+research on crypto/AI, blockchain oracle risk, and secure blockchain
+interoperability supporting tokenization in financial markets." Honest bridge, never overclaimed: institutional
 settlement operations + crypto research + DeFi literacy — NOT direct
 custody/trading-desk experience.
 

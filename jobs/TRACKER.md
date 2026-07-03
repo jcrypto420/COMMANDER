@@ -28,5 +28,5 @@ Securitize · Ondo · Fireblocks · BitGo · Coinbase · Kraken · Alpaca
 
 ## Open items
 
-- [ ] Josh: confirm Chainlink application date + which resume version was submitted (paste into row 1)
-- [ ] Josh: RULING NEEDED — did you actually contribute to S&P report 3 (blockchain interoperability/tokenization)? ChatGPT's phrasing claims it; career-income.md says unverified. One sentence settles what every future application can claim.
+- [x] Report 3 ruling: Josh CONFIRMED contribution (2026-07-03) — all three S&P reports usable with "contributor" phrasing everywhere.
+- [x] Chainlink application date: not tracked (Josh: "move on") — row stands as applied, date unknown.
