@@ -5,7 +5,7 @@ time use efficient, and Commander increasingly autonomous.
 
 Math: $6,900 / 69 days = **$100/day** or about **$700/week**.
 
-## Status — updated 2026-07-02 (~day 5)
+## Status — updated 2026-07-02 late (~day 6)
 
 Revenue so far: **$0** (~day 6). Career/income (`CI-1`) is the decision lane;
 a landed role counts toward the target. Josh's 2026-07-02 calibration reopened
@@ -13,7 +13,7 @@ Bad Boys and activated Primoscapes fall prep + DeFi product ideation as the
 push lanes. Research-services offers are killed. The Bad Boys plan below is
 the active playbook again.
 
-## Original recommendation (now the parked lane)
+## The Bad Boys playbook (active again as a push lane)
 
 Primary sprint: **Bad Boys / Joycat / Mog audience + sales engine**.
 
