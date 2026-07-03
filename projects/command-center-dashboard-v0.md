@@ -1,5 +1,11 @@
 # Project: Commander Dashboard / Command Center UI v0
 
+## Status — 2026-07-03
+
+- Current focus: CC-24 morning dispatch formatting is drafted and ready for tomorrow's verification run.
+- Next action: confirm `MORNING_REPORT.md` lands in exactly 5 lines with one bolded decision, then archive CC-24.
+- Safety: local docs only; no posting, sending, spending, or secrets.
+
 ## Why this matters
 
 Josh now has the core operator loop working: Commander on the Pi, Telegram access, morning cron, GitHub-visible repo state, and an older Sovereignty Stack already on the same machine.
@@ -176,3 +182,13 @@ It should include:
 - approval queue
 
 No installs. No server. No secrets. No deployment.
+
+## CC-24 draft target
+
+Tomorrow's morning brief should compress into one scan-friendly packet:
+
+1. Title line.
+2. One money-move sentence.
+3. One done-while-away sentence.
+4. One review line with `Open:` and `Decide:`.
+5. One status/next-action line with the decision in bold.
