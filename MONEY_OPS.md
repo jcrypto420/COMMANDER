@@ -43,7 +43,7 @@ research leverage feeds the career lane.
 ## Guardrails
 
 - No autonomous spending, job applications, emails, or messages yet (see
-  `SECURITY.md` "Ask before" and "Do not do yet" in the packet).
+  `SECURITY.md` "Ask before").
 - Money/legal/financial *final* advice → draft for Josh, never send/act.
 - Always log spend (`COST_CONTROL.md`).
 

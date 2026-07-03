@@ -20,7 +20,7 @@ Review only these first:
 5. Reset plan
    - `projects/badboys-refocus-stop-the-wank.md`
 6. Tomorrow hard-start packet
-   - `projects/tomorrow-hard-start-2026-06-29.md`
+   - `projects/archive/tomorrow-hard-start-2026-06-29.md`
 
 ## Account setup if approved
 
