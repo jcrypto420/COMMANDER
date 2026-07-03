@@ -329,3 +329,4 @@ One short entry per working day. What advanced + estimated spend.
 - Recommended Chainlink Labs — Data Risk Operations Analyst as the top packet target; no applications submitted, no outreach sent, no accounts/credentials/spend used.
 - Rewrote `MORNING_REPORT.md` with the compact slate and taste-gate question: “Which 1–2 are you feeling today?”
 - Estimated spend: $0.00 incremental API spend; used public company boards and existing Hermes/Codex execution.
+- Claude Code node linked from Josh's Mac: cloned this repo to `~/COMMANDER` on `feat/command-center-scaffolding`, set repo-local git identity, and updated `AGENTS.md` with the sync convention (pull before work, push after, pushes approved by Josh). Two-way Claude↔Hermes coordination now flows through this repo per `GITHUB_WORKFLOW.md`.

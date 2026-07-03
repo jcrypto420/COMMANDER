@@ -3,7 +3,7 @@
 | Tool | Role |
 |------|------|
 | **ChatGPT** | Architect / strategist / project manager |
-| **Claude Code** | Primary builder / file editor / terminal helper |
+| **Claude Code** | Primary builder / file editor / terminal helper — runs on Josh's Mac (MOGDROP toolchain), local clone at `~/COMMANDER`; syncs with Hermes via this repo (pull before work, push after) |
 | **Codex** | Second builder / reviewer / debugging assistant |
 | **GitHub** | Source of truth and task history |
 | **Raspberry Pi 4 (`commandcenter`)** | Always-on runtime |
