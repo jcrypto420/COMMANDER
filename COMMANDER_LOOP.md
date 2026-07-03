@@ -69,6 +69,28 @@ applies to what Josh must READ; it does not throttle what Commander DRAFTS.
    - Paused ideas become explicit `blocked` rows with a reopen condition.
    - Weak ideas get parked in the relevant project doc or ignored; they do not become queue debt.
 
+## When Josh has time: co-working protocol (2026-07-02)
+
+Two modes, chosen by what Josh has time for. Both start and end the same way:
+pull first; update the lane's `## Status` block and push when done, so the
+other agent and future sessions see the new state.
+
+**Deep-work mode (Josh + Claude Code on the Mac):** pick ONE lane. Josh says
+"work <lane>" — Claude pulls `~/COMMANDER`, reads that lane's Status block +
+project file, and builds with Josh (assets, code, packets, docs). Hermes keeps
+running its loops on the other lanes; no overlap because of one-lane-per-session
+separation. Best for: building, creative work, anything needing Josh's taste
+live.
+
+**Steering mode (Josh + Hermes):** `commander chat` on the Pi, or the browser
+UI once `CC-23` lands. Short commands: "status" (all lanes), "status <lane>",
+"focus <lane> today", "run the loop", "park <lane>", "reopen <lane>". Best
+for: redirecting the autonomous engine, batch-approving banked drafts.
+
+**Status check without any agent:** open Mission Control (port 3011), or
+`grep -A4 "^## Status" projects/*.md` in the repo — every lane, four lines
+each, current as of its last touch.
+
 ## Daily re-entry protocol
 
 When Josh says “gm”, “back”, “where were we”, or similar:

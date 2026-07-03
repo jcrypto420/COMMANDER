@@ -1,5 +1,11 @@
 # Project: Primoscapes (Priority 3)
 
+## Status — 2026-07-02
+- **State:** dormant — no active client projects; do not invent scope
+- **Last advanced:** 2026-06-29 — intake context captured (fall Native Prairie concept, solo capacity)
+- **Next action (on reopen):** define one tiny solo-deliverable fall offer + draft service page or local lead list
+- **Waiting on:** Josh — service area, capacity, and whether fall installs are the first offer
+
 **Goal:** Turn regenerative landscaping / native installations into real revenue.
 
 > ⚠️ **Separation rule:** Primoscapes has distinct sub-projects. Keep them

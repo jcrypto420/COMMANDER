@@ -14,6 +14,8 @@ Operating rule: exactly one `doing` DECISION lane for Josh; Hermes may advance u
 | CC-20 | Command Center | 1 | Apply intensity rules to live SOUL.md on Pi | todo | copy updated `configs/commander_soul_template.md` sections into `~/.hermes/profiles/commander/SOUL.md` (Josh directed the go-harder posture 2026-07-02) | **yes** |
 | CC-19 | Command Center | 1 | Midday + evening draft-only cron loops | todo | add 2 cron jobs (cheap model, restricted toolsets, draft-only); morning loop stays the only report Josh must read | **yes** |
 | CC-21 | Command Center | 2 | Hermes self-audit: skills + cron vs intensity rules | todo | list live skills/cron on the Pi, prune stale ones, confirm each job is cheap-model + restricted + draft-only; log result | no |
+| CC-22 | Command Center | 2 | Mission Control per-lane status cards | todo | extend `build_dashboard_state.py` to parse `## Status` blocks from `projects/*.md` into `state.json`; render one card per lane; build+verify locally | yes to deploy/restart |
+| CC-23 | Command Center | 2 | Hermes browser chat (Open WebUI / API server) | todo | verify against live Hermes docs, then enable API server + web UI on the Pi, LAN-only, no public ports; pairs with CC-10 Tailscale for remote | **yes** |
 | CC-10 | Command Center | 2 | Private phone access (Tailscale-first) | todo | try Tailscale SSH / dashboard before any chat platform | **yes** |
 | CC-13 | Command Center | 2 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
 | WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | identify profitable/grant/leverage angles; good silent-running draft lane | no |

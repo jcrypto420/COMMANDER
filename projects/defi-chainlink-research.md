@@ -1,5 +1,11 @@
 # Project: DeFi / Chainlink / Research Dashboards (Priority 5)
 
+## Status — 2026-07-02
+- **State:** warm — currently feeds career-lane proof points
+- **Last advanced:** 2026-06-30 — 2 S&P reports verified HIGH confidence; report 3 needs URL/contribution details
+- **Next action:** verify report 3 contribution; convert DeFi ops history into resume-ready proof points
+- **Waiting on:** nothing
+
 **Goal:** Produce research, dashboards, and intelligence supporting jobs,
 consulting, investing, governance, or portfolio value.
 

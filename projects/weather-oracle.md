@@ -1,5 +1,11 @@
 # Project: Weather Oracle MVP (Priority 4)
 
+## Status — 2026-07-02
+- **State:** warm — `WO-1` revenue-option scan queued (good silent-running draft lane)
+- **Last advanced:** 2026-06-29 — reframed to revenue-first via intake
+- **Next action:** run WO-1 — identify profitable/grant/leverage angles before any build
+- **Waiting on:** nothing
+
 **Goal:** Keep warm unless it can become a profitable side income, grant /
 public-good project, portfolio asset, or product.
 

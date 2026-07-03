@@ -1,5 +1,11 @@
 # Project: Sovereignty Stack (Priority 7)
 
+## Status — 2026-07-02
+- **State:** support-only — no tinkering unless it serves the money system
+- **Last advanced:** Mission Control dashboard service live on LAN port 3011
+- **Next action:** `CC-10` Tailscale-first private phone/laptop access when Josh opens it
+- **Waiting on:** Josh approval for Tailscale setup
+
 **Goal:** Keep the private infrastructure working reliably, safely, and securely
 **only when it helps the money-making system.**
 

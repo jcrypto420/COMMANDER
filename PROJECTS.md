@@ -13,6 +13,19 @@ Index of money-making projects, in priority order. Each links to its own file.
 | 6 | Bad Boys / Joycat | [badboys-joycat.md](projects/badboys-joycat.md) | Creative IP → products |
 | 7 | Sovereignty Stack | [sovereignty-stack.md](projects/sovereignty-stack.md) | Private infra that supports above |
 
+## Lane status convention (2026-07-02)
+
+Every lane file starts with a `## Status — YYYY-MM-DD` block:
+**State / Last advanced / Next action / Waiting on** — four lines, no more.
+Whoever touches a lane (Hermes loop pass, Claude session) updates its block
+before committing. To scan all lanes at once:
+
+```bash
+grep -A4 "^## Status" projects/*.md
+```
+
+Mission Control renders these as per-lane cards once `CC-22` lands.
+
 ## Separation rules (all lanes, not just Primoscapes)
 
 - **One lane per session/loop pass.** When working a lane, load ONLY that

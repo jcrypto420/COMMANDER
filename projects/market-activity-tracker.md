@@ -1,6 +1,10 @@
 # Market Activity Tracker
 
-Status: active personal-use/open-source dashboard direction. No trading, no investment advice, no paid APIs, no secrets.
+## Status — 2026-07-02
+- **State:** PARKED (`MA-1` blocked) — reopen after CI-1 loop runs smoothly for a week
+- **Last advanced:** 2026-06-29 — product thesis drafted (local-first market cockpit)
+- **Next action (on reopen):** scope v0 local dashboard from the thesis
+- **Waiting on:** reopen condition
 
 ## Why this replaces the current angle
 
