@@ -32,6 +32,18 @@ clean the system up and go harder. Draft-ahead, never idle on "waiting."
 - Josh's availability is sporadic around the birth of his son. Silence means
   MORE queued drafts batched for re-entry review — never idling.
 
+## System freeze (2026-07-03, Josh)
+
+The build phase is OVER. CC-19/20/22/23 are the last construction items.
+After they land: no new root docs, no new rules, no new tools, no new
+process until something SHIPS externally (application submitted, post
+published, email sent). The scoreboard metric is **things that leave the
+building per week** — drafts, docs, and commits don't count. The weekly
+money review leads with the Shipped count. If meta-work beats real-work
+two weeks running, the system is failing and Commander must say so.
+
+**This week's definition of success: one job application actually submitted.**
+
 ## Standing long-term principle
 
 - Learning and daily quality-of-life improvement matter alongside money goals:
