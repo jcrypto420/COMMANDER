@@ -1,46 +1,36 @@
 # NOW.md
 
-**Active focus:** Anti-Slop Systems Reset.
-For the rest of today, polish Commander’s processes, loops, source-of-truth docs,
-and shared operating agreement so we keep making real progress instead of
-accumulating bullshitSlop.
+**Active focus:** `CI-1 Daily job/application process` — the career/income lane
+is the primary revenue-defense sprint lane. The Anti-Slop Systems Reset (OPS-1)
+is complete and archived; its output is `COMMANDER_LOOP.md` + a clean queue.
 
-**Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
-created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
-default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed.
+**Status:** Hermes v0.17.0 on `commandcenter`, `commander` profile, provider =
+OpenAI Codex via ChatGPT OAuth (default `gpt-5.4-mini`, premium `gpt-5.5`).
+Claude Code node linked from Josh's Mac (clone at `~/COMMANDER`). Intensity
+rules v2 adopted 2026-07-02 (see `COMMANDER_LOOP.md`) — Josh's directive:
+clean the system up and go harder. Draft-ahead, never idle on "waiting."
 
 ## Next 3 tasks
 
-1. Systems reset is active: use `COMMANDER_LOOP.md` as the default loop and `projects/systems-polish-reset-2026-06-30.md` as today’s agreement.
-2. `TASK_QUEUE.md` is now active/backlog only; completed rows live in `TASK_ARCHIVE.md`. Keep exactly one `doing` task when possible.
-3. Mission Control service restart was approved by Josh but blocked by runtime safety; do not retry the service command in this session. Dashboard state/build files are verified locally.
-
-_Done: Telegram phone approval channel is live and locked to Josh's Telegram ID; daily money loop and Weekly Money / Revenue Review now deliver to Telegram._
-_Done: `weekly-money-review` cron is live Mondays at 8am and first run created `WEEKLY_MONEY_REVIEW.md`._
-_Done: Mission Control Dashboard v0 is now a Next.js app with read-only `dashboard/state.json`, Commander reports, task queue, Hermes/cron status, and Sovereignty Stack panels. `npm run build` passed; `commander-mission-control.service` is enabled/running on LAN port 3011._
-_Done: Bad Boys avatar background test created — `bone-circle.png` is the recommended TikTok avatar variant if Josh approves real-asset account prep._
-
-_Done: OpenRouter fallback wired (CC-7) — Codex → gemini-2.5-flash → llama-8b._
-_Done: daily loop autonomous at 7am (CC-8/9); auto-commits its draft to GitHub
-(`logs/daily_progress.md`) via a repo-scoped deploy key — readable from any
-device, no notifications/exposure. View on GitHub or `commander chat` on phone._
-_Done: onboarding interview saved to `INTAKE.md`; approved follow-up doc edits
-are being applied._
-_Done: REV-1 selected Bad Boys / Joycat / Mog as the primary 69-day sprint;
-see `SPRINT_69.md`. Phone/autonomy plan drafted in `PHONE_AUTONOMY.md`._
-_Done: model delegation plan drafted in `MODEL_DELEGATION.md` to prevent premium
-usage blockages._
-_Done: Bad Boys / Joycat / Mog approval packet drafted for later review without
-requiring Telegram._
+1. `CI-1` (doing): draft-ahead full application packets for the top 2 roles on
+   `projects/job-slate-2026-07-02.md` (Chainlink Data Risk Ops + Coinbase
+   Billing Ops) BEFORE Josh picks — his yes should be send-ready. Refresh the
+   slate each weekday.
+2. `CC-18`: fix the loop sync protocol — the 2026-07-02 loop skipped `git pull`
+   because of local uncommitted changes on the Pi. Every loop now starts with
+   commit-or-stash + `git pull --rebase` (see `COMMANDER_LOOP.md` intensity
+   rules).
+3. `CC-19` (needs Josh approval): add midday + evening draft-only cron loops so
+   the Pi works more than one cycle per day. Cheap model, restricted toolsets,
+   same safety gates.
 
 ## Current blockers
 
-- Optional: Nous Portal (`hermes login`) for bundled web/browser
-  tools; add when needed.
+- Pi working tree is dirty (`NOW.md`, `TASK_QUEUE.md`, untracked `exports/`) —
+  resolve via CC-18 on the next loop, then pull this update.
 - Spending/sending actions still require Josh's approval (see `SECURITY.md`).
-- Josh's availability may be sporadic around the birth of his son; prefer
-  asynchronous systems, queues, drafts, and approval checkpoints.
+- Josh's availability is sporadic around the birth of his son. Silence means
+  MORE queued drafts batched for re-entry review — never idling.
 
 ## Standing long-term principle
 

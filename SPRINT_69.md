@@ -5,7 +5,15 @@ time use efficient, and Commander increasingly autonomous.
 
 Math: $6,900 / 69 days = **$100/day** or about **$700/week**.
 
-## Recommendation
+## Status — updated 2026-07-02 (~day 5)
+
+Revenue so far: **$0**. During the Anti-Slop Systems Reset the lanes swapped:
+**career/income (`CI-1`) is now the primary sprint lane** and Bad Boys is
+parked until Josh reopens it. A landed role or contract counts toward the
+sprint target. The Bad Boys plan below is retained as the reopen playbook —
+its assets and packets are draft-ready in `projects/` + `assets/badboys/`.
+
+## Original recommendation (now the parked lane)
 
 Primary sprint: **Bad Boys / Joycat / Mog audience + sales engine**.
 

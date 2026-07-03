@@ -5,21 +5,26 @@ How Hermes finds, drafts, tracks, and advances money-making opportunities.
 ## Daily make-money loop
 
 ```text
-1. Read NOW.md.
-2. Review TASK_QUEUE.md.
+1. Sync: commit-or-stash local changes, git pull --rebase (never skip).
+2. Read NOW.md; review TASK_QUEUE.md.
 3. Identify the highest-leverage money-making task.
 4. Execute it only if safe (see SECURITY.md).
-5. If not safe, draft the exact next action for Josh.
-6. Update logs/daily_progress.md.
-7. Suggest ONE improvement to reduce cost or increase automation.
+5. If it needs approval, draft the FULL decision-ready packet anyway —
+   Josh's yes should be send-ready — then queue the approval ask.
+6. Do NOT stop there: advance the next-best draft-only queue item
+   (up to 3 draft lanes/day; see COMMANDER_LOOP.md intensity rules).
+7. Update logs/daily_progress.md; batch all approval asks into ONE
+   copy-paste block in the morning report.
+8. Suggest ONE improvement to reduce cost or increase automation.
+9. Commit + push docs/log updates (bounded push via deploy key).
 ```
 
 **Daily question:** *What can I do today that most increases Josh's income,
 assets, leverage, or optionality?*
 
-Current 69-day sprint: **Bad Boys / Joycat / Mog audience + sales engine**
-(`SPRINT_69.md`). Career / crypto research leverage stays warm as the
-near-cash backstop lane.
+Current 69-day sprint lane: **career/income (`CI-1`)** — see `SPRINT_69.md`
+status. Bad Boys / Joycat / Mog is parked with a reopen playbook; crypto
+research leverage feeds the career lane.
 
 ## What "advance" means per priority
 

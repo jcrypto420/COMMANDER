@@ -2,7 +2,7 @@
 
 Completed task archive. Active tasks live in `TASK_QUEUE.md`.
 
-Last refreshed: 2026-06-30
+Last refreshed: 2026-07-02
 
 ## Completed tasks
 
@@ -47,3 +47,4 @@ Last refreshed: 2026-06-30
 | BB-21 | Bad Boys/Joycat | 2 | Mogging marketing tactics study | done | public sources checked; artifact-first tactic playbook created | no |
 | BB-22 | Bad Boys/Joycat | 2 | Week 1 v3 artifact-lab TikTok pack | done | no-hook artifact format drafted after v2 still felt corny | yes |
 | TG-1 | Command Center | 1 | Telegram phone approval channel | done | live and locked to Josh's Telegram ID; daily + weekly report delivery enabled | **yes** |
+| OPS-1 | Command Center | 1 | Anti-Slop Systems Reset | done | loop codified in `COMMANDER_LOOP.md`; queue cleaned; reset doc archived to `projects/archive/`; closed 2026-07-02 during intensity upgrade | no |
