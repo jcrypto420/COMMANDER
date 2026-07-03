@@ -3,7 +3,7 @@
 ## Status — 2026-07-02
 - **State:** REOPENED — Josh named this a push lane in the 2026-07-02 calibration
 - **Last advanced:** 2026-06-30 — avatar background test done; `bone-circle.png` recommended
-- **Next action:** BB-24 refresh real-asset plan + pick first sellable artifact → BB-17 posting packet → BB-23 Josh creates account (~30 min)
+- **Next action:** CARTOON LAB is the engine now (`badboys-cartoon-lab.md`) — BB-25 pilot in flight; BB-23 account creation is the publishing cork; BB-24 sticker drop waits for content signal
 - **Waiting on:** nothing for drafts; Josh's account decision for anything public
 
 **Goal:** Build a pseudonymous, brand-led creative business that grows audience and sales through meme-native IP, games, assets, content, merch, and community — without exposing Josh personally or taking public actions without approval.
