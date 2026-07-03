@@ -7,7 +7,7 @@ Approval = does this need Josh's OK before acting? (see `SECURITY.md`).
 
 Operating rule: exactly one `doing` DECISION lane for Josh; Hermes may advance up to 3 draft-only lanes per day (see `COMMANDER_LOOP.md` intensity rules). Parked lanes are `blocked` with a clear reopen condition, not half-active.
 
-Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad Boys + Primoscapes + DeFi product ideation = the push lanes; same-day 60-second verdicts on send-ready drafts; reports must shrink (CC-24).
+Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad Boys + Primoscapes + DeFi product ideation = the push lanes; same-day 60-second verdicts in the 8–9am window; reports must shrink (CC-24).
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
@@ -16,7 +16,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 | BB-24 | Bad Boys/Joycat | 1 | Refocus on real assets — **REOPENED by Josh 2026-07-02** | todo | refresh the real-asset plan; pick the first sellable artifact (sticker-pack v0 leading candidate) and its storefront path; draft-only | no |
 | BB-17 | Bad Boys/Joycat | 2 | Week 1 posting packet | todo | rebuild packet around real assets + bone-circle avatar so it is post-ready the day Josh creates the account | yes to post |
 | BB-23 | Bad Boys/Joycat | 2 | TikTok account creation | todo | JOSH action (~30 min): create account per runbook; credentials/2FA stay Josh-only | **yes** |
-| PS-1 | Primoscapes | 2 | Fall Native Prairie prep | todo | define ONE tiny solo-deliverable fall offer; draft service one-pager + local lead list; no invented sub-projects, no outreach without approval | yes to send |
+| PS-1 | Primoscapes | 2 | Fall Native Prairie prep | todo | facts confirmed (OKC metro, 1–2 solo installs/wk): define ONE tiny fall offer sized to that; draft one-pager + OKC lead list; no outreach without approval | yes to send |
 | DF-1 | DeFi/Chainlink | 2 | DeFi product ideation memo | todo | 10 product concepts from Josh's real edge (oracle risk, RWA/tokenization, stablecoin risk, market infra); rank by build-cost vs revenue path; concepts only — no financial actions, no custody, no trades | no |
 | CC-19 | Command Center | 1 | Midday + evening cron loops | todo | jobs live; morning loop recreated 07:30 pinned (drift-guard fix). Verify 1pm/6pm commits land 2026-07-03, then archive | verify only |
 | CC-18 | Command Center | 1 | Loop sync protocol | todo | embedded in cron prompts step 0/8; verify no skipped pull on 2026-07-03, then archive | no |

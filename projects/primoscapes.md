@@ -3,14 +3,20 @@
 ## Status — 2026-07-02
 - **State:** ACTIVE draft lane (`PS-1`) — Josh named this a push lane 2026-07-02; fall prep window is now
 - **Last advanced:** 2026-06-29 — intake context captured (fall Native Prairie concept, solo capacity)
-- **Next action:** PS-1 — define ONE tiny solo fall offer + service one-pager + local lead list (draft-only)
-- **Waiting on:** nothing for drafts; Josh still owes service area + capacity details
+- **Next action:** PS-1 — define ONE tiny solo fall offer + service one-pager + OKC-metro lead list (draft-only)
+- **Waiting on:** nothing — Josh confirmed 2026-07-03: service area = OKC metro, capacity = 1–2 solo installs/week in fall
 
 **Goal:** Turn regenerative landscaping / native installations into real revenue.
 
 > ⚠️ **Separation rule:** Primoscapes has distinct sub-projects. Keep them
 > **strictly separated**. Do NOT mix recommendations, leads, pricing, or context
 > between sub-projects unless Josh explicitly says they are connected.
+
+## Confirmed operating facts (Josh, 2026-07-03)
+
+- Service area: **OKC metro**.
+- Capacity: **1–2 installs per week in fall, solo**. Size the offer and lead
+  list to that ceiling — no scaling assumptions, no crew, no invented scope.
 
 ## Sub-projects
 

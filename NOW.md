@@ -4,7 +4,7 @@
 push lanes per Josh's 2026-07-02 calibration: Bad Boys (reopened), Primoscapes
 fall prep (`PS-1`), DeFi product ideation (`DF-1`). Research-services offers
 are KILLED (taste). Josh commits to same-day 60-second verdicts on send-ready
-drafts. Reports shrink to 5 lines (`CC-24`).
+drafts — **verdict window: 8–9am daily** (dispatch lands 07:30, decision by 9). Reports shrink to 5 lines (`CC-24`).
 
 **Status:** Hermes v0.18.0 on `commandcenter`, `commander` profile, provider =
 OpenAI Codex via ChatGPT OAuth (default `gpt-5.4-mini`, premium `gpt-5.5` by
