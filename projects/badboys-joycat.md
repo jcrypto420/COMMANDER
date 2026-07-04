@@ -39,6 +39,12 @@ The active path is one concrete public-signal setup using Josh-provided Bad Boys
 - First caption: `testing this.`
 - First comment / signal question: `keep or kill?`
 
+## BB-24 draft seed
+
+- Status: internal draft only; no public release, posting, minting, upload, or spend without Josh approval.
+- Pack concept: `Good With Teeth Pack v0` — a tiny product-shaped test anchored on the real face mark plus a few slogan badges.
+- Next action: draft a one-page decision packet comparing a PFP pack vs sticker sheet vs tee badge, and rank the simplest storefront path; keep timing gated on cartoon-lab signal.
+
 ## Status
 
 - [x] Bad Boys selected as current 69-day sprint experiment.

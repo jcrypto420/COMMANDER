@@ -38,6 +38,7 @@ One short entry per working day. What advanced + estimated spend.
 - Applied Josh-approved intake follow-up edits to GOALS/NOW/TASK_QUEUE and
   project files, aligning the repo around the 69-day $6.9K sprint and the
   Bad Boys/Joycat/Mog high-upside revenue lane.
+
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
 
 - Ran REV-1: selected Bad Boys / Joycat / Mog as the primary 69-day revenue
@@ -307,4 +308,5 @@ One short entry per working day. What advanced + estimated spend.
 - Morning loop: completed repo sync after overnight reboot (`git fetch --all`, `git rebase origin/main`, `git pull --rebase`), stashed generated state during the rebase, and restored the safe dashboard/reports work after sync.
 - Advanced CI-1 draft-ahead lane by drafting `jobs/packets/coinbase-billing-ops.md`, updating `jobs/TRACKER.md`, `TASK_QUEUE.md`, `projects/career-income.md`, and rewriting `MORNING_REPORT.md` into CC-24 5-line form.
 - Advanced CC-24 draft target by writing the exact 5-line morning brief template into `projects/command-center-dashboard-v0.md` and moving `TASK_QUEUE.md` to tomorrow's verify step.
+- Advanced BB-24 draft-only lane by reviving the archived first sticker-pack brief into `Good With Teeth Pack v0`; next step is a one-page comparison of PFP pack vs sticker sheet vs tee badge plus a ranked storefront path.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
