@@ -306,4 +306,5 @@ One short entry per working day. What advanced + estimated spend.
 
 - Morning loop: completed repo sync after overnight reboot (`git fetch --all`, `git rebase origin/main`, `git pull --rebase`), stashed generated state during the rebase, and restored the safe dashboard/reports work after sync.
 - Advanced CI-1 draft-ahead lane by drafting `jobs/packets/coinbase-billing-ops.md`, updating `jobs/TRACKER.md`, `TASK_QUEUE.md`, `projects/career-income.md`, and rewriting `MORNING_REPORT.md` into CC-24 5-line form.
+- Advanced CC-24 draft target by writing the exact 5-line morning brief template into `projects/command-center-dashboard-v0.md` and moving `TASK_QUEUE.md` to tomorrow's verify step.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

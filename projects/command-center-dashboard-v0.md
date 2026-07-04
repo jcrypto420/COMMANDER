@@ -1,9 +1,10 @@
 # Project: Commander Dashboard / Command Center UI v0
 
-## Status — 2026-07-03
+## Status — 2026-07-04
 
-- Current focus: CC-22 draft is now built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
-- Next action: keep the draft local until Josh approves a live service restart; then verify the deployed Mission Control refreshes cleanly.
+- Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
+- CC-24 draft target is now explicit in this file: the morning brief must stay to 5 lines, include `Open:` / `Decide:`, and end with one bolded decision.
+- Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch hits the 5-line target cleanly.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
 ## Why this matters
@@ -185,10 +186,14 @@ No installs. No server. No secrets. No deployment.
 
 ## CC-24 draft target
 
-Tomorrow's morning brief should compress into one scan-friendly packet:
+The morning brief should compress into one scan-friendly packet that fits a
+single phone screen:
 
-1. Title line.
-2. One money-move sentence.
-3. One done-while-away sentence.
-4. One review line with `Open:` and `Decide:`.
-5. One status/next-action line with the decision in bold.
+1. `Status: ...`
+2. `Shipped this week: ...`
+3. `CI-1 update: ...`
+4. `Open: ...` and `Decide: ...`
+5. `**Decision:** ...`
+
+Keep it under 60 seconds to read, with exactly one bolded decision and no extra
+bullets.
