@@ -94,6 +94,52 @@ def parse_tasks(md: str) -> list[dict]:
     return tasks
 
 
+def strip_md(text: str) -> str:
+    return re.sub(r'[`*_]', '', text).strip()
+
+
+def parse_project_cards() -> list[dict]:
+    cards = []
+    for file in sorted((ROOT / 'projects').glob('*.md')):
+        text = read(file)
+        if not text.strip():
+            continue
+        title_match = re.search(r'^#\s+Project:\s*(.+)$', text, re.M) or re.search(r'^#\s*(.+)$', text, re.M)
+        title = strip_md(title_match.group(1)) if title_match else file.stem.replace('-', ' ').title()
+        status_match = re.search(r'##\s*Status[^\n]*\n(.*?)(?=\n##\s|\Z)', text, re.S)
+        if not status_match:
+            continue
+        block = status_match.group(1).strip()
+        lines = []
+        for raw in block.splitlines():
+            line = raw.strip()
+            if not line:
+                continue
+            if line.startswith('- '):
+                line = line[2:].strip()
+            lines.append(strip_md(line))
+            if len(lines) >= 4:
+                break
+        if not lines:
+            continue
+        def pick(prefix: str) -> str:
+            for line in lines:
+                if line.lower().startswith(prefix):
+                    return line[len(prefix):].strip(' :-')
+            return ''
+        cards.append({
+            'id': file.stem,
+            'title': title,
+            'path': str(file.relative_to(ROOT)),
+            'status_lines': lines[:4],
+            'state': pick('state:'),
+            'last_advanced': pick('last advanced:'),
+            'next_action': pick('next action:'),
+            'waiting_on': pick('waiting on:'),
+        })
+    return cards
+
+
 def parse_goal_numbers(goals: str) -> dict:
     return {
         'sprint_target': '$6.9K in 69 days',
@@ -185,6 +231,7 @@ def main() -> None:
     now_md = read(ROOT / 'NOW.md')
     goals_md = read(ROOT / 'GOALS.md')
     tasks = parse_tasks(read(ROOT / 'TASK_QUEUE.md'))
+    projects = parse_project_cards()
     morning = read(ROOT / 'MORNING_REPORT.md')
     doing = [t for t in tasks if t['status'] == 'doing']
     blocked = [t for t in tasks if t['status'] == 'blocked']
@@ -215,6 +262,8 @@ def main() -> None:
             'review': review_lines,
         },
         'tasks': {'all': tasks, 'doing': doing, 'blocked': blocked, 'todo': todo[:8], 'approval': approval[:8], 'counts': {s: sum(1 for t in tasks if t['status'] == s) for s in ['doing','blocked','todo','done']}},
+        'projects': projects,
+        'lanes': projects,
         'hermes': parse_hermes_status(),
         'cron': parse_cron(),
         'git': git_snapshot(),

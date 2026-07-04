@@ -135,6 +135,7 @@ export default function Dashboard() {
   const primaryTasks = [...doing, ...blocked, ...todos].slice(0, 8);
   const services = state.sovereignty?.services || [];
   const containers = state.sovereignty?.docker?.containers || [];
+  const projectCards = state.lanes || state.projects || [];
   const review = state.focus?.review?.length ? state.focus.review : ['Open: WEEKLY_MONEY_REVIEW.md', 'Decide: choose one signal path'];
   const approvalPhrase = approvals[0]?.next_action || 'APPROVE REAL ASSET ACCOUNT PREP or RUN IN-1 LEAD VERIFY';
   const decisionCommands = [
@@ -232,6 +233,32 @@ export default function Dashboard() {
         <p className="decision-note">For now, Mission Control is the cockpit and Telegram/CLI is the throttle. Direct in-dashboard chat comes after auth + approval gates are designed.</p>
       </section>
 
+      <section className="panel lane-panel">
+        <div className="panel-label green">Lane cards — parsed from project Status blocks</div>
+        <div className="lane-grid">
+          {projectCards.length ? projectCards.map((project) => (
+            <div className="lane-card" key={project.id}>
+              <div className="lane-card-head">
+                <div>
+                  <b>{project.title}</b>
+                  <div className="lane-subhead">
+                    <span className="lane-pill">{project.state || 'status unavailable'}</span>
+                    {project.last_advanced ? <span className="lane-pill muted">{project.last_advanced}</span> : null}
+                  </div>
+                </div>
+                <a className="lane-link" href={fileHref(project.path)} target="_blank" rel="noreferrer">Open ↗</a>
+              </div>
+              <div className="lane-state">{project.status_lines?.[0] || 'Status unavailable'}</div>
+              <ul>
+                {(project.status_lines || []).slice(1, 4).map((line) => <li key={line}>{line}</li>)}
+                {project.next_action ? <li><strong>Next:</strong> {project.next_action}</li> : null}
+                {project.waiting_on ? <li><strong>Wait:</strong> {project.waiting_on}</li> : null}
+              </ul>
+            </div>
+          )) : <p className="muted">No project status blocks parsed yet.</p>}
+        </div>
+      </section>
+
       <section className="panel inbox-panel">
         <div className="panel-label green">Commander Inbox — capture from phone, keep ideas separate</div>
         <CommanderInbox initialEntries={inboxEntries} />
@@ -274,6 +301,7 @@ export default function Dashboard() {
             <div className="action-card"><b>Daily task mode</b><p>Open the dashboard, pick the one move, then use the optional 15/30/60-minute extensions.</p><code>read → decide → execute</code></div>
             <div className="action-card"><b>Future action layer</b><p>Buttons will generate approval packets first. No direct posting, spending, trading, or service changes.</p><code>approval-gated</code></div>
             <a className="action-card" href="/market"><b>Market activity tracker</b><p>Personal/open-source crypto + data-infra pulse: prices, DeFi TVL, GitHub activity, narrative heat.</p><code>open /market</code></a>
+            <a className="action-card" href="/gate-deck"><b>Gate Deck</b><p>Tap-to-verdict cards for pending decisions. Posts verdicts to the capture-only inbox API.</p><code>open /gate-deck</code></a>
           </div>
         </div>
 

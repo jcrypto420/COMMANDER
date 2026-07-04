@@ -300,3 +300,10 @@ One short entry per working day. What advanced + estimated spend.
 - Claude (Mac): MONEY LEAK CONFIRMED then KILLED — OpenRouter dashboard showed $9.87 burned in 5 days (Gemini Flash $6.82, GPT-5.5 $2.66, mini $0.38): premium models billed through OpenRouter while free codex OAuth existed; model_usage.csv had misreported providers. Removed `model.base_url: openrouter` from BOTH configs (backups kept), Josh re-authed codex OAuth (crash had wiped it from the credential pool AND OpenRouter balance was exhausted = zero working providers). Live test OK. Policy: OpenRouter stays unfunded as a natural kill-switch until a clean week; fallback-alert rule queued in CC-21.
 - Commander loop: advanced CC-24 by drafting the 5-line morning dispatch target in `projects/command-center-dashboard-v0.md`, updating the task queue next action, and leaving the lane in `todo` for tomorrow's verification run.
 - GATE 1 PASSED: Josh shipped ALL FOUR pilot scripts via interactive widget verdict (first taste-gate pass of the cartoon lab). Production order P4 T+2 first. CC-22 scope extended per Josh: Mission Control gains a Gate Deck (tap-to-verdict cards -> inbox API) + PWA manifest for phone-app install. Rig session next (Josh + Claude Desktop/Blender, Sonnet 4.6 per routing rules).
+- CC-22 local build pass: lane cards now parse from `projects/*.md` status blocks, Gate Deck verdict buttons post capture-only captures into the inbox API, and phone-install icons/manifest are wired. Verified with `npm run dashboard:state`, `npm run build`, and local screenshots on port 3020. No live service restart yet.
+
+## 2026-07-04
+
+- Morning loop: completed repo sync after overnight reboot (`git fetch --all`, `git rebase origin/main`, `git pull --rebase`), stashed generated state during the rebase, and restored the safe dashboard/reports work after sync.
+- Advanced CI-1 draft-ahead lane by drafting `jobs/packets/coinbase-billing-ops.md`, updating `jobs/TRACKER.md`, `TASK_QUEUE.md`, `projects/career-income.md`, and rewriting `MORNING_REPORT.md` into CC-24 5-line form.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.

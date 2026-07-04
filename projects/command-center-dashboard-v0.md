@@ -2,8 +2,8 @@
 
 ## Status — 2026-07-03
 
-- Current focus: CC-24 morning dispatch formatting is drafted and ready for tomorrow's verification run.
-- Next action: confirm `MORNING_REPORT.md` lands in exactly 5 lines with one bolded decision, then archive CC-24.
+- Current focus: CC-22 draft is now built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
+- Next action: keep the draft local until Josh approves a live service restart; then verify the deployed Mission Control refreshes cleanly.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
 ## Why this matters

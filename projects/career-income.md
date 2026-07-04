@@ -1,10 +1,10 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-07-02
+## Status — 2026-07-04
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-07-02 — 5-role job slate drafted (`job-slate-2026-07-02.md`); Chainlink Data Risk Ops ranked top
-- **Next action:** Chainlink ALREADY APPLIED via ChatGPT lane — packet moved to `jobs/packets/chainlink-data-risk-ops.md` as interview prep. All job work now flows through `jobs/TRACKER.md` + `jobs/SEARCH_PLAYBOOK.md`
-- **Waiting on:** nothing to keep drafting; Josh's pick of 1–2 roles to finalize/send
+- **Last advanced:** 2026-07-04 — Coinbase Billing Ops packet drafted (`jobs/packets/coinbase-billing-ops.md`) after confirming Chainlink was already applied
+- **Next action:** Josh picks the next 1–2 roles to finalize/send; Chainlink stays interview prep and Coinbase is the current send-ready draft
+- **Waiting on:** Josh’s verdict on the Coinbase packet and any salary/work-auth wording tweaks
 
 **Goal:** Protect and increase Josh's income, reduce stress, and turn his background into good-fit opportunities. Commander's operating principle is skeptical, evidence-based, and execution-oriented. It will not flatter, invent, or force Josh into misaligned roles.
 
