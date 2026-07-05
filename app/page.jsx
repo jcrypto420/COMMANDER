@@ -302,6 +302,7 @@ export default function Dashboard() {
             <div className="action-card"><b>Future action layer</b><p>Buttons will generate approval packets first. No direct posting, spending, trading, or service changes.</p><code>approval-gated</code></div>
             <a className="action-card" href="/market"><b>Market activity tracker</b><p>Personal/open-source crypto + data-infra pulse: prices, DeFi TVL, GitHub activity, narrative heat.</p><code>open /market</code></a>
             <a className="action-card" href="/gate-deck"><b>Gate Deck</b><p>Tap-to-verdict cards for pending decisions. Posts verdicts to the capture-only inbox API.</p><code>open /gate-deck</code></a>
+            <a className="action-card" href="/docs"><b>Library</b><p>The documents that matter: job tracker, packets, cartoon lab, reports — readable on any screen.</p><code>open /docs</code></a>
           </div>
         </div>
 

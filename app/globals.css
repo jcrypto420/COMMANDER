@@ -242,3 +242,27 @@ code { color: var(--green-soft); word-break: break-word; }
   .footer-panel { display: block; }
   .footer-meta { text-align: left; margin-top: 10px; }
 }
+
+@media (max-width: 760px) {
+  .shell { padding: 10px; }
+  .hero, .command-grid, .triple-grid, .decision-flow, .decision-command-grid,
+  .lane-grid, .gate-grid, .inbox-console, .status-grid, .metrics-row {
+    grid-template-columns: 1fr !important;
+  }
+  .panel { border-radius: 16px; padding: 14px; }
+  body { font-size: 15px; }
+  h1 { font-size: 22px; }
+  .action-card, button { min-height: 44px; }
+}
+
+.doc-prose { font-size: 14px; line-height: 1.65; color: var(--soft); overflow-x: auto; }
+.doc-prose h1, .doc-prose h2, .doc-prose h3 { color: var(--text); line-height: 1.3; margin: 1.2em 0 0.5em; }
+.doc-prose h1 { font-size: 20px; } .doc-prose h2 { font-size: 17px; } .doc-prose h3 { font-size: 15px; }
+.doc-prose code { background: rgba(255,255,255,0.07); padding: 1px 6px; border-radius: 6px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; }
+.doc-prose pre { background: rgba(255,255,255,0.05); padding: 12px; border-radius: 10px; overflow-x: auto; }
+.doc-prose table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: 12.5px; }
+.doc-prose th, .doc-prose td { border: 1px solid var(--line); padding: 6px 9px; text-align: left; vertical-align: top; }
+.doc-prose th { color: var(--text); background: rgba(255,255,255,0.04); }
+.doc-prose a { color: var(--blue); }
+.doc-prose blockquote { border-left: 3px solid var(--violet); margin: 1em 0; padding: 2px 14px; color: var(--muted); }
+.doc-prose li { margin: 3px 0; }
