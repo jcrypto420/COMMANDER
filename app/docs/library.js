@@ -5,8 +5,6 @@ const ROOT = process.cwd();
 export const LIBRARY = [
   { slug: 'jobs-tracker', file: 'jobs/TRACKER.md', title: 'Job tracker', blurb: 'Every application, status, and link. The single source of truth.', group: 'Jobs' },
   { slug: 'jobs-playbook', file: 'jobs/SEARCH_PLAYBOOK.md', title: 'Search playbook', blurb: 'How roles get found, verified, scored, and tailored.', group: 'Jobs' },
-  { slug: 'packet-chainlink', file: 'jobs/packets/chainlink-data-risk-ops.md', title: 'Chainlink packet', blurb: 'Applied — now interview prep.', group: 'Jobs' },
-  { slug: 'packet-coinbase', file: 'jobs/packets/coinbase-billing-ops.md', title: 'Coinbase packet', blurb: 'Send-ready. Verdict pending on the Gate Deck.', group: 'Jobs' },
   { slug: 'cartoon-lab', file: 'projects/badboys-cartoon-lab.md', title: 'Cartoon lab', blurb: 'Pipeline, art constitution, pilot scripts, production status.', group: 'Bad Boys' },
   { slug: 'storyboard-t2', file: 'assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md', title: 'T+2 storyboard', blurb: 'Episode one, panel by panel.', group: 'Bad Boys' },
   { slug: 'now', file: 'NOW.md', title: 'NOW', blurb: 'Active focus, next tasks, blockers.', group: 'Command center' },
@@ -59,5 +57,29 @@ export function linkifyRepoPaths(html) {
       (m, pre, url) => `${pre}<a href="https://${url}" target="_blank" rel="noopener">${url}</a>`);
     return `<td>${linked}</td>`;
   });
+  return out;
+}
+
+export function jobPacketDocs() {
+  const activeDir = path.join(ROOT, 'jobs', 'packets', 'active');
+  const out = [];
+  try {
+    for (const name of fs.readdirSync(activeDir).sort()) {
+      const rel = `jobs/packets/active/${name}/packet.md`;
+      const abs = path.join(ROOT, rel);
+      if (!fs.existsSync(abs)) continue;
+      const raw = fs.readFileSync(abs, 'utf8');
+      const heading = (raw.match(/^#\s+(.+)$/m) || [])[1] || name;
+      const title = heading.replace(/^CI-1 Application Packet — /, '').trim();
+      const status = ((raw.match(/\*\*Status:\*\*\s*(.+)$/m) || [])[1] || '').replace(/[*_]/g, '').trim();
+      const extras = fs.readdirSync(path.join(activeDir, name)).filter((f) => f !== 'packet.md' && !f.startsWith('.'));
+      out.push({
+        href: `/docs/view?f=${encodeURIComponent(rel)}`,
+        title,
+        blurb: `${status}${extras.length ? ' · in folder: ' + extras.join(', ') : ''}`.slice(0, 150),
+        group: 'Jobs',
+      });
+    }
+  } catch {}
   return out;
 }

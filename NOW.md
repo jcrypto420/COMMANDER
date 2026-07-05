@@ -19,7 +19,7 @@ recovered manually, never assumed.
 1. `CI-1` (doing): **SHIPPED ≥1 — Chainlink application was already submitted via
    the ChatGPT lane** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
    date). Coinbase Billing Ops packet is send-ready at
-   `jobs/packets/coinbase-billing-ops.md`; Josh verdict next. Check the tracker
+   `jobs/packets/active/coinbase-billing-ops/packet.md`; Josh verdict next. Check the tracker
    FIRST, always.
 2. `CC-24`: morning dispatch = 5 phone-screen lines, ONE bolded decision
    (being folded into the recreated 07:30 morning loop).

@@ -11,7 +11,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
-| CI-1 | Career/Income | 1 | Job search per `jobs/SEARCH_PLAYBOOK.md` | doing | Chainlink = ALREADY APPLIED (ChatGPT lane — dedupe caught 2026-07-03). ALL agents check `jobs/TRACKER.md` BEFORE any job work. Next: Coinbase Billing Ops packet → `jobs/packets/` | **yes** to send |
+| CI-1 | Career/Income | 1 | Job search per `jobs/SEARCH_PLAYBOOK.md` | doing | Coinbase SHIPPED by Josh via Gate Deck 2026-07-05 — resume.docx + cover letter DELIVERED in `jobs/packets/active/coinbase-billing-ops/`; Josh fills placeholders + submits, then folder auto-archives. LIFECYCLE: applied/killed packets move to `jobs/packets/archive/` same-day. ALL agents check `jobs/TRACKER.md` first | **yes** to send |
 | CC-24 | Command Center | 1 | 5-line daily dispatch | todo | keep the 5-line morning brief locked in `MORNING_REPORT.md` and `projects/command-center-dashboard-v0.md`; tomorrow verify the 07:30 dispatch lands in 5 lines with ONE bolded decision, then archive | verify only |
 | BB-25 | Bad Boys/Joycat | 1 | CARTOON LAB pilot — P4 "T+2" IN PRODUCTION | doing | Gate 1 passed (all 4 shipped). Josh rigs puppet+banker (Blender brief staged); Claude: storyboard, narrator casting, audio; then Gate 2 final cut | gate 2 |
 | BB-26 | Bad Boys/Joycat | 1 | Hermes idea-bank + MoA critics cron | todo | weekly cron: 10 premises → MoA premise-critic → script cards → MoA corny-detector → bank for Josh's gate; pinned gpt-5.4-mini, moa for critic passes only | **yes** |
