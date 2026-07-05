@@ -6,6 +6,7 @@
 - **GATE 1 PASSED 2026-07-03 (evening):** Josh SHIPPED all four pilots via widget verdict. Production order: P4 "T+2" first, then P2 → P1 → P3.
 - **Next action:** Stage 2+ on P4 — Josh rigs the puppet + banker costume (Blender/Claude Desktop, brief staged); Claude storyboards T+2 + casts narrator
 - **Waiting on:** rig test stills for on-model check; BB-23 account creation (publishing cork)
+- **Stage 3 (T+2): VO COMPLETE** — Sarah stems at `assets/badboys/cartoon-lab/t2-ep1/vo/` (line1 + line2); SFX (coffee sip) at animatic timing
 
 Calibration (Josh, 2026-07-03): evergreen pipeline first (World Cup concept PARKED —
 undeveloped, window closes Jul 19; revisit only if the pipeline is live before then).
@@ -36,6 +37,9 @@ ceiling: ~$25/mo (voice/SFX/music credits; AI video assists deferred until signa
    brands only. FIFA/league marks = risk zone.
 7. **Voice mode per short** (silent / narrator / voiced) — script proposes it,
    corny-critic checks consistency. Early bias: silent or single deadpan narrator.
+   **CAST (Josh, 2026-07-03): the narrator is "Sarah" (ElevenLabs premade,
+   corporate-reassuring register) — settings: stability 0.95, style 0, speed
+   0.93. She is the cartoon-lab default voice unless a script argues otherwise.**
 8. **Format:** vertical 1080×1920, 8–30s, loop-ability preferred (last frame feeds
    first). Series > one-offs: recurring segments build a show, not clips.
 
