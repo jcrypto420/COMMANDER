@@ -7,6 +7,7 @@
 - **Next action:** Stage 2+ on P4 — Josh rigs the puppet + banker costume (Blender/Claude Desktop, brief staged); Claude storyboards T+2 + casts narrator
 - **Waiting on:** rig test stills for on-model check; BB-23 account creation (publishing cork)
 - **Stage 3 (T+2): VO COMPLETE** — Sarah stems at `assets/badboys/cartoon-lab/t2-ep1/vo/` (line1 + line2); SFX (coffee sip) at animatic timing
+- **Stage 4 asset: banker costume/body REJECTED by Josh 2026-07-05** — rework in progress in the Blender/Desktop chat; Stage 2 storyboard proceeds in parallel (uses canonical face, layout-only)
 
 Calibration (Josh, 2026-07-03): evergreen pipeline first (World Cup concept PARKED —
 undeveloped, window closes Jul 19; revisit only if the pipeline is live before then).

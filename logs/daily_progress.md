@@ -318,3 +318,4 @@ One short entry per working day. What advanced + estimated spend.
 - Appended today's model usage so the morning run stays visible in the repo.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
 - CASTING LOCKED: Sarah (ElevenLabs, corporate-reassuring) is the BAD BOY BANKERS / cartoon-lab narrator per Josh's widget verdict. T+2 Stage 3 VO stems rendered production-ready to assets/badboys/cartoon-lab/t2-ep1/vo/. Fixed a duplicated CI-1 queue row from the evening-lane merge.
+- Claude (Mac): CC-22 SHIPPED — Gate Deck live at /gate-deck (tap-to-verdict cards; verdicts append to capture-only inbox as lane=gate-verdict for loop pickup) + PWA manifest completing the phone-app install; built+deployed on Pi, service restarted, all endpoints 200. Seeded gates: Coinbase ship?, BB-23 account timing, Gate-2 placeholder. Banker costume rejected by Josh — rework in Blender chat; storyboard proceeds.
