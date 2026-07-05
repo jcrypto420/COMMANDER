@@ -16,7 +16,7 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 | Date | Company | Role | Score | Status | Owner | Materials | Official link |
 |---|---|---|---|---|---|---|---|
 | — | Coinbase | Assoc. Manager, Billing Operations & Strategy | 7 | **DRAFT READY** | Josh + Commander | `jobs/packets/coinbase-billing-ops.md` | [Coinbase careers](https://www.coinbase.com/careers/positions/8017672?gh_jid=8017672) |
-| — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | 6 | hold — stretch/location | — | — | [Ashby posting](https://jobs.ashbyhq.com/chainlink-labs/66f765aa-45d4-46c3-aff4-59f0bad35326) |
+| — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | 6 | hold — CHECK: may already be covered by the CLL application above | — | — | [Ashby posting](https://jobs.ashbyhq.com/chainlink-labs/66f765aa-45d4-46c3-aff4-59f0bad35326) |
 | — | Ripple | Treasury Manager, Global Treasury Ops (NY) | 5 | hold — location friction | — | — | [Ripple careers](https://ripple.com/careers/all-jobs/job/7767531?gh_jid=7767531) |
 | — | BitGo | Financial Operations Manager (Palo Alto) | 4 | skip — location; keyword source only | — | — | [Greenhouse posting](https://job-boards.greenhouse.io/bitgo/jobs/8436572002) |
 
@@ -25,6 +25,9 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 | Date | Company | Role | Outcome | Materials |
 |---|---|---|---|---|
 | ~2026-07 | Chainlink Labs | Data Risk Operations Analyst | APPLIED ✅ (ChatGPT lane) — interview prep in archive folder | `jobs/packets/archive/chainlink-data-risk-ops/packet.md` |
+| ~2026-07 | Kalshi | Finance Operations | APPLIED ✅ (ChatGPT lane, confirmed by Josh 2026-07-05) | resume: Josh's Desktop `kalshi.pdf` |
+| ~2026-07 | Centrifuge | RWA/Investment Operations (role: Josh to confirm exact title) | APPLIED ✅ (ChatGPT lane, confirmed 2026-07-05) | resume: Josh's Desktop `Centrifuge.pdf` |
+| ~2026-07 | Chainlink Labs | Strategy/Solutions (general — role: Josh to confirm) | APPLIED ✅ (ChatGPT lane, confirmed 2026-07-05) | resume: Josh's Desktop `CLL.pdf` |
 
 ## Daily quick-scan boards (Tier 1 — see SEARCH_PLAYBOOK.md)
 

@@ -16,8 +16,8 @@ recovered manually, never assumed.
 
 ## Next 3 tasks
 
-1. `CI-1` (doing): **SHIPPED ≥1 — Chainlink application was already submitted via
-   the ChatGPT lane** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
+1. `CI-1` (doing): **SHIPPED = 4 — Chainlink Data Risk, Kalshi Finance Ops,
+   Centrifuge, and Chainlink Labs strategy were ALL applied via the ChatGPT lane** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
    date). Coinbase Billing Ops packet is send-ready at
    `jobs/packets/active/coinbase-billing-ops/packet.md`; Josh verdict next. Check the tracker
    FIRST, always.
