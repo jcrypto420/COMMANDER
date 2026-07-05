@@ -4,7 +4,7 @@
 - **State:** ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine
 - **Last advanced:** 2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at `assets/badboys/rig/RIG_BRIEF.md`
 - **GATE 1 PASSED 2026-07-03 (evening):** Josh SHIPPED all four pilots via widget verdict. Production order: P4 "T+2" first, then P2 → P1 → P3.
-- **Next action:** Stage 2+ on P4 — Josh rigs the puppet + banker costume (Blender/Claude Desktop, brief staged); Claude storyboards T+2 + casts narrator
+- **Next action:** STAGE 2 COMPLETE — T+2 storyboard + animatic spec at `assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md` (timed to actual VO stems, loop-seamed, Blender action list included). Stage 4 waits ONLY on the reworked banker rig from the Blender chat
 - **Waiting on:** rig test stills for on-model check; BB-23 account creation (publishing cork)
 - **Stage 3 (T+2): VO COMPLETE** — Sarah stems at `assets/badboys/cartoon-lab/t2-ep1/vo/` (line1 + line2); SFX (coffee sip) at animatic timing
 - **Stage 4 asset: banker costume/body REJECTED by Josh 2026-07-05** — rework in progress in the Blender/Desktop chat; Stage 2 storyboard proceeds in parallel (uses canonical face, layout-only)
