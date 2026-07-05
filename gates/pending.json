@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-07-05T08:15:00-05:00",
+  "gates": [
+    {
+      "id": "gate-ci1-coinbase",
+      "lane": "CI-1 Career",
+      "title": "Ship the Coinbase application?",
+      "context": "Associate Manager, Billing Operations & Strategy (US Remote). Packet is send-ready at jobs/packets/coinbase-billing-ops.md — resume bullets, cover note, form answers. Verdict SHIP = you submit it today (~15 min).",
+      "options": ["SHIP", "KILL", "DEFER"],
+      "status": "pending",
+      "created_at": "2026-07-05T07:36:00-05:00"
+    },
+    {
+      "id": "gate-bb23-account",
+      "lane": "BB-23 Bad Boys",
+      "title": "Create the TikTok account this weekend?",
+      "context": "Handle bebad4good, bio + avatar approved in the runbook (~30 min, credentials/2FA stay yours). This is the publishing cork for the whole cartoon lab.",
+      "options": ["THIS WEEKEND", "NEXT WEEK", "KILL"],
+      "status": "pending",
+      "created_at": "2026-07-03T20:00:00-05:00"
+    },
+    {
+      "id": "gate-bb25-final-cut",
+      "lane": "BB-25 Cartoon Lab",
+      "title": "Gate 2: T+2 final cut",
+      "context": "Not ready yet — waiting on banker costume rework (Blender chat) and Stage 2 storyboard. This card activates when the cut exists.",
+      "options": ["SHIP", "KILL"],
+      "status": "upcoming",
+      "created_at": "2026-07-05T08:00:00-05:00"
+    }
+  ]
+}
