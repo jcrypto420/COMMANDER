@@ -53,5 +53,11 @@ export function linkifyRepoPaths(html) {
     if (!fs.existsSync(path.join(ROOT, rel))) return match;
     return `href="${hrefFor(rel)}"`;
   });
+  out = out.replace(/<a href="(https?:[^"]+)">/g, '<a href="$1" target="_blank" rel="noopener">');
+  out = out.replace(/<td>([^<]+)<\/td>/g, (match, text) => {
+    const linked = text.replace(/(^|\s)((?:[a-z0-9-]+\.)+(?:com|io|net|org|ai)\/[A-Za-z0-9./?=&%_#-]+)/g,
+      (m, pre, url) => `${pre}<a href="https://${url}" target="_blank" rel="noopener">${url}</a>`);
+    return `<td>${linked}</td>`;
+  });
   return out;
 }
