@@ -1,6 +1,6 @@
 # Cover Letter — Coinbase, Associate Manager, Billing Operations & Strategy
 
-**Josh Stokesberry** · Oklahoma City, OK · stokesberryjosh@gmail.com
+**Josh Stokesberry** · Oklahoma City, OK · stokesberryjosh@gmail.com · 405-343-4072
 July 2026
 
 Dear Coinbase Billing Operations & Strategy team,
