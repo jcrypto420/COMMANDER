@@ -310,3 +310,10 @@ One short entry per working day. What advanced + estimated spend.
 - Advanced CC-24 draft target by writing the exact 5-line morning brief template into `projects/command-center-dashboard-v0.md` and moving `TASK_QUEUE.md` to tomorrow's verify step.
 - Advanced BB-24 draft-only lane by reviving the archived first sticker-pack brief into `Good With Teeth Pack v0`; next step is a one-page comparison of PFP pack vs sticker sheet vs tee badge plus a ranked storefront path.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+## 2026-07-05
+
+- Recovered the repo from an overnight rebase collision: moved generated `.next/` and `dashboard/` state aside, completed `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, then confirmed a clean working tree.
+- Refreshed the CI-1 decision lane around the send-ready Coinbase Billing Ops packet and aligned `NOW.md`, `TASK_QUEUE.md`, and `MORNING_REPORT.md` to the current morning decision.
+- Appended today's model usage so the morning run stays visible in the repo.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
