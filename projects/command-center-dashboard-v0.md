@@ -3,7 +3,7 @@
 ## Status — 2026-07-04
 
 - Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
-- CC-24 draft target is now explicit in this file: the morning brief must stay to 5 lines, include `Open:` / `Decide:`, and end with one bolded decision.
+- CC-24 is now mirrored in the live morning report: `Status`, `Shipped this week`, `CI-1 update`, `Open:` / `Decide:`, and `**Decision:**`.
 - Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch hits the 5-line target cleanly.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 

@@ -315,6 +315,7 @@ One short entry per working day. What advanced + estimated spend.
 
 - Recovered the repo from an overnight rebase collision: moved generated `.next/` and `dashboard/` state aside, completed `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, then confirmed a clean working tree.
 - Refreshed the CI-1 decision lane around the send-ready Coinbase Billing Ops packet and aligned `NOW.md`, `TASK_QUEUE.md`, and `MORNING_REPORT.md` to the current morning decision.
+- Advanced CC-24 draft-only lane by tightening the queue and dashboard brief around the live 5-line morning report shape; the current morning report already matches the target, so tomorrow's run is verification only.
 - Appended today's model usage so the morning run stays visible in the repo.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
 - CASTING LOCKED: Sarah (ElevenLabs, corporate-reassuring) is the BAD BOY BANKERS / cartoon-lab narrator per Josh's widget verdict. T+2 Stage 3 VO stems rendered production-ready to assets/badboys/cartoon-lab/t2-ep1/vo/. Fixed a duplicated CI-1 queue row from the evening-lane merge.
