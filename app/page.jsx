@@ -172,6 +172,11 @@ export default function Dashboard() {
           <div className="mark">C</div>
           <div>
             <div className="eyebrow">Commander / Mission Control</div>
+            <nav className="quick-nav">
+              <a href="/gate-deck">Gate deck</a>
+              <a href="/docs">Library</a>
+              <a href="/market">Market</a>
+            </nav>
             <h1>Daily tasks. Money moves. Infra health. One cockpit.</h1>
             <p className="hero-copy">Private, read-only-first dashboard for Josh’s 69-day revenue sprint and sovereignty stack. Buttons draft commands; risky actions stay approval-gated.</p>
           </div>

@@ -266,3 +266,11 @@ code { color: var(--green-soft); word-break: break-word; }
 .doc-prose a { color: var(--blue); }
 .doc-prose blockquote { border-left: 3px solid var(--violet); margin: 1em 0; padding: 2px 14px; color: var(--muted); }
 .doc-prose li { margin: 3px 0; }
+
+.quick-nav { display: flex; gap: 8px; margin: 8px 0 10px; flex-wrap: wrap; }
+.quick-nav a {
+  color: var(--text); text-decoration: none; font-size: 13px; font-weight: 600;
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: rgba(255,255,255,0.05);
+}
+.quick-nav a:active { background: rgba(255,255,255,0.12); }
