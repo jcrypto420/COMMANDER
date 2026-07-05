@@ -9,7 +9,9 @@ const ALLOWED_PREFIXES = [
   'docs/',
   'dashboard/',
   'exports/',
-  'prototypes/'
+  'prototypes/',
+  'jobs/',
+  'gates/'
 ];
 const ALLOWED_ROOT_FILES = new Set([
   'MORNING_REPORT.md',
@@ -52,7 +54,11 @@ function contentType(filePath) {
     '.gif': 'image/gif',
     '.webp': 'image/webp',
     '.css': 'text/css; charset=utf-8',
-    '.js': 'text/javascript; charset=utf-8'
+    '.js': 'text/javascript; charset=utf-8',
+    '.pdf': 'application/pdf',
+    '.mp3': 'audio/mpeg',
+    '.mp4': 'video/mp4',
+    '.wav': 'audio/wav'
   }[ext] || 'application/octet-stream';
 }
 

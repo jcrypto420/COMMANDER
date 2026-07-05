@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { marked } from 'marked';
-import { resolveDoc } from '../library';
+import { resolveDoc, linkifyRepoPaths } from '../library';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,7 +12,7 @@ export default async function DocView({ params }) {
   if (doc) {
     try {
       const raw = fs.readFileSync(doc.absPath, 'utf8');
-      html = marked.parse(raw, { gfm: true, breaks: false });
+      html = linkifyRepoPaths(marked.parse(raw, { gfm: true, breaks: false }));
     } catch {
       missing = true;
     }

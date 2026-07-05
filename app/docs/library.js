@@ -20,3 +20,38 @@ export function resolveDoc(slug) {
   if (!doc) return null;
   return { ...doc, absPath: path.join(ROOT, doc.file) };
 }
+
+import fs from 'fs';
+
+const BLOCKED = [/(^|\/)\./, /secret/i, /credential/i, /token/i, /wallet/i, /seed/i, /node_modules\//];
+
+export function safeMdPath(rel) {
+  const clean = String(rel || '').trim();
+  if (!clean || clean.includes('..') || path.isAbsolute(clean)) return null;
+  if (!clean.endsWith('.md')) return null;
+  if (BLOCKED.some((pattern) => pattern.test(clean))) return null;
+  const abs = path.resolve(ROOT, clean);
+  if (!abs.startsWith(ROOT + path.sep)) return null;
+  if (!fs.existsSync(abs)) return null;
+  return { rel: clean, abs };
+}
+
+function hrefFor(rel) {
+  const inLibrary = LIBRARY.find((entry) => entry.file === rel);
+  if (inLibrary) return `/docs/${inLibrary.slug}`;
+  if (rel.endsWith('.md')) return `/docs/view?f=${encodeURIComponent(rel)}`;
+  return '/files/' + rel.split('/').map(encodeURIComponent).join('/');
+}
+
+export function linkifyRepoPaths(html) {
+  const pathPattern = /<code>([A-Za-z0-9][\w./ -]*\.(?:md|pdf|png|jpe?g|gif|svg|mp3|mp4|html|json|csv))<\/code>/g;
+  let out = html.replace(pathPattern, (match, rel) => {
+    if (!fs.existsSync(path.join(ROOT, rel)) || BLOCKED.some((pattern) => pattern.test(rel))) return match;
+    return `<a href="${hrefFor(rel)}"><code>${rel}</code></a>`;
+  });
+  out = out.replace(/href="((?!https?:|\/|#)[\w./ -]+\.md)"/g, (match, rel) => {
+    if (!fs.existsSync(path.join(ROOT, rel))) return match;
+    return `href="${hrefFor(rel)}"`;
+  });
+  return out;
+}
