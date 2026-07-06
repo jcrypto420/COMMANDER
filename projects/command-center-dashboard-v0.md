@@ -7,6 +7,13 @@
 - Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and one bolded decision.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
+### CC-24 draft-only verification checklist
+
+- Open `MORNING_REPORT.md` at the 07:30 run and count lines 1–5 only.
+- Confirm line 4 still contains both `Open:` and `Decide:` with no extra bullets.
+- Confirm line 5 contains exactly one bolded `Decision:` and no second bold block.
+- If drift appears, patch the template locally first; do not widen the report.
+
 ## Why this matters
 
 Josh now has the core operator loop working: Commander on the Pi, Telegram access, morning cron, GitHub-visible repo state, and an older Sovereignty Stack already on the same machine.
