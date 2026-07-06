@@ -24,8 +24,9 @@ recovered manually, never assumed.
    FIRST, always.
 2. `CC-24`: morning dispatch = 5 phone-screen lines, ONE bolded decision
    (being folded into the recreated 07:30 morning loop).
-3. Push lanes (midday/evening): `BB-24` first sellable artifact, `PS-1` fall
-   offer draft, `DF-1` DeFi product ideation memo.
+3. Push lanes (midday/evening): `BR-0` Boring Report PRD Milestone P0 (new product
+   greenlit 2026-07-05 — see `projects/boring-report-prd.md`), `BB-24` sellable
+   artifact, `PS-1` fall offer draft.
 
 ## Current blockers
 

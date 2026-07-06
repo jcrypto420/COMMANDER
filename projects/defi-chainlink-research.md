@@ -1,7 +1,7 @@
 # Project: DeFi / Chainlink / Research Dashboards (Priority 5)
 
 ## Status — 2026-07-02
-- **State:** ACTIVE draft lane (`DF-1`) — Josh redirected this from research-for-sale to PRODUCT ideation (killed the services pilot)
+- **State:** GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: `projects/boring-report-prd.md`; lane continues as career proof-point feeder
 - **Last advanced:** 2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)
 - **Next action:** DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect
 - **Waiting on:** nothing; concepts only, no financial actions
