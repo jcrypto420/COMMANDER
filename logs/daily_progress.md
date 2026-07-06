@@ -317,6 +317,12 @@ One short entry per working day. What advanced + estimated spend.
 - Refreshed the CI-1 decision lane around the send-ready Coinbase Billing Ops packet and aligned `NOW.md`, `TASK_QUEUE.md`, and `MORNING_REPORT.md` to the current morning decision.
 - Advanced CC-24 draft-only lane by tightening the queue and dashboard brief around the live 5-line morning report shape; the current morning report already matches the target, so tomorrow's run is verification only.
 - Appended today's model usage so the morning run stays visible in the repo.
+
+## 2026-07-06
+
+- Completed overnight git sync recovery after a rebase conflict from generated dashboard state: moved `.next/` and `dashboard/` aside, finished `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, then confirmed a clean working tree.
+- Refreshed the CI-1 draft-ahead Coinbase packet into `jobs/packets/active/coinbase-billing-ops/` with packet, cover letter, and resume docx; updated the tracker, gate context, career project, and morning report to point at the active packet path.
+- Re-logged the morning dispatch in CC-24 form and kept the repo ready for Josh's approve/kill/tweak decision.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
 - CASTING LOCKED: Sarah (ElevenLabs, corporate-reassuring) is the BAD BOY BANKERS / cartoon-lab narrator per Josh's widget verdict. T+2 Stage 3 VO stems rendered production-ready to assets/badboys/cartoon-lab/t2-ep1/vo/. Fixed a duplicated CI-1 queue row from the evening-lane merge.
 - Claude (Mac): CC-22 SHIPPED — Gate Deck live at /gate-deck (tap-to-verdict cards; verdicts append to capture-only inbox as lane=gate-verdict for loop pickup) + PWA manifest completing the phone-app install; built+deployed on Pi, service restarted, all endpoints 200. Seeded gates: Coinbase ship?, BB-23 account timing, Gate-2 placeholder. Banker costume rejected by Josh — rework in Blender chat; storyboard proceeds.

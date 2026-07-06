@@ -1,9 +1,9 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-07-04
+## Status — 2026-07-06
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-07-04 — Coinbase Billing Ops packet drafted (`jobs/packets/coinbase-billing-ops.md`) after confirming Chainlink was already applied
-- **Next action:** Josh picks the next 1–2 roles to finalize/send; Chainlink stays interview prep and Coinbase is the current send-ready draft
+- **Last advanced:** 2026-07-06 — Coinbase Billing Ops packet refreshed into `jobs/packets/active/coinbase-billing-ops/` with packet, cover letter, and resume docx
+- **Next action:** Josh reads the refreshed Coinbase packet and either approves ship / kill / wording tweaks
 - **Waiting on:** Josh’s verdict on the Coinbase packet and any salary/work-auth wording tweaks
 
 **Goal:** Protect and increase Josh's income, reduce stress, and turn his background into good-fit opportunities. Commander's operating principle is skeptical, evidence-based, and execution-oriented. It will not flatter, invent, or force Josh into misaligned roles.

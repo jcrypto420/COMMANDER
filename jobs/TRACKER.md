@@ -15,7 +15,7 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 
 | Date | Company | Role | Score | Status | Owner | Materials | Official link |
 |---|---|---|---|---|---|---|---|
-| — | Coinbase | Assoc. Manager, Billing Operations & Strategy | 7 | **DRAFT READY** | Josh + Commander | `jobs/packets/coinbase-billing-ops.md` | [Coinbase careers](https://www.coinbase.com/careers/positions/8017672?gh_jid=8017672) |
+| — | Coinbase | Assoc. Manager, Billing Operations & Strategy | 7 | **DRAFT READY** | Josh + Commander | `jobs/packets/active/coinbase-billing-ops/` (`packet.md`, `cover-letter.md`, `resume.docx`) | [Coinbase careers](https://www.coinbase.com/careers/positions/8017672?gh_jid=8017672) |
 | — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | 6 | hold — CHECK: may already be covered by the CLL application above | — | — | [Ashby posting](https://jobs.ashbyhq.com/chainlink-labs/66f765aa-45d4-46c3-aff4-59f0bad35326) |
 | — | Ripple | Treasury Manager, Global Treasury Ops (NY) | 5 | hold — location friction | — | — | [Ripple careers](https://ripple.com/careers/all-jobs/job/7767531?gh_jid=7767531) |
 | — | BitGo | Financial Operations Manager (Palo Alto) | 4 | skip — location; keyword source only | — | — | [Greenhouse posting](https://job-boards.greenhouse.io/bitgo/jobs/8436572002) |

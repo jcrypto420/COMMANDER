@@ -5,7 +5,7 @@
       "id": "gate-ci1-coinbase",
       "lane": "CI-1 Career",
       "title": "Ship the Coinbase application?",
-      "context": "Associate Manager, Billing Operations & Strategy (US Remote). Packet is send-ready at jobs/packets/coinbase-billing-ops.md — resume bullets, cover note, form answers. Verdict SHIP = you submit it today (~15 min).",
+      "context": "Associate Manager, Billing Operations & Strategy (US Remote). Packet is send-ready at jobs/packets/active/coinbase-billing-ops/ — packet.md, cover-letter.md, resume.docx, resume bullets, cover note, form answers. Verdict SHIP = you submit it today (~15 min).",
       "options": ["SHIP", "KILL", "DEFER"],
       "status": "pending",
       "created_at": "2026-07-05T07:36:00-05:00"
