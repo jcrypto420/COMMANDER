@@ -141,35 +141,39 @@ cream_mat = bpy.data.materials["Cream"]
 slate_mat = get_or_make_material("Slate", SLATE)
 green_mat = get_or_make_material("TerminalGreen", TERMINAL_GREEN, emission=True)
 
-# Rest-pose fist location for ArmR_A (bone-local rigid attach point approx).
-# ArmR bone tail (rest) sits near z=-0.595; fist sits a bit further out along
-# the hanging arm. Cup drawn small, right at the fist, slightly toward camera.
+# Rest-pose fist location: mesh vertex data in this rig is authored directly
+# in world-scale coordinates (object matrix_basis stays identity); bone
+# parenting only kicks in once the bone is POSED away from rest. FistR's rest
+# bbox center is ~(0.826, -1.833) with ~0.155 "radius" -- put the cup just
+# above/beside that so it reads as held, without covering the fist entirely.
+CUP_CX, CUP_CZ = 0.88, -1.68
 cup_outline = polygon_mesh(
     "Prop_Cup_Outline_A",
-    rect_points(0.09, -0.70, 0.34, 0.30),
+    rect_points(CUP_CX, CUP_CZ, 0.34, 0.30),
     y=0.045, material=ink_mat, collection=ep_coll,
 )
 cup_fill = polygon_mesh(
     "Prop_Cup_Fill_A",
-    rect_points(0.09, -0.70, 0.26, 0.22),
+    rect_points(CUP_CX, CUP_CZ, 0.26, 0.22),
     y=0.035, material=cream_mat, collection=ep_coll,
 )
 # tiny handle loop (simple flat tab, monoline-simple rather than a true ring)
 handle = polygon_mesh(
     "Prop_Cup_Handle_A",
-    rect_points(0.09 + 0.22, -0.70, 0.10, 0.14),
+    rect_points(CUP_CX + 0.22, CUP_CZ, 0.10, 0.14),
     y=0.045, material=ink_mat, collection=ep_coll,
 )
 
+# Match the EXACT matrix_parent_inverse the rig already uses for ArmR-parented
+# objects (copied off the FistR_A duplicate) rather than re-deriving it --
+# Blender's bone parent-inverse is anchored at the bone TAIL, not the head, so
+# a hand-rolled bone.matrix_local.inverted() is off by one bone-length.
+armR_parent_inverse = objs_a["FistR"].matrix_parent_inverse.copy()
 for obj in (cup_outline, cup_fill, handle):
     obj.parent = arm_a
     obj.parent_type = "BONE"
     obj.parent_bone = "ArmR"
-    # rest offset already baked into vertex coords (bone-local space == the
-    # armature's rest space here since ArmR has no custom parent_inverse
-    # quirks); zero out matrix_parent_inverse so bone rest transform applies
-    # directly.
-    obj.matrix_parent_inverse = arm_a.pose.bones["ArmR"].bone.matrix_local.inverted()
+    obj.matrix_parent_inverse = armR_parent_inverse
 
 # ---------------------------------------------------------------------------
 # Wall monitor prop
@@ -221,7 +225,7 @@ cursor = polygon_mesh(
 # Camera + world (reuse existing Puppet_World cream background)
 # ---------------------------------------------------------------------------
 cam = bpy.data.objects["Puppet_Camera"]
-cam.location = (0.0, -10.0, -0.32)
+cam.location = (0.0, -10.0, 0.5)
 cam.rotation_euler = (math.radians(90), 0, 0)
 cam.data.ortho_scale = CAM_ORTHO_SCALE
 ep_coll.objects.link(cam)
