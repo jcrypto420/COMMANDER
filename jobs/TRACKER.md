@@ -6,7 +6,9 @@ same-day. Duplicate work on an already-applied role = failed run.
 Official-link column: always a full https:// markdown link — it renders tappable in the Library.
 
 LIFECYCLE (Josh rule 2026-07-05): every application lives in its own folder under
-`jobs/packets/active/<company-role>/` (packet.md + resume.docx + cover-letter.md).
+`jobs/packets/active/<company-role>/`. **BOTH tables must be updated together on
+apply/kill — Applications row removed, Archive row added, same commit. A stale
+Applications row caused a wasted duplicate-draft cycle on 2026-07-06.** (packet.md + resume.docx + cover-letter.md).
 The moment a role is APPLIED or KILLED, the folder moves to `jobs/packets/archive/`
 and its row moves to the Archive table below — active views stay clean.
 Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job updates.
@@ -15,8 +17,7 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 
 | Date | Company | Role | Score | Status | Owner | Materials | Official link |
 |---|---|---|---|---|---|---|---|
-| — | Coinbase | Assoc. Manager, Billing Operations & Strategy | 7 | **DRAFT READY** | Josh + Commander | `jobs/packets/active/coinbase-billing-ops/` (`packet.md`, `cover-letter.md`, `resume.docx`) | [Coinbase careers](https://www.coinbase.com/careers/positions/8017672?gh_jid=8017672) |
-| — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | 6 | hold — CHECK: may already be covered by the CLL application above | — | — | [Ashby posting](https://jobs.ashbyhq.com/chainlink-labs/66f765aa-45d4-46c3-aff4-59f0bad35326) |
+| — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | 6 | **NEXT UP — draft packet** (CLL.pdf covered general strategy, not this specific req; treat as distinct) | unassigned | — | [Ashby posting](https://jobs.ashbyhq.com/chainlink-labs/66f765aa-45d4-46c3-aff4-59f0bad35326) |
 | — | Ripple | Treasury Manager, Global Treasury Ops (NY) | 5 | hold — location friction | — | — | [Ripple careers](https://ripple.com/careers/all-jobs/job/7767531?gh_jid=7767531) |
 | — | BitGo | Financial Operations Manager (Palo Alto) | 4 | skip — location; keyword source only | — | — | [Greenhouse posting](https://job-boards.greenhouse.io/bitgo/jobs/8436572002) |
 

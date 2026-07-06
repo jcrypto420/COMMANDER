@@ -5,8 +5,12 @@
       "id": "gate-ci1-coinbase",
       "lane": "CI-1 Career",
       "title": "Ship the Coinbase application?",
-      "context": "Associate Manager, Billing Operations & Strategy (US Remote). Packet is send-ready at jobs/packets/active/coinbase-billing-ops/ — packet.md, cover-letter.md, resume.docx, resume bullets, cover note, form answers. Verdict SHIP = you submit it today (~15 min).",
-      "options": ["SHIP", "KILL", "DEFER"],
+      "context": "Associate Manager, Billing Operations & Strategy (US Remote). Packet is send-ready at jobs/packets/active/coinbase-billing-ops/ \u2014 packet.md, cover-letter.md, resume.docx, resume bullets, cover note, form answers. Verdict SHIP = you submit it today (~15 min).",
+      "options": [
+        "SHIP",
+        "KILL",
+        "DEFER"
+      ],
       "status": "pending",
       "created_at": "2026-07-05T07:36:00-05:00"
     },
@@ -15,7 +19,11 @@
       "lane": "BB-23 Bad Boys",
       "title": "Create the TikTok account this weekend?",
       "context": "Handle bebad4good, bio + avatar approved in the runbook (~30 min, credentials/2FA stay yours). This is the publishing cork for the whole cartoon lab.",
-      "options": ["THIS WEEKEND", "NEXT WEEK", "KILL"],
+      "options": [
+        "THIS WEEKEND",
+        "NEXT WEEK",
+        "KILL"
+      ],
       "status": "pending",
       "created_at": "2026-07-03T20:00:00-05:00"
     },
@@ -23,10 +31,26 @@
       "id": "gate-bb25-final-cut",
       "lane": "BB-25 Cartoon Lab",
       "title": "Gate 2: T+2 final cut",
-      "context": "Not ready yet — waiting on banker costume rework (Blender chat) and Stage 2 storyboard. This card activates when the cut exists.",
-      "options": ["SHIP", "KILL"],
+      "context": "Not ready yet \u2014 waiting on banker costume rework (Blender chat) and Stage 2 storyboard. This card activates when the cut exists.",
+      "options": [
+        "SHIP",
+        "KILL"
+      ],
       "status": "upcoming",
       "created_at": "2026-07-05T08:00:00-05:00"
+    },
+    {
+      "id": "gate-br1-w28-v0",
+      "lane": "BR-1 Boring Report",
+      "title": "First issue: The Boring Report W28",
+      "context": "Stablecoin boring-scores, all numbers traced to committed snapshots (verify.py passes independently). Asset-class fix applied: NAV-accruing funds (BUIDL/USYC/USDY) separated from the peg table. Ship/kill/one-liner starts the flawless-streak clock.",
+      "options": [
+        "SHIP",
+        "KILL",
+        "REVISE"
+      ],
+      "status": "pending",
+      "created_at": "2026-07-06T13:10:00-05:00"
     }
   ]
 }

@@ -78,6 +78,11 @@ verify BEFORE building. Fallback: Claude/Mac fetches, commits snapshots.)
   attestation / self-reported / none ("vibes").
 - Every score ships with a one-line "what would make this less boring" —
   the falsifiable statement that keeps us honest.
+- **Asset-class filter (added after W28 v0 critic review):** tokenized
+  cash-equivalent / NAV-accruing funds (BUIDL, USYC, USDY — classified by
+  known fund identity, not a price threshold, since accrual mechanics vary)
+  are NOT scored on peg deviation. They render in a separate table with their
+  own price only, pending a v1.1 NAV-tracking benchmark.
 - Methodology page is public from day one (ratings credibility 101).
 
 ## 6. Milestones (Hermes-executable; ARTIFACT RULE applies to each)
