@@ -1,10 +1,10 @@
 # NOW.md
 
-**Active focus:** `CI-1 Daily job/application process` is the decision lane;
-push lanes per Josh's 2026-07-02 calibration: Bad Boys (reopened), Primoscapes
+**Active focus:** `CI-1 Daily job/application process` continues, but Coinbase is done; the decision lane now shifts to the next best-fit role in `jobs/TRACKER.md`.
+Push lanes per Josh's 2026-07-02 calibration: Bad Boys (reopened), Primoscapes
 fall prep (`PS-1`), DeFi product ideation (`DF-1`). Research-services offers
 are KILLED (taste). Josh commits to same-day 60-second verdicts on send-ready
-drafts — **verdict window: 8–9am daily** (dispatch lands 07:30, decision by 9). Reports shrink to 5 lines (`CC-24`).
+drafts — **verdict window: 8–9am daily** (dispatch lands 07:30, decision by 9). Reports stay at 5 lines (`CC-24`).
 
 **Status:** Hermes v0.18.0 on `commandcenter`, `commander` profile, provider =
 OpenAI Codex via ChatGPT OAuth (default `gpt-5.4-mini`, premium `gpt-5.5` by
@@ -16,17 +16,10 @@ recovered manually, never assumed.
 
 ## Next 3 tasks
 
-1. `CI-1` (doing): **SHIPPED = 5 — Coinbase submitted 2026-07-05, the first
-   full-pipeline application (gate verdict → materials built → sent same day).
-   Plus Chainlink Data Risk, Kalshi, Centrifuge, Chainlink strategy (ChatGPT lane)** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
-   date). Coinbase Billing Ops packet is send-ready at
-   `jobs/packets/active/coinbase-billing-ops/packet.md`; Josh verdict next. Check the tracker
-   FIRST, always.
-2. `CC-24`: morning dispatch = 5 phone-screen lines, ONE bolded decision
-   (being folded into the recreated 07:30 morning loop).
-3. Push lanes (midday/evening): `BR-0` Boring Report PRD Milestone P0 (new product
-   greenlit 2026-07-05 — see `projects/boring-report-prd.md`), `BB-24` sellable
-   artifact, `PS-1` fall offer draft.
+1. `CI-1` (doing): **Coinbase is already applied and archived.** Check `jobs/TRACKER.md` first, then pick the next best-fit role and build the packet same-day.
+2. `CC-24`: morning dispatch = 5 phone-screen lines, ONE bolded decision (keep the morning brief locked in `MORNING_REPORT.md`).
+3. Push lanes (midday/evening): `BR-0` Boring Report PRD Milestone P0 (new product greenlit 2026-07-05 — see `projects/boring-report-prd.md`), `BB-24` sellable artifact, `PS-1` fall offer draft.
+
 
 ## Current blockers
 

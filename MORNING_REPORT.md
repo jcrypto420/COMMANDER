@@ -1,5 +1,5 @@
-Status: Operational after rebase recovery; CI-1 packet is send-ready, draft-only until Josh approves.
+Status: Operational after rebase recovery; CI-1 has moved past Coinbase and is now on the next live decision.
 Shipped this week: 1
-CI-1 update: Coinbase Billing Ops packet is refreshed in `jobs/packets/active/coinbase-billing-ops/`; `jobs/TRACKER.md` already marks it DRAFT READY.
+CI-1 update: Coinbase Billing Ops is already APPLIED in `jobs/TRACKER.md`; next up is the best-fit lead from the tracker, not more Coinbase churn.
 CC-24: 5-line dispatch is locked; repo is clean and sync is current.
-Decision: **APPROVE COINBASE PACKET OR KILL IT WITH ONE LINE.**
+Decision: **PICK THE NEXT 1–2 ROLES IN `jobs/TRACKER.md`.**
