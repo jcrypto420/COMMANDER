@@ -24,6 +24,7 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 
 | Date | Company | Role | Outcome | Materials |
 |---|---|---|---|---|
+| 2026-07-05 | Coinbase | Assoc. Manager, Billing Operations & Strategy | APPLIED ✅ — first full-pipeline case: gate verdict → resume+letter built → submitted same day | `jobs/packets/archive/coinbase-billing-ops/` (packet, Coinbase-OPs.pdf, docx, cover letter) |
 | ~2026-07 | Chainlink Labs | Data Risk Operations Analyst | APPLIED ✅ (ChatGPT lane) — interview prep in archive folder | `jobs/packets/archive/chainlink-data-risk-ops/packet.md` |
 | ~2026-07 | Kalshi | Finance Operations | APPLIED ✅ (ChatGPT lane, confirmed by Josh 2026-07-05) | resume: Josh's Desktop `kalshi.pdf` |
 | ~2026-07 | Centrifuge | RWA/Investment Operations (role: Josh to confirm exact title) | APPLIED ✅ (ChatGPT lane, confirmed 2026-07-05) | resume: Josh's Desktop `Centrifuge.pdf` |

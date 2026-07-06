@@ -16,8 +16,9 @@ recovered manually, never assumed.
 
 ## Next 3 tasks
 
-1. `CI-1` (doing): **SHIPPED = 4 — Chainlink Data Risk, Kalshi Finance Ops,
-   Centrifuge, and Chainlink Labs strategy were ALL applied via the ChatGPT lane** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
+1. `CI-1` (doing): **SHIPPED = 5 — Coinbase submitted 2026-07-05, the first
+   full-pipeline application (gate verdict → materials built → sent same day).
+   Plus Chainlink Data Risk, Kalshi, Centrifuge, Chainlink strategy (ChatGPT lane)** (recorded in `jobs/TRACKER.md` 2026-07-03; Josh to confirm
    date). Coinbase Billing Ops packet is send-ready at
    `jobs/packets/active/coinbase-billing-ops/packet.md`; Josh verdict next. Check the tracker
    FIRST, always.
@@ -42,7 +43,7 @@ building per week** — drafts, docs, and commits don't count. The weekly
 money review leads with the Shipped count. If meta-work beats real-work
 two weeks running, the system is failing and Commander must say so.
 
-**This week's definition of success: one job application actually submitted.**
+**This week's definition of success: one submitted application — SMASHED: 5.**
 
 ## Standing long-term principle
 
