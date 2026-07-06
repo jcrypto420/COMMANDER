@@ -133,6 +133,19 @@ orig_arm = bpy.data.objects.get("Puppet_Rig")
 if orig_arm:
     bpy.data.objects.remove(orig_arm, do_unlink=True)
 
+# Banker A's ArmR/FistR sit at rig depth y=0.095/0.07 -- behind Head_Fill
+# (y=0.02), which is invisible-behind-the-face when the cup-raise gesture
+# swings the arm up over the head silhouette. Give just these two objects
+# their own mesh data (single-user) and pull them in front of the head for
+# the whole shot; harmless at rest since the hanging arm never overlaps the
+# head there anyway.
+for name in ("ArmR", "FistR"):
+    obj = objs_a[name]
+    obj.data = obj.data.copy()
+    for v in obj.data.vertices:
+        v.co.y = 0.012
+    obj.data.update()
+
 # ---------------------------------------------------------------------------
 # Coffee cup prop (Banker A only) — parented rigidly to her ArmR bone
 # ---------------------------------------------------------------------------
@@ -150,18 +163,18 @@ CUP_CX, CUP_CZ = 0.88, -1.68
 cup_outline = polygon_mesh(
     "Prop_Cup_Outline_A",
     rect_points(CUP_CX, CUP_CZ, 0.34, 0.30),
-    y=0.045, material=ink_mat, collection=ep_coll,
+    y=0.006, material=ink_mat, collection=ep_coll,
 )
 cup_fill = polygon_mesh(
     "Prop_Cup_Fill_A",
     rect_points(CUP_CX, CUP_CZ, 0.26, 0.22),
-    y=0.035, material=cream_mat, collection=ep_coll,
+    y=0.0, material=cream_mat, collection=ep_coll,
 )
 # tiny handle loop (simple flat tab, monoline-simple rather than a true ring)
 handle = polygon_mesh(
     "Prop_Cup_Handle_A",
     rect_points(CUP_CX + 0.22, CUP_CZ, 0.10, 0.14),
-    y=0.045, material=ink_mat, collection=ep_coll,
+    y=0.006, material=ink_mat, collection=ep_coll,
 )
 
 # Match the EXACT matrix_parent_inverse the rig already uses for ArmR-parented

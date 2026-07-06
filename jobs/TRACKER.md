@@ -17,7 +17,7 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 
 | Date | Company | Role | Score | Status | Owner | Materials | Official link |
 |---|---|---|---|---|---|---|---|
-| — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | 6 | **NEXT UP — draft packet** (CLL.pdf covered general strategy, not this specific req; treat as distinct) | unassigned | — | [Ashby posting](https://jobs.ashbyhq.com/chainlink-labs/66f765aa-45d4-46c3-aff4-59f0bad35326) |
+| — | Chainlink Labs | Sr. Solutions Engineer, Banking & Capital Markets (NY) | — | **CLOSED** — posting no longer live, verified 2026-07-06 (Ashby GraphQL returns null; not on the current board). Checked the apparent successor "Senior Solutions Architect, Banking and Capital Markets" — **REJECTED, poor fit**: role is hands-on pre-sales (PoC delivery, RFP/RFI/DDQ response, "evangelise with Sales and Marketing"), requires production coding (Solidity/Go/Rust/etc.) Josh doesn't have. Directly contradicts Josh's own taste profile ("why heavy-sales is a no-go" — career-income.md §7). Not applying. | — | [posting checked](https://jobs.ashbyhq.com/chainlink-labs/53348577-027a-4bad-bedd-2fb72d30a2d6) — verdict: skip |
 | — | Ripple | Treasury Manager, Global Treasury Ops (NY) | 5 | hold — location friction | — | — | [Ripple careers](https://ripple.com/careers/all-jobs/job/7767531?gh_jid=7767531) |
 | — | BitGo | Financial Operations Manager (Palo Alto) | 4 | skip — location; keyword source only | — | — | [Greenhouse posting](https://job-boards.greenhouse.io/bitgo/jobs/8436572002) |
 

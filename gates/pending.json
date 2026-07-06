@@ -11,8 +11,11 @@
         "KILL",
         "DEFER"
       ],
-      "status": "pending",
-      "created_at": "2026-07-05T07:36:00-05:00"
+      "status": "verdicted",
+      "created_at": "2026-07-05T07:36:00-05:00",
+      "verdict": "SHIP",
+      "verdicted_at": "2026-07-05T18:48:00-05:00",
+      "note": "Applied 2026-07-05 (Coinbase-OPs.pdf). Reconciled 2026-07-06 \u2014 this verdict was captured via in-chat widget, never written back to gates/pending.json until now."
     },
     {
       "id": "gate-bb23-account",
