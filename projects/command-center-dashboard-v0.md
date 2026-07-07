@@ -1,10 +1,10 @@
 # Project: Commander Dashboard / Command Center UI v0
 
-## Status — 2026-07-05
+## Status — 2026-07-07
 
 - Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
-- CC-24 is now mirrored in the live morning report with the exact 5-line shape: `Status`, `Shipped this week`, `CI-1 update`, `Open:` / `Decide:`, and `**Decision:**`.
-- Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and one bolded decision.
+- CC-24 is now mirrored in `MORNING_REPORT.md` with the exact 5-line shape: `Status`, `Shipped this week`, `CI-1 update`, `Open:` / `Decide:`, and `**Decision:**`.
+- Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and one bolded decision, then archive.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
 ### CC-24 draft-only verification checklist
