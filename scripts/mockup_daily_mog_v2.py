@@ -11,13 +11,12 @@ from daily_mog_layout import (
     WORD_OF_DAY_BANK, ARCANA_BANK,
 )
 
-SAMPLE_FEATURE_TITLE = "THE PULSE"
+SAMPLE_FEATURE_TITLE = "MARKET NOTES"
 SAMPLE_FEATURE_BODY = (
-    '<b>HN Top:</b> &#8220;StreetComplete: Fixing OpenStreetMap, one tiny '
-    'quest at a time&#8221; (106 pts, 25 comments)<br/>'
-    '<b>Biggest Mover:</b> Felix Vaults +58.5% TVL (24h) &#8212; $102.9M '
-    'total')
-SAMPLE_TVL_LINE = '<b>DeFi TVL:</b> $74.0B (&#8722;1.0%)'
+    'Hacker News is buzzing about &#8220;StreetComplete: Fixing '
+    'OpenStreetMap, one tiny quest at a time&#8221; (106 pts, 25 comments). '
+    "DeFi's biggest mover today is Felix Vaults, up 58.5% to $102.9M locked.")
+SAMPLE_TVL_LINE = 'DeFi TVL 10d: $74.0B (&#8722;1.0%)'
 SAMPLE_TVL_HISTORY = [70.29, 69.93, 70.40, 69.24, 70.27, 72.65, 74.16, 74.36,
                       74.73, 73.99]  # billions, real 10-day pull
 

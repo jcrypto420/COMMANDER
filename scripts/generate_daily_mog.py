@@ -240,10 +240,13 @@ def truncate_at_word(text, max_chars):
     return cut.rstrip() + "…"
 
 
-# --- THE PULSE: Hacker News top story + DeFiLlama biggest mover + total
+# --- MARKET NOTES: Hacker News top story + DeFiLlama biggest mover + total
 # DeFi TVL trend. Each fetched independently so one failing doesn't take
-# the other two down with it (same pattern as get_news()). ---
+# the other two down with it (same pattern as get_news()). Returns raw data
+# — build() turns it into prose, matching the rest of the page's editorial
+# voice instead of a "Label: value" spec-sheet (Josh's call, 2026-07-07). ---
 def get_hn_top_story():
+    """Returns (title, score, comments)."""
     ids = fetch_json("https://hacker-news.firebaseio.com/v0/topstories.json")
     if not ids:
         raise SourceFailure("HN topstories list was empty")
@@ -251,13 +254,11 @@ def get_hn_top_story():
     title = truncate_at_word((item.get("title") or "").strip(), MAX_HN_CHARS)
     if not title:
         raise SourceFailure("HN top item had no title")
-    score = item.get("score", 0)
-    comments = item.get("descendants", 0)
-    return (f'<b>HN Top:</b> &#8220;{title}&#8221; ({score} pts, '
-            f'{comments} comments)')
+    return title, item.get("score", 0), item.get("descendants", 0)
 
 
 def get_biggest_tvl_mover():
+    """Returns (name, change_1d_pct, tvl_dollars)."""
     protocols = fetch_json("https://api.llama.fi/protocols")
     rows = [p for p in protocols
             if p.get("change_1d") is not None and (p.get("tvl") or 0) > 100_000_000]
@@ -266,14 +267,11 @@ def get_biggest_tvl_mover():
     rows.sort(key=lambda p: abs(p["change_1d"]), reverse=True)
     top = rows[0]
     name = truncate_at_word(str(top.get("name", "?")), MAX_MOVER_NAME_CHARS)
-    change = top["change_1d"]
-    tvl = top.get("tvl") or 0
-    return (f'<b>Biggest Mover:</b> {name} {change:+.1f}% TVL (24h) '
-            f'&#8212; ${tvl / 1_000_000:,.1f}M total')
+    return name, top["change_1d"], top.get("tvl") or 0
 
 
 def get_tvl_history():
-    """Returns (tvl_line_html, [10 daily values in $B, oldest-first])."""
+    """Returns (caption_html, [10 daily values in $B, oldest-first])."""
     data = fetch_json("https://api.llama.fi/v2/historicalChainTvl")
     if len(data) < 2:
         raise SourceFailure("historicalChainTvl returned too few points")
@@ -281,9 +279,9 @@ def get_tvl_history():
     values_b = [row["tvl"] / 1_000_000_000 for row in last10]
     today_tvl, yday_tvl = last10[-1]["tvl"], last10[-2]["tvl"]
     change_pct = (today_tvl - yday_tvl) / yday_tvl * 100 if yday_tvl else 0.0
-    tvl_line = (f'<b>DeFi TVL:</b> ${today_tvl / 1_000_000_000:,.1f}B '
-                f'({change_pct:+.1f}%)')
-    return tvl_line, values_b
+    caption = (f'DeFi TVL 10d: ${today_tvl / 1_000_000_000:,.1f}B '
+               f'({change_pct:+.1f}%)')
+    return caption, values_b
 
 
 # --- Decide box: the real top pending Gate Deck item, not a hardcoded
@@ -513,25 +511,33 @@ def build():
     else:
         decide_title, decide_body = "Nothing pending", "Clear runway — no open gate right now."
 
-    # THE PULSE: HN + biggest TVL mover, each independent so one failing
+    # MARKET NOTES: HN + biggest TVL mover, written as prose (matching the
+    # rest of the page's editorial voice), each independent so one failing
     # doesn't blank the whole section — same pattern as get_news()
-    pulse_lines = []
+    sentences = []
     try:
-        pulse_lines.append(get_hn_top_story())
+        title, score, comments = get_hn_top_story()
+        sentences.append(
+            f'Hacker News is buzzing about &#8220;{title}&#8221; '
+            f'({score} pts, {comments} comments).')
     except SourceFailure as exc:
         warnings.append(f"Hacker News unavailable: {exc}")
     try:
-        pulse_lines.append(get_biggest_tvl_mover())
+        name, change, tvl = get_biggest_tvl_mover()
+        verb = "up" if change >= 0 else "down"
+        sentences.append(
+            f"DeFi's biggest mover today is {name}, {verb} "
+            f'{abs(change):.1f}% to ${tvl / 1_000_000:,.1f}M locked.')
     except SourceFailure as exc:
         warnings.append(f"DeFiLlama mover unavailable: {exc}")
-    feature_body = ("<br/>".join(pulse_lines) if pulse_lines else
-                     "The Pulse is unavailable this morning — sources didn't respond.")
+    feature_body = (" ".join(sentences) if sentences else
+                     "Market Notes is unavailable this morning — sources didn't respond.")
 
     try:
         tvl_line, tvl_history = get_tvl_history()
     except SourceFailure as exc:
         warnings.append(f"DeFi TVL history unavailable: {exc}")
-        tvl_line, tvl_history = "<b>DeFi TVL:</b> unavailable today", []
+        tvl_line, tvl_history = "DeFi TVL 10d: unavailable today", []
 
     otd_year, otd_rest = pick(ON_THIS_DAY_BANK, day_ord).split(":", 1)
 
@@ -558,7 +564,7 @@ def build():
         "news": news[:2],
         "decide_title": decide_title,
         "decide_body": decide_body,
-        "feature_title": "THE PULSE",
+        "feature_title": "MARKET NOTES",
         "feature_body": feature_body,
         "tvl_line": tvl_line,
         "tvl_history": tvl_history,

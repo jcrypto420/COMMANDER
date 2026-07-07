@@ -14,10 +14,11 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer,
-                                HRFlowable, Table, TableStyle)
+                                HRFlowable, Table, TableStyle, Image)
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_RIGHT, TA_CENTER
 from reportlab.graphics.shapes import Drawing, Circle, PolyLine, Path, Group
+from pathlib import Path as FilePath
 import math
 
 # --- content banks: small, curated, auditable — rotates daily via pick(),
@@ -148,6 +149,11 @@ _CONTENT_WIDTH = 6.9 * inch
 COL_MAJOR = _CONTENT_WIDTH * PHI / (1 + PHI)
 COL_MINOR = _CONTENT_WIDTH - COL_MAJOR
 
+# canonical Bad Boys face mark — the one and only source of truth per the
+# cartoon lab's Art Constitution (never AI-generated, never redrawn)
+LOGO_PATH = (FilePath(__file__).resolve().parents[1] / "assets" / "badboys" /
+             "INSIDEFACE NOBG.png")
+
 FEAR_GREED_COLOR = {
     "EXTREME FEAR": "#A3402F", "FEAR": "#A3402F",
     "NEUTRAL": "#6B6255",
@@ -159,8 +165,8 @@ FEAR_GREED_COLOR = {
 # feel. Sans (Helvetica) reserved for kickers, data strips, and fine print,
 # so the two roles stay visually distinct.
 S = {
-    "masthead": ParagraphStyle("mh", fontName="Times-Bold", fontSize=42,
-                                textColor=BRAND, leading=44, alignment=TA_CENTER),
+    "masthead": ParagraphStyle("mh", fontName="Times-Bold", fontSize=38,
+                                textColor=BRAND, leading=40, alignment=TA_CENTER),
     "epigraph": ParagraphStyle("ep", fontName="Times-Italic", fontSize=11.5,
                                textColor=INK, leading=14, alignment=TA_CENTER),
     "wod_term": ParagraphStyle("wt", fontName="Times-Bold", fontSize=12,
@@ -365,7 +371,23 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
 
     # --- masthead: centered nameplate, classic newspaper folio treatment ---
     e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=8))
-    e.append(Paragraph("THE DAILY MOG", S["masthead"]))
+    # the canonical Bad Boys face flanks the title — this is a Bad Boys paper,
+    # the mascot IS the brand mark, not an afterthought
+    face_h = 0.4 * inch
+    face_w = face_h * (420.0 / 594.0)  # source PNG's native aspect ratio
+    masthead_row = Table([[
+        Image(str(LOGO_PATH), width=face_w, height=face_h),
+        Paragraph("THE DAILY MOG", S["masthead"]),
+        Image(str(LOGO_PATH), width=face_w, height=face_h),
+    ]], colWidths=[0.75 * inch, 5.4 * inch, 0.75 * inch])
+    masthead_row.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (0, 0), "RIGHT"),
+        ("ALIGN", (2, 0), (2, 0), "LEFT"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+    ]))
+    e.append(masthead_row)
     e.append(Spacer(1, 3))
     # epigraph flanked by floral ornaments matching the SUB ROSA seal, so the
     # masthead and the footer rhyme — top and bottom of the page echo
@@ -373,7 +395,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     e.append(Paragraph(
         f'{orn}&nbsp;&nbsp;&#8220;{ctx["epigraph"]}&#8221;&nbsp;&nbsp;{orn}',
         S["epigraph"]))
-    e.append(Spacer(1, 8))
+    e.append(Spacer(1, 5))
 
     # timestamp sits right after the date — precise proof the page was
     # generated fresh this run, not reused from a prior boot (Josh's ask,
@@ -438,14 +460,14 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     left.append(Paragraph(
         f'<b>Primoscapes note:</b> {ctx["primoscapes_note"]}', S["muted_sm"]))
 
-    left += sec("WORTH KNOWING")
+    left += sec("FIELD NOTES")
     left.append(Paragraph(ctx["fact"], S["body"]))
 
-    left += sec("BABY TIP")
+    left += sec("NURSERY NOTES")
     left.append(Paragraph(ctx["baby_tip"], S["body"]))
 
     wod_term, wod_pos, wod_def = ctx["word_of_day"]
-    left += sec("WORD OF THE DAY")
+    left += sec("VOCABULARY EXPANSION")
     left.append(Paragraph(
         f'{wod_term}  <font face="Times-Italic" color="#6B6255" size="9">'
         f'&#183; {wod_pos}</font>', S["wod_term"]))
@@ -470,24 +492,29 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         Paragraph(ctx["decide_body"], S["decide_ctx"]),
     ], AMBER_BG, AMBER, width=COL_MINOR - 0.194 * inch, pad=6))
 
+    # MARKET NOTES: prose, like every other section on the page — the old
+    # "Label: value" spec-sheet format broke the editorial voice (Josh's
+    # call, 2026-07-07). The TVL sparkline rides as a small supporting
+    # caption underneath, not a bolded headline stat.
     right += sec(ctx["feature_title"])
     right.append(Paragraph(ctx["feature_body"], S["body"]))
     if ctx.get("tvl_history"):
+        right.append(Spacer(1, 3))
         spark_w = 0.5 * inch
         tvl_row = Table([[
             sparkline(ctx["tvl_history"], width=36, height=12),
-            Paragraph(ctx["tvl_line"], S["body"]),
+            Paragraph(ctx["tvl_line"], S["muted_sm"]),
         ]], colWidths=[spark_w, COL_MINOR - 0.194 * inch - spark_w])
         tvl_row.setStyle(TableStyle([
             ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("TOPPADDING", (0, 0), (0, 0), 4),  # nudges the sparkline down
+            ("TOPPADDING", (0, 0), (0, 0), 3),  # nudges the sparkline down
             ("TOPPADDING", (1, 0), (1, 0), 0),  # to sit on the text baseline
             ("LEFTPADDING", (0, 0), (-1, -1), 0),
             ("RIGHTPADDING", (0, 0), (0, 0), 4),  # small gap before the text
         ]))
         right.append(tvl_row)
     else:
-        right.append(Paragraph(ctx["tvl_line"], S["body"]))
+        right.append(Paragraph(ctx["tvl_line"], S["muted_sm"]))
 
     # golden-ratio column split (phi = 1.618) instead of the earlier
     # near-even 3.55/3.35 — a "felt, not seen" proportion refinement
@@ -499,7 +526,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         ("LEFTPADDING", (1, 0), (1, 0), 14),
     ]))
     e.append(cols)
-    e.append(Spacer(1, 8))
+    e.append(Spacer(1, 5))
 
     # --- SUB ROSA: full-width arcane inscription, the page's closing seal ---
     arc_quote, arc_src = ctx["arcana"]
