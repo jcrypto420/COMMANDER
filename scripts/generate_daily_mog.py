@@ -19,6 +19,7 @@ import json
 import math
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -335,23 +336,28 @@ def get_rss_headline(url):
     return title
 
 
-def get_news():
+def get_news(sources_used=None):
     # all crypto/tech, no local news — Josh's call 2026-07-07 after a grim
     # local headline (a death story) showed up on what's meant to be a
     # pleasant morning read. Three distinct outlets so it's not just one
     # source's slant three times over.
+    if sources_used is None:
+        sources_used = set()
     news = []
     try:
         news.append(("CRYPTO/TECH",
                       get_rss_headline("https://www.coindesk.com/arc/outboundfeeds/rss")))
+        sources_used.add("CoinDesk")
     except SourceFailure:
         pass
     try:
         news.append(("TECH", get_rss_headline("https://techcrunch.com/feed/")))
+        sources_used.add("TechCrunch")
     except SourceFailure:
         pass
     try:
         news.append(("CRYPTO", get_rss_headline("https://decrypt.co/feed")))
+        sources_used.add("Decrypt")
     except SourceFailure:
         pass
     return news
@@ -387,12 +393,17 @@ def primoscapes_note(precip_prob, temp):
 
 
 def build():
+    start_time = time.monotonic()
     out_path = sys.argv[1] if len(sys.argv) > 1 else OUT_PATH
     warnings = []
+    sources_used = set()  # distinct external services that answered this
+                            # run — feeds the honest colophon line, not a
+                            # fixed/guessed count
 
     # --- weather / sun / moon / UV / AQI ---
     try:
         wx = get_weather()
+        sources_used.add("Open-Meteo")
     except SourceFailure as exc:
         raise SystemExit(f"FATAL: weather source unavailable, refusing to "
                           f"fabricate — {exc}")
@@ -466,6 +477,8 @@ def build():
     except SourceFailure as exc:
         warnings.append(f"air quality unavailable: {exc}")
         aqi_line = f"UV index {wx['uv_max']:.0f} · Air quality: unavailable today"
+    else:
+        sources_used.add("Open-Meteo")
 
     desc = WMO_DESC.get(wx["code"], "Variable conditions")
     weather_headline = (
@@ -479,14 +492,17 @@ def build():
     ticker_items = []
     try:
         ticker_items += get_crypto_prices()
+        sources_used.add("CoinGecko")
     except SourceFailure as exc:
         warnings.append(f"CoinGecko unavailable: {exc}")
     try:
         ticker_items.append(get_commodity("SI=F", "SILVER"))
+        sources_used.add("Yahoo Finance")
     except SourceFailure as exc:
         warnings.append(f"Silver quote unavailable: {exc}")
     try:
         ticker_items.append(get_commodity("CL=F", "OIL (WTI)", decimals=2))
+        sources_used.add("Yahoo Finance")
     except SourceFailure as exc:
         warnings.append(f"Oil quote unavailable: {exc}")
     if len(ticker_items) < 7:
@@ -496,11 +512,12 @@ def build():
 
     try:
         fg_value, fg_label = get_fear_greed()
+        sources_used.add("alternative.me")
     except SourceFailure as exc:
         warnings.append(f"Fear & Greed unavailable: {exc}")
         fg_value, fg_label = 0, "Neutral"
 
-    news = get_news()
+    news = get_news(sources_used)
     if not news:
         warnings.append("all news RSS sources failed")
         news = [("NOTICE", "News sources unavailable this morning.")]
@@ -520,6 +537,7 @@ def build():
         sentences.append(
             f'Hacker News is buzzing about &#8220;{title}&#8221; '
             f'({score} pts, {comments} comments).')
+        sources_used.add("Hacker News")
     except SourceFailure as exc:
         warnings.append(f"Hacker News unavailable: {exc}")
     try:
@@ -528,6 +546,7 @@ def build():
         sentences.append(
             f"DeFi's biggest mover today is {name}, {verb} "
             f'{abs(change):.1f}% to ${tvl / 1_000_000:,.1f}M locked.')
+        sources_used.add("DeFiLlama")
     except SourceFailure as exc:
         warnings.append(f"DeFiLlama mover unavailable: {exc}")
     feature_body = (" ".join(sentences) if sentences else
@@ -535,6 +554,7 @@ def build():
 
     try:
         tvl_line, tvl_history = get_tvl_history()
+        sources_used.add("DeFiLlama")
     except SourceFailure as exc:
         warnings.append(f"DeFi TVL history unavailable: {exc}")
         tvl_line, tvl_history = "DeFi TVL 10d: unavailable today", []
@@ -569,11 +589,14 @@ def build():
         "tvl_line": tvl_line,
         "tvl_history": tvl_history,
         "arcana": pick(ARCANA_BANK, day_ord),
-        "footer_note": (
-            "Generated live, timestamped above. No posting · no sending · "
-            "no spending without approval."
-            + (f" ({len(warnings)} source warning(s), see log)" if warnings else "")
+        # colophon: a real, measured stat about this run, not boilerplate —
+        # replaces the old flat disclaimer line (Josh's call, 2026-07-07)
+        "colophon": (
+            f"Assembled from {len(sources_used)} live sources in "
+            f"{time.monotonic() - start_time:.1f}s"
+            + (f" &#183; {len(warnings)} warning(s)" if warnings else "")
         ),
+        "safety_note": "No posting · no sending · no spending without approval.",
     }
 
     render(ctx, out_path)

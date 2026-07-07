@@ -77,10 +77,8 @@ def build():
         "tvl_line": SAMPLE_TVL_LINE,
         "tvl_history": SAMPLE_TVL_HISTORY,
         "arcana": pick(ARCANA_BANK, day),
-        "footer_note": (
-            "SAMPLE DATA — layout mockup only, nothing above is "
-            "live-fetched. No posting · no sending · no spending without "
-            "approval."),
+        "colophon": "SAMPLE DATA — not a real run (mockup only)",
+        "safety_note": "No posting · no sending · no spending without approval.",
     }
 
     render(ctx, OUT_PATH, pdf_title="THE DAILY MOG — v2 layout mockup (sample data)")
