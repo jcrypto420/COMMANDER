@@ -1,10 +1,10 @@
 # PRD — "THE BORING REPORT" (working title, Josh names it at Gate N1)
 ## Institutional-deadpan risk ratings for onchain finance · v1.0 · 2026-07-05
 
-## Status — 2026-07-05
-- **State:** APPROVED for internal build (Josh, DeFi product lab session) — merges DF-1 concepts #1 Oracle Risk Scorecard + #3 Boring Report + #6 PoR Watch into one brand
-- **Next action:** Hermes executes Milestone P0 (data-source probe + methodology skeleton)
-- **Waiting on:** nothing for P0; Josh's name verdict at Gate N1
+## Status — 2026-07-07
+- **State:** P0 + P1 SHIPPED (2026-07-05; W28 v0 generated, critic-fixed, verified — see `products/boring-report/`). P0.1 re-probe (2026-07-07, Mac) solved the one P0 blocker: Chainlink feed/PoR inventory is machine-readable via `reference-data-directory.vercel.app` JSON (315 mainnet feeds, 25 PoR) — see `products/boring-report/SOURCES.md`
+- **Next action:** Josh reads W28 on Gate Deck (ship/kill/one-liner) — Gate 1, starts the flawless-streak counter. P2 (Scorecard) is data-unblocked once Hermes confirms the RDD endpoint fetches from the Pi
+- **Waiting on:** Josh's Gate 1 verdict; Josh's name verdict at Gate N1
 
 ## 1. Product
 
