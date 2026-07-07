@@ -64,8 +64,6 @@ def build():
         "news": [
             ("CRYPTO/TECH", "Onchain RWA issuance crosses $18B as tokenized "
                             "treasuries keep climbing"),
-            ("TECH", "New silicon photonics chip claims 10x data-center "
-                     "interconnect efficiency"),
         ],
         "decide_title": "Create the TikTok account this weekend?",
         "decide_body": (
@@ -77,8 +75,12 @@ def build():
         "tvl_line": SAMPLE_TVL_LINE,
         "tvl_history": SAMPLE_TVL_HISTORY,
         "arcana": pick(ARCANA_BANK, day),
-        "colophon": "SAMPLE DATA — not a real run &#183; ~2 min read (mockup only)",
-        "safety_note": "No posting.",
+        "sources_list": (
+            "Open-Meteo &#183; CoinGecko &#183; Yahoo Finance &#183; "
+            "alternative.me &#183; CoinDesk &#183; TechCrunch &#183; "
+            "Decrypt &#183; Hacker News &#183; DeFiLlama"),
+        "build_caption": (
+            "SAMPLE DATA — not a real run, nothing here was fetched"),
     }
 
     render(ctx, OUT_PATH, pdf_title="THE DAILY MOG — v2 layout mockup (sample data)")

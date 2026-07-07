@@ -201,10 +201,12 @@ S = {
                                     textColor=INK, alignment=TA_CENTER, leading=17),
     "arcana_attr": ParagraphStyle("aa", fontName="Helvetica", fontSize=7.7,
                                    textColor=MUTED, alignment=TA_CENTER, leading=10),
-    "footer": ParagraphStyle("f", fontName="Helvetica", fontSize=6.7,
-                              textColor=MUTED, alignment=TA_CENTER, leading=9),
-    "colophon": ParagraphStyle("cl", fontName="Times-Italic", fontSize=8,
-                                textColor=MUTED, alignment=TA_CENTER, leading=10),
+    "seal_kicker": ParagraphStyle("sk", fontName="Helvetica-Bold", fontSize=8,
+                                   textColor=BRAND, alignment=TA_CENTER, leading=12),
+    "seal_sources": ParagraphStyle("ss", fontName="Times-Roman", fontSize=9.5,
+                                    textColor=INK, alignment=TA_CENTER, leading=14),
+    "seal_caption": ParagraphStyle("sc", fontName="Times-Italic", fontSize=8,
+                                    textColor=MUTED, alignment=TA_CENTER, leading=11),
 }
 
 
@@ -358,9 +360,9 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     word_of_day (term, pos, definition), news (list of (tag, headline)),
     decide_title, decide_body, feature_title, feature_body, tvl_line,
     tvl_history (list of floats, oldest-first, empty list to omit the
-    sparkline), arcana (quote, source), colophon (short "how this issue was
-    built" line — sources + duration), safety_note (the small posting/
-    spending disclaimer, de-emphasized under the colophon)
+    sparkline), arcana (quote, source), sources_list (dot-joined names of
+    every external source that actually answered this run), build_caption
+    (pre-formatted "Assembled in X.Xs..." sentence)
     """
     doc = SimpleDocTemplate(
         out_path, pagesize=letter, leftMargin=0.6 * inch, rightMargin=0.6 * inch,
@@ -532,16 +534,33 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     e.append(Paragraph(f"&#8212; {arc_src}", S["arcana_attr"]))
     e.append(Spacer(1, 3))
 
-    # --- colophon: replaces the old flat legal-disclaimer footer with a
-    # real, honest stat about THIS run (source count + build time) — the
-    # same "prove it's fresh" instinct as the masthead timestamp, applied
-    # to the one part of the page that was pure boilerplate before
-    # (Josh's call, 2026-07-07: "that disclaimer or whatever is lame")
-    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=3))
-    orn_sm = '<font face="ZapfDingbats" size="7" color="#6B6255">&#10086;</font>'
-    e.append(Paragraph(
-        f'{orn_sm}&nbsp;&nbsp;{ctx["colophon"]} &#183; {ctx["safety_note"]}'
-        f'&nbsp;&nbsp;{orn_sm}',
-        S["colophon"]))
+    # --- verification seal: a real bordered block, not a thin footer line.
+    # Replaces the old flat disclaimer (Josh, 2026-07-07: "that disclaimer
+    # or whatever is lame") AND the one-line colophon that followed it
+    # (Josh, 2026-07-07 again: "still way too much free space ... take off
+    # the [reading time]. No posting."). Lists the actual sources that
+    # answered this run by name, not just a count — real transparency,
+    # and it fills the space through legitimate content + a proper border
+    # instead of cramming more small text onto one line.
+    e.append(Spacer(1, 6))
+    seal = Table([[
+        [Paragraph(
+            '<font face="ZapfDingbats" size="8">&#10086;</font>'
+            '&nbsp;&nbsp;VERIFIED AGAINST&nbsp;&nbsp;'
+            '<font face="ZapfDingbats" size="8">&#10086;</font>',
+            S["seal_kicker"]),
+         Spacer(1, 4),
+         Paragraph(ctx["sources_list"], S["seal_sources"]),
+         Spacer(1, 4),
+         Paragraph(ctx["build_caption"], S["seal_caption"])],
+    ]], colWidths=[6.9 * inch])
+    seal.setStyle(TableStyle([
+        ("BOX", (0, 0), (-1, -1), 0.75, LINE),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("LEFTPADDING", (0, 0), (-1, -1), 16),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 16),
+    ]))
+    e.append(seal)
 
     doc.build(e)
