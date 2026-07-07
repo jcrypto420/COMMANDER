@@ -11,7 +11,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
-| CI-1 | Career/Income | 1 | Job search per `jobs/SEARCH_PLAYBOOK.md` | doing | Chainlink Sr Solutions Eng CLOSED, successor role checked+REJECTED (bad fit, sales-heavy — see tracker). The 2026-07-02 slate has fully decayed; NEXT: fresh Tier-1 discovery pass per SEARCH_PLAYBOOK.md, not another stale row | **yes** to send |
+| CI-1 | Career/Income | 1 | Job search per `jobs/SEARCH_PLAYBOOK.md` | doing | IN-1 draft-only backstop is ready; next safe step is Josh approval to verify 10 named leads (public URLs, roles, fit notes) and keep all outbound actions draft-only | **yes** to send |
 | CC-24 | Command Center | 1 | 5-line daily dispatch | todo | keep the 5-line morning brief locked in `MORNING_REPORT.md` and `projects/command-center-dashboard-v0.md`; tomorrow run a strict 5-line check on the 07:30 dispatch, confirm `Open:` / `Decide:` stay on line 4 and exactly one bolded decision appears, then archive | verify only |
 | BB-25 | Bad Boys/Joycat | 1 | CARTOON LAB pilot — P4 "T+2" IN PRODUCTION | doing | Gate 1 passed (all 4 shipped). Josh rigs puppet+banker (Blender brief staged); Claude: storyboard, narrator casting, audio; then Gate 2 final cut | gate 2 |
 | BB-26 | Bad Boys/Joycat | 1 | Hermes idea-bank + MoA critics cron | todo | weekly cron: 10 premises → MoA premise-critic → script cards → MoA corny-detector → bank for Josh's gate; pinned gpt-5.4-mini, moa for critic passes only | **yes** |
