@@ -4,7 +4,8 @@
 
 - Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
 - CC-24 is now mirrored in `MORNING_REPORT.md` with the exact 5-line shape: `Status`, `Shipped this week`, `CI-1 update`, `Open:` / `Decide:`, and `**Decision:**`.
-- Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and one bolded decision, then archive.
+- Verified the current `MORNING_REPORT.md` still lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and one bolded decision.
+- Next action: keep the dashboard draft local until Josh approves a live service restart; on the next 07:30 dispatch, re-run the exact 5-line check and archive if clean.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
 ### CC-24 draft-only verification checklist
