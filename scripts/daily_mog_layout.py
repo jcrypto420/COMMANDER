@@ -14,11 +14,10 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer,
-                                HRFlowable, Table, TableStyle, Image)
+                                HRFlowable, Table, TableStyle)
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_RIGHT, TA_CENTER
 from reportlab.graphics.shapes import Drawing, Circle, PolyLine, Path, Group
-from pathlib import Path as FilePath
 import math
 
 # --- content banks: small, curated, auditable — rotates daily via pick(),
@@ -149,11 +148,6 @@ _CONTENT_WIDTH = 6.9 * inch
 COL_MAJOR = _CONTENT_WIDTH * PHI / (1 + PHI)
 COL_MINOR = _CONTENT_WIDTH - COL_MAJOR
 
-# canonical Bad Boys face mark — the one and only source of truth per the
-# cartoon lab's Art Constitution (never AI-generated, never redrawn)
-LOGO_PATH = (FilePath(__file__).resolve().parents[1] / "assets" / "badboys" /
-             "INSIDEFACE NOBG.png")
-
 FEAR_GREED_COLOR = {
     "EXTREME FEAR": "#A3402F", "FEAR": "#A3402F",
     "NEUTRAL": "#6B6255",
@@ -165,8 +159,8 @@ FEAR_GREED_COLOR = {
 # feel. Sans (Helvetica) reserved for kickers, data strips, and fine print,
 # so the two roles stay visually distinct.
 S = {
-    "masthead": ParagraphStyle("mh", fontName="Times-Bold", fontSize=38,
-                                textColor=BRAND, leading=40, alignment=TA_CENTER),
+    "masthead": ParagraphStyle("mh", fontName="Times-Bold", fontSize=42,
+                                textColor=BRAND, leading=44, alignment=TA_CENTER),
     "epigraph": ParagraphStyle("ep", fontName="Times-Italic", fontSize=11.5,
                                textColor=INK, leading=14, alignment=TA_CENTER),
     "wod_term": ParagraphStyle("wt", fontName="Times-Bold", fontSize=12,
@@ -374,24 +368,13 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     e = []
 
     # --- masthead: centered nameplate, classic newspaper folio treatment ---
+    # (the face-icon-in-masthead treatment was tried and pulled — Josh's
+    # call, 2026-07-07: "The Bad boys dont look good at all so take those
+    # off." Small print at ~0.4in tall apparently doesn't hold up; text-only
+    # nameplate again, back at full 42pt now that the icon isn't competing
+    # for row height.)
     e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=8))
-    # the canonical Bad Boys face flanks the title — this is a Bad Boys paper,
-    # the mascot IS the brand mark, not an afterthought
-    face_h = 0.4 * inch
-    face_w = face_h * (420.0 / 594.0)  # source PNG's native aspect ratio
-    masthead_row = Table([[
-        Image(str(LOGO_PATH), width=face_w, height=face_h),
-        Paragraph("THE DAILY MOG", S["masthead"]),
-        Image(str(LOGO_PATH), width=face_w, height=face_h),
-    ]], colWidths=[0.75 * inch, 5.4 * inch, 0.75 * inch])
-    masthead_row.setStyle(TableStyle([
-        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("ALIGN", (0, 0), (0, 0), "RIGHT"),
-        ("ALIGN", (2, 0), (2, 0), "LEFT"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 0),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-    ]))
-    e.append(masthead_row)
+    e.append(Paragraph("THE DAILY MOG", S["masthead"]))
     e.append(Spacer(1, 3))
     # epigraph flanked by floral ornaments matching the SUB ROSA seal, so the
     # masthead and the footer rhyme — top and bottom of the page echo
