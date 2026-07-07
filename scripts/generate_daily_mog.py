@@ -138,6 +138,10 @@ def get_weather():
     daily = data["daily"]
     # past_days=1 + forecast_days=1 → index 0 = yesterday, index 1 = today
     return {
+        "network_now": data["current"]["time"],  # America/Chicago local time,
+                                                   # per the timezone= param —
+                                                   # ground truth independent
+                                                   # of the local system clock
         "current_temp": data["current"]["temperature_2m"],
         "wind_mph": data["current"]["wind_speed_10m"],
         "hi": daily["temperature_2m_max"][1],
@@ -297,6 +301,10 @@ def get_rss_headline(url):
 
 
 def get_news():
+    # all crypto/tech, no local news — Josh's call 2026-07-07 after a grim
+    # local headline (a death story) showed up on what's meant to be a
+    # pleasant morning read. Three distinct outlets so it's not just one
+    # source's slant three times over.
     news = []
     try:
         news.append(("CRYPTO/TECH",
@@ -308,12 +316,9 @@ def get_news():
     except SourceFailure:
         pass
     try:
-        news.append(("OKC LOCAL", get_rss_headline("https://kfor.com/feed/")))
+        news.append(("CRYPTO", get_rss_headline("https://decrypt.co/feed")))
     except SourceFailure:
-        try:
-            news.append(("OKC LOCAL", get_rss_headline("https://www.koco.com/feed")))
-        except SourceFailure:
-            pass
+        pass
     return news
 
 
@@ -348,9 +353,6 @@ def primoscapes_note(precip_prob, temp):
 
 def build():
     out_path = sys.argv[1] if len(sys.argv) > 1 else OUT_PATH
-    now = datetime.datetime.now()
-    today = now.date()
-    day_ord = today.toordinal()
     warnings = []
 
     # --- weather / sun / moon / UV / AQI ---
@@ -359,6 +361,24 @@ def build():
     except SourceFailure as exc:
         raise SystemExit(f"FATAL: weather source unavailable, refusing to "
                           f"fabricate — {exc}")
+
+    # Ground truth for "now" is the live weather API's own timestamp, not
+    # the local system clock. This Pi has no battery-backed RTC — on boot
+    # the clock can hold a stale timestamp from before shutdown until NTP
+    # corrects it (root cause of the 2026-07-07 bug: it printed "July 6"
+    # content on July 7). The systemd unit now also waits on time-sync.target,
+    # but this is the belt-and-suspenders fix at the data layer, independent
+    # of OS-level ordering ever regressing.
+    now = parse_iso(wx["network_now"])
+    local_now = datetime.datetime.now()
+    if abs((now - local_now).total_seconds()) > 3600:
+        warnings.append(
+            f"local system clock ({local_now.strftime('%Y-%m-%d %H:%M')}) "
+            f"disagrees with the live weather source "
+            f"({now.strftime('%Y-%m-%d %H:%M')}) by over an hour — used the "
+            f"network time. Check the Pi's NTP sync.")
+    today = now.date()
+    day_ord = today.toordinal()
 
     daylight_today = daylight_minutes(wx["sunrise_today"], wx["sunset_today"])
     daylight_yday = daylight_minutes(wx["sunrise_yday"], wx["sunset_yday"])
