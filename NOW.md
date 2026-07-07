@@ -1,13 +1,13 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CI-1 decision packet / revenue backstop.
+**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 decision packet / revenue backstop.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
 **Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
 created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
 default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed.
+passed. CC-24 morning packet now matches the exact 5-line draft shape.
 
 ## Next 3 tasks
 

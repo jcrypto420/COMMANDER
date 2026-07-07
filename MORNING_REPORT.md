@@ -1,5 +1,5 @@
-Status: Operational; syncing CI-1 and shipping the morning decision packet.
+Status: Operational; CC-24 packet is draft-aligned and CI-1 stays draft-only.
 Shipped this week: 1
-CI-1 update: IN-1 draft-only backstop is refreshed; next step is lead verification, not sending.
-Safety/GitHub: no posting, sending, spending, or secrets; local-only until commit+push.
-Decision: **APPROVE IN-1 VERIFY LEADS**
+CI-1 update: IN-1 lead verification is refreshed; nothing is sent.
+Open: Verify the 07:30 dispatch lands in exactly 5 lines; Decide: keep the packet tight and local-only.
+**Decision:** HOLD IN-1 AS DRAFT-ONLY

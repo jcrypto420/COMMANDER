@@ -355,3 +355,9 @@ One short entry per working day. What advanced + estimated spend.
   or spending happened.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex
   session.
+
+## 2026-07-07
+
+- Advanced CC-24 draft-only work by tightening the morning packet to the exact 5-line shape in `MORNING_REPORT.md`, then syncing the CC-24 project/status and queue text to match.
+- Kept the lane local-only and draft-only: no sending, posting, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
