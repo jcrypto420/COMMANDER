@@ -11,14 +11,15 @@ from daily_mog_layout import (
     WORD_OF_DAY_BANK, ARCANA_BANK,
 )
 
-SAMPLE_FEATURE_TITLE = "FROM THE OBSERVATORY"
+SAMPLE_FEATURE_TITLE = "THE PULSE"
 SAMPLE_FEATURE_BODY = (
-    "<b>Dueling Bands over the Atacama Desert</b><br/>What are these two "
-    "bands in the sky? The one on the left is the central band of our own "
-    "Milky Way; the fainter one on the right is zodiacal light — sunlight "
-    "reflected off comet dust orbiting the Sun. "
-    '<font size="8" color="#6B6255">&#8212; NASA Astronomy Picture of the '
-    "Day</font>")
+    '<b>HN Top:</b> &#8220;StreetComplete: Fixing OpenStreetMap, one tiny '
+    'quest at a time&#8221; (106 pts, 25 comments)<br/>'
+    '<b>Biggest Mover:</b> Felix Vaults +58.5% TVL (24h) &#8212; $102.9M '
+    'total')
+SAMPLE_TVL_LINE = '<b>DeFi TVL:</b> $74.0B (&#8722;1.0%)'
+SAMPLE_TVL_HISTORY = [70.29, 69.93, 70.40, 69.24, 70.27, 72.65, 74.16, 74.36,
+                      74.73, 73.99]  # billions, real 10-day pull
 
 OUT_PATH = "/Users/joshstokesberry/COMMANDER/MORNING_REPORT_v2_mockup.pdf"
 
@@ -31,12 +32,15 @@ def build():
 
     ctx = {
         "date_str": "Monday, July 6, 2026",
+        "generated_at": "6:42:15 AM CT",
         "vol_no": "VOL. 1 &#183; NO. 6",
         "epigraph": pick(EPIGRAPH_BANK, day),
-        "sky_line": (
+        "sun_text": (
             "Sunrise 6:31 AM &#183; Sunset 8:42 PM &#183; Daylight 14h 11m "
-            "(&#8722;2m) &#183; Moon: Waxing Gibbous 78% &#183; Next full "
-            "moon Jul 19"),
+            "(&#8722;2m)"),
+        "sun_progress_frac": 0.62,
+        "moon_text": "Waxing Gibbous 78% &#183; Next full moon Jul 19",
+        "moon_phase_frac": 0.39,
         "ticker_items": [
             ("BTC", "$118,432", True), ("ETH", "$3,812", True),
             ("LINK", "$21.44", False), ("CVX", "$3.87", True),
@@ -63,8 +67,6 @@ def build():
                             "treasuries keep climbing"),
             ("TECH", "New silicon photonics chip claims 10x data-center "
                      "interconnect efficiency"),
-            ("OKC LOCAL", "Scissortail Park announces new native-plant "
-                          "demonstration garden this fall"),
         ],
         "decide_title": "Create the TikTok account this weekend?",
         "decide_body": (
@@ -73,6 +75,8 @@ def build():
             "cartoon lab."),
         "feature_title": SAMPLE_FEATURE_TITLE,
         "feature_body": SAMPLE_FEATURE_BODY,
+        "tvl_line": SAMPLE_TVL_LINE,
+        "tvl_history": SAMPLE_TVL_HISTORY,
         "arcana": pick(ARCANA_BANK, day),
         "footer_note": (
             "SAMPLE DATA — layout mockup only, nothing above is "

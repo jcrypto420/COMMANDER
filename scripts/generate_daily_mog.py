@@ -36,7 +36,7 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from daily_mog_layout import (
     render, pick, FACT_BANK, BABY_TIP_BANK, ON_THIS_DAY_BANK, EPIGRAPH_BANK,
-    WORD_OF_DAY_BANK, ARCANA_BANK, FEATURE_FALLBACK_TITLE, FEATURE_FALLBACK_BODY,
+    WORD_OF_DAY_BANK, ARCANA_BANK,
 )
 
 COMMANDER_ROOT = Path(__file__).resolve().parents[1]
@@ -50,10 +50,12 @@ UA = "DailyMogGenerator/1.0 (+local personal print artifact; no scraping at scal
 TIMEOUT = 15
 OKC_LAT, OKC_LON = 35.4676, -97.5164
 MAX_DECIDE_CTX_CHARS = 150
-MAX_APOD_CHARS = 105  # title takes its own line already — this budget is
-                       # just the explanation, tuned so title+explanation+
-                       # attribution stays around 3 lines, verified by the
-                       # worst-case stress test alongside everything else
+MAX_DECIDE_TITLE_CHARS = 48  # unbounded gate titles could wrap the amber
+                              # box to 3 lines in the narrower golden-ratio
+                              # column —48 was verified (not guessed) to
+                              # hold at 2 lines worst-case via stress test
+MAX_HN_CHARS = 55       # HN Top shares its line with "(pts, comments)"
+MAX_MOVER_NAME_CHARS = 30
 
 WMO_DESC = {
     0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast",
@@ -238,16 +240,50 @@ def truncate_at_word(text, max_chars):
     return cut.rstrip() + "…"
 
 
-# --- NASA Astronomy Picture of the Day (DEMO_KEY: public, no signup, but
-# rate-limited — fine for once-a-day generation, not for polling) ---
-def get_apod():
-    data = fetch_json("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
-    title = data["title"].strip()
-    explanation = truncate_at_word(data["explanation"].strip(), MAX_APOD_CHARS)
-    body = (f"<b>{title}</b><br/>{explanation} "
-            '<font size="8" color="#6B6255">&#8212; NASA Astronomy Picture '
-            "of the Day</font>")
-    return FEATURE_FALLBACK_TITLE, body
+# --- THE PULSE: Hacker News top story + DeFiLlama biggest mover + total
+# DeFi TVL trend. Each fetched independently so one failing doesn't take
+# the other two down with it (same pattern as get_news()). ---
+def get_hn_top_story():
+    ids = fetch_json("https://hacker-news.firebaseio.com/v0/topstories.json")
+    if not ids:
+        raise SourceFailure("HN topstories list was empty")
+    item = fetch_json(f"https://hacker-news.firebaseio.com/v0/item/{ids[0]}.json")
+    title = truncate_at_word((item.get("title") or "").strip(), MAX_HN_CHARS)
+    if not title:
+        raise SourceFailure("HN top item had no title")
+    score = item.get("score", 0)
+    comments = item.get("descendants", 0)
+    return (f'<b>HN Top:</b> &#8220;{title}&#8221; ({score} pts, '
+            f'{comments} comments)')
+
+
+def get_biggest_tvl_mover():
+    protocols = fetch_json("https://api.llama.fi/protocols")
+    rows = [p for p in protocols
+            if p.get("change_1d") is not None and (p.get("tvl") or 0) > 100_000_000]
+    if not rows:
+        raise SourceFailure("no protocols matched the TVL/change_1d filter")
+    rows.sort(key=lambda p: abs(p["change_1d"]), reverse=True)
+    top = rows[0]
+    name = truncate_at_word(str(top.get("name", "?")), MAX_MOVER_NAME_CHARS)
+    change = top["change_1d"]
+    tvl = top.get("tvl") or 0
+    return (f'<b>Biggest Mover:</b> {name} {change:+.1f}% TVL (24h) '
+            f'&#8212; ${tvl / 1_000_000:,.1f}M total')
+
+
+def get_tvl_history():
+    """Returns (tvl_line_html, [10 daily values in $B, oldest-first])."""
+    data = fetch_json("https://api.llama.fi/v2/historicalChainTvl")
+    if len(data) < 2:
+        raise SourceFailure("historicalChainTvl returned too few points")
+    last10 = data[-10:]
+    values_b = [row["tvl"] / 1_000_000_000 for row in last10]
+    today_tvl, yday_tvl = last10[-1]["tvl"], last10[-2]["tvl"]
+    change_pct = (today_tvl - yday_tvl) / yday_tvl * 100 if yday_tvl else 0.0
+    tvl_line = (f'<b>DeFi TVL:</b> ${today_tvl / 1_000_000_000:,.1f}B '
+                f'({change_pct:+.1f}%)')
+    return tvl_line, values_b
 
 
 # --- Decide box: the real top pending Gate Deck item, not a hardcoded
@@ -262,7 +298,8 @@ def get_top_pending_gate():
     if not pending:
         return None
     top = pending[0]
-    return top["title"], truncate_at_word(top.get("context", ""), MAX_DECIDE_CTX_CHARS)
+    title = truncate_at_word(top.get("title", "Untitled"), MAX_DECIDE_TITLE_CHARS)
+    return title, truncate_at_word(top.get("context", ""), MAX_DECIDE_CTX_CHARS)
 
 
 # --- news RSS (proper XML scoping to <item>/<entry> — a naive regex over
@@ -371,14 +408,29 @@ def build():
     # of OS-level ordering ever regressing.
     now = parse_iso(wx["network_now"])
     local_now = datetime.datetime.now()
-    if abs((now - local_now).total_seconds()) > 3600:
+    clock_trusted = abs((now - local_now).total_seconds()) <= 3600
+    if not clock_trusted:
         warnings.append(
             f"local system clock ({local_now.strftime('%Y-%m-%d %H:%M')}) "
             f"disagrees with the live weather source "
             f"({now.strftime('%Y-%m-%d %H:%M')}) by over an hour — used the "
-            f"network time. Check the Pi's NTP sync.")
+            f"network time for content, but the printed generation "
+            f"timestamp below is degraded to minute precision. Check the "
+            f"Pi's NTP sync.")
     today = now.date()
     day_ord = today.toordinal()
+
+    # Generation timestamp: Open-Meteo (the "network_now" ground truth used
+    # for date/content selection above) only reports minute precision, so
+    # showing fake seconds off it would be exactly the kind of fabricated
+    # precision this whole project refuses to do. The local system clock
+    # DOES have real second precision, and by this point in the boot
+    # sequence it should already be NTP-corrected (see configs/daily-mog.
+    # service's time-sync.target wait) — so it's used for display, gated on
+    # the same cross-check above. If that check ever fails, this honestly
+    # degrades to minute precision instead of pretending to be exact.
+    generated_at = (local_now.strftime("%-I:%M:%S %p") if clock_trusted
+                     else now.strftime("%-I:%M %p") + " (network time)") + " CT"
 
     daylight_today = daylight_minutes(wx["sunrise_today"], wx["sunset_today"])
     daylight_yday = daylight_minutes(wx["sunrise_yday"], wx["sunset_yday"])
@@ -390,13 +442,24 @@ def build():
     moon_pct = moon_illumination_pct(moon_frac)
     full_moon_date = next_full_moon(now)
 
-    sunrise_disp = parse_iso(wx["sunrise_today"]).strftime("%-I:%M %p")
-    sunset_disp = parse_iso(wx["sunset_today"]).strftime("%-I:%M %p")
-    sky_line = (
+    sunrise_dt = parse_iso(wx["sunrise_today"])
+    sunset_dt = parse_iso(wx["sunset_today"])
+    sunrise_disp = sunrise_dt.strftime("%-I:%M %p")
+    sunset_disp = sunset_dt.strftime("%-I:%M %p")
+    daylight_span = (sunset_dt - sunrise_dt).total_seconds()
+    sun_progress_frac = ((now - sunrise_dt).total_seconds() / daylight_span
+                          if daylight_span > 0 else 0.5)
+    sun_progress_frac = max(0.0, min(1.0, sun_progress_frac))  # clamp for a
+                                                                 # pre-dawn or
+                                                                 # post-dusk run
+
+    sun_text = (
         f"Sunrise {sunrise_disp} &#183; Sunset {sunset_disp} &#183; "
-        f"Daylight {daylight_today // 60}h {daylight_today % 60}m "
-        f"({trend_str}) &#183; Moon: {moon_name} {moon_pct}% &#183; "
-        f"Next full moon {full_moon_date.strftime('%b %-d')}"
+        f"Daylight {daylight_today // 60}h {daylight_today % 60}m ({trend_str})"
+    )
+    moon_text = (
+        f"{moon_name} {moon_pct}% &#183; Next full moon "
+        f"{full_moon_date.strftime('%b %-d')}"
     )
 
     try:
@@ -450,19 +513,37 @@ def build():
     else:
         decide_title, decide_body = "Nothing pending", "Clear runway — no open gate right now."
 
+    # THE PULSE: HN + biggest TVL mover, each independent so one failing
+    # doesn't blank the whole section — same pattern as get_news()
+    pulse_lines = []
     try:
-        feature_title, feature_body = get_apod()
+        pulse_lines.append(get_hn_top_story())
     except SourceFailure as exc:
-        warnings.append(f"NASA APOD unavailable: {exc}")
-        feature_title, feature_body = FEATURE_FALLBACK_TITLE, FEATURE_FALLBACK_BODY
+        warnings.append(f"Hacker News unavailable: {exc}")
+    try:
+        pulse_lines.append(get_biggest_tvl_mover())
+    except SourceFailure as exc:
+        warnings.append(f"DeFiLlama mover unavailable: {exc}")
+    feature_body = ("<br/>".join(pulse_lines) if pulse_lines else
+                     "The Pulse is unavailable this morning — sources didn't respond.")
+
+    try:
+        tvl_line, tvl_history = get_tvl_history()
+    except SourceFailure as exc:
+        warnings.append(f"DeFi TVL history unavailable: {exc}")
+        tvl_line, tvl_history = "<b>DeFi TVL:</b> unavailable today", []
 
     otd_year, otd_rest = pick(ON_THIS_DAY_BANK, day_ord).split(":", 1)
 
     ctx = {
         "date_str": now.strftime("%A, %B %-d, %Y"),
+        "generated_at": generated_at,
         "vol_no": "VOL. 1 &#183; NO. " + str((day_ord % 300) + 1),
         "epigraph": pick(EPIGRAPH_BANK, day_ord),
-        "sky_line": sky_line,
+        "sun_text": sun_text,
+        "sun_progress_frac": sun_progress_frac,
+        "moon_text": moon_text,
+        "moon_phase_frac": moon_frac,
         "ticker_items": ticker_items[:7],
         "fear_greed_value": fg_value,
         "fear_greed_label": fg_label,
@@ -474,15 +555,17 @@ def build():
         "fact": pick(FACT_BANK, day_ord),
         "baby_tip": pick(BABY_TIP_BANK, day_ord),
         "word_of_day": pick(WORD_OF_DAY_BANK, day_ord),
-        "news": news[:3],
+        "news": news[:2],
         "decide_title": decide_title,
         "decide_body": decide_body,
-        "feature_title": feature_title,
+        "feature_title": "THE PULSE",
         "feature_body": feature_body,
+        "tvl_line": tvl_line,
+        "tvl_history": tvl_history,
         "arcana": pick(ARCANA_BANK, day_ord),
         "footer_note": (
-            f"Generated {now.strftime('%-I:%M %p')} from live sources. "
-            f"No posting · no sending · no spending without approval."
+            "Generated live, timestamped above. No posting · no sending · "
+            "no spending without approval."
             + (f" ({len(warnings)} source warning(s), see log)" if warnings else "")
         ),
     }

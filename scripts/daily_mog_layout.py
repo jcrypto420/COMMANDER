@@ -17,6 +17,8 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer,
                                 HRFlowable, Table, TableStyle)
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_RIGHT, TA_CENTER
+from reportlab.graphics.shapes import Drawing, Circle, PolyLine, Path, Group
+import math
 
 # --- content banks: small, curated, auditable — rotates daily via pick(),
 # never freshly improvised at generation time (same pattern for every bank) ---
@@ -117,14 +119,6 @@ ARCANA_BANK = [
      "wise, so I am changing myself.", "Rumi"),
 ]
 
-# fallback only — used when the live feature source (e.g. NASA APOD) can't
-# be reached; an honest "unavailable" beats a fabricated substitute
-FEATURE_FALLBACK_TITLE = "FROM THE OBSERVATORY"
-FEATURE_FALLBACK_BODY = (
-    "Today's featured pick is unavailable right now — the source didn't "
-    "respond. Nothing shown here is ever invented to fill the gap."
-)
-
 
 def pick(bank, day_ordinal, salt=0):
     """Deterministic daily rotation, not per-run randomness: the same
@@ -145,6 +139,14 @@ GREEN = HexColor("#1B7A4D")   # price up / index reading "greed" side
 RED = HexColor("#A3402F")     # price down / index reading "fear" side
 AMBER = HexColor("#B8790A")   # decide accent only
 AMBER_BG = HexColor("#FBEBD2")
+
+# golden-ratio (phi = 1.618) two-column split, replacing the earlier
+# near-even 3.55/3.35 divide — same 6.9in interior width convention already
+# used by the ticker strip, folio row, and box() default width
+PHI = 1.6180339887
+_CONTENT_WIDTH = 6.9 * inch
+COL_MAJOR = _CONTENT_WIDTH * PHI / (1 + PHI)
+COL_MINOR = _CONTENT_WIDTH - COL_MAJOR
 
 FEAR_GREED_COLOR = {
     "EXTREME FEAR": "#A3402F", "FEAR": "#A3402F",
@@ -167,6 +169,8 @@ S = {
                                   textColor=MUTED, leading=10),
     "folio_center": ParagraphStyle("fc", fontName="Times-Bold", fontSize=9.5,
                                     textColor=INK, alignment=TA_CENTER, leading=11),
+    "folio_timestamp": ParagraphStyle("ft", fontName="Helvetica", fontSize=6.8,
+                                       textColor=MUTED, alignment=TA_CENTER, leading=8),
     "almanac_line": ParagraphStyle("al", fontName="Times-Roman", fontSize=8.7,
                                     textColor=MUTED, alignment=TA_CENTER, leading=12.5),
     "ticker": ParagraphStyle("tk", fontName="Helvetica", fontSize=8,
@@ -249,18 +253,114 @@ def ticker_strip(items):
     return t
 
 
+# --- small vector graphics: hand-drawn shapes, not images/matplotlib —
+# stays print-crisp at any size and adds no new dependency. Kept neutral
+# (INK/MUTED/LINE only, no accent colors) since these are informational
+# marks, not meaning-encoded like the price/index colors. ---
+
+def sparkline(values, width=50, height=14, color=None):
+    """Minimal line chart, no axes/labels — just the trend shape and an
+    end-point dot. `values` oldest-to-newest."""
+    color = color or INK
+    d = Drawing(width, height)
+    if len(values) < 2:
+        return d
+    lo, hi = min(values), max(values)
+    span = (hi - lo) or 1
+    n = len(values)
+    pad = 2
+    pts = []
+    for i, v in enumerate(values):
+        x = i / (n - 1) * width
+        y = pad + (v - lo) / span * (height - 2 * pad)
+        pts += [x, y]
+    d.add(PolyLine(pts, strokeColor=color, strokeWidth=1.1,
+                    strokeLineJoin=1, strokeLineCap=1))
+    d.add(Circle(pts[-2], pts[-1], 1.5, fillColor=color, strokeColor=None))
+    return d
+
+
+def _circle_clip_path(cx, cy, r):
+    """4-bezier circle approximation (the standard 0.5522847498 magic-number
+    constant), marked as a clip path so a Group's later children only
+    render within this circular silhouette — a rectangular Drawing bound
+    is NOT equivalent to this and clips the wrong region at most offsets."""
+    k = 0.5522847498 * r
+    p = Path()
+    p.moveTo(cx + r, cy)
+    p.curveTo(cx + r, cy + k, cx + k, cy + r, cx, cy + r)
+    p.curveTo(cx - k, cy + r, cx - r, cy + k, cx - r, cy)
+    p.curveTo(cx - r, cy - k, cx - k, cy - r, cx, cy - r)
+    p.curveTo(cx + k, cy - r, cx + r, cy - k, cx + r, cy)
+    p.closePath()
+    p.isClipPath = 1
+    return p
+
+
+def moon_icon(phase_frac, r=6):
+    """Small moon-phase disk. phase_frac: 0=new, 0.5=full, 1=new (next
+    cycle). Technique: two same-radius circles, one dark (INK, the 'new
+    moon' base) and one light (PAPER) offset horizontally, clipped to the
+    base circle's silhouette — where they overlap, light covers dark;
+    where they don't, dark shows through as a crescent/gibbous.
+    offset = 2r*cos(pi*phase_frac): 2r at phase 0 (no overlap, fully dark),
+    0 at phase 0.5 (full overlap, fully lit), back to 2r at phase 1.
+    Positive offset (phase 0-0.5, waxing) shifts the light circle right,
+    exposing dark on the left — lit crescent grows on the right."""
+    size = 2 * r + 2
+    d = Drawing(size, size)
+    cx = cy = size / 2.0
+    d.add(Circle(cx, cy, r, fillColor=INK, strokeColor=None))
+    offset = 2 * r * math.cos(math.pi * phase_frac)
+    lit = Group()
+    lit.add(_circle_clip_path(cx, cy, r))
+    lit.add(Circle(cx + offset, cy, r, fillColor=PAPER, strokeColor=None))
+    d.add(lit)
+    d.add(Circle(cx, cy, r, fillColor=None, strokeColor=MUTED, strokeWidth=0.5))
+    return d
+
+
+def sun_arc(progress_frac, width=52, height=18):
+    """Small sky-dome arc with a dot marking how far through the daylight
+    window 'now' is. progress_frac: 0=sunrise (left), 1=sunset (right).
+    Clamped so a pre-dawn/post-dusk generation run doesn't place the dot
+    off the arc."""
+    progress_frac = max(0.0, min(1.0, progress_frac))
+    d = Drawing(width, height)
+    cx = width / 2.0
+    baseline_y = 2.5
+    r = width / 2.0 - 3
+    # arc traced as short line segments — simplest reliable way to get a
+    # smooth curve out of reportlab's shape primitives without relying on
+    # exact Path/arc-command behavior across reportlab versions
+    steps = 24
+    pts = []
+    for i in range(steps + 1):
+        theta = math.pi * (1 - i / steps)  # pi (left) -> 0 (right)
+        pts += [cx + r * math.cos(theta), baseline_y + r * math.sin(theta)]
+    d.add(PolyLine(pts, strokeColor=LINE, strokeWidth=0.8))
+    theta = math.pi * (1 - progress_frac)
+    mx = cx + r * math.cos(theta)
+    my = baseline_y + r * math.sin(theta)
+    d.add(Circle(mx, my, 2, fillColor=INK, strokeColor=None))
+    return d
+
+
 def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     """ctx keys (all required):
-    date_str, vol_no, epigraph, sky_line, ticker_items,
+    date_str, generated_at (precise HH:MM:SS-style string, printed right
+    after the date as freshness proof), vol_no, epigraph, sun_text,
+    sun_progress_frac, moon_text, moon_phase_frac, ticker_items,
     fear_greed_value, fear_greed_label, otd_year, otd_rest,
     weather_headline, uv_aqi_line, primoscapes_note, fact, baby_tip,
     word_of_day (term, pos, definition), news (list of (tag, headline)),
-    decide_title, decide_body, feature_title, feature_body, arcana (quote, source),
-    footer_note
+    decide_title, decide_body, feature_title, feature_body, tvl_line,
+    tvl_history (list of floats, oldest-first, empty list to omit the
+    sparkline), arcana (quote, source), footer_note
     """
     doc = SimpleDocTemplate(
         out_path, pagesize=letter, leftMargin=0.6 * inch, rightMargin=0.6 * inch,
-        topMargin=0.5 * inch, bottomMargin=0.45 * inch, title=pdf_title)
+        topMargin=0.38 * inch, bottomMargin=0.28 * inch, title=pdf_title)
     e = []
 
     # --- masthead: centered nameplate, classic newspaper folio treatment ---
@@ -275,9 +375,13 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         S["epigraph"]))
     e.append(Spacer(1, 8))
 
+    # timestamp sits right after the date — precise proof the page was
+    # generated fresh this run, not reused from a prior boot (Josh's ask,
+    # 2026-07-07, after catching a stale-date bug the morning before)
     folio = Table([[
         Paragraph("OKLAHOMA CITY, OKLA.", S["folio_side"]),
-        Paragraph(ctx["date_str"], S["folio_center"]),
+        [Paragraph(ctx["date_str"], S["folio_center"]),
+         Paragraph(f'Generated {ctx["generated_at"]}', S["folio_timestamp"])],
         Paragraph(ctx["vol_no"], ParagraphStyle(
             "fsr", parent=S["folio_side"], alignment=TA_RIGHT)),
     ]], colWidths=[2.3 * inch, 2.3 * inch, 2.3 * inch])
@@ -285,14 +389,30 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
         ("LINEABOVE", (0, 0), (-1, 0), 1.4, BRAND),
         ("LINEBELOW", (0, 0), (-1, 0), 0.6, LINE),
-        ("TOPPADDING", (0, 0), (-1, -1), 5),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 3),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
     ]))
     e.append(folio)
     e.append(Spacer(1, 6))
 
-    e.append(Paragraph(ctx["sky_line"], S["almanac_line"]))
-    e.append(Spacer(1, 8))
+    # sky line: small sun-arc + moon-disk icons flanking their own text,
+    # rather than one plain line of numbers — the "laws of the universe"
+    # touch Josh asked for, kept tiny and neutral (no accent colors)
+    sky_row = Table([[
+        sun_arc(ctx["sun_progress_frac"]),
+        Paragraph(ctx["sun_text"], S["almanac_line"]),
+        moon_icon(ctx["moon_phase_frac"]),
+        Paragraph(ctx["moon_text"], S["almanac_line"]),
+    ]], colWidths=[0.72 * inch, 3.55 * inch, 0.2 * inch, 2.43 * inch])
+    sky_row.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (0, 0), "CENTER"),
+        ("ALIGN", (2, 0), (2, 0), "CENTER"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 3),
+    ]))
+    e.append(sky_row)
+    e.append(Spacer(1, 5))
 
     e.append(ticker_strip(ctx["ticker_items"]))
     e.append(Spacer(1, 5))
@@ -340,20 +460,38 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         right.append(Paragraph(headline, S["news_headline"]))
         if i < len(news) - 1:
             right.append(HRFlowable(width="100%", thickness=0.4, color=LINE,
-                                    spaceBefore=6, spaceAfter=6))
-    right.append(Spacer(1, 4))
+                                    spaceBefore=4, spaceAfter=4))
+    right.append(Spacer(1, 3))
 
     right += sec("DECIDE")
     right.append(box([
         Paragraph(ctx["decide_title"], S["decide_title"]),
         Spacer(1, 2),
         Paragraph(ctx["decide_body"], S["decide_ctx"]),
-    ], AMBER_BG, AMBER, width=3.15 * inch, pad=8))
+    ], AMBER_BG, AMBER, width=COL_MINOR - 0.194 * inch, pad=6))
 
     right += sec(ctx["feature_title"])
     right.append(Paragraph(ctx["feature_body"], S["body"]))
+    if ctx.get("tvl_history"):
+        spark_w = 0.5 * inch
+        tvl_row = Table([[
+            sparkline(ctx["tvl_history"], width=36, height=12),
+            Paragraph(ctx["tvl_line"], S["body"]),
+        ]], colWidths=[spark_w, COL_MINOR - 0.194 * inch - spark_w])
+        tvl_row.setStyle(TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("TOPPADDING", (0, 0), (0, 0), 4),  # nudges the sparkline down
+            ("TOPPADDING", (1, 0), (1, 0), 0),  # to sit on the text baseline
+            ("LEFTPADDING", (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING", (0, 0), (0, 0), 4),  # small gap before the text
+        ]))
+        right.append(tvl_row)
+    else:
+        right.append(Paragraph(ctx["tvl_line"], S["body"]))
 
-    cols = Table([[left, right]], colWidths=[3.55 * inch, 3.35 * inch])
+    # golden-ratio column split (phi = 1.618) instead of the earlier
+    # near-even 3.55/3.35 — a "felt, not seen" proportion refinement
+    cols = Table([[left, right]], colWidths=[COL_MAJOR, COL_MINOR])
     cols.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LINEAFTER", (0, 0), (0, 0), 0.6, LINE),
@@ -361,22 +499,22 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         ("LEFTPADDING", (1, 0), (1, 0), 14),
     ]))
     e.append(cols)
-    e.append(Spacer(1, 12))
+    e.append(Spacer(1, 8))
 
     # --- SUB ROSA: full-width arcane inscription, the page's closing seal ---
     arc_quote, arc_src = ctx["arcana"]
     e.append(HRFlowable(width="100%", thickness=1.2, color=BRAND, spaceAfter=1.5))
-    e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=7))
+    e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=6))
     e.append(Paragraph(
         '<font face="ZapfDingbats" size="8">&#10086;</font>&nbsp;&nbsp;&nbsp;'
         'S U B &nbsp; R O S A'
         '&nbsp;&nbsp;&nbsp;<font face="ZapfDingbats" size="8">&#10086;</font>',
         S["arcana_kicker"]))
-    e.append(Spacer(1, 4))
-    e.append(Paragraph(f"&#8220;{arc_quote}&#8221;", S["arcana_quote"]))
     e.append(Spacer(1, 3))
+    e.append(Paragraph(f"&#8220;{arc_quote}&#8221;", S["arcana_quote"]))
+    e.append(Spacer(1, 2))
     e.append(Paragraph(f"&#8212; {arc_src}", S["arcana_attr"]))
-    e.append(Spacer(1, 8))
+    e.append(Spacer(1, 5))
 
     e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=4))
     e.append(Paragraph(ctx["footer_note"], S["footer"]))
