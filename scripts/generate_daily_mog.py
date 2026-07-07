@@ -37,7 +37,7 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from daily_mog_layout import (
     render, pick, FACT_BANK, BABY_TIP_BANK, ON_THIS_DAY_BANK, EPIGRAPH_BANK,
-    WORD_OF_DAY_BANK, ARCANA_BANK,
+    WORD_OF_DAY_BANK, ARCANA_BANK, HISTORY_QUOTE_BANK,
 )
 
 COMMANDER_ROOT = Path(__file__).resolve().parents[1]
@@ -123,6 +123,24 @@ def next_full_moon(dt):
     days_to_full = ((0.5 - frac) % 1.0) * SYNODIC_MONTH
     target = dt + datetime.timedelta(days=days_to_full)
     return target.date()
+
+
+def next_solstice_or_equinox(dt):
+    """Approximate calendar dates (within ~1 day of the true astronomical
+    moment, which varies by year/timezone) — fine for an almanac "days
+    until" line, not precise enough for anything that needs to be exact."""
+    year = dt.year
+    candidates = [
+        (datetime.date(year, 3, 20), "Spring Equinox"),
+        (datetime.date(year, 6, 20), "Summer Solstice"),
+        (datetime.date(year, 9, 22), "Fall Equinox"),
+        (datetime.date(year, 12, 21), "Winter Solstice"),
+        (datetime.date(year + 1, 3, 20), "Spring Equinox"),
+    ]
+    today = dt.date()
+    for target_date, name in candidates:
+        if target_date >= today:
+            return target_date, name, (target_date - today).days
 
 
 # --- weather / sun / UV (Open-Meteo, keyless) ---
@@ -229,6 +247,34 @@ def get_fear_greed():
     data = fetch_json("https://api.alternative.me/fng/?limit=1")
     row = data["data"][0]
     return int(row["value"]), row["value_classification"]
+
+
+# --- crypto global stats: total market cap + BTC dominance in one call
+# (CoinGecko /global, keyless) ---
+def get_crypto_global():
+    """Returns (market_cap_usd, btc_dominance_pct)."""
+    data = fetch_json("https://api.coingecko.com/api/v3/global")
+    d = data["data"]
+    return d["total_market_cap"]["usd"], d["market_cap_percentage"]["btc"]
+
+
+def format_market_cap(usd):
+    if usd >= 1_000_000_000_000:
+        return f"${usd / 1_000_000_000_000:,.2f}T"
+    return f"${usd / 1_000_000_000:,.1f}B"
+
+
+# --- a fresh live fact every run (uselessfacts.jsph.pl, keyless) — pure
+# delight, not a curated bank ---
+MAX_FACT_CHARS = 140
+
+
+def get_random_fact():
+    data = fetch_json("https://uselessfacts.jsph.pl/api/v2/facts/random")
+    text = truncate_at_word((data.get("text") or "").strip(), MAX_FACT_CHARS)
+    if not text:
+        raise SourceFailure("empty fact text")
+    return text
 
 
 def truncate_at_word(text, max_chars):
@@ -450,6 +496,7 @@ def build():
     moon_name = moon_phase_name(moon_frac)
     moon_pct = moon_illumination_pct(moon_frac)
     full_moon_date = next_full_moon(now)
+    _, eq_name, eq_days = next_solstice_or_equinox(now)
 
     sunrise_dt = parse_iso(wx["sunrise_today"])
     sunset_dt = parse_iso(wx["sunset_today"])
@@ -467,8 +514,10 @@ def build():
         f"Daylight {daylight_today // 60}h {daylight_today % 60}m ({trend_str})"
     )
     moon_text = (
-        f"{moon_name} {moon_pct}% &#183; Next full moon "
-        f"{full_moon_date.strftime('%b %-d')}"
+        f"{moon_name} {moon_pct}% &#183; Full moon "
+        f"{full_moon_date.strftime('%b %-d')} &#183; "
+        f"{eq_name.replace('Equinox', 'Eq.').replace('Solstice', 'Sol.')} "
+        f"in {eq_days}d"
     )
 
     try:
@@ -516,6 +565,22 @@ def build():
     except SourceFailure as exc:
         warnings.append(f"Fear & Greed unavailable: {exc}")
         fg_value, fg_label = 0, "Neutral"
+
+    try:
+        market_cap_usd, btc_dominance_pct = get_crypto_global()
+        market_cap = format_market_cap(market_cap_usd)
+        btc_dominance = f"{btc_dominance_pct:.1f}%"
+        sources_used.add("CoinGecko")
+    except SourceFailure as exc:
+        warnings.append(f"CoinGecko global stats unavailable: {exc}")
+        market_cap, btc_dominance = "n/a", "n/a"
+
+    try:
+        random_fact = get_random_fact()
+        sources_used.add("uselessfacts.jsph.pl")
+    except SourceFailure as exc:
+        warnings.append(f"Random fact unavailable: {exc}")
+        random_fact = "No fact fetched this morning — the fact API didn't respond."
 
     news = get_news(sources_used)
     if not news:
@@ -596,22 +661,19 @@ def build():
         "tvl_line": tvl_line,
         "tvl_history": tvl_history,
         "arcana": arcana,
-        # verification seal: real transparency (actual source names, not
-        # just a count) in a proper bordered block — replaces both the old
-        # disclaimer footer and the thin one-line colophon that followed it
-        # (Josh, 2026-07-07: "still way too much free space ... take off
-        # the [reading time]. No posting.")
-        "sources_list": " &#183; ".join(sorted(sources_used, key=str.lower)),
-        "build_caption": (
-            f"Assembled in {time.monotonic() - start_time:.1f}s"
-            + (f" &#8212; {len(warnings)} source warning(s), see log"
-               if warnings else
-               " &#8212; nothing here is fabricated to fill a gap")
-        ),
+        "market_cap": market_cap,
+        "btc_dominance": btc_dominance,
+        "random_fact": random_fact,
+        # a real, attributed line from a historically important person —
+        # distinct from FORBIDDEN WISDOM's esoteric bent (Josh, 2026-07-07)
+        "history_quote": pick(HISTORY_QUOTE_BANK, day_ord),
     }
 
     render(ctx, out_path)
     print(f"wrote {out_path}")
+    print(f"{len(sources_used)} live source(s) answered in "
+          f"{time.monotonic() - start_time:.1f}s: "
+          f"{', '.join(sorted(sources_used, key=str.lower))}")
     for w in warnings:
         print(f"WARNING: {w}", file=sys.stderr)
 

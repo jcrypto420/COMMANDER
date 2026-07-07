@@ -8,7 +8,7 @@ import datetime
 
 from daily_mog_layout import (
     render, pick, FACT_BANK, BABY_TIP_BANK, ON_THIS_DAY_BANK, EPIGRAPH_BANK,
-    WORD_OF_DAY_BANK, ARCANA_BANK,
+    WORD_OF_DAY_BANK, ARCANA_BANK, HISTORY_QUOTE_BANK,
 )
 
 SAMPLE_FEATURE_TITLE = "MARKET NOTES"
@@ -38,7 +38,8 @@ def build():
             "Sunrise 6:31 AM &#183; Sunset 8:42 PM &#183; Daylight 14h 11m "
             "(&#8722;2m)"),
         "sun_progress_frac": 0.62,
-        "moon_text": "Waxing Gibbous 78% &#183; Next full moon Jul 19",
+        "moon_text": ("Waxing Gibbous 78% &#183; Full moon Jul 19 "
+                      "&#183; Fall Eq. in 78d"),
         "moon_phase_frac": 0.39,
         "ticker_items": [
             ("BTC", "$118,432", True), ("ETH", "$3,812", True),
@@ -75,12 +76,10 @@ def build():
         "tvl_line": SAMPLE_TVL_LINE,
         "tvl_history": SAMPLE_TVL_HISTORY,
         "arcana": pick(ARCANA_BANK, day),
-        "sources_list": (
-            "Open-Meteo &#183; CoinGecko &#183; Yahoo Finance &#183; "
-            "alternative.me &#183; CoinDesk &#183; TechCrunch &#183; "
-            "Decrypt &#183; Hacker News &#183; DeFiLlama"),
-        "build_caption": (
-            "SAMPLE DATA — not a real run, nothing here was fetched"),
+        "market_cap": "$2.28T",
+        "btc_dominance": "56.1%",
+        "random_fact": "SAMPLE DATA — not a real run, nothing here was fetched.",
+        "history_quote": pick(HISTORY_QUOTE_BANK, day),
     }
 
     render(ctx, OUT_PATH, pdf_title="THE DAILY MOG — v2 layout mockup (sample data)")
