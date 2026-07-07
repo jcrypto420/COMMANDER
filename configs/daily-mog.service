@@ -1,0 +1,13 @@
+[Unit]
+Description=THE DAILY MOG — generate live data + auto-print on boot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=josh
+WorkingDirectory=/home/josh/COMMANDER
+ExecStart=/usr/bin/env bash /home/josh/COMMANDER/scripts/run_daily_mog_boot.sh
+
+[Install]
+WantedBy=multi-user.target
