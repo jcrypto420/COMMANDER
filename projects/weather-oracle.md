@@ -22,6 +22,31 @@
   workflow, run in free local simulator (needs cre CLI install approval)
 - **Waiting on:** Josh's go/no-go + working-name pick
 
+## MVP spec — OKC metro first (2026-07-08 session)
+
+- **Name candidates (Josh picks):** Partly Wrong (rec) · Hindcast ·
+  The Dry Line · They Said Sunny · Forecast Receipts.
+- **Why OKC:** most weather-obsessed TV market in the US (SPC/National
+  Weather Center in Norman, Oklahoma Mesonet ~120 stations, legendary
+  channel weather wars). Audience already keeps score; we add receipts.
+- **Graded rows (~7):** KFOR, KOCO 5, News 9, Fox 25, NWS Norman + ECMWF/GFS
+  robot baselines ("is Channel 4 beating a free robot?"). Social forecaster
+  row possible if predictions are documented enough to capture fairly.
+- **Mechanics:** Day-0 evening capture of station-site next-day high/low/PoP
+  (numbers = facts; screenshot archive as evidence) → hash committed onchain
+  via CRE before outcomes; Day-1 actuals from official stations (Will Rogers
+  KOKC; Wiley Post = The Village/Warr Acres; Tinker = Midwest City; Norman;
+  Mesonet pending commercial-license check).
+- **Scores:** temp MAE, precip Brier, and the Hype Index (severe/precip
+  overcall bias) — the argue-about-it-at-work metric.
+- **10¢ hyperlocal tier (x402):** skill-weighted consensus + "who to trust
+  tonight" per suburb (Edmond, Warr Acres, The Village); hyperlocal grain
+  from 3km model data + nearest-station actuals, honestly labeled.
+- **Edge law:** grade channels/broadcasts, never named meteorologists.
+- **Sequencing:** capture pipeline can start NOW ($0, read-only, no
+  approvals) — skill scores need weeks of history; CRE commit layer bolts
+  on at C0 after cre CLI install approval; x402/mainnet gated later.
+
 **Goal:** Keep warm unless it can become a profitable side income, grant /
 public-good project, portfolio asset, or product.
 
