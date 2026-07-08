@@ -82,7 +82,18 @@ verify BEFORE building. Fallback: Claude/Mac fetches, commits snapshots.)
   cash-equivalent / NAV-accruing funds (BUIDL, USYC, USDY — classified by
   known fund identity, not a price threshold, since accrual mechanics vary)
   are NOT scored on peg deviation. They render in a separate table with their
-  own price only, pending a v1.1 NAV-tracking benchmark.
+  own price only, pending a NAV-tracking benchmark.
+- **v1.1 revision (2026-07-08, Josh Gate 1 correction):** solvency (25) and
+  redemption (15) points come from a published per-mechanism-class matrix —
+  fiat custodial 23/13 · hybrid CDP+RWA 20/12 · CDP immutable 20/12 ·
+  CDP hard/soft liquidation 19/12 · delta-neutral synthetic 14/10 ·
+  leveraged split 14/10 · issuer-managed crypto 10/8 · unclassified floor
+  12/8 — never from DefiLlama's binary fiat/crypto tag. Coverage = top-10 by
+  supply PLUS a curated mechanism-watch table (structurally distinct designs,
+  ≥$25M circulating: crvUSD, fxUSD, GHO, BOLD). The rendered report must show
+  the full component breakdown, both price sources (fallback never silent),
+  and a per-asset "what would make this less boring" line. Matrix or class
+  changes are methodology changes and require a Josh gate.
 - Methodology page is public from day one (ratings credibility 101).
 
 ## 6. Milestones (Hermes-executable; ARTIFACT RULE applies to each)

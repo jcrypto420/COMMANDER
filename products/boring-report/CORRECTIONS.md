@@ -42,3 +42,45 @@ a second machine). Issue itself: HOLD from Josh gate until fix 1 lands as W28-r2
 
 Regenerated `weekly/2026-W28.md` in place. `verify.py` passes independently.
 Ready for Josh's Gate Deck read.
+
+## 2026-W28 (v1) — Josh Gate 1 verdict, 2026-07-08
+
+**Verdict: CORRECTION — methodology revision ordered. Streak not started.**
+
+1. **Coverage wrong-shaped:** top-10-by-supply alone hides the mechanically
+   interesting set — "how is crvUSD or fxUSD not on that list?" Fix: add a
+   curated mechanism-watch table below the top-10.
+2. **Mechanism labels too crude:** DefiLlama's binary fiat-/crypto-backed
+   tag scores a delta-neutral synthetic (USDe), a soft-liquidation CDP
+   (crvUSD), and a leveraged-split design (fxUSD) identically. Fix:
+   per-asset mechanism taxonomy with plain-language notes.
+3. **Full-file transparency:** component scores lived only in the hidden
+   data block; the rendered report must show the full breakdown.
+4. **Scoring not trusted:** the fiat>crypto blanket in reserve/redemption
+   is not a defensible methodology. Fix: published per-class score matrix
+   (methodology v1.1), Josh gates the revision.
+
+## 2026-07-08 — v1.1 fixes applied (Claude, back to Josh gate)
+
+1. **Mechanism watch table added:** crvUSD, fxUSD, GHO, BOLD — curated
+   criterion documented (structurally distinct solvency design, ≥$25M).
+2. **Mechanism taxonomy:** 8 classes with plain-language explanations.
+   Reclassifications with score impact: USDe → delta-neutral synthetic
+   (79→73), USDD → issuer-managed crypto (77→64), DAI/USDS → hybrid
+   CDP+RWA. crvUSD soft-liquidation vs GHO hard-liquidation distinguished.
+3. **Full-file transparency:** component breakdown + both price sources now
+   rendered in the report; per-asset "what would make this less boring"
+   lines added (a PRD §5 requirement v0 had silently skipped).
+4. **Published score matrix** per class replaces the fiat>crypto blanket;
+   matrix changes now explicitly gated.
+5. **Pipeline fixes found during the work:** new `snapshot_sources.py`
+   (stdlib-only, Pi-ready — the 07-05 snapshots came from an uncommitted
+   process); expanded CoinGecko id list so RLUSD/USDD/USDY no longer
+   silently fall back to the DefiLlama price; BOLD's null DefiLlama price
+   handled by an explicit never-silent n/a rule.
+6. **verify.py upgraded to a total check:** rebuilds the entire report from
+   the committed snapshots and diffs line-by-line (only the generated_at
+   timestamp is exempt) instead of spot-checking numbers.
+
+Regenerated `weekly/2026-W28.md` on fresh 2026-07-08 snapshots; verify
+passes. Awaiting Josh's Gate 1 re-read of the v1.1 issue.
