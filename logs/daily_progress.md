@@ -374,3 +374,4 @@ One short entry per working day. What advanced + estimated spend.
 - Materially extended the command-center dashboard project file with a reusable strict re-check packet for the next 07:30 pass.
 - Updated `TASK_QUEUE.md` next action to the next parser re-check while keeping CC-24 at `todo`.
 - Estimated spend: $0.00 incremental API spend; local read-only verification only.
+- Goal check: advanced Command Center / Hermes setup + reliability — locked CC-24 to the exact 5-line verification packet and kept the loop draft-only, local, and safe.
