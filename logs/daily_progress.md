@@ -363,3 +363,10 @@ One short entry per working day. What advanced + estimated spend.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 - Advanced CC-24 draft-only verification by checking the live `MORNING_REPORT.md` still matches the exact 5-line shape, then syncing the queue and dashboard project next action to the next 07:30 re-check.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-08
+
+- Resynced the repo after the overnight reboot: stashed an untracked generated PDF, rebased onto `origin/main`, removed generated `dashboard/state.json` / `.next/` blockers, and completed `git pull --rebase` cleanly.
+- Refreshed the CI-1 decision packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, the `projects/career-income.md` status block, and `MORNING_REPORT.md` to the current morning decision packet.
+- Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh's approve/hold decision; nothing was sent.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

@@ -1,8 +1,8 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-07-07
+## Status — 2026-07-08
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-07-07 — IN-1 draft packet refreshed with a morning decision section for lead verification
+- **Last advanced:** 2026-07-08 — IN-1 draft packet refreshed as the current morning decision packet for lead verification
 - **Next action:** Josh reads the IN-1 decision packet and either approves lead verification or keeps it parked as a backstop
 - **Waiting on:** Josh’s verdict on lead verification for the IN-1 draft packet
 
