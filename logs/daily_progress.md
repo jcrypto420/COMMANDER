@@ -366,6 +366,8 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-07-08
 
+- Drafted `projects/badboys-idea-bank-cron-draft.md` for BB-26: a weekly Hermes idea-bank + MoA critics cron that generates 10 premises, filters them with a premise critic, turns survivors into 3–5 script cards, and runs a corny-detector before banking for Josh. Updated the BB-26 queue row and the Bad Boys cartoon-lab status note to keep the lane draft-only.
+- Goal check: advanced Bad Boys/Joycat — staged a cheap weekly premise-bank draft and left all outbound/public actions gated on Josh approval.
 - Resynced the repo after the overnight reboot: stashed an untracked generated PDF, rebased onto `origin/main`, removed generated `dashboard/state.json` / `.next/` blockers, and completed `git pull --rebase` cleanly.
 - Refreshed the CI-1 decision packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, the `projects/career-income.md` status block, and `MORNING_REPORT.md` to the current morning decision packet.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh's approve/hold decision; nothing was sent.
