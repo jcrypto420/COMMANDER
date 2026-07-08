@@ -12,7 +12,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
 | CI-1 | Career/Income | 1 | Job search per `jobs/SEARCH_PLAYBOOK.md` | doing | IN-1 draft-only backstop is ready; next safe step is Josh approval to verify 10 named leads (public URLs, roles, fit notes) and keep all outbound actions draft-only | **yes** to send |
-| CC-24 | Command Center | 1 | 5-line daily dispatch | todo | local-only draft verification is complete; next safe step is the next 07:30 run — count lines 1-5 only, confirm `Open:` / `Decide:` stay on line 4, keep exactly one bolded `Decision:`, then archive if clean | verify only |
+| CC-24 | Command Center | 1 | 5-line daily dispatch | todo | local-only draft verification passed; next safe step is the next 07:30 parser re-check — assert 5 lines, confirm `Open:` / `Decide:` stay on line 4, keep exactly one bolded `Decision:`, then archive if clean | verify only |
 | BB-25 | Bad Boys/Joycat | 1 | CARTOON LAB pilot — P4 "T+2" IN PRODUCTION | doing | Gate 1 passed (all 4 shipped). Josh rigs puppet+banker (Blender brief staged); Claude: storyboard, narrator casting, audio; then Gate 2 final cut | gate 2 |
 | BB-26 | Bad Boys/Joycat | 1 | Hermes idea-bank + MoA critics cron | todo | weekly cron: 10 premises → MoA premise-critic → script cards → MoA corny-detector → bank for Josh's gate; pinned gpt-5.4-mini, moa for critic passes only | **yes** |
 | BB-24 | Bad Boys/Joycat | 2 | First sellable artifact (sticker-pack v0) | todo | pick artifact + storefront path; DROP timing now gated on cartoon-lab signal (see growth mechanics) | no |

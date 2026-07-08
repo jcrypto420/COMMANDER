@@ -370,3 +370,7 @@ One short entry per working day. What advanced + estimated spend.
 - Refreshed the CI-1 decision packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, the `projects/career-income.md` status block, and `MORNING_REPORT.md` to the current morning decision packet.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh's approve/hold decision; nothing was sent.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- CC-24 draft-only lane: verified the live `MORNING_REPORT.md` with a local parser and confirmed it still has exactly 5 lines, with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
+- Materially extended the command-center dashboard project file with a reusable strict re-check packet for the next 07:30 pass.
+- Updated `TASK_QUEUE.md` next action to the next parser re-check while keeping CC-24 at `todo`.
+- Estimated spend: $0.00 incremental API spend; local read-only verification only.

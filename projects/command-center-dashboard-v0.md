@@ -1,19 +1,27 @@
 # Project: Commander Dashboard / Command Center UI v0
 
-## Status — 2026-07-07
+## Status — 2026-07-08
 
 - Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
-- CC-24 is now mirrored in `MORNING_REPORT.md` with the exact 5-line shape: `Status`, `Shipped this week`, `CI-1 update`, `Open:` / `Decide:`, and `**Decision:**`.
-- Verified the current `MORNING_REPORT.md` still lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and one bolded decision.
-- Next action: keep the dashboard draft local until Josh approves a live service restart; on the next 07:30 dispatch, re-run the exact 5-line check and archive if clean.
+- CC-24 live check passed: `MORNING_REPORT.md` still lands in exactly 5 lines, with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
+- Added a strict local re-check packet below so the next 07:30 pass can be rerun without re-deriving the criteria.
+- Next action: rerun the 07:30 parser check tomorrow; if the file still passes, keep CC-24 as `todo` and continue the exact-shape freeze.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
-### CC-24 draft-only verification checklist
+### CC-24 draft-only verification packet
 
-- Open `MORNING_REPORT.md` at the 07:30 run and count lines 1–5 only.
-- Confirm line 4 still contains both `Open:` and `Decide:` with no extra bullets.
-- Confirm line 5 contains exactly one bolded `Decision:` and no second bold block.
-- If drift appears, patch the template locally first; do not widen the report.
+```bash
+python3 - <<'PY'
+from pathlib import Path
+lines = Path('/home/josh/COMMANDER/MORNING_REPORT.md').read_text().splitlines()
+assert len(lines) == 5, f'expected 5 lines, got {len(lines)}'
+assert 'Open:' in lines[3] and 'Decide:' in lines[3], 'line 4 must contain Open: and Decide:'
+assert lines[4].count('**Decision:**') == 1, 'line 5 must contain exactly one bolded Decision label'
+print('CC-24 check passed')
+PY
+```
+
+- Pass criteria: 5 lines total; line 4 contains both `Open:` and `Decide:`; line 5 contains exactly one `**Decision:**` label; no extra bullets.
 
 ## Why this matters
 
