@@ -134,3 +134,39 @@ pass; no milestone starts before the previous one's acceptance is logged.
 Token gating, tips/payments, custom domain, social automation, paid data,
 historical backfills beyond 30d, covering >10 assets/protocols per surface.
 Scope creep dies here. Expansion only on Phase C signal.
+
+## 9. CRE onchain surface — "Boring Score feed" (Josh-directed, 2026-07-08)
+
+**Product:** the v1.1 scoring pipeline re-implemented as a Chainlink CRE
+workflow (TypeScript SDK, cron trigger): consensus-aggregated HTTP fetches of
+the same $0 sources → deterministic v1.1 scoring → scores written onchain /
+served per-request. The report becomes the free top-of-funnel; the feed is
+the paid product. Revenue rails: **x402 pay-per-call** (apps/agents pay to
+query scores via HTTP-triggered workflow) and **DataLink** (institutional
+feed licensing across 40+ chains) — both live Chainlink offerings as of
+2025-11 CRE GA. Buyers: protocol risk teams, DAO treasuries, structured
+products, agent stacks needing a stablecoin/oracle-risk signal.
+
+**Why us:** same unfair advantage as §1 (S&P oracle-risk methodology),
+plus the truth harness — a ratings feed whose every number is reproducible
+from committed snapshots is the institutional pitch.
+
+**Milestones (each gated like §6):**
+- **C0** — local proof, $0: port scoring to a CRE workflow, run in the free
+  local simulator against live sources; simulator output committed as
+  evidence. Needs Josh approval for: `cre` CLI + SDK install.
+- **C1** — testnet: request CRE Early Access (Josh account gate), deploy,
+  write weekly scores to a testnet contract.
+- **C2** — demand check before any spend: 3–5 design-partner conversations
+  + Chainlink grant/BUILD application (public-good angle). No mainnet
+  until someone credible says they'd consume it.
+- **C3** — mainnet + monetization (x402 first, DataLink conversation
+  second). LINK/gas/credit spend = explicit Josh approval per SECURITY.md.
+
+**Flags:** (a) known competitors in onchain risk signals: Chaos Labs risk
+oracles, Credora/RedStone ratings, Bluechip, S&P's own stablecoin
+assessments — differentiation is reproducibility + published methodology;
+(b) a programmatically-consumed ratings feed raises the liability bar vs a
+newsletter — legal framing is a Josh business-judgment item before C3;
+(c) sequencing: methodology v1.1 needs Josh's Gate 1 blessing before it
+ships onchain.
