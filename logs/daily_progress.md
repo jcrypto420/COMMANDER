@@ -383,4 +383,5 @@ One short entry per working day. What advanced + estimated spend.
 - Resynced the repo after the overnight reboot: completed `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, stashed an untracked generated PDF, and removed generated `dashboard/state.json` / `dashboard/commander_inbox.jsonl` blockers so the tree returned clean.
 - Refreshed the CI-1 draft-ahead packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, `projects/career-income.md`, `NOW.md`, and `MORNING_REPORT.md` to the current morning decision packet.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh's approve/hold decision; nothing was sent.
+- Corrected the morning dispatch shipped count from 1 to 5 so the CC-24 brief matches the shipped scoreboard.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
