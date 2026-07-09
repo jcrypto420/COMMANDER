@@ -18,12 +18,16 @@
   weatherman-grading content flywheel (Bad Boys production skills) →
   sponsorship; (3) Chainlink grant/showcase — clean canonical CRE demo
   (cron + consensus HTTP + EVM write); (4) career proof-of-work side effect.
-- **Next action:** CAPTURE PIPELINE LIVE (Josh GO 2026-07-08): first OKC
-  capture committed (`products/weather-oracle/captures/2026-07-08_1905/`,
-  10/11 sources; KFOR 403 — see `products/weather-oracle/SOURCES.md`).
+- **Next action:** CAPTURE PIPELINE LIVE, ALL 12 SOURCES (Josh GO
+  2026-07-08): KFOR SOLVED same evening — page needs curl's HTTP/2
+  fingerprint + full browser headers, AND the 4Warn team's broadcast 7-day
+  graphic found at a stable URL (`media.psg.nexstardigital.net/kfor/weather/
+  7day.jpg` — the human forecast itself; vision-pass extraction at grading,
+  JPEG is the receipt). Full capture: `captures/2026-07-08_2012/`.
   Next: Hermes installs Pi cron (WO-2), then Fox 25 + News 9 parsers.
   CRE layer deferred by Josh ("can do CRE later").
-- **Waiting on:** Josh's name pick (batch 2 offered 2026-07-08)
+- **Waiting on:** name (batches 1+2 rejected; next angle: name the thing
+  after it exists — working title stays "weather-oracle")
 
 ## MVP spec — OKC metro first (2026-07-08 session)
 

@@ -10,6 +10,9 @@ Captures, per run, into captures/<YYYY-MM-DD_HHMM>/ (local Central time):
   (official high/low) + latest observations for KOKC, KPWA, KTIK, KOUN.
 - Human forecasts, archived raw for later parsing: KOCO, News 9, Fox 25,
   KFOR weather pages (gzipped HTML). Parsers come later; history starts now.
+- KFOR 4Warn broadcast 7-day graphic (JPEG) — the meteorology team's own
+  published forecast at a stable URL; numbers extracted at grading time
+  (vision pass), the archived image is the receipt.
 
 Every source is independent — one failure never kills the run. The manifest
 records status/bytes/sha256 per source; grading must only ever use numbers
@@ -20,7 +23,9 @@ from __future__ import annotations
 import gzip
 import hashlib
 import json
+import subprocess
 import sys
+import time
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,6 +37,25 @@ CENTRAL = ZoneInfo('America/Chicago')
 API_UA = 'weather-oracle-capture/0.1 (forecast accountability research; stokesberryjosh@gmail.com)'
 BROWSER_UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
               '(KHTML, like Gecko) Chrome/126.0 Safari/537.36')
+
+# kfor.com 403s plain requests; this fingerprint set gets a 200 (verified
+# 2026-07-08). Referer + sec-ch-ua/sec-fetch are the load-bearing headers.
+BROWSER_HEADERS = {
+    'User-Agent': BROWSER_UA,
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Referer': 'https://www.google.com/',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'cross-site',
+    'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"',
+}
+
+
+def ua_headers(ua: str) -> dict:
+    return {'User-Agent': ua, 'Accept': '*/*'}
 
 OKC = 'latitude=35.4676&longitude=-97.5164'
 OPEN_METEO_URL = ('https://api.open-meteo.com/v1/forecast?' + OKC +
@@ -48,37 +72,70 @@ JSON_SOURCES = [
     ('obs_koun', 'https://api.weather.gov/stations/KOUN/observations/latest', API_UA),
 ]
 
+# (name, url, headers-or-None, use_curl). kfor.com's WAF passes curl's
+# HTTP/2 + TLS fingerprint but 403s urllib's HTTP/1.1 with identical
+# headers (verified 2026-07-08), so that one page fetches via curl.
 HTML_SOURCES = [
-    ('koco', 'https://www.koco.com/weather', BROWSER_UA),
-    ('news9', 'https://www.news9.com/weather', BROWSER_UA),
-    ('okcfox', 'https://okcfox.com/weather', BROWSER_UA),
-    ('kfor', 'https://kfor.com/weather/', BROWSER_UA),  # 403s as of 2026-07-08; keep trying
+    ('koco', 'https://www.koco.com/weather', None, False),
+    ('news9', 'https://www.news9.com/weather', None, False),
+    ('okcfox', 'https://okcfox.com/weather', None, False),
+    ('kfor', 'https://kfor.com/weather/', BROWSER_HEADERS, True),
+]
+
+# The 4Warn team's actual published 7-day graphic (highs/lows/PoP/wind) —
+# the human forecast itself, not a vendor widget.
+IMAGE_SOURCES = [
+    ('kfor_7day', 'https://media.psg.nexstardigital.net/kfor/weather/7day.jpg', None),
 ]
 
 CLI_INDEX_URL = 'https://api.weather.gov/products/types/CLI/locations/OKC'
 
 
-def fetch(url: str, ua: str) -> tuple[bytes, int, str]:
-    req = urllib.request.Request(url, headers={'User-Agent': ua, 'Accept': '*/*'})
+def fetch(url: str, headers: dict) -> tuple[bytes, int, str]:
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.read(), resp.status, resp.headers.get('Content-Type') or ''
 
 
-def capture(out_dir: Path, name: str, url: str, ua: str, gz: bool) -> dict:
+def curl_fetch(url: str, headers: dict) -> tuple[bytes, int, str]:
+    cmd = ['curl', '-sS', '-L', '-m', '30', '--compressed',
+           '-w', '\n%{http_code}\t%{content_type}']
+    for k, v in headers.items():
+        cmd += ['-H', f'{k}: {v}']
+    result = subprocess.run(cmd + [url], capture_output=True, timeout=45, check=True)
+    body, _, trailer = result.stdout.rpartition(b'\n')
+    status_s, _, ctype = trailer.decode(errors='replace').partition('\t')
+    return body, int(status_s), ctype
+
+
+def capture(out_dir: Path, name: str, url: str, headers: dict, kind: str,
+            use_curl: bool = False, retries: int = 1) -> dict:
     meta = {'url': url, 'retrieved_at': datetime.now(timezone.utc).isoformat()}
-    try:
-        body, status, ctype = fetch(url, ua)
-        meta.update(status=status, content_type=ctype, bytes=len(body),
-                    sha256=hashlib.sha256(body).hexdigest())
-        if gz:
-            meta['file'] = f'{name}.html.gz'
-            (out_dir / meta['file']).write_bytes(gzip.compress(body, 9))
-        else:
-            json.loads(body)
-            meta['file'] = f'{name}.json'
-            (out_dir / meta['file']).write_bytes(body)
-    except Exception as e:  # noqa: BLE001 — one bad source must not kill the run
-        meta['error'] = f'{type(e).__name__}: {e}'
+    for attempt in range(1, retries + 1):
+        try:
+            body, status, ctype = (curl_fetch if use_curl else fetch)(url, headers)
+            if status >= 400:
+                raise ValueError(f'HTTP {status}')
+            meta.update(status=status, content_type=ctype, bytes=len(body),
+                        sha256=hashlib.sha256(body).hexdigest())
+            if kind == 'html':
+                meta['file'] = f'{name}.html.gz'
+                (out_dir / meta['file']).write_bytes(gzip.compress(body, 9))
+            elif kind == 'image':
+                if not ctype.startswith('image/'):
+                    raise ValueError(f'expected image, got {ctype}')
+                meta['file'] = f'{name}.jpg'
+                (out_dir / meta['file']).write_bytes(body)
+            else:
+                json.loads(body)
+                meta['file'] = f'{name}.json'
+                (out_dir / meta['file']).write_bytes(body)
+            meta.pop('error', None)
+            break
+        except Exception as e:  # noqa: BLE001 — one bad source must not kill the run
+            meta['error'] = f'{type(e).__name__}: {e}'
+            if attempt < retries:
+                time.sleep(20)  # station WAFs (kfor) block intermittently; one cool-down retry
     return meta
 
 
@@ -86,11 +143,11 @@ def capture_cli_reports(out_dir: Path) -> dict:
     """Fetch the 2 most recent official CLI daily climate reports for OKC."""
     meta = {'url': CLI_INDEX_URL, 'retrieved_at': datetime.now(timezone.utc).isoformat()}
     try:
-        body, status, _ = fetch(CLI_INDEX_URL, API_UA)
+        body, status, _ = fetch(CLI_INDEX_URL, ua_headers(API_UA))
         index = json.loads(body)
         products = []
         for entry in (index.get('@graph') or [])[:2]:
-            pbody, _, _ = fetch(f"https://api.weather.gov/products/{entry['id']}", API_UA)
+            pbody, _, _ = fetch(f"https://api.weather.gov/products/{entry['id']}", ua_headers(API_UA))
             products.append(json.loads(pbody))
         meta.update(status=status, file='nws_cli_okc.json', count=len(products))
         (out_dir / 'nws_cli_okc.json').write_text(json.dumps(products, indent=2))
@@ -110,10 +167,14 @@ def main() -> int:
         'sources': {},
     }
     for name, url, ua in JSON_SOURCES:
-        manifest['sources'][name] = capture(out_dir, name, url, ua, gz=False)
+        manifest['sources'][name] = capture(out_dir, name, url, ua_headers(ua), kind='json')
     manifest['sources']['nws_cli_okc'] = capture_cli_reports(out_dir)
-    for name, url, ua in HTML_SOURCES:
-        manifest['sources'][name] = capture(out_dir, name, url, ua, gz=True)
+    for name, url, hdrs, use_curl in HTML_SOURCES:
+        manifest['sources'][name] = capture(out_dir, name, url, hdrs or ua_headers(BROWSER_UA),
+                                            kind='html', use_curl=use_curl, retries=2)
+    for name, url, hdrs in IMAGE_SOURCES:
+        manifest['sources'][name] = capture(out_dir, name, url, hdrs or ua_headers(BROWSER_UA),
+                                            kind='image', retries=2)
 
     (out_dir / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 
