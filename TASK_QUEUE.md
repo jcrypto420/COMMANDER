@@ -29,7 +29,8 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 | CC-23 | Command Center | 2 | Hermes browser chat | todo | phase 1 DONE 2026-07-02 (loopback :3012 + SSH tunnel, commander profile). Phase 2: password_hash + LAN bind + user systemd service (show unit file first) | **yes** |
 | CC-10 | Command Center | 2 | Private phone access (Tailscale-first) | todo | try Tailscale SSH / dashboard before any chat platform | **yes** |
 | CC-13 | Command Center | 3 | Test model-specific worker pattern | todo | run one cheap read-only worker and log result | no |
-| WO-1 | Weather Oracle | 4 | Revenue-option scan before build | todo | filler lane for silent running; identify profitable/grant/leverage angles | no |
+| WO-1 | Weather Oracle | 4 | Revenue-option scan before build | done→archive | DONE 2026-07-08 (Josh-directed CRE session): forecaster-accountability oracle, OKC-first — concept, business model, MVP spec all in `projects/weather-oracle.md` | no |
+| WO-2 | Weather Oracle | 2 | OKC nightly capture cron on Pi | todo | Josh GO 2026-07-08; capture proven from Mac (12/12 sources incl. KFOR — `products/weather-oracle/SOURCES.md`). HERMES DO: (1) from repo root run `python3 products/weather-oracle/capture_daily.py`, confirm output "12 ok" (2) run `sh scripts/install_weather_capture_cron.sh` — idempotent, targets 20:30 America/Chicago (3) log result. Mac→Pi SSH dropped 2026-07-08 ~20:25 CT before Pi-side verify could run; if any source 403s from the Pi, record it in SOURCES.md, do not retry-spam | no |
 | MA-1 | Market Activity | 3 | Market activity tracker | blocked | reopen after CI-1 + push lanes run smoothly for a week | no |
 
 ## Parking lot rules

@@ -54,6 +54,54 @@
   approvals) — skill scores need weeks of history; CRE commit layer bolts
   on at C0 after cre CLI install approval; x402/mainnet gated later.
 
+## Report design + marketing (drafted 2026-07-08, Josh session)
+
+### Design — the unit is the receipt
+
+1. **Weekly Scoreboard (anchor artifact):** one card. Masthead + week +
+   "OKC metro". Leaderboard rows: source | avg high-temp miss | rain
+   calibration | letter grade. Robots (NWS/ECMWF/GFS) interleaved with
+   channels and tagged "(robot)" — the standing storyline is humans vs a
+   free robot.
+2. **Receipt of the Week:** two panels — the archived forecast (4Warn
+   graphic crop / station capture, timestamp + sha) beside what the sky
+   did (official CLI number). One deadpan caption. This is the shareable
+   unit; the scoreboard is the habit unit.
+3. **Robot Check strip:** one sentence ("A free robot beat 3 of 4
+   stations this week").
+4. **Hype Index meter** per channel — rain/doom overcall bias. The
+   argue-at-work metric.
+5. **Fine print:** methodology line + "every number traces to an archived,
+   hash-stamped capture" (+ onchain commit ref once CRE lands).
+6. **Render targets:** design once (HTML), export three crops — 9:16
+   (TikTok/Reels/Shorts), 1:1 (X/IG card), 16:9/PDF (web + Gate Deck).
+   Reuses the Bad Boys render line.
+7. **Voice:** deadpan referee, Boring-Report-adjacent but warmer;
+   praise-forward when humans win. Never mean to people; grade
+   institutions. Recurring sign-off: "Outlook: revised."
+
+### Marketing — OKC playbook
+
+- **Audience order:** OKC normies (funny) → #okwx nerds/chasers
+  (credibility) → Polymarket weather traders (money) → the stations
+  themselves (earned media).
+- **Channels:** weekly 30s vertical video + X post into #okwx + Reddit
+  r/oklahomacity thread; Facebook page later (OK weather fandom is
+  FB-native) — account creation/posting = Josh gates.
+- **Cadence:** Sunday evening "Weekly Receipts" + opportunistic "receipt
+  pending…" teaser on big-miss days. Storm season = distribution spikes.
+- **Growth loops:** tag channels when they WIN (mets amplify wins; keeps
+  the brand a referee, not a dunk account); suburb shout-outs
+  (Edmond/Moore/Norman) for local shares; "who do we grade next" polls.
+- **Launch:** collect quietly 2–3 weeks → soft-launch with "we've been
+  keeping receipts since July 8" + season-to-date table → weekly cadence.
+  First public post = a real SHIPPED item on the NOW.md scoreboard.
+- **Monetization staging:** local sponsor line on the card after traction
+  ("This week's receipts brought to you by ___" — Braum's energy) → 10¢
+  x402 hyperlocal tier after the CRE layer → trader dashboard later.
+- **Pre-gate drafting:** content drafts and card renders can pile up ahead
+  of Josh's account/posting gates per the intensity principle.
+
 **Goal:** Keep warm unless it can become a profitable side income, grant /
 public-good project, portfolio asset, or product.
 
