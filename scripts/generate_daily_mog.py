@@ -18,6 +18,7 @@ import datetime
 import json
 import math
 import os
+import socket
 import sys
 import time
 import urllib.error
@@ -37,7 +38,7 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from daily_mog_layout import (
     render, pick, FACT_BANK, BABY_TIP_BANK, ON_THIS_DAY_BANK, EPIGRAPH_BANK,
-    WORD_OF_DAY_BANK, ARCANA_BANK, HISTORY_QUOTE_BANK,
+    WORD_OF_DAY_BANK, ARCANA_BANK, HISTORY_QUOTE_BANK, PRIMOSCAPES_SEASONAL_BANK,
 )
 
 COMMANDER_ROOT = Path(__file__).resolve().parents[1]
@@ -50,13 +51,18 @@ GATES_PATH = COMMANDER_ROOT / "gates" / "pending.json"
 UA = "DailyMogGenerator/1.0 (+local personal print artifact; no scraping at scale)"
 TIMEOUT = 15
 OKC_LAT, OKC_LON = 35.4676, -97.5164
-MAX_DECIDE_CTX_CHARS = 150
-MAX_DECIDE_TITLE_CHARS = 48  # unbounded gate titles could wrap the amber
-                              # box to 3 lines in the narrower golden-ratio
-                              # column —48 was verified (not guessed) to
-                              # hold at 2 lines worst-case via stress test
+MAX_DECIDE_TITLE_CHARS = 48  # DECIDE is one inline line ("DECIDE — <title>")
+                              # in the golden-ratio right column — 48 was
+                              # verified (not guessed) to hold via stress
+                              # test back when this was the boxed version;
+                              # still a safe bound now that it has more room,
+                              # not the box's padded width
 MAX_HN_CHARS = 55       # HN Top shares its line with "(pts, comments)"
 MAX_MOVER_NAME_CHARS = 30
+MAX_PRIMOSCAPES_CHARS = 155  # weather-flavor note + seasonal note combined —
+                               # this column is COL_MAJOR width (~4.26in),
+                               # meaningfully narrower than the page, so the
+                               # cap is tighter than it looks at first glance
 
 WMO_DESC = {
     0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast",
@@ -78,7 +84,13 @@ def fetch(url, headers=None):
     try:
         with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
             return resp.read()
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+    # socket.timeout on a read-phase (not connect-phase) timeout can leak
+    # through un-wrapped by URLError, and on Python <3.10 it's NOT the same
+    # class as TimeoutError (they were only unified in 3.10) — catching it
+    # explicitly is what actually makes every "degrade gracefully, never
+    # crash" SourceFailure path in this file true, not just usually true
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError,
+            socket.timeout) as exc:
         raise SourceFailure(str(exc)[:200]) from exc
 
 
@@ -211,6 +223,10 @@ def daylight_minutes(sunrise_iso, sunset_iso):
 
 # --- crypto (CoinGecko, keyless) ---
 def get_crypto_prices():
+    """Returns (ticker_items, raw_usd) — raw_usd exposes the plain float
+    prices (keyed by symbol) alongside the formatted ticker strings, so
+    downstream consumers (sats/$, Today's Bet grading) don't need a
+    duplicate API call for a number this function already fetched."""
     ids = "bitcoin,ethereum,chainlink,convex-finance,aerodrome-finance"
     url = (
         "https://api.coingecko.com/api/v3/simple/price?ids=" + ids +
@@ -225,10 +241,12 @@ def get_crypto_prices():
         "aerodrome-finance": ("AERO", lambda p: f"${p:,.2f}"),
     }
     items = []
+    raw_usd = {}
     for key, (sym, fn) in fmt.items():
         row = data[key]
         items.append((sym, fn(row["usd"]), row["usd_24h_change"] >= 0))
-    return items
+        raw_usd[sym] = row["usd"]
+    return items, raw_usd
 
 
 # --- commodities (Yahoo Finance keyless quote endpoint) ---
@@ -287,6 +305,52 @@ def truncate_at_word(text, max_chars):
     return cut.rstrip() + "…"
 
 
+# --- SIGNALS: sats/$, BTC halving countdown, ETH gas gwei, stablecoin peg
+# watch, OKC Thunder — one compact stat strip instead of five new sections,
+# to protect the one-page budget (Josh's call, 2026-07-07: "yes all that
+# besides 'today's number'"). Each returns a (label, value, color) triple
+# ready to drop straight into signals_strip(); color is None unless a value
+# is actually flagged (a real depeg, a Thunder result), matching the
+# ticker's up/down-color convention rather than decorating everything. ---
+NEXT_HALVING_BLOCK = 1_050_000  # the 5th halving — 210,000-block interval
+                                  # from genesis; the 4th was block 840,000
+                                  # (Apr 2024)
+AVG_BLOCK_MINUTES = 10
+
+
+def sats_per_dollar(btc_usd):
+    return round(100_000_000 / btc_usd)
+
+
+def get_btc_halving_signal():
+    height = fetch_json("https://mempool.space/api/blocks/tip/height")
+    if not isinstance(height, int):
+        raise SourceFailure(f"unexpected block height payload: {height!r}")
+    blocks_remaining = max(0, NEXT_HALVING_BLOCK - height)
+    days_remaining = round(blocks_remaining * AVG_BLOCK_MINUTES / 1440)
+    return "HALVING", f"~{days_remaining}d", None
+
+
+def get_eth_gas_signal():
+    payload = json.dumps({"jsonrpc": "2.0", "method": "eth_gasPrice",
+                           "params": [], "id": 1}).encode("utf-8")
+    req = urllib.request.Request(
+        "https://ethereum-rpc.publicnode.com", data=payload,
+        headers={"User-Agent": UA, "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError,
+            socket.timeout, json.JSONDecodeError) as exc:
+        raise SourceFailure(str(exc)[:200]) from exc
+    if "result" not in data:
+        raise SourceFailure(f"no result in gas price response: {data!r}")
+    gwei = int(data["result"], 16) / 1_000_000_000
+    value = f"{gwei:.2f}" if gwei < 10 else f"{gwei:.0f}"
+    return "GWEI", value, None
+
+
+
 # --- MARKET NOTES: Hacker News top story + DeFiLlama biggest mover + total
 # DeFi TVL trend. Each fetched independently so one failing doesn't take
 # the other two down with it (same pattern as get_news()). Returns raw data
@@ -304,13 +368,26 @@ def get_hn_top_story():
     return title, item.get("score", 0), item.get("descendants", 0)
 
 
+MAX_PLAUSIBLE_TVL_SWING_PCT = 40  # a >40% single-day move on a $100M+
+                                    # protocol is far more likely a DefiLlama
+                                    # data glitch (a wrapped LP/oracle price
+                                    # briefly misreported) than a real fund
+                                    # exodus — confirmed against Convex
+                                    # Finance 2026-07-08, whose own TVL
+                                    # series showed $487M -> $119M -> $167M
+                                    # within hours with zero matching news;
+                                    # excluded rather than reported (Josh's
+                                    # catch, 2026-07-08)
+
+
 def get_biggest_tvl_mover():
     """Returns (name, change_1d_pct, tvl_dollars)."""
     protocols = fetch_json("https://api.llama.fi/protocols")
     rows = [p for p in protocols
-            if p.get("change_1d") is not None and (p.get("tvl") or 0) > 100_000_000]
+            if p.get("change_1d") is not None and (p.get("tvl") or 0) > 100_000_000
+            and abs(p["change_1d"]) <= MAX_PLAUSIBLE_TVL_SWING_PCT]
     if not rows:
-        raise SourceFailure("no protocols matched the TVL/change_1d filter")
+        raise SourceFailure("no protocols matched the TVL/change_1d/plausibility filter")
     rows.sort(key=lambda p: abs(p["change_1d"]), reverse=True)
     top = rows[0]
     name = truncate_at_word(str(top.get("name", "?")), MAX_MOVER_NAME_CHARS)
@@ -331,10 +408,12 @@ def get_tvl_history():
     return caption, values_b
 
 
-# --- Decide box: the real top pending Gate Deck item, not a hardcoded
+# --- DECIDE: the real top pending Gate Deck item, not a hardcoded
 # placeholder — mirrors generate_dispatch.py's pending_gates() logic exactly,
 # so this print artifact and the phone dashboard never disagree on what's
-# actually pending ---
+# actually pending. Title only (the fuller context lives on the dashboard) —
+# collapsed from a boxed title+body to one inline line, Josh's call,
+# 2026-07-08: "get rid of the Decide section or make it much smaller." ---
 def get_top_pending_gate():
     if not GATES_PATH.exists():
         return None
@@ -342,18 +421,17 @@ def get_top_pending_gate():
     pending = [g for g in data.get("gates", []) if g.get("status") == "pending"]
     if not pending:
         return None
-    top = pending[0]
-    title = truncate_at_word(top.get("title", "Untitled"), MAX_DECIDE_TITLE_CHARS)
-    return title, truncate_at_word(top.get("context", ""), MAX_DECIDE_CTX_CHARS)
+    return truncate_at_word(pending[0].get("title", "Untitled"), MAX_DECIDE_TITLE_CHARS)
 
 
 # --- news RSS (proper XML scoping to <item>/<entry> — a naive regex over
 # every <title> tag grabs the feed's own channel title, not an article) ---
-MAX_HEADLINE_CHARS = 70  # bounds column height regardless of how long a
-                          # real headline happens to be — chosen so even 3
-                          # worst-case headlines stay at 2 wrapped lines each
-                          # (part of the one-page defensive check, verified
-                          # by the worst-case stress test, not a guess)
+MAX_HEADLINE_CHARS = 95  # bounds column height regardless of how long a
+                          # real headline happens to be — raised from 70 now
+                          # that THE MOG DIGEST only carries 2 headlines
+                          # (not 3), still verified by the worst-case stress
+                          # test, not a guess. Higher cap means less
+                          # mid-sentence "…" truncation on real headlines.
 
 
 def get_rss_headline(url):
@@ -539,8 +617,10 @@ def build():
 
     # --- markets ---
     ticker_items = []
+    raw_usd = {}
     try:
-        ticker_items += get_crypto_prices()
+        crypto_items, raw_usd = get_crypto_prices()
+        ticker_items += crypto_items
         sources_used.add("CoinGecko")
     except SourceFailure as exc:
         warnings.append(f"CoinGecko unavailable: {exc}")
@@ -582,16 +662,33 @@ def build():
         warnings.append(f"Random fact unavailable: {exc}")
         random_fact = "No fact fetched this morning — the fact API didn't respond."
 
+    # SIGNALS strip: each independent, same degrade-gracefully pattern as the
+    # ticker/news — a placeholder value on failure, never a fixed column count
+    # change and never a fabricated number. Trimmed to sats/$, halving, gas —
+    # night-shift/peg/Thunder pulled per Josh's call, 2026-07-08.
+    btc_price_value = raw_usd.get("BTC")
+    signals_items = [(
+        "SATS/$", f"{sats_per_dollar(btc_price_value):,}" if btc_price_value else "n/a", None
+    )]
+    try:
+        signals_items.append(get_btc_halving_signal())
+        sources_used.add("mempool.space")
+    except SourceFailure as exc:
+        warnings.append(f"BTC halving countdown unavailable: {exc}")
+        signals_items.append(("HALVING", "n/a", None))
+    try:
+        signals_items.append(get_eth_gas_signal())
+        sources_used.add("publicnode.com")
+    except SourceFailure as exc:
+        warnings.append(f"ETH gas price unavailable: {exc}")
+        signals_items.append(("GWEI", "n/a", None))
+
     news = get_news(sources_used)
     if not news:
         warnings.append("all news RSS sources failed")
         news = [("NOTICE", "News sources unavailable this morning.")]
 
-    gate = get_top_pending_gate()
-    if gate:
-        decide_title, decide_body = gate
-    else:
-        decide_title, decide_body = "Nothing pending", "Clear runway — no open gate right now."
+    decide_title = get_top_pending_gate() or "Nothing pending — clear runway right now."
 
     # MARKET NOTES: HN + biggest TVL mover, written as prose (matching the
     # rest of the page's editorial voice), each independent so one failing
@@ -629,7 +726,15 @@ def build():
     baby_tip = pick(BABY_TIP_BANK, day_ord)
     word_of_day = pick(WORD_OF_DAY_BANK, day_ord)
     arcana = pick(ARCANA_BANK, day_ord)
+    history_quote = pick(HISTORY_QUOTE_BANK, day_ord)
+
+    # Primoscapes note: real weather-conditioned flavor + a curated seasonal
+    # "this week in the garden" line, folded into one note rather than a
+    # separate section (Josh's call, 2026-07-07)
     ps_note = primoscapes_note(wx["precip_prob"], wx["current_temp"])
+    seasonal_note = PRIMOSCAPES_SEASONAL_BANK.get(now.month)
+    if seasonal_note:
+        ps_note = truncate_at_word(f"{ps_note} {seasonal_note}", MAX_PRIMOSCAPES_CHARS)
 
     ctx = {
         "date_str": now.strftime("%A, %B %-d, %Y"),
@@ -651,11 +756,12 @@ def build():
         "fact": fact,
         "baby_tip": baby_tip,
         "word_of_day": word_of_day,
-        "news": news[:1],  # trimmed from 2 to make real room for the new
-                            # verification seal — Market Notes already
-                            # carries two more crypto/tech data points
+        "news": news[:2],  # back to 2 — DECIDE shrank to one inline line and
+                            # Today's Bet/Peg/Thunder/Night are gone, so the
+                            # right column had a lot of dead trailing
+                            # whitespace vs. the left column (Josh's call,
+                            # 2026-07-08: "looks weird and incomplete")
         "decide_title": decide_title,
-        "decide_body": decide_body,
         "feature_title": "MARKET NOTES",
         "feature_body": feature_body,
         "tvl_line": tvl_line,
@@ -666,7 +772,8 @@ def build():
         "random_fact": random_fact,
         # a real, attributed line from a historically important person —
         # distinct from FORBIDDEN WISDOM's esoteric bent (Josh, 2026-07-07)
-        "history_quote": pick(HISTORY_QUOTE_BANK, day_ord),
+        "history_quote": history_quote,
+        "signals_items": signals_items,
     }
 
     render(ctx, out_path)

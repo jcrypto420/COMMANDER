@@ -65,12 +65,10 @@ def build():
         "news": [
             ("CRYPTO/TECH", "Onchain RWA issuance crosses $18B as tokenized "
                             "treasuries keep climbing"),
+            ("TECH", "A new open-source model claims state-of-the-art "
+                     "results on long-context reasoning benchmarks"),
         ],
         "decide_title": "Create the TikTok account this weekend?",
-        "decide_body": (
-            "Handle bebad4good, bio + avatar approved. ~30 min, "
-            "credentials stay yours. Publishing cork for the whole "
-            "cartoon lab."),
         "feature_title": SAMPLE_FEATURE_TITLE,
         "feature_body": SAMPLE_FEATURE_BODY,
         "tvl_line": SAMPLE_TVL_LINE,
@@ -80,6 +78,11 @@ def build():
         "btc_dominance": "56.1%",
         "random_fact": "SAMPLE DATA — not a real run, nothing here was fetched.",
         "history_quote": pick(HISTORY_QUOTE_BANK, day),
+        "signals_items": [
+            ("SATS/$", "1,572", None),
+            ("HALVING", "~645d", None),
+            ("GWEI", "0.07", None),
+        ],
     }
 
     render(ctx, OUT_PATH, pdf_title="THE DAILY MOG — v2 layout mockup (sample data)")

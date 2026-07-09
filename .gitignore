@@ -66,3 +66,6 @@ mirror/
 
 # Local review drop (mirror protocol) — never commit
 exports/review/
+
+# Cartoon-lab QC scratch (probe frames, contact sheets) — local only
+assets/badboys/cartoon-lab/*/tests/

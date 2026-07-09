@@ -35,6 +35,22 @@ FACT_BANK = [
     "Redbud trees, common in OKC yards, fix nitrogen in the soil around "
     "them — old farmers planted them as a free signal that the ground "
     "underneath was good for a garden.",
+    # Mental Model of the Day — merged into this bank's rotation rather than
+    # given its own section (Josh's call, 2026-07-07); same "real, checkable,
+    # curated" register as the facts around it, just a decision tool instead
+    # of trivia.
+    "Mental model — Chesterton's Fence: before removing a rule or process "
+    "that looks pointless, find out why it was put there. Most \"obviously "
+    "dumb\" fences were built to stop a problem you haven't hit yet.",
+    "Mental model — the Sunk Cost Fallacy: past investment of time or money "
+    "isn't a reason to continue something. Judge only the path forward from "
+    "here, as if starting fresh today.",
+    "Mental model — Inversion: instead of asking how to succeed, ask what "
+    "would guarantee failure, then avoid that. Avoiding stupidity is often "
+    "easier and more reliable than chasing brilliance.",
+    "Mental model — the Map is Not the Territory: a plan, a chart, or a "
+    "dashboard is a simplified model of reality, not reality itself. Trust "
+    "it less the moment it disagrees with what's actually on the ground.",
 ]
 
 BABY_TIP_BANK = [
@@ -65,7 +81,10 @@ ON_THIS_DAY_BANK = [
 ]
 
 # masthead epigraph — the paper's own voice, a daily creed. Short, confident,
-# builder-coded; no attribution (this is identity, not a quote).
+# builder-coded; no attribution (this is identity, not a quote). Includes
+# imperative-voice "Daily Directive" lines folded straight into this bank
+# rather than given a separate section (Josh's call, 2026-07-07) — same
+# creed-not-quote register, just phrased as a command instead of a maxim.
 EPIGRAPH_BANK = [
     "Small edges, stacked daily.",
     "Make something today that outlives the day.",
@@ -74,6 +93,11 @@ EPIGRAPH_BANK = [
     "Fortune favors the finished.",
     "Ideas are cheap. Mornings are not.",
     "Print it, ship it, prove it.",
+    "Ship the small thing before you chase the big one.",
+    "Finish one loop before you open another.",
+    "Do the boring rep nobody's watching.",
+    "Close the tab. Open the file.",
+    "Decide today's one thing before you check anything else.",
 ]
 
 # word of the day — real, checkable; a mix of useful and delightful-rare
@@ -138,6 +162,35 @@ HISTORY_QUOTE_BANK = [
     ("Give me liberty, or give me death!", "Patrick Henry, 1775"),
 ]
 
+# curated seasonal gardening notes, folded into the Primoscapes line as
+# "this week in the garden" — rotates by month, distinct from the real
+# weather-conditioned flavor text in primoscapes_note() (Josh's call,
+# 2026-07-07: "this week in the garden" as its own idea, merged in rather
+# than given a whole new section to protect the one-page budget)
+PRIMOSCAPES_SEASONAL_BANK = {
+    1: "Bare-root planting season — roots establish with no top growth "
+       "competing for energy.",
+    2: "Cut back last year's ornamental grasses before new blades come in.",
+    3: "Crabgrass preventer goes down when redbuds bloom, not by the "
+       "calendar.",
+    4: "Frost risk is fading, but OKC has burned people on early transplants "
+       "before.",
+    5: "Mow high this month — longer blades shade and root deeper.",
+    6: "Native prairie plantings hit their stride — the payoff month for "
+       "going native.",
+    7: "Water deep and infrequent, not daily — trains roots down where it "
+       "stays cool.",
+    8: "Hold fall fertilizer until temps break — feeding it now just "
+       "stresses the lawn.",
+    9: "Best month of the year to seed or sod in OKC.",
+    10: "Plant trees and shrubs now — roots keep growing until the ground "
+        "freezes.",
+    11: "Leave the leaves where practical — free soil-building a bagged "
+        "cleanup throws away.",
+    12: "Slowest month by design — plan next year's beds instead of "
+        "fighting dormant ground.",
+}
+
 
 def pick(bank, day_ordinal, salt=0):
     """Deterministic daily rotation, not per-run randomness: the same
@@ -156,12 +209,10 @@ RULE = HexColor("#C4B89F")    # slightly darker hairline for header underlines
 BRAND = HexColor("#4B3F8F")   # masthead / identity only
 GREEN = HexColor("#1B7A4D")   # price up / index reading "greed" side
 RED = HexColor("#A3402F")     # price down / index reading "fear" side
-AMBER = HexColor("#B8790A")   # decide accent only
-AMBER_BG = HexColor("#FBEBD2")
 
 # golden-ratio (phi = 1.618) two-column split, replacing the earlier
 # near-even 3.55/3.35 divide — same 6.9in interior width convention already
-# used by the ticker strip, folio row, and box() default width
+# used by the ticker strip and folio row
 PHI = 1.6180339887
 _CONTENT_WIDTH = 6.9 * inch
 COL_MAJOR = _CONTENT_WIDTH * PHI / (1 + PHI)
@@ -194,8 +245,10 @@ S = {
                                     textColor=MUTED, alignment=TA_CENTER, leading=12.5),
     "ticker": ParagraphStyle("tk", fontName="Helvetica", fontSize=8,
                               textColor=INK, alignment=TA_CENTER, leading=10.5),
+    "signal": ParagraphStyle("sig", fontName="Helvetica", fontSize=8,
+                              textColor=INK, leading=10.5),
     "section_h": ParagraphStyle("sh", fontName="Helvetica-Bold", fontSize=9.5,
-                                 textColor=BRAND, spaceBefore=13, spaceAfter=2),
+                                 textColor=BRAND, spaceBefore=11, spaceAfter=3),
     "body": ParagraphStyle("b", fontName="Times-Roman", fontSize=10.5,
                             textColor=INK, leading=15),
     "body_sm": ParagraphStyle("bs", fontName="Times-Roman", fontSize=9.5,
@@ -206,10 +259,8 @@ S = {
                                      textColor=INK, leading=13.5),
     "news_tag": ParagraphStyle("nt", fontName="Helvetica-Bold", fontSize=7,
                                 textColor=BRAND, leading=9.5),
-    "decide_title": ParagraphStyle("dt", fontName="Times-Bold", fontSize=11.5,
-                                    textColor=AMBER, leading=14),
-    "decide_ctx": ParagraphStyle("dc", fontName="Times-Roman", fontSize=9.7,
-                                  textColor=INK, leading=13.5),
+    "decide_inline": ParagraphStyle("di", fontName="Times-Roman", fontSize=9.7,
+                                     textColor=INK, leading=13.5),
     "index_line": ParagraphStyle("il", fontName="Helvetica", fontSize=8.7,
                                   textColor=INK, alignment=TA_CENTER, leading=11),
     "otd_line": ParagraphStyle("otd", fontName="Times-Italic", fontSize=8.7,
@@ -239,21 +290,6 @@ def sec(title):
                        spaceBefore=1, spaceAfter=6)]
 
 
-def box(flowables, bg, border_color, border_side="LINEBEFORE", width=6.9 * inch, pad=10):
-    t = Table([[flowables]], colWidths=[width])
-    style = [
-        ("BACKGROUND", (0, 0), (-1, -1), bg),
-        ("LEFTPADDING", (0, 0), (-1, -1), pad + 4),
-        ("RIGHTPADDING", (0, 0), (-1, -1), pad),
-        ("TOPPADDING", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
-    ]
-    if border_side:
-        style.append((border_side, (0, 0), (0, -1), 3, border_color))
-    t.setStyle(TableStyle(style))
-    return t
-
-
 def ticker_strip(items):
     """items: list of (symbol, price_str, is_up) tuples, exactly 7 for the
     layout to balance. Every item stacks symbol atop price+arrow — uniform,
@@ -270,8 +306,36 @@ def ticker_strip(items):
     t.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
         ("LINEAFTER", (0, 0), (-2, -1), 0.5, LINE),
-        ("TOPPADDING", (0, 0), (-1, -1), 5),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+        ("LEFTPADDING", (0, 0), (-1, -1), 3),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 3),
+    ]))
+    return t
+
+
+def signals_strip(items):
+    """items: list of (label, value, color_hex_or_None) tuples — compact
+    non-price stats (sats/$, halving countdown, gas gwei). Label and value
+    share ONE line (unlike ticker_strip's stacked symbol/price), and cells
+    use a fixed width rather than stretching to fill 6.9in — with only a
+    few items this reads as a tidy left-anchored strip instead of getting
+    stretched sparse across the full page width."""
+    cells = []
+    for label, value, color in items:
+        open_tag = f'<font color="{color}">' if color else ""
+        close_tag = "</font>" if color else ""
+        cells.append(Paragraph(
+            f'<font face="Helvetica-Bold" size="7.2">{label}</font> '
+            f'<font face="Courier" size="7.8">{open_tag}{value}{close_tag}'
+            f'</font>', S["signal"]))
+    t = Table([cells], colWidths=[1.5 * inch] * len(cells))
+    t.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+        ("LINEAFTER", (0, 0), (-2, -1), 0.5, LINE),
+        ("TOPPADDING", (0, 0), (-1, -1), 4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
         ("LEFTPADDING", (0, 0), (-1, -1), 3),
         ("RIGHTPADDING", (0, 0), (-1, -1), 3),
     ]))
@@ -379,12 +443,14 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     fear_greed_value, fear_greed_label, otd_year, otd_rest,
     weather_headline, uv_aqi_line, primoscapes_note, fact, baby_tip,
     word_of_day (term, pos, definition), news (list of (tag, headline)),
-    decide_title, decide_body, feature_title, feature_body, tvl_line,
+    decide_title, feature_title, feature_body, tvl_line,
     tvl_history (list of floats, oldest-first, empty list to omit the
     sparkline), arcana (quote, source), market_cap (formatted string, e.g.
     "$2.28T"), btc_dominance (formatted string, e.g. "56.1%"), random_fact
     (fresh live fact, not a curated bank), history_quote (quote, source —
-    a real attributed line from a historically important person)
+    a real attributed line from a historically important person), signals_items
+    (list of (label, value, color_or_None) tuples for the compact stat strip,
+    empty list to omit it)
     """
     doc = SimpleDocTemplate(
         out_path, pagesize=letter, leftMargin=0.6 * inch, rightMargin=0.6 * inch,
@@ -397,7 +463,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     # off." Small print at ~0.4in tall apparently doesn't hold up; text-only
     # nameplate again, back at full 42pt now that the icon isn't competing
     # for row height.)
-    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=8))
+    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=6))
     e.append(Paragraph("THE DAILY MOG", S["masthead"]))
     e.append(Spacer(1, 3))
     # epigraph flanked by floral ornaments matching the SUB ROSA seal, so the
@@ -406,7 +472,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     e.append(Paragraph(
         f'{orn}&nbsp;&nbsp;&#8220;{ctx["epigraph"]}&#8221;&nbsp;&nbsp;{orn}',
         S["epigraph"]))
-    e.append(Spacer(1, 5))
+    e.append(Spacer(1, 4))
 
     # timestamp sits right after the date — precise proof the page was
     # generated fresh this run, not reused from a prior boot (Josh's ask,
@@ -426,7 +492,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
     ]))
     e.append(folio)
-    e.append(Spacer(1, 6))
+    e.append(Spacer(1, 4))
 
     # sky line: small sun-arc + moon-disk icons flanking their own text,
     # rather than one plain line of numbers — the "laws of the universe"
@@ -445,7 +511,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         ("RIGHTPADDING", (0, 0), (-1, -1), 3),
     ]))
     e.append(sky_row)
-    e.append(Spacer(1, 6))
+    e.append(Spacer(1, 4))
 
     # ticker + Fear & Greed moved to the bottom of the page, by the
     # markets/quote close — Josh's call, 2026-07-07 ("bring fear and greed
@@ -454,15 +520,15 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     e.append(Paragraph(
         f'ON THIS DAY &#8212; <b>{ctx["otd_year"]}</b>:{ctx["otd_rest"]}',
         S["otd_line"]))
-    e.append(Spacer(1, 6))
+    e.append(Spacer(1, 4))
 
     # two columns
     left = []
     left += sec("WEATHER — OKC")
     left.append(Paragraph(ctx["weather_headline"], S["body"]))
-    left.append(Spacer(1, 3))
+    left.append(Spacer(1, 2))
     left.append(Paragraph(ctx["uv_aqi_line"], S["muted_sm"]))
-    left.append(Spacer(1, 3))
+    left.append(Spacer(1, 2))
     left.append(Paragraph(
         f'<b>Primoscapes note:</b> {ctx["primoscapes_note"]}', S["muted_sm"]))
 
@@ -489,14 +555,16 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         if i < len(news) - 1:
             right.append(HRFlowable(width="100%", thickness=0.4, color=LINE,
                                     spaceBefore=4, spaceAfter=4))
-    right.append(Spacer(1, 3))
+    right.append(Spacer(1, 4))
 
-    right += sec("DECIDE")
-    right.append(box([
-        Paragraph(ctx["decide_title"], S["decide_title"]),
-        Spacer(1, 2),
-        Paragraph(ctx["decide_body"], S["decide_ctx"]),
-    ], AMBER_BG, AMBER, width=COL_MINOR - 0.194 * inch, pad=6))
+    # DECIDE: was a full bordered box (title + context body) — collapsed to
+    # one inline line, no separate section header or box padding (Josh's
+    # call, 2026-07-08: "get rid of the Decide section or make it much
+    # smaller"). Still the real top pending Gate Deck item, just quieter.
+    right.append(Paragraph(
+        f'<font face="Helvetica-Bold" color="#B8790A">DECIDE</font> '
+        f'&#8212; {ctx["decide_title"]}',
+        S["decide_inline"]))
 
     # MARKET NOTES: prose, like every other section on the page — the old
     # "Label: value" spec-sheet format broke the editorial voice (Josh's
@@ -532,32 +600,35 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         ("LEFTPADDING", (1, 0), (1, 0), 14),
     ]))
     e.append(cols)
-    e.append(Spacer(1, 5))
+    e.append(Spacer(1, 3))
 
     # --- FORBIDDEN WISDOM: full-width arcane inscription, the page's closing
     # seal (renamed from "Sub Rosa" — Josh's call, 2026-07-07; this is his
     # own original phrasing from when he first asked for the section) ---
     arc_quote, arc_src = ctx["arcana"]
     e.append(HRFlowable(width="100%", thickness=1.2, color=BRAND, spaceAfter=1.5))
-    e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=6))
+    e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=5))
     e.append(Paragraph(
         '<font face="ZapfDingbats" size="8">&#10086;</font>&nbsp;&nbsp;&nbsp;'
         'FORBIDDEN WISDOM'
         '&nbsp;&nbsp;&nbsp;<font face="ZapfDingbats" size="8">&#10086;</font>',
         S["arcana_kicker"]))
-    e.append(Spacer(1, 3))
+    e.append(Spacer(1, 2))
     e.append(Paragraph(f"&#8220;{arc_quote}&#8221;", S["arcana_quote"]))
     e.append(Spacer(1, 2))
     e.append(Paragraph(f"&#8212; {arc_src}", S["arcana_attr"]))
-    e.append(Spacer(1, 3))
+    e.append(Spacer(1, 2))
 
-    # --- MARKETS: ticker + Fear & Greed/market cap/dominance, relocated
-    # here from the top of the page — Josh's call, 2026-07-07 ("bring fear
-    # and greed index down to bottom + bring the tickers down there too") ---
-    e.append(Spacer(1, 5))
-    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=5))
+    # --- MARKETS: ticker + SIGNALS strip + Fear & Greed/market cap/
+    # dominance, relocated here from the top of the page — Josh's call,
+    # 2026-07-07 ("bring fear and greed index down to bottom + bring the
+    # tickers down there too") ---
+    e.append(Spacer(1, 3))
+    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=4))
     e.append(ticker_strip(ctx["ticker_items"]))
-    e.append(Spacer(1, 4))
+    if ctx.get("signals_items"):
+        e.append(signals_strip(ctx["signals_items"]))
+    e.append(Spacer(1, 3))
     fg_color = FEAR_GREED_COLOR.get(ctx["fear_greed_label"].upper(), "#6B6255")
     e.append(Paragraph(
         f'<font face="Helvetica-Bold">CRYPTO FEAR &amp; GREED:</font> '
@@ -566,7 +637,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         f' &#183; Market Cap: {ctx["market_cap"]} &#183; BTC Dominance: '
         f'{ctx["btc_dominance"]}',
         S["index_line"]))
-    e.append(Spacer(1, 4))
+    e.append(Spacer(1, 3))
 
     # a fresh live fact every run, not a curated bank — pure delight, no
     # theme required (Josh's pick, 2026-07-07)
@@ -574,12 +645,14 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     e.append(Paragraph(
         f'{orn_fact}&nbsp;&nbsp;{ctx["random_fact"]}&nbsp;&nbsp;{orn_fact}',
         S["random_fact"]))
-    e.append(Spacer(1, 5))
+    e.append(Spacer(1, 3))
 
     # closing quote: a real, attributed line from an actual historically
     # important person — distinct from FORBIDDEN WISDOM's esoteric bent
     # (Josh, 2026-07-07: "make it an actual quote from historically
-    # important ppl"), replacing the source-name box he didn't like
+    # important ppl"), replacing the source-name box he didn't like. (A
+    # Bad Boys cast line alternated in here briefly — Josh killed it,
+    # 2026-07-08: "take out the 'from the cast'".)
     hist_quote, hist_src = ctx["history_quote"]
     seal = Table([[
         [Paragraph(
