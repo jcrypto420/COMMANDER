@@ -377,3 +377,10 @@ One short entry per working day. What advanced + estimated spend.
 - Updated `TASK_QUEUE.md` next action to the next parser re-check while keeping CC-24 at `todo`.
 - Estimated spend: $0.00 incremental API spend; local read-only verification only.
 - Goal check: advanced Command Center / Hermes setup + reliability — locked CC-24 to the exact 5-line verification packet and kept the loop draft-only, local, and safe.
+
+## 2026-07-09
+
+- Resynced the repo after the overnight reboot: completed `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, stashed an untracked generated PDF, and removed generated `dashboard/state.json` / `dashboard/commander_inbox.jsonl` blockers so the tree returned clean.
+- Refreshed the CI-1 draft-ahead packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, `projects/career-income.md`, `NOW.md`, and `MORNING_REPORT.md` to the current morning decision packet.
+- Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh's approve/hold decision; nothing was sent.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
