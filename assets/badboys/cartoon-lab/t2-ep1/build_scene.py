@@ -75,6 +75,26 @@ def rect_points(cx, cz, w, h):
             (cx + w / 2, cz + h / 2), (cx - w / 2, cz + h / 2)]
 
 
+def trapezoid_points(cx, cz, top_w, bottom_w, h):
+    """Mug body: wider at the rim (top), tapering slightly at the base."""
+    return [(cx - bottom_w / 2, cz - h / 2), (cx + bottom_w / 2, cz - h / 2),
+            (cx + top_w / 2, cz + h / 2), (cx - top_w / 2, cz + h / 2)]
+
+
+def handle_ribbon_points(cx, cz, r_outer, r_inner, angle_start_deg, angle_end_deg, segments=12):
+    """Open C-shaped handle loop (annulus segment), not a solid block."""
+    pts = []
+    for i in range(segments + 1):
+        t = angle_start_deg + (angle_end_deg - angle_start_deg) * i / segments
+        a = math.radians(t)
+        pts.append((cx + r_outer * math.sin(a), cz + r_outer * math.cos(a)))
+    for i in range(segments, -1, -1):
+        t = angle_start_deg + (angle_end_deg - angle_start_deg) * i / segments
+        a = math.radians(t)
+        pts.append((cx + r_inner * math.sin(a), cz + r_inner * math.cos(a)))
+    return pts
+
+
 # ---------------------------------------------------------------------------
 # Load base puppet file
 # ---------------------------------------------------------------------------
@@ -133,13 +153,14 @@ orig_arm = bpy.data.objects.get("Puppet_Rig")
 if orig_arm:
     bpy.data.objects.remove(orig_arm, do_unlink=True)
 
-# Banker A's ArmR/FistR sit at rig depth y=0.095/0.07 -- behind Head_Fill
+# Banker A's ForearmR/FistR sit at rig depth y=0.095/0.07 -- behind Head_Fill
 # (y=0.02), which is invisible-behind-the-face when the cup-raise gesture
-# swings the arm up over the head silhouette. Give just these two objects
+# curls the forearm up over the head silhouette. Give just these two objects
 # their own mesh data (single-user) and pull them in front of the head for
-# the whole shot; harmless at rest since the hanging arm never overlaps the
-# head there anyway.
-for name in ("ArmR", "FistR"):
+# the whole shot; harmless at rest since the hanging forearm never overlaps
+# the head there anyway. ArmR (upper arm) is untouched -- it barely moves
+# now that the elbow does the lifting, so it never needs to be in front.
+for name in ("ForearmR", "FistR"):
     obj = objs_a[name]
     obj.data = obj.data.copy()
     for v in obj.data.vertices:
@@ -160,33 +181,47 @@ green_mat = get_or_make_material("TerminalGreen", TERMINAL_GREEN, emission=True)
 # bbox center is ~(0.826, -1.833) with ~0.155 "radius" -- put the cup just
 # above/beside that so it reads as held, without covering the fist entirely.
 CUP_CX, CUP_CZ = 0.88, -1.68
+# Body: tapered mug silhouette (wider rim, narrower base) instead of a plain
+# box -- a rectangle read as a floating USB stick, not a cup (Josh's Gate 2
+# note). Outline slightly larger + further back, fill inset + closer to
+# camera, matching the rig's existing outline/fill layering convention.
 cup_outline = polygon_mesh(
     "Prop_Cup_Outline_A",
-    rect_points(CUP_CX, CUP_CZ, 0.34, 0.30),
+    trapezoid_points(CUP_CX, CUP_CZ, top_w=0.34, bottom_w=0.26, h=0.32),
     y=0.006, material=ink_mat, collection=ep_coll,
 )
 cup_fill = polygon_mesh(
     "Prop_Cup_Fill_A",
-    rect_points(CUP_CX, CUP_CZ, 0.26, 0.22),
+    trapezoid_points(CUP_CX, CUP_CZ, top_w=0.27, bottom_w=0.20, h=0.25),
     y=0.0, material=cream_mat, collection=ep_coll,
 )
-# tiny handle loop (simple flat tab, monoline-simple rather than a true ring)
-handle = polygon_mesh(
-    "Prop_Cup_Handle_A",
-    rect_points(CUP_CX + 0.22, CUP_CZ, 0.10, 0.14),
+# Handle: an actual open C-shaped loop (annulus segment), not a solid tab --
+# reads as a handle you could hook a finger through instead of a growth on
+# the cup's side.
+handle_outline = polygon_mesh(
+    "Prop_Cup_Handle_Outline_A",
+    handle_ribbon_points(CUP_CX + 0.155, CUP_CZ, r_outer=0.115, r_inner=0.02,
+                         angle_start_deg=-100, angle_end_deg=100),
     y=0.006, material=ink_mat, collection=ep_coll,
 )
-
-# Match the EXACT matrix_parent_inverse the rig already uses for ArmR-parented
-# objects (copied off the FistR_A duplicate) rather than re-deriving it --
-# Blender's bone parent-inverse is anchored at the bone TAIL, not the head, so
-# a hand-rolled bone.matrix_local.inverted() is off by one bone-length.
-armR_parent_inverse = objs_a["FistR"].matrix_parent_inverse.copy()
-for obj in (cup_outline, cup_fill, handle):
+handle_fill = polygon_mesh(
+    "Prop_Cup_Handle_Fill_A",
+    handle_ribbon_points(CUP_CX + 0.155, CUP_CZ, r_outer=0.095, r_inner=0.05,
+                         angle_start_deg=-95, angle_end_deg=95),
+    y=0.0, material=cream_mat, collection=ep_coll,
+)
+# Match the EXACT matrix_parent_inverse the rig already uses for
+# ForearmR-parented objects (copied off the FistR_A duplicate) rather than
+# re-deriving it -- Blender's bone parent-inverse is anchored at the bone
+# TAIL, not the head, so a hand-rolled bone.matrix_local.inverted() is off by
+# one bone-length. Cup is parented to the FOREARM now (not the whole arm) so
+# it rides with the hand when the elbow bends, not the relaxed upper arm.
+forearmR_parent_inverse = objs_a["FistR"].matrix_parent_inverse.copy()
+for obj in (cup_outline, cup_fill, handle_outline, handle_fill):
     obj.parent = arm_a
     obj.parent_type = "BONE"
-    obj.parent_bone = "ArmR"
-    obj.matrix_parent_inverse = armR_parent_inverse
+    obj.parent_bone = "ForearmR"
+    obj.matrix_parent_inverse = forearmR_parent_inverse
 
 # ---------------------------------------------------------------------------
 # Wall monitor prop

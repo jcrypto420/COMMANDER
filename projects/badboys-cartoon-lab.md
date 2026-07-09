@@ -1,13 +1,14 @@
 # BAD BOYS CARTOON LAB — Studio Pipeline v1 (2026-07-03)
 
-## Status — 2026-07-03
+## Status — 2026-07-06
 - **State:** ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine
-- **Last advanced:** 2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at `assets/badboys/rig/RIG_BRIEF.md`
+- **Last advanced:** 2026-07-06 — Stage 4 (animation) + Stage 5 (cut/export) DONE for T+2 Ep.1. Final rendered+muxed short at `assets/badboys/cartoon-lab/t2-ep1/t2ep1_master.mp4` (18.0s, 1080x1920, VO+SFX muxed, caption burned in).
 - **GATE 1 PASSED 2026-07-03 (evening):** Josh SHIPPED all four pilots via widget verdict. Production order: P4 "T+2" first, then P2 → P1 → P3.
-- **Next action:** STAGE 2 COMPLETE — T+2 storyboard + animatic spec at `assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md` (timed to actual VO stems, loop-seamed, Blender action list included). Stage 4 waits ONLY on the reworked banker rig from the Blender chat
-- **Waiting on:** rig test stills for on-model check; BB-23 account creation (publishing cork)
+- **Next action:** AWAITING JOSH GATE 2 on T+2 Ep.1 — ship/kill call on `t2ep1_master.mp4`. Several creative calls made where the storyboard was ambiguous (see BB-25 task note / Claude's Gate 2 message) — flagged, not silently improvised.
+- **Waiting on:** Josh's Gate 2 verdict; BB-23 account creation (publishing cork, unblocked only after ship)
 - **Stage 3 (T+2): VO COMPLETE** — Sarah stems at `assets/badboys/cartoon-lab/t2-ep1/vo/` (line1 + line2); SFX (coffee sip) at animatic timing
-- **Stage 4 asset: banker costume/body REJECTED by Josh 2026-07-05** — rework in progress in the Blender/Desktop chat; Stage 2 storyboard proceeds in parallel (uses canonical face, layout-only)
+- **Stage 4 asset: banker costume/body REJECTED by Josh 2026-07-05** — reworked and approved 2026-07-06
+- **Stage 4 (animation) + Stage 5 (cut/export): COMPLETE 2026-07-06** — banker costume rig puppeted via headless Blender scripts in `assets/badboys/cartoon-lab/t2-ep1/` (build_scene.py, animate_scene.py, render_silent.py, mux_audio.py, add_caption_and_export.py). Office-hum bed + optional terminal beep from the audio mix map were SKIPPED (no assets exist; generating them costs ElevenLabs credits, needs approval first) — VO + coffee sip sfx are muxed in. NOTE 2026-07-07: Josh rejected the animation quality at Gate 2 ("done trying to animate" in Blender) — motion-pipeline decision pending (see mirror/roadmap.md, local); stills remain approved.
 - **BB-26 draft packet staged 2026-07-08** — weekly Hermes idea-bank + MoA critics cron draft written to `projects/badboys-idea-bank-cron-draft.md`; waiting on Josh approval before any cron implementation
 
 Calibration (Josh, 2026-07-03): evergreen pipeline first (World Cup concept PARKED —
