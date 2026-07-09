@@ -35,11 +35,12 @@ def build():
         "vol_no": "VOL. 1 &#183; NO. 6",
         "epigraph": pick(EPIGRAPH_BANK, day),
         "sun_text": (
-            "Sunrise 6:31 AM &#183; Sunset 8:42 PM &#183; Daylight 14h 11m "
-            "(&#8722;2m)"),
+            "Sunrise&nbsp;6:31&nbsp;AM &#183; Sunset&nbsp;8:42&nbsp;PM &#183; "
+            "Daylight&nbsp;14h&nbsp;11m&nbsp;(&#8722;2m)"),
         "sun_progress_frac": 0.62,
-        "moon_text": ("Waxing Gibbous 78% &#183; Full moon Jul 19 "
-                      "&#183; Fall Eq. in 78d"),
+        "moon_text": ("Waxing&nbsp;Gibbous&nbsp;78% &#183; "
+                      "Full&nbsp;moon&nbsp;Jul&nbsp;19 &#183; "
+                      "Fall&nbsp;Eq.&nbsp;in&nbsp;78d"),
         "moon_phase_frac": 0.39,
         "ticker_items": [
             ("BTC", "$118,432", True), ("ETH", "$3,812", True),

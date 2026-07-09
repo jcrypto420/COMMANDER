@@ -225,8 +225,8 @@ def daylight_minutes(sunrise_iso, sunset_iso):
 def get_crypto_prices():
     """Returns (ticker_items, raw_usd) — raw_usd exposes the plain float
     prices (keyed by symbol) alongside the formatted ticker strings, so
-    downstream consumers (sats/$, Today's Bet grading) don't need a
-    duplicate API call for a number this function already fetched."""
+    downstream consumers (the sats/$ signal) don't need a duplicate API
+    call for a number this function already fetched."""
     ids = "bitcoin,ethereum,chainlink,convex-finance,aerodrome-finance"
     url = (
         "https://api.coingecko.com/api/v3/simple/price?ids=" + ids +
@@ -305,13 +305,13 @@ def truncate_at_word(text, max_chars):
     return cut.rstrip() + "…"
 
 
-# --- SIGNALS: sats/$, BTC halving countdown, ETH gas gwei, stablecoin peg
-# watch, OKC Thunder — one compact stat strip instead of five new sections,
-# to protect the one-page budget (Josh's call, 2026-07-07: "yes all that
-# besides 'today's number'"). Each returns a (label, value, color) triple
-# ready to drop straight into signals_strip(); color is None unless a value
-# is actually flagged (a real depeg, a Thunder result), matching the
-# ticker's up/down-color convention rather than decorating everything. ---
+# --- SIGNALS: sats/$, BTC halving countdown, ETH gas gwei — a compact stat
+# strip instead of a separate section per stat, to protect the one-page
+# budget (Josh's call, 2026-07-07: "yes all that besides 'today's number'").
+# Originally also carried a night-shift commit count, stablecoin peg watch,
+# and an OKC Thunder score — all three pulled per Josh's call, 2026-07-08.
+# Each returns a (label, value, color) triple ready to drop straight into
+# signals_strip(); color is None unless a value is actually flagged. ---
 NEXT_HALVING_BLOCK = 1_050_000  # the 5th halving — 210,000-block interval
                                   # from genesis; the 4th was block 840,000
                                   # (Apr 2024)
@@ -348,7 +348,6 @@ def get_eth_gas_signal():
     gwei = int(data["result"], 16) / 1_000_000_000
     value = f"{gwei:.2f}" if gwei < 10 else f"{gwei:.0f}"
     return "GWEI", value, None
-
 
 
 # --- MARKET NOTES: Hacker News top story + DeFiLlama biggest mover + total
@@ -587,16 +586,25 @@ def build():
                                                                  # pre-dawn or
                                                                  # post-dusk run
 
-    sun_text = (
-        f"Sunrise {sunrise_disp} &#183; Sunset {sunset_disp} &#183; "
-        f"Daylight {daylight_today // 60}h {daylight_today % 60}m ({trend_str})"
-    )
-    moon_text = (
-        f"{moon_name} {moon_pct}% &#183; Full moon "
-        f"{full_moon_date.strftime('%b %-d')} &#183; "
+    # Each clause gets its internal spaces converted to &nbsp; so a wrap (if
+    # one's ever needed) can only happen at the " · " separators, never
+    # mid-clause — fixes a real bug found 2026-07-08 where "Fall Eq. in 76d"
+    # wrapped to "...Fall Eq. in" / "76d", leaving an orphan word on its own
+    # line.
+    sunrise_clause = f"Sunrise {sunrise_disp}".replace(" ", "&nbsp;")
+    sunset_clause = f"Sunset {sunset_disp}".replace(" ", "&nbsp;")
+    daylight_clause = (
+        f"Daylight {daylight_today // 60}h {daylight_today % 60}m "
+        f"({trend_str})").replace(" ", "&nbsp;")
+    sun_text = f"{sunrise_clause} &#183; {sunset_clause} &#183; {daylight_clause}"
+
+    moon_phase_clause = f"{moon_name} {moon_pct}%".replace(" ", "&nbsp;")
+    full_moon_clause = (
+        f"Full moon {full_moon_date.strftime('%b %-d')}").replace(" ", "&nbsp;")
+    eq_clause = (
         f"{eq_name.replace('Equinox', 'Eq.').replace('Solstice', 'Sol.')} "
-        f"in {eq_days}d"
-    )
+        f"in {eq_days}d").replace(" ", "&nbsp;")
+    moon_text = f"{moon_phase_clause} &#183; {full_moon_clause} &#183; {eq_clause}"
 
     try:
         aqi = get_air_quality()

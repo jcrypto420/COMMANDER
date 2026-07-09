@@ -228,6 +228,17 @@ FEAR_GREED_COLOR = {
 # nameplate, body, headlines, pull-quote — for authentic newspaper/almanac
 # feel. Sans (Helvetica) reserved for kickers, data strips, and fine print,
 # so the two roles stay visually distinct.
+## Type scale: consolidated to a small set of harmonious sizes rather than a
+## new size per element (~20 near-duplicate sizes before this pass) — the
+## "modular scale" principle from classic editorial/Swiss-style typography:
+## hierarchy comes from a few deliberate, reused steps, not fine-grained
+## +0.2pt drift between elements that end up visually indistinguishable
+## anyway. KICKER (7.5) is every small bold-caps section label; ATTR (7.5)
+## is every quote-attribution line; both previously had 3-4 near-duplicate
+## sizes (7, 7.7, 7.5, 8) doing the same job.
+KICKER = 7.5
+ATTR = 7.5
+
 S = {
     "masthead": ParagraphStyle("mh", fontName="Times-Bold", fontSize=42,
                                 textColor=BRAND, leading=44, alignment=TA_CENTER),
@@ -235,11 +246,11 @@ S = {
                                textColor=INK, leading=14, alignment=TA_CENTER),
     "wod_term": ParagraphStyle("wt", fontName="Times-Bold", fontSize=12,
                                textColor=INK, leading=14),
-    "folio_side": ParagraphStyle("fs", fontName="Helvetica-Bold", fontSize=7.5,
+    "folio_side": ParagraphStyle("fs", fontName="Helvetica-Bold", fontSize=KICKER,
                                   textColor=MUTED, leading=10),
     "folio_center": ParagraphStyle("fc", fontName="Times-Bold", fontSize=9.5,
                                     textColor=INK, alignment=TA_CENTER, leading=11),
-    "folio_timestamp": ParagraphStyle("ft", fontName="Helvetica", fontSize=6.8,
+    "folio_timestamp": ParagraphStyle("ft", fontName="Helvetica", fontSize=7,
                                        textColor=MUTED, alignment=TA_CENTER, leading=8),
     "almanac_line": ParagraphStyle("al", fontName="Times-Roman", fontSize=8.7,
                                     textColor=MUTED, alignment=TA_CENTER, leading=12.5),
@@ -251,33 +262,31 @@ S = {
                                  textColor=BRAND, spaceBefore=11, spaceAfter=3),
     "body": ParagraphStyle("b", fontName="Times-Roman", fontSize=10.5,
                             textColor=INK, leading=15),
-    "body_sm": ParagraphStyle("bs", fontName="Times-Roman", fontSize=9.5,
-                               textColor=INK, leading=13.5),
     "muted_sm": ParagraphStyle("ms", fontName="Times-Italic", fontSize=9,
                                 textColor=MUTED, leading=12.5),
     "news_headline": ParagraphStyle("nh", fontName="Times-Bold", fontSize=11,
                                      textColor=INK, leading=13.5),
-    "news_tag": ParagraphStyle("nt", fontName="Helvetica-Bold", fontSize=7,
+    "news_tag": ParagraphStyle("nt", fontName="Helvetica-Bold", fontSize=KICKER,
                                 textColor=BRAND, leading=9.5),
-    "decide_inline": ParagraphStyle("di", fontName="Times-Roman", fontSize=9.7,
+    "decide_inline": ParagraphStyle("di", fontName="Times-Roman", fontSize=9,
                                      textColor=INK, leading=13.5),
     "index_line": ParagraphStyle("il", fontName="Helvetica", fontSize=8.7,
                                   textColor=INK, alignment=TA_CENTER, leading=11),
     "otd_line": ParagraphStyle("otd", fontName="Times-Italic", fontSize=8.7,
                                 textColor=MUTED, alignment=TA_CENTER, leading=11.5),
-    "arcana_kicker": ParagraphStyle("ak", fontName="Helvetica-Bold", fontSize=8,
+    "arcana_kicker": ParagraphStyle("ak", fontName="Helvetica-Bold", fontSize=KICKER,
                                      textColor=BRAND, alignment=TA_CENTER, leading=12),
     "arcana_quote": ParagraphStyle("aq", fontName="Times-Italic", fontSize=13,
                                     textColor=INK, alignment=TA_CENTER, leading=17),
-    "arcana_attr": ParagraphStyle("aa", fontName="Helvetica", fontSize=7.7,
+    "arcana_attr": ParagraphStyle("aa", fontName="Helvetica", fontSize=ATTR,
                                    textColor=MUTED, alignment=TA_CENTER, leading=10),
-    "seal_kicker": ParagraphStyle("sk", fontName="Helvetica-Bold", fontSize=8,
+    "seal_kicker": ParagraphStyle("sk", fontName="Helvetica-Bold", fontSize=KICKER,
                                    textColor=BRAND, alignment=TA_CENTER, leading=12),
     "random_fact": ParagraphStyle("rf", fontName="Times-Italic", fontSize=8.7,
                                    textColor=MUTED, alignment=TA_CENTER, leading=12),
     "history_quote": ParagraphStyle("hq", fontName="Times-Italic", fontSize=10.5,
                                      textColor=INK, alignment=TA_CENTER, leading=14),
-    "history_attr": ParagraphStyle("ha", fontName="Helvetica", fontSize=7.5,
+    "history_attr": ParagraphStyle("ha", fontName="Helvetica", fontSize=ATTR,
                                     textColor=MUTED, alignment=TA_CENTER, leading=9.5),
 }
 
@@ -451,10 +460,23 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     a real attributed line from a historically important person), signals_items
     (list of (label, value, color_or_None) tuples for the compact stat strip,
     empty list to omit it)
+
+    sun_text/moon_text should use &nbsp; WITHIN each clause (e.g.
+    "Sunrise&nbsp;6:22&nbsp;AM") and a normal breakable space only around the
+    " · " separators — this guarantees that if the line ever needs to wrap,
+    it breaks at a clause boundary instead of leaving a lone orphan word
+    dangling on its own line (a real bug found 2026-07-08: "Fall Eq. in 76d"
+    wrapped to "...Fall Eq. in" / "76d").
     """
+    # Bottom margin deliberately exceeds the top (0.36in vs 0.3in) —
+    # classical page-construction canons (Van de Graaf, Tschichold) always
+    # give a page's bottom margin more room than the top; a page whose
+    # content presses closer to the bottom edge than the top reads as
+    # bottom-heavy/cramped even when the imbalance is subtle. Left/right
+    # stay symmetric (a single sheet, not a bound spread with a gutter).
     doc = SimpleDocTemplate(
         out_path, pagesize=letter, leftMargin=0.6 * inch, rightMargin=0.6 * inch,
-        topMargin=0.3 * inch, bottomMargin=0.2 * inch, title=pdf_title)
+        topMargin=0.3 * inch, bottomMargin=0.36 * inch, title=pdf_title)
     e = []
 
     # --- masthead: centered nameplate, classic newspaper folio treatment ---
@@ -463,7 +485,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     # off." Small print at ~0.4in tall apparently doesn't hold up; text-only
     # nameplate again, back at full 42pt now that the icon isn't competing
     # for row height.)
-    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=6))
+    e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=6))
     e.append(Paragraph("THE DAILY MOG", S["masthead"]))
     e.append(Spacer(1, 3))
     # epigraph flanked by floral ornaments matching the SUB ROSA seal, so the
@@ -486,8 +508,8 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     ]], colWidths=[2.3 * inch, 2.3 * inch, 2.3 * inch])
     folio.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("LINEABOVE", (0, 0), (-1, 0), 1.4, BRAND),
-        ("LINEBELOW", (0, 0), (-1, 0), 0.6, LINE),
+        ("LINEABOVE", (0, 0), (-1, 0), 1.3, BRAND),
+        ("LINEBELOW", (0, 0), (-1, 0), 0.5, LINE),
         ("TOPPADDING", (0, 0), (-1, -1), 3),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
     ]))
@@ -496,13 +518,17 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
 
     # sky line: small sun-arc + moon-disk icons flanking their own text,
     # rather than one plain line of numbers — the "laws of the universe"
-    # touch Josh asked for, kept tiny and neutral (no accent colors)
+    # touch Josh asked for, kept tiny and neutral (no accent colors).
+    # Columns rebalanced ~evenly (was 3.3in/2.68in, sun-heavy) since real
+    # measurement showed moon_text is usually the WIDER of the two, not the
+    # sun — the old split was starving the side that needed more room
+    # (root cause of the "76d" orphan-wrap bug, 2026-07-08).
     sky_row = Table([[
         sun_arc(ctx["sun_progress_frac"]),
         Paragraph(ctx["sun_text"], S["almanac_line"]),
         moon_icon(ctx["moon_phase_frac"]),
         Paragraph(ctx["moon_text"], S["almanac_line"]),
-    ]], colWidths=[0.72 * inch, 3.3 * inch, 0.2 * inch, 2.68 * inch])
+    ]], colWidths=[0.72 * inch, 3.0 * inch, 0.2 * inch, 2.98 * inch])
     sky_row.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
         ("ALIGN", (0, 0), (0, 0), "CENTER"),
@@ -553,7 +579,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
         right.append(Paragraph(tag, S["news_tag"]))
         right.append(Paragraph(headline, S["news_headline"]))
         if i < len(news) - 1:
-            right.append(HRFlowable(width="100%", thickness=0.4, color=LINE,
+            right.append(HRFlowable(width="100%", thickness=0.5, color=LINE,
                                     spaceBefore=4, spaceAfter=4))
     right.append(Spacer(1, 4))
 
@@ -595,7 +621,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     cols = Table([[left, right]], colWidths=[COL_MAJOR, COL_MINOR])
     cols.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("LINEAFTER", (0, 0), (0, 0), 0.6, LINE),
+        ("LINEAFTER", (0, 0), (0, 0), 0.5, LINE),
         ("RIGHTPADDING", (0, 0), (0, 0), 14),
         ("LEFTPADDING", (1, 0), (1, 0), 14),
     ]))
@@ -606,7 +632,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     # seal (renamed from "Sub Rosa" — Josh's call, 2026-07-07; this is his
     # own original phrasing from when he first asked for the section) ---
     arc_quote, arc_src = ctx["arcana"]
-    e.append(HRFlowable(width="100%", thickness=1.2, color=BRAND, spaceAfter=1.5))
+    e.append(HRFlowable(width="100%", thickness=1.3, color=BRAND, spaceAfter=1.5))
     e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=5))
     e.append(Paragraph(
         '<font face="ZapfDingbats" size="8">&#10086;</font>&nbsp;&nbsp;&nbsp;'
@@ -624,7 +650,7 @@ def render(ctx, out_path, pdf_title="THE DAILY MOG"):
     # 2026-07-07 ("bring fear and greed index down to bottom + bring the
     # tickers down there too") ---
     e.append(Spacer(1, 3))
-    e.append(HRFlowable(width="100%", thickness=0.6, color=LINE, spaceAfter=4))
+    e.append(HRFlowable(width="100%", thickness=0.5, color=LINE, spaceAfter=4))
     e.append(ticker_strip(ctx["ticker_items"]))
     if ctx.get("signals_items"):
         e.append(signals_strip(ctx["signals_items"]))
