@@ -26,6 +26,13 @@
   JPEG is the receipt). Full capture: `captures/2026-07-08_2012/`.
   Next: Hermes installs Pi cron (WO-2), then Fox 25 + News 9 parsers.
   CRE layer deferred by Josh ("can do CRE later").
+- **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent
+  `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local
+  (fires on next wake if asleep) → `logs/weather_capture_mac.log`.
+  Capture-only, no git actions; sessions commit accumulated captures.
+  Remove with: `launchctl unload ~/Library/LaunchAgents/
+  com.commander.weather-capture.plist && rm` that file. Pi cron remains
+  the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; next angle: name the thing
   after it exists — working title stays "weather-oracle")
 
