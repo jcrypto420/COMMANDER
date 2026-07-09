@@ -18,9 +18,12 @@
   weatherman-grading content flywheel (Bad Boys production skills) →
   sponsorship; (3) Chainlink grant/showcase — clean canonical CRE demo
   (cron + consensus HTTP + EVM write); (4) career proof-of-work side effect.
-- **Next action:** Josh verdict on direction; on GO → C0: port to CRE
-  workflow, run in free local simulator (needs cre CLI install approval)
-- **Waiting on:** Josh's go/no-go + working-name pick
+- **Next action:** CAPTURE PIPELINE LIVE (Josh GO 2026-07-08): first OKC
+  capture committed (`products/weather-oracle/captures/2026-07-08_1905/`,
+  10/11 sources; KFOR 403 — see `products/weather-oracle/SOURCES.md`).
+  Next: Hermes installs Pi cron (WO-2), then Fox 25 + News 9 parsers.
+  CRE layer deferred by Josh ("can do CRE later").
+- **Waiting on:** Josh's name pick (batch 2 offered 2026-07-08)
 
 ## MVP spec — OKC metro first (2026-07-08 session)
 
