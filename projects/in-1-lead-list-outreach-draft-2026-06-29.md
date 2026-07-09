@@ -2,14 +2,14 @@
 
 Status: draft-only revenue backstop. No sending, posting, account creation, spend, or public action without Josh approval.
 
-## Morning decision packet — 2026-07-08
+## Morning decision packet — 2026-07-09
 
 Recommended decision: **APPROVE IN-1 VERIFY LEADS**
 
 Why this is the next best move:
 - It advances CI-1 without sending anything.
 - It turns the existing draft into a verifiable lead list Josh can review.
-- It keeps the lane draft-only while Josh is deciding about the Bad Boys real-asset path.
+- It keeps the lane draft-only after the overnight repo sync while Josh is deciding about the Bad Boys real-asset path.
 
 If approved, Commander will next build a 10-lead list with public URLs, correct roles, and fit notes, then draft one custom first line per lead.
 
