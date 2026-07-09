@@ -1,6 +1,6 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 decision packet / revenue backstop after overnight sync.
+**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 decision packet / revenue backstop after overnight sync; CC-24 re-check still passes.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
