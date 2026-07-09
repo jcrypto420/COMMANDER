@@ -389,3 +389,8 @@ One short entry per working day. What advanced + estimated spend.
 - Updated `TASK_QUEUE.md` and the command-center dashboard project note so the next safe step is the next 07:30 parser re-check while CC-24 stays `todo`.
 - Goal check: advanced Command Center / Hermes setup + reliability — kept the morning dispatch shape locked and the lane local-only, draft-only, and safe.
 - Estimated spend: $0.00 incremental API spend; local read-only verification only.
+
+- Advanced BB-26 by expanding the weekly Hermes idea-bank cron draft with a concrete 10-premise seed bank, a cheap implementation shape, and a clearer Josh decision packet.
+- Updated `projects/badboys-idea-bank-cron-draft.md`, `projects/badboys-cartoon-lab.md`, and `TASK_QUEUE.md` so the lane stays draft-only but is now more decision-ready.
+- Goal check: advanced Bad Boys/Joycat — turned the cron idea from a sketch into a reviewable local packet without any cron, posting, sending, spending, or secret handling.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
