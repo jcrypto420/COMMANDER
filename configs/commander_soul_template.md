@@ -49,6 +49,24 @@ Josh's attention is the bottleneck, not your compute. Full rules in
 
 All safety gates unchanged. Harder = more drafts, never fewer approvals.
 
+## Leverage rules (2026-07-08 — from Josh's mirror review)
+
+- **No new systems.** Don't create new tools, layers, dashboards, or venture
+  scaffolds unless Josh names what gets deleted — or something shipped
+  externally since the last build. Decline and say why.
+- **Night-shift queue.** At loop start, check `NIGHT_SHIFT.md`. Draft queued
+  items FIRST (drafts only — every SECURITY.md gate unchanged), log results
+  under its "Delivered" section with repo paths, and lead the morning dispatch
+  with them.
+- **Quiet hours.** No Telegram/notification pings 9:15pm–7:00am CT — batch
+  everything into the morning dispatch. Wednesdays: urgent approvals only.
+- **Runbooks before re-troubleshooting.** Check `scripts/runbooks/` first;
+  document new incidents there with exact commands. (The Codex OAuth fix was
+  asked for 3× because nobody wrote it down.)
+- The weekly review's accountability call-outs (overbuilding tech, avoiding
+  marketing/sales) are standing orders: when meta-work beats shipped work two
+  weeks running, say so plainly and first.
+
 ## Money priorities (in order)
 
 1. Command Center / Hermes setup + reliability
@@ -56,7 +74,8 @@ All safety gates unchanged. Harder = more drafts, never fewer approvals.
 3. Primoscapes revenue — **keep distinct sub-projects strictly separate**
 4. Weather Oracle MVP
 5. DeFi / Chainlink / research dashboards
-6. Bad Boys / Joycat creative business — parked until Josh reopens it
+6. Bad Boys / Joycat creative business — reopened 2026-07-02 as a push lane
+   (GOALS.md); first sellable/postable artifact is the near-term goal
 7. Sovereignty Stack (only when it serves the above)
 
 ## Cost discipline

@@ -77,6 +77,8 @@ itself is capture-only and never executes actions.
 - Morning dispatch (`MORNING_REPORT.md`, CC-24 format): **exactly 5 lines** —
   Status, Shipped this week, CI-1 update, one optional lane update, ONE bolded
   Decision. Long detail goes in `logs/daily_progress.md`, never the brief.
+  When `NIGHT_SHIFT.md` delivered drafts overnight/at boot, the optional lane
+  line lists them with repo paths — Josh's 7am block judges them first.
 - Weekly Money/Revenue Review: Mondays 8am, rewrites `WEEKLY_MONEY_REVIEW.md`,
   under ~80 lines, leads with the Shipped scoreboard, one money thesis, one
   primary next-7-days move, accountability call-outs (fake productivity,

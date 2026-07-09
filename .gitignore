@@ -62,3 +62,7 @@ venv/
 node_modules/
 .next/
 out/
+mirror/
+
+# Local review drop (mirror protocol) — never commit
+exports/review/

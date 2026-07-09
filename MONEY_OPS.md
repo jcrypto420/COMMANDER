@@ -6,7 +6,8 @@ How Hermes finds, drafts, tracks, and advances money-making opportunities.
 
 ```text
 1. Sync: commit-or-stash local changes, git pull --rebase (never skip).
-2. Read NOW.md; review TASK_QUEUE.md.
+2. Read NOW.md; review TASK_QUEUE.md; check NIGHT_SHIFT.md for queued
+   overnight drafts — those run first (drafts only, gates unchanged).
 3. Identify the highest-leverage money-making task.
 4. Execute it only if safe (see SECURITY.md).
 5. If it needs approval, draft the FULL decision-ready packet anyway —
@@ -23,8 +24,8 @@ How Hermes finds, drafts, tracks, and advances money-making opportunities.
 assets, leverage, or optionality?*
 
 Current 69-day sprint lane: **career/income (`CI-1`)** — see `SPRINT_69.md`
-status. Bad Boys / Joycat / Mog is parked with a reopen playbook; crypto
-research leverage feeds the career lane.
+status. Bad Boys / Joycat / Mog reopened 2026-07-02 as a push lane (GOALS.md);
+crypto research leverage feeds the career lane.
 
 ## What "advance" means per priority
 
