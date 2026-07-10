@@ -394,3 +394,10 @@ One short entry per working day. What advanced + estimated spend.
 - Updated `projects/badboys-idea-bank-cron-draft.md`, `projects/badboys-cartoon-lab.md`, and `TASK_QUEUE.md` so the lane stays draft-only but is now more decision-ready.
 - Goal check: advanced Bad Boys/Joycat — turned the cron idea from a sketch into a reviewable local packet without any cron, posting, sending, spending, or secret handling.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-10
+
+- Resynced the repo cleanly after stashing generated blockers and completing `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`.
+- Refreshed the CI-1 draft-ahead packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, `projects/career-income.md`, `NOW.md`, and `MORNING_REPORT.md` around the approve-leads decision.
+- Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh approval; nothing was sent.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

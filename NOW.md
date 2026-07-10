@@ -1,18 +1,18 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 decision packet / revenue backstop after overnight sync; CC-24 re-check still passes.
+**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 decision packet / revenue backstop after overnight rebase; CC-24 re-check still passes.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
 **Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
 created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
 default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed. CC-24 morning packet refreshed after the overnight sync and still matches the exact 5-line draft shape.
+passed. CC-24 morning packet refreshed after the overnight rebase and still matches the exact 5-line draft shape.
 
 ## Next 3 tasks
 
 1. Review `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, then if Josh
-   approves, verify 10 named leads with public URLs and roles.
+   approves, verify 10 named leads with public URLs, roles, and fit notes.
 2. Keep Bad Boys real-asset review as the fallback lane; no posting,
    account creation, sending, or spending without Josh.
 3. Keep the morning dispatch at 5 lines and update logs before commit/push.

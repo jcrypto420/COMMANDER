@@ -1,12 +1,12 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-07-09
+## Status — 2026-07-10
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-07-09 — IN-1 morning decision packet refreshed after repo sync
-- **Next action:** Josh reads the refreshed IN-1 decision packet and either approves lead verification or keeps it parked as a backstop
+- **Last advanced:** 2026-07-10 — IN-1 morning decision packet refreshed after overnight rebase
+- **Next action:** Josh reads the refreshed IN-1 decision packet and either approves 10-lead verification or keeps it parked as the CI-1 backstop
 - **Waiting on:** Josh’s verdict on lead verification for the IN-1 draft packet
 
-IN-1 draft packet is live in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; next safe step is Josh approval to verify 10 named leads.
+IN-1 draft packet is live in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; next safe step is Josh approval to verify 10 named leads with public URLs and fit notes.
 
 **Goal:** Protect and increase Josh's income, reduce stress, and turn his background into good-fit opportunities. Commander's operating principle is skeptical, evidence-based, and execution-oriented. It will not flatter, invent, or force Josh into misaligned roles.
 
