@@ -62,10 +62,19 @@ OPEN_METEO_URL = ('https://api.open-meteo.com/v1/forecast?' + OKC +
                   '&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max'
                   '&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=3'
                   '&models=ecmwf_ifs025,gfs_seamless')
+# Hourly per model — feeds the trust-weighted "today" curve (rain windows,
+# gust flags, heat index). HRRR (gfs_hrrr) is the short-range timing model.
+OPEN_METEO_HOURLY_URL = (
+    'https://api.open-meteo.com/v1/forecast?' + OKC +
+    '&hourly=temperature_2m,apparent_temperature,precipitation_probability,precipitation,wind_gusts_10m'
+    '&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=3'
+    '&models=ecmwf_ifs025,gfs_seamless,gfs_hrrr')
 
 JSON_SOURCES = [
     ('nws_forecast', 'https://api.weather.gov/gridpoints/OUN/97,94/forecast', API_UA),
+    ('nws_forecast_hourly', 'https://api.weather.gov/gridpoints/OUN/97,94/forecast/hourly', API_UA),
     ('openmeteo_models', OPEN_METEO_URL, API_UA),
+    ('openmeteo_hourly', OPEN_METEO_HOURLY_URL, API_UA),
     ('obs_kokc', 'https://api.weather.gov/stations/KOKC/observations/latest', API_UA),
     ('obs_kpwa', 'https://api.weather.gov/stations/KPWA/observations/latest', API_UA),
     ('obs_ktik', 'https://api.weather.gov/stations/KTIK/observations/latest', API_UA),
