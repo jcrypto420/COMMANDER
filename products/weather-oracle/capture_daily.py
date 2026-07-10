@@ -67,7 +67,8 @@ OPEN_METEO_URL = ('https://api.open-meteo.com/v1/forecast?' + OKC +
 OPEN_METEO_HOURLY_URL = (
     'https://api.open-meteo.com/v1/forecast?' + OKC +
     '&hourly=temperature_2m,apparent_temperature,precipitation_probability,precipitation,wind_gusts_10m'
-    '&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=3'
+    '&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch'
+    '&timezone=America%2FChicago&forecast_days=3'
     '&models=ecmwf_ifs025,gfs_seamless,gfs_hrrr')
 
 JSON_SOURCES = [
