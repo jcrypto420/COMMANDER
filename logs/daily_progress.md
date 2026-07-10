@@ -407,3 +407,8 @@ One short entry per working day. What advanced + estimated spend.
 - Refreshed the CI-1 draft-ahead packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, `projects/career-income.md`, `NOW.md`, and `MORNING_REPORT.md` around the approve-leads decision.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh approval; nothing was sent.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CC-24 draft-only lane: reran the strict parser check on `MORNING_REPORT.md` and confirmed the exact 5-line shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
+- Updated the CC-24 project status and queue row to record today's pass while keeping the lane `todo` with the next 07:30 re-check as the next action.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the morning dispatch shape locked and the lane local-only, draft-only, and safe.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
