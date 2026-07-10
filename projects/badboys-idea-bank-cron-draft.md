@@ -5,6 +5,7 @@
 - **Purpose:** turn the existing Bad Boys constitution + pipeline into a cheap weekly idea-bank loop that pre-filters premises before Josh ever sees them
 - **Source of truth:** `projects/badboys-cartoon-lab.md` is authoritative for style/constitution; this packet only packages the cron draft
 - **Draft progress 2026-07-09:** added a concrete 10-premise seed set and a cheap implementation shape so the packet is closer to decision-ready
+- **Draft progress 2026-07-10:** added a concrete weekly bank file shape and output schema so the packet now tells Josh exactly what the cron would write, where it would live, and what a weekly review would contain
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
@@ -106,6 +107,31 @@ For each survivor, generate a tiny card with:
   - kept premises
   - killed premises
   - follow-up production recommendation
+
+### Concrete weekly file shape v1
+
+- Suggested file name: `assets/badboys/idea-bank/weekly/YYYY-WW.md`
+- Suggested sections:
+  - `## Inputs`
+  - `## 10 premises generated`
+  - `## Keep/kill critic notes`
+  - `## Top 5 survivors`
+  - `## 3-5 script-card drafts`
+  - `## Corny-detector notes`
+  - `## Josh review summary`
+- Suggested row fields for each premise:
+  - premise
+  - target
+  - cast hint
+  - critic score
+  - keep/kill reason
+
+### Weekly review packet v1
+
+- 1 paragraph on why the week’s survivors were chosen
+- a short list of the 3–5 best cards
+- one line each on which asset variant each card wants next
+- one explicit next production step for Josh if he wants to greenlight a short
 
 ## Draft packet shape for Josh
 
