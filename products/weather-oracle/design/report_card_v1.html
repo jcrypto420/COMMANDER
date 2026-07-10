@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OKC forecast accountability — design v1</title>
+<style>
+  :root { --ink:#1a1917; --muted:#6b6862; --faint:#98948c; --accent:#a32d2d; --rule:#d8d4cc; --bg:#faf8f3; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system, "Helvetica Neue", sans-serif; width:860px; margin:0 auto; padding:44px 48px 36px; }
+  .top-rule { border-top:3px solid var(--ink); margin-bottom:14px; }
+  h1 { font-family:Georgia, serif; font-size:44px; font-weight:700; letter-spacing:-0.5px; }
+  h1 .pending { color:var(--faint); }
+  .dek { display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--ink); padding:6px 0 12px; margin-bottom:26px; }
+  .dek .left { font-size:15px; color:var(--muted); }
+  .dek .right { font-size:13px; color:var(--faint); text-align:right; }
+  h2 { font-size:13px; font-weight:700; letter-spacing:1.6px; text-transform:uppercase; color:var(--accent); margin:0 0 10px; }
+  h2 .sub { color:var(--muted); font-weight:400; letter-spacing:0.2px; text-transform:none; font-size:13px; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th { font-size:11px; letter-spacing:1.2px; text-transform:uppercase; color:var(--faint); font-weight:600; text-align:left; padding:6px 10px; border-bottom:1px solid var(--ink); }
+  td { padding:11px 10px; border-bottom:1px solid var(--rule); font-size:16px; }
+  th.n, td.n { text-align:right; }
+  .who { font-weight:700; }
+  .chip { display:inline-block; font-size:10px; font-weight:700; letter-spacing:1px; padding:2px 7px; border:1px solid var(--ink); border-radius:2px; margin-left:8px; vertical-align:2px; }
+  .chip.robot { color:#fff; background:var(--ink); }
+  .src { color:var(--faint); font-size:12.5px; }
+  .big { font-size:22px; font-weight:700; }
+  .callout { display:flex; gap:14px; margin:16px 0 30px; }
+  .callout div { flex:1; border:1px solid var(--rule); border-left:3px solid var(--accent); padding:10px 14px; font-size:13.5px; color:var(--muted); background:#fff; }
+  .callout b { color:var(--ink); }
+  .exhibit { margin:0 0 30px; }
+  .exhibit img { width:100%; border:1px solid var(--ink); display:block; }
+  .cap { font-size:12.5px; color:var(--muted); padding-top:7px; }
+  .cap code { font-family:ui-monospace, Menlo, monospace; font-size:11.5px; color:var(--ink); }
+  .two-col { display:flex; gap:36px; margin-bottom:30px; }
+  .two-col > div { flex:1; }
+  .ledger td { font-size:15px; padding:8px 10px; }
+  .soon { list-style:none; }
+  .soon li { padding:6px 0 6px 18px; border-bottom:1px solid var(--rule); font-size:14px; color:var(--muted); position:relative; }
+  .soon li::before { content:"—"; position:absolute; left:0; color:var(--accent); }
+  .fine { border-top:3px solid var(--ink); margin-top:6px; padding-top:12px; padding-bottom:28px; font-size:12px; color:var(--faint); display:flex; justify-content:space-between; gap:20px; }
+  tr.winner td { background:#fff; border-bottom:1px solid var(--ink); }
+  tr.winner td:first-child { box-shadow:inset 3px 0 0 var(--accent); }
+  .fine .motto { font-family:Georgia, serif; font-style:italic; color:var(--muted); white-space:nowrap; }
+</style>
+</head>
+<body>
+  <div class="top-rule"></div>
+  <h1><span class="pending">[NAME PENDING]</span></h1>
+  <div class="dek">
+    <div class="left">The Oklahoma City forecast accountability report &middot; night one, graded</div>
+    <div class="right">Design v1 &middot; forecasts archived Jul 8 &middot; verdict official Jul 9</div>
+  </div>
+
+  <h2>Night one &mdash; graded <span class="sub">&middot; called Wednesday evening &middot; judged by Thursday&rsquo;s official high: 98&deg;</span></h2>
+  <table>
+    <tr><th>Forecaster</th><th class="n">Called</th><th class="n">Miss</th><th class="n">Rain call</th><th>Night one</th></tr>
+    <tr class="winner">
+      <td class="who">KFOR 4Warn<span class="chip">HUMAN</span></td>
+      <td class="n big">99&deg;</td><td class="n big">+1&deg;</td><td class="n big">10%</td>
+      <td class="src"><b style="color:var(--accent)">WINNER</b> &mdash; also called the 77&deg; low exactly</td>
+    </tr>
+    <tr>
+      <td class="who">GFS<span class="chip robot">ROBOT</span></td>
+      <td class="n big">99&deg;</td><td class="n big">+1.4&deg;</td><td class="n big">8%</td>
+      <td class="src">robot runner-up (99.4&deg; raw)</td>
+    </tr>
+    <tr>
+      <td class="who">ECMWF<span class="chip robot">ROBOT</span></td>
+      <td class="n big">100&deg;</td><td class="n big">+2.4&deg;</td><td class="n big">37%</td>
+      <td class="src">about that 37% (100.4&deg; raw)</td>
+    </tr>
+    <tr>
+      <td class="who">NWS Norman<span class="chip">AGENCY</span></td>
+      <td class="n big">101&deg;</td><td class="n big">+3&deg;</td><td class="n big">15%</td>
+      <td class="src">warm by three</td>
+    </tr>
+  </table>
+  <div class="callout">
+    <div><b>Night one goes to the human.</b> KFOR&rsquo;s on-air 7-day missed the high by a single degree and hit the overnight low on the number. The robots have the rest of the season to respond.</div>
+    <div><b>It did not rain.</b> Official precipitation: trace. ECMWF&rsquo;s 37% is hereby the first entry on the Hype Index. Grades are permanent; nobody re-forecasts yesterday here.</div>
+  </div>
+
+  <h2>Exhibit A <span class="sub">&middot; what KFOR told Oklahoma City on Wednesday</span></h2>
+  <div class="exhibit">
+    <img src="kfor_7day.jpg" alt="KFOR 4Warn 7-day broadcast graphic, archived July 8">
+    <div class="cap">Archived 8:12 PM CT from KFOR&rsquo;s published broadcast graphic &middot; <code>sha256 1a43790cadf4&hellip;</code> &middot; the original file is the receipt. No take-backs.</div>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2>Official ledger <span class="sub">&middot; Thursday, July 9</span></h2>
+      <table class="ledger">
+        <tr><th>Reading</th><th class="n">Value</th><th class="n">Time</th></tr>
+        <tr><td>High (Will Rogers, official)</td><td class="n big">98&deg;</td><td class="n src">4:28 PM</td></tr>
+        <tr><td>Low (Will Rogers, official)</td><td class="n big">77&deg;</td><td class="n src">5:58 AM</td></tr>
+        <tr><td>Precipitation</td><td class="n big">trace</td><td class="n src">&mdash;</td></tr>
+      </table>
+      <div class="cap">Source: NWS daily climate report (CLI), the same official reading prediction markets settle on.</div>
+    </div>
+    <div>
+      <h2>Coming as history accrues</h2>
+      <ul class="soon">
+        <li>Weekly grades, A&ndash;F, per channel &mdash; permanent record</li>
+        <li>KOCO, News 9, Fox 25 rows (archives already collecting)</li>
+        <li>The Hype Index&trade; &mdash; who over-promises doom</li>
+        <li>Humans vs. robots season tally</li>
+        <li>Suburb-level verdicts: Edmond, The Village, Warr Acres</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fine">
+    <div>Every number traces to archived captures: forecasts <code>captures/2026-07-08_2012/</code>, verdict <code>captures/2026-07-10_0851/</code>. Forecasts are recorded before outcomes, never after. Channels are graded; named humans are not.</div>
+    <div class="motto">The sky keeps score. We keep receipts.</div>
+  </div>
+</body>
+</html>
