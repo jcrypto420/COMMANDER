@@ -400,6 +400,7 @@ One short entry per working day. What advanced + estimated spend.
 - Advanced BB-26 by hardening the weekly Hermes idea-bank cron draft: added a concrete weekly bank file shape, output schema, and review-packet structure so the packet is closer to a decision-ready cron proposal.
 - Updated the BB-26 queue row to keep it `todo` while making the next approval step more explicit.
 - Safety: draft-only/local-only; no posting, sending, spending, secrets, account creation, or service changes.
+- Goal check: advanced Bad Boys / Joycat — hardened the BB-26 weekly Hermes idea-bank cron draft into a more decision-ready packet without leaving draft-only scope.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
 
 - Resynced the repo cleanly after stashing generated blockers and completing `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`.
