@@ -69,15 +69,17 @@ rain_line = (f'rain window {ampm(rain_hours[0])}–{ampm(rain_hours[-1] + 1)} ({
              if rain_hours else ('a stray shower at most' if max_pop >= 15 else 'bone dry'))
 
 if max_gust_row['gust'] >= 25:
-    fine_print = (f'Gusts near {round(max_gust_row["gust"])} mph around {ampm(max_gust_row["h"]).lower()}. '
-                  'Secure the trampoline before lunch, not after.')
+    calm = next((ampm(h['h']).lower() for h in hours
+                 if h['h'] > max_gust_row['h'] and h['gust'] < 20), None)
+    fine_print = (f'Gusts near {round(max_gust_row["gust"])} mph around {ampm(max_gust_row["h"]).lower()}'
+                  + (f', easing by {calm}.' if calm else ' through the afternoon.'))
 elif max_feels_row and (max_feels_row['feels'] - peak['temp']) >= 4:
     fine_print = (f'Feels-like tops {round(max_feels_row["feels"])}° at {ampm(max_feels_row["h"]).lower()} — '
-                  f'{round(max_feels_row["feels"] - peak["temp"])}° hotter than any number said on TV.')
+                  f'{round(max_feels_row["feels"] - peak["temp"])}° above the air temperature.')
 elif rain_hours:
-    fine_print = f'The rain, if it comes, is a {ampm(rain_hours[0]).lower()}–{ampm(rain_hours[-1] + 1).lower()} problem. The morning is spoken for.'
+    fine_print = f'Rain, if any, arrives {ampm(rain_hours[0]).lower()}–{ampm(rain_hours[-1] + 1).lower()}. Dry until then.'
 else:
-    fine_print = 'No wind story, no rain story, no heat trick. A forecast with nothing to hide.'
+    fine_print = 'No wind, rain, or heat-index story today.'
 
 # ink-on-newsprint hour strip
 W, H, PAD_L, PAD_R, TOP, BOT = 764, 170, 30, 12, 36, 36
@@ -143,13 +145,12 @@ html = f"""<!DOCTYPE html>
   .coupon b {{ font:700 12px 'Courier New', monospace; letter-spacing:2px; color:var(--red); }}
   .coupon .scis {{ position:absolute; top:-12px; left:24px; background:var(--paper); padding:0 6px; font-size:14px; color:var(--faded); }}
   .wire {{ background:#efe6d2; border:1px solid var(--faded); padding:10px 14px; font:12.5px/1.7 'Courier New', monospace; text-transform:uppercase; white-space:pre-wrap; position:relative; margin-bottom:14px; }}
-  .stamp {{ position:absolute; right:18px; top:-14px; transform:rotate(-7deg); border:3px double var(--red); color:var(--red); padding:3px 12px; font:700 15px 'Courier New', monospace; letter-spacing:3px; background:var(--paper); opacity:.9; }}
   .foot {{ border-top:3px solid var(--ink); padding-top:6px; display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; }}
   .foot i {{ font:italic 12px Georgia, serif; text-transform:none; letter-spacing:0; }}
 </style></head><body>
   <div class="ears">
     <div>Vol. I &middot; No. {vol_no}</div>
-    <div>Price: free &middot; as all truth should be</div>
+    <div>Oklahoma City &middot; free</div>
   </div>
   <div class="masthead"><span>[Name Pending]</span></div>
   <div class="mastline">Oklahoma City&rsquo;s daily record of who called it &mdash; and who didn&rsquo;t</div>
@@ -157,11 +158,11 @@ html = f"""<!DOCTYPE html>
   <div class="dateline">
     <div>{now.strftime('%A, %B %-d, %Y')}</div>
     <div>OKC metro edition</div>
-    <div>Graded nightly &middot; no take-backs</div>
+    <div>Graded nightly &middot; archived forever</div>
   </div>
 
   <div class="headline">Human beats robots;<br>sky remains undefeated</div>
-  <div class="deck">KFOR took the field 3&ndash;0 last night &mdash; missed the high by one, hit the low on the number. ECMWF&rsquo;s <span class="rot">37% rain call</span> met a bone-dry sky and has been referred to the Hype Index.</div>
+  <div class="deck">KFOR took the night 3&ndash;0 &mdash; missed the high by one, hit the low exactly. ECMWF called <span class="rot">37% rain</span>; none fell. It leads the Hype Index.</div>
 
   <div class="cols">
     <div style="flex:1.15">
@@ -186,9 +187,9 @@ html = f"""<!DOCTYPE html>
 
   <div class="coupon"><span class="scis">&#9986;</span><b>THE FINE PRINT&nbsp;&nbsp;</b>{fine_print}</div>
 
-  <div class="wire"><div class="stamp">VERDICT FILED</div>OFF THE WIRE &mdash; NWS CLIMATE SUMMARY, OKLAHOMA CITY, JULY 9:
+  <div class="wire">OFF THE WIRE &mdash; NWS CLIMATE SUMMARY, OKLAHOMA CITY, JULY 9:
 MAXIMUM 98 AT 428 PM &middot; MINIMUM 77 AT 558 AM &middot; PRECIPITATION: TRACE.
-KFOR CALLED 99/77. THE ROBOTS HAVE BEEN NOTIFIED.</div>
+KFOR CALLED 99/77.</div>
 
   <div class="foot">
     <div>Every figure traces to archived captures ({cap_dir.name}) &middot; forecasts recorded before outcomes</div>

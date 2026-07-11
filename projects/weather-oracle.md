@@ -57,6 +57,15 @@
   tonight" per suburb (Edmond, Warr Acres, The Village); hyperlocal grain
   from 3km model data + nearest-station actuals, honestly labeled.
 - **Edge law:** grade channels/broadcasts, never named meteorologists.
+- **Voice law (Josh, 2026-07-10):** the paper is the straight man — "leave
+  the corniness to the newscaster." No stamps, no quips in utility copy,
+  no editorial winks. The humor budget is the headline verdict only, and
+  even that must be a finding ("SKY REMAINS UNDEFEATED"), not a joke.
+  Fine Print = plain declarative utility. The material is funny; we are not.
+- **Design law (2026-07-10):** newsprint/almanac direction locked (v3):
+  Didot masthead + ears, wood-type headline, Courier agate tables,
+  OFF-THE-WIRE teletype block quoting the official verdict, ink-line hour
+  strip. "Corpo" (system sans, hairlines, chips) is dead.
 - **Sequencing:** capture pipeline can start NOW ($0, read-only, no
   approvals) — skill scores need weeks of history; CRE commit layer bolts
   on at C0 after cre CLI install approval; x402/mainnet gated later.
