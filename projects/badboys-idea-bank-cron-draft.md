@@ -6,6 +6,7 @@
 - **Source of truth:** `projects/badboys-cartoon-lab.md` is authoritative for style/constitution; this packet only packages the cron draft
 - **Draft progress 2026-07-09:** added a concrete 10-premise seed set and a cheap implementation shape so the packet is closer to decision-ready
 - **Draft progress 2026-07-10:** added a concrete weekly bank file shape and output schema so the packet now tells Josh exactly what the cron would write, where it would live, and what a weekly review would contain
+- **Draft progress 2026-07-11:** added a first-run prompt skeleton and weekly review checklist so the cron proposal is now closer to a copy/paste implementation packet, not just a concept note
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
@@ -141,6 +142,25 @@ Keep the approval packet tiny:
 - **Why it matters:** reduces time spent on weak ideas before they reach Josh
 - **What it needs:** approval to implement the cron surface
 - **What Josh decides:** ship / kill / tweak cadence
+
+### First-run prompt skeleton
+
+Use this exact shape for the first weekly run once approved:
+
+1. Load `projects/badboys-cartoon-lab.md` and the last weekly bank note.
+2. Generate 10 short premises that obey the constitution and current lane context.
+3. Run the MoA premise-critic and write keep/kill reasons in the weekly file.
+4. Promote the top 5 to script-card drafts only if they pass the critic threshold.
+5. Run the corny-detector on those cards and save the best 3–5.
+6. Write one short Josh summary with the survivors and the next production step.
+
+### Weekly review checklist
+
+- Did the weekly file include all 10 premises?
+- Were keep/kill reasons written in plain English?
+- Did the top 5 survivors stay compatible with the constitution?
+- Did any card feel corny, winky, or over-explained?
+- Is the Josh summary short enough to read in one glance?
 
 ## Open questions for implementation later
 

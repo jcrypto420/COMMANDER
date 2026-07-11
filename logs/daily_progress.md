@@ -417,6 +417,9 @@ One short entry per working day. What advanced + estimated spend.
 
 - Completed the required overnight git sync recovery: `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, and cleanup of the generated `dashboard/state.json` blocker that had interrupted the first rebase attempt.
 - Refreshed the CI-1 draft-ahead lane by confirming the IN-1 decision packet is still the next high-leverage approval surface and keeping the morning dispatch in the exact 5-line CC-24 shape.
+- Expanded the BB-26 draft-only packet by adding a first-run prompt skeleton and weekly review checklist to `projects/badboys-idea-bank-cron-draft.md`, then aligned the BB-26 queue row and cartoon-lab status note to match.
+- Goal check: advanced Bad Boys/Joycat — made the weekly idea-bank cron proposal more copy/paste-ready without enabling cron, posting, sending, spending, or secret handling.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet remains ready for Josh approval; nothing was sent.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
