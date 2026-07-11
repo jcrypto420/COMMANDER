@@ -415,7 +415,11 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-07-11
 
-- Completed the required overnight git sync recovery: `git fetch --all`, `git rebase origin/main`, `git pull --rebase`, and cleanup of the generated `dashboard/state.json` blocker that had interrupted the first rebase attempt.
+- Completed the required overnight git sync recovery: `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, and cleanup of the generated `dashboard/state.json` blocker that had interrupted the first rebase attempt.
 - Refreshed the CI-1 draft-ahead lane by confirming the IN-1 decision packet is still the next high-leverage approval surface and keeping the morning dispatch in the exact 5-line CC-24 shape.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet remains ready for Josh approval; nothing was sent.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CC-24 draft-only lane: refreshed the reusable parser re-check packet for the morning brief and kept the lane `todo` with tomorrow's 07:30 verification as the next action.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the exact 5-line dispatch target locked and advanced the draft-only verification packet without changing lane status.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
