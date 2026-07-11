@@ -66,6 +66,15 @@
   Didot masthead + ears, wood-type headline, Courier agate tables,
   OFF-THE-WIRE teletype block quoting the official verdict, ink-line hour
   strip. "Corpo" (system sans, hairlines, chips) is dead.
+- **Palette law (2026-07-10, Josh: "Oklahoma blue and green, analog"):**
+  cream paper #f4eddd · blue-black ink #24303a · semantic colors only:
+  **Oklahoma blue #2f6ca8 = the sky** (section heads, THE SKY verdict rows)
+  · **prairie green #3e6b4f = receipts/provenance** · **burnt orange
+  #c65d21/#a83415 = ran hot** · **teal #2a7f7a = ran cold** · **gold
+  #a8770f ring = exact hit** · hype index stays warm (hot air). Reference
+  render: `design/weekly_scorecard_v4_1.html`. Punch card is the Side B
+  hero; AVG + HITS columns on the card, W–L lives in standings with the
+  round-robin explainer.
 - **Sequencing:** capture pipeline can start NOW ($0, read-only, no
   approvals) — skill scores need weeks of history; CRE commit layer bolts
   on at C0 after cre CLI install approval; x402/mainnet gated later.
