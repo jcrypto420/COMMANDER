@@ -2,7 +2,7 @@
 
 Status: draft-only revenue backstop. No sending, posting, account creation, spend, or public action without Josh approval.
 
-## Morning decision packet — 2026-07-10
+## Morning decision packet — 2026-07-11
 
 Recommended decision: **APPROVE IN-1 VERIFY LEADS**
 
