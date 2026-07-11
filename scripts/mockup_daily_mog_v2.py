@@ -7,15 +7,16 @@ generate_daily_mog.py) — this file only builds a sample context dict.
 import datetime
 
 from daily_mog_layout import (
-    render, pick, FACT_BANK, BABY_TIP_BANK, ON_THIS_DAY_BANK, EPIGRAPH_BANK,
-    WORD_OF_DAY_BANK, ARCANA_BANK, HISTORY_QUOTE_BANK,
+    render, pick, BABY_TIP_BANK, EPIGRAPH_BANK, WORD_OF_DAY_BANK, ARCANA_BANK,
+    HISTORY_QUOTE_BANK,
 )
 
 SAMPLE_FEATURE_TITLE = "MARKET NOTES"
 SAMPLE_FEATURE_BODY = (
     'Hacker News is buzzing about &#8220;StreetComplete: Fixing '
     'OpenStreetMap, one tiny quest at a time&#8221; (106 pts, 25 comments). '
-    "DeFi's biggest mover today is Felix Vaults, up 58.5% to $102.9M locked.")
+    "DeFi's biggest mover today is Felix Vaults, up 58.5% to $102.9M locked. "
+    "On your board, LINK leads the move, up 8.2% today.")
 SAMPLE_TVL_LINE = 'DeFi TVL 10d: $74.0B (&#8722;1.0%)'
 SAMPLE_TVL_HISTORY = [70.29, 69.93, 70.40, 69.24, 70.27, 72.65, 74.16, 74.36,
                       74.73, 73.99]  # billions, real 10-day pull
@@ -26,8 +27,6 @@ OUT_PATH = "/Users/joshstokesberry/COMMANDER/MORNING_REPORT_v2_mockup.pdf"
 def build():
     today = datetime.date(2026, 7, 6)
     day = today.toordinal()
-
-    otd_year, otd_rest = pick(ON_THIS_DAY_BANK, day).split(":", 1)
 
     ctx = {
         "date_str": "Monday, July 6, 2026",
@@ -50,8 +49,10 @@ def build():
         ],
         "fear_greed_value": 62,
         "fear_greed_label": "GREED",
-        "otd_year": otd_year,
-        "otd_rest": otd_rest,
+        "otd_year": "1969",  # SAMPLE — live pull is Wikipedia's "On this
+                              # day" feed for today's real calendar date
+        "otd_rest": (" NASA's Mariner 6 sends back the first close-up "
+                     "images of Mars."),
         "weather_headline": (
             "<b>78°F</b> / 61°F · Partly cloudy, 20% chance of afternoon "
             "storms. Wind SSW 12mph. Feels like a good porch-coffee "
@@ -60,14 +61,21 @@ def build():
         "primoscapes_note": (
             "soil's dry enough for prep work before the afternoon storms "
             "roll in — get the chop-and-drop done early."),
-        "fact": pick(FACT_BANK, day),
+        "fact": ("SAMPLE — live pull, independent 2nd fetch from the same "
+                 "random-fact API as the bottom-of-page line."),
         "baby_tip": pick(BABY_TIP_BANK, day),
         "word_of_day": pick(WORD_OF_DAY_BANK, day),
         "news": [
-            ("CRYPTO/TECH", "Onchain RWA issuance crosses $18B as tokenized "
-                            "treasuries keep climbing"),
-            ("TECH", "A new open-source model claims state-of-the-art "
-                     "results on long-context reasoning benchmarks"),
+            # kept to ~60 chars each — matches MAX_HEADLINE_CHARS, the real
+            # cap get_rss_headline() truncates to, so this sample never shows
+            # unrealistically long/untruncated text the live pipeline
+            # couldn't actually produce (real bug found 2026-07-09: a longer
+            # sample headline here silently broke the one-page stress test)
+            ("CRYPTO/TECH", "Onchain RWA issuance crosses $18B, still "
+                            "climbing"),
+            ("TECH", "New open-source model claims state-of-the-art "
+                     "reasoning"),
+            ("CRYPTO", "Layer-2 bridge volume hits a new quarterly high"),
         ],
         "decide_title": "Create the TikTok account this weekend?",
         "feature_title": SAMPLE_FEATURE_TITLE,

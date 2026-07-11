@@ -21,38 +21,11 @@ from reportlab.graphics.shapes import Drawing, Circle, PolyLine, Path, Group
 import math
 
 # --- content banks: small, curated, auditable — rotates daily via pick(),
-# never freshly improvised at generation time (same pattern for every bank) ---
-FACT_BANK = [
-    "Before “smart” contracts could see prices, weather, or scores, they "
-    "were blind to the outside world. Chainlink's first mainnet oracle call "
-    "landed May 30, 2019 — the same design still prices most of DeFi today.",
-    "Oklahoma tallgrass prairie species send roots down 10-15 feet, which is "
-    "why native plantings like Scissortail's new garden shrug off droughts "
-    "that kill imported lawn grass in weeks.",
-    "“Instant” bank transfers ran on 1970s plumbing until recently — "
-    "FedNow, the Fed's real-time payment rail, didn't launch until 2023, "
-    "over 50 years after Fedwire.",
-    "Redbud trees, common in OKC yards, fix nitrogen in the soil around "
-    "them — old farmers planted them as a free signal that the ground "
-    "underneath was good for a garden.",
-    # Mental Model of the Day — merged into this bank's rotation rather than
-    # given its own section (Josh's call, 2026-07-07); same "real, checkable,
-    # curated" register as the facts around it, just a decision tool instead
-    # of trivia.
-    "Mental model — Chesterton's Fence: before removing a rule or process "
-    "that looks pointless, find out why it was put there. Most \"obviously "
-    "dumb\" fences were built to stop a problem you haven't hit yet.",
-    "Mental model — the Sunk Cost Fallacy: past investment of time or money "
-    "isn't a reason to continue something. Judge only the path forward from "
-    "here, as if starting fresh today.",
-    "Mental model — Inversion: instead of asking how to succeed, ask what "
-    "would guarantee failure, then avoid that. Avoiding stupidity is often "
-    "easier and more reliable than chasing brilliance.",
-    "Mental model — the Map is Not the Territory: a plan, a chart, or a "
-    "dashboard is a simplified model of reality, not reality itself. Trust "
-    "it less the moment it disagrees with what's actually on the ground.",
-]
-
+# never freshly improvised at generation time (same pattern for every bank).
+# FACT_BANK and ON_THIS_DAY_BANK were retired 2026-07-10 (Josh's call: "no
+# rotation of facts thats so lame") in favor of live sources — Field Notes
+# is now a second independent live-fact fetch, On This Day pulls from
+# Wikipedia's own daily feed. See generate_daily_mog.py. ---
 BABY_TIP_BANK = [
     "The Moro reflex makes newborns startle and fling their arms — often "
     "enough to wake themselves up. Swaddling with arms in, not just legs, "
@@ -66,18 +39,175 @@ BABY_TIP_BANK = [
     "White noise works on babies because the womb was loud — closer to a "
     "running vacuum than a lullaby. Quiet isn't naturally soothing to a "
     "newborn; it's a preference they learn later.",
-]
-
-# real, checkable historical notes — same curated-bank pattern, not fetched
-ON_THIS_DAY_BANK = [
-    "1785: The Continental Congress adopts the dollar as the United "
-    "States' standard unit of currency.",
-    "1928: The first color motion picture, Walt Disney's 'Flowers and "
-    "Trees,' begins production.",
-    "1957: Althea Gibson becomes the first Black athlete to win a "
-    "Wimbledon singles title.",
-    "2016: The FDA approves the first artificial pancreas device for "
-    "type 1 diabetes.",
+    "Newborns are born with roughly 300 bones — many fuse together as they "
+    "grow, leaving adults with 206. The soft spots on a baby's skull are "
+    "the most visible version of this still-fusing process.",
+    "Newborns often can't produce tears when they cry for the first few "
+    "weeks — the tear ducts aren't fully functional yet. The cry is real "
+    "even when the tears aren't.",
+    "A newborn's grasp reflex is strong enough that they can briefly "
+    "support their own weight gripping a finger. It's involuntary, not "
+    "strength, and fades by around 5-6 months.",
+    "Babies are obligate nose-breathers for the first few months — they "
+    "haven't learned to mouth-breathe on cue yet, which is why a stuffy "
+    "nose hits an infant much harder than it hits an adult.",
+    "A newborn's sense of smell is remarkably developed at birth — babies "
+    "can recognize their own mother's scent within days, well before their "
+    "vision is sharp enough to recognize a face.",
+    "Newborns can't yet make enough vitamin K on their own — the gut "
+    "bacteria that helps synthesize it hasn't established itself yet. "
+    "That's the reason for the standard vitamin K shot after birth.",
+    "A newborn's kidneys can't concentrate urine as efficiently as an "
+    "adult's — part of why frequent small feeds work better than fewer "
+    "large ones; their systems are built for small volumes early on.",
+    "The soft spots on a baby's skull (fontanelles) aren't fused on "
+    "purpose — they let the head compress slightly during birth and leave "
+    "room for the rapid brain growth that follows.",
+    "Newborns are born nearsighted, with their sharpest focus around 8-12 "
+    "inches away — almost exactly the distance from a nursing baby's face "
+    "to its mother's.",
+    "Stroke a newborn's cheek and they'll turn toward it, mouth open — the "
+    "rooting reflex, an instinct that helps them find a nipple or bottle "
+    "without ever being taught.",
+    "Newborns cycle through shorter, more REM-heavy sleep than adults — "
+    "about 50-60 minutes per cycle, with roughly half spent in REM versus "
+    "about a fifth for adults.",
+    "A newborn's resting heart rate runs roughly 120-160 beats per minute "
+    "— more than double a typical adult's — which is normal, not "
+    "something to be alarmed by.",
+    "Newborns can recognize their mother's voice at birth, having learned "
+    "to distinguish it during the third trimester in the womb.",
+    "Babies are born with an innate preference for sweet tastes over "
+    "bitter or sour ones — it's there from day one, not learned.",
+    "A newborn's skin is significantly thinner than an adult's, which is "
+    "part of why they lose body heat faster and need extra warmth.",
+    "A baby's kneecap starts out as cartilage at birth and doesn't fully "
+    "harden into bone until somewhere around age 3 to 5.",
+    "Newborns rely partly on a special heat-generating tissue called "
+    "brown fat to help maintain body temperature, since they can't "
+    "shiver effectively yet.",
+    "Babies typically double their birth weight by about 5 months old "
+    "and triple it by their first birthday.",
+    "A newborn's head makes up roughly a quarter of their total body "
+    "length — closer to an eighth by adulthood.",
+    "It's normal for a newborn to lose 5-10% of their birth weight in "
+    "the first few days before regaining it by around two weeks old.",
+    "Newborns blink far less than adults — only about once or twice a "
+    "minute, versus roughly 15-20 times a minute for an adult.",
+    "By around 8 months old, babies can already recognize patterns in "
+    "speech sounds well enough to start picking individual words out of "
+    "a stream of talking.",
+    "The valve at the top of a baby's stomach is still immature at "
+    "birth, which is a big part of why spit-up is so common in the "
+    "first months.",
+    "Newborns have a reflex that makes them briefly hold their breath "
+    "and paddle if submerged in water — real, but not a substitute for "
+    "supervision or swim lessons.",
+    "A newborn's brain is about a quarter of its eventual adult weight "
+    "at birth, and reaches roughly three-quarters of adult brain weight "
+    "by age 2.",
+    "Newborns sleep 14 to 17 hours a day in total, but rarely more than "
+    "3 to 4 hours in a single stretch — their body clock hasn't caught "
+    "up yet.",
+    "A baby's circadian rhythm doesn't really start developing until 6 "
+    "to 8 weeks old, and isn't well established until 3 to 4 months.",
+    "Newborns can't produce much saliva until around 3 months old, "
+    "which is why early drooling usually isn't a sign of teething yet.",
+    "Studies show newborns just days old can pick out their own "
+    "mother's breast milk scent from another woman's.",
+    "Even minutes-old newborns will track a face-like pattern of shapes "
+    "more than a scrambled version of the same features.",
+    "A newborn's first smiles are usually reflexive, sometimes even "
+    "happening in sleep — the first true \"social smile\" typically "
+    "shows up around 6 to 8 weeks.",
+    "A baby is only medically classified as a \"newborn\" for the first "
+    "28 days of life — after that, the term is \"infant.\"",
+    "A baby's eye color can keep changing for up to a year after birth, "
+    "as the pigment in the iris keeps developing.",
+    "A baby typically grows about 10 inches in their first year — more "
+    "than in any other 12-month stretch of their life.",
+    "A newborn's hearing works fine at birth, but the ability to tell "
+    "where a sound is coming from takes months of practice for the "
+    "brain to learn.",
+    "Newborns don't sweat efficiently for the first few weeks, since "
+    "their sweat glands aren't fully working yet.",
+    "Mild jaundice is common in the first week of life because a "
+    "newborn's liver is still learning to process bilirubin efficiently.",
+    "Some newborns can imitate simple facial expressions, like sticking "
+    "out a tongue, within hours of being born.",
+    "Not every baby crawls — some go straight from sitting to walking, "
+    "and pediatricians consider both patterns completely normal.",
+    "The fine, soft hair sometimes present on a newborn's back and "
+    "shoulders, called lanugo, usually sheds before birth or within the "
+    "first few weeks after.",
+    "A baby's first tooth usually appears around 6 months old, but "
+    "anywhere from 3 months to a year is considered within normal range.",
+    "A newborn's fingernails are already fully formed and can be "
+    "surprisingly sharp — one reason mittens or gentle trims are common "
+    "in the first weeks.",
+    "A baby's sense of hearing is actually more developed than their "
+    "eyesight at birth — hearing has been \"in training\" since the "
+    "womb, while vision needs weeks to sharpen.",
+    "Newborns often develop a small red or pink patch on their eyelids "
+    "or the back of the neck — sometimes called a \"stork bite\" — that's "
+    "just a cluster of blood vessels and usually fades on its own.",
+    "A baby's soft spot on top of the head usually doesn't fully close "
+    "until somewhere between 9 and 18 months old.",
+    "It's normal for a newborn's hands and feet to look slightly "
+    "bluish in the first day or two after birth, as their circulation "
+    "adjusts to life outside the womb.",
+    "Newborns often have puffy eyelids for the first few days after "
+    "birth — a normal, temporary effect of the birth process, not a "
+    "sign of a problem.",
+    "A baby's different cries — hungry, tired, in pain — start out "
+    "sounding similar and become easier for caregivers to tell apart "
+    "with practice over time.",
+    "A baby's brain roughly triples the number of neural connections it "
+    "has within the first year — wiring that later gets pruned based on "
+    "which connections actually get used.",
+    "A baby can often recognize a face they've seen repeatedly within "
+    "just a few days, even though their overall vision is still blurry "
+    "at that stage.",
+    "Infants are born with more taste buds than adults have, including "
+    "some on the sides and back of the tongue that fade away with age.",
+    "A baby's umbilical cord stump typically dries up and falls off on "
+    "its own within one to three weeks after birth.",
+    "Newborns often develop mild acne-like bumps on the face in the "
+    "first few weeks — usually from residual maternal hormones, and it "
+    "typically clears up on its own.",
+    "A baby's swallowing reflex is present well before birth — by "
+    "around 12 weeks of pregnancy, a fetus is already swallowing "
+    "amniotic fluid.",
+    "Hiccups are extremely common before birth, and many babies keep "
+    "hiccuping frequently in the first months after birth too.",
+    "A baby's sense of balance, via the inner ear, is functional well "
+    "before birth — part of why gentle rocking is such an effective way "
+    "to soothe a newborn.",
+    "Newborns can only focus on one object at a time at first, and "
+    "don't develop the ability to smoothly track a moving object until "
+    "around 2 to 3 months old.",
+    "A baby is born able to notice basic musical rhythm — studies show "
+    "newborns can detect a steady beat and register when it's disrupted.",
+    "It's common for a newborn to sneeze often in the first weeks — "
+    "usually not from being sick, but from tiny nasal passages clearing "
+    "out fluid and mucus.",
+    "A newborn's very first stool, called meconium, is a thick, dark, "
+    "tar-like substance made up of everything swallowed in the womb — "
+    "not digested milk.",
+    "Newborns typically need to eat every 2 to 3 hours around the "
+    "clock for the first few weeks, since their small stomachs empty "
+    "quickly.",
+    "A baby's ear canal is short and straight at birth, which is part "
+    "of why ear infections become more common later once the canal's "
+    "angle changes with growth.",
+    "Infant motor development generally follows a head-to-toe pattern "
+    "— babies gain control of their head and neck before their trunk, "
+    "and their trunk before their legs.",
+    "A baby's two bottom front teeth are almost always the first to "
+    "come in, typically followed by the top two.",
+    "A newborn's voice box sits higher in the throat than an adult's, "
+    "which is part of why babies can breathe and swallow at almost the "
+    "same time — a setup that changes as they grow.",
 ]
 
 # masthead epigraph — the paper's own voice, a daily creed. Short, confident,
@@ -111,6 +241,122 @@ WORD_OF_DAY_BANK = [
     ("Eucatastrophe", "noun", "A sudden turn toward good that rescues a story "
      "from ruin — coined by J.R.R. Tolkien for the moment hope breaks "
      "through."),
+    ("Petrichor", "noun", "The earthy scent produced when rain falls on dry "
+     "soil."),
+    ("Hiraeth", "Welsh noun", "A homesickness for a home you can't return "
+     "to, or that never quite existed."),
+    ("Ineffable", "adjective", "Too great or extreme to be expressed or "
+     "described in words."),
+    ("Serendipity", "noun", "The occurrence of finding valuable or pleasant "
+     "things by chance."),
+    ("Gloaming", "noun", "Twilight; the soft, dim light just after sunset."),
+    ("Ephemeral", "adjective", "Lasting for a very short time."),
+    ("Limerence", "noun", "The state of being infatuated with someone, "
+     "often involving intrusive, obsessive thoughts about them."),
+    ("Ubuntu", "Nguni Bantu noun", "A philosophy roughly meaning \"I am "
+     "because we are\" — humanity expressed toward others."),
+    ("Wanderlust", "noun", "A strong, innate desire to travel and explore "
+     "the world."),
+    ("Halcyon", "adjective", "Denoting a past period regarded as idyllically "
+     "happy and peaceful."),
+    ("Verisimilitude", "noun", "The appearance of being true or real."),
+    ("Mellifluous", "adjective", "A sound that is sweet and smooth to "
+     "hear — literally \"flowing like honey.\""),
+    ("Hygge", "Danish noun", "A quality of coziness and comfortable "
+     "conviviality that engenders a feeling of contentment."),
+    ("Wabi-sabi", "Japanese noun", "A worldview centered on accepting "
+     "beauty in imperfection and impermanence."),
+    ("Saudade", "Portuguese noun", "A deep emotional state of nostalgic "
+     "longing for a person or thing that is absent."),
+    ("Tsundoku", "Japanese noun", "Acquiring reading materials and letting "
+     "them pile up unread."),
+    ("Fernweh", "German noun", "An ache for distant places; a craving to "
+     "travel."),
+    ("Komorebi", "Japanese noun", "Sunlight filtering through the leaves "
+     "of trees."),
+    ("Schadenfreude", "German noun", "Pleasure derived from another "
+     "person's misfortune."),
+    ("Gezellig", "Dutch adjective", "Cozy, convivial, and warmly sociable."),
+    ("Meraki", "Greek noun", "Doing something with soul, creativity, or "
+     "love — putting a piece of yourself into your work."),
+    ("Duende", "Spanish noun", "A heightened state of emotion and "
+     "authenticity, especially in art or performance."),
+    ("Forelsket", "Norwegian noun", "The euphoria of falling in love for "
+     "the first time."),
+    ("Ikigai", "Japanese noun", "A reason for being — the intersection of "
+     "what you love, what you're good at, and what sustains you."),
+    ("Waldeinsamkeit", "German noun", "The feeling of being alone in the "
+     "woods, at peace with nature."),
+    ("Sobremesa", "Spanish noun", "The time spent lingering at the table "
+     "after a meal, talking with the company you shared it with."),
+    ("Gigil", "Filipino noun", "The overwhelming urge to squeeze or pinch "
+     "something unbearably cute."),
+    ("Mångata", "Swedish noun", "The road-like reflection of moonlight on "
+     "water."),
+    ("Kalsarikänni", "Finnish noun", "Drinking alone at home in your "
+     "underwear, with no intention of going out."),
+    ("Pochemuchka", "Russian noun", "A person, often a child, who asks "
+     "too many questions."),
+    ("Utepils", "Norwegian noun", "A beer enjoyed outdoors, especially on "
+     "the first warm day of the year."),
+    ("Tarab", "Arabic noun", "A state of musically induced ecstasy or "
+     "enchantment."),
+    ("Jayus", "Indonesian noun", "A joke told so badly, and so unfunny, "
+     "that you can't help but laugh."),
+    ("Iktsuarpok", "Inuit noun", "The anticipation of waiting for someone, "
+     "checking again and again to see if they're coming."),
+    ("Torschlusspanik", "German noun", "Literally \"gate-closing panic\" — "
+     "the fear that time is running out to act."),
+    ("L'appel du vide", "French phrase", "Literally \"the call of the "
+     "void\" — the fleeting, intrusive urge to jump from a high place."),
+    ("Age-otori", "Japanese adjective", "To look worse after a haircut."),
+    ("Sturmfrei", "German adjective", "The freedom of having the place "
+     "entirely to yourself, with no one watching."),
+    ("Cafuné", "Brazilian Portuguese noun", "The act of tenderly running "
+     "your fingers through someone's hair."),
+    ("Sprezzatura", "Italian noun", "A practiced carelessness that makes "
+     "a difficult accomplishment look effortless."),
+    ("Kummerspeck", "German noun", "Literally \"grief bacon\" — excess "
+     "weight gained from emotional overeating."),
+    ("Shemomedjamo", "Georgian verb", "To keep eating past the point of "
+     "fullness because the food tastes too good to stop."),
+    ("Toska", "Russian noun", "A spiritual anguish, a longing with "
+     "nothing specific to long for."),
+    ("Abbiocco", "Italian noun", "The drowsiness that follows a big meal."),
+    ("Culaccino", "Italian noun", "The ring or mark left on a table by a "
+     "cold glass."),
+    ("Uitwaaien", "Dutch verb", "To take a walk in the wind, for the "
+     "simple pleasure of it."),
+    ("Resfeber", "Swedish noun", "The restless race of anxiety and "
+     "anticipation before a journey begins."),
+    ("Selcouth", "archaic English adjective", "Unfamiliar, rare, and "
+     "strange, yet marvelous."),
+    ("Susurrus", "noun", "A whispering or rustling sound."),
+    ("Peregrination", "noun", "A journey, especially a long or meandering "
+     "one."),
+    ("Crepuscular", "adjective", "Relating to twilight; active primarily "
+     "at dusk and dawn."),
+    ("Nyctophilia", "noun", "A strong preference for darkness or night."),
+    ("Eunoia", "Greek noun", "Beautiful thinking — a well mind; goodwill "
+     "toward others."),
+    ("Aeonian", "adjective", "Lasting for an immeasurably or indefinitely "
+     "long period of time; eternal."),
+    ("Vesper", "noun", "The evening star; also, evening prayer."),
+    ("Lucent", "adjective", "Glowing softly with light; luminous."),
+    ("Numinous", "adjective", "Having a strong religious or spiritual "
+     "quality; suggesting the presence of a divinity."),
+    ("Zephyr", "noun", "A soft, gentle breeze."),
+    ("Empyrean", "adjective/noun", "Relating to heaven or the sky; the "
+     "highest, purest part of heaven."),
+    ("Diaphanous", "adjective", "Light, delicate, and translucent."),
+    ("Effulgent", "adjective", "Shining brightly; radiant."),
+    ("Threnody", "noun", "A lament for the dead; a song of mourning."),
+    ("Somnolent", "adjective", "Sleepy and drowsy; also, tending to induce "
+     "sleep."),
+    ("Ethereal", "adjective", "Extremely delicate and light in a way that "
+     "seems too perfect for this world."),
+    ("Opalescent", "adjective", "Showing shifting colors as light catches "
+     "it at different angles, like an opal."),
 ]
 
 # sub rosa — the arcane/philosophical inscription. Real, attributed lines from
@@ -132,8 +378,7 @@ ARCANA_BANK = [
      "Seneca, Letters to Lucilius"),
     ("The impediment to action advances action. What stands in the way "
      "becomes the way.", "Marcus Aurelius, Meditations"),
-    ("Knowing others is intelligence; knowing yourself is true wisdom. "
-     "Mastering others is strength; mastering yourself is true power.",
+    ("Knowing others is intelligence; knowing yourself is true wisdom.",
      "Lao Tzu, Tao Te Ching"),
     ("Visit the interior of the earth, and by rectification thou shalt find "
      "the hidden stone.", "the alchemists' VITRIOL formula"),
@@ -141,6 +386,101 @@ ARCANA_BANK = [
      "makes a thing not a poison.", "Paracelsus, 1538"),
     ("Yesterday I was clever, so I wanted to change the world. Today I am "
      "wise, so I am changing myself.", "Rumi"),
+    ("Character is fate.", "Heraclitus"),
+    ("The Tao that can be told is not the eternal Tao.",
+     "Lao Tzu, Tao Te Ching"),
+    ("Out beyond ideas of wrongdoing and rightdoing, there is a field. "
+     "I'll meet you there.", "Rumi"),
+    ("The wound is the place where the Light enters you.", "Rumi"),
+    ("You have power over your mind — not outside events. Realize this, "
+     "and you will find strength.", "Marcus Aurelius, Meditations"),
+    ("If it is not right, do not do it; if it is not true, do not say it.",
+     "Marcus Aurelius, Meditations"),
+    ("It is not that we have a short time to live, but that we waste a "
+     "lot of it.", "Seneca, On the Shortness of Life"),
+    ("As is a tale, so is life: not how long it is, but how good it is, "
+     "is what matters.", "Seneca, Letters to Lucilius"),
+    ("Nothing is enough for the man to whom enough is too little.",
+     "Epicurus"),
+    ("It is impossible for a man to learn what he thinks he already "
+     "knows.", "Epictetus, Discourses"),
+    ("Man is disturbed not by things, but by the views he takes of them.",
+     "Epictetus, Enchiridion"),
+    ("The journey of a thousand miles begins with a single step.",
+     "Lao Tzu, Tao Te Ching"),
+    ("Water is the softest thing, yet it can penetrate mountains and "
+     "earth.", "Lao Tzu, Tao Te Ching"),
+    ("Control your temper.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("The All is Mind; the Universe is Mental.",
+     "The Kybalion, 1908 — the Hermetic Principle of Mentalism"),
+    ("Follow God.", "one of the 147 Delphic maxims, Temple of Apollo"),
+    ("Obey the law.", "one of the 147 Delphic maxims, Temple of Apollo"),
+    ("Worship the gods.", "one of the 147 Delphic maxims, Temple of Apollo"),
+    ("Respect your parents.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("Be gracious.", "one of the 147 Delphic maxims, Temple of Apollo"),
+    ("Use time sparingly.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("Foresee the future.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("Despise insolence.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("Be discreet.", "one of the 147 Delphic maxims, Temple of Apollo"),
+    ("Guard what is yours.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("Shun what belongs to others.", "one of the 147 Delphic maxims, "
+     "Temple of Apollo"),
+    ("Listen, and understand.", "one of the 147 Delphic maxims, Temple of "
+     "Apollo"),
+    ("Do not tire of learning.", "one of the 147 Delphic maxims, Temple "
+     "of Apollo"),
+    ("The best revenge is to be unlike him who performed the injury.",
+     "Marcus Aurelius, Meditations"),
+    ("Confine yourself to the present.", "Marcus Aurelius, Meditations"),
+    ("How much more grievous are the consequences of anger than the "
+     "causes of it.", "Marcus Aurelius, Meditations"),
+    ("Everything we hear is an opinion, not a fact. Everything we see is "
+     "a perspective, not the truth.", "Marcus Aurelius, Meditations"),
+    ("Very little is needed to make a happy life; it is all within "
+     "yourself, in your way of thinking.", "Marcus Aurelius, Meditations"),
+    ("The universe is change; our life is what our thoughts make it.",
+     "Marcus Aurelius, Meditations"),
+    ("Accept the things to which fate binds you, and love the people "
+     "with whom fate brings you together.", "Marcus Aurelius, Meditations"),
+    ("He who is brave is free.", "Seneca, Letters to Lucilius"),
+    ("Every new beginning comes from some other beginning's end.",
+     "Seneca, Letters to Lucilius"),
+    ("While we wait for life, life passes.", "Seneca, Letters to Lucilius"),
+    ("Difficulties strengthen the mind, as labor does the body.",
+     "Seneca, Letters to Lucilius"),
+    ("He suffers more than necessary who suffers before it is necessary.",
+     "Seneca, Letters to Lucilius"),
+    ("It is the power of the mind to be unconquerable.",
+     "Seneca, Letters to Lucilius"),
+    ("When I let go of what I am, I become what I might be.",
+     "Lao Tzu, Tao Te Ching"),
+    ("A good traveler has no fixed plans and is not intent on arriving.",
+     "Lao Tzu, Tao Te Ching"),
+    ("Silence is a source of great strength.", "Lao Tzu, Tao Te Ching"),
+    ("Nature does not hurry, yet everything is accomplished.",
+     "Lao Tzu, Tao Te Ching"),
+    ("He who knows he has enough is rich.", "Lao Tzu, Tao Te Ching"),
+    ("New beginnings are often disguised as painful endings.",
+     "Lao Tzu, Tao Te Ching"),
+    ("Let yourself be silently drawn by the strange pull of what you "
+     "really love.", "Rumi"),
+    ("Raise your words, not your voice. It is rain that grows flowers, "
+     "not thunder.", "Rumi"),
+    ("You were born with wings, why prefer to crawl through life?",
+     "Rumi"),
+    ("The quieter you become, the more you are able to hear.", "Rumi"),
+    ("Respond to every call that excites your spirit.", "Rumi"),
+    ("Much learning does not teach understanding.", "Heraclitus"),
+    ("The soul that is dry is wisest and best.", "Heraclitus"),
+    ("Big results require big ambitions.", "Heraclitus"),
+    ("Waste no more time arguing about what a good man should be. Be one.",
+     "Marcus Aurelius, Meditations"),
 ]
 
 # closing quote — real, verifiably-attributed lines from actual historically
@@ -160,6 +500,134 @@ HISTORY_QUOTE_BANK = [
     ("Imagination is more important than knowledge.",
      "Albert Einstein, 1929"),
     ("Give me liberty, or give me death!", "Patrick Henry, 1775"),
+    ("Four score and seven years ago our fathers brought forth on this "
+     "continent a new nation.",
+     "Abraham Lincoln, Gettysburg Address, 1863"),
+    ("Free at last! Free at last! Thank God Almighty, we are free at last!",
+     "Martin Luther King Jr., 'I Have a Dream,' 1963"),
+    ("That which does not kill us makes us stronger.",
+     "Friedrich Nietzsche, Twilight of the Idols, 1888"),
+    ("Genius is one percent inspiration and ninety-nine percent "
+     "perspiration.", "Thomas Edison, Harper's Monthly, 1932"),
+    ("Never give in, never give in, never, never, never, never.",
+     "Winston Churchill, Harrow School address, 1941"),
+    ("The best way to predict the future is to invent it.", "Alan Kay, 1971"),
+    ("Nothing in life is to be feared, it is only to be understood.",
+     "Marie Curie"),
+    ("It always seems impossible until it's done.",
+     "Nelson Mandela, Long Walk to Freedom, 1994"),
+    ("It is not the critic who counts, but the man who is actually in "
+     "the arena.", "Theodore Roosevelt, 'Citizenship in a Republic,' 1910"),
+    ("Failure is impossible.",
+     "Susan B. Anthony, final public address, 1906"),
+    ("If there is no struggle, there is no progress.",
+     "Frederick Douglass, 1857"),
+    ("The most difficult thing is the decision to act; the rest is "
+     "merely tenacity.", "Amelia Earhart"),
+    ("We hold these truths to be self-evident, that all men are created "
+     "equal.", "The Declaration of Independence, 1776"),
+    ("We the People of the United States, in Order to form a more "
+     "perfect Union.", "The U.S. Constitution, preamble, 1787"),
+    ("With malice toward none, with charity for all.",
+     "Abraham Lincoln, Second Inaugural Address, 1865"),
+    ("A house divided against itself cannot stand.",
+     "Abraham Lincoln, 'House Divided' speech, 1858"),
+    ("Yesterday, December 7th, 1941 — a date which will live in infamy.",
+     "Franklin D. Roosevelt, address to Congress, 1941"),
+    ("We shall fight on the beaches, we shall fight on the landing "
+     "grounds, we shall never surrender.",
+     "Winston Churchill, House of Commons, 1940"),
+    ("Never was so much owed by so many to so few.",
+     "Winston Churchill, House of Commons, 1940"),
+    ("It is our true policy to steer clear of permanent alliances with "
+     "any portion of the foreign world.",
+     "George Washington, Farewell Address, 1796"),
+    ("I cannot live without books.",
+     "Thomas Jefferson, letter to John Adams, 1815"),
+    ("Early to bed and early to rise, makes a man healthy, wealthy, and "
+     "wise.", "Benjamin Franklin, Poor Richard's Almanack, 1758"),
+    ("We hold these truths to be self-evident: that all men and women "
+     "are created equal.",
+     "Elizabeth Cady Stanton, Declaration of Sentiments, 1848"),
+    ("If I have seen further, it is by standing on the shoulders of "
+     "giants.", "Isaac Newton, letter to Robert Hooke, 1675"),
+    ("Try not to become a man of success, but rather try to become a "
+     "man of value.", "Albert Einstein"),
+    ("In spite of everything, I still believe that people are truly "
+     "good at heart.", "Anne Frank, The Diary of a Young Girl, 1947"),
+    ("Although the world is full of suffering, it is also full of the "
+     "overcoming of it.", "Helen Keller, 'Optimism,' 1903"),
+    ("I have learned over the years that when one's mind is made up, "
+     "this diminishes fear.", "Rosa Parks, Rosa Parks: My Story, 1992"),
+    ("There is as much dignity in tilling a field as in writing a poem.",
+     "Booker T. Washington, Up From Slavery, 1901"),
+    ("The function of education is to teach one to think intensively "
+     "and to think critically.", "W.E.B. Du Bois, 'The Talented Tenth,' 1903"),
+    ("An eye for an eye only ends up making the whole world blind.",
+     "Mahatma Gandhi, Non-Violence in Peace and War, 1948"),
+    ("Power concedes nothing without a demand. It never did and it "
+     "never will.", "Frederick Douglass, 'West India Emancipation,' 1857"),
+    ("Speak softly and carry a big stick; you will go far.",
+     "Theodore Roosevelt, State of the Union, 1901"),
+    ("The world must be made safe for democracy.",
+     "Woodrow Wilson, war message to Congress, 1917"),
+    ("We must guard against unwarranted influence by the "
+     "military-industrial complex.", "Dwight D. Eisenhower, Farewell "
+     "Address, 1961"),
+    ("We choose to go to the Moon in this decade, not because it is "
+     "easy, but because it is hard.",
+     "John F. Kennedy, Rice University, 1962"),
+    ("Mr. Gorbachev, tear down this wall!",
+     "Ronald Reagan, Brandenburg Gate, 1987"),
+    ("Education is the most powerful weapon which you can use to "
+     "change the world.", "Nelson Mandela"),
+    ("A man who dares to waste one hour of time has not discovered the "
+     "value of life.", "Charles Darwin, autobiography"),
+    ("Learning never exhausts the mind.", "Leonardo da Vinci, notebooks"),
+    ("It does not matter how slowly you go as long as you do not stop.",
+     "Confucius, Analects"),
+    ("The supreme art of war is to subdue the enemy without fighting.",
+     "Sun Tzu, The Art of War"),
+    ("The heaviest penalty for declining to rule is to be ruled by "
+     "someone inferior to yourself.", "Plato, The Republic"),
+    ("Knowing yourself is the beginning of all wisdom.",
+     "Aristotle, Nicomachean Ethics"),
+    ("Veni, vidi, vici.", "Julius Caesar, report to the Roman Senate, "
+     "47 BC"),
+    ("I know I have the body of a weak and feeble woman, but I have the "
+     "heart and stomach of a king.",
+     "Elizabeth I, Tilbury speech, 1588"),
+    ("Facts are stubborn things.",
+     "John Adams, letter to Abigail Adams, 1776"),
+    ("A nation which can prefer disgrace to danger is prepared for a "
+     "master, and deserves one.", "Alexander Hamilton, Federalist No. 1, "
+     "1787"),
+    ("If men were angels, no government would be necessary.",
+     "James Madison, Federalist No. 51, 1788"),
+    ("Not to know what happened before you were born is to remain "
+     "forever a child.", "Cicero, De Officiis"),
+    ("We must cultivate our garden.", "Voltaire, Candide, 1759"),
+    ("I do not wish women to have power over men, but over themselves.",
+     "Mary Wollstonecraft, A Vindication of the Rights of Woman, 1792"),
+    ("The only freedom which deserves the name is that of pursuing our "
+     "own good in our own way.", "John Stuart Mill, On Liberty, 1859"),
+    ("The philosophers have only interpreted the world in various ways; "
+     "the point is to change it.", "Karl Marx, Theses on Feuerbach, 1845"),
+    ("It is not from the benevolence of the butcher, the brewer, or the "
+     "baker that we expect our dinner.", "Adam Smith, The Wealth of "
+     "Nations, 1776"),
+    ("It was the best of times, it was the worst of times.",
+     "Charles Dickens, A Tale of Two Cities, 1859"),
+    ("Real knowledge is to know the extent of one's ignorance.",
+     "Confucius, Analects"),
+    ("Call me Ishmael.", "Herman Melville, Moby-Dick, 1851"),
+    ("A woman must have money and a room of her own if she is to write "
+     "fiction.", "Virginia Woolf, A Room of One's Own, 1929"),
+    ("War is peace. Freedom is slavery. Ignorance is strength.",
+     "George Orwell, 1984, 1949"),
+    ("What, to the American slave, is your 4th of July?",
+     "Frederick Douglass, 'What to the Slave is the Fourth of July?,' "
+     "1852"),
 ]
 
 # curated seasonal gardening notes, folded into the Primoscapes line as

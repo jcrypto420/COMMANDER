@@ -37,8 +37,8 @@ except ImportError:
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from daily_mog_layout import (
-    render, pick, FACT_BANK, BABY_TIP_BANK, ON_THIS_DAY_BANK, EPIGRAPH_BANK,
-    WORD_OF_DAY_BANK, ARCANA_BANK, HISTORY_QUOTE_BANK, PRIMOSCAPES_SEASONAL_BANK,
+    render, pick, BABY_TIP_BANK, EPIGRAPH_BANK, WORD_OF_DAY_BANK, ARCANA_BANK,
+    HISTORY_QUOTE_BANK, PRIMOSCAPES_SEASONAL_BANK,
 )
 
 COMMANDER_ROOT = Path(__file__).resolve().parents[1]
@@ -59,10 +59,15 @@ MAX_DECIDE_TITLE_CHARS = 48  # DECIDE is one inline line ("DECIDE — <title>")
                               # not the box's padded width
 MAX_HN_CHARS = 55       # HN Top shares its line with "(pts, comments)"
 MAX_MOVER_NAME_CHARS = 30
-MAX_PRIMOSCAPES_CHARS = 155  # weather-flavor note + seasonal note combined —
-                               # this column is COL_MAJOR width (~4.26in),
-                               # meaningfully narrower than the page, so the
-                               # cap is tighter than it looks at first glance
+MAX_PRIMOSCAPES_CHARS = 180  # weather-flavor note + seasonal note combined —
+                               # this column is COL_MAJOR width (~4.26in), so
+                               # it wraps to 2 lines rather than 1, but the
+                               # true worst-case combo across every bank
+                               # entry is 170 chars — 180 means it NEVER
+                               # truncates mid-sentence (was 155, which cut
+                               # off "...trains roots down where it…" —
+                               # Josh's call, 2026-07-09: complete thoughts
+                               # read as fuller than an ellipsis cutoff)
 
 WMO_DESC = {
     0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast",
@@ -223,10 +228,11 @@ def daylight_minutes(sunrise_iso, sunset_iso):
 
 # --- crypto (CoinGecko, keyless) ---
 def get_crypto_prices():
-    """Returns (ticker_items, raw_usd) — raw_usd exposes the plain float
-    prices (keyed by symbol) alongside the formatted ticker strings, so
-    downstream consumers (the sats/$ signal) don't need a duplicate API
-    call for a number this function already fetched."""
+    """Returns (ticker_items, raw_usd, changes_pct) — raw_usd/changes_pct
+    expose the plain float price and 24h % change (keyed by symbol)
+    alongside the formatted ticker strings, so downstream consumers (the
+    sats/$ signal, the "biggest mover on your board" line) don't need a
+    duplicate API call for numbers this function already fetched."""
     ids = "bitcoin,ethereum,chainlink,convex-finance,aerodrome-finance"
     url = (
         "https://api.coingecko.com/api/v3/simple/price?ids=" + ids +
@@ -242,11 +248,13 @@ def get_crypto_prices():
     }
     items = []
     raw_usd = {}
+    changes_pct = {}
     for key, (sym, fn) in fmt.items():
         row = data[key]
         items.append((sym, fn(row["usd"]), row["usd_24h_change"] >= 0))
         raw_usd[sym] = row["usd"]
-    return items, raw_usd
+        changes_pct[sym] = row["usd_24h_change"]
+    return items, raw_usd, changes_pct
 
 
 # --- commodities (Yahoo Finance keyless quote endpoint) ---
@@ -283,7 +291,11 @@ def format_market_cap(usd):
 
 
 # --- a fresh live fact every run (uselessfacts.jsph.pl, keyless) — pure
-# delight, not a curated bank ---
+# delight, not a curated bank. FIELD NOTES reuses this same function with an
+# independent second call (Josh's call, 2026-07-10: "no rotation of facts
+# thats so lame") rather than the old 4-8 entry FACT_BANK — two separate
+# fetches to a large random pool, collision on the same fact is unlikely but
+# handled below with one retry rather than risking a visible duplicate. ---
 MAX_FACT_CHARS = 140
 
 
@@ -293,6 +305,31 @@ def get_random_fact():
     if not text:
         raise SourceFailure("empty fact text")
     return text
+
+
+# --- On This Day: Wikipedia's own "selected events" feed for today's real
+# calendar date — genuinely different content every day of the year, not a
+# fixed bank (Josh's call, 2026-07-10). Picks among today's ~15-25 curated
+# events by day ordinal (deterministic within the day, varies day to day
+# same as everything else here) rather than always the top-billed one. ---
+MAX_OTD_CHARS = 85
+
+
+def get_on_this_day(dt):
+    """Returns (year_str, text) for a real event Wikipedia's own editors
+    selected as notable for this calendar date."""
+    url = ("https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/"
+           f"selected/{dt.month:02d}/{dt.day:02d}")
+    data = fetch_json(url)
+    events = data.get("selected", [])
+    if not events:
+        raise SourceFailure("onthisday feed returned no selected events")
+    event = events[dt.toordinal() % len(events)]
+    year = event.get("year")
+    text = (event.get("text") or "").strip()
+    if year is None or not text:
+        raise SourceFailure("onthisday event missing year/text")
+    return str(year), truncate_at_word(text, MAX_OTD_CHARS)
 
 
 def truncate_at_word(text, max_chars):
@@ -425,12 +462,14 @@ def get_top_pending_gate():
 
 # --- news RSS (proper XML scoping to <item>/<entry> — a naive regex over
 # every <title> tag grabs the feed's own channel title, not an article) ---
-MAX_HEADLINE_CHARS = 95  # bounds column height regardless of how long a
-                          # real headline happens to be — raised from 70 now
-                          # that THE MOG DIGEST only carries 2 headlines
-                          # (not 3), still verified by the worst-case stress
-                          # test, not a guess. Higher cap means less
-                          # mid-sentence "…" truncation on real headlines.
+MAX_HEADLINE_CHARS = 60  # bounds column height regardless of how long a
+                          # real headline happens to be. Was 95 when the
+                          # digest carried only 2 headlines; back to 3
+                          # (Josh's call, 2026-07-09 — reusing the 3rd
+                          # headline already being fetched instead of
+                          # discarded) meant less room per headline —
+                          # verified by the worst-case stress test, not
+                          # a guess.
 
 
 def get_rss_headline(url):
@@ -626,8 +665,9 @@ def build():
     # --- markets ---
     ticker_items = []
     raw_usd = {}
+    changes_pct = {}
     try:
-        crypto_items, raw_usd = get_crypto_prices()
+        crypto_items, raw_usd, changes_pct = get_crypto_prices()
         ticker_items += crypto_items
         sources_used.add("CoinGecko")
     except SourceFailure as exc:
@@ -669,6 +709,20 @@ def build():
     except SourceFailure as exc:
         warnings.append(f"Random fact unavailable: {exc}")
         random_fact = "No fact fetched this morning — the fact API didn't respond."
+
+    # FIELD NOTES: a second, independent fetch from the same live fact pool
+    # rather than the old FACT_BANK rotation (Josh's call, 2026-07-10: "no
+    # rotation of facts thats so lame"). One retry if it happens to match
+    # the random_fact line above — rare on a large pool, but a visible
+    # duplicate on the same page would look broken, not just unlucky.
+    try:
+        fact = get_random_fact()
+        if fact == random_fact:
+            fact = get_random_fact()
+        sources_used.add("uselessfacts.jsph.pl")
+    except SourceFailure as exc:
+        warnings.append(f"Field Notes fact unavailable: {exc}")
+        fact = "No fact fetched this morning — the fact API didn't respond."
 
     # SIGNALS strip: each independent, same degrade-gracefully pattern as the
     # ticker/news — a placeholder value on failure, never a fixed column count
@@ -719,6 +773,17 @@ def build():
         sources_used.add("DeFiLlama")
     except SourceFailure as exc:
         warnings.append(f"DeFiLlama mover unavailable: {exc}")
+    # "your board" — the biggest 24h mover among the 5 tickers already
+    # fetched for the strip up top, reusing that same CoinGecko response
+    # rather than a new call (the pct changes were already coming back,
+    # just discarded down to an up/down bool before this).
+    if changes_pct:
+        board_sym = max(changes_pct, key=lambda s: abs(changes_pct[s]))
+        board_chg = changes_pct[board_sym]
+        board_verb = "up" if board_chg >= 0 else "down"
+        sentences.append(
+            f"On your board, {board_sym} leads the move, {board_verb} "
+            f'{abs(board_chg):.1f}% today.')
     feature_body = (" ".join(sentences) if sentences else
                      "Market Notes is unavailable this morning — sources didn't respond.")
 
@@ -729,8 +794,13 @@ def build():
         warnings.append(f"DeFi TVL history unavailable: {exc}")
         tvl_line, tvl_history = "DeFi TVL 10d: unavailable today", []
 
-    otd_year, otd_rest = pick(ON_THIS_DAY_BANK, day_ord).split(":", 1)
-    fact = pick(FACT_BANK, day_ord)
+    try:
+        otd_year, otd_rest = get_on_this_day(now)
+        sources_used.add("Wikipedia")
+    except SourceFailure as exc:
+        warnings.append(f"On This Day unavailable: {exc}")
+        otd_year, otd_rest = "—", " unavailable this morning — the Wikipedia feed didn't respond."
+
     baby_tip = pick(BABY_TIP_BANK, day_ord)
     word_of_day = pick(WORD_OF_DAY_BANK, day_ord)
     arcana = pick(ARCANA_BANK, day_ord)
@@ -764,11 +834,13 @@ def build():
         "fact": fact,
         "baby_tip": baby_tip,
         "word_of_day": word_of_day,
-        "news": news[:2],  # back to 2 — DECIDE shrank to one inline line and
-                            # Today's Bet/Peg/Thunder/Night are gone, so the
-                            # right column had a lot of dead trailing
-                            # whitespace vs. the left column (Josh's call,
-                            # 2026-07-08: "looks weird and incomplete")
+        "news": news[:3],  # all 3 — get_news() already fetches CoinDesk/
+                            # TechCrunch/Decrypt every run, the 3rd was being
+                            # discarded. Right column kept running short of
+                            # the left (Josh's call, 2026-07-09: "still so
+                            # much white space... beautifully full") and this
+                            # is real content already being paid for, not
+                            # padding.
         "decide_title": decide_title,
         "feature_title": "MARKET NOTES",
         "feature_body": feature_body,
