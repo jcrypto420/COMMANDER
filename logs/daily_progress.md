@@ -423,3 +423,4 @@ One short entry per working day. What advanced + estimated spend.
 - CC-24 draft-only lane: refreshed the reusable parser re-check packet for the morning brief and kept the lane `todo` with tomorrow's 07:30 verification as the next action.
 - Goal check: advanced Command Center / Hermes setup + reliability — kept the exact 5-line dispatch target locked and advanced the draft-only verification packet without changing lane status.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept CC-24 draft-only and ready for the next 07:30 parser re-check; no public actions taken.
