@@ -9,7 +9,7 @@
 - **Stage 3 (T+2): VO COMPLETE** — Sarah stems at `assets/badboys/cartoon-lab/t2-ep1/vo/` (line1 + line2); SFX (coffee sip) at animatic timing
 - **Stage 4 asset: banker costume/body REJECTED by Josh 2026-07-05** — reworked and approved 2026-07-06
 - **Stage 4 (animation) + Stage 5 (cut/export): COMPLETE 2026-07-06** — banker costume rig puppeted via headless Blender scripts in `assets/badboys/cartoon-lab/t2-ep1/` (build_scene.py, animate_scene.py, render_silent.py, mux_audio.py, add_caption_and_export.py). Office-hum bed + optional terminal beep from the audio mix map were SKIPPED (no assets exist; generating them costs ElevenLabs credits, needs approval first) — VO + coffee sip sfx are muxed in. NOTE 2026-07-07: Josh rejected the animation quality at Gate 2 ("done trying to animate" in Blender) — motion-pipeline decision pending (see mirror/roadmap.md, local); stills remain approved.
-- **BB-26 draft packet staged 2026-07-08** — weekly Hermes idea-bank + MoA critics cron draft written to `projects/badboys-idea-bank-cron-draft.md`; waiting on Josh approval before any cron implementation
+- **BB-26 draft packet staged 2026-07-09** — weekly Hermes idea-bank + MoA critics cron draft written to `projects/badboys-idea-bank-cron-draft.md`; packet now includes a concrete 10-premise seed bank + cheap implementation shape, still waiting on Josh approval before any cron implementation
 
 Calibration (Josh, 2026-07-03): evergreen pipeline first (World Cup concept PARKED —
 undeveloped, window closes Jul 19; revisit only if the pipeline is live before then).

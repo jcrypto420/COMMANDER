@@ -385,3 +385,42 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh's approve/hold decision; nothing was sent.
 - Corrected the morning dispatch shipped count from 1 to 5 so the CC-24 brief matches the shipped scoreboard.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- CC-24 draft-only lane: reran the strict parser check on `MORNING_REPORT.md` and confirmed the exact 5-line shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` label on line 5.
+- Updated `TASK_QUEUE.md` and the command-center dashboard project note so the next safe step is the next 07:30 parser re-check while CC-24 stays `todo`.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the morning dispatch shape locked and the lane local-only, draft-only, and safe.
+- Estimated spend: $0.00 incremental API spend; local read-only verification only.
+
+- Advanced BB-26 by expanding the weekly Hermes idea-bank cron draft with a concrete 10-premise seed bank, a cheap implementation shape, and a clearer Josh decision packet.
+- Updated `projects/badboys-idea-bank-cron-draft.md`, `projects/badboys-cartoon-lab.md`, and `TASK_QUEUE.md` so the lane stays draft-only but is now more decision-ready.
+- Goal check: advanced Bad Boys/Joycat — turned the cron idea from a sketch into a reviewable local packet without any cron, posting, sending, spending, or secret handling.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-10
+
+- Advanced BB-26 by hardening the weekly Hermes idea-bank cron draft: added a concrete weekly bank file shape, output schema, and review-packet structure so the packet is closer to a decision-ready cron proposal.
+- Updated the BB-26 queue row to keep it `todo` while making the next approval step more explicit.
+- Safety: draft-only/local-only; no posting, sending, spending, secrets, account creation, or service changes.
+- Goal check: advanced Bad Boys / Joycat — hardened the BB-26 weekly Hermes idea-bank cron draft into a more decision-ready packet without leaving draft-only scope.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- Resynced the repo cleanly after stashing generated blockers and completing `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`.
+- Refreshed the CI-1 draft-ahead packet by updating `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, `projects/career-income.md`, `NOW.md`, and `MORNING_REPORT.md` around the approve-leads decision.
+- Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet is ready for Josh approval; nothing was sent.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CC-24 draft-only lane: reran the strict parser check on `MORNING_REPORT.md` and confirmed the exact 5-line shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
+- Updated the CC-24 project status and queue row to record today's pass while keeping the lane `todo` with the next 07:30 re-check as the next action.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the morning dispatch shape locked and the lane local-only, draft-only, and safe.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-11
+
+- Completed the required overnight git sync recovery: `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, and cleanup of the generated `dashboard/state.json` blocker that had interrupted the first rebase attempt.
+- Refreshed the CI-1 draft-ahead lane by confirming the IN-1 decision packet is still the next high-leverage approval surface and keeping the morning dispatch in the exact 5-line CC-24 shape.
+- Goal check: advanced Career / income defense + portfolio leverage — the IN-1 lead-verification packet remains ready for Josh approval; nothing was sent.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CC-24 draft-only lane: refreshed the reusable parser re-check packet for the morning brief and kept the lane `todo` with tomorrow's 07:30 verification as the next action.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the exact 5-line dispatch target locked and advanced the draft-only verification packet without changing lane status.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept CC-24 draft-only and ready for the next 07:30 parser re-check; no public actions taken.

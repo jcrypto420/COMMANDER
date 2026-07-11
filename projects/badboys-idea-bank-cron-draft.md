@@ -1,9 +1,11 @@
 # Bad Boys / Joycat — Hermes idea-bank + MoA critics cron draft
 
-## Status — 2026-07-08
+## Status — 2026-07-09
 - **State:** DRAFT ONLY — internal design packet for BB-26; no cron enabled, no outbound actions, no public posting
 - **Purpose:** turn the existing Bad Boys constitution + pipeline into a cheap weekly idea-bank loop that pre-filters premises before Josh ever sees them
 - **Source of truth:** `projects/badboys-cartoon-lab.md` is authoritative for style/constitution; this packet only packages the cron draft
+- **Draft progress 2026-07-09:** added a concrete 10-premise seed set and a cheap implementation shape so the packet is closer to decision-ready
+- **Draft progress 2026-07-10:** added a concrete weekly bank file shape and output schema so the packet now tells Josh exactly what the cron would write, where it would live, and what a weekly review would contain
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
@@ -15,6 +17,32 @@ Use **one weekly Hermes cron** that does three things in sequence:
 3. Convert the survivors into **3–5 script-card drafts** and run the **MoA corny-detector** before banking them for Josh.
 
 This keeps Josh out of the weeds, keeps the model spend cheap, and preserves the existing two-gate structure.
+
+## Cheap implementation shape
+
+- Read the current constitution plus the last weekly bank note.
+- Generate exactly 10 short premises into one local weekly file.
+- Score each premise against the constitution with a cheap MoA critic pass.
+- Keep the top 5 only, with one-line keep/kill reasons.
+- Convert only the survivors into script cards.
+- Run a second corny-detector pass on those cards.
+- Save 3–5 survivors and a one-paragraph summary for Josh.
+- Keep everything local-only until Josh explicitly approves a public action.
+
+## Seed premise bank v0
+
+These are not final scripts — they are the first cheap prompt set for the weekly cron.
+
+1. **wire status pending** — two banker Bad Boys stand in front of a giant monitor that never changes from `PENDING`; target: institutional finance bureaucracy; cast hint: pinstripe banker duo; loop note: coffee sip becomes the beat.
+2. **content.** — a plain-face mascot holds a sign that says `content`; target: algorithm culture; cast hint: plain face, flat bg; loop note: end frame matches start frame.
+3. **risk management.** — a cowboy-hat Bad Boy keeps adding hats while a chart falls off the wall; target: trader brain / fake prudence; cast hint: cowboy; loop note: silent escalation.
+4. **day 1.** — a mascot lies on the floor while a narrator lists fake grind steps that do nothing; target: hustle culture; cast hint: plain face; loop note: opening line and closing line can mirror.
+5. **compliance theater.** — a chef variant stamps empty forms at a blank desk; target: corporate absurdity; cast hint: chef; loop note: repeated stamp sound.
+6. **quarterly alignment.** — five identical chairs sit in a meeting room with nobody in them; target: meeting culture / management jargon; cast hint: office variant; loop note: the slide deck pointer never moves.
+7. **benchmark.** — a runner keeps jogging in place beside a printed chart that is already falling apart; target: performance theater; cast hint: athlete-ish or plain face; loop note: treadmill sound.
+8. **growth.** — a sprout costume keeps getting watered with an empty cup; target: growth-at-all-costs rhetoric; cast hint: sprout; loop note: water never appears.
+9. **synergy.** — two identical objects are pushed closer together until they still do nothing; target: collaboration buzzwords; cast hint: duo asset; loop note: one tiny push per beat.
+10. **governance.** — a tiny voting booth sits under a giant corporate logo-shaped shadow that never resolves; target: institutional process; cast hint: plain face or banker; loop note: ballot box clicks once, then silence.
 
 ## Draft workflow
 
@@ -79,6 +107,31 @@ For each survivor, generate a tiny card with:
   - kept premises
   - killed premises
   - follow-up production recommendation
+
+### Concrete weekly file shape v1
+
+- Suggested file name: `assets/badboys/idea-bank/weekly/YYYY-WW.md`
+- Suggested sections:
+  - `## Inputs`
+  - `## 10 premises generated`
+  - `## Keep/kill critic notes`
+  - `## Top 5 survivors`
+  - `## 3-5 script-card drafts`
+  - `## Corny-detector notes`
+  - `## Josh review summary`
+- Suggested row fields for each premise:
+  - premise
+  - target
+  - cast hint
+  - critic score
+  - keep/kill reason
+
+### Weekly review packet v1
+
+- 1 paragraph on why the week’s survivors were chosen
+- a short list of the 3–5 best cards
+- one line each on which asset variant each card wants next
+- one explicit next production step for Josh if he wants to greenlight a short
 
 ## Draft packet shape for Josh
 
