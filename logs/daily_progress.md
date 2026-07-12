@@ -437,3 +437,9 @@ One short entry per working day. What advanced + estimated spend.
 - Storefront research: Fourthwall ranks first after signal (its published pricing states no monthly/upfront fees and merchant-of-record/payment handling); Etsy ranks second; Shopify is deferred due to recurring cost. No account, upload, listing, sale, spend, or public action occurred.
 - Goal check: advanced Bad Boys / Joycat creative business — converted a vague product backlog into a concrete, local, approval-gated sellable-artifact specification.
 - Estimated spend: $0.00 incremental API spend; official public pricing pages and the current `openai-codex` session.
+
+- Motion recovery: imported Josh’s `collateral_damage` six-panel scene package and corrected its production path in `exports/review/2026-07-11/collateral_damage/EDIT_PLAN.md` + `RUN_COLLATERAL.sh`.
+- Locked the actual gag: farmer uses a giant carrot as collateral for a loan, gets a tiny coin, then turns the same collateral into *Collateral Damage* by wrecking the banker’s desk. The farmer mogs throughout.
+- Killed the failed Kling collision rerun: impact is now a held swing frame → 2D shake + THUD → hard cut to aftermath; coin is a 2D sprite drop/bounce; characters/faces remain locked and canonical compositing is required for final art.
+- Goal check: advanced Bad Boys / Joycat creative business — replaced a known-bad paid generation path with a concrete motion-safe edit artifact; no API spend, posting, or public action occurred.
+- Estimated spend: $0.00 incremental API spend; used supplied scene assets plus the current `openai-codex` session.
