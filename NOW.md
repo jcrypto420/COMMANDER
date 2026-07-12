@@ -1,13 +1,13 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 Coinbase Institutional packet / revenue backstop after overnight rebase; CC-24 re-check still passes.
+**Active focus:** Command Center reliability + CC-24 morning packet repair / CI-1 Coinbase Institutional packet / revenue backstop after overnight rebase; CC-24 exact-shape check passes again.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
 **Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
 created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
 default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed. CC-24 morning packet refreshed after the overnight rebase and still matches the exact 5-line draft shape.
+passed. CC-24 morning packet drift was repaired and the exact 5-line draft shape now passes again.
 
 ## Next 3 tasks
 

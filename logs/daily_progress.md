@@ -443,3 +443,9 @@ One short entry per working day. What advanced + estimated spend.
 - Killed the failed Kling collision rerun: impact is now a held swing frame → 2D shake + THUD → hard cut to aftermath; coin is a 2D sprite drop/bounce; characters/faces remain locked and canonical compositing is required for final art.
 - Goal check: advanced Bad Boys / Joycat creative business — replaced a known-bad paid generation path with a concrete motion-safe edit artifact; no API spend, posting, or public action occurred.
 - Estimated spend: $0.00 incremental API spend; used supplied scene assets plus the current `openai-codex` session.
+
+## 2026-07-12
+
+- CC-24 verification pass: the live `MORNING_REPORT.md` drifted on line 4, I repaired it back to the strict 5-line shape with `Open:` / `Decide:` on line 4, and the parser check passed again.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the daily dispatch honest and re-verified the exact-shape gate instead of leaving stale copy in place.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
