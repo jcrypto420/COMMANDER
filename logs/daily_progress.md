@@ -449,3 +449,6 @@ One short entry per working day. What advanced + estimated spend.
 - CC-24 verification pass: the live `MORNING_REPORT.md` drifted on line 4, I repaired it back to the strict 5-line shape with `Open:` / `Decide:` on line 4, and the parser check passed again.
 - Goal check: advanced Command Center / Hermes setup + reliability — kept the daily dispatch honest and re-verified the exact-shape gate instead of leaving stale copy in place.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- BB-26 draft-only lane: added `projects/badboys-idea-bank-cron-draft.md` approval packet v2 with a one-glance ship/kill/tweak surface and explicit local-only weekly storage path.
+- Goal check: advanced Bad Boys / Joycat creative business — made the weekly premise-bank cron easier to approve without enabling cron, posting, emailing, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

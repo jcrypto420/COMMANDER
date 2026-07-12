@@ -7,6 +7,7 @@
 - **Draft progress 2026-07-09:** added a concrete 10-premise seed set and a cheap implementation shape so the packet is closer to decision-ready
 - **Draft progress 2026-07-10:** added a concrete weekly bank file shape and output schema so the packet now tells Josh exactly what the cron would write, where it would live, and what a weekly review would contain
 - **Draft progress 2026-07-11:** added a first-run prompt skeleton and weekly review checklist so the cron proposal is now closer to a copy/paste implementation packet, not just a concept note
+- **Draft progress 2026-07-12:** added a one-glance approval packet and explicit local-only storage path so Josh can make a ship/kill/tweak call without reading the full draft
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
@@ -153,6 +154,17 @@ Use this exact shape for the first weekly run once approved:
 4. Promote the top 5 to script-card drafts only if they pass the critic threshold.
 5. Run the corny-detector on those cards and save the best 3–5.
 6. Write one short Josh summary with the survivors and the next production step.
+
+### Approval packet v2 — one-glance decision surface
+
+If Josh wants the shortest possible verdict path, present the cron this way:
+
+- **What it is:** a weekly Bad Boys premise-bank cron with two MoA filters
+- **What it writes:** one weekly file at `assets/badboys/idea-bank/weekly/YYYY-WW.md` plus a short Josh summary
+- **What it does not do:** posting, emailing, account creation, spending, public upload, or service changes
+- **What Josh decides:** ship / kill / tweak cadence and storage path
+
+This is the decision surface for approval, not the implementation itself.
 
 ### Weekly review checklist
 
