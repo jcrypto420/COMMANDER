@@ -427,3 +427,13 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Command Center / Hermes setup + reliability — kept the exact 5-line dispatch target locked and advanced the draft-only verification packet without changing lane status.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 - Goal check: advanced Command Center / Hermes setup + reliability — kept CC-24 draft-only and ready for the next 07:30 parser re-check; no public actions taken.
+
+- Resynced after the overnight rebase: stashed the dirty tree, rebased onto `origin/main`, pulled latest, resolved the generated `dashboard/state.json` blocker, and restored the local drafts cleanly.
+- Advanced CI-1 by turning the next approval surface into a send-ready Coinbase Institutional Business Operations packet at `jobs/packets/active/coinbase-institutional-business-ops/packet.md`; updated NOW, TASK_QUEUE, career-income, and MORNING_REPORT to point Josh at the apply/tweak/kill decision.
+- Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet is ready for Josh approval; IN-1 is historical.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- BB-24 product decision: created `projects/badboys-first-sellable-artifact-decision.md`, selecting a restrained three-piece die-cut sticker sheet from existing canonical/real assets. Rejected a PFP download as the first paid object and deferred tees until content signal.
+- Storefront research: Fourthwall ranks first after signal (its published pricing states no monthly/upfront fees and merchant-of-record/payment handling); Etsy ranks second; Shopify is deferred due to recurring cost. No account, upload, listing, sale, spend, or public action occurred.
+- Goal check: advanced Bad Boys / Joycat creative business — converted a vague product backlog into a concrete, local, approval-gated sellable-artifact specification.
+- Estimated spend: $0.00 incremental API spend; official public pricing pages and the current `openai-codex` session.

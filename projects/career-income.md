@@ -1,12 +1,12 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-07-11
+## Status — 2026-07-12
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-07-11 — overnight sync recovery confirmed the IN-1 decision packet is still current
-- **Next action:** Josh reads the refreshed IN-1 decision packet and either approves 10-lead verification or keeps it parked as the CI-1 backstop
-- **Waiting on:** Josh’s verdict on lead verification for the IN-1 draft packet
+- **Last advanced:** 2026-07-12 — Coinbase Institutional Business Operations packet is send-ready; IN-1 research-services backstop is now historical
+- **Next action:** Josh reads the refreshed Coinbase Institutional packet and either approves apply / tweak / kill
+- **Waiting on:** Josh’s verdict on the Coinbase Institutional packet
 
-IN-1 draft packet is live in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; next safe step is Josh approval to verify 10 named leads with public URLs and fit notes.
+Coinbase Institutional packet is live in `jobs/packets/active/coinbase-institutional-business-ops/packet.md`; the old IN-1 draft remains historical context, not the active CI-1 target.
 
 **Goal:** Protect and increase Josh's income, reduce stress, and turn his background into good-fit opportunities. Commander's operating principle is skeptical, evidence-based, and execution-oriented. It will not flatter, invent, or force Josh into misaligned roles.
 

@@ -1,6 +1,6 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 decision packet / revenue backstop after overnight rebase; CC-24 re-check still passes.
+**Active focus:** Command Center reliability + CC-24 morning packet / CI-1 Coinbase Institutional packet / revenue backstop after overnight rebase; CC-24 re-check still passes.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
@@ -11,10 +11,8 @@ passed. CC-24 morning packet refreshed after the overnight rebase and still matc
 
 ## Next 3 tasks
 
-1. Review `projects/in-1-lead-list-outreach-draft-2026-06-29.md`, then if Josh
-   approves, verify 10 named leads with public URLs, roles, and fit notes.
-2. Keep Bad Boys real-asset review as the fallback lane; no posting,
-   account creation, sending, or spending without Josh.
+1. Review `jobs/packets/active/coinbase-institutional-business-ops/packet.md`, then if Josh approves, prepare the application path or collect tweak notes.
+2. Keep Bad Boys real-asset review and the BB-24 sticker-sheet packet as the fallback lane; no posting, account creation, sending, or spending without Josh.
 3. Keep the morning dispatch at 5 lines and update logs before commit/push.
 
 ## Current blockers
