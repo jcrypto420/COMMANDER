@@ -452,3 +452,10 @@ One short entry per working day. What advanced + estimated spend.
 - BB-26 draft-only lane: added `projects/badboys-idea-bank-cron-draft.md` approval packet v2 with a one-glance ship/kill/tweak surface and explicit local-only weekly storage path.
 - Goal check: advanced Bad Boys / Joycat creative business — made the weekly premise-bank cron easier to approve without enabling cron, posting, emailing, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-13
+
+- Recovered the morning sync after an overnight reboot/rebase collision: stashed the generated `dashboard/` and `exports/` artifacts, finished `git fetch --all`, `git rebase origin/main`, and `git pull --rebase`, then confirmed the working tree was clean.
+- Advanced CI-1’s decision surface by re-reading the send-ready Coinbase Institutional Business Operations packet and keeping the live question centered on Josh’s apply / tweak / kill verdict; no sending or spending happened.
+- Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet is still the live decision packet, and the repo is synced for Josh’s morning read.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
