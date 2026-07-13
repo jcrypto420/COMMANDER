@@ -6,8 +6,8 @@
 - CC-24 parser re-check failed once on the live report because line 4 had drifted; repaired `MORNING_REPORT.md` back to the strict `Open:` / `Decide:` line-4 shape and re-ran the check successfully.
 - 2026-07-10 parser re-check passed again: the live morning report still matches the exact 5-line CC-24 shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
 - Added a strict local re-check packet below so the next 07:30 pass can be rerun without re-deriving the criteria.
-- 2026-07-12 draft-only repair: the reusable parser check stays ready; keep CC-24 `todo` until the next live 07:30 pass confirms the exact shape again.
-- Next action: rerun the 07:30 parser check tomorrow; if the file still passes, keep CC-24 as `todo` and continue the exact-shape freeze.
+- 2026-07-13 draft-only verification: reran the reusable parser check and the live morning report still passes the exact 5-line CC-24 shape.
+- Next action: rerun the 2026-07-14 07:30 parser check; if the file still passes, keep CC-24 as `todo` and continue the exact-shape freeze.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
 ### CC-24 draft-only verification packet

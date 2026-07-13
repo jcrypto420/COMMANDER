@@ -459,3 +459,7 @@ One short entry per working day. What advanced + estimated spend.
 - Advanced CI-1’s decision surface by re-reading the send-ready Coinbase Institutional Business Operations packet and keeping the live question centered on Josh’s apply / tweak / kill verdict; no sending or spending happened.
 - Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet is still the live decision packet, and the repo is synced for Josh’s morning read.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- CC-24 draft-only lane: reran the strict parser check on `MORNING_REPORT.md` and confirmed the exact 5-line shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` label on line 5.
+- Updated `TASK_QUEUE.md` and the command-center dashboard project note so CC-24 stays `todo` with the next 2026-07-14 07:30 re-check as the next action.
+- Goal check: advanced Command Center / Hermes setup + reliability — kept the morning dispatch shape locked and the lane local-only, draft-only, and safe.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
