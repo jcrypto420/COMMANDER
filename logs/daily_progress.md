@@ -482,3 +482,7 @@ One short entry per working day. What advanced + estimated spend.
 - BB-26 draft-only lane: added a one-run local smoke-test shape to `projects/badboys-idea-bank-cron-draft.md` so the cron proposal now includes fallback model order and exact weekly file-shape checks before any scheduling discussion.
 - Goal check: advanced Bad Boys / Joycat creative business — made the weekly idea-bank cron packet more copy/paste-ready without enabling cron, posting, sending, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- BB-26 draft-only lane: created `assets/badboys/idea-bank/weekly-template.md` as a copy/paste weekly bank shell with inputs, 10-premise table, top-survivor list, script-card section, corny-detector notes, and Josh summary.
+- Goal check: advanced Bad Boys / Joycat creative business — turned the idea-bank cron packet into a concrete local-only output shape without enabling cron, posting, sending, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

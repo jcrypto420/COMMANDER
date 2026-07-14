@@ -9,6 +9,7 @@
 - **Draft progress 2026-07-11:** added a first-run prompt skeleton and weekly review checklist so the cron proposal is now closer to a copy/paste implementation packet, not just a concept note
 - **Draft progress 2026-07-12:** added a one-glance approval packet and explicit local-only storage path so Josh can make a ship/kill/tweak call without reading the full draft
 - **Draft progress 2026-07-14:** added an explicit one-run smoke test shape: local-only runner, fallback model order, and exact weekly file checks so the packet can be exercised once before any schedule discussion
+- **Draft progress 2026-07-14:** created a copy/paste weekly bank template at `assets/badboys/idea-bank/weekly-template.md` so the packet now has a concrete local-only output shape, not just a proposal
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
