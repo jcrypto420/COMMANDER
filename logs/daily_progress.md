@@ -470,3 +470,11 @@ One short entry per working day. What advanced + estimated spend.
 - Updated `TASK_QUEUE.md` and `projects/command-center-dashboard-v0.md` so CC-24 stays `todo` with the next 2026-07-14 07:30 re-check as the next action.
 - Goal check: advanced Command Center / Hermes setup + reliability — kept the morning dispatch shape locked and the lane local-only, draft-only, and safe.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-14
+
+- Recovered the morning sync after the overnight rebase, verified `git status` was clean, and kept the repo aligned with `origin/main` before touching the decision lane.
+- Re-read the Coinbase Institutional Business Operations packet as the live CI-1 decision surface and kept the question centered on Josh’s apply / tweak / kill verdict; no sending or spending happened.
+- CC-24 dispatch: confirmed the morning report still fits the exact 5-line shape with one bolded `Decision:` line and the Coinbase packet remains the live decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet stayed send-ready and the repo is synced for Josh’s morning read.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
