@@ -8,6 +8,7 @@
 - **Draft progress 2026-07-10:** added a concrete weekly bank file shape and output schema so the packet now tells Josh exactly what the cron would write, where it would live, and what a weekly review would contain
 - **Draft progress 2026-07-11:** added a first-run prompt skeleton and weekly review checklist so the cron proposal is now closer to a copy/paste implementation packet, not just a concept note
 - **Draft progress 2026-07-12:** added a one-glance approval packet and explicit local-only storage path so Josh can make a ship/kill/tweak call without reading the full draft
+- **Draft progress 2026-07-14:** added an explicit one-run smoke test shape: local-only runner, fallback model order, and exact weekly file checks so the packet can be exercised once before any schedule discussion
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
@@ -165,6 +166,25 @@ If Josh wants the shortest possible verdict path, present the cron this way:
 - **What Josh decides:** ship / kill / tweak cadence and storage path
 
 This is the decision surface for approval, not the implementation itself.
+
+### Draft v3 — one-run smoke test shape
+
+If Josh wants a single safe preflight before any cron talk, run the proposal as a one-off local draft pass:
+
+1. Read `projects/badboys-cartoon-lab.md` and the current BB-26 draft packet.
+2. Generate 10 short premises into the weekly bank file path for the current ISO week.
+3. If the default codex model is unavailable, fall back to the cheapest hosted draft model in the router; keep the run local-only either way.
+4. Write keep/kill reasons for all 10 premises, then promote only the top 5.
+5. Draft 3–5 script cards from the survivors and save a one-paragraph Josh summary.
+6. Verify the file contains the required sections before calling the draft pass complete.
+
+Smoke-test acceptance criteria:
+
+- one weekly file written locally only
+- 10 premises captured
+- 5 or fewer survivors after critic pass
+- 3–5 script-card drafts at the end
+- no posting, sending, spending, or service changes
 
 ### Weekly review checklist
 

@@ -478,3 +478,7 @@ One short entry per working day. What advanced + estimated spend.
 - CC-24 dispatch: confirmed the morning report still fits the exact 5-line shape with one bolded `Decision:` line and the Coinbase packet remains the live decision surface.
 - Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet stayed send-ready and the repo is synced for Josh’s morning read.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- BB-26 draft-only lane: added a one-run local smoke-test shape to `projects/badboys-idea-bank-cron-draft.md` so the cron proposal now includes fallback model order and exact weekly file-shape checks before any scheduling discussion.
+- Goal check: advanced Bad Boys / Joycat creative business — made the weekly idea-bank cron packet more copy/paste-ready without enabling cron, posting, sending, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
