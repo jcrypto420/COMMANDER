@@ -10,6 +10,7 @@
 - **Draft progress 2026-07-12:** added a one-glance approval packet and explicit local-only storage path so Josh can make a ship/kill/tweak call without reading the full draft
 - **Draft progress 2026-07-14:** added an explicit one-run smoke test shape: local-only runner, fallback model order, and exact weekly file checks so the packet can be exercised once before any schedule discussion
 - **Draft progress 2026-07-14:** created a copy/paste weekly bank template at `assets/badboys/idea-bank/weekly-template.md` so the packet now has a concrete local-only output shape, not just a proposal
+- **Draft progress 2026-07-24:** added a concrete local-only smoke-test checklist that ties the packet to the weekly template, fallback model order, and a simple file-shape verification pass before any cron talk
 - **Next step:** if Josh approves, turn this into a real Hermes cron job and a stored weekly premise bank
 
 ## Recommendation
@@ -186,6 +187,17 @@ Smoke-test acceptance criteria:
 - 5 or fewer survivors after critic pass
 - 3–5 script-card drafts at the end
 - no posting, sending, spending, or service changes
+
+### Local-only smoke-test checklist v1
+
+Use this as the exact preflight before any cron scheduling discussion:
+
+1. Copy `assets/badboys/idea-bank/weekly-template.md` to the current ISO-week path under `assets/badboys/idea-bank/weekly/YYYY-WW.md`.
+2. Fill `## Inputs` with the current date, ISO week, and lane context from `projects/badboys-cartoon-lab.md`.
+3. Load the current constitution packet plus the weekly template, then draft 10 premises using the cheapest available local/default model first.
+4. If `gpt-5.4-mini` via openai-codex is unavailable, fall back to `google/gemini-2.5-flash` via OpenRouter; keep the run local-only either way.
+5. Verify the weekly file contains all required sections, 10 premise rows, and 3–5 survivor cards.
+6. Stop and log the packet as draft-only if any step would require posting, sending, spending, account creation, or service changes.
 
 ### Weekly review checklist
 
