@@ -1,6 +1,6 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CC-24 morning packet repair / CI-1 Coinbase Institutional packet / revenue backstop after overnight rebase; CC-24 exact-shape check passed again this morning.
+**Active focus:** Command Center reliability + CC-24 morning packet exact-shape freeze / CI-1 Coinbase Institutional packet / revenue backstop; CC-24 parser re-check passed again and the next safe step is the next 07:30 check.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 

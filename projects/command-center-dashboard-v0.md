@@ -1,13 +1,13 @@
 # Project: Commander Dashboard / Command Center UI v0
 
-## Status — 2026-07-13
+## Status — 2026-07-24
 
 - Current focus: CC-22 draft is still built locally — lane cards parsed from `projects/*.md`, Gate Deck verdict flow wired to the inbox API, and install icons added.
-- CC-24 parser re-check failed once on the live report because line 4 had drifted; repaired `MORNING_REPORT.md` back to the strict `Open:` / `Decide:` line-4 shape and re-ran the check successfully.
+- CC-24 parser re-check passed again on the live report; `MORNING_REPORT.md` still holds the strict `Open:` / `Decide:` line-4 shape with one bolded `Decision:` line.
 - 2026-07-10 parser re-check passed again: the live morning report still matches the exact 5-line CC-24 shape with `Open:` / `Decide:` on line 4 and one bolded `Decision:` on line 5.
 - Added a strict local re-check packet below so the next 07:30 pass can be rerun without re-deriving the criteria.
-- 2026-07-13 18:11 draft-only verification: reran the strict parser check and the live morning report still passes the exact 5-line CC-24 shape.
-- Next action: rerun the 2026-07-14 07:30 parser check; if the file still passes, keep CC-24 as `todo` and continue the exact-shape freeze.
+- 2026-07-24 23:01 UTC draft-only verification: reran the strict parser check and the live morning report still passes the exact 5-line CC-24 shape.
+- Next action: rerun the 2026-07-25 07:30 parser check; if the file still passes, keep CC-24 as `todo` and continue the exact-shape freeze.
 - Safety: local docs only; no posting, sending, spending, or secrets.
 
 ### CC-24 draft-only verification packet

@@ -500,3 +500,7 @@ One short entry per working day. What advanced + estimated spend.
 - CI-1 morning lane: recovered the overnight repo sync/rebase, re-verified the Coinbase Institutional Business Operations packet as the live decision surface, and kept the question centered on Josh's apply / tweak / kill verdict.
 - Goal check: advanced Career / income defense + portfolio leverage — the Coinbase packet stayed send-ready and no sending/spending happened.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CC-24 draft-only verification: reran the strict parser check on `MORNING_REPORT.md`, confirmed the exact 5-line shape with one bolded `Decision:` line, and refreshed the CC-24 queue/project next action to the next 07:30 re-check.
+- Goal check: aligned with Command Center / Hermes setup + reliability — the morning dispatch stayed exact-shape and the repo now points at the next safe verification step.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
