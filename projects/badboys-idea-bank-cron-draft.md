@@ -215,4 +215,4 @@ Use this as the exact preflight before any cron scheduling discussion:
 
 ## Next action
 
-Wait for Josh approval, then implement the weekly cron and start the bank with 10 premises from the current cartoon-lab constitution.
+Josh reviews the local-only weekly bank draft at `assets/badboys/idea-bank/weekly/2026-W30.md` and gives ship/kill/tweak on cadence + storage path.

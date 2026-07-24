@@ -12,6 +12,7 @@
 - **MOTION STATION (corrected 2026-07-11):** supplied `collateral_damage` scene package proved the failed Kling generation was a multi-character collision/physics request, not a premise failure. The fixed runnable/edit spec lives at `projects/badboys-collateral-damage-motion-fix.md`: farmer uses giant carrot as loan collateral, receives the tiny coin, then turns that collateral into *Collateral Damage*. Build the 12–15s cut from locked panels with 2D carrot/coin motion, hard-cut impact, THUD, and canonical face compositing. No paid Kling character-action reruns.
 - **BB-26 draft packet staged 2026-07-09** — weekly Hermes idea-bank + MoA critics cron draft written to `projects/badboys-idea-bank-cron-draft.md`; packet now includes a concrete 10-premise seed bank, cheap implementation shape, and first-run prompt skeleton, still waiting on Josh approval before any cron implementation
 - **BB-26 draft packet updated 2026-07-24** — added a local-only smoke-test checklist tied to `assets/badboys/idea-bank/weekly-template.md`, plus explicit fallback model order and weekly file-shape verification before any cron talk
+- **BB-26 draft packet updated 2026-07-24 (weekly file)** — wrote the filled local-only weekly packet at `assets/badboys/idea-bank/weekly/2026-W30.md` with 10 premises, 5 survivors, 5 script-card drafts, and a Josh review summary
 
 Calibration (Josh, 2026-07-03): evergreen pipeline first (World Cup concept PARKED —
 undeveloped, window closes Jul 19; revisit only if the pipeline is live before then).
