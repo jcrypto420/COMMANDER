@@ -496,3 +496,7 @@ One short entry per working day. What advanced + estimated spend.
 - BB-26 draft-only lane: wrote `assets/badboys/idea-bank/weekly/2026-W30.md` as a filled local-only weekly packet with 10 premises, 5 survivors, 5 script-card drafts, and a Josh review summary; aligned the BB-26 queue and project next action to that review surface.
 - Goal check: advanced Bad Boys / Joycat creative business — converted the approval packet into a concrete local-only weekly draft without enabling cron, posting, sending, spending, account creation, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CI-1 morning lane: recovered the overnight repo sync/rebase, re-verified the Coinbase Institutional Business Operations packet as the live decision surface, and kept the question centered on Josh's apply / tweak / kill verdict.
+- Goal check: advanced Career / income defense + portfolio leverage — the Coinbase packet stayed send-ready and no sending/spending happened.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
