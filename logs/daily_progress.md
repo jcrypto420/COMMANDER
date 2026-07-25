@@ -523,3 +523,7 @@ One short entry per working day. What advanced + estimated spend.
 - **WO-2 draft-only lane:** turned the Weather Oracle next step into a one-shot Pi capture verification packet for `products/weather-oracle/capture_daily.py`, focused on cron timing, output path, and a single fresh `captures/<timestamp>/manifest.json` containing NWS/Open-Meteo source files.
 - Goal check: advanced Weather Oracle — converted the capture lane into a concrete local-only verification draft without running a capture, sending, posting, spending, or changing services.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- **WO-2 draft-only lane:** created `projects/weather-oracle-capture-verification-packet.md`, tightened `projects/weather-oracle.md` around that packet, and advanced `TASK_QUEUE.md` to the next concrete Pi verification step (`capture_daily.py` once; fresh manifest with NWS/Open-Meteo sources).
+- Goal check: advanced Weather Oracle with a real draft artifact and a sharper next action while staying local-only.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

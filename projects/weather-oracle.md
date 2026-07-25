@@ -1,37 +1,12 @@
 # Project: Weather Oracle MVP (Priority 4)
 
-## Status — 2026-07-08
-- **State:** WO-1 revenue scan DRAFTED (Josh-prompted CRE ideation session) —
-  concept: **"Forecast Receipts"** (working name, Josh names it): a Chainlink
-  CRE cron workflow that commits multi-provider forecasts onchain BEFORE the
-  weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches
-  official station actuals next day, and maintains rolling per-forecaster
-  skill scores onchain. The commit-before-outcome receipt is the thing no
-  offchain accuracy site (ForecastAdvisor) can match; nobody does forecaster
-  accountability onchain (AccuWeather sells data via its Chainlink node;
-  Arbol/dClimate do B2B insurance — checked 2026-07-08).
-- **Business model (Josh's framing):** Josh sponsors the LINK/gas (testnet $0
-  now; mainnet = cheap L2 writes + CRE billing TBD, early access); money made
-  another way: (1) Polymarket weather-trader audience — 200+ weather markets,
-  ~$18.8M category volume, daily NWS-settled temperature markets; skill data
-  is handicapping edge → dashboard/newsletter/x402 API; (2) deadpan
-  weatherman-grading content flywheel (Bad Boys production skills) →
-  sponsorship; (3) Chainlink grant/showcase — clean canonical CRE demo
-  (cron + consensus HTTP + EVM write); (4) career proof-of-work side effect.
-- **Next action (WO-2 draft-only):** draft the one-shot Pi capture
-  verification packet for `products/weather-oracle/capture_daily.py`:
-  cron timing, output path, and pass/fail checks for one fresh
-  `captures/<timestamp>/manifest.json` with NWS/Open-Meteo source files.
-  The actual run stays local-only until Josh reviews the packet.
-- **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent
-  `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local
-  (fires on next wake if asleep) → `logs/weather_capture_mac.log`.
-  Capture-only, no git actions; sessions commit accumulated captures.
-  Remove with: `launchctl unload ~/Library/LaunchAgents/
-  com.commander.weather-capture.plist && rm` that file. Pi cron remains
-  the primary once Hermes confirms WO-2.
-- **Waiting on:** name (batches 1+2 rejected; next angle: name the thing
-  after it exists — working title stays "weather-oracle")
+## Status — 2026-07-25
+- **State:** WO-1 revenue scan still stands as the concept anchor: **"Forecast Receipts"** (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.
+- **Business model (Josh's framing):** Josh sponsors the LINK/gas (testnet $0 now; mainnet = cheap L2 writes + CRE billing TBD, early access); money made another way: (1) Polymarket weather-trader audience; (2) deadpan weatherman-grading content flywheel → sponsorship; (3) Chainlink grant/showcase; (4) career proof-of-work side effect.
+- **WO-2 draft artifact:** the one-shot Pi capture verification packet now exists at `projects/weather-oracle-capture-verification-packet.md`.
+- **Next action (WO-2 draft-only):** on the Pi, run `products/weather-oracle/capture_daily.py` once and verify a fresh `captures/<timestamp>/manifest.json` with `nws_forecast.json` and `openmeteo_models.json` present and 200 in the manifest.
+- **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
+- **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 
 ## MVP spec — OKC metro first (2026-07-08 session)
 
