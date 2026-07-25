@@ -52,9 +52,9 @@ drafting, final review of important materials, debugging stuck issues, strategy.
 
 See `MODEL_DELEGATION.md` for the operating workflow.
 
-- Daily execution defaults to `gpt-5.4-mini` / cheap Tier 1.
-- GPT-5.5 is reserved for high-leverage checkpoints, final review, hard
-  debugging, or strategy after cheaper attempts fail.
+- **Current runtime reality:** Commander currently runs `openai-codex/gpt-5.6-terra`; do not route work to the stale `gpt-5.4-mini` / `gpt-5.5` names by assumption.
+- **Recurring-worker rule:** benchmark a cheap model actually available through the current auth, then pin it explicitly for every agent cron. Until then, use deterministic scripts for mechanical jobs and reserve agent runs for real reasoning.
+- GPT-5.6-terra is reserved for high-leverage synthesis, hard debugging, and strategy—not repetitive cron prose.
 - Subagents should use restricted toolsets and return compact summaries; do not
   use premium subagents for bulk research or repetitive content generation.
 - If premium usage is blocked, continue with cheap models, file briefs,

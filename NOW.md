@@ -1,6 +1,6 @@
 # NOW.md
 
-**Active focus:** Command Center reliability + CC-24 morning packet exact-shape freeze / CI-1 Coinbase Institutional packet / revenue backstop; CC-24 parser re-check passed again and the next safe step is the next 07:30 check.
+**Active focus:** portfolio reset: make The Boring Report the flagship compounding data/product asset; Weather Oracle accumulates real capture history; Bad Boys ships finished clips; career stays a weekly opportunistic hedge. Internal packet/format churn is retired unless it removes a verified blocker.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 

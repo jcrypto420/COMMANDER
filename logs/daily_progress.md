@@ -510,3 +510,8 @@ One short entry per working day. What advanced + estimated spend.
 - Recovered the repo after the overnight stash/rebase cycle, confirmed the CI-1 Coinbase Institutional packet is still the live decision surface, and refreshed the morning dispatch to the exact 5-line CC-24 shape.
 - Goal check: advanced Career / income defense + portfolio leverage — the CI-1 packet stayed send-ready for Josh’s apply / tweak / kill verdict and no sending/spending happened.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- **Portfolio reset:** Josh directed a hard strategy update: stop treating internal packets, gate cards, queue refreshes, and morning-report formatting as business progress. Wrote `projects/portfolio-reset-2026-07-25.md`, made The Boring Report P2 Oracle Scorecard v0 the single flagship `doing` lane, retired perpetual Coinbase/CC-24 churn, and parked Bad Boys product/account theory behind a finished playable clip.
+- **Model correction:** current runtime is `openai-codex/gpt-5.6-terra`; prior `gpt-5.4-mini` / `gpt-5.5` routing assumptions are stale, and unpinned organization jobs skipped safely after drift. Next model step is a bounded cheap-worker benchmark followed by explicit cron pins—not a blind global change.
+- Goal check: advanced income/assets/leverage direction by replacing metadata-driven lane management with one compounding evidence-first data-product build.
+- Estimated spend: $0.00 incremental API spend; strategy/repo update only.
