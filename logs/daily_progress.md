@@ -515,3 +515,6 @@ One short entry per working day. What advanced + estimated spend.
 - **Model correction:** current runtime is `openai-codex/gpt-5.6-terra`; prior `gpt-5.4-mini` / `gpt-5.5` routing assumptions are stale, and unpinned organization jobs skipped safely after drift. Next model step is a bounded cheap-worker benchmark followed by explicit cron pins—not a blind global change.
 - Goal check: advanced income/assets/leverage direction by replacing metadata-driven lane management with one compounding evidence-first data-product build.
 - Estimated spend: $0.00 incremental API spend; strategy/repo update only.
+
+- **Cheap-worker fix:** live-tested `openai-codex/gpt-5.4-mini` on a structured triage task (19 seconds; followed the exact three-line format) and confirmed the alternative OpenRouter credential is exhausted (402). Pinned all six active agent crons to `gpt-5.4-mini`, including the two organization loops that had failed solely because they were unpinned after global-model drift. No manual cron run was forced because it would send an unsolicited Telegram report; the next scheduled run is the real delivery verification.
+- Goal check: advanced Command Center reliability + cost discipline — recurring automation is now explicit-model, cheaper by default, and no longer coupled to global model drift.

@@ -52,8 +52,8 @@ drafting, final review of important materials, debugging stuck issues, strategy.
 
 See `MODEL_DELEGATION.md` for the operating workflow.
 
-- **Current runtime reality:** Commander currently runs `openai-codex/gpt-5.6-terra`; do not route work to the stale `gpt-5.4-mini` / `gpt-5.5` names by assumption.
-- **Recurring-worker rule:** benchmark a cheap model actually available through the current auth, then pin it explicitly for every agent cron. Until then, use deterministic scripts for mechanical jobs and reserve agent runs for real reasoning.
+- **Current routing:** interactive strategy/review stays on `openai-codex/gpt-5.6-terra`; `openai-codex/gpt-5.4-mini` passed a live structured-operator benchmark in 19 seconds and is the recurring-worker default.
+- **Pinned cron rule (verified 2026-07-25):** all six active agent cron jobs explicitly pin `openai-codex/gpt-5.4-mini`. OpenRouter is not a live fallback while its credential is exhausted (402). Use deterministic scripts for mechanical jobs and reserve agent runs for real reasoning.
 - GPT-5.6-terra is reserved for high-leverage synthesis, hard debugging, and strategy—not repetitive cron prose.
 - Subagents should use restricted toolsets and return compact summaries; do not
   use premium subagents for bulk research or repetitive content generation.
