@@ -18,14 +18,11 @@
   weatherman-grading content flywheel (Bad Boys production skills) →
   sponsorship; (3) Chainlink grant/showcase — clean canonical CRE demo
   (cron + consensus HTTP + EVM write); (4) career proof-of-work side effect.
-- **Next action:** CAPTURE PIPELINE LIVE, ALL 12 SOURCES (Josh GO
-  2026-07-08): KFOR SOLVED same evening — page needs curl's HTTP/2
-  fingerprint + full browser headers, AND the 4Warn team's broadcast 7-day
-  graphic found at a stable URL (`media.psg.nexstardigital.net/kfor/weather/
-  7day.jpg` — the human forecast itself; vision-pass extraction at grading,
-  JPEG is the receipt). Full capture: `captures/2026-07-08_2012/`.
-  Next: Hermes installs Pi cron (WO-2), then Fox 25 + News 9 parsers.
-  CRE layer deferred by Josh ("can do CRE later").
+- **Next action (WO-2 draft-only):** draft the one-shot Pi capture
+  verification packet for `products/weather-oracle/capture_daily.py`:
+  cron timing, output path, and pass/fail checks for one fresh
+  `captures/<timestamp>/manifest.json` with NWS/Open-Meteo source files.
+  The actual run stays local-only until Josh reviews the packet.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent
   `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local
   (fires on next wake if asleep) → `logs/weather_capture_mac.log`.

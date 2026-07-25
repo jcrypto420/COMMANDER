@@ -12,7 +12,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
 | BR-1 | Boring Report | 1 | Flagship build — P2 Oracle Scorecard v0 | doing | Build the first traceable protocol scorecard set: fact files + source snapshots + deterministic scoring + rendered internal review artifact. See `projects/portfolio-reset-2026-07-25.md`. | internal review gate |
-| WO-2 | Weather Oracle | 1 | Compounding capture loop | todo | Verify the Pi can complete one real capture; then keep capture-only history accumulating. No CRE/mainnet/monetization work before that history is reliable. | no |
+| WO-2 | Weather Oracle | 1 | Compounding capture loop | todo | Draft the one-shot Pi capture verification packet for `products/weather-oracle/capture_daily.py`: cron timing, output path, and pass/fail checks for one fresh `captures/<timestamp>/manifest.json` with NWS/Open-Meteo source files. | no |
 | BB-25 | Bad Boys/Joycat | 2 | CARTOON LAB — real clip review | todo | Claude builds the 12–15s `Collateral Damage` locked-panel / 2D-composite MP4; review the playable output, not a new plan. | gate 2 |
 | CI-1 | Career/Income | 2 | Opportunistic job pipeline | todo | Weekly fresh high-fit scan only; pursue roles Josh actually wants. Coinbase Institutional stays optional, never a daily decision surface. | **yes** to send |
 | PS-1 | Primoscapes | 2 | Fall Native Prairie prep | blocked | Reopen when Josh supplies price basis, licensing/insurance status, and public-name call; then turn it into one real offer and outreach test. | yes to send |

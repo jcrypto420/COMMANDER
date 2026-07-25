@@ -518,3 +518,8 @@ One short entry per working day. What advanced + estimated spend.
 
 - **Cheap-worker fix:** live-tested `openai-codex/gpt-5.4-mini` on a structured triage task (19 seconds; followed the exact three-line format) and confirmed the alternative OpenRouter credential is exhausted (402). Pinned all six active agent crons to `gpt-5.4-mini`, including the two organization loops that had failed solely because they were unpinned after global-model drift. No manual cron run was forced because it would send an unsolicited Telegram report; the next scheduled run is the real delivery verification.
 - Goal check: advanced Command Center reliability + cost discipline — recurring automation is now explicit-model, cheaper by default, and no longer coupled to global model drift.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- **WO-2 draft-only lane:** turned the Weather Oracle next step into a one-shot Pi capture verification packet for `products/weather-oracle/capture_daily.py`, focused on cron timing, output path, and a single fresh `captures/<timestamp>/manifest.json` containing NWS/Open-Meteo source files.
+- Goal check: advanced Weather Oracle — converted the capture lane into a concrete local-only verification draft without running a capture, sending, posting, spending, or changing services.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
