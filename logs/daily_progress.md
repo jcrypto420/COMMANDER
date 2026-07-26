@@ -535,3 +535,6 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: inspected `products/weather-oracle/capture_daily.py`, confirmed the robot-baseline pass condition (`nws_forecast` + `openmeteo_models` in the manifest), and tightened the Weather Oracle queue/project/packet notes without running the capture.
 - Goal check: advanced Weather Oracle — the draft packet now reflects the script’s actual useful-pair gate, and the next step remains a single local Pi verification run.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- WO-2 draft-only lane: tightened the queue wording to the exact Pi run shape and kept the Weather Oracle packet aligned to the script’s live `nws_forecast` / `openmeteo_models` hard gate.
+- Goal check: advanced Weather Oracle — the draft surface is now ready for the one-shot local proof run; no external actions were taken.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

@@ -1,10 +1,10 @@
 # Project: Weather Oracle MVP (Priority 4)
 
-## Status — 2026-07-25
+## Status — 2026-07-26
 - **State:** WO-1 revenue scan still stands as the concept anchor: **"Forecast Receipts"** (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.
 - **Business model (Josh's framing):** Josh sponsors the LINK/gas (testnet $0 now; mainnet = cheap L2 writes + CRE billing TBD, early access); money made another way: (1) Polymarket weather-trader audience; (2) deadpan weatherman-grading content flywheel → sponsorship; (3) Chainlink grant/showcase; (4) career proof-of-work side effect.
 - **WO-2 draft artifact:** the one-shot Pi capture verification packet now exists at `projects/weather-oracle-capture-verification-packet.md`.
-- **WO-2 draft-only preflight:** `products/weather-oracle/capture_daily.py` now matches the packet's hard gate — the run succeeds only if `nws_forecast` and `openmeteo_models` land in the manifest with 200 and source files present. Next action remains the Pi one-shot capture verification.
+- **WO-2 draft-only preflight:** the live `capture_daily.py` gate and the packet now match — the run succeeds only if `nws_forecast` and `openmeteo_models` land in the manifest with 200 and source files present. Next action remains the single Pi one-shot capture verification.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 
