@@ -1,5 +1,5 @@
-Status: Portfolio reset active; Commander is operational and synced.
-Shipped this week: 5 externally submitted applications (repo-reported); new internal packets do not count.
-Flagship: The Boring Report — P2 Oracle Scorecard v0 is the next compounding asset.
-Open: Weather capture needs Pi verification; `Collateral Damage` needs Claude’s finished MP4; two organization crons are paused by model drift.
-**Decision:** LOCK BORING REPORT AS THE FLAGSHIP BUILD
+Status: Operational; repo synced after overnight rebase recovery.
+Shipped this week: 5 externally submitted applications (repo-reported); internal draft packets still do not count.
+CI-1 update: Coinbase Institutional Business Operations packet stays send-ready; Josh’s verdict is still the gate.
+Optional lane: Weather Oracle capture verification and Boring Report flagship work continue on the side.
+**Decision:** APPROVE / TWEAK / KILL THE COINBASE INSTITUTIONAL PACKET
