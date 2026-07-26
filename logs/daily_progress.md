@@ -532,4 +532,6 @@ One short entry per working day. What advanced + estimated spend.
 
 - CI-1 morning lane: recovered the overnight repo sync/rebase, kept the Coinbase Institutional Business Operations packet as the live decision surface, and routed the morning dispatch back to Josh’s apply / tweak / kill verdict.
 - Goal check: advanced Career / income defense + portfolio leverage — the send-ready Coinbase packet stayed the highest-leverage decision draft and no sending/spending happened.
+- WO-2 draft-only lane: inspected `products/weather-oracle/capture_daily.py`, confirmed the robot-baseline pass condition (`nws_forecast` + `openmeteo_models` in the manifest), and tightened the Weather Oracle queue/project/packet notes without running the capture.
+- Goal check: advanced Weather Oracle — the draft packet now reflects the script’s actual useful-pair gate, and the next step remains a single local Pi verification run.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

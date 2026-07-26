@@ -8,6 +8,13 @@ Verify that `products/weather-oracle/capture_daily.py` can run once on the Pi an
 - **Command:** `cd /home/josh/COMMANDER && python3 products/weather-oracle/capture_daily.py`
 - **Scope:** local-only capture, no posting, no sending, no spending, no service changes
 
+## Preflight note
+The current script’s useful-pair gate is exactly the robot baseline pair:
+- `nws_forecast`
+- `openmeteo_models`
+
+The run is a pass only if those two sources both land in `captures/<timestamp>/manifest.json` with `status: 200` and their source files written to the run directory.
+
 ## Expected output
 A new directory under:
 
