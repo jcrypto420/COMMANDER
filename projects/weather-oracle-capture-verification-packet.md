@@ -71,3 +71,12 @@ After the Pi run, record these fields in the capture note:
 - `manifest.sources.nws_forecast.status`
 - `manifest.sources.openmeteo_models.status`
 - any missing source files or reused-directory warning
+
+## Pi execution checklist
+Use this exact order on the Pi so the first proof run is easy to audit:
+1. `cd /home/josh/COMMANDER`
+2. Confirm the tree is clean enough to run the capture once.
+3. Run `python3 products/weather-oracle/capture_daily.py`
+4. Verify the new `captures/<YYYY-MM-DD_HHMM>/` directory exists.
+5. Open `manifest.json` and confirm the robot baseline pair is present with `status: 200`.
+6. Save the result note using the template above, including any warning about reused directories or missing files.

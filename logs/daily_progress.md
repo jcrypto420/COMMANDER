@@ -548,3 +548,7 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: added a Weather Oracle result-note template to the packet and tightened the queue wording around the single Pi verification run.
 - Goal check: advanced Weather Oracle — the draft packet is a bit more decision-ready without touching any external systems.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- WO-2 draft-only lane: added a Pi execution checklist to the Weather Oracle verification packet, then aligned the project status and queue next action to the ready-to-run one-shot capture proof.
+- Goal check: advanced Weather Oracle — one more real draft artifact now exists for the local-only verification run, with no sending, posting, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
