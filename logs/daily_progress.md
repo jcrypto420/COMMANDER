@@ -552,3 +552,7 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: added a Pi execution checklist to the Weather Oracle verification packet, then aligned the project status and queue next action to the ready-to-run one-shot capture proof.
 - Goal check: advanced Weather Oracle — one more real draft artifact now exists for the local-only verification run, with no sending, posting, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- BR-1: built the P2 Oracle Scorecard v0 evidence baseline: two protocol fact files, live Pi-fetched and SHA-256-verified Chainlink/Aave/Morpho source snapshots, deterministic Markdown/JSON/HTML rendering, and a fail-closed verifier. `verify_scorecard.py` and the existing weekly truth harness both pass.
+- Goal check: advanced The Boring Report flagship — a reusable, source-backed, rendered data artifact now exists; its explicit next evidence layer is deployment-specific feed maps, heartbeat observations, and a sourced incident ledger.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session; no API credits, sending, deployment, or public exposure.
