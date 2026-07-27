@@ -544,3 +544,7 @@ One short entry per working day. What advanced + estimated spend.
 - Re-synced the repo after an overnight rebase recovery, resolved the generated `dashboard/state.json` collision, and re-verified the Coinbase Institutional Business Operations packet as the live CI-1 decision surface.
 - Goal check: advanced Career / income defense + portfolio leverage — revalidated the Coinbase Institutional decision surface after rebase recovery and kept the lane ready for Josh’s verdict.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
+
+- WO-2 draft-only lane: added a Weather Oracle result-note template to the packet and tightened the queue wording around the single Pi verification run.
+- Goal check: advanced Weather Oracle — the draft packet is a bit more decision-ready without touching any external systems.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

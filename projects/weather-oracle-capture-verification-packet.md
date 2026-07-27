@@ -62,3 +62,12 @@ The script is intentionally resilient to partial source failure; one bad source 
 - Open-Meteo multi-model forecast
 
 That matches the script’s own exit condition and keeps the first Pi check focused on the minimum viable capture proof.
+
+## Result note template
+After the Pi run, record these fields in the capture note:
+- timestamp
+- capture directory name
+- exit code
+- `manifest.sources.nws_forecast.status`
+- `manifest.sources.openmeteo_models.status`
+- any missing source files or reused-directory warning
