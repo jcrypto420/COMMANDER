@@ -542,5 +542,5 @@ One short entry per working day. What advanced + estimated spend.
 ## 2026-07-27
 
 - Re-synced the repo after an overnight rebase recovery, resolved the generated `dashboard/state.json` collision, and re-verified the Coinbase Institutional Business Operations packet as the live CI-1 decision surface.
-- Updated `projects/career-income.md` to reflect today’s rebase/verify pass; no packet content changes were needed because the draft was already send-ready.
+- Goal check: advanced Career / income defense + portfolio leverage — revalidated the Coinbase Institutional decision surface after rebase recovery and kept the lane ready for Josh’s verdict.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
