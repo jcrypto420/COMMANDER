@@ -1,8 +1,8 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-07-26
+## Status — 2026-07-27
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-07-26 — overnight reboot/rebase recovery completed; Coinbase Institutional Business Operations packet remains send-ready for Josh’s verdict
+- **Last advanced:** 2026-07-27 — overnight reboot/rebase recovery completed; Coinbase Institutional Business Operations packet re-verified and remains send-ready for Josh’s verdict
 - **Next action:** Josh reads the refreshed Coinbase Institutional packet and either approves apply / tweak / kill
 - **Waiting on:** Josh’s verdict on the Coinbase Institutional packet
 

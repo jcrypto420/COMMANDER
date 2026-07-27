@@ -538,3 +538,9 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: tightened the queue wording to the exact Pi run shape and kept the Weather Oracle packet aligned to the script’s live `nws_forecast` / `openmeteo_models` hard gate.
 - Goal check: advanced Weather Oracle — the draft surface is now ready for the one-shot local proof run; no external actions were taken.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-27
+
+- Re-synced the repo after an overnight rebase recovery, resolved the generated `dashboard/state.json` collision, and re-verified the Coinbase Institutional Business Operations packet as the live CI-1 decision surface.
+- Updated `projects/career-income.md` to reflect today’s rebase/verify pass; no packet content changes were needed because the draft was already send-ready.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
