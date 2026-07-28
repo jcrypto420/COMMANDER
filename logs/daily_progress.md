@@ -570,3 +570,6 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: added a public no-login source inventory to the Weather Oracle capture verification packet, then aligned the queue row and project status note to the same first-Pi proof shape.
 - Goal check: advanced Weather Oracle — the draft packet now points at the exact NWS/Open-Meteo inputs that the first Pi verification is meant to prove, without touching any external system.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- WO-2 draft-only lane: created `projects/weather-oracle-capture-result-note-template.md` from the live capture script’s manifest fields and pass criteria, then linked it back into the Weather Oracle packet/queue as the next local-only proof artifact.
+- Goal check: advanced Weather Oracle — one more reusable draft artifact now exists for the Pi verification run, with no external calls, sending, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

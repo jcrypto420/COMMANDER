@@ -71,6 +71,8 @@ The script is intentionally resilient to partial source failure; one bad source 
 That matches the script’s own exit condition and keeps the first Pi check focused on the minimum viable capture proof.
 
 ## Result note template
+Template file: `projects/weather-oracle-capture-result-note-template.md`.
+
 After the Pi run, record these fields in the capture note:
 - timestamp
 - capture directory name
