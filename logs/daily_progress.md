@@ -556,3 +556,7 @@ One short entry per working day. What advanced + estimated spend.
 - BR-1: built the P2 Oracle Scorecard v0 evidence baseline: two protocol fact files, live Pi-fetched and SHA-256-verified Chainlink/Aave/Morpho source snapshots, deterministic Markdown/JSON/HTML rendering, and a fail-closed verifier. `verify_scorecard.py` and the existing weekly truth harness both pass.
 - Goal check: advanced The Boring Report flagship — a reusable, source-backed, rendered data artifact now exists; its explicit next evidence layer is deployment-specific feed maps, heartbeat observations, and a sourced incident ledger.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session; no API credits, sending, deployment, or public exposure.
+
+- CI-1 cash-path correction: verified Coinbase’s official public Greenhouse feed directly. Job `7980600` — Business Operations Senior Associate, Institutional — is live, Remote — USA; tracker and packet now carry the official link. Submission remains blocked only by Josh’s explicit authorization plus work-authorization and salary wording.
+- Goal check: advanced Career / income defense + portfolio leverage — replaced a stale/repeated approval packet with a live official application target; no submission was made.
+- Estimated spend: $0.00 incremental API spend; no sending, deployment, or public exposure.
