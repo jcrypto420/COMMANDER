@@ -6,6 +6,7 @@
 - **WO-2 draft artifact:** the one-shot Pi capture verification packet now exists at `projects/weather-oracle-capture-verification-packet.md`.
 - **WO-2 draft-only preflight:** the live `capture_daily.py` gate and the packet now match — the run succeeds only if `nws_forecast` and `openmeteo_models` land in the manifest with 200 and source files present. The packet now also includes a Pi execution checklist so the first proof run is easy to audit.
 - **WO-2 result note draft:** the packet now includes a post-run result-note template so the first Pi verification can record the capture dir, exit code, and the two required 200 statuses in one pass.
+- **WO-2 public source inventory:** the packet now also names the no-login NWS and Open-Meteo endpoints used for the first proof run so the audit trail points at the actual inputs, not just the manifest gate.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 

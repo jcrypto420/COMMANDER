@@ -15,6 +15,13 @@ The current script’s useful-pair gate is exactly the robot baseline pair:
 
 The run is a pass only if those two sources both land in `captures/<timestamp>/manifest.json` with `status: 200` and their source files written to the run directory.
 
+## Public source inventory for the first proof run
+Use these no-login endpoints as the expected inputs for the verification pass:
+- NWS forecast: `api.weather.gov/gridpoints/OUN/97,94/forecast`
+- Open-Meteo multi-model forecast: `/v1/forecast?...&models=ecmwf_ifs025,gfs_seamless`
+
+The packet stays deliberately narrow: the first Pi proof only needs the robot baseline pair, not the full station/grading surface.
+
 ## Expected output
 A new directory under:
 
