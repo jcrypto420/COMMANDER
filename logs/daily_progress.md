@@ -560,3 +560,9 @@ One short entry per working day. What advanced + estimated spend.
 - CI-1 cash-path correction: verified Coinbase’s official public Greenhouse feed directly. Job `7980600` — Business Operations Senior Associate, Institutional — is live, Remote — USA; tracker and packet now carry the official link. Submission remains blocked only by Josh’s explicit authorization plus work-authorization and salary wording.
 - Goal check: advanced Career / income defense + portfolio leverage — replaced a stale/repeated approval packet with a live official application target; no submission was made.
 - Estimated spend: $0.00 incremental API spend; no sending, deployment, or public exposure.
+
+## 2026-07-28
+
+- CI-1 morning lane: completed the overnight git fetch/rebase/pull recovery, removed the generated `dashboard/state.json` blocker, and re-verified the Coinbase Institutional Business Operations packet as the active decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the send-ready Coinbase packet stayed live after sync recovery and no sending, spending, or posting happened.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
