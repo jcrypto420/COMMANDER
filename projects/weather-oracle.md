@@ -8,6 +8,7 @@
 - **WO-2 result note draft:** the packet now includes a post-run result-note template so the first Pi verification can record the capture dir, exit code, and the two required 200 statuses in one pass.
 - **WO-2 public source inventory:** the packet now also names the no-login NWS and Open-Meteo endpoints used for the first proof run so the audit trail points at the actual inputs, not just the manifest gate.
 - **WO-2 reusable result note:** a compact template now exists at `projects/weather-oracle-capture-result-note-template.md` so the eventual Pi run can record the manifest fields without inventing a format on the spot.
+- **WO-2 script-shape alignment:** the packet/result note now match the live `capture_daily.py` source list, including the hourly NWS/Open-Meteo captures, CLI report, station observations, and the archived HTML/image receipts.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 

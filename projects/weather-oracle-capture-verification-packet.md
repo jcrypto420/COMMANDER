@@ -30,11 +30,9 @@ A new directory under:
 Minimum expected files for a successful verification run:
 - `manifest.json`
 - `nws_forecast.json`
+- `nws_forecast_hourly.json`
 - `openmeteo_models.json`
 - `openmeteo_hourly.json`
-
-If the other sources succeed, the directory should also include:
-- `nws_forecast_hourly.json`
 - `nws_cli_okc.json`
 - `obs_kokc.json`
 - `obs_kpwa.json`
@@ -45,6 +43,10 @@ If the other sources succeed, the directory should also include:
 - `okcfox.html.gz`
 - `kfor.html.gz`
 - `kfor_7day.jpg`
+
+The packet keeps the hard gate narrow: the run passes only if the robot
+baseline pair lands, but the capture directory should also show the full
+script-shaped receipt set above when sources cooperate.
 
 ## Pass criteria
 Treat the run as a pass only if all of the following are true:

@@ -14,11 +14,24 @@ Use this immediately after the one-shot Pi capture verification run.
 - `openmeteo_models` status:
 - `openmeteo_models` file:
 
+## Other capture receipts
+- `nws_forecast_hourly` status:
+- `nws_cli_okc` status:
+- `obs_kokc` status:
+- `obs_kpwa` status:
+- `obs_ktik` status:
+- `obs_koun` status:
+- `koco` status:
+- `news9` status:
+- `okcfox` status:
+- `kfor` status:
+- `kfor_7day` status:
+- missing source files:
+
 ## Useful manifest details
 - `captured_at_utc`:
 - `captured_at_central`:
 - reused directory warning:
-- missing source files:
 
 ## Short result
 - pass/fail:

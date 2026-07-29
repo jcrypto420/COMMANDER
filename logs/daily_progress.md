@@ -581,5 +581,6 @@ One short entry per working day. What advanced + estimated spend.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
 - WO-2 draft-only lane: marked the Weather Oracle project as draft-ready with the packet, source inventory, and reusable result-note template in place, then aligned the queue next action to the first local Pi verification run.
+- WO-2 script-shape lane: aligned the packet/result note to the live `capture_daily.py` source list so the draft now covers the hourly NWS/Open-Meteo captures, CLI report, station observations, and archived HTML/image receipts.
 - Goal check: advanced Weather Oracle — the lane is now explicitly in draft-only handoff state, with the real capture still pending and no external calls, posting, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
