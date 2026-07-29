@@ -8,6 +8,14 @@
 
 **Why this is the next-best CI-1 packet:** this is a practical income-defense lane that stays inside Josh’s actual edge: institutional financial operations, exception handling, controls, escalation management, workflow coordination, and crypto-native curiosity. Coinbase is a crypto company, but this role is still an operations job first — that makes it a cleaner fit than pure engineering or quota-sales work.
 
+## Josh decision surface
+
+`APPROVE COINBASE INSTITUTIONAL APPLY` / tweak / kill.
+
+- If Josh approves, Commander can submit as soon as Josh confirms the work-authorization wording and salary expectation.
+- If Josh wants tweaks, the only sensible knobs are the fit summary, cover note tone, or resume bullet emphasis.
+- If Josh kills it, archive this packet and keep the weekly fresh scan as the career lane.
+
 **Why Josh fits:**
 - 6+ years in institutional financial operations at S&P Global.
 - Facilitated $10B+ in syndicated loan trades; lived in settlement blockers, funding details, documentation gaps, and daily exception handling.

@@ -573,3 +573,9 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: created `projects/weather-oracle-capture-result-note-template.md` from the live capture script’s manifest fields and pass criteria, then linked it back into the Weather Oracle packet/queue as the next local-only proof artifact.
 - Goal check: advanced Weather Oracle — one more reusable draft artifact now exists for the Pi verification run, with no external calls, sending, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-29
+
+- CI-1 morning lane: re-synced the repo after overnight rebase recovery, removed the generated `dashboard/state.json` blocker, and tightened the Coinbase Institutional packet with an explicit approve / tweak / kill decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the live Coinbase packet is still the decision surface, now with a clearer approval ask and no sending, spending, posting, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
