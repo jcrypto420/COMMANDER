@@ -127,6 +127,7 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 - [ ] Actuals vs forecast comparison
 - [ ] Accuracy score v0
 - [ ] README/demo doc
+- [x] WO-2 draft-only checkpoint: the one-shot Pi capture verification packet, public source inventory, and reusable result-note template are all in place; the remaining step is the single local Pi capture run.
 
 ## Notes
 
