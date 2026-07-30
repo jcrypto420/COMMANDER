@@ -12,6 +12,8 @@
 
 `APPROVE COINBASE INSTITUTIONAL APPLY` / tweak / kill.
 
+Companion draft: `decision-brief.md` condenses the approval ask into one page for Josh’s quick read.
+
 - If Josh approves, Commander can submit as soon as Josh confirms the work-authorization wording and salary expectation.
 - If Josh wants tweaks, the only sensible knobs are the fit summary, cover note tone, or resume bullet emphasis.
 - If Josh kills it, archive this packet and keep the weekly fresh scan as the career lane.

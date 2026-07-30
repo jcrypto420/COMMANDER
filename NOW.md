@@ -11,7 +11,7 @@ passed; today’s overnight reboot/rebase recovery was completed and the CI-1 Co
 
 ## Next 3 tasks
 
-1. **Cash move:** submit the live Coinbase Business Operations Senior Associate, Institutional application (`7980600`, Remote — USA) after Josh gives explicit submit authorization and confirms work authorization + salary wording. Packet: `jobs/packets/active/coinbase-institutional-business-ops/packet.md`.
+1. **Cash move:** submit the live Coinbase Business Operations Senior Associate, Institutional application (`7980600`, Remote — USA) after Josh gives explicit submit authorization and confirms work authorization + salary wording. Packet: `jobs/packets/active/coinbase-institutional-business-ops/packet.md` plus `decision-brief.md`.
 2. Keep Bad Boys real-asset review and the BB-24 sticker-sheet packet as the fallback lane; no posting, account creation, sending, or spending without Josh.
 3. Keep the morning dispatch at 5 lines and update logs before commit/push.
 
