@@ -594,3 +594,10 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: sanity-checked the public no-login NWS and Open-Meteo inputs with a live 200-response draft check, then refreshed the Weather Oracle queue/project wording to keep the first Pi capture proof pointed at real public sources.
 - Goal check: advanced Weather Oracle — the lane now has a verified public-source sanity check in addition to the packet/result-note draft set; no external posting, spending, sending, or service changes happened.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-07-30
+
+- BR-1 flagship lane: independently re-ran `products/boring-report/scorecard/verify_scorecard.py` (pass: 2 protocol fact files, 3 hashed source snapshots, exact generated outputs) and created the bounded internal acceptance note at `products/boring-report/scorecard/internal-review-2026-07-30.md`.
+- The note accepts only the architecture-evidence baseline and names the next real build increment: a traceable Aave V3 deployment feed map; it explicitly blocks broader score claims pending feed maps, heartbeat observations, and a sourced incident ledger. Repaired three malformed leading-pipe rows in the live task board in the same pass.
+- Goal check: advanced The Boring Report flagship asset — a verified, decision-useful internal review artifact now bounds what the scorecard can claim and directs the next evidence build; no posting, sending, spending, deployment, or financial action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.6-terra` session.
