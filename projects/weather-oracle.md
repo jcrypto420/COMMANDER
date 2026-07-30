@@ -1,6 +1,6 @@
 # Project: Weather Oracle MVP (Priority 4)
 
-## Status — 2026-07-26
+## Status — 2026-07-30
 - **State:** WO-1 revenue scan still stands as the concept anchor: **"Forecast Receipts"** (working name, Josh names it) — a Chainlink CRE cron workflow that commits multi-provider forecasts onchain BEFORE the weather happens (NWS + Open-Meteo models; $0 keyless sources), fetches official station actuals next day, and maintains rolling per-forecaster skill scores onchain.
 - **Business model (Josh's framing):** Josh sponsors the LINK/gas (testnet $0 now; mainnet = cheap L2 writes + CRE billing TBD, early access); money made another way: (1) Polymarket weather-trader audience; (2) deadpan weatherman-grading content flywheel → sponsorship; (3) Chainlink grant/showcase; (4) career proof-of-work side effect.
 - **WO-2 draft artifact:** the one-shot Pi capture verification packet now exists at `projects/weather-oracle-capture-verification-packet.md`.
@@ -10,6 +10,7 @@
 - **WO-2 reusable result note:** a compact template now exists at `projects/weather-oracle-capture-result-note-template.md` so the eventual Pi run can record the manifest fields without inventing a format on the spot.
 - **WO-2 script-shape alignment:** the packet/result note now match the live `capture_daily.py` source list, including the hourly NWS/Open-Meteo captures, CLI report, station observations, and the archived HTML/image receipts.
 - **WO-2 public-source sanity check (2026-07-30):** live no-login NWS and Open-Meteo endpoints both returned 200 in a quick draft check, so the packet points at the real public inputs before the first Pi verification run.
+- **WO-2 draft-only verification note (2026-07-30):** the live `capture_daily.py` source list also includes `nws_cli_okc`, `openmeteo_hourly`, station observations, and `kfor_7day`, so the draft packet/template stay aligned with the full capture surface while the hard gate remains the two robot baselines.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 

@@ -595,6 +595,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Weather Oracle — the lane now has a verified public-source sanity check in addition to the packet/result-note draft set; no external posting, spending, sending, or service changes happened.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
+- WO-2 draft-only lane: cross-checked the live `capture_daily.py` source list against the packet/template and confirmed the draft now reflects the full capture surface (`nws_cli_okc`, `openmeteo_hourly`, station observations, and `kfor_7day`) while the hard gate remains the robot-baseline pair.
+- Goal check: advanced Weather Oracle — the draft-only packet/result-note set is now explicitly anchored to the script’s actual outputs instead of a shortened summary; the real Pi run is still the next required proof.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
 ## 2026-07-30
 
 - BR-1 flagship lane: independently re-ran `products/boring-report/scorecard/verify_scorecard.py` (pass: 2 protocol fact files, 3 hashed source snapshots, exact generated outputs) and created the bounded internal acceptance note at `products/boring-report/scorecard/internal-review-2026-07-30.md`.
