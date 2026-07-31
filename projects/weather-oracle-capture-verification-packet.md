@@ -84,6 +84,8 @@ After the Pi run, record these fields in the capture note:
 - any missing source files or reused-directory warning
 
 ## Pi execution checklist
+Canonical run sheet: `projects/weather-oracle-capture-run-sheet.md`.
+
 Use this exact order on the Pi so the first proof run is easy to audit:
 1. `cd /home/josh/COMMANDER`
 2. Confirm the tree is clean enough to run the capture once.

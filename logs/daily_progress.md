@@ -615,3 +615,7 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: attempted the requested model pass, confirmed the next safe draft step is the exact Pi one-shot capture run sheet for the `nws_forecast` + `openmeteo_models` 200 gate, and kept the real capture run queued behind the local-only checklist.
 - Goal check: advanced Weather Oracle — the lane now has a clearer draft-only handoff for the first Pi verification without any external calls, sending, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; attempted `openai-codex` / `gpt-5.4-mini` directly, and the fallback `openrouter` attempt was blocked by credit limits before the successful Hermes Codex draft check.
+
+- WO-2 draft-only lane: wrote the exact local-only Pi run sheet at `projects/weather-oracle-capture-run-sheet.md`, linked it into the verification packet/result-note flow, and tightened the queue/project wording around the execution checklist.
+- Goal check: advanced Weather Oracle — the lane now has a reusable, audit-friendly run sheet for the first capture proof while staying draft-only; no external calls, posting, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
