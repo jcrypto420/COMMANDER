@@ -605,3 +605,9 @@ One short entry per working day. What advanced + estimated spend.
 - The note accepts only the architecture-evidence baseline and names the next real build increment: a traceable Aave V3 deployment feed map; it explicitly blocks broader score claims pending feed maps, heartbeat observations, and a sourced incident ledger. Repaired three malformed leading-pipe rows in the live task board in the same pass.
 - Goal check: advanced The Boring Report flagship asset — a verified, decision-useful internal review artifact now bounds what the scorecard can claim and directs the next evidence build; no posting, sending, spending, deployment, or financial action occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.6-terra` session.
+
+## 2026-07-31
+
+- CI-1 decision lane: re-synced after the overnight reboot/rebase/pull, removed the generated `dashboard/state.json` blocker, and re-verified the Coinbase Institutional packet plus one-page decision brief as the live Josh decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet remains the current draft-ahead approval item, and no sending, spending, or public action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
