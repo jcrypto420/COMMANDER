@@ -611,3 +611,7 @@ One short entry per working day. What advanced + estimated spend.
 - CI-1 decision lane: re-synced after the overnight reboot/rebase/pull, removed the generated `dashboard/state.json` blocker, and re-verified the Coinbase Institutional packet plus one-page decision brief as the live Josh decision surface.
 - Goal check: advanced Career / income defense + portfolio leverage — the Coinbase Institutional packet remains the current draft-ahead approval item, and no sending, spending, or public action occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- WO-2 draft-only lane: attempted the requested model pass, confirmed the next safe draft step is the exact Pi one-shot capture run sheet for the `nws_forecast` + `openmeteo_models` 200 gate, and kept the real capture run queued behind the local-only checklist.
+- Goal check: advanced Weather Oracle — the lane now has a clearer draft-only handoff for the first Pi verification without any external calls, sending, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; attempted `openai-codex` / `gpt-5.4-mini` directly, and the fallback `openrouter` attempt was blocked by credit limits before the successful Hermes Codex draft check.

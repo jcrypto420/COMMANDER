@@ -11,6 +11,7 @@
 - **WO-2 script-shape alignment:** the packet/result note now match the live `capture_daily.py` source list, including the hourly NWS/Open-Meteo captures, CLI report, station observations, and the archived HTML/image receipts.
 - **WO-2 public-source sanity check (2026-07-30):** live no-login NWS and Open-Meteo endpoints both returned 200 in a quick draft check, so the packet points at the real public inputs before the first Pi verification run.
 - **WO-2 draft-only verification note (2026-07-30):** the live `capture_daily.py` source list also includes `nws_cli_okc`, `openmeteo_hourly`, station observations, and `kfor_7day`, so the draft packet/template stay aligned with the full capture surface while the hard gate remains the two robot baselines.
+- **WO-2 draft-only re-entry (2026-07-31):** Codex confirmed the next safe step is the exact Pi run sheet for the `nws_forecast` + `openmeteo_models` 200 gate, with the manifest/result-note checklist; no external action was taken.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 
