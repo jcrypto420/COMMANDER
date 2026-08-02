@@ -1,6 +1,6 @@
 # Coinbase Institutional Decision Brief
 
-**Status:** draft-only companion to the live packet
+**Status:** draft-only companion to the live packet; re-verified 2026-08-02
 **Packet:** `packet.md`
 
 ## Why this is the next highest-leverage CI-1 item
