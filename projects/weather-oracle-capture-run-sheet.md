@@ -72,6 +72,15 @@ Record these fields immediately after the run:
 - reused directory warning, if any
 - one-line result and next action
 
+## Common failure modes
+
+- stale capture directory from a prior run; clear or ignore old artifacts before reading results
+- source fetch returns 4xx/5xx or times out; treat as upstream failure, not a local pass
+- manifest missing expected entries; do not assume success from partial files alone
+- non-gate sources fail after the gate pair passes; note the partial receipt set and keep the pass/fail decision tied only to `nws_forecast` + `openmeteo_models`
+- reused folder or timestamp collision; ensure the run writes to a fresh path before trusting artifacts
+- operator rule: save the result note and stop; do not retry by changing services or sending anything
+
 ## Canonical references
 - Verification packet: `projects/weather-oracle-capture-verification-packet.md`
 - Result-note template: `projects/weather-oracle-capture-result-note-template.md`
