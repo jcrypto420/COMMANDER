@@ -619,3 +619,9 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: wrote the exact local-only Pi run sheet at `projects/weather-oracle-capture-run-sheet.md`, linked it into the verification packet/result-note flow, and tightened the queue/project wording around the execution checklist.
 - Goal check: advanced Weather Oracle — the lane now has a reusable, audit-friendly run sheet for the first capture proof while staying draft-only; no external calls, posting, spending, or service changes occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-08-02
+
+- WO-2 draft-only lane: tightened the Weather Oracle handoff to the exact local-only Pi proof bundle (packet, run sheet, and result-note template) and aligned the queue next action to the single capture run.
+- Goal check: advanced Weather Oracle — the first proof run is now fully draft-ready without any external calls, sending, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
