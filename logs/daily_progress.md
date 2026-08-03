@@ -643,3 +643,9 @@ One short entry per working day. What advanced + estimated spend.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
 - Goal check: aligned with Weather Oracle — the draft-only lane now has a tighter run sheet and a cleaner stop rule, while the live next action still points at the single local-only Pi capture proof.
+
+## 2026-08-03
+
+- CI-1 draft-ahead lane: completed the overnight git fetch/rebase/pull recovery, removed the generated `dashboard/state.json` blocker, and re-verified the Coinbase Institutional Business Operations packet plus one-page decision brief as the live decision surface for Josh’s quick read.
+- Goal check: advanced Career / income defense + portfolio leverage — the Coinbase packet remains the active decision surface, freshly re-verified after sync recovery; no sending, spending, posting, or public action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

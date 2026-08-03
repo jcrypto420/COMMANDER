@@ -21,7 +21,7 @@ Josh checks this ONE file (or the dashboard Files tab → jobs/) for all job upd
 || — | Ripple | Treasury Manager, Global Treasury Ops (NY) | 5 | hold — location friction | — | — | [Ripple careers](https://ripple.com/careers/all-jobs/job/7767531?gh_jid=7767531) |
 || — | BitGo | Financial Operations Manager (Palo Alto) | 4 | skip — location; keyword source only | — | — | [Greenhouse posting](https://job-boards.greenhouse.io/bitgo/jobs/8436572002) |
 || 2026-07-27 | Coinbase | Business Operations Senior Associate, Institutional | 8 | **LIVE — AWAITING JOSH DECISION**; official Greenhouse feed confirms Remote — USA, job `7980600` | Josh | `jobs/packets/active/coinbase-institutional-business-ops/packet.md` + `decision-brief.md` | [official ATS](https://www.coinbase.com/careers/positions/7980600?gh_jid=7980600) |
-|| 2026-08-02 | Coinbase | Business Operations Senior Associate, Institutional | 8 | **LIVE — AWAITING JOSH DECISION**; re-verified after overnight reboot/rebase; official Greenhouse feed confirms Remote — USA, job `7980600` | Josh | `jobs/packets/active/coinbase-institutional-business-ops/packet.md` + `decision-brief.md` | [official ATS](https://www.coinbase.com/careers/positions/7980600?gh_jid=7980600) |
+|| 2026-08-03 | Coinbase | Business Operations Senior Associate, Institutional | 8 | **LIVE — AWAITING JOSH DECISION**; re-verified after overnight reboot/rebase; official Greenhouse feed confirms Remote — USA, job `7980600` | Josh | `jobs/packets/active/coinbase-institutional-business-ops/packet.md` + `decision-brief.md` | [official ATS](https://www.coinbase.com/careers/positions/7980600?gh_jid=7980600) |
 
 ## Archive (applied or killed — out of the active system)
 
