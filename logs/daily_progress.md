@@ -649,3 +649,7 @@ One short entry per working day. What advanced + estimated spend.
 - CI-1 draft-ahead lane: completed the overnight git fetch/rebase/pull recovery, removed the generated `dashboard/state.json` blocker, and re-verified the Coinbase Institutional Business Operations packet plus one-page decision brief as the live decision surface for Josh’s quick read.
 - Goal check: advanced Career / income defense + portfolio leverage — the Coinbase packet remains the active decision surface, freshly re-verified after sync recovery; no sending, spending, posting, or public action occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- WO-2 draft-only lane: wrote a first-run Weather Oracle result-note draft scaffold and re-anchored the queue next action to that artifact while keeping the lane todo.
+- Goal check: advanced Weather Oracle — the next execution step is now a ready-to-fill local draft for the first capture proof, with no external calls, sending, spending, or service changes.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

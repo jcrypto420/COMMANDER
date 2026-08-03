@@ -8,6 +8,7 @@
 - **WO-2 result note draft:** the packet now includes a post-run result-note template so the first Pi verification can record the capture dir, exit code, and the two required 200 statuses in one pass.
 - **WO-2 public source inventory:** the packet now also names the no-login NWS and Open-Meteo endpoints used for the first proof run so the audit trail points at the actual inputs, not just the manifest gate.
 - **WO-2 reusable result note:** a compact template now exists at `projects/weather-oracle-capture-result-note-template.md` so the eventual Pi run can record the manifest fields without inventing a format on the spot.
+- **WO-2 first-run result-note draft:** a prefilled draft scaffold now exists at `projects/weather-oracle-capture-result-note-draft.md` so the first proof run can be written up immediately after the capture.
 - **WO-2 script-shape alignment:** the packet/result note now match the live `capture_daily.py` source list, including the hourly NWS/Open-Meteo captures, CLI report, station observations, and the archived HTML/image receipts.
 - **WO-2 public-source sanity check (2026-07-30):** live no-login NWS and Open-Meteo endpoints both returned 200 in a quick draft check, so the packet points at the real public inputs before the first Pi verification run.
 - **WO-2 draft-only verification note (2026-07-30):** the live `capture_daily.py` source list also includes `nws_cli_okc`, `openmeteo_hourly`, station observations, and `kfor_7day`, so the draft packet/template stay aligned with the full capture surface while the hard gate remains the two robot baselines.
@@ -135,9 +136,10 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 - [ ] Actuals vs forecast comparison
 - [ ] Accuracy score v0
 - [ ] README/demo doc
-- [x] WO-2 draft-only checkpoint: the one-shot Pi capture verification packet, public source inventory, and reusable result-note template are all in place; the remaining step is the single local Pi capture run.
+- [x] WO-2 draft-only checkpoint: the one-shot Pi capture verification packet, public source inventory, and reusable result-note template are all in place; the remaining step is the single local capture run.
 - [x] WO-2 exact run sheet drafted: the local-only Pi checklist now exists and is linked from the packet/result-note flow.
 - [x] WO-2 draft-only re-entry: queue wording, project status, and result-note language all point at the same single local-only Pi capture proof.
+- [x] WO-2 first-run result-note draft: a prefilled scaffold now exists for the first proof run so the note can be filled in immediately after capture.
 
 ## Notes
 
