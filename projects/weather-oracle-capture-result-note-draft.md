@@ -13,6 +13,17 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 ## One-line fail wording
 - `Fail — capture did not produce a fresh directory and/or the robot baseline pair did not both return 200; note the missing files/statuses and leave the lane draft-only.`
 
+## Copy/paste fill-in block
+- timestamp (UTC):
+- timestamp (Central):
+- capture directory:
+- exit code:
+- `nws_forecast` status and file:
+- `openmeteo_models` status and file:
+- missing source files or reused-directory warning:
+- one-line result:
+- next action:
+
 ## Fill-in order after the run
 1. timestamp (UTC)
 2. timestamp (Central)

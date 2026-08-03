@@ -6,6 +6,7 @@
 - **WO-2 draft artifact:** the one-shot Pi capture verification packet now exists at `projects/weather-oracle-capture-verification-packet.md`.
 - **WO-2 draft-only preflight:** the live `capture_daily.py` gate and the packet now match — the run succeeds only if `nws_forecast` and `openmeteo_models` land in the manifest with 200 and source files present. The packet now also includes a Pi execution checklist so the first proof run is easy to audit.
 - **WO-2 result note draft:** the packet now includes a post-run result-note template so the first Pi verification can record the capture dir, exit code, and the two required 200 statuses in one pass.
+- **WO-2 result-note draft tightening (2026-08-03):** the scaffold now has a copy/paste fill-in block for UTC/Central timestamps, capture directory, exit code, the two baseline statuses, warnings, and next action.
 - **WO-2 public source inventory:** the packet now also names the no-login NWS and Open-Meteo endpoints used for the first proof run so the audit trail points at the actual inputs, not just the manifest gate.
 - **WO-2 reusable result note:** a compact template now exists at `projects/weather-oracle-capture-result-note-template.md` so the eventual Pi run can record the manifest fields without inventing a format on the spot.
 - **WO-2 first-run result-note draft:** a prefilled draft scaffold now exists at `projects/weather-oracle-capture-result-note-draft.md` so the first proof run can be written up immediately after the capture.

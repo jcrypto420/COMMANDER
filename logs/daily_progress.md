@@ -653,3 +653,7 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: wrote a first-run Weather Oracle result-note draft scaffold and re-anchored the queue next action to that artifact while keeping the lane todo.
 - Goal check: advanced Weather Oracle — the next execution step is now a ready-to-fill local draft for the first capture proof, with no external calls, sending, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- WO-2 draft-only lane: tightened the Weather Oracle result-note scaffold with a copy/paste fill-in block so the eventual Pi proof can be written up without inventing a format on the spot.
+- Goal check: advanced Weather Oracle — the lane stayed draft-only while making the first run easier to audit; no external calls, sending, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
