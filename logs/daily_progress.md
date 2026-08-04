@@ -657,3 +657,9 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: tightened the Weather Oracle result-note scaffold with a copy/paste fill-in block so the eventual Pi proof can be written up without inventing a format on the spot.
 - Goal check: advanced Weather Oracle — the lane stayed draft-only while making the first run easier to audit; no external calls, sending, spending, or service changes occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-08-04
+
+- WO-2 draft-only lane: re-verified the live no-login NWS forecast and Open-Meteo baseline endpoints behind the capture gate, then tightened the Weather Oracle handoff so the next step stays pointed at the single local-only Pi capture proof.
+- Goal check: advanced Weather Oracle — the draft packet still points at live public inputs and the lane remains parked on the one required Pi capture proof; no posting, sending, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

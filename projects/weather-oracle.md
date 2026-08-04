@@ -18,6 +18,7 @@
 - **WO-2 draft-only closeout (2026-08-02):** the packet, run sheet, and result-note template now form a complete local-only proof bundle; the only next step is the single Pi capture run and manifest check, with no posting, sending, spending, or service changes.
 - **WO-2 draft-only re-entry (2026-08-02):** the lane stays pointed at the single local-only Pi capture proof, and the queue/result-note wording is aligned so the eventual manifest check is easy to audit.
 - **WO-2 draft-only run-sheet hardening (2026-08-02):** the local-only Pi run sheet now includes a short common-failure-modes section so the one-shot proof can stop cleanly after the result note.
+- **WO-2 live public-source recheck (2026-08-04):** the no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again today, so the draft packet still points at live public inputs rather than a dead reference.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 
@@ -141,6 +142,7 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 - [x] WO-2 exact run sheet drafted: the local-only Pi checklist now exists and is linked from the packet/result-note flow.
 - [x] WO-2 draft-only re-entry: queue wording, project status, and result-note language all point at the same single local-only Pi capture proof.
 - [x] WO-2 first-run result-note draft: a prefilled scaffold now exists for the first proof run so the note can be filled in immediately after capture.
+- [x] WO-2 public-source recheck: the live no-login NWS forecast and Open-Meteo baseline URLs behind the gate both returned 200 again, so the packet still references live public inputs.
 
 ## Notes
 
