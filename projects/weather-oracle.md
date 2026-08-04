@@ -18,7 +18,8 @@
 - **WO-2 draft-only closeout (2026-08-02):** the packet, run sheet, and result-note template now form a complete local-only proof bundle; the only next step is the single Pi capture run and manifest check, with no posting, sending, spending, or service changes.
 - **WO-2 draft-only re-entry (2026-08-02):** the lane stays pointed at the single local-only Pi capture proof, and the queue/result-note wording is aligned so the eventual manifest check is easy to audit.
 - **WO-2 draft-only run-sheet hardening (2026-08-02):** the local-only Pi run sheet now includes a short common-failure-modes section so the one-shot proof can stop cleanly after the result note.
-- **WO-2 live public-source recheck (2026-08-04):** the no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again today, so the draft packet still points at live public inputs rather than a dead reference.
+- **WO-2 public-source recheck (2026-08-04):** the no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again today, so the draft packet still points at live public inputs rather than a dead reference.
+- **WO-2 operator note draft (2026-08-04):** the draft result-note scaffold now includes a terse operator note that names the single next safe action, the exact 200 gate, the local files to update, and the no-posting/no-sending/no-spending/no-service-change safety limits.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 

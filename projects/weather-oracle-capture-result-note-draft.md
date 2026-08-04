@@ -13,6 +13,14 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 ## One-line fail wording
 - `Fail — capture did not produce a fresh directory and/or the robot baseline pair did not both return 200; note the missing files/statuses and leave the lane draft-only.`
 
+## Operator note
+- Single next safe action: run one local-only Pi capture proof once, then save the result note locally.
+- Exact 200 gate: `manifest.sources.nws_forecast.status == 200` and `manifest.sources.openmeteo_models.status == 200`.
+- Also confirm both gate rows wrote source files into the fresh capture directory.
+- Update locally: `projects/weather-oracle.md`, `TASK_QUEUE.md`, `logs/daily_progress.md`, `logs/model_usage.csv`.
+- Safety limits: no posting, no sending, no spending, no service changes.
+- Keep the lane draft-only until the single local proof and note are recorded.
+
 ## Copy/paste fill-in block
 - timestamp (UTC):
 - timestamp (Central):
