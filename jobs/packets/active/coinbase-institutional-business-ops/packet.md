@@ -1,6 +1,6 @@
 # CI-1 Application Packet — Coinbase, Business Operations Senior Associate, Institutional
 
-**Status:** LIVE / SEND-READY — awaiting Josh’s explicit submit authorization; re-verified after overnight reboot/rebase on 2026-08-03
+**Status:** LIVE / SEND-READY — awaiting Josh’s explicit submit authorization; re-verified after overnight reboot/rebase on 2026-08-04
 **Official ATS:** [Coinbase Greenhouse job 7980600](https://www.coinbase.com/careers/positions/7980600?gh_jid=7980600) — verified live from Coinbase’s public Greenhouse feed 2026-07-27; **Remote — USA**; listing last updated 2026-07-07.
 **Role in one line:** keep Coinbase’s institutional business operations boring and reliable — resolve exceptions, support client workflows, and reduce operational friction at crypto scale.
 
@@ -12,7 +12,7 @@
 
 `APPROVE COINBASE INSTITUTIONAL APPLY` / tweak / kill.
 
-Companion draft: `decision-brief.md` condenses the approval ask into one page for Josh’s quick read.
+Companion draft: `decision-brief.md` keeps the approval ask to one page for Josh’s quick read.
 
 - If Josh approves, Commander can submit as soon as Josh confirms the work-authorization wording and salary expectation.
 - If Josh wants tweaks, the only sensible knobs are the fit summary, cover note tone, or resume bullet emphasis.

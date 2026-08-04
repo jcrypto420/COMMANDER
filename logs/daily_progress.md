@@ -663,3 +663,7 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: re-verified the live no-login NWS forecast and Open-Meteo baseline endpoints behind the capture gate, then tightened the Weather Oracle handoff so the next step stays pointed at the single local-only Pi capture proof.
 - Goal check: advanced Weather Oracle — the draft packet still points at live public inputs and the lane remains parked on the one required Pi capture proof; no posting, sending, spending, or service changes occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- CI-1 draft-ahead lane: completed the morning repo sync/rebase/pull recovery after the overnight reboot, removed the generated `dashboard/state.json` blocker, deduped the live Coinbase row in `jobs/TRACKER.md`, and re-verified the Coinbase Institutional packet plus one-page decision brief as the active decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the packet remains send-ready for Josh’s quick read, the tracker now has one live Coinbase row, and no sending, spending, posting, or public action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
