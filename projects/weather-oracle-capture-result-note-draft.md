@@ -21,6 +21,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - Safety limits: no posting, no sending, no spending, no service changes.
 - Keep the lane draft-only until the single local proof and note are recorded.
 
+## Public-source recheck (2026-08-05)
+- `nws_forecast` live URL: `https://api.weather.gov/gridpoints/OUN/97,94/forecast` — 200
+- `openmeteo_models` live URL: `https://api.open-meteo.com/v1/forecast?latitude=35.4676&longitude=-97.5164&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=3` — 200
+- Draft implication: the first Pi proof still points at live public inputs, so the remaining work is the local-only capture run and saved result note.
+
 ## Copy/paste fill-in block
 - timestamp (UTC):
 - timestamp (Central):
