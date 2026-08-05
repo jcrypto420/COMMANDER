@@ -21,6 +21,7 @@
 - **WO-2 public-source recheck (2026-08-04):** the no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again today, so the draft packet still points at live public inputs rather than a dead reference.
 - **WO-2 operator note draft (2026-08-04):** the draft result-note scaffold now includes a terse operator note that names the single next safe action, the exact 200 gate, the local files to update, and the no-posting/no-sending/no-spending/no-service-change safety limits.
 - **WO-2 public-source recheck (2026-08-05):** the live no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again today, so the draft packet still points at current public inputs rather than a stale reference.
+- **WO-2 draft preflight snapshot (2026-08-05):** the result-note draft now carries the literal 200 recheck plus the next safe action, so the eventual Pi proof can be recorded without inventing a format on the spot.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 
@@ -145,6 +146,7 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 - [x] WO-2 draft-only re-entry: queue wording, project status, and result-note language all point at the same single local-only Pi capture proof.
 - [x] WO-2 first-run result-note draft: a prefilled scaffold now exists for the first proof run so the note can be filled in immediately after capture.
 - [x] WO-2 public-source recheck: the live no-login NWS forecast and Open-Meteo baseline URLs behind the gate both returned 200 again, so the packet still references live public inputs.
+- [x] WO-2 draft preflight snapshot: the result-note draft now includes the literal 2026-08-05 200 recheck and keeps the lane pointed at the single local-only Pi capture proof.
 
 ## Notes
 

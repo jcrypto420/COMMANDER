@@ -678,6 +678,10 @@ One short entry per working day. What advanced + estimated spend.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session.
 - Goal check: advanced Weather Oracle compounding capture loop — revalidated the public source pair and tightened the draft-only handoff for the pending single local-only Pi capture proof.
 
+- WO-2 draft-only lane: added a literal 2026-08-05 preflight snapshot to the Weather Oracle result-note draft so the eventual Pi proof has copy/paste-ready 200 statuses and a clear next safe action.
+- Goal check: advanced Weather Oracle — this is still draft-only, but the reusable result note now has a concrete preflight snapshot grounded in a live local check; no posting, sending, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
 - CI-1 draft-ahead lane: completed the morning repo sync/rebase/pull recovery after the overnight reboot, refreshed the Coinbase Institutional packet and one-page decision brief to today's date, and kept the live tracker row aligned on the active decision surface.
 - Goal check: advanced Career / income defense + portfolio leverage — the current CI-1 lane remains the Coinbase approval packet awaiting Josh's apply / tweak / kill decision; no sending, spending, posting, or public action occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
