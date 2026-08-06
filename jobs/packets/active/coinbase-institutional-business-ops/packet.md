@@ -1,6 +1,6 @@
 # CI-1 Application Packet — Coinbase, Business Operations Senior Associate, Institutional
 
-**Status:** LIVE / SEND-READY — awaiting Josh’s explicit submit authorization; re-verified after morning repo sync/rebase/pull recovery on 2026-08-05
+**Status:** LIVE / SEND-READY — awaiting Josh’s explicit submit authorization; re-verified after morning repo sync/rebase/pull recovery on 2026-08-06
 **Official ATS:** [Coinbase Greenhouse job 7980600](https://www.coinbase.com/careers/positions/7980600?gh_jid=7980600) — verified live from Coinbase’s public Greenhouse feed 2026-07-27; **Remote — USA**; listing last updated 2026-07-07.
 **Role in one line:** keep Coinbase’s institutional business operations boring and reliable — resolve exceptions, support client workflows, and reduce operational friction at crypto scale.
 

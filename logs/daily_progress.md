@@ -685,3 +685,9 @@ One short entry per working day. What advanced + estimated spend.
 - CI-1 draft-ahead lane: completed the morning repo sync/rebase/pull recovery after the overnight reboot, refreshed the Coinbase Institutional packet and one-page decision brief to today's date, and kept the live tracker row aligned on the active decision surface.
 - Goal check: advanced Career / income defense + portfolio leverage — the current CI-1 lane remains the Coinbase approval packet awaiting Josh's apply / tweak / kill decision; no sending, spending, posting, or public action occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-08-06
+
+- CI-1 draft-ahead lane: refreshed the Coinbase Institutional packet and one-page decision brief after the morning sync/rebase/pull recovery, keeping the live tracker row and project status aligned on the active decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the current CI-1 lane remains the Coinbase approval packet awaiting Josh's apply / tweak / kill decision; no sending, spending, posting, or public action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

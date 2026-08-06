@@ -7,7 +7,7 @@ low-cost execution.
 **Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
 created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
 default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed; today’s overnight reboot/rebase recovery was completed and the CI-1 Coinbase packet was re-verified as the live decision surface.
+passed; this morning’s reboot/rebase recovery was completed and the CI-1 Coinbase packet remains the live decision surface.
 
 ## Next 3 tasks
 
