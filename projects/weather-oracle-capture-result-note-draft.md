@@ -26,11 +26,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - `openmeteo_models` live URL: `https://api.open-meteo.com/v1/forecast?latitude=35.4676&longitude=-97.5164&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=3` — 200
 - Draft implication: the first Pi proof still points at live public inputs, so the remaining work is the local-only capture run and saved result note.
 
-## Draft preflight snapshot (2026-08-06)
+## Draft preflight snapshot (2026-08-08)
 - Recheck status: both public/no-login gate endpoints returned 200 in a fresh local check today.
 - `nws_forecast` status: 200
 - `openmeteo_models` status: 200
-- What changed: the note now has a literal 2026-08-06 preflight snapshot to copy into the eventual run record instead of relying on memory.
+- What changed: the note now has a literal 2026-08-08 preflight snapshot to copy into the eventual run record instead of relying on memory.
 - Next safe action: run the single local-only Pi capture proof, then fill in the result note from the template.
 
 ## Copy/paste fill-in block

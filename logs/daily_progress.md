@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-08-08
+
+- Rechecked the live Weather Oracle public gate endpoints, confirmed both the NWS forecast and Open-Meteo baseline URLs returned 200, and refreshed the WO-2 draft packet/result-note snapshot to 2026-08-08.
+- Kept WO-2 draft-only and updated the queue/project wording so the next real step stays the single local-only Pi capture proof.
+- Goal check: advanced Weather Oracle MVP — refreshed the WO-2 draft packet/result-note snapshot with a live 200/200 preflight and kept the lane pointed at the single local-only Pi capture proof.
+- Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session and a local public-source recheck.
+
 ## 2026-06-27
 
 - Created `command-center` repo scaffolding (truth files, project files, configs,
