@@ -16,6 +16,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Weather Oracle compounding capture loop — still draft-only, but the reusable note now has fresh live output and the board still points at the single local-only Pi capture proof; no posting, sending, spending, or service changes occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
+- Tightened the Weather Oracle result-note draft with a current re-entry note, mirrored that handoff in the project status and queue row, and kept WO-2 draft-only on the single local-only Pi capture proof.
+- Goal check: advanced Weather Oracle MVP — the lane still points at the one-shot Pi capture run and the reusable note now has a clearer current handoff; no posting, sending, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
 - Re-ran the live Weather Oracle gate check from the draft lane, confirmed both no-login URLs returned 200 again, and kept WO-2 draft-only on the single local-only Pi capture proof.
 - Goal check: advanced Weather Oracle MVP — the reusable gate snapshot still points at live public inputs, and the lane remains parked on the one local-only Pi capture proof with no posting, sending, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session and a local public-source recheck.
