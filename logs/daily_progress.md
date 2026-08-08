@@ -4,6 +4,10 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-08
 
+- Re-synced the repo after the overnight reboot, cleared a generated `dashboard/state.json` rebase blocker plus a stale `.git/index.lock`, and completed the full fetch/rebase/pull recovery on `feat/command-center-scaffolding`.
+- Advanced the CI-1 draft-ahead packet by refreshing the live Coinbase Institutional packet, its one-page decision brief, the active tracker row, and the career project status to 2026-08-08 while keeping the lane parked on Josh’s approve/tweak/kill decision.
+- Goal check: advanced Career / income defense + portfolio leverage — refreshed the live Coinbase decision surface after repo recovery and kept the next step to one Josh verdict, not more packet churn.
+- Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session.
 - Rechecked the live Weather Oracle public gate endpoints, confirmed both the NWS forecast and Open-Meteo baseline URLs returned 200, and refreshed the WO-2 draft packet/result-note snapshot to 2026-08-08.
 - Kept WO-2 draft-only and updated the queue/project wording so the next real step stays the single local-only Pi capture proof.
 - Goal check: advanced Weather Oracle MVP — refreshed the WO-2 draft packet/result-note snapshot with a live 200/200 preflight and kept the lane pointed at the single local-only Pi capture proof.
