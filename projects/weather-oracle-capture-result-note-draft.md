@@ -33,6 +33,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - What changed: the note now has a literal 2026-08-08 preflight snapshot to copy into the eventual run record instead of relying on memory.
 - Next safe action: run the single local-only Pi capture proof, then fill in the result note from the template.
 
+## Live recheck details (2026-08-08)
+- `nws_forecast`: 200 `application/geo+json`
+- `openmeteo_models`: 200 `application/json; charset=utf-8`
+- Draft implication: the public gate is still live, so the remaining work stays the local-only Pi proof and saved result note.
+
 ## Copy/paste fill-in block
 - timestamp (UTC):
 - timestamp (Central):

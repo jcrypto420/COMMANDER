@@ -8,6 +8,9 @@ One short entry per working day. What advanced + estimated spend.
 - Kept WO-2 draft-only and updated the queue/project wording so the next real step stays the single local-only Pi capture proof.
 - Goal check: advanced Weather Oracle MVP — refreshed the WO-2 draft packet/result-note snapshot with a live 200/200 preflight and kept the lane pointed at the single local-only Pi capture proof.
 - Estimated spend: $0.00 incremental API spend; used existing ChatGPT/Codex session and a local public-source recheck.
+- Re-ran the live Weather Oracle gate check from the draft lane: `nws_forecast` and `openmeteo_models` both returned 200, and I tightened the result-note draft with the exact content types so the first Pi proof has a cleaner handoff.
+- Goal check: advanced Weather Oracle compounding capture loop — still draft-only, but the reusable note now has fresh live output and the board still points at the single local-only Pi capture proof; no posting, sending, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
 ## 2026-06-27
 
