@@ -149,6 +149,7 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 - [x] WO-2 public-source recheck: the live no-login NWS forecast and Open-Meteo baseline URLs behind the gate both returned 200 again, so the packet still references live public inputs.
 - [x] WO-2 draft preflight snapshot: the result-note draft now includes the literal 2026-08-05 200 recheck and keeps the lane pointed at the single local-only Pi capture proof.
 - [x] WO-2 public-source recheck (2026-08-08): the live no-login NWS forecast and Open-Meteo baseline URLs behind the gate both returned 200 again during today’s draft pass, so the packet still references live public inputs.
+- [x] WO-2 draft-only recheck (2026-08-08): the live no-login NWS forecast and Open-Meteo baseline URLs both returned 200 again during today’s draft pass, so the next step remains the single local-only Pi capture proof.
 
 ## Notes
 
