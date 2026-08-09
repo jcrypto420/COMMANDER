@@ -1,8 +1,8 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-08-08
+## Status — 2026-08-09
 - **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-08-08 — morning git sync/rebase/pull recovery completed after the overnight reboot; Coinbase Institutional Business Operations packet + one-page decision brief remain the live decision surface for Josh’s quick read, and the live tracker row stays deduped to one Coinbase entry
+- **Last advanced:** 2026-08-09 — morning git sync/rebase/pull recovery completed after the overnight reboot; Coinbase Institutional Business Operations packet + one-page decision brief remain the live decision surface for Josh’s quick read, and the live tracker row stays deduped to one Coinbase entry
 - **Next action:** Josh reads the refreshed Coinbase Institutional packet + decision brief and either approves apply / tweak / kill
 - **Waiting on:** Josh’s verdict on the Coinbase Institutional packet + decision brief
 

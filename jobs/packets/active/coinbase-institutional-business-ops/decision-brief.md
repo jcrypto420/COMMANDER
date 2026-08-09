@@ -1,13 +1,13 @@
 # Coinbase Institutional Decision Brief
 
-**Status:** draft-only companion to the live packet; re-verified 2026-08-08
+**Status:** draft-only companion to the live packet; re-verified 2026-08-09
 **Packet:** `packet.md`
 
 ## Why this is the next highest-leverage CI-1 item
 
 This is the clearest current income-defense decision surface in the active lane. It stays inside Josh’s real edge — institutional financial operations, exception handling, controls, escalation management, and multi-party workflow coordination — while keeping the crypto-company context on the operations side, not the engineering or sales side.
 
-Today’s refresh: the packet was re-verified after the overnight reboot/rebase recovery and the tracker was deduped to one live Coinbase row.
+Today’s refresh: the packet was re-verified after the overnight reboot/rebase recovery and the tracker was deduped to one live Coinbase row; refreshed again on 2026-08-09 after the latest sync.
 
 ## Decision needed from Josh
 
