@@ -33,7 +33,19 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - What changed: the note now has a literal 2026-08-08 preflight snapshot to copy into the eventual run record instead of relying on memory.
 - Next safe action: run the single local-only Pi capture proof, then fill in the result note from the template.
 
+## Draft preflight snapshot (2026-08-09)
+- Recheck status: both public/no-login gate endpoints returned 200 in a fresh local check today.
+- `nws_forecast` status: 200
+- `openmeteo_models` status: 200
+- What changed: the note now has a current 2026-08-09 preflight snapshot to copy into the eventual run record instead of relying on memory.
+- Next safe action: run the single local-only Pi capture proof, then fill in the result note from the template.
+
 ## Live recheck details (2026-08-08)
+- `nws_forecast`: 200 `application/geo+json`
+- `openmeteo_models`: 200 `application/json; charset=utf-8`
+- Draft implication: the public gate is still live, so the remaining work stays the local-only Pi proof and saved result note.
+
+## Live recheck details (2026-08-09)
 - `nws_forecast`: 200 `application/geo+json`
 - `openmeteo_models`: 200 `application/json; charset=utf-8`
 - Draft implication: the public gate is still live, so the remaining work stays the local-only Pi proof and saved result note.
@@ -41,6 +53,10 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 ## Draft re-entry note (2026-08-08)
 - This note is the current draft-only handoff for WO-2; keep the lane pointed at the single local-only Pi capture proof.
 - The 2026-08-08 preflight snapshot is already captured here, so the next real step is to run `capture_daily.py` once on the Pi and fill the template immediately after.
+
+## Draft re-entry note (2026-08-09)
+- This note is the current draft-only handoff for WO-2; keep the lane pointed at the single local-only Pi capture proof.
+- The 2026-08-09 preflight snapshot is already captured here, so the next real step is to run `capture_daily.py` once on the Pi and fill the template immediately after.
 
 ## Copy/paste fill-in block
 - timestamp (UTC):
