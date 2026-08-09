@@ -50,6 +50,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - `openmeteo_models`: 200 `application/json; charset=utf-8`
 - Draft implication: the public gate is still live, so the remaining work stays the local-only Pi proof and saved result note.
 
+## Live recheck details (2026-08-09 18:01)
+- `nws_forecast`: 200 `application/geo+json`
+- `openmeteo_models`: 200 `application/json; charset=utf-8`
+- Draft implication: the gate is still live after a second same-day check, so the next real step remains the single local-only Pi capture proof and saved result note.
+
 ## Draft re-entry note (2026-08-08)
 - This note is the current draft-only handoff for WO-2; keep the lane pointed at the single local-only Pi capture proof.
 - The 2026-08-08 preflight snapshot is already captured here, so the next real step is to run `capture_daily.py` once on the Pi and fill the template immediately after.

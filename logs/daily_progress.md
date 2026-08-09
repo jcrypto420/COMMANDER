@@ -728,3 +728,7 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: rechecked the live no-login NWS forecast and Open-Meteo gate URLs today (both 200), then refreshed the Weather Oracle result-note draft, project status, and queue wording with a current 2026-08-09 preflight snapshot.
 - Goal check: advanced Weather Oracle compounding capture loop — the reusable draft bundle now carries a fresh live-input snapshot, and the lane still points at the single local-only Pi capture proof; no posting, sending, spending, or service changes occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session and a local public-source recheck.
+
+- WO-2 draft-only lane: ran a second 2026-08-09 live no-login recheck at 18:01; both gate URLs still returned 200, and I kept the Weather Oracle handoff pointed at the single local-only Pi capture proof while adding the fresh note to the draft packet.
+- Goal check: advanced Weather Oracle compounding capture loop — the reusable draft bundle now has a same-day repeat check, so the next real step is still the one-shot Pi capture proof; no posting, sending, spending, or service changes occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session and a local public-source recheck.

@@ -24,6 +24,7 @@
 - **WO-2 draft preflight snapshot (2026-08-05):** the result-note draft now carries the literal 200 recheck plus the next safe action, so the eventual Pi proof can be recorded without inventing a format on the spot.
 - **WO-2 public-source recheck (2026-08-08):** the live no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again during today’s draft pass, so the draft packet still points at live public inputs rather than a stale reference.
 - **WO-2 public-source recheck (2026-08-09):** the live no-login NWS forecast and Open-Meteo baseline URLs behind the capture gate both returned 200 again during today’s draft pass, so the draft packet still points at live public inputs rather than a stale reference.
+- **WO-2 public-source recheck (2026-08-09 18:01):** a second live no-login NWS forecast and Open-Meteo gate check still returned 200 for both endpoints, so the draft handoff remains the single local-only Pi capture proof and saved result note.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 
