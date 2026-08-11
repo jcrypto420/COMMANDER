@@ -73,6 +73,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - The next real step remains the single local-only Pi capture proof, followed by saving the manifest/result note locally.
 - No external capture run was performed in this loop.
 
+## Draft-only checkpoint (2026-08-11 PM)
+- This pass refreshed the current handoff again and kept the lane draft-only.
+- The only real next step is still one local-only Pi capture proof on the Pi.
+- After that run, fill the saved result note from top to bottom using the template and stop.
+
 ## Copy/paste fill-in block
 - timestamp (UTC):
 - timestamp (Central):
