@@ -34,6 +34,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Weather Oracle MVP — still draft-only, but the lane now has a cleaner handoff and no drift away from the capture proof.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
+- Refreshed the CI-1 Coinbase Institutional decision surface after the overnight git sync/rebase/pull recovery, updating the live packet, one-page decision brief, tracker row, career project status, and task-queue wording to 2026-08-11.
+- Goal check: advanced Career / income defense + portfolio leverage — the run produced a real draft-ahead artifact refresh and kept the lane on one Josh decision, not packet churn.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
 ## 2026-06-27
 
 - Created `command-center` repo scaffolding (truth files, project files, configs,
