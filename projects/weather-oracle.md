@@ -156,6 +156,7 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 - [x] WO-2 draft-only recheck (2026-08-08): the live no-login NWS forecast and Open-Meteo baseline URLs both returned 200 again during today’s draft pass, so the next step remains the single local-only Pi capture proof.
 - [x] WO-2 draft-only re-entry (2026-08-08): the result-note draft now carries the current handoff note, keeping the lane pointed at the single local-only Pi capture proof and the immediate post-run fill-in.
 - [x] WO-2 draft-only upkeep (2026-08-11): kept the queue/project wording aligned with the current handoff and left the next real step as the single local-only Pi capture proof plus saved result note.
+- [x] WO-2 draft-only checkpoint (2026-08-11): refreshed the result-note draft with a current handoff note so the lane stays draft-only until the Pi proof happens.
 
 ## Notes
 

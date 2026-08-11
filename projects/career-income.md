@@ -1,12 +1,12 @@
 # Project: Career / Income (Priority 1)
 
 ## Status — 2026-08-11
-- **State:** ACTIVE — primary sprint lane (`CI-1`, doing)
-- **Last advanced:** 2026-08-11 — morning git sync/rebase/pull recovery completed after the overnight reboot; Coinbase Institutional Business Operations packet + one-page decision brief remain the live decision surface for Josh’s quick read, and the live tracker row stays deduped to one Coinbase entry
-- **Next action:** Josh reads the refreshed Coinbase Institutional packet + decision brief and either approves apply / tweak / kill
-- **Waiting on:** Josh’s verdict on the Coinbase Institutional packet + decision brief
+- **State:** PARKED — weekly hedge only (`CI-1`, blocked)
+- **Last advanced:** 2026-08-11 — morning git sync/rebase/pull recovery completed after the overnight reboot; Coinbase Institutional Business Operations packet + one-page decision brief were refreshed, then parked so they do not consume daily attention
+- **Next action:** Weekly fresh scan only; reopen Coinbase only if Josh explicitly asks for a revisit or send decision
+- **Waiting on:** Josh’s explicit request to revisit CI-1
 
-Coinbase Institutional packet + decision brief are live in `jobs/packets/active/coinbase-institutional-business-ops/`; the old IN-1 draft remains historical context, not the active CI-1 target.
+Coinbase Institutional packet + decision brief remain parked in `jobs/packets/active/coinbase-institutional-business-ops/` as weekly-hedge context; the old IN-1 draft remains historical context, not the active CI-1 target.
 
 **Goal:** Protect and increase Josh's income, reduce stress, and turn his background into good-fit opportunities. Commander's operating principle is skeptical, evidence-based, and execution-oriented. It will not flatter, invent, or force Josh into misaligned roles.
 

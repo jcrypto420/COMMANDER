@@ -27,9 +27,13 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-11
 
-- Refreshed the WO-2 draft-only handoff by adding a current re-entry note to the Weather Oracle result-note draft and aligning the queue/project wording around the single local-only Pi capture proof.
+- Refreshed the WO-2 draft-only handoff and aligned the queue/project wording around the single local-only Pi capture proof.
 - Goal check: advanced Weather Oracle MVP — this was a concrete draft-only artifact pass that kept the lane pointed at the real capture step without claiming the Pi proof itself.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- Refreshed the Weather Oracle result-note draft with a new draft-only checkpoint section, kept the queue/project wording pointed at the single local-only Pi capture proof, and left the lane in todo status.
+- Goal check: advanced Weather Oracle MVP — one more reusable draft artifact now mirrors the live handoff, while the real proof remains the single local-only Pi capture run.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- Alignment check: advanced Weather Oracle MVP — this loop produced a reusable draft-only checkpoint and kept the lane pointed at the single local-only Pi capture proof.
 - Kept WO-2 draft-only by tightening the queue wording and adding a fresh project-status note that preserves the single local-only Pi capture proof as the next real step.
 - Goal check: advanced Weather Oracle MVP — still draft-only, but the lane now has a cleaner handoff and no drift away from the capture proof.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
@@ -745,3 +749,9 @@ One short entry per working day. What advanced + estimated spend.
 - WO-2 draft-only lane: ran a second 2026-08-09 live no-login recheck at 18:01; both gate URLs still returned 200, and I kept the Weather Oracle handoff pointed at the single local-only Pi capture proof while adding the fresh note to the draft packet.
 - Goal check: advanced Weather Oracle compounding capture loop — the reusable draft bundle now has a same-day repeat check, so the next real step is still the one-shot Pi capture proof; no posting, sending, spending, or service changes occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session and a local public-source recheck.
+
+## 2026-08-11
+
+- Recentered the live board around the Boring Report flagship build by parking the Coinbase CI-1 packet as a weekly hedge, updating NOW/TASK_QUEUE/MORNING_REPORT, and aligning the career project status and job tracker with that reset.
+- Goal check: advanced The Boring Report flagship build — this run removed daily Coinbase churn from the active lane and pointed the next move at the Boring Report Aave V3 feed-map fact file.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

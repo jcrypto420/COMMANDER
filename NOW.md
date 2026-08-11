@@ -7,11 +7,11 @@ low-cost execution.
 **Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
 created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
 default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed; this morning’s reboot/rebase recovery was completed and the CI-1 Coinbase packet remains the live decision surface.
+passed; this morning’s reboot/rebase recovery was completed and the CI-1 Coinbase packet has been parked as a weekly hedge.
 
 ## Next 3 tasks
 
-1. **Cash move:** submit the live Coinbase Business Operations Senior Associate, Institutional application (`7980600`, Remote — USA) after Josh gives explicit submit authorization and confirms work authorization + salary wording. Packet: `jobs/packets/active/coinbase-institutional-business-ops/packet.md` plus `decision-brief.md`.
+1. **Flagship move:** build the next Boring Report P2 Oracle Scorecard increment by tracing one Aave V3 deployment feed-map fact file; keep Coinbase parked as a weekly hedge until Josh explicitly reopens it. Packet: `projects/boring-report-prd.md` and `products/boring-report/scorecard/`.
 2. Keep Bad Boys real-asset review and the BB-24 sticker-sheet packet as the fallback lane; no posting, account creation, sending, or spending without Josh.
 3. Keep the morning dispatch at 5 lines and update logs before commit/push.
 

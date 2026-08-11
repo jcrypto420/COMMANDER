@@ -68,6 +68,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - The next real step is still one local-only Pi capture proof followed by an immediate fill-in of the saved result note.
 - Keep the queue/project wording aligned with this handoff so the live board does not drift away from the draft packet.
 
+## Draft-only checkpoint (2026-08-11)
+- This pass only refreshed the handoff and kept WO-2 draft-only.
+- The next real step remains the single local-only Pi capture proof, followed by saving the manifest/result note locally.
+- No external capture run was performed in this loop.
+
 ## Copy/paste fill-in block
 - timestamp (UTC):
 - timestamp (Central):
