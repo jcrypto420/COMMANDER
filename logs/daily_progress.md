@@ -30,6 +30,9 @@ One short entry per working day. What advanced + estimated spend.
 - Refreshed the WO-2 draft-only handoff by adding a current re-entry note to the Weather Oracle result-note draft and aligning the queue/project wording around the single local-only Pi capture proof.
 - Goal check: advanced Weather Oracle MVP — this was a concrete draft-only artifact pass that kept the lane pointed at the real capture step without claiming the Pi proof itself.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- Kept WO-2 draft-only by tightening the queue wording and adding a fresh project-status note that preserves the single local-only Pi capture proof as the next real step.
+- Goal check: advanced Weather Oracle MVP — still draft-only, but the lane now has a cleaner handoff and no drift away from the capture proof.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
 ## 2026-06-27
 
