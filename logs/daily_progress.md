@@ -25,6 +25,12 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Weather Oracle MVP — the reusable gate snapshot still points at live public inputs, and the lane remains parked on the one local-only Pi capture proof with no posting, sending, spending, or service changes.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session and a local public-source recheck.
 
+## 2026-08-11
+
+- Refreshed the WO-2 draft-only handoff by adding a current re-entry note to the Weather Oracle result-note draft and aligning the queue/project wording around the single local-only Pi capture proof.
+- Goal check: advanced Weather Oracle MVP — this was a concrete draft-only artifact pass that kept the lane pointed at the real capture step without claiming the Pi proof itself.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
 ## 2026-06-27
 
 - Created `command-center` repo scaffolding (truth files, project files, configs,

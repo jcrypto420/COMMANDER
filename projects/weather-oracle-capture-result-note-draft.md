@@ -63,6 +63,11 @@ Use this after the first local-only Pi capture proof run. This is a draft-only s
 - This note is the current draft-only handoff for WO-2; keep the lane pointed at the single local-only Pi capture proof.
 - The 2026-08-09 preflight snapshot is already captured here, so the next real step is to run `capture_daily.py` once on the Pi and fill the template immediately after.
 
+## Draft re-entry note (2026-08-11)
+- This note is the current draft-only handoff for WO-2; keep the lane pointed at the single local-only Pi capture proof.
+- The next real step is still one local-only Pi capture proof followed by an immediate fill-in of the saved result note.
+- Keep the queue/project wording aligned with this handoff so the live board does not drift away from the draft packet.
+
 ## Copy/paste fill-in block
 - timestamp (UTC):
 - timestamp (Central):
