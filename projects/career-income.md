@@ -1,12 +1,13 @@
 # Project: Career / Income (Priority 1)
 
-## Status — 2026-08-11
-- **State:** PARKED — weekly hedge only (`CI-1`, blocked)
-- **Last advanced:** 2026-08-11 — morning git sync/rebase/pull recovery completed after the overnight reboot; Coinbase Institutional Business Operations packet + one-page decision brief were refreshed, then parked so they do not consume daily attention
-- **Next action:** Weekly fresh scan only; reopen Coinbase only if Josh explicitly asks for a revisit or send decision
-- **Waiting on:** Josh’s explicit request to revisit CI-1
+## Status — 2026-08-12
+- **State:** ACTIVE CASH RUNWAY — global $150K+ base search (`CI-1`); fully remote roles may clear at $120K+.
+- **Portfolio role:** one of two Family Freedom Engines alongside the owned Boring Report asset; employment supplies predictable cash/benefits while owned revenue compounds.
+- **Exclusions:** Coinbase Operations is killed by Josh taste call. No quota-heavy sales or low-compensation roles.
+- **Next action:** review the Ripple Treasury Manager packet/decision brief, then continue official-source search for non-Coinbase roles that meet the compensation floor and match institutional finance + digital-assets / market-infrastructure experience.
+- **Waiting on:** no external action; application, outreach, and account actions remain approval-gated.
 
-Coinbase Institutional packet + decision brief remain parked in `jobs/packets/active/coinbase-institutional-business-ops/` as weekly-hedge context; the old IN-1 draft remains historical context, not the active CI-1 target.
+The older Coinbase packets remain historical context only and must not be surfaced as active candidates.
 
 **Goal:** Protect and increase Josh's income, reduce stress, and turn his background into good-fit opportunities. Commander's operating principle is skeptical, evidence-based, and execution-oriented. It will not flatter, invent, or force Josh into misaligned roles.
 
@@ -18,9 +19,9 @@ Commander exists to help Josh protect income, increase optionality, reduce stres
 
 ### Operating goals
 
-1.  **Daily job loop:** Find 3-5 fresh best-fit roles or leads, rank them, explain the fit, and ask Josh which 1-2 wants to pursue.
+1.  **Global job loop:** Find 3-5 fresh best-fit roles or leads, rank them, explain the fit, location quality, and ask Josh which 1-2 to pursue.
 2.  **Application production:** After Josh selects a role, generate a tailored resume angle, cover note, recruiter message, proof points, and interview prep.
-3.  **Income protection:** Prioritize opportunities that can realistically pay **$75K+**, reduce uncertainty, preserve remote/OKC flexibility, and create runway.
+3.  **Income protection:** Prioritize opportunities with a **USD $150K+ minimum base** where compensation is disclosed or can be credibly verified. **Remote roles may be pursued from USD $120K+ base.** Roles may be anywhere globally; remote/hybrid is ideal, and exceptional beach, mountain, or otherwise beautiful locations earn a real quality-of-life bonus. Do not surface Coinbase operations roles unless Josh explicitly reopens them.
 4.  **Long-term leverage:** Capture repeatable workflows, build reusable context, and eventually connect this to Hermes/local model/command-center automation.
 5.  **No unauthorized actions:** Nothing external-facing is submitted or sent without approval.
 

@@ -1,19 +1,16 @@
 # NOW.md
 
-**Active focus:** portfolio reset: make The Boring Report the flagship compounding data/product asset; Weather Oracle accumulates real capture history; Bad Boys ships finished clips; career stays a weekly opportunistic hedge. Internal packet/format churn is retired unless it removes a verified blocker.
+**Active focus:** build the Family Freedom Engine toward $12K/month after tax: a high-comp remote role supplies cash runway while **The Boring Report** becomes the first owned, automated revenue asset. Bad Boys is parked; internal packet/format churn is retired unless it creates a real sellable proof or submitted application.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
-**Status:** Hermes v0.17.0 installed on `commandcenter`; `commander` profile
-created; provider = OpenAI Codex via ChatGPT OAuth (no per-token cost);
-default model `gpt-5.4-mini`, premium `gpt-5.5`; first safe read-only task
-passed; this morning’s reboot/rebase recovery was completed and the CI-1 Coinbase packet has been parked as a weekly hedge.
+**Status:** Hermes v0.20.0 (2026.8.3) is installed on `commandcenter`; `commander` profile is healthy after gateway refresh. Provider = OpenAI Codex via ChatGPT OAuth; global job search now requires $150K+ base, except fully remote roles may clear at $120K+. Coinbase Operations is excluded by Josh's taste call.
 
 ## Next 3 tasks
 
-1. **Flagship move:** build the next Boring Report P2 Oracle Scorecard increment by tracing one Aave V3 deployment feed-map fact file; keep Coinbase parked as a weekly hedge until Josh explicitly reopens it. Packet: `projects/boring-report-prd.md` and `products/boring-report/scorecard/`.
-2. Keep Bad Boys real-asset review and the BB-24 sticker-sheet packet as the fallback lane; no posting, account creation, sending, or spending without Josh.
-3. Keep the morning dispatch at 5 lines and update logs before commit/push.
+1. **Freedom Engine / Boring Report:** build the traceable Aave V3 feed-map fact file, then convert its verified evidence into the first free public-quality Oracle & Collateral Change Log pilot and local founding-customer packet. Plan: `projects/family-freedom-engine.md`.
+2. **Agent-paid evidence API proof:** local stdlib-only prototype now returns an honest HTTP 402 offer for `/v1/evidence/aave-v3` and a source-linked cited evidence payload only under a local development entitlement. Both paths and the underlying scorecard verifier pass. The private API docs link is live; x402 settlement remains intentionally unimplemented pending demonstrated utility and Josh approval. Entry: `products/boring-report/agent-api/README.md`.
+3. **Cash runway:** review the Ripple Treasury Manager packet/decision brief first, then continue the official-source non-Coinbase global job scan—$150K+ base, or $120K+ if fully remote—after the verdict.
 
 ## Current blockers
 

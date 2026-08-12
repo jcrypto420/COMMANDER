@@ -1,6 +1,6 @@
 # CI-1 Application Packet — Coinbase, Business Operations Senior Associate, Institutional
 
-**Status:** LIVE / SEND-READY — awaiting Josh’s explicit submit authorization; re-verified after morning repo sync/rebase/pull recovery on 2026-08-11
+**Status:** historical context only — parked after the 2026-08-11 repo sync/rebase/pull recovery; do not submit unless Josh explicitly reopens Coinbase ops.
 **Official ATS:** [Coinbase Greenhouse job 7980600](https://www.coinbase.com/careers/positions/7980600?gh_jid=7980600) — verified live from Coinbase’s public Greenhouse feed 2026-07-27; **Remote — USA**; listing last updated 2026-07-07.
 **Role in one line:** keep Coinbase’s institutional business operations boring and reliable — resolve exceptions, support client workflows, and reduce operational friction at crypto scale.
 
@@ -10,7 +10,7 @@
 
 ## Josh decision surface
 
-`APPROVE COINBASE INSTITUTIONAL APPLY` / tweak / kill.
+Historical only. Do not treat this as the active CI-1 packet unless Josh explicitly reopens Coinbase ops.
 
 Companion draft: `decision-brief.md` keeps the approval ask to one page for Josh’s quick read.
 

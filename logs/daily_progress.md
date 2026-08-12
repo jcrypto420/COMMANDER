@@ -758,3 +758,26 @@ One short entry per working day. What advanced + estimated spend.
 - Recentered the live board around the Boring Report flagship build by parking the Coinbase CI-1 packet as a weekly hedge, updating NOW/TASK_QUEUE/MORNING_REPORT, and aligning the career project status and job tracker with that reset.
 - Goal check: advanced The Boring Report flagship build — this run removed daily Coinbase churn from the active lane and pointed the next move at the Boring Report Aave V3 feed-map fact file.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-08-11 — delivery reset
+
+- CI-1: replaced the parked weekly-hedge posture with a global, verified USD $150K+ base job-search rule. Official Coinbase data produced one honest draft target: Senior Manager, Product Operations, FCM Ops (Remote — USA; $201,365–$236,900 base); the decision brief names the material listed-derivatives/FCM gap. No application or outreach was sent.
+- BR-1: wrote a publish-ready, stdlib-only `products/boring-report/scorecard/README.md` and reran the real harness: `OK oracle scorecard: 2 protocol fact files; 3 hashed source snapshots; generated outputs exact`.
+- BB-25: converted `Collateral Damage` into a 12–15 second locked-panel production handoff with exact cuts, sprite motion, sound timing, and an explicit no-generative-character-action rule. Rendered a real 13.0s, 540×960 canonical-asset rough GIF animatic at `assets/badboys/cartoon-lab/collateral-damage/collateral-damage-animatic.gif`; source panels/MP4 encoder remain unavailable on this Pi.
+- Goal check: advanced career / income defense plus portfolio leverage — delivered a verified $150K+ target and two reusable execution artifacts; no posting, sending, spending, account creation, or public release occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` session and public official ATS data.
+- Delivery completion: installed `ffmpeg 5.1.9` with Josh's approval; converted the canonical-asset animatic to a verified 13.0s H.264 MP4 (540×960, faststart); rebuilt and restarted the existing private Mission Control service after a successful production build. Dashboard root and MP4 file route both returned HTTP 200. No public exposure, posting, or GitHub push occurred.
+
+## 2026-08-11 — Agent-paid evidence primitive
+
+- Built and exercised `products/boring-report/agent-api/`: an stdlib-only local agent evidence API. Unentitled `GET /v1/evidence/aave-v3` returned HTTP 402 with a clearly non-settling $0.01 USDC-per-query x402-compatible offer; the local test entitlement returned a cited Aave V3 architecture-evidence payload with the committed snapshot hash.
+- Verification passed: `OK agent API: 402 offer and entitled cited Aave V3 evidence payload`; underlying source verifier passed: `OK oracle scorecard: 2 protocol fact files; 3 hashed source snapshots; generated outputs exact`.
+- With Josh approval, added `products/` to the existing private Mission Control allowlist while retaining traversal and secret/token/wallet filename blocks. `npm run build` passed, `commander-mission-control.service` restarted active, the agent API README route returned LAN HTTP 200, and a token-named route returned HTTP 403.
+- Goal check: advanced the first owned Family Freedom Engine asset — shipped a verifiable paid-agent API contract backed by real cited evidence, not an agent-payment claim or mock dashboard. No wallet, real payment settlement, account, public exposure, outreach, or spend occurred.
+
+## 2026-08-12
+
+- Advanced the CI-1 draft-ahead lane by verifying Ripple Treasury Manager against the official Ripple careers page, then writing a new decision packet + one-page brief that reflects the real compensation floor and non-remote fit.
+- Parked the older Coinbase CI-1 surface as historical context in the packet files so the repo no longer presents stale Coinbase ops as the active CI-1 ask.
+- Goal check: advanced Career / income defense + portfolio leverage — the lane now has a fresh non-Coinbase decision surface ready for Josh’s hold/tweak/kill verdict, and the live board points at the correct next decision.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one short official-source verification fetch.
