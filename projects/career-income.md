@@ -4,7 +4,7 @@
 - **State:** ACTIVE CASH RUNWAY — global $150K+ base search (`CI-1`); fully remote roles may clear at $120K+.
 - **Portfolio role:** one of two Family Freedom Engines alongside the owned Boring Report asset; employment supplies predictable cash/benefits while owned revenue compounds.
 - **Exclusions:** Coinbase Operations is killed by Josh taste call. No quota-heavy sales or low-compensation roles.
-- **Next action:** review the Ripple Treasury Manager packet/decision brief, then continue official-source search for non-Coinbase roles that meet the compensation floor and match institutional finance + digital-assets / market-infrastructure experience.
+- **Next action:** review the Ripple Treasury Manager packet/decision brief/form-prep note, then continue official-source search for non-Coinbase roles that meet the compensation floor and match institutional finance + digital-assets / market-infrastructure experience.
 - **Waiting on:** no external action; application, outreach, and account actions remain approval-gated.
 
 The older Coinbase packets remain historical context only and must not be surfaced as active candidates.

@@ -781,3 +781,6 @@ One short entry per working day. What advanced + estimated spend.
 - Parked the older Coinbase CI-1 surface as historical context in the packet files so the repo no longer presents stale Coinbase ops as the active CI-1 ask.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane now has a fresh non-Coinbase decision surface ready for Josh’s hold/tweak/kill verdict, and the live board points at the correct next decision.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one short official-source verification fetch.
+- Draft-only CI-1 follow-up: added `jobs/packets/active/ripple-treasury-manager-global-treasury-ops/form-prep-note.md` as a reusable internal response note, and updated the career-income project next action to point at the note alongside the packet/brief.
+- Goal check: advanced Career / income defense + portfolio leverage with one reusable support artifact; no submission, outreach, account action, or public release occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.

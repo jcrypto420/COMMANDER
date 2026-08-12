@@ -86,6 +86,8 @@ The right framing is:
 
 ## Application form prep (for Josh to confirm)
 
+See the reusable draft note: `form-prep-note.md`.
+
 - **Location:** New York, NY, United States
 - **Salary expectation:** should be discussed carefully; posted base starts at $144K, which is below the current $150K floor
 - **How did you hear about us:** Ripple careers page / public tracker discovery
