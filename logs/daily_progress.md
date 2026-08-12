@@ -784,3 +784,7 @@ One short entry per working day. What advanced + estimated spend.
 - Draft-only CI-1 follow-up: added `jobs/packets/active/ripple-treasury-manager-global-treasury-ops/form-prep-note.md` as a reusable internal response note, and updated the career-income project next action to point at the note alongside the packet/brief.
 - Goal check: advanced Career / income defense + portfolio leverage with one reusable support artifact; no submission, outreach, account action, or public release occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+- FE-1 draft-only lane: created `products/boring-report/scorecard/output/aave-v3-deployment-feed-map-draft.md`, anchored it to the official Aave address-book Ethereum source, and aligned the FE-1 queue wording toward a bounded deployment/feed-map fact file.
+- Goal check: advanced The Boring Report flagship build — this run produced a reusable draft artifact for the next evidence layer, while keeping the real deployment/feed map and freshness observations explicitly unverified.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one short public-source lookup.

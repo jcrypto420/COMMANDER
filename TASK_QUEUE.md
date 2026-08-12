@@ -10,7 +10,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
-| FE-1 | Family Freedom Engine / Boring Report | 1 | First sellable proof — paid agent evidence primitive | doing | Extend the proven local HTTP-402 Aave evidence query into a traceable Aave V3 deployment/feed map and freshness observation. API contract: `products/boring-report/agent-api/README.md`; no real settlement until useful agent integration and Josh approval. | publish/payment/account gate later |
+| FE-1 | Family Freedom Engine / Boring Report | 1 | First sellable proof — paid agent evidence primitive | doing | Turn the Aave V3 deployment-feed-map draft into a bounded fact file with source-cited oracle/feed addresses, decimals, and freshest observed round timestamps; keep heartbeat/staleness claims at zero unless a primary source supports them. | publish/payment/account gate later |
 | CI-1 | Career/Income | 1 | Global high-compensation cash runway | todo | Ripple Treasury Manager decision surface is drafted; use `jobs/packets/active/ripple-treasury-manager-global-treasury-ops/form-prep-note.md` for hold/tweak/kill responses, then continue the official-source non-Coinbase scan after Josh’s verdict. | **yes** to submit/send |
 | WO-2 | Weather Oracle | 2 | Compounding capture loop | blocked | Reopen only after the Boring Report proves paid demand or when a buyer/partner wedge makes Forecast Receipts commercially concrete. | no |
 | BB-25 | Bad Boys/Joycat | 3 | CARTOON LAB | blocked | Reopen only after Family Freedom Engine proof or explicit Josh creative call. Prior experiments are rejected; no more composite-video churn. | gate 2 |
