@@ -788,3 +788,9 @@ One short entry per working day. What advanced + estimated spend.
 - FE-1 draft-only lane: created `products/boring-report/scorecard/output/aave-v3-deployment-feed-map-draft.md`, anchored it to the official Aave address-book Ethereum source, and aligned the FE-1 queue wording toward a bounded deployment/feed-map fact file.
 - Goal check: advanced The Boring Report flagship build — this run produced a reusable draft artifact for the next evidence layer, while keeping the real deployment/feed map and freshness observations explicitly unverified.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one short public-source lookup.
+
+## 2026-08-13
+
+- Completed the overnight git sync recovery (fetch/rebase/pull), removed the generated `dashboard/state.json` rebase blocker, and revalidated that the live CI-1 decision surface is the Ripple Treasury Manager packet + one-page brief + form-prep note.
+- Goal check: advanced Career / income defense + portfolio leverage — this run kept the Ripple CI-1 packet as the active decision surface and cleared the repo sync blocker, but did not need to rewrite the already-draft-ready packet.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
