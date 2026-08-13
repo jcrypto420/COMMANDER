@@ -793,4 +793,5 @@ One short entry per working day. What advanced + estimated spend.
 
 - Completed the overnight git sync recovery (fetch/rebase/pull), removed the generated `dashboard/state.json` rebase blocker, and revalidated that the live CI-1 decision surface is the Ripple Treasury Manager packet + one-page brief + form-prep note.
 - Goal check: advanced Career / income defense + portfolio leverage — this run kept the Ripple CI-1 packet as the active decision surface and cleared the repo sync blocker, but did not need to rewrite the already-draft-ready packet.
+- Alignment check: corrected the morning brief and live board wording so CI-1 now names Ripple instead of stale Coinbase text, then kept the lane in `todo` for Josh’s hold/tweak/kill verdict.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
