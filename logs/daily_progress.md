@@ -807,3 +807,6 @@ One short entry per working day. What advanced + estimated spend.
 - Refreshed the live CI-1 Ripple Treasury Manager decision surface to today’s date across the packet, one-page decision brief, reusable form-prep note, tracker row, career project status, and task queue.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane now has a current Ripple decision surface ready for Josh’s hold/tweak/kill verdict, and the non-Coinbase scan stays queued behind that decision.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+- Built the first bounded Aave V3 deployment-feed-map fact file at `products/boring-report/scorecard/facts/aave-v3-deployment-feed-map.json`, with a verified WETH oracle/feed/timestamp row, and refreshed the draft packet plus local run note to match the live snapshot bundle.
+- Goal check: advanced The Boring Report flagship build — this run turned the draft-only Aave lane into a concrete bounded evidence artifact, while still keeping heartbeat/staleness at zero-claim and leaving the verifier extension as the next step.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus public no-login source/RPC calls.

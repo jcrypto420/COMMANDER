@@ -1,0 +1,646 @@
+{
+  "protocol": "Aave V3",
+  "network": "Ethereum mainnet",
+  "oracle_address": "0x54586bE62E3c3580375aE3723C145253060Ca0C2",
+  "oracle_source": "https://raw.githubusercontent.com/aave/aave-address-book/main/src/AaveV3Ethereum.sol",
+  "retrieved_at": "2026-08-14T23:10:35.353Z",
+  "sources": {
+    "aave-v3-ethereum.sol": {
+      "url": "https://raw.githubusercontent.com/aave/aave-address-book/main/src/AaveV3Ethereum.sol",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 66180,
+      "sha256": "296d81fb06bbef680126b527b5c6316c882c2e4329146bfeb14e40173662c6ab"
+    },
+    "rpc-feed-decimals--00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 499,
+      "sha256": "5d1edf5ba7b41ca89fae941423a4a298e48472ab21d2c1c68d69102d5a5c9a0a"
+    },
+    "rpc-feed-decimals-dai-03.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "272c096706b183fcecc22871814c0cb8cb952cbd800fd7155c3f3432e909738a"
+    },
+    "rpc-feed-decimals-usdc-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "95d481a943162fc294136a2cbfda4ef227f29593c2d5c00028bd47be57db4ccc"
+    },
+    "rpc-feed-decimals-usdt-02.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "af4f0842b1e63823e77cd795e18e84b08d6a179e5d2d727b38f2abfadee04b6d"
+    },
+    "rpc-feed-decimals-wbtc-04.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "7e8e1c88454ae541910a8dc88351ce51d8dc95b885c2951e0d7f89ff52237eb5"
+    },
+    "rpc-feed-decimals-weth-00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "9f679978537dc03d6639513adec924e40b0d0f1cd428d43e4861db2507eef2f3"
+    },
+    "rpc-feed-decimals-wsteth-05.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "364cbb45477f715be5c896569345b94daf6cfaba47933be4b4e4e284e13c96c7"
+    },
+    "rpc-feed-latestRoundData--00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 499,
+      "sha256": "f9ec606a73e290360be564b9f807a85f675cad4df7cca03f55422cf0ae76890c"
+    },
+    "rpc-feed-latestRoundData-dai-03.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 484,
+      "sha256": "62be4c9db8e042b1a708e58947d568966ab0e0c89a665227ee554fd8a45954b9"
+    },
+    "rpc-feed-latestRoundData-usdc-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 484,
+      "sha256": "16cf6905c3ef55a87287262c1350ab7ad772f26a790f67b3c1aec2961d4aa688"
+    },
+    "rpc-feed-latestRoundData-usdt-02.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 484,
+      "sha256": "1bd3e2497bf8d2627c536017ef76373fe6b50356df86a70873206225df625ebc"
+    },
+    "rpc-feed-latestRoundData-wbtc-04.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 484,
+      "sha256": "8be5f665df0f3c893d2f07661c5136608efcf44a2d00b1790c1881a4a04a1833"
+    },
+    "rpc-feed-latestRoundData-weth-00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 727,
+      "sha256": "afbbe0db3462beedffedfa1741a4b87849016b4dc5077d8525732883a10142c5"
+    },
+    "rpc-feed-latestRoundData-wsteth-05.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 484,
+      "sha256": "6fd28ddd3460723aa2121fea88477e3394b96b3da4fab25d37e7b50e913a3523"
+    },
+    "rpc-feed-latestTimestamp-usdc-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 484,
+      "sha256": "2ed194c10c8550b13895b76330a7a5e24bb3b08b3021f6bf788ab991190240bb"
+    },
+    "rpc-getReservesList.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4823,
+      "sha256": "15ff05e526543582fac100a1318c91f613e38f94b1e2a5b19da9d13e519d3f3d"
+    },
+    "rpc-source--00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "400e65ebc5c1321c7501463e0af7558072259d471822a44acb59229896e4dfd7"
+    },
+    "rpc-source-dai-03.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "42d75de381b4fc061fb3f9306133086012f2c7219f6547c6b84e102dd6a6e4db"
+    },
+    "rpc-source-usdc-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "c23c8b4aaa304ac85ee602c2aeae6da8e1889dca20b450fab28b3b81c7e2fc25"
+    },
+    "rpc-source-usdt-02.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "9b91906176d79d8d921cb85ce4a2a0647a326a9de92c2399169842f7525e86ed"
+    },
+    "rpc-source-wbtc-04.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "178fb47ede28dd7147a4042129d3681a155105ec87cadd02b8e7f06fc24bf5b1"
+    },
+    "rpc-source-weth-00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "3bb9d659b1f947d4fed756344c067c914df4b6b6d1cbc3508ca15e316ab5a8b3"
+    },
+    "rpc-source-wsteth-05.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 535,
+      "sha256": "186485e976a5764be28d3a954a74a83b75d798b0e333f9ab9d02e0e33fce3761"
+    },
+    "rpc-symbol-00.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "5b122f076e18cc5f62b0f314e3d8244718f3d7c38d1bb4fc4ef81f13774ae5bd"
+    },
+    "rpc-symbol-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "94811e171670f40a6908902a781d22a66e5a347b13f24f694e41af8af3428aca"
+    },
+    "rpc-symbol-02.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "57c0d04f5143c0a8642b56b341e5006d2e62e4f21242466d881783e22bbf250a"
+    },
+    "rpc-symbol-03.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "c239cebb04dd419f6cc75978f107b36f127d8b9862d2aebc854b39a43b12454e"
+    },
+    "rpc-symbol-04.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "a94f6f6f9aa8698905ee890628e72b50b0c4986bdeb766dfacb4dab2b9f2e531"
+    },
+    "rpc-symbol-05.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "81ce3a36bcef77cedc8961eae64723353dd6aff2e84588853f2adc5d2f413d36"
+    },
+    "rpc-symbol-06.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "836a0f42468b5f9243a2b5f3bc6bdc9cb606a880f293054ecc594edc79eb79f5"
+    },
+    "rpc-symbol-07.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "f4c0328385c4bffc5b2e6b836944b0e0b7c7e3f1fbc9a5033683a705191a3aec"
+    },
+    "rpc-symbol-08.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "f56301f05bd3820144edf6b31c874690de43da852906ddc0c61999865fc275e7"
+    },
+    "rpc-symbol-09.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "15be2311ca191a9903a707f9b6d4381da7ead3b4170c8ee0dad9264a3b98f013"
+    },
+    "rpc-symbol-10.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "a81dd7e2f89687dc5bb6a9605678f9cb9deacc8c18c4625a7ef1716633091615"
+    },
+    "rpc-symbol-11.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "bc23686b451c528c5d43ddbcb385454d5dde701a9d8f28d4ea7d262d8add870f"
+    },
+    "rpc-symbol-12.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 471,
+      "sha256": "ace3d8410b1748801b0cd537cea60406e2977dbd013a7531382554842894ecdf"
+    },
+    "rpc-symbol-13.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "86b3d2d9326574858370362a64597cba72bd10e7d036f43fa0ea287fbbdec3a0"
+    },
+    "rpc-symbol-14.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "72a6c452be3a85cb73dc398800a1010f10ba0c8de9e22b1e755655a705ac5877"
+    },
+    "rpc-symbol-15.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "312e9f8c52e4877d48f8ba37aa0fb03e8da413c3c645ee0392527c02e603b4db"
+    },
+    "rpc-symbol-16.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "3b352367c1a3fb9ed50558ad2e6b4f088083a824bbe21a792484762031f00fb4"
+    },
+    "rpc-symbol-17.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "475744b24b30c65c73b4b8ae967e87641e80b1f3afbdd2d3f12dcaa17a55e696"
+    },
+    "rpc-symbol-18.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "6bb5eafa2393578099cf22e8bacc9812d7893c833457fca18bf3a337bbe76602"
+    },
+    "rpc-symbol-19.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "23a6e4112b833b71ee84aa72c81d9075c1f150a1f93d4fb5ecf07ba2977a4a9e"
+    },
+    "rpc-symbol-20.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "79d39f56151a3b513555330b088e7c878f19d23439f61866d5715ac6ea2a9455"
+    },
+    "rpc-symbol-21.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "df3ee40ddcfa6a12330919ba31290b574a14a93892990bc1d2bc02dc4ae97b59"
+    },
+    "rpc-symbol-22.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "5c354c6336572e4c57b808c5a80e7b6bc21251f43ec262cb458036858e0deac7"
+    },
+    "rpc-symbol-23.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "34e73d9cc571cdca4bc59c01c7761cc346f963c4b76dbcfbbda4567f0cd09443"
+    },
+    "rpc-symbol-24.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "1c6bbbba16fe3e0bd5e8ed9107c5833e37b55a57c09639375d25d109dedb0b3c"
+    },
+    "rpc-symbol-25.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "ac8efa3091fb64c6c3385df4690df6d918e6b13081998f8a9e08852b90f1ac5a"
+    },
+    "rpc-symbol-26.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "d734d708abb2fe424bf46fab3ef6b6c401476ee4e19a4d1a36be8979da3efdc4"
+    },
+    "rpc-symbol-27.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "ec74eee66a1eeb184dd3dcb79a94dbee684614f2a583969b266e05c1641da8cf"
+    },
+    "rpc-symbol-28.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "d8981ee9e552d63438ca61b3bac5f92250813dddb902497ef4eaa7001ab14688"
+    },
+    "rpc-symbol-29.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "ee81a724b82cc0761995794331fa3834c009822e63bb7e3eb9dd26a76b2aa01a"
+    },
+    "rpc-symbol-30.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "78276d27a457c077af3cef4f32515608dc1767ed7b8236b4a6f767ba2f80632a"
+    },
+    "rpc-symbol-31.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "99e1f4a0d1fa83d26bf011f7d0660050ee50f99a09b4298ec10addbd768b7a89"
+    },
+    "rpc-symbol-32.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "0dfa149fcdbe97cb6802ea021f9c949b664f91f58a4879070b3705f4e0d92512"
+    },
+    "rpc-symbol-33.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "85cce25baaad0ec74317b6f77ef70c0da8512f6bad84e5d631ba6c3774bc962f"
+    },
+    "rpc-symbol-34.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "00c12526ef7d62089da74320ae22b38eefde13f7c173808eb7b8c1c0474b2941"
+    },
+    "rpc-symbol-35.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "5838b9fd861ad686e02f30b088bed61cd2ae613a2eff2436b8cb04b0dab6823f"
+    },
+    "rpc-symbol-36.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "8588d36226edff441f61e43f0d48022088d7fa6f0b14a95e1071ccdb715b301c"
+    },
+    "rpc-symbol-37.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "cd43f597bc6072d1877885f87f0c9dadbe094e440f5bca3605825c40e8725a68"
+    },
+    "rpc-symbol-38.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "6e7f97db21fcfdf60d5002e01ca63bc7efc4b4fa0c1da25d84fb0ff3235c9e1d"
+    },
+    "rpc-symbol-39.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "f124b88c2cabc37f1360d8839ebd6ed514e3f8a4108b59ec05e583cc0f3b95fd"
+    },
+    "rpc-symbol-40.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "581fb99eea11c5d89b44457b0a93f386e59320217a6f00a5308604dd511eef8f"
+    },
+    "rpc-symbol-41.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "3bed6bd3c976d7e789230f0a5f5128bf71af933efeb686d0dbb3f3978df20072"
+    },
+    "rpc-symbol-42.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "7a134efedf9c4f6a708f52f923accf72d51b611c7efb1bc723131628646a548d"
+    },
+    "rpc-symbol-43.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "9e7fc9f698e9fab14140d63577e794c1168ee3f398ee2f6ce9027e2d4138489a"
+    },
+    "rpc-symbol-44.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "137c54a16de31e1633fa8e3a1b1d0c860becea66afa13f4329c5181a99b2931d"
+    },
+    "rpc-symbol-45.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "868d91f068f57bcbe81d1e727cbc7fd4adafb850f1736b5539aac91aaab55695"
+    },
+    "rpc-symbol-46.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "8f743a89377c238ca20b7dd580443aa5042a332694b7cb4afa2928b9d222c34d"
+    },
+    "rpc-symbol-47.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "c4b915b181e728311d85fb295f5efd71ee6d924518ed37c072e6745bf1574759"
+    },
+    "rpc-symbol-48.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "5acc2399beaf10aa4704860ef191811ff9e032d2bd062dac403dbad76cad6ae1"
+    },
+    "rpc-symbol-49.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "4e3723373cde5daf8bb9d483f5e3a4183b5950ea2557772431f64f8b6a08f6a1"
+    },
+    "rpc-symbol-50.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "91014419a1ab65548ba25b5655341c3c26eb699b82cd915a8c739652b92b1943"
+    },
+    "rpc-symbol-51.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "29718b62b2dde819ba7fd161a7318e21b76681f05cb9421ea99b4e38c99be543"
+    },
+    "rpc-symbol-52.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "2b9a27bc81f167c513a81cf95bdcd89ad1824489ced0c040ac66244ae76c5204"
+    },
+    "rpc-symbol-53.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "66ffc2be8aa0a1d18e7b5b614e720746e671e54213f5683553c79e1d9792be5a"
+    },
+    "rpc-symbol-54.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "6a0da34225f056a47af1478d9e9242f9df273230765e92803a2ac2dbad8565ab"
+    },
+    "rpc-symbol-55.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "76133845cc54b364d27b94743c6a20178f749f8d73651fb48ccb9da33a1930d8"
+    },
+    "rpc-symbol-56.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "a5dfda208d8a227bd49f464f18d954f323f48b21ee24bfd1c91164b3968dd032"
+    },
+    "rpc-symbol-57.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "34f8d80bb4659159b9adbc624b64e9a55bcbc42848d111dc9df1d8d9d4e29985"
+    },
+    "rpc-symbol-58.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "e439486bff7a1abcd015e1b8e008de62c5fe7708c165d05e2f0b6a02058bbe56"
+    },
+    "rpc-symbol-59.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "5433bf01ef81a364698bc41dde03d93ac7a217320f4afd203362114981ed52c5"
+    },
+    "rpc-symbol-60.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "61643aa6e02298e5791712768ea7ba5972ff94809a54ef76188f4e16d9396d26"
+    },
+    "rpc-symbol-61.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "4ae6b197f36eebb480e1c283955f7d3c9b05dc01f115bae1f0238459a29fa27f"
+    },
+    "rpc-symbol-62.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "1d25fdbfbbbd5e5aa2cd8da16ad0046758325169fc995fb5c2e7d80dfe7d37ca"
+    },
+    "rpc-symbol-63.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "7d77eb30696c5c466b9c85e2e7a2fed52de28cdf33543a47b71c6732501218e3"
+    },
+    "rpc-symbol-64.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "637f87a2c698d1076c7ebd24d493b8889cb34c7b8ee21521b38c865bb0b888b4"
+    },
+    "rpc-symbol-65.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "ce5abaae59a751ed99cbe26f76c810491bc3964d717129f237822f9fc9201f1e"
+    },
+    "rpc-symbol-66.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 599,
+      "sha256": "b2a699a7d4cba52233a6171725fbdc4851b1313bc42b14c2f50105b950810068"
+    }
+  }
+}
