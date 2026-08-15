@@ -2,6 +2,12 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-08-15
+
+- Rechecked Ripple’s official Treasury Manager posting live (HTTP 200) and refreshed the CI-1 packet, decision brief, form-prep note, tracker row, career project status, queue wording, and morning brief around the same decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live source recheck kept the decision surface honest and current without any submission, outreach, or account action.
+- Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus a public no-login source recheck.
+
 ## 2026-08-08
 
 - Re-synced the repo after the overnight reboot, cleared a generated `dashboard/state.json` rebase blocker plus a stale `.git/index.lock`, and completed the full fetch/rebase/pull recovery on `feat/command-center-scaffolding`.
