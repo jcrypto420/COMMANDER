@@ -10,7 +10,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 
 | ID | Project | Pri | Task | Status | Next action | Approval |
 |----|---------|-----|------|--------|-------------|----------|
-| FE-1 | Family Freedom Engine / Boring Report | 1 | First sellable proof — paid agent evidence primitive | doing | Extend `verify_scorecard.py` so it hashes the new 2026-08-14 snapshot bundle and rejects uncited deployment claims; the first bounded WETH fact row is already landed, while heartbeat/staleness stay zero-claim. Reuse the new local run note as the next draft-only checklist. | publish/payment/account gate later |
+| FE-1 | Family Freedom Engine / Boring Report | 1 | First sellable proof — paid agent evidence primitive | doing | Convert the verifier-backed bounded WETH feed-map evidence into the first free public-quality Oracle & Collateral Change Log pilot; keep heartbeat/staleness zero-claim and defer any publication, payment, or account action. | publish/payment/account gate later |
 | CI-1 | Career/Income | 1 | Global high-compensation cash runway | todo | Ripple Treasury Manager packet / decision brief / form-prep note stays the live decision surface; keep the official-source non-Coinbase scan queued behind Josh’s hold/tweak/kill verdict. | **yes** to submit/send |
 | WO-2 | Weather Oracle | 2 | Compounding capture loop | blocked | Reopen only after the Boring Report proves paid demand or when a buyer/partner wedge makes Forecast Receipts commercially concrete. | no |
 | BB-25 | Bad Boys/Joycat | 3 | CARTOON LAB | blocked | Reopen only after Family Freedom Engine proof or explicit Josh creative call. Prior experiments are rejected; no more composite-video churn. | gate 2 |

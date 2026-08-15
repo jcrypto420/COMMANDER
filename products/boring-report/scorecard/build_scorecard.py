@@ -17,6 +17,8 @@ def load_facts() -> list[dict]:
     rows = []
     for path in sorted(FACTS.glob('*.json')):
         fact = json.loads(path.read_text())
+        if fact.get('artifact_type') == 'deployment-feed-map':
+            continue
         total = 0
         for d in fact['dimensions']:
             if not 0 <= d['points'] <= d['max_points']:

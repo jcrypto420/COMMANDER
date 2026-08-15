@@ -1,4 +1,5 @@
 {
+  "artifact_type": "deployment-feed-map",
   "protocol": "Aave V3",
   "network": "Ethereum mainnet",
   "oracle_address": "0x54586bE62E3c3580375aE3723C145253060Ca0C2",
