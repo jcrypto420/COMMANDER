@@ -1,0 +1,28 @@
+{
+  "artifact_type": "oracle-collateral-change-log-baseline",
+  "version": "v0.1-baseline-pilot",
+  "protocol": "Aave V3",
+  "network": "Ethereum mainnet",
+  "retrieved_at": "2026-08-14T23:10:35.353Z",
+  "comparison_status": "baseline_only_no_change_claim",
+  "scope": "Bounded deployment feed-map fact file for a small preferred asset set on Ethereum mainnet; not a completeness claim.",
+  "oracle_address": "0x54586bE62E3c3580375aE3723C145253060Ca0C2",
+  "oracle_source": "https://raw.githubusercontent.com/aave/aave-address-book/main/src/AaveV3Ethereum.sol",
+  "assets": [
+    {
+      "symbol": "WETH",
+      "asset_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "feed_address": "0x5424384b256154046e9667ddfaaa5e550145215e",
+      "feed_decimals": 8,
+      "latest_round_id": "36893488147419126011",
+      "latest_round_answer": "187832962092",
+      "latest_round_timestamp": "1786748675",
+      "citations": {
+        "source": "products/boring-report/scorecard/snapshots/2026-08-14/aave-v3-ethereum.sol",
+        "asset_source": "products/boring-report/scorecard/snapshots/2026-08-14/rpc-source-weth-00.json",
+        "feed_decimals": "products/boring-report/scorecard/snapshots/2026-08-14/rpc-feed-decimals-weth-00.json",
+        "feed_latest_round_data": "products/boring-report/scorecard/snapshots/2026-08-14/rpc-feed-latestRoundData-weth-00.json"
+      }
+    }
+  ]
+}

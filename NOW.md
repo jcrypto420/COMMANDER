@@ -8,8 +8,8 @@ low-cost execution.
 
 ## Next 3 tasks
 
-1. **Freedom Engine / Boring Report:** the bounded Aave V3 WETH feed-map evidence now verifies locally against 91 hashed snapshots. Convert that verified evidence into the first free public-quality Oracle & Collateral Change Log pilot and local founding-customer packet. Plan: `projects/boring-report-prd.md`.
-2. **Agent-paid evidence API proof:** local stdlib-only prototype now returns an honest HTTP 402 offer for `/v1/evidence/aave-v3` and a source-linked cited evidence payload only under a local development entitlement. Both paths and the underlying scorecard verifier pass. The private API docs link is live; x402 settlement remains intentionally unimplemented pending demonstrated utility and Josh approval. Entry: `products/boring-report/agent-api/README.md`.
+1. **Freedom Engine / Boring Report:** the bounded Aave V3 WETH feed-map evidence verifies locally against 91 hashed snapshots and now renders deterministically as a local Oracle & Collateral Change Log baseline pilot (Markdown/JSON/HTML). Next: capture a second independently verified observation before asserting any literal configuration change; defer publication, payment, and account action. Plan: `projects/boring-report-prd.md`.
+2. **Agent-paid evidence API:** the previously referenced local `agent-api` source/README is absent from the tracked tree, so it is not treated as a live product surface. The verifier-backed change-log pilot is the current honest proof; do not build settlement or payment rails before a specific useful buyer workflow is demonstrated and Josh approves.
 3. **Cash runway:** review the Ripple Treasury Manager packet/decision brief first, then continue the official-source non-Coinbase global job scan—$150K+ base, or $120K+ if fully remote—after the verdict.
 
 ## Current blockers

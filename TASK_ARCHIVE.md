@@ -2,7 +2,7 @@
 
 Completed task archive. Active tasks live in `TASK_QUEUE.md`.
 
-Last refreshed: 2026-07-02
+Last refreshed: 2026-08-15
 
 ## Completed tasks
 
@@ -49,3 +49,6 @@ Last refreshed: 2026-07-02
 | TG-1 | Command Center | 1 | Telegram phone approval channel | done | live and locked to Josh's Telegram ID; daily + weekly report delivery enabled | **yes** |
 | OPS-1 | Command Center | 1 | Anti-Slop Systems Reset | done | loop codified in `COMMANDER_LOOP.md`; queue cleaned; reset doc archived to `projects/archive/`; closed 2026-07-02 during intensity upgrade | no |
 | CC-20 | Command Center | 1 | Apply intensity rules to live SOUL.md | done | verified 2026-07-03: Hermes quoted the Intensity directive verbatim from live SOUL.md; go-harder posture is permanent | **yes** |
+| CC-21 | Command Center | 3 | Model-worker benchmark + cron pinning | done | `openai-codex/gpt-5.4-mini` passed the structured operator benchmark in 19s; all 6 active agent crons are now explicitly pinned to it. | no |
+| CC-24 | Command Center | 3 | 5-line daily dispatch | done | Retired as a perpetual parser-check lane. Fix only if an actual dispatch failure recurs. | no |
+| CC-19/18/22/23/10/13 | Command Center | 3 | Legacy system build tasks | done | Retired from the active board; reopen only for a demonstrated runtime failure or explicit Josh request. | no |

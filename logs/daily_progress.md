@@ -818,6 +818,14 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-15
 
+- Archived the finished CC-21, CC-24, and legacy system-build rows out of TASK_QUEUE into TASK_ARCHIVE, leaving FE-1 as the only `doing` lane and keeping CI-1 and the other non-active lanes parked or blocked.
+- Goal check: advanced repo hygiene — the active board is calmer and the live decision surface no longer carries retired Command Center build rows.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
 - Recovered the overnight repo sync/rebase/pull, then refreshed the live CI-1 Ripple decision brief and form-prep note with a morning-sync note while keeping the source facts fixed to the official 2026-08-14 verification.
 - Goal check: advanced Career / income defense + portfolio leverage — the CI-1 surface is still the live decision bundle, now with a sharper one-page brief for Josh's hold/tweak/kill read; no submission, outreach, spending, or account action occurred.
 - Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session.
+
+- Built and exercised the local Aave V3 Oracle & Collateral Change Log baseline pilot: `build_change_log.py` emits cited Markdown/JSON/HTML from the verified WETH fact bundle; 4 unit tests and `verify_scorecard.py` pass, and the temporary localhost HTML route returned HTTP 200 with the expected content.
+- Goal check: advanced the Family Freedom Engine / Boring Report flagship build — a real, reproducible local artifact now turns verified onchain evidence into a buyer-reviewable baseline without faking a change, heartbeat, staleness, completeness, safety, or financial claim; no publication, payment, account, deployment, or external send occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.6-terra` interactive session.
