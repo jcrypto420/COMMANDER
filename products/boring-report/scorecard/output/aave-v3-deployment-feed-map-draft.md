@@ -30,7 +30,7 @@ Quoted source anchors from that file:
 
 - The deployment-specific map is now concrete for a bounded asset subset: the oracle source is resolved from the Aave address-book anchor, then each selected asset is mapped to its configured feed and latest observed round timestamp.
 - This is still not a heartbeat or staleness claim. `facts/aave-v3-deployment-feed-map.json` keeps those fields zero-claim unless a primary source supports them.
-- Next step: extend the verifier to hash the new snapshot bundle and reject any uncited deployment claim.
+- Next step: use `output/aave-v3-second-observation-checklist.md` to parameterize the verifier for a second bundle, then reject any uncited deployment claim.
 
 ## Safety boundary
 

@@ -19,6 +19,7 @@ Turn the official Aave address-book anchor into one bounded fact file with sourc
 - Created `facts/aave-v3-deployment-feed-map.json`
 - Snapshots saved under `products/boring-report/scorecard/snapshots/2026-08-14/`
 - Draft packet refreshed at `products/boring-report/scorecard/output/aave-v3-deployment-feed-map-draft.md`
+- Follow-up checklist drafted at `products/boring-report/scorecard/output/aave-v3-second-observation-checklist.md`
 
 ## Observed bounded asset set
 

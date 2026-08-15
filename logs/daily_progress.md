@@ -829,3 +829,7 @@ One short entry per working day. What advanced + estimated spend.
 - Built and exercised the local Aave V3 Oracle & Collateral Change Log baseline pilot: `build_change_log.py` emits cited Markdown/JSON/HTML from the verified WETH fact bundle; 4 unit tests and `verify_scorecard.py` pass, and the temporary localhost HTML route returned HTTP 200 with the expected content.
 - Goal check: advanced the Family Freedom Engine / Boring Report flagship build — a real, reproducible local artifact now turns verified onchain evidence into a buyer-reviewable baseline without faking a change, heartbeat, staleness, completeness, safety, or financial claim; no publication, payment, account, deployment, or external send occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.6-terra` interactive session.
+
+- Drafted the Aave V3 second-observation checklist, linked it into the deployment-feed-map draft/run note and the live board, and re-ran the local scorecard test suite (`python3 -m unittest discover -s products/boring-report/scorecard -p 'test_*.py'`) with 4 tests passing.
+- Goal check: advanced the Family Freedom Engine / Boring Report — the next verification step now has a reusable narrow checklist, and the repo still points at one bounded WETH follow-up without any claim that the second observation already exists; no publication, payment, account, deployment, or external send occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
