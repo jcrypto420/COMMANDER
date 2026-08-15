@@ -1,6 +1,6 @@
 # Ripple Treasury Manager — Decision Brief
 
-**Status:** draft-only companion to the live packet; verified 2026-08-14
+**Status:** draft-only companion to the live packet; refreshed 2026-08-15 after morning sync; source facts verified 2026-08-14
 **Packet:** `packet.md`
 
 ## Why this is the next highest-leverage CI-1 item
@@ -24,6 +24,11 @@ Commander should tailor the packet around:
 - controls and reconciliation
 - multi-party coordination
 - crypto / market-infrastructure familiarity
+
+Exact confirmations still needed before submit:
+- whether Josh relaxes the $150K floor for this role
+- whether New York-only is acceptable
+- whether to answer the form with the provided “finance-native ops” framing or keep it as a hold-only packet
 
 ### If Josh wants to keep the current floor strict
 

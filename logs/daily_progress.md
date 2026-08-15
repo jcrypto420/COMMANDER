@@ -814,3 +814,10 @@ One short entry per working day. What advanced + estimated spend.
 - Added three regression tests: the valid bundle passes, a fabricated feed address is rejected, and the full scorecard-plus-deployment verifier succeeds without treating the supplemental map as a scored rubric fact.
 - Goal check: advanced The Boring Report flagship build — the bounded WETH evidence is now mechanically reproducible rather than merely documented; no public posting, payment, account creation, deployment, or external send occurred.
 - Estimated spend: unknown incremental ChatGPT/Codex session cost; no new paid API call, purchase, or external account action.
+
+
+## 2026-08-15
+
+- Recovered the overnight repo sync/rebase/pull, then refreshed the live CI-1 Ripple decision brief and form-prep note with a morning-sync note while keeping the source facts fixed to the official 2026-08-14 verification.
+- Goal check: advanced Career / income defense + portfolio leverage — the CI-1 surface is still the live decision bundle, now with a sharper one-page brief for Josh's hold/tweak/kill read; no submission, outreach, spending, or account action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session.
