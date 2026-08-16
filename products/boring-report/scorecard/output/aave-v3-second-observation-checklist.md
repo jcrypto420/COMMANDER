@@ -3,7 +3,7 @@
 
 **Status:** draft-only
 
-This note exists to keep the next Aave deployment pass narrow and honest. It does not claim a second observation has been captured yet.
+This note exists to keep the next Aave deployment pass narrow and honest. The second observation bundle has now been captured; this note keeps the comparison step narrow and honest.
 
 ## Goal
 
@@ -19,14 +19,14 @@ Capture one independently verified follow-up snapshot bundle for the same bounde
 
 ## Exact next verifier shape
 
-- Parameterize the deployment verifier to accept a second snapshot directory alongside the current baseline bundle.
+- Compare the 2026-08-16 snapshot directory alongside the current 2026-08-14 baseline bundle.
 - Re-hash the new bundle before comparing anything.
 - Reject any uncited deployment claim immediately.
 - Keep the change-log renderer from turning an observation into a heartbeat or staleness statement.
 
 ## Current bounded asset set
 
-- WETH only, from the existing 2026-08-14 bundle.
+- WETH only, from the 2026-08-14 baseline plus the 2026-08-16 follow-up bundle.
 
 ## Boundaries
 
@@ -35,4 +35,4 @@ Capture one independently verified follow-up snapshot bundle for the same bounde
 - No account creation.
 - No external send.
 - No claim that the map is complete.
-- No claim that a second observation already exists.
+- No claim that the comparison implies heartbeat, staleness, or completeness.

@@ -3,7 +3,7 @@
 
 **Status:** draft-only
 
-This packet now has a concrete bounded fact file: `facts/aave-v3-deployment-feed-map.json`
+- This packet now has concrete bounded fact files: `facts/aave-v3-deployment-feed-map.json` and `facts/aave-v3-deployment-feed-map-2026-08-16.json`
 
 ## Verified source anchor
 
@@ -30,7 +30,7 @@ Quoted source anchors from that file:
 
 - The deployment-specific map is now concrete for a bounded asset subset: the oracle source is resolved from the Aave address-book anchor, then each selected asset is mapped to its configured feed and latest observed round timestamp.
 - This is still not a heartbeat or staleness claim. `facts/aave-v3-deployment-feed-map.json` keeps those fields zero-claim unless a primary source supports them.
-- Next step: use `output/aave-v3-second-observation-checklist.md` to parameterize the verifier for a second bundle, then reject any uncited deployment claim.
+- Next step: compare the 2026-08-16 bundle against the 2026-08-14 baseline with `output/aave-v3-second-observation-checklist.md`, then reject any uncited deployment claim.
 
 ## Safety boundary
 

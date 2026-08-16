@@ -11,7 +11,8 @@ One short entry per working day. What advanced + estimated spend.
 ## 2026-08-16
 
 - Rechecked Ripple’s official Treasury Manager posting live again (HTTP 200) and confirmed the New York band plus treasury ops scope were still present; refreshed the CI-1 packet, decision brief, form-prep note, tracker row, career project status, queue wording, now/morning-report references, and this progress log around the same decision surface.
-- Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the fresh public source recheck kept the packet and board honest without any submission, outreach, account action, or paid/system change.
+- Advanced FE-1 by capturing a second bounded Aave V3 WETH observation bundle at `products/boring-report/scorecard/snapshots/2026-08-16/`, adding the dated follow-up fact file, and tightening the draft packet/checklist so the next step is a literal comparison against the 2026-08-14 baseline.
+- Goal check: advanced Family Freedom Engine / Boring Report — the lane stayed draft-only, but the fresh public-source second observation kept the packet and board honest without any publication, payment, account action, or paid/system change.
 - Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus a public no-login source recheck.
 
 ## 2026-08-08

@@ -16,14 +16,16 @@ Turn the official Aave address-book anchor into one bounded fact file with sourc
 
 ## Result
 
-- Created `facts/aave-v3-deployment-feed-map.json`
-- Snapshots saved under `products/boring-report/scorecard/snapshots/2026-08-14/`
+- Created `facts/aave-v3-deployment-feed-map.json` and the 2026-08-16 follow-up fact file `facts/aave-v3-deployment-feed-map-2026-08-16.json`
+- Baseline snapshots saved under `products/boring-report/scorecard/snapshots/2026-08-14/`
+- Follow-up snapshots saved under `products/boring-report/scorecard/snapshots/2026-08-16/`
 - Draft packet refreshed at `products/boring-report/scorecard/output/aave-v3-deployment-feed-map-draft.md`
-- Follow-up checklist drafted at `products/boring-report/scorecard/output/aave-v3-second-observation-checklist.md`
+- Follow-up checklist refreshed at `products/boring-report/scorecard/output/aave-v3-second-observation-checklist.md`
 
 ## Observed bounded asset set
 
-- WETH: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 → 0x5424384b256154046e9667ddfaaa5e550145215e (decimals 8, updatedAt 1786748675)
+- WETH baseline: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 → 0x5424384b256154046e9667ddfaaa5e550145215e (decimals 8, updatedAt 1786748675)
+- WETH follow-up: 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 → 0x5424384b256154046e9667ddfaaa5e550145215e (decimals 8, updatedAt 1786920059)
 
 ## Guardrails
 
