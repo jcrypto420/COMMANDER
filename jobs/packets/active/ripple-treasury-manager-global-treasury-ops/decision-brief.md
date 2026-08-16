@@ -1,6 +1,6 @@
 # Ripple Treasury Manager — Decision Brief
 
-**Status:** draft-only companion to the live packet; refreshed 2026-08-15 after morning sync and live page recheck; source facts verified 2026-08-14
+**Status:** draft-only companion to the live packet; refreshed 2026-08-16 after morning sync; source facts verified 2026-08-14 and live page recheck still 2026-08-15
 **Packet:** `packet.md`
 
 ## Why this is the next highest-leverage CI-1 item
