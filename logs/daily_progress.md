@@ -8,6 +8,12 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live source recheck kept the decision surface honest and current without any submission, outreach, or account action.
 - Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus a public no-login source recheck.
 
+## 2026-08-16
+
+- Rechecked Ripple’s official Treasury Manager posting live again (HTTP 200) and confirmed the New York band plus treasury ops scope were still present; refreshed the CI-1 packet, decision brief, form-prep note, tracker row, career project status, queue wording, now/morning-report references, and this progress log around the same decision surface.
+- Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the fresh public source recheck kept the packet and board honest without any submission, outreach, account action, or paid/system change.
+- Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus a public no-login source recheck.
+
 ## 2026-08-08
 
 - Re-synced the repo after the overnight reboot, cleared a generated `dashboard/state.json` rebase blocker plus a stale `.git/index.lock`, and completed the full fetch/rebase/pull recovery on `feat/command-center-scaffolding`.
