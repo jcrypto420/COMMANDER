@@ -13,6 +13,11 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: the queue and Boring Report status now match the rendered pilot: literal config unchanged, latest-round fields advanced.
 - Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus local render/test steps.
 
+- Re-ran the local Aave change-log verifier from the FE-1 lane, confirmed `build_change_log.py` and the focused test both passed, and kept the draft pilot as a literal comparison with no heartbeat/staleness claim.
+- Goal check: advanced Family Freedom Engine / Boring Report — this loop added a verified local comparison pass and kept publication, payment, account, and external-send actions deferred.
+- Alignment check: FE-1 now points at the next bounded Aave asset expansion only after a fresh verified snapshot lands, so the lane stays draft-only and zero-claim.
+- Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus local build/test steps.
+
 ## 2026-08-16
 
 - Rechecked Ripple’s official Treasury Manager posting live (HTTP 200) and refreshed the CI-1 packet, decision brief, form-prep note, tracker row, career project status, queue wording, and morning brief around the same decision surface.
