@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live source recheck kept the decision surface honest and current without any submission, outreach, or account action.
 - Alignment check: the CI-1 draft-ahead packet is current again and still parked on Josh’s hold/tweak/kill verdict rather than drifting into apply or send.
 - Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus a public no-login source recheck.
+- Advanced FE-1 by rendering the 2026-08-16 vs 2026-08-14 Aave comparison pilot into Markdown/JSON/HTML, then re-ran the focused scorecard test to verify feed and decimals stayed unchanged while only the latest-round fields moved.
+- Goal check: advanced Family Freedom Engine / Boring Report — the lane stayed draft-only, but the live comparison artifact and passing test kept the decision surface honest without any publication, payment, account action, or paid/system change.
+- Alignment check: the queue and Boring Report status now match the rendered pilot: literal config unchanged, latest-round fields advanced.
+- Estimated spend: $0.00 incremental API spend; used the current openai-codex / gpt-5.4-mini session plus local render/test steps.
 
 ## 2026-08-16
 
