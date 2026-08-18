@@ -1,6 +1,6 @@
 # CI-1 Application Packet — Ripple, Treasury Manager, Global Treasury Operations
 
-**Status:** DRAFT / decision surface — not applied, not sent; morning-sync refreshed 2026-08-17; verified from Ripple’s official careers page on 2026-08-14 and live-rechecked 2026-08-17.
+**Status:** DRAFT / decision surface — not applied, not sent; morning-sync refreshed 2026-08-18; verified from Ripple’s official careers page on 2026-08-14 and live-rechecked 2026-08-17.
 **Official source:** [Ripple careers posting](https://ripple.com/careers/all-jobs/job/7767531?gh_jid=7767531) — New York, NY, United States.
 **Salary range:** NY annual base salary range **$144,000–$180,000 USD**.
 **Role in one line:** run global treasury operations: cash flow transactions, entity funding, reconciliations, digital-asset funding, RLUSD treasury, OTC support, KYC/account ops, and treasury tooling.
