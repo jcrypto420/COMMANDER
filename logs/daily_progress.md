@@ -12,6 +12,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the new source note keeps the CI-1 decision surface honest without any submission, outreach, or account action.
 - Alignment check: this added one concrete draft artifact instead of another metadata-only refresh, and the next step remains Josh’s hold / tweak / kill verdict.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus a public no-login source recheck.
+- Drafted a Weather Oracle repo-cleanup note at `projects/weather-oracle-repo-cleanup-draft.md`, then aligned the WO-2 queue wording and project status to keep the packet / run sheet / result-note handoff tidy without touching the Pi run.
+- Goal check: advanced Weather Oracle MVP — the lane stayed draft-only, but the cleanup note gives the next pass a concrete stale-line sweep target while the real proof remains blocked behind the Boring Report / buyer-wedge gate.
+- Alignment check: this was a support-artifact pass, not a build step, and it kept the Weather Oracle handoff narrow instead of spawning new work.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-17
 

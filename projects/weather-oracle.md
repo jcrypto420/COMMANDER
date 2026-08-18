@@ -140,6 +140,9 @@ local weather insight, ideally using Chainlink where it creates real leverage.
 
 ## Status
 
+- Draft-only cleanup artifact created: `projects/weather-oracle-repo-cleanup-draft.md`.
+- Cleanup focus stays narrow: keep the WO-2 handoff, packet, run sheet, and result-note wording aligned before any build work.
+
 - [ ] Repo cleanup pass
 - [ ] Revenue-option scan before build work
 - [ ] One forecast source ingested
