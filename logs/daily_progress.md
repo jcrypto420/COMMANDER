@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live packet/brief/form-prep note, tracker row, queue wording, and project status are current again and still parked on Josh’s hold/tweak/kill verdict.
 - Alignment check: this run advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or a morning dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local git/repo tools.
+- Rechecked Ripple’s official Treasury Manager page live again (HTTP 200), wrote `source-recheck-note.md`, and threaded the fresh no-login source check through the packet, brief, form-prep note, tracker row, queue wording, and project status.
+- Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the new source note keeps the CI-1 decision surface honest without any submission, outreach, or account action.
+- Alignment check: this added one concrete draft artifact instead of another metadata-only refresh, and the next step remains Josh’s hold / tweak / kill verdict.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus a public no-login source recheck.
 
 ## 2026-08-17
 
