@@ -1,7 +1,7 @@
 # Ripple Treasury Manager — Source Recheck Note
 
 **Status:** draft-only support note; no submission, no outreach, no account action.
-**Checked:** 2026-08-18
+**Checked:** 2026-08-19
 **Packet:** `packet.md`
 
 ## Live no-login recheck
@@ -9,7 +9,7 @@
 Official Ripple careers page returned:
 - HTTP status: 200
 - Content type: `text/html`
-- Body size: 125,049 bytes
+- Body size: 125,001 bytes
 
 Literal source signals still present in the page body:
 - `New York`

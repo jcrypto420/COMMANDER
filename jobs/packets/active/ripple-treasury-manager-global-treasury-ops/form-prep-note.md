@@ -1,7 +1,7 @@
 # Ripple Treasury Manager — Form / Verdict Prep Note
 
 **Status:** draft-only support note; no submission, no outreach, no account action.
-**Reviewed:** 2026-08-18 morning sync; source facts verified 2026-08-14 and live page recheck refreshed again 2026-08-18 (see `source-recheck-note.md`)
+**Reviewed:** 2026-08-19 morning sync; source facts verified 2026-08-14 and live page recheck refreshed again 2026-08-19 (see `source-recheck-note.md`)
 **Packet:** `packet.md`
 **Decision brief:** `decision-brief.md`
 
