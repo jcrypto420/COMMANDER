@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live packet/brief/form-prep note/source note, tracker row, queue wording, and project status are current again and still parked on Josh’s hold/tweak/kill verdict.
 - Alignment check: this run advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or a morning dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local git/repo tools and one public no-login source recheck.
+- Refreshed the Weather Oracle repo-cleanup draft so the queue and project wording stay pointed at the single local-only Pi capture proof, with the next pass limited to a narrow stale-line sweep in docs only.
+- Goal check: advanced Weather Oracle MVP — the lane stayed draft-only, but the support note now keeps the WO-2 handoff honest without touching the Pi run itself.
+- Alignment check: this was a support-artifact cleanup pass, not a build step, and it kept WO-2 parked on the same real proof instead of spawning new work.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-18
 

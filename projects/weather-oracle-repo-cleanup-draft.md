@@ -11,7 +11,11 @@ Keep the Weather Oracle lane tidy before any build work resumes. This is a draft
 5. Defer all build work until the local-only capture proof is actually run.
 
 ## Draft-only next step
-If this cleanup note is still current on the next pass, do a narrow stale-line sweep in the Weather Oracle project docs and queue wording only; do not touch the Pi run itself.
+This pass is the narrow stale-line sweep in the Weather Oracle project docs and queue wording only; do not touch the Pi run itself.
+
+## Status
+
+- 2026-08-19: cleanup pass refreshed the project/queue wording to keep the WO-2 handoff pointed at the same single local-only Pi capture proof.
 
 ## Reopen condition
 The real execution step remains the single local-only Pi capture proof and saved manifest/result note, after the Boring Report / buyer-wedge gate is satisfied.
