@@ -12,6 +12,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Weather Oracle MVP — the lane stayed draft-only, but the support note now keeps the WO-2 handoff honest without touching the Pi run itself.
 - Alignment check: this was a support-artifact cleanup pass, not a build step, and it kept WO-2 parked on the same real proof instead of spawning new work.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Completed the narrow Weather Oracle stale-line sweep in the project docs and queue wording so the WO-2 handoff now points at the same single local-only Pi capture proof.
+- Goal check: advanced Weather Oracle MVP — still draft-only, but the cleanup pass removed the stale wording drift without touching the Pi run or reopening the lane.
+- Alignment check: this was the narrow doc/queue hygiene step the cleanup draft called for, so the live board and project note now agree on the same blocked real-proof gate.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-18
 
