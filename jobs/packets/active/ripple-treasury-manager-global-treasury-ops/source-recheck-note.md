@@ -1,12 +1,12 @@
 # Ripple Treasury Manager — Source Recheck Note
 
 **Status:** draft-only support note; no submission, no outreach, no account action.
-**Checked:** 2026-08-20
+**Checked:** 2026-08-20 18:01Z
 **Packet:** `packet.md`
 
 ## Live no-login recheck
 
-Official Ripple careers page returned:
+Official Ripple careers page returned on the fresh no-login recheck:
 - HTTP status: 200
 - Content type: `text/html; charset=utf-8`
 - Body size: 125,044 bytes

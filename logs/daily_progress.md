@@ -9,6 +9,9 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: this run advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or a morning dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local git/repo tools and one public no-login source recheck.
 
+- Fresh no-login recheck at 2026-08-20 18:01Z confirmed the Ripple Treasury Manager page still returned HTTP 200 / `text/html; charset=utf-8` / 125,044 bytes and still exposed the New York / $144,000 / $180,000 / Treasury Manager / RLUSD / KYC signals; threaded that into the source-recheck note, tracker row, queue wording, and career-income status without changing the hold/tweak/kill decision surface.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local git/repo tools and two public no-login source rechecks.
+
 ## 2026-08-19
 
 - Recovered the overnight sync/rebase/pull state on `feat/command-center-scaffolding`, rechecked Ripple’s official Treasury Manager page live again (HTTP 200), and refreshed the CI-1 decision surface to morning-sync 2026-08-19 without changing the underlying source facts.
