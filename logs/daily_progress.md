@@ -11,6 +11,10 @@ One short entry per working day. What advanced + estimated spend.
 
 - Fresh no-login recheck at 2026-08-20 18:01Z confirmed the Ripple Treasury Manager page still returned HTTP 200 / `text/html; charset=utf-8` / 125,044 bytes and still exposed the New York / $144,000 / $180,000 / Treasury Manager / RLUSD / KYC signals; threaded that into the source-recheck note, tracker row, queue wording, and career-income status without changing the hold/tweak/kill decision surface.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local git/repo tools and two public no-login source rechecks.
+- Added `next-scan-note.md` to the Ripple packet bundle and rethreaded the CI-1 tracker, queue, and career project status so the next non-Coinbase scan has a concrete post-verdict checklist.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the lane now has a reusable post-verdict scan note instead of another vague retry.
+- Alignment check: kept the live decision surface on Josh’s hold/tweak/kill verdict while banking a concrete next-step artifact for the eventual scan.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-19
 
