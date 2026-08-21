@@ -1,7 +1,7 @@
 # Ripple Treasury Manager — Source Recheck Note
 
 **Status:** draft-only support note; no submission, no outreach, no account action.
-**Checked:** 2026-08-20 18:01Z
+**Checked:** 2026-08-21 13:29Z
 **Packet:** `packet.md`
 
 ## Live no-login recheck
