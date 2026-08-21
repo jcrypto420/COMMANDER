@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live packet/brief/form-prep note/source note, tracker row, queue wording, and project status are current again and still parked on Josh’s hold/tweak/kill verdict.
 - Alignment check: this run advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or a morning dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local git/repo tools and one public no-login source recheck.
+- Drafted the FE-1 Aave V3 next-asset shortlist note, choosing WBTC first and USDC second as the bounded expansion candidates while keeping the real snapshot gate in place.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the lane now has a concrete next-asset support note instead of a vague “wait for the next bundle.”
+- Alignment check: the board now keeps the WBTC-first shortlist visible while preserving the zero-claim snapshot gate.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits and one public no-login source check.
 
 ## 2026-08-20
 
