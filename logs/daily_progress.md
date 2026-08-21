@@ -12,6 +12,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the lane now has a concrete next-asset support note instead of a vague “wait for the next bundle.”
 - Alignment check: the board now keeps the WBTC-first shortlist visible while preserving the zero-claim snapshot gate.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits and one public no-login source check.
+- Re-ran the bounded Aave comparison pipeline locally from the FE-1 lane: `build_change_log.py` wrote the literal comparison pilot, and the focused scorecard tests passed once run from `products/boring-report/scorecard/` with `PYTHONPATH=.`.
+- Goal check: advanced Family Freedom Engine / Boring Report — the draft lane now has a verified local comparison pass, keeping the feed/decimals unchanged and the latest-round delta explicit.
+- Alignment check: this was draft-only support work, not publication or payment, and the next bounded asset still waits on a fresh verified snapshot.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local build/test steps.
 
 ## 2026-08-20
 
