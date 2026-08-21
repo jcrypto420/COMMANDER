@@ -919,6 +919,13 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced the Family Freedom Engine / Boring Report — the next verification step now has a reusable narrow checklist, and the repo still points at one bounded WETH follow-up without any claim that the second observation already exists; no publication, payment, account, deployment, or external send occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
+## 2026-08-21
+
+- Ran the official-source non-Coinbase cash-runway scan after syncing the repo. Anchorage Digital’s public Lever feed returned a live remote-US Trading Operations Team Lead role; its stated post-trade, settlement, reconciliation, risk-control, and client-operations scope is a direct match for Josh’s institutional settlement background.
+- Built the full internal decision packet, one-page brief, and source-recheck note at `jobs/packets/active/anchorage-trading-operations-team-lead/`; public compensation is undisclosed, so the packet explicitly gates any application discussion on the remote compensation floor and honest player-coach leadership fit. Ripple is retained only as a secondary hold.
+- Goal check: advanced Career / income defense + portfolio leverage — produced a new official-source-verified, send-ready-but-unsent CI-1 packet for the strongest currently found remote target; no application, outreach, account, spend, publication, or external send occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.6-terra` interactive session.
+
 ## 2026-08-16
 
 - Completed the overnight git sync recovery: fetched all remotes, rebased onto origin/main, removed the generated `dashboard/state.json` blocker, and finished with a clean `feat/command-center-scaffolding` branch aligned to `origin/feat/command-center-scaffolding`.

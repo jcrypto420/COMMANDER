@@ -4,7 +4,7 @@
 - **State:** ACTIVE CASH RUNWAY — global $150K+ base search (`CI-1`); fully remote roles may clear at $120K+.
 - **Portfolio role:** one of two Family Freedom Engines alongside the owned Boring Report asset; employment supplies predictable cash/benefits while owned revenue compounds.
 - **Exclusions:** Coinbase Operations is killed by Josh taste call. No quota-heavy sales or low-compensation roles.
-- **Next action:** Ripple Treasury Manager packet / decision brief / form-prep note / source-recheck note / next-scan note stays the live decision surface; morning-sync refreshed 2026-08-21, the official source was fresh rechecked again at 2026-08-21 13:29Z, and keep the official-source non-Coinbase scan queued behind Josh’s hold/tweak/kill verdict.
+- **Next action:** Anchorage Digital Trading Operations Team Lead is the live CI-1 decision surface: the official public Lever feed returned the open remote-US role on 2026-08-21; the draft packet, brief, and source note are ready. It is a strong settlement/reconciliation/control fit, but public compensation is undisclosed and its global-team-lead scope is a real stretch—confirm both before any application discussion. Ripple remains a secondary hold only.
 - **Waiting on:** no external action; application, outreach, and account actions remain approval-gated.
 
 The older Coinbase packets remain historical context only and must not be surfaced as active candidates.
