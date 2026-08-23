@@ -14,6 +14,11 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: this advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or morning dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits and one public no-login source recheck.
 
+- Rechecked Anchorage Digital Trading Operations Team Lead again at 23:02 UTC against the official Lever feed and propagated the fresh timestamp through the packet, decision brief, source note, tracker, queue, project status, and NOW.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the decision surface now carries the later live-source confirmation instead of the earlier morning timestamp.
+- Alignment check: this stayed within the approval-gated CI-1 draft lane and did not touch submit/send/account actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one public no-login source recheck and local repo edits.
+
 ## 2026-08-21
 
 - Refined the FE-1 Aave V3 next-asset shortlist re-entry note so the next pass is explicitly one-asset-only, re-hash-first, and WBTC-first when the fresh bundle lands.

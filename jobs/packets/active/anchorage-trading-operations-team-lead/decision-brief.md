@@ -4,7 +4,7 @@
 
 ## Why this one
 
-- **Remote US** and officially live (reverified 2026-08-23 16:03 UTC).
+- **Remote US** and officially live (reverified 2026-08-23 23:02 UTC).
 - Exact overlap with Josh’s strongest evidence: institutional settlement, exception handling, funding details, reconciliation mindset, controls, and multi-party coordination.
 - Crypto-native institutional platform; not sales and not an engineering masquerade.
 
