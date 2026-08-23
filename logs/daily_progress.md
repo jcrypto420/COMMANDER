@@ -4,6 +4,11 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-23
 
+- Refined the FE-1 Aave V3 next-asset shortlist re-entry note so the next pass stays WBTC-first, one-asset-only, and blocked on a fresh verified bundle before any new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the support note now makes the next bounded comparison narrower and easier to audit without authorizing a new snapshot.
+- Alignment check: this stayed inside the owned-asset support lane and did not open publication, payment, account, or external-send actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 - Reverified Anchorage Digital Trading Operations Team Lead live (HTTP 200) and refreshed the CI-1 decision surface around the draft packet, decision brief, source note, tracker, queue, and project status.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live source recheck kept the decision surface current without any submission, outreach, or account action.
 - Alignment check: this advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or morning dispatch.

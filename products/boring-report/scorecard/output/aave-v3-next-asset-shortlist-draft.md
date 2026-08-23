@@ -54,3 +54,4 @@ When the fresh bundle exists, keep the pass narrow:
 - Keep **WBTC first** as the next bounded asset and do not widen the scope beyond one new asset.
 - Wait for a fresh verified bundle; then compare it against the current WETH baseline with the existing verifier shape.
 - Keep publication, payment, account creation, and any new snapshot run gated until that bundle exists.
+- Treat this note as the FE-1 handoff for the next pass; do not schedule a new snapshot until the fresh verified bundle exists and can be compared one asset at a time.
