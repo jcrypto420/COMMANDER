@@ -29,6 +29,15 @@ This note keeps the next bounded Aave V3 expansion concrete while the current co
 
 When a fresh verified snapshot lands, add **one** new bounded asset only, starting with WBTC, then compare it against the current WETH baseline with the existing verifier shape.
 
+## Re-entry checklist
+
+When the fresh bundle exists, keep the pass narrow:
+
+1. Re-hash the new bundle first.
+2. Add exactly one new bounded asset: WBTC.
+3. Compare WBTC against the current WETH baseline with the existing verifier shape.
+4. Keep publication, payment, account creation, and any wider asset sweep gated.
+
 ## Boundaries
 
 - No heartbeat claim.

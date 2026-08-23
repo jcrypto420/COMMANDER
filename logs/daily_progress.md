@@ -4,6 +4,11 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-21
 
+- Refined the FE-1 Aave V3 next-asset shortlist re-entry note so the next pass is explicitly one-asset-only, re-hash-first, and WBTC-first when the fresh bundle lands.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the lane now has a narrower re-entry checklist that keeps the next run honest without authorizing a new snapshot.
+- Alignment check: this was support-artifact work, not publication/payment, and it preserves the fresh-verified-bundle gate before any new comparison.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 - Rechecked Ripple’s official Treasury Manager page live again (HTTP 200, `text/html; charset=utf-8`, 125,044 bytes) and refreshed the CI-1 decision surface to morning-sync 2026-08-21 without changing the underlying source facts.
 - Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live packet/brief/form-prep note/source note, tracker row, queue wording, and project status are current again and still parked on Josh’s hold/tweak/kill verdict.
 - Alignment check: this run advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or a morning dispatch.
