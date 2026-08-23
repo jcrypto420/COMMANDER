@@ -937,3 +937,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the next highest-leverage CI-1 decision surface is still the Ripple packet bundle, now re-stamped for today’s decision read; no application, outreach, spending, account action, or daily dispatch occurred.
 - Alignment check: the board still points at one hold/tweak/kill decision surface for Josh, and the repo stayed local-only with no send/publish action.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
+
+## 2026-08-23
+
+- Tightened the FE-1 Aave V3 next-asset shortlist handoff by adding a dated re-entry note that keeps WBTC first, keeps the scope to one new asset, and still waits for a fresh verified bundle before any new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the next bounded expansion now has a cleaner local handoff instead of a vague “wait for the next bundle.”
+- Alignment check: this stayed inside the owned-asset proof lane, preserved the zero-claim snapshot gate, and did not touch publication, payment, account creation, or external send paths.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits.

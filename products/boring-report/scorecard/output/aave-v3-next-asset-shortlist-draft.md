@@ -39,3 +39,9 @@ When a fresh verified snapshot lands, add **one** new bounded asset only, starti
 - No account creation.
 - No external send.
 - No new snapshot until the fresh verified bundle exists.
+
+## Draft re-entry note (2026-08-23)
+
+- Keep **WBTC first** as the next bounded asset and do not widen the scope beyond one new asset.
+- Wait for a fresh verified bundle; then compare it against the current WETH baseline with the existing verifier shape.
+- Keep publication, payment, account creation, and any new snapshot run gated until that bundle exists.
