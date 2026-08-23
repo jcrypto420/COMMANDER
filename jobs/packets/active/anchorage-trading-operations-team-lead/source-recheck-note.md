@@ -1,7 +1,7 @@
 # Anchorage Trading Operations Team Lead — Source Recheck Note
 
 **Status:** public-source preflight only; no application, outreach, account, or payment action.
-**Checked:** 2026-08-21 15:06:37-05:00
+**Checked:** 2026-08-23 16:03:16 UTC
 **Official source:** https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408
 
 ## Live no-login source evidence

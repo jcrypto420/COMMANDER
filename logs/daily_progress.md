@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-08-23
+
+- Reverified Anchorage Digital Trading Operations Team Lead live (HTTP 200) and refreshed the CI-1 decision surface around the draft packet, decision brief, source note, tracker, queue, and project status.
+- Goal check: advanced Career / income defense + portfolio leverage — the lane stayed draft-only, but the live source recheck kept the decision surface current without any submission, outreach, or account action.
+- Alignment check: this advanced the highest-leverage CI-1 draft-ahead packet rather than drifting into a new application or morning dispatch.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits and one public no-login source recheck.
+
 ## 2026-08-21
 
 - Refined the FE-1 Aave V3 next-asset shortlist re-entry note so the next pass is explicitly one-asset-only, re-hash-first, and WBTC-first when the fresh bundle lands.

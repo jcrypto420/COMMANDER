@@ -1,6 +1,6 @@
 # NOW.md
 
-**Active focus:** build the Family Freedom Engine toward $12K/month after tax: a high-comp remote role supplies cash runway while **The Boring Report** becomes the first owned, automated revenue asset. Bad Boys is parked; internal packet/format churn is retired unless it creates a real sellable proof or submitted application.
+**Active focus — 2026-08-23:** build the Family Freedom Engine toward $12K/month after tax: a high-comp remote role supplies cash runway while **The Boring Report** becomes the first owned, automated revenue asset. Bad Boys is parked; internal packet/format churn is retired unless it creates a real sellable proof or submitted application.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
@@ -10,7 +10,7 @@ low-cost execution.
 
 1. **Freedom Engine / Boring Report:** the bounded Aave V3 WETH feed-map evidence verifies locally against 91 hashed snapshots and now renders deterministically as a local Oracle & Collateral Change Log baseline pilot (Markdown/JSON/HTML). The 2026-08-16 second observation bundle is now captured; a new draft-only shortlist now favors WBTC first for the next bounded asset, but the real next step still waits on a fresh verified snapshot before any new comparison. Next: compare the current bundle against the 2026-08-14 baseline, render only literal configuration changes, and still defer publication, payment, and account action. Plan: `projects/boring-report-prd.md`.
 2. **Agent-paid evidence API:** the previously referenced local `agent-api` source/README is absent from the tracked tree, so it is not treated as a live product surface. The verifier-backed change-log pilot is the current honest proof; do not build settlement or payment rails before a specific useful buyer workflow is demonstrated and Josh approves.
-3. **Cash runway:** review the Anchorage Digital Trading Operations Team Lead decision brief first: the official public Lever feed returned the open remote-US role on 2026-08-21, and a full draft packet plus source note is ready. It is a precise settlement/reconciliation/controls fit; its undisclosed compensation must clear the $120K remote floor (prefer $150K+) and the global-team-lead scope must be an acceptable player-coach stretch before any application. Ripple is secondary hold only.
+3. **Cash runway:** review the Anchorage Digital Trading Operations Team Lead decision brief first: the official public Lever feed reverified the open remote-US role on 2026-08-23 16:03 UTC; the draft packet, brief, and source note are ready. It is a precise settlement/reconciliation/control fit; its undisclosed compensation must clear the $120K remote floor (prefer $150K+) and the global-team-lead scope must be an acceptable player-coach stretch before any application discussion. Ripple is secondary hold only.
 
 ## Current blockers
 
