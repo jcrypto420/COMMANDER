@@ -960,6 +960,13 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: the board still points at one hold/tweak/kill decision surface for Josh, and the repo stayed local-only with no send/publish action.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session.
 
+## 2026-08-24
+
+- Drafted `configs/market_watchlist.json` for MA-1 so the Market Activity dashboard watchlist can be edited from repo data instead of hard-coded lists, while keeping the lane parked behind the CI-1 week-smooth reopen condition.
+- Goal check: advanced Market Activity — still draft-only, but the lane now has a concrete local config artifact that makes the next code step more straightforward.
+- Alignment check: this stayed local-only, avoided external calls, and did not touch send/publish/account/system-modifying actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits.
+
 ## 2026-08-23
 
 - Tightened the FE-1 Aave V3 next-asset shortlist handoff by adding a dated re-entry note that keeps WBTC first, keeps the scope to one new asset, and still waits for a fresh verified bundle before any new snapshot run.

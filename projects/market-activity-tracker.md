@@ -1,7 +1,7 @@
 # Market Activity Tracker
 
 ## Status — 2026-07-02
-- **State:** PARKED (`MA-1` blocked) — reopen after CI-1 loop runs smoothly for a week
+- **State:** PARKED (`MA-1` blocked) — draft-only config prep underway; reopen after CI-1 loop runs smoothly for a week
 - **Last advanced:** 2026-06-29 — product thesis drafted (local-first market cockpit)
 - **Next action (on reopen):** scope v0 local dashboard from the thesis
 - **Waiting on:** reopen condition
@@ -53,16 +53,10 @@ Initial watchlist:
 
 ## Next useful build step
 
-Add a repo-stored config file so Josh can edit watchlists without touching Python/JS:
+- Wire `configs/market_watchlist.json` into the fetcher so watchlists become repo-editable without touching Python/JS.
+- Then add daily snapshots so the dashboard shows change over time, not just latest state.
 
-- `configs/market_watchlist.json`
-- assets
-- protocols
-- GitHub repos
-- RSS feeds/governance forums
-- thresholds for “interesting” moves
-
-Then add daily snapshots so the dashboard shows change over time, not just latest state.
+Draft-only prep note: `configs/market_watchlist.json` now exists as the repo-stored watchlist source, so the next code step can wire the fetcher to config instead of hard-coded lists.
 
 ## Open-source shape
 

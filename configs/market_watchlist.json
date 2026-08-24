@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "purpose": "Draft-only repo-stored watchlist for the Market Activity / Personal Research dashboard.",
+  "notes": [
+    "Local-first and no-key by default.",
+    "No trading, no advice, no wallet connections in v0.",
+    "Designed to let Josh edit watchlists without touching the fetch script."
+  ],
+  "assets": [
+    { "symbol": "BTC", "coingecko_id": "bitcoin" },
+    { "symbol": "ETH", "coingecko_id": "ethereum" },
+    { "symbol": "LINK", "coingecko_id": "chainlink" },
+    { "symbol": "AAVE", "coingecko_id": "aave" },
+    { "symbol": "UNI", "coingecko_id": "uniswap" },
+    { "symbol": "MKR", "coingecko_id": "maker" },
+    { "symbol": "ONDO", "coingecko_id": "ondo-finance" }
+  ],
+  "protocols": [
+    "Chainlink",
+    "Aave",
+    "Uniswap",
+    "MakerDAO",
+    "Lido",
+    "Pendle",
+    "Ondo Finance",
+    "Ethena"
+  ],
+  "github_repos": [
+    "smartcontractkit/chainlink",
+    "aave/aave-v3-core",
+    "Uniswap/v4-core",
+    "DefiLlama/dimension-adapters",
+    "ethereum/go-ethereum"
+  ],
+  "rss_feeds": [
+    {
+      "name": "Chainlink Blog",
+      "url": "https://blog.chain.link/rss/"
+    },
+    {
+      "name": "Aave Governance Forum",
+      "url": "https://governance.aave.com/latest.rss"
+    },
+    {
+      "name": "Uniswap Governance",
+      "url": "https://gov.uniswap.org/latest.rss"
+    },
+    {
+      "name": "Maker Forum",
+      "url": "https://forum.makerdao.com/latest.rss"
+    }
+  ],
+  "thresholds": {
+    "asset_24h_move_pct": 5,
+    "protocol_7d_tvl_move_pct": 10,
+    "repo_pushed_within_days": 7,
+    "trending_top_n": 7
+  },
+  "next_build_step": "Wire this config into the fetcher so the dashboard reads watchlists from repo data instead of hard-coded lists."
+}
