@@ -36,3 +36,9 @@ Capture one independently verified follow-up snapshot bundle for the same bounde
 - No external send.
 - No claim that the map is complete.
 - No claim that the comparison implies heartbeat, staleness, or completeness.
+
+## Current re-entry note (2026-08-24)
+
+- The follow-up bundle already exists, so the next pass is compare-only against the 2026-08-14 baseline.
+- Render only literal configuration differences from the WETH baseline/follow-up pair.
+- Keep the WBTC-first shortlist as the next bounded-asset plan after the compare, but do not schedule a new snapshot until the fresh verified bundle gate is satisfied again.

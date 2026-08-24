@@ -4,6 +4,11 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-24
 
+- Reframed the FE-1 Aave V3 handoff around the current compare-only step, pointing the queue at the second-observation checklist and keeping WBTC-first queued for the next bounded asset after the literal diff.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the lane now has a clearer compare-first re-entry note instead of another vague asset-shortlist reminder.
+- Alignment check: stayed inside the owned-asset draft lane, did not authorize a new snapshot run, and kept publication/payment/account actions gated.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 - Rechecked the Anchorage Digital Trading Operations Team Lead official Lever feed live again (HTTP 200) and refreshed the CI-1 decision surface to the new morning sync timestamp without changing the underlying source facts.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the packet/brief/source-note/tracker/queue/project status now carry the fresh live-source confirmation instead of yesterday's timestamp.
 - Alignment check: this stayed inside the approval-gated CI-1 draft lane and did not touch submit/send/account actions.
