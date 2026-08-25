@@ -4,6 +4,11 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-25
 
+- Advanced MA-1 by drafting a config-wiring note for the Market Activity tracker, tying the parked lane to the real `configs/market_watchlist.json` source and the current fetcher shape instead of leaving only a vague repo-edit reminder.
+- Goal check: advanced Market Activity — still draft-only and parked, but the lane now has a concrete local support artifact that shows the next safe build step.
+- Alignment check: stayed inside local repo edits, did not touch any external calls, and kept the lane blocked behind the CI-1 reopen condition.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 - Recovered the repo sync after the overnight rebase blocker, then refreshed the Anchorage CI-1 packet and decision brief with a morning-sync note that keeps the live decision surface pointed at Josh’s review without claiming a new source recheck.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the highest-leverage CI-1 packet now has an explicit 2026-08-25 re-entry note and remains the current decision surface.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not touch submit/send/account actions, and did not compose the morning dispatch.

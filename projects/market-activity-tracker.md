@@ -1,10 +1,11 @@
 # Market Activity Tracker
 
-## Status — 2026-07-02
+## Status — 2026-08-25
 - **State:** PARKED (`MA-1` blocked) — draft-only config prep underway; reopen after CI-1 loop runs smoothly for a week
-- **Last advanced:** 2026-06-29 — product thesis drafted (local-first market cockpit)
-- **Next action (on reopen):** scope v0 local dashboard from the thesis
+- **Last advanced:** 2026-08-25 — config-wiring draft note added for the repo-stored watchlist
+- **Next action (on reopen):** wire `configs/market_watchlist.json` into `scripts/fetch_market_activity.py`, then add daily snapshots
 - **Waiting on:** reopen condition
+- **Draft artifact:** `projects/market-activity-config-wiring-draft.md`
 
 ## Why this replaces the current angle
 
