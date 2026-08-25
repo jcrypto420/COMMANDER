@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-08-25
+
+- Recovered the repo sync after the overnight rebase blocker, then refreshed the Anchorage CI-1 packet and decision brief with a morning-sync note that keeps the live decision surface pointed at Josh’s review without claiming a new source recheck.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the highest-leverage CI-1 packet now has an explicit 2026-08-25 re-entry note and remains the current decision surface.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, did not touch submit/send/account actions, and did not compose the morning dispatch.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-08-24
 
 - Reframed the FE-1 Aave V3 handoff around the current compare-only step, pointing the queue at the second-observation checklist and keeping WBTC-first queued for the next bounded asset after the literal diff.

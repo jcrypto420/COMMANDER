@@ -2,6 +2,8 @@
 
 **Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill
 
+**Morning sync:** 2026-08-25 run — no new external source check performed; this brief stays aligned to the live packet and source note for Josh’s review.
+
 ## Why this one
 
 - **Remote US** and officially live (reverified 2026-08-24 19:19 UTC).
