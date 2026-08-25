@@ -14,6 +14,11 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not touch submit/send/account actions, and did not compose the morning dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
+- Advanced FE-1 by verifying the bounded Aave V3 compare pilot locally (`python3 -m unittest test_build_change_log.py test_verify_scorecard.py`) and tightening the second-observation checklist to point at the literal-comparison renderer output.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the lane now has a verified compare artifact with unchanged feed/decimals and explicit latest-round deltas, plus a clearer handoff for the next bounded asset.
+- Alignment check: stayed inside the owned-asset draft lane, did not authorize a new snapshot run, and kept publication/payment/account actions gated.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits and local test execution only.
+
 ## 2026-08-24
 
 - Reframed the FE-1 Aave V3 handoff around the current compare-only step, pointing the queue at the second-observation checklist and keeping WBTC-first queued for the next bounded asset after the literal diff.
