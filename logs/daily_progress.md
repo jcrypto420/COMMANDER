@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-08-26
+
+- Recovered the overnight git sync/rebase/pull state on `feat/command-center-scaffolding`, removed the generated `dashboard/state.json` blocker during the rebase, and brought the Anchorage CI-1 packet back to a clean morning-sync state without any new external source check.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the highest-leverage CI-1 packet, decision brief, tracker row, queue wording, project status, and NOW all now point at the same live Anchorage decision surface for Josh’s review.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, did not touch submit/send/account actions, and did not compose or deliver the daily dispatch.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-08-25
 
 - Advanced MA-1 by drafting a config-wiring note for the Market Activity tracker, tying the parked lane to the real `configs/market_watchlist.json` source and the current fetcher shape instead of leaving only a vague repo-edit reminder.
