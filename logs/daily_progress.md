@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the highest-leverage CI-1 packet, decision brief, tracker row, queue wording, project status, and NOW all now point at the same live Anchorage decision surface for Josh’s review.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not touch submit/send/account actions, and did not compose or deliver the daily dispatch.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Advanced FE-1 by drafting a reusable Aave V3 compare-only result-note template and threading it into the Boring Report support docs, queue, and project status so the next pass can stay literal and bounded.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the lane now has a concrete compare-result handoff for the WETH baseline/follow-up pair instead of only a reminder to compare.
+- Alignment check: stayed inside the owned-asset draft lane, did not authorize a new snapshot run, and kept publication/payment/account actions gated.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-25
 

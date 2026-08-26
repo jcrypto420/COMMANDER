@@ -42,4 +42,5 @@ Capture one independently verified follow-up snapshot bundle for the same bounde
 - The follow-up bundle already exists, so the next pass is compare-only against the 2026-08-14 baseline.
 - Render only literal configuration differences from the WETH baseline/follow-up pair.
 - The local renderer already emits `output/aave-v3-change-log-pilot.md`, `.json`, and `.html`; the focused unit tests pass with the comparison status locked to literal configuration delta only.
+- The reusable result-note template at `output/aave-v3-comparison-result-note-template.md` gives the next pass a fill-in compare-only handoff.
 - Keep the WBTC-first shortlist as the next bounded-asset plan after the compare, but do not schedule a new snapshot until the fresh verified bundle gate is satisfied again.
