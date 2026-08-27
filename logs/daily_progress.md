@@ -9,6 +9,11 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not touch submit/send/account actions, and did not make any external calls.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
+- Verified the FE-1 Aave V3 comparison end-to-end: the fail-closed verifier rehashed 3 baseline and 91 Aave snapshots, 4 focused tests passed, the deterministic renderer rebuilt the Markdown/JSON/HTML pilot, and the exact HTML route returned HTTP 200 with `text/html` on loopback. Captured the literal result in `products/boring-report/scorecard/output/aave-v3-comparison-result-note-2026-08-27.md`.
+- Goal check: advanced Family Freedom Engine / Boring Report — a runnable, evidence-backed local product surface now has a fresh recorded verification result; this is still not an externally shipped product or revenue.
+- Alignment check: no new snapshot, publication, payment, settlement, account creation, or external send occurred; the next WBTC-first bounded expansion remains gated on a fresh verified bundle.
+- Estimated spend: unknown for this `openai-codex` / `gpt-5.6-terra` interactive verification pass; local tests and loopback serving incurred no API or infrastructure spend.
+
 - Refreshed the Anchorage CI-1 draft-ahead packet/decision brief/source-note surface to the 2026-08-27 morning sync after the overnight git rebase recovery, keeping the role as the live decision surface without any new external source check or submit/send/account action.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the packet, decision brief, tracker row, queue wording, project status, and NOW are aligned to the same Anchorage decision surface for Josh’s review.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
