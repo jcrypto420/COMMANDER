@@ -27,7 +27,7 @@
 - **WO-2 public-source recheck (2026-08-09 18:01):** a second live no-login NWS forecast and Open-Meteo gate check still returned 200 for both endpoints, so the draft handoff remains the single local-only Pi capture proof and saved result note.
 - **WO-2 draft-only re-entry (2026-08-11):** refreshed the local result-note handoff with today's draft-only reminder, keeping the lane pointed at the single local-only Pi capture proof and saved result note.
 - **WO-2 draft-only upkeep (2026-08-11):** kept the queue/project wording aligned with the current handoff and left the next real step as the single local-only Pi capture proof plus saved result note.
-- **WO-2 cleanup pass (2026-08-19):** completed the narrow stale-line sweep in the project docs and queue wording; the real proof remains the single local-only Pi capture run.
+- **WO-2 cleanup pass (2026-08-27):** refreshed the narrow stale-line sweep in the project docs and queue wording; the real proof remains the single local-only Pi capture run.
 - **Travel redundancy (2026-07-08, Josh away from home):** Mac LaunchAgent `com.commander.weather-capture` runs the capture nightly 20:35 Mac-local (fires on next wake if asleep) → `logs/weather_capture_mac.log`. Capture-only, no git actions; sessions commit accumulated captures. Remove with: `launchctl unload ~/Library/LaunchAgents/com.commander.weather-capture.plist && rm` that file. Pi cron remains the primary once Hermes confirms WO-2.
 - **Waiting on:** name (batches 1+2 rejected; working title stays "weather-oracle")
 

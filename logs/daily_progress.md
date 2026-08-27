@@ -19,6 +19,11 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
+- Refreshed the Weather Oracle cleanup draft and queue wording so the blocked WO-2 lane stays pointed at the same single local-only Pi capture proof, with the next real step still gated behind the Boring Report / buyer-wedge condition.
+- Goal check: advanced Weather Oracle MVP — still draft-only, but the cleanup pass kept the handoff narrow and current without touching the Pi capture itself.
+- Alignment check: stayed inside local repo docs only, did not touch the Pi run, and did not open posting, sending, spending, or service-change actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-08-26
 
 - Recovered the overnight git sync/rebase/pull state on `feat/command-center-scaffolding`, removed the generated `dashboard/state.json` blocker during the rebase, and brought the Anchorage CI-1 packet back to a clean morning-sync state without any new external source check.

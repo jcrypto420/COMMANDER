@@ -15,7 +15,7 @@ This pass is the narrow stale-line sweep in the Weather Oracle project docs and 
 
 ## Status
 
-- 2026-08-19: cleanup pass completed the narrow stale-line sweep in the project docs and queue wording to keep the WO-2 handoff pointed at the same single local-only Pi capture proof.
+- 2026-08-27: cleanup pass refreshed the narrow stale-line sweep in the project docs and queue wording to keep the WO-2 handoff pointed at the same single local-only Pi capture proof.
 
 ## Reopen condition
 The real execution step remains the single local-only Pi capture proof and saved manifest/result note, after the Boring Report / buyer-wedge gate is satisfied.
