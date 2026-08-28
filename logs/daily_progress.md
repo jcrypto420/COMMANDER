@@ -4,6 +4,11 @@ One short entry per working day. What advanced + estimated spend.
 
 ## 2026-08-28
 
+- Tightened the Anchorage CI-1 application-form preflight by adding a refreshed answer bank for the why-this-role, leadership/stretch, and compensation-screen prompts, then synced the queue and career project status to match.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the live CI-1 decision surface now has a clearer answer bank for Josh’s review without any submit/send/account action.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, did not make external calls, and did not compose or deliver the daily dispatch.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 - Rebased the repo cleanly, removed the generated `dashboard/state.json` blocker, and refreshed the Anchorage CI-1 draft-ahead packet/brief/tracker/queue/project-status surface to the 2026-08-28 morning sync without any new external source check.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the live CI-1 decision surface is now current for Josh’s review and the packet set stays aligned with the application-form preflight answer bank.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.

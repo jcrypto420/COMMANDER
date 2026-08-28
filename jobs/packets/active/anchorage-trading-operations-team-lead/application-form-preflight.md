@@ -1,6 +1,6 @@
 # Anchorage Digital — Application Form Preflight
 
-**Status:** draft-only; no application sent, no account created, no outreach sent.
+**Status:** draft-only; no application sent, no account created, no outreach sent. Answer bank refreshed on 2026-08-28.
 **Purpose:** compact answer bank for the two remaining checks before Josh decides whether to advance Anchorage past draft-only.
 
 ## Still open
@@ -25,6 +25,24 @@
 ### Compensation screen
 
 > The role’s public feed does not show pay, so any application discussion still depends on confirming the base clears the remote floor.
+
+## Suggested form language
+
+### Why Anchorage?
+
+> Anchorage stands out because it treats post-trade operations as a control function: settlement, reconciliation, client coordination, risk mitigation, and reliable execution under pressure.
+>
+> That matches my background in institutional financial operations, where I’ve spent years working through settlement status, documentation, funding details, exceptions, and multi-party coordination.
+
+### Leadership / stretch question
+
+> I’ve led analyst coverage across multiple client portfolios and coordinated with clients, counterparties, custodians, agent banks, legal stakeholders, and internal teams.
+>
+> I have not already run a global crypto trading-operations organization, so I would position myself honestly as a senior operator who brings controls discipline, calm escalation, and player-coach readiness.
+
+### Compensation screen
+
+> The public posting does not show pay, so compensation is still an open screen. I would want confirmation that the base clears the remote floor before moving forward.
 
 ## Next step if Josh advances
 
