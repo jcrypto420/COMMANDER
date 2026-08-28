@@ -2,7 +2,7 @@
 
 **Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill
 
-**Morning sync:** 2026-08-27 run — no new external source check performed; this brief stays aligned to the live packet, source note, and `application-form-preflight.md` for Josh’s review.
+**Morning sync:** 2026-08-28 run — no new external source check performed; this brief stays aligned to the live packet, source note, and `application-form-preflight.md` for Josh’s review.
 
 ## Why this one
 

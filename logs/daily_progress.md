@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-08-28
+
+- Rebased the repo cleanly, removed the generated `dashboard/state.json` blocker, and refreshed the Anchorage CI-1 draft-ahead packet/brief/tracker/queue/project-status surface to the 2026-08-28 morning sync without any new external source check.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the live CI-1 decision surface is now current for Josh’s review and the packet set stays aligned with the application-form preflight answer bank.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-08-27
 
 - Added `application-form-preflight.md` to the Anchorage CI-1 packet bundle so the remaining pay/scope blockers now have a compact answer bank instead of only being noted in the decision brief.
