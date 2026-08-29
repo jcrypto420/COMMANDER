@@ -9,6 +9,10 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 - Added `jobs/packets/active/anchorage-trading-operations-team-lead/next-step-note.md` and aligned the Anchorage queue row, career project status, and job tracker so the CI-1 decision surface now has an explicit local next-step artifact without crossing any submit/send/account gates.
+- Added `products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-08-29.md` and threaded that current FE-1 compare-only handoff through the queue and Boring Report status so the draft lane stays narrow without authorizing a new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the compare-only surface now has a current re-entry note alongside the reusable result-note template, keeping WBTC-first queued without widening scope.
+- Alignment check: stayed inside the owned-asset draft lane, did not run a new snapshot, and did not touch publication/payment/account actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-28
 
