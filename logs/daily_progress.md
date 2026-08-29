@@ -8,6 +8,7 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the primary CI-1 packet is current again and the preflight answer bank is ready for a hold/tweak/kill read without any submit/send/account action.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Added `jobs/packets/active/anchorage-trading-operations-team-lead/next-step-note.md` and aligned the Anchorage queue row, career project status, and job tracker so the CI-1 decision surface now has an explicit local next-step artifact without crossing any submit/send/account gates.
 
 ## 2026-08-28
 
