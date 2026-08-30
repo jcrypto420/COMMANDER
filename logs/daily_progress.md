@@ -14,6 +14,13 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed inside the owned-asset draft lane, did not run a new snapshot, and did not touch publication/payment/account actions.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
+## 2026-08-30
+
+- Rebased the repo onto `origin/main`, removed the generated `dashboard/state.json` blocker during the rebase, and then refreshed the Anchorage CI-1 draft-ahead surface to the 2026-08-30 morning sync across packet, decision brief, application-form preflight answer bank, tracker, queue wording, and NOW.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the live CI-1 decision surface is current again for Josh’s hold / tweak / kill read without any submit/send/account action.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-08-28
 
 - Tightened the Anchorage CI-1 application-form preflight by adding a refreshed answer bank for the why-this-role, leadership/stretch, and compensation-screen prompts, then synced the queue and career project status to match.

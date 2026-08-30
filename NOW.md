@@ -1,6 +1,6 @@
 # NOW.md
 
-**Active focus — 2026-08-29:** build the Family Freedom Engine toward $12K/month after tax: a high-comp remote role supplies cash runway while **The Boring Report** becomes the first owned, automated revenue asset. Bad Boys is parked; internal packet/format churn is retired unless it creates a real sellable proof or submitted application.
+**Active focus — 2026-08-30:** build the Family Freedom Engine toward $12K/month after tax: a high-comp remote role supplies cash runway while **The Boring Report** becomes the first owned, automated revenue asset. Bad Boys is parked; internal packet/format churn is retired unless it creates a real sellable proof or submitted application.
 Commander is live on the Pi and should turn Josh's intake into safe,
 low-cost execution.
 
