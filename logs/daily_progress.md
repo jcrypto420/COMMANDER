@@ -20,6 +20,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the live CI-1 decision surface is current again for Josh’s hold / tweak / kill read without any submit/send/account action.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, did not compose or deliver the daily dispatch, and did not touch submit/send/account actions.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Added `products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-08-30.md` and threaded the FE-1 compare-only handoff through the queue and Boring Report status so the draft-only surface stays current without authorizing a new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the compare-only re-entry note now points at the 2026-08-30 handoff and keeps WBTC-first queued behind the fresh-verified-bundle gate.
+- Alignment check: stayed inside the owned-asset draft lane, did not run a new snapshot, and did not touch publication/payment/account actions.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-28
 
