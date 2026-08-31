@@ -2,9 +2,9 @@
 
 **Status:** DRAFT / decision surface — not applied, not sent, and no account action taken; see `application-form-preflight.md` for the remaining pay/scope answer bank.
 **Official source:** [Anchorage Digital Lever posting](https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408) — United States, remote.
-**Source check:** official public Lever feed queried without login on 2026-08-31 18:57 UTC; the role was still listed as open, remote-US, and the payload still showed no compensation. See `source-recheck-note.md`.
-**Morning sync:** 2026-08-31 run — fresh no-login source check confirmed the same live remote-US decision surface for Josh’s review.
-**Compensation:** not disclosed in the public Lever payload on the 2026-08-31 recheck. Confirm the base is at least $120K remote (preferably $150K+) before any application discussion.
+**Source check:** official public Lever feed queried without login on 2026-08-31 23:02 UTC; the role was still listed as open, remote-US, and the payload still showed no compensation. See `source-recheck-note.md`.
+**Morning sync:** 2026-08-31 run — fresh no-login source check confirmed the same live remote-US decision surface for Josh’s review, with a later 23:02 UTC recheck keeping the draft surface current.
+**Compensation:** not disclosed in the public Lever payload on the 2026-08-31 23:02 UTC recheck. Confirm the base is at least $120K remote (preferably $150K+) before any application discussion.
 
 ## Role in one line
 

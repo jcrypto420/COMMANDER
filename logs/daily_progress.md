@@ -13,6 +13,16 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in draft-only decision-surface mode.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
+- Refreshed the 2026-08-25 → 2026-08-31 weekly money / revenue review to the current lanes (CI-1 cash runway and FE-1 owned asset), recorded the zero-external-shipment / zero-revenue scoreboard, and kept the board draft-only.
+- Goal check: advanced Command Center / revenue-review hygiene — the weekly decision surface is current again, but it still reflects a no-revenue week.
+- Alignment check: stayed local-only, made no send/post/account actions, and kept the review concise and decision-oriented.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
+- Rechecked the Anchorage CI-1 decision surface against the official Lever feed again at 23:02 UTC, confirmed the role is still live/remote-US with compensation still undisclosed, and propagated that literal result into the source note, packet, decision brief, application-form preflight, tracker row, queue wording, project status, NOW, and the job tracker.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the CI-1 packet now has a later public-source recheck without crossing any submit/send/account gate.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in decision-surface mode only.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-08-29
 
 - Refreshed the Anchorage CI-1 draft-ahead surface to the 2026-08-29 morning sync, including the packet, decision brief, application-form preflight answer bank, tracker row, queue wording, project status, and NOW so the live decision surface stays aligned for Josh’s review.

@@ -1,12 +1,12 @@
 # Anchorage Trading Operations Team Lead — Source Recheck Note
 
 **Status:** public-source preflight only; no application, outreach, account, or payment action.
-**Checked:** 2026-08-31 18:57:07 UTC
+**Checked:** 2026-08-31 23:02:05 UTC
 **Official source:** https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408
 
 ## Live no-login source evidence
 
-Queried Anchorage Digital’s official public Lever job-feed endpoint again:
+Queried Anchorage Digital’s official public Lever job-feed endpoint again at 23:02 UTC:
 
 - Endpoint: `https://api.lever.co/v0/postings/anchorage?mode=json`
 - HTTP status: `200`
@@ -32,4 +32,4 @@ No base-pay range or compensation statement was present in the public feed paylo
 
 ## Guardrail
 
-This note verifies that the official role was live and remote-US at retrieval time, and that the public payload still did not disclose pay on the 2026-08-31 recheck. It is not an approval to apply, create an account, contact the employer, or make salary claims.
+This note verifies that the official role was live and remote-US at retrieval time, and that the public payload still did not disclose pay on the 2026-08-31 23:02 UTC recheck. It is not an approval to apply, create an account, contact the employer, or make salary claims.
