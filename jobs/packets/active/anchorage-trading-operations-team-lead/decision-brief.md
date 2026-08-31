@@ -1,8 +1,8 @@
 # Anchorage Digital — Trading Operations Team Lead: Decision Brief
 
-**Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill
-
-**Morning sync:** 2026-08-31 run — fresh no-login source recheck confirmed the same live packet, source note, and `application-form-preflight.md` surface for Josh’s review.
+**Status:** draft-only companion to the live CI-1 packet.
+**Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill.
+**Morning sync:** 2026-08-31 run — fresh no-login source recheck confirmed the same live packet, source note, preflight bank, and next-step note surface for Josh’s review.
 
 ## Why this one
 

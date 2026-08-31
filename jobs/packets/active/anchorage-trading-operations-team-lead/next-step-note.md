@@ -1,6 +1,6 @@
 # Anchorage Digital — Next-Step Note
 
-**Status:** draft-only; no application sent, no account created, and no outreach sent.
+**Status:** draft-only companion to the live CI-1 packet.
 
 ## Why this note exists
 

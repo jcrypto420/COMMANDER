@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the CI-1 packet now has a fresh public-source recheck without crossing any submit/send/account gate.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in decision-surface mode only.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Tightened the Anchorage CI-1 decision brief and next-step note into cleaner draft-only companion surfaces with explicit status lines and links, while keeping the role in decision-surface mode and crossing no submit/send/account gate.
+- Goal check: advanced Career / income defense + portfolio leverage — the same live Anchorage decision surface is intact, but the approval packet is easier to read and route now.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in draft-only decision-surface mode.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-08-29
 
