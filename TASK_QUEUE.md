@@ -17,7 +17,7 @@ Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad
 | PS-1 | Primoscapes | 2 | Fall Native Prairie prep | blocked | Reopen when Josh supplies price basis, licensing/insurance status, and public-name call; then turn it into one real offer and outreach test. | yes to send |
 | BB-26 | Bad Boys/Joycat | 3 | Idea-bank cron | blocked | Reopen only after one finished Bad Boys clip has been reviewed. Finished media outranks premise-bank automation. | **yes** |
 | BB-24/17/23 | Bad Boys/Joycat | 3 | Merch/posting/account theory | blocked | Reopen after a real clip receives a keep verdict or public signal. | **yes** |
-| MA-1 | Market Activity | 3 | Market activity tracker | blocked | Draft artifact now lives at `projects/market-activity-config-wiring-draft.md`; keep the lane parked until the CI-1 week-smooth reopen condition is met, then wire `configs/market_watchlist.json` into the fetcher and add daily snapshots. | no |
+| MA-1 | Market Activity | 3 | Market activity tracker | blocked | Draft artifact now lives at `projects/market-activity-config-wiring-draft.md`; keep the lane parked and keep the draft note aligned with the live fetcher/config shape until the CI-1 week-smooth reopen condition is met, then wire `configs/market_watchlist.json` into the fetcher and add daily snapshots. | no |
 
 ## Parking lot rules
 

@@ -1098,3 +1098,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Family Freedom Engine / Boring Report — still draft-only, but the next bounded expansion now has a cleaner local handoff instead of a vague “wait for the next bundle.”
 - Alignment check: this stayed inside the owned-asset proof lane, preserved the zero-claim snapshot gate, and did not touch publication, payment, account creation, or external send paths.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits.
+
+## 2026-09-01
+
+- Refined the MA-1 Market Activity config-wiring draft against the live fetcher/config shape, added an explicit repo-fact-check section, and aligned the parked tracker row plus queue wording around the same blocked reopen condition.
+- Goal check: advanced the Market Activity draft-support lane — still parked, but the repo now says clearly what is hard-coded, what is already editable in `configs/market_watchlist.json`, and what the first safe wiring step is when reopened.
+- Alignment check: stayed local-only, made no external calls or send/send-like actions, and kept MA-1 blocked instead of pretending the lane was reopened.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
