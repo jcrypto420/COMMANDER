@@ -1,12 +1,12 @@
 # Anchorage Trading Operations Team Lead — Source Recheck Note
 
 **Status:** public-source preflight only; no application, outreach, account, or payment action.
-**Checked:** 2026-08-31 23:02:05 UTC
+**Checked:** 2026-09-01 14:30:51 UTC
 **Official source:** https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408
 
 ## Live no-login source evidence
 
-Queried Anchorage Digital’s official public Lever job-feed endpoint again at 23:02 UTC:
+Queried Anchorage Digital’s official public Lever job-feed endpoint again at 14:30 UTC:
 
 - Endpoint: `https://api.lever.co/v0/postings/anchorage?mode=json`
 - HTTP status: `200`
