@@ -22,6 +22,10 @@ One short entry per working day. What advanced + estimated spend.
 - Added Pons v2 per-token trade-feed enrichment for early-flow/cabal-resistance signals: >=4 unique recent buyers, >=6 buys, >=+25% net buy skew, and no single buyer accounting for >70% of recent buy quote flow are now hard gates. Alerts include the top three buyer wallet addresses and explicit non-profitability labels. A deterministic buyer-flow test passed (85 score with diversified buy flow; a concentrated 80% top-buyer flow is rejected). Fomo remains excluded pending verified Robinhood Chain/Pons coverage plus authorized data access; deployer historical win rate and realized wallet PnL also remain unavailable.
 - Goal check: advanced the DeFi / tokenized-market data-infrastructure lane with actual participant and flow signals without pretending wallet size is PnL or identity clustering is cabal proof.
 
+- Added a fresh 2026-09-02 FE-1 compare-only re-entry note, then aligned the Boring Report queue/project status around the current handoff without authorizing a new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report with a concrete draft-only support artifact; WBTC-first remains queued and publication/payment/account actions stay gated.
+- Alignment check: stayed local-only and zero-claim, with no new snapshot, send, or account action.
+
 ## 2026-09-01
 
 - Rechecked the Anchorage CI-1 decision surface against the official no-login Lever feed, confirmed the role is still live/remote-US with compensation still undisclosed, and propagated that literal result into the source note, packet, decision brief, application-form preflight, tracker row, queue wording, project status, and NOW.
