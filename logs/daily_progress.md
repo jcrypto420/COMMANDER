@@ -15,6 +15,8 @@ One short entry per working day. What advanced + estimated spend.
 - Research conclusion: wallet realized PnL, buyer uniqueness/wash resistance, creator win rate, and Fomo social confirmation are explicitly excluded until a permitted, indexed historical event source and Fomo Robinhood Chain/Pons coverage are verified. No wallet, trade, signing, spending, or financial recommendation occurred.
 - Goal check: advanced the DeFi / tokenized-market data-infrastructure lane with an exercised, low-noise quality filter rather than an unfiltered launch firehose; it remains personal research infrastructure, not external revenue or a trading system.
 - Alignment check: this adds a bounded observable decision surface while preserving the no-trade/no-wallet gate; the next legitimate upgrade is event indexing, not autonomous execution.
+- Reliability correction: Hermes no-agent cron resolves relative scripts under `/home/josh/.hermes/profiles/commander/scripts`, but the initial wrappers were mistakenly written to `/home/josh/.hermes/scripts`; both monitors therefore showed scheduler errors despite passing manual execution. Moved the wrappers to the scheduler directory and verified both return exit code 0. Also fixed a Pons score bug: an 85/95 launch missing the market-cap gate could have alerted because only the score threshold was checked. The monitor now requires every gate independently; deterministic and live checks passed.
+- Goal check: protected the DeFi / tokenized-market data-infrastructure lane from false-positive alerting and restored scheduled-run reliability without adding wallet or trading capability.
 
 ## 2026-09-01
 

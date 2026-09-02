@@ -123,7 +123,7 @@ def write_state(path: Path, snapshots: dict[str, dict[str, Any]], scores: dict[s
     }, indent=2) + "\n", encoding="utf-8")
 
 
-def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config: dict[str, Any], observed_at: datetime) -> tuple[int, float, list[str]]:
+def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config: dict[str, Any], observed_at: datetime) -> tuple[int, float, bool, list[str]]:
     gates = config["required_gates"]
     points = config["scoring"]
     progress = float(launch.get("graduationProgressPct") or 0)
@@ -158,7 +158,7 @@ def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config
     )
     if not required:
         reasons.append("one or more required gates not met")
-    return score, delta, reasons
+    return score, delta, required, reasons
 
 
 def address_line(label: str, value: Any) -> str:
@@ -208,10 +208,10 @@ def main() -> int:
     candidates = []
     for launch in launches:
         token = str(launch["token"]).lower()
-        score, delta, reasons = score_launch(launch, snapshots.get(token), config, observed_at)
+        score, delta, required, reasons = score_launch(launch, snapshots.get(token), config, observed_at)
         threshold = int(config["scoring"]["alert_score_minimum"])
         prior_score = int(alerted.get(token, 0))
-        if score >= threshold and score >= prior_score + 10:
+        if required and score >= threshold and score >= prior_score + 10:
             candidates.append((launch, score, delta, reasons))
             alerted[token] = score
         next_snapshots[token] = compact_snapshot(launch, observed_at)
