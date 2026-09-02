@@ -22,13 +22,19 @@ A new launch alerts only after two snapshots show all of the following:
 | Progress acceleration | >= +3 percentage points since prior 5-minute sample | Measures observed demand progression, not a single static value. |
 | Last observed buy | <= 5 minutes old | Removes stalled curves. |
 | Reported market cap | >= $5,000 | Removes trivial low-activity launches. |
+| Recent distinct buyers | >= 4 in Pons' 15-minute indexed trade window | Blocks single-wallet or tiny-participant flow. |
+| Recent buys | >= 6 in the same window | Requires repeated observed participation. |
+| Net quote flow | >= +25% buy-skew | Rejects sell-dominant flow. |
+| Largest buyer share | <= 70% of recent buy quote volume | Flags one-wallet concentration; it cannot prove wallet ownership links. |
 
 A candidate must clear every gate, then is *ranked* on a 0–100 continuous score:
-- 25 points: exact official contract match;
-- 0–20: graduation progress, reaching full points at 50%;
-- 0–25: progress acceleration, reaching full points at +10 percentage points per sample;
-- 0–15: recency of the latest buy, decaying to zero at five minutes;
-- 0–15: reported market cap, reaching full points at $25,000.
+- 20 points: exact official contract match;
+- 0–15: graduation progress, reaching full points at 50%;
+- 0–20: progress acceleration, reaching full points at +10 percentage points per sample;
+- 0–10: recency of the latest buy, decaying to zero at five minutes;
+- 0–10: reported market cap, reaching full points at $25,000;
+- 0–10: buyer diversity, reaching full points at 10 recent buyers;
+- 0–15: net buy flow, reaching full points at +75% buy-skew.
 
 The alert threshold is **70/100**. This prevents threshold-crossing launches from all receiving the same maximum score.
 
@@ -39,14 +45,15 @@ Every candidate prints:
 - canonical Robinhood stock-token contract and explorer URL;
 - Pons v2 factory contract, deployer wallet, launch transaction/block/time;
 - graduated pool contract when the public launch feed exposes one (the zero address explicitly means pre-graduation; this feed does not expose the curve address);
-- current progress, observed progress delta, market cap, and the literal gates cleared.
+- current progress, observed progress delta, market cap, and the literal gates cleared;
+- recent buy/sell counts, unique buyers, net-flow skew, top-buyer concentration, and up to three top-buyer wallet addresses from Pons' indexed trade feed (explicitly **not** labeled profitable).
 
 ## Deliberately not claimed or scored
 
 | Signal | Status | Reason |
 |---|---|---|
 | Realized wallet PnL / "top traders" | unavailable | A buy size or wallet balance does not establish profitability. This needs complete historical buys, sells, transfers, cost basis, and valuation reconstruction from indexed CurveBuy/CurveSell events. |
-| Unique buyers / anti-wash score | unavailable | The Pons launch feed lacks buyer-level events. This needs event indexing for every live curve. |
+| Unique buyers / basic concentration | implemented, bounded | Pons' public v2 per-token trade feed provides recent buyer accounts. It supports participant count, net-flow and dominant-wallet checks, but not beneficial-ownership/cabal attribution. |
 | Deployer win rate | unavailable | Needs a complete creator-to-prior-launch history plus outcome rules. |
 | Fomo social confirmation | unavailable | Fomo publicly advertises a leaderboard, trader feed, and alerts, but its Robinhood Chain/Pons coverage plus an authorized export/API have not been verified. It will not be scraped or treated as source of truth. |
 

@@ -19,6 +19,8 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: protected the DeFi / tokenized-market data-infrastructure lane from false-positive alerting and restored scheduled-run reliability without adding wallet or trading capability.
 - Scoring correction: the initial score was binary, so every launch that cleared all hard gates necessarily showed the maximum. Replaced it with a 0–100 continuous ranking after eligibility: official contract match (25), progress up to 50% (20), acceleration up to +10pp/sample (25), buy recency (15), and market cap up to $25K (15); alert threshold is 70. Deterministic range tests passed (55 and 100) and the live distribution now spans 28–51 instead of a false pile-up at the maximum.
 - Goal check: improved the market-research signal quality by making the score a ranking rather than a redundant restatement of eligibility.
+- Added Pons v2 per-token trade-feed enrichment for early-flow/cabal-resistance signals: >=4 unique recent buyers, >=6 buys, >=+25% net buy skew, and no single buyer accounting for >70% of recent buy quote flow are now hard gates. Alerts include the top three buyer wallet addresses and explicit non-profitability labels. A deterministic buyer-flow test passed (85 score with diversified buy flow; a concentrated 80% top-buyer flow is rejected). Fomo remains excluded pending verified Robinhood Chain/Pons coverage plus authorized data access; deployer historical win rate and realized wallet PnL also remain unavailable.
+- Goal check: advanced the DeFi / tokenized-market data-infrastructure lane with actual participant and flow signals without pretending wallet size is PnL or identity clustering is cabal proof.
 
 ## 2026-09-01
 

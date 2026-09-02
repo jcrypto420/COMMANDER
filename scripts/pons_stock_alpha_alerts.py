@@ -93,6 +93,38 @@ def stock_paired_launches(payload: Any, stocks: dict[str, dict[str, str]]) -> li
     return matches
 
 
+def recent_trade_metrics(token: str, observed_at: datetime, lookback_seconds: float) -> dict[str, Any]:
+    """Summarize Pons' indexed public trade feed; never infer wallet PnL."""
+    payload = fetch_json(f"https://www.ponsfamily.com/api/pons-v2-market/{token}/trades")
+    trades = payload.get("trades") if isinstance(payload, dict) else None
+    if not isinstance(trades, list):
+        raise ValueError("Pons v2 market trade response is malformed")
+    cutoff = observed_at.timestamp() - lookback_seconds
+    recent = [trade for trade in trades if isinstance(trade, dict) and float(trade.get("timestamp") or 0) >= cutoff]
+    buys = [trade for trade in recent if trade.get("side") == "buy" and isinstance(trade.get("account"), str)]
+    sells = [trade for trade in recent if trade.get("side") == "sell"]
+    buy_by_wallet: dict[str, int] = {}
+    buy_quote = 0
+    sell_quote = 0
+    for trade in buys:
+        wallet = str(trade["account"]).lower()
+        amount = int(str(trade.get("quoteAmount") or "0"))
+        buy_by_wallet[wallet] = buy_by_wallet.get(wallet, 0) + amount
+        buy_quote += amount
+    for trade in sells:
+        sell_quote += int(str(trade.get("quoteAmount") or "0"))
+    gross_quote = buy_quote + sell_quote
+    return {
+        "recent_trades": len(recent),
+        "buy_count": len(buys),
+        "sell_count": len(sells),
+        "unique_buyers": len(buy_by_wallet),
+        "net_buy_ratio": ((buy_quote - sell_quote) / gross_quote) if gross_quote else 0.0,
+        "top_buyer_share": (max(buy_by_wallet.values()) / buy_quote) if buy_quote else 1.0,
+        "top_buyers": [wallet for wallet, _ in sorted(buy_by_wallet.items(), key=lambda item: item[1], reverse=True)[:3]],
+    }
+
+
 def compact_snapshot(launch: dict[str, Any], observed_at: datetime) -> dict[str, Any]:
     return {
         "observed_at": observed_at.isoformat(),
@@ -123,7 +155,7 @@ def write_state(path: Path, snapshots: dict[str, dict[str, Any]], scores: dict[s
     }, indent=2) + "\n", encoding="utf-8")
 
 
-def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config: dict[str, Any], observed_at: datetime) -> tuple[int, float, bool, list[str]]:
+def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, trade_metrics: dict[str, Any], config: dict[str, Any], observed_at: datetime) -> tuple[int, float, bool, list[str]]:
     gates = config["required_gates"]
     points = config["scoring"]
     progress = float(launch.get("graduationProgressPct") or 0)
@@ -143,7 +175,9 @@ def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config
     acceleration_points = int(min(max(delta, 0.0) / float(points["progress_acceleration_scale_pct"]), 1.0) * float(points["progress_acceleration_max"]))
     recency_points = int(max(0.0, 1.0 - (buy_age / float(gates["maximum_latest_buy_age_seconds"]))) * float(points["recent_buy_activity_max"]))
     market_cap_points = int(min(market_cap / float(points["market_cap_scale_usd"]), 1.0) * float(points["market_cap_max"]))
-    score += progress_points + acceleration_points + recency_points + market_cap_points
+    buyer_points = int(min(float(trade_metrics["unique_buyers"]) / float(points["buyer_diversity_scale"]), 1.0) * float(points["buyer_diversity_max"]))
+    flow_points = int(min(max(float(trade_metrics["net_buy_ratio"]), 0.0) / float(points["net_buy_flow_scale"]), 1.0) * float(points["net_buy_flow_max"]))
+    score += progress_points + acceleration_points + recency_points + market_cap_points + buyer_points + flow_points
     if progress >= float(gates["minimum_progress_pct"]):
         reasons.append(f"progress {progress:.2f}% ({progress_points}/{points['progress_max']})")
     if delta >= float(gates["minimum_progress_delta_pct"]):
@@ -152,12 +186,21 @@ def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config
         reasons.append(f"recent buy activity ({recency_points}/{points['recent_buy_activity_max']})")
     if market_cap >= float(gates["minimum_market_cap_usd"]):
         reasons.append(f"market cap ${market_cap:,.0f} ({market_cap_points}/{points['market_cap_max']})")
+    reasons.append(
+        f"recent flow: {trade_metrics['buy_count']} buys / {trade_metrics['sell_count']} sells, "
+        f"{trade_metrics['unique_buyers']} buyers, net {float(trade_metrics['net_buy_ratio']):+.0%}, "
+        f"top buyer {float(trade_metrics['top_buyer_share']):.0%}"
+    )
     required = (
         age >= float(gates["minimum_age_seconds"])
         and progress >= float(gates["minimum_progress_pct"])
         and delta >= float(gates["minimum_progress_delta_pct"])
         and buy_age <= float(gates["maximum_latest_buy_age_seconds"])
         and market_cap >= float(gates["minimum_market_cap_usd"])
+        and int(trade_metrics["unique_buyers"]) >= int(gates["minimum_recent_buyers"])
+        and int(trade_metrics["buy_count"]) >= int(gates["minimum_recent_buys"])
+        and float(trade_metrics["net_buy_ratio"]) >= float(gates["minimum_net_buy_ratio"])
+        and float(trade_metrics["top_buyer_share"]) <= float(gates["maximum_top_buyer_share"])
     )
     if not required:
         reasons.append("one or more required gates not met")
@@ -169,7 +212,7 @@ def address_line(label: str, value: Any) -> str:
     return f"{label}: {address}\n{EXPLORER}{address}"
 
 
-def render_alert(launch: dict[str, Any], score: int, delta: float, reasons: list[str]) -> str:
+def render_alert(launch: dict[str, Any], score: int, delta: float, reasons: list[str], trade_metrics: dict[str, Any]) -> str:
     stock = launch["stock"]
     return "\n".join([
         "PONS — SCORED STOCK-PAIR WATCHLIST CANDIDATE",
@@ -180,6 +223,9 @@ def render_alert(launch: dict[str, Any], score: int, delta: float, reasons: list
         address_line("Pons v2 factory", launch["factory"]),
         address_line("Graduated pool (zero address = pre-graduation; curve address is not exposed by this public feed)", launch["pool"]),
         address_line("Deployer", launch["deployer"]),
+        "Recent top buyers (trade concentration, NOT profitability):\n" + "\n".join(
+            f"{wallet}\n{EXPLORER}{wallet}" for wallet in trade_metrics["top_buyers"]
+        ),
         f"Launch tx: {launch.get('transactionHash', 'unavailable')}",
         f"Launched: {launch.get('launchedAt', 'unavailable')} | block: {launch.get('blockNumber', 'unavailable')}",
         f"Progress: {float(launch.get('graduationProgressPct') or 0):.2f}% | change: +{delta:.2f}pp | market cap: ${float(launch.get('marketCapUsd') or 0):,.2f}",
@@ -209,14 +255,35 @@ def main() -> int:
     alerted = {} if state is None else state["alert_scores"]
     next_snapshots = dict(snapshots)
     candidates = []
+    trade_feed_errors = 0
+    gates = config["required_gates"]
     for launch in launches:
         token = str(launch["token"]).lower()
-        score, delta, required, reasons = score_launch(launch, snapshots.get(token), config, observed_at)
-        threshold = int(config["scoring"]["alert_score_minimum"])
-        prior_score = int(alerted.get(token, 0))
-        if required and score >= threshold and score >= prior_score + 10:
-            candidates.append((launch, score, delta, reasons))
-            alerted[token] = score
+        previous = snapshots.get(token)
+        progress = float(launch.get("graduationProgressPct") or 0)
+        delta = progress - float(previous.get("progress") or 0) if previous else 0.0
+        launched_at = parse_time(launch.get("launchedAt"))
+        latest_buy_at = parse_time(launch.get("latestBuyAt"))
+        age = (observed_at - launched_at).total_seconds() if launched_at else -1
+        buy_age = (observed_at - latest_buy_at).total_seconds() if latest_buy_at else float("inf")
+        preliminary = (
+            age >= float(gates["minimum_age_seconds"])
+            and progress >= float(gates["minimum_progress_pct"])
+            and delta >= float(gates["minimum_progress_delta_pct"])
+            and buy_age <= float(gates["maximum_latest_buy_age_seconds"])
+            and float(launch.get("marketCapUsd") or 0) >= float(gates["minimum_market_cap_usd"])
+        )
+        if preliminary:
+            try:
+                metrics = recent_trade_metrics(str(launch["token"]), observed_at, float(gates["trades_lookback_seconds"]))
+                score, delta, required, reasons = score_launch(launch, previous, metrics, config, observed_at)
+                threshold = int(config["scoring"]["alert_score_minimum"])
+                prior_score = int(alerted.get(token, 0))
+                if required and score >= threshold and score >= prior_score + 10:
+                    candidates.append((launch, score, delta, reasons, metrics))
+                    alerted[token] = score
+            except (OSError, ValueError, json.JSONDecodeError, urllib.error.URLError, urllib.error.HTTPError):
+                trade_feed_errors += 1
         next_snapshots[token] = compact_snapshot(launch, observed_at)
 
     write_state(args.state, next_snapshots, alerted, observed_at)
@@ -224,7 +291,7 @@ def main() -> int:
         print("\n\n".join(render_alert(*candidate) for candidate in candidates))
     elif args.report:
         phase = "BASELINE" if state is None else "OK"
-        print(f"PONS ALPHA WATCH {phase} — {len(launches)} official-stock-paired launches scanned; {len(stocks)} official active stock tokens; no newly qualified candidate.")
+        print(f"PONS ALPHA WATCH {phase} — {len(launches)} official-stock-paired launches scanned; {len(stocks)} official active stock tokens; no newly qualified candidate; trade-feed errors: {trade_feed_errors}.")
     return 0
 
 
