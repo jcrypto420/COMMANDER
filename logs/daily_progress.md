@@ -17,6 +17,8 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: this adds a bounded observable decision surface while preserving the no-trade/no-wallet gate; the next legitimate upgrade is event indexing, not autonomous execution.
 - Reliability correction: Hermes no-agent cron resolves relative scripts under `/home/josh/.hermes/profiles/commander/scripts`, but the initial wrappers were mistakenly written to `/home/josh/.hermes/scripts`; both monitors therefore showed scheduler errors despite passing manual execution. Moved the wrappers to the scheduler directory and verified both return exit code 0. Also fixed a Pons score bug: an 85/95 launch missing the market-cap gate could have alerted because only the score threshold was checked. The monitor now requires every gate independently; deterministic and live checks passed.
 - Goal check: protected the DeFi / tokenized-market data-infrastructure lane from false-positive alerting and restored scheduled-run reliability without adding wallet or trading capability.
+- Scoring correction: the initial score was binary, so every launch that cleared all hard gates necessarily showed the maximum. Replaced it with a 0–100 continuous ranking after eligibility: official contract match (25), progress up to 50% (20), acceleration up to +10pp/sample (25), buy recency (15), and market cap up to $25K (15); alert threshold is 70. Deterministic range tests passed (55 and 100) and the live distribution now spans 28–51 instead of a false pile-up at the maximum.
+- Goal check: improved the market-research signal quality by making the score a ranking rather than a redundant restatement of eligibility.
 
 ## 2026-09-01
 

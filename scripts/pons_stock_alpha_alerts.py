@@ -134,21 +134,24 @@ def score_launch(launch: dict[str, Any], previous: dict[str, Any] | None, config
     buy_age = (observed_at - latest_buy_at).total_seconds() if latest_buy_at else float("inf")
     market_cap = float(launch.get("marketCapUsd") or 0)
     reasons: list[str] = []
+    # Eligibility keeps junk out; the score ranks eligible launches instead of
+    # awarding the same binary maximum to every threshold-crossing launch.
     score = int(points["official_stock_pair"])
     if age >= float(gates["minimum_age_seconds"]):
         reasons.append("snipe window elapsed")
+    progress_points = int(min(progress / float(points["progress_scale_pct"]), 1.0) * float(points["progress_max"]))
+    acceleration_points = int(min(max(delta, 0.0) / float(points["progress_acceleration_scale_pct"]), 1.0) * float(points["progress_acceleration_max"]))
+    recency_points = int(max(0.0, 1.0 - (buy_age / float(gates["maximum_latest_buy_age_seconds"]))) * float(points["recent_buy_activity_max"]))
+    market_cap_points = int(min(market_cap / float(points["market_cap_scale_usd"]), 1.0) * float(points["market_cap_max"]))
+    score += progress_points + acceleration_points + recency_points + market_cap_points
     if progress >= float(gates["minimum_progress_pct"]):
-        score += int(points["progress_at_least_minimum"])
-        reasons.append(f"progress {progress:.2f}%")
+        reasons.append(f"progress {progress:.2f}% ({progress_points}/{points['progress_max']})")
     if delta >= float(gates["minimum_progress_delta_pct"]):
-        score += int(points["progress_acceleration"])
-        reasons.append(f"+{delta:.2f}pp since prior sample")
+        reasons.append(f"+{delta:.2f}pp since prior sample ({acceleration_points}/{points['progress_acceleration_max']})")
     if buy_age <= float(gates["maximum_latest_buy_age_seconds"]):
-        score += int(points["recent_buy_activity"])
-        reasons.append("recent buy activity")
+        reasons.append(f"recent buy activity ({recency_points}/{points['recent_buy_activity_max']})")
     if market_cap >= float(gates["minimum_market_cap_usd"]):
-        score += int(points["market_cap_floor"])
-        reasons.append(f"market cap ${market_cap:,.0f}")
+        reasons.append(f"market cap ${market_cap:,.0f} ({market_cap_points}/{points['market_cap_max']})")
     required = (
         age >= float(gates["minimum_age_seconds"])
         and progress >= float(gates["minimum_progress_pct"])
@@ -170,7 +173,7 @@ def render_alert(launch: dict[str, Any], score: int, delta: float, reasons: list
     stock = launch["stock"]
     return "\n".join([
         "PONS — SCORED STOCK-PAIR WATCHLIST CANDIDATE",
-        f"Score: {score}/95 | {launch.get('symbol', '?')} — {launch.get('name', '?')}",
+        f"Score: {score}/100 | {launch.get('symbol', '?')} — {launch.get('name', '?')}",
         f"Paired canonical stock: {stock['symbol']} — {stock['name']}",
         address_line("Launch token", launch["token"]),
         address_line("Canonical stock token", stock["address"]),

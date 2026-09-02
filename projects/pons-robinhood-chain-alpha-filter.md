@@ -23,14 +23,14 @@ A new launch alerts only after two snapshots show all of the following:
 | Last observed buy | <= 5 minutes old | Removes stalled curves. |
 | Reported market cap | >= $5,000 | Removes trivial low-activity launches. |
 
-A candidate that clears every gate scores **95/95**:
-- official contract match: 40
-- progress floor: 15
-- progress acceleration: 20
-- recent buy: 10
-- market-cap floor: 10
+A candidate must clear every gate, then is *ranked* on a 0–100 continuous score:
+- 25 points: exact official contract match;
+- 0–20: graduation progress, reaching full points at 50%;
+- 0–25: progress acceleration, reaching full points at +10 percentage points per sample;
+- 0–15: recency of the latest buy, decaying to zero at five minutes;
+- 0–15: reported market cap, reaching full points at $25,000.
 
-The score means only that the stated public-data gates cleared. It is not a probability of success, a safety rating, or trading advice.
+The alert threshold is **70/100**. This prevents threshold-crossing launches from all receiving the same maximum score.
 
 ## Alert contents
 
