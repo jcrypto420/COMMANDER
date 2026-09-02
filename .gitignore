@@ -24,6 +24,7 @@ memories/
 dashboard/state.json
 dashboard/commander_inbox.jsonl
 dashboard/market_activity.json
+runtime/
 
 # Local helper scripts that touch secrets/runtime profile state
 scripts/set_telegram_token.py

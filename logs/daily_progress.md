@@ -8,6 +8,9 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the CI-1 packet now has a fresh public-source recheck without crossing any submit/send/account gate.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in decision-surface mode only.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Built and exercised a read-only Robinhood Chain registry monitor against Robinhood’s official `https://api.robinhood.com/rhj/assets` endpoint: baseline captured 194 active stock tokens on chain 4663; a synthetic state-delta test emitted one precise addition alert. Enabled a no-agent Telegram cron every 5 minutes that stays silent unless the official registry adds a token. No wallet, signing, trading, advice, paid API, or new account.
+- Goal check: advanced the DeFi / tokenized-market data-infrastructure lane with a real, low-noise monitoring loop; this is personal research infrastructure, not an external product, revenue, or financial action.
+- Alignment check: monitoring is read-only and fail-visible; pair/flow/profit alerts remain unbuilt until the intended `$pons` venue/token is identified and an indexer source is validated.
 
 ## 2026-09-01
 
