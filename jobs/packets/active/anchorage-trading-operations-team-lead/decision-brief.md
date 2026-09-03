@@ -2,11 +2,11 @@
 
 **Status:** draft-only companion to the live CI-1 packet.
 **Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill.
-**Morning sync:** 2026-09-03 run — fresh no-login source recheck confirmed the same live packet, source note, preflight bank, and next-step note surface for Josh’s review; the 18:02 UTC feed recheck kept the decision surface current.
+**Morning sync:** 2026-09-03 run — fresh no-login source recheck confirmed the same live packet, source note, preflight bank, and next-step note surface for Josh’s review; the 23:01 UTC feed recheck kept the decision surface current.
 
 ## Why this one
 
-- **Remote US** and officially live (reverified 2026-09-02 12:57 UTC).
+- **Remote US** and officially live (reverified 2026-09-03 23:01 UTC).
 - Exact overlap with Josh’s strongest evidence: institutional settlement, exception handling, funding details, reconciliation mindset, controls, and multi-party coordination.
 - Crypto-native institutional platform; not sales and not an engineering masquerade.
 
@@ -22,7 +22,7 @@ Anchorage says the lead will manage global trading-operations professionals and 
 
 ## Compensation gate
 
-The official public posting does **not** disclose a salary on the 2026-09-02 12:57 UTC recheck. Because it is remote, it must clear at least the $120K remote floor (and preferably $150K+) before an application is worthwhile.
+The official public posting does **not** disclose a salary on the 2026-09-03 23:01 UTC recheck. Because it is remote, it must clear at least the $120K remote floor (and preferably $150K+) before an application is worthwhile.
 
 ## Recommendation
 
