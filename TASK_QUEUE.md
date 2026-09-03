@@ -1,0 +1,28 @@
+# TASK_QUEUE.md
+
+Active task board only. Completed history lives in `TASK_ARCHIVE.md` and narrative progress lives in `logs/daily_progress.md`.
+
+Status: `todo` / `doing` / `blocked` / `done`.
+Approval = does this need Josh's OK before acting? (see `SECURITY.md`).
+
+Operating rule: exactly one `doing` DECISION lane for Josh; Hermes may advance up to 3 draft-only lanes per day (see `COMMANDER_LOOP.md` intensity rules). Parked lanes are `blocked` with a clear reopen condition, not half-active.
+Josh's calibration (2026-07-02 interview): job lane = primary decision lane; Bad Boys + Primoscapes + DeFi product ideation = the push lanes; same-day 60-second verdicts in the 8–9am window; reports must shrink (CC-24).
+
+| ID | Project | Pri | Task | Status | Next action | Approval |
+|----|---------|-----|------|--------|-------------|----------|
+| FE-1 | Family Freedom Engine / Boring Report | 1 | First sellable proof — paid agent evidence primitive | doing | Use `products/boring-report/scorecard/output/aave-v3-change-log-pilot.md` as the current handoff; the new `products/boring-report/scorecard/output/aave-v3-comparison-reentry-note-2026-09-02.md` keeps the compare-only surface current, still compare the 2026-08-16 bundle against the 2026-08-14 baseline via `products/boring-report/scorecard/output/aave-v3-comparison-result-note-template.md`, keep WBTC-first queued for the next bounded asset, and leave publication/payment/account actions gated. | publish/payment/account gate later |
+| CI-1 | Career/Income | 1 | Global high-compensation cash runway | todo | Anchorage Digital Trading Operations Team Lead is the primary decision packet: the live remote-US source was rechecked again at 2026-09-03 23:01 UTC and the packet/brief/source note/preflight bank/next-step note are current. Compensation is still undisclosed, so confirm the remote floor clears $120K (prefer $150K+) and that the global-team-lead stretch is acceptable before any tailoring; Ripple is secondary hold only. | **yes** to submit/send |
+| WO-2 | Weather Oracle | 2 | Compounding capture loop | blocked | 2026-08-27 upkeep: draft-only cleanup note at `projects/weather-oracle-repo-cleanup-draft.md` stays current; keep the packet / run sheet / result-note bundle aligned and leave build work parked until the Boring Report proves paid demand or a buyer/partner wedge makes Forecast Receipts commercially concrete. | no |
+| BB-25 | Bad Boys/Joycat | 3 | CARTOON LAB | blocked | Reopen only after Family Freedom Engine proof or explicit Josh creative call. Prior experiments are rejected; no more composite-video churn. | gate 2 |
+| PS-1 | Primoscapes | 2 | Fall Native Prairie prep | blocked | Reopen when Josh supplies price basis, licensing/insurance status, and public-name call; then turn it into one real offer and outreach test. | yes to send |
+| BB-26 | Bad Boys/Joycat | 3 | Idea-bank cron | blocked | Reopen only after one finished Bad Boys clip has been reviewed. Finished media outranks premise-bank automation. | **yes** |
+| BB-24/17/23 | Bad Boys/Joycat | 3 | Merch/posting/account theory | blocked | Reopen after a real clip receives a keep verdict or public signal. | **yes** |
+| MA-1 | Market Activity | 3 | Market activity tracker | blocked | Draft artifact now lives at `projects/market-activity-config-wiring-draft.md`; keep the lane parked and keep the draft note aligned with the live fetcher/config shape until the CI-1 week-smooth reopen condition is met, then wire `configs/market_watchlist.json` into the fetcher and add daily snapshots. | no |
+
+## Parking lot rules
+
+- Do not add a new active row unless it has a concrete next action.
+- If an idea is interesting but not today's lane, capture it in the relevant project doc or `logs/daily_progress.md`, not as `doing`.
+- When a task finishes, move it to `TASK_ARCHIVE.md` during the next hygiene pass.
+- Silent running (Josh away): work the draft-only `todo` rows top-down; batch all approval asks into the next morning report.
+- **KILLED by Josh taste call 2026-07-02: the IN-1 $690 research-services pilot.** Josh does not want to sell research services. Do not resurrect or propose service-selling offers; his research edge feeds the job lane and DeFi product ideation instead.

@@ -1,0 +1,37 @@
+# Model router TEMPLATE — machine-readable form of MODEL_ROUTER.md.
+# Route to the cheapest model that can do the task well.
+
+routing:
+  default_tier: tier1
+  escalation:
+    # Escalate to premium only when one of these is true.
+    to_tier2_if:
+      - high_value
+      - high_stakes
+      - tier1_failed_twice
+  fallback:
+    # On error/timeout, try the next provider in the SAME tier.
+    on_error: next_provider_same_tier
+
+tiers:
+  tier0_local:
+    use_for: [summarize, classify, clean_text, extract_tasks, low_stakes_draft, format]
+    providers:
+      - { name: ollama_pi, base_url: http://localhost:11434/v1, models: ["qwen2.5:0.5b", "qwen2.5:1.5b"] }
+      # - { name: ollama_lan, base_url: http://<mac-mini-ip>:11434/v1, models: ["qwen2.5:7b"] }
+    never_for: [legal_final, financial_final, hard_coding, final_strategy]
+
+  tier1_cheap:
+    use_for: [general_agent, routine_coding, business_draft, research_synthesis, planning]
+    prefer: openai_compatible
+    providers:
+      - { name: openrouter, base_url: https://openrouter.ai/api/v1, api_key_env: OPENROUTER_API_KEY, models: ["VERIFY"] }
+      - { name: nous_portal, base_url: VERIFY, api_key_env: NOUS_PORTAL_API_KEY, models: ["VERIFY"] }
+      - { name: venice, base_url: https://api.venice.ai/api/v1, api_key_env: VENICE_API_KEY, models: ["VERIFY"] }
+
+  tier2_premium:
+    use_for: [complex_coding, architecture, legal_financial_draft, final_review, debug_stuck, strategy]
+    cost_aware: true
+    providers:
+      - { name: anthropic, base_url: https://api.anthropic.com, api_key_env: ANTHROPIC_API_KEY, models: ["VERIFY"] }
+      - { name: openai, base_url: https://api.openai.com/v1, api_key_env: OPENAI_API_KEY, models: ["VERIFY"] }

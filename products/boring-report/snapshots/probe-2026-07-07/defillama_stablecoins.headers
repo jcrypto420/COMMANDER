@@ -1,0 +1,14 @@
+HTTP/2 200 
+date: Tue, 07 Jul 2026 19:47:18 GMT
+content-type: application/json
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-origin: *
+cache-control: public, max-age=1798
+cf-cache-status: HIT
+last-modified: Tue, 07 Jul 2026 18:22:54 GMT
+server: cloudflare
+vary: Accept-Encoding
+age: 209
+etag: W/"6a4d43fe-7cef5"
+cf-ray: a1795c3988b369c3-DFW
+

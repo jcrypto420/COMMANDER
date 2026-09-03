@@ -1,0 +1,32 @@
+{
+  "blackrock-usd-institutional-digital-liquidity-fund": {
+    "usd": 1.0
+  },
+  "dai": {
+    "usd": 0.999688
+  },
+  "ethena-usde": {
+    "usd": 0.998577
+  },
+  "global-dollar": {
+    "usd": 0.999909
+  },
+  "hashnote-usyc": {
+    "usd": 1.13
+  },
+  "paypal-usd": {
+    "usd": 0.999799
+  },
+  "tether": {
+    "usd": 0.999034
+  },
+  "usd1-wlfi": {
+    "usd": 0.998359
+  },
+  "usd-coin": {
+    "usd": 0.999702
+  },
+  "usds": {
+    "usd": 0.999725
+  }
+}

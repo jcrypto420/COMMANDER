@@ -1,0 +1,133 @@
+{
+  "version": "v0.1-evidence-baseline",
+  "protocols": [
+    {
+      "protocol": "Aave V3",
+      "scope": "Oracle adapter architecture in aave-v3-core AaveOracle.sol; not deployment-specific feed configuration or historical telemetry.",
+      "as_of": "2026-07-27",
+      "dimensions": [
+        {
+          "id": "fallback_design",
+          "label": "Fallback / redundancy",
+          "max_points": 30,
+          "points": 30,
+          "rationale": "The adapter names Chainlink Aggregators as its first source and forwards to a fallback oracle if the primary answer is non-positive or no asset source is configured.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/aave-oracle.sol",
+              "quote": "Use of Chainlink Aggregators as first source of price"
+            },
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/aave-oracle.sol",
+              "quote": "If the returned price by a Chainlink aggregator is <= 0, the call is forwarded to a fallback oracle"
+            }
+          ]
+        },
+        {
+          "id": "liveness_controls",
+          "label": "Liveness controls",
+          "max_points": 25,
+          "points": 0,
+          "rationale": "This adapter source uses latestAnswer but does not itself demonstrate a heartbeat, timestamp, or staleness check. No credit is inferred from missing evidence.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/aave-oracle.sol",
+              "quote": "int256 price = source.latestAnswer();"
+            }
+          ]
+        },
+        {
+          "id": "source_concentration",
+          "label": "Source concentration",
+          "max_points": 25,
+          "points": 10,
+          "rationale": "The primary source family is explicit (Chainlink); a configurable fallback exists, but its live source diversity is not established by this architecture file. Partial credit only.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/aave-oracle.sol",
+              "quote": "Map of asset price sources (asset => priceSource)"
+            },
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/aave-oracle.sol",
+              "quote": "function setFallbackOracle("
+            }
+          ]
+        },
+        {
+          "id": "incident_evidence",
+          "label": "Incident evidence",
+          "max_points": 20,
+          "points": 0,
+          "rationale": "No sourced incident ledger is in v0. Zero is an evidence-state score, not a claim that incidents occurred.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/aave-oracle.sol",
+              "quote": "contract AaveOracle is IAaveOracle"
+            }
+          ]
+        }
+      ],
+      "total": 40
+    },
+    {
+      "protocol": "Morpho Blue",
+      "scope": "Oracle interface architecture in morpho-blue IOracle.sol; not a rating of any individual Morpho market or its selected oracle.",
+      "as_of": "2026-07-27",
+      "dimensions": [
+        {
+          "id": "fallback_design",
+          "label": "Fallback / redundancy",
+          "max_points": 30,
+          "points": 0,
+          "rationale": "The interface exposes one price() method and does not establish a fallback mechanism. No redundancy is inferred.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/morpho-i-oracle.sol",
+              "quote": "function price() external view returns (uint256);"
+            }
+          ]
+        },
+        {
+          "id": "liveness_controls",
+          "label": "Liveness controls",
+          "max_points": 25,
+          "points": 0,
+          "rationale": "The interface specifies price output but no freshness or heartbeat control. No credit is inferred from missing evidence.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/morpho-i-oracle.sol",
+              "quote": "Returns the price of 1 asset of collateral token"
+            }
+          ]
+        },
+        {
+          "id": "source_concentration",
+          "label": "Source concentration",
+          "max_points": 25,
+          "points": 0,
+          "rationale": "Morpho explicitly places safe-oracle selection with the user; this generic interface does not establish protocol-wide source diversity.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/morpho-i-oracle.sol",
+              "quote": "It is the user's responsibility to select markets with safe oracles."
+            }
+          ]
+        },
+        {
+          "id": "incident_evidence",
+          "label": "Incident evidence",
+          "max_points": 20,
+          "points": 0,
+          "rationale": "No sourced incident ledger is in v0. Zero is an evidence-state score, not a claim that incidents occurred.",
+          "evidence": [
+            {
+              "file": "products/boring-report/scorecard/snapshots/2026-07-27/morpho-i-oracle.sol",
+              "quote": "interface IOracle"
+            }
+          ]
+        }
+      ],
+      "total": 0
+    }
+  ]
+}
