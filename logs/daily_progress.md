@@ -1129,3 +1129,9 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced the Market Activity draft-support lane — still parked, but the repo now says clearly what is hard-coded, what is already editable in `configs/market_watchlist.json`, and what the first safe wiring step is when reopened.
 - Alignment check: stayed local-only, made no external calls or send/send-like actions, and kept MA-1 blocked instead of pretending the lane was reopened.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+## 2026-09-03
+
+- Rechecked the Anchorage CI-1 decision surface against the official no-login Lever feed at 14:35 UTC, confirmed the role is still live/remote-US with compensation still undisclosed, and propagated that literal result into the source note, packet, decision brief, application-form preflight, next-step note, tracker row, queue wording, project status, NOW, and the job tracker.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the CI-1 packet now has a fresh morning source recheck and the decision surface is current for Josh’s hold/tweak/kill read.
+- Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in decision-surface mode only.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one public no-login source recheck and local repo edits only.

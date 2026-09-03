@@ -1,6 +1,6 @@
 # Anchorage Digital — Application Form Preflight
 
-**Status:** draft-only; no application sent, no account created, no outreach sent. Answer bank refreshed on 2026-09-02 after the fresh no-login source recheck and 12:57 UTC feed confirmation.
+**Status:** draft-only; no application sent, no account created, no outreach sent. Answer bank refreshed on 2026-09-03 after the fresh no-login source recheck and 14:35 UTC feed confirmation.
 **Purpose:** compact answer bank for the two remaining checks before Josh decides whether to advance Anchorage past draft-only.
 
 ## Still open
