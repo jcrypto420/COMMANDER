@@ -4,7 +4,7 @@
 
 ## Why this note exists
 
-The packet, decision brief, source note, and application-form preflight answer bank are already current after the 2026-09-03 source recheck and 23:01 UTC feed confirmation. This note captures the smallest safe next move: keep the role in decision-surface mode until Josh answers the two open gates.
+The packet, decision brief, source note, and application-form preflight answer bank are current after the 2026-09-04 source recheck. This note captures the smallest safe next move: keep the role in decision-surface mode until Josh answers the two open gates.
 
 ## Open gates
 
