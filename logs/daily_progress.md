@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the CI-1 decision surface is still draft-only, but the packet is now re-entry-ready for Josh’s hold / tweak / kill read after sync recovery.
 - Alignment check: stayed local-only, made no external submissions or account actions, and kept the role in decision-surface mode only.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Added a fresh 2026-09-04 FE-1 compare-only re-entry note and rethreaded the Boring Report queue, project status, and NOW surfaces around the dated handoff without authorizing a new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report with a concrete draft-only support artifact; WBTC-first remains queued and publication/payment/account actions stay gated.
+- Alignment check: stayed local-only and zero-claim, with no new snapshot, send, or account action.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-09-03
 
