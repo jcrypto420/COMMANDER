@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-09-04
+
+- Recovered the overnight repo sync/rebase after the Pi reboot, then refreshed the Anchorage CI-1 packet and decision brief with a current morning re-entry note while keeping the live source surface anchored to the 2026-09-03 23:01 UTC no-login Lever recheck.
+- Goal check: advanced Career / income defense + portfolio leverage — the CI-1 decision surface is still draft-only, but the packet is now re-entry-ready for Josh’s hold / tweak / kill read after sync recovery.
+- Alignment check: stayed local-only, made no external submissions or account actions, and kept the role in decision-surface mode only.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-09-03
 
 - Rechecked the Anchorage CI-1 decision surface against the official no-login Lever feed at 23:01 UTC, confirmed the role is still live/remote-US with compensation still undisclosed, and propagated that literal result into the source note, packet, decision brief, application-form preflight, next-step note, tracker row, queue wording, project status, NOW, and the job tracker.
