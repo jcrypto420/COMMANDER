@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-09-05
+
+- Rechecked Anchorage’s official public Lever feed directly on 2026-09-05; the role still returned 28 postings, `Trading Operations Team Lead`, `United States`, `remote`, and `compensation: null`, so the CI-1 decision surface stayed draft-only and the packet bundle was refreshed to match the live source.
+- Goal check: advanced Career / income defense + portfolio leverage — the Anchorage draft-ahead packet bundle is current again for Josh’s decision read, with no submit/send/account action taken.
+- Alignment check: stayed local-only and no-send; no account creation, external submission, or compensation claim occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-09-04
 
 - Recovered the overnight repo sync/rebase after the Pi reboot, then refreshed the Anchorage CI-1 packet and decision brief with a current morning re-entry note while keeping the live source surface anchored to the 2026-09-03 23:01 UTC no-login Lever recheck.
