@@ -8,6 +8,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the Anchorage draft-ahead packet bundle is current again for Josh’s decision read, with no submit/send/account action taken.
 - Alignment check: stayed local-only and no-send; no account creation, external submission, or compensation claim occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Added a fresh 2026-09-05 FE-1 compare-only re-entry note and rethreaded the Boring Report queue, project status, NOW, and progress log around the current handoff without authorizing a new snapshot run.
+- Goal check: advanced Family Freedom Engine / Boring Report with a concrete draft-only support artifact; WBTC-first remains queued and publication/payment/account actions stay gated.
+- Alignment check: stayed local-only and zero-claim, with no new snapshot, send, or account action.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
 ## 2026-09-04
 
