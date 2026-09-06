@@ -5,6 +5,10 @@ One short entry per working day. What advanced + estimated spend.
 ## 2026-09-06
 
 - Recovered the repo sync/rebase after the overnight Pi reboot, refreshed the Anchorage CI-1 decision brief / next-step note / project status / NOW, and repaired the malformed Anchorage tracker row boundary while keeping the live source surface anchored to the 2026-09-05 Lever recheck.
+- Advanced FE-1 with a fresh 2026-09-06 Aave V3 compare-only re-entry note, rethreaded the FE-1 queue/project wording around the new dated handoff, and kept the compare surface literal-only with WBTC-first still queued.
+- Goal check: advanced Family Freedom Engine / Boring Report by keeping the compare-only draft surface current without authorizing a new snapshot run.
+- Alignment check: stayed local-only and no-send; no publication, payment, account creation, or external submission occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 - Goal check: advanced Career / income defense + portfolio leverage — the Anchorage draft-ahead decision surface is current again for Josh’s morning re-entry, with no submit/send/account action taken.
 - Alignment check: stayed local-only and no-send; no account creation, external submission, or compensation claim occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
