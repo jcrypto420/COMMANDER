@@ -9,6 +9,10 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Family Freedom Engine / Boring Report by keeping the compare-only draft surface current without authorizing a new snapshot run.
 - Alignment check: stayed local-only and no-send; no publication, payment, account creation, or external submission occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+- Added a reusable FE-1 compare-only run note and rethreaded the Boring Report queue/project/NOW surfaces around it so the next literal comparison pass has one compact local handoff.
+- Goal check: advanced Family Freedom Engine / Boring Report by removing one more piece of draft churn and keeping the compare-only surface reusable.
+- Alignment check: stayed local-only, no-send, and no new snapshot/payment/account action occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 - Goal check: advanced Career / income defense + portfolio leverage — the Anchorage draft-ahead decision surface is current again for Josh’s morning re-entry, with no submit/send/account action taken.
 - Alignment check: stayed local-only and no-send; no account creation, external submission, or compensation claim occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
