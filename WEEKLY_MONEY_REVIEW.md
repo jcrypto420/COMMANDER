@@ -1,23 +1,24 @@
-# 💸 Weekly Money / Revenue Review — 2026-08-25 → 2026-08-31
+# 💸 Weekly Money / Revenue Review — 2026-09-01 → 2026-09-07
 
 ## 📊 Scoreboard
 - **Shipped externally:** 0 this week.
-- **Realized revenue:** $0 from repo work.
-- **Primary cash-runway lane:** CI-1 / Anchorage Digital Trading Operations Team Lead — live remote-US decision surface, compensation still undisclosed, still draft-only.
-- **Primary owned asset lane:** FE-1 / The Boring Report — compare-only pilot and local verification surface are live, but no fresh snapshot run or publication this week.
+- **Realized revenue:** $0.
+- **Target cash-flow floor:** $12K/month after tax; still unmet.
+- **Cash-runway lane:** CI-1 / Anchorage Digital Trading Operations Team Lead — still live on the official Lever feed, remote-US, compensation undisclosed; draft-only.
+- **Owned asset lane:** FE-1 / The Boring Report — compare-only handoff stays live; no fresh snapshot run or publication this week.
 - **Safety state:** Draft-only. No posting, sending, spending, secrets, account actions, or public uploads.
 
 ## ✅ What moved this week
-- Refreshed the Anchorage CI-1 decision surface twice (2026-08-30 and 2026-08-31): live source recheck, decision brief, preflight answer bank, next-step note, tracker, queue, project status, and NOW all stayed aligned.
-- Refreshed FE-1 with a compare-only re-entry note and preflight note; WBTC-first stays queued behind the fresh verified bundle gate.
-- Logged $0.00 incremental API spend in the working sessions; no external tool spend, sends, or account actions.
+- Re-entered the Anchorage CI-1 decision surface on 2026-09-01, 2026-09-02, 2026-09-03, 2026-09-04, 2026-09-05, 2026-09-06, and 2026-09-07 with the packet, brief, source-note, answer-bank, and next-step note aligned to the live public feed.
+- Refreshed FE-1 with a new compare-only re-entry note and reusable run note; WBTC-first stays queued behind the fresh-verified-bundle gate.
+- Kept the repo local-only and low-cost; no external sends, submissions, account actions, or paid API work.
 
 ## 🧠 Money thesis
-The fastest path to more income is still **one good-fit remote role with a real compensation floor**, while The Boring Report compounds as the owned asset. CI-1 is the cash runway; FE-1 is the leverage asset.
+The fastest path to more income is still one good-fit remote role with a real compensation floor, while The Boring Report compounds as the owned asset. CI-1 is the cash runway; FE-1 is the leverage asset.
 
 ## 🔪 Kill / scale / park
-- **Kill:** any new snapshot, publication, payment, or account work on FE-1 until a fresh verified bundle exists and the compare-only surface proves literal change only.
-- **Scale:** the Anchorage CI-1 packet, because it is the only lane that can plausibly turn into near-term cash runway.
+- **Kill:** any new FE-1 snapshot, publication, payment, or account work until a fresh verified bundle exists and the compare-only surface proves literal change only.
+- **Scale:** the Anchorage CI-1 packet, because it is still the only lane that can plausibly become near-term cash runway.
 - **Park:** Weather Oracle, Bad Boys, and dashboard churn unless they directly unblock cash or a shipped proof.
 
 ## 🎯 Next 7 days
@@ -25,7 +26,7 @@ The fastest path to more income is still **one good-fit remote role with a real 
 
 - If Anchorage clears the screen, keep tailoring the packet and stay send-ready but unsent.
 - If it fails the screen, move to the next best non-Coinbase cash-runway target instead of widening FE-1.
-- Keep FE-1 compare-only and do not run a new snapshot without the fresh bundle gate.
+- Keep FE-1 compare-only and do not run a new snapshot without the fresh verified bundle gate.
 
 ## ✅ Approval needed from Josh
 Copy/paste one:

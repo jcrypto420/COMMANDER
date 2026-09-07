@@ -9,6 +9,11 @@ One short entry per working day. What advanced + estimated spend.
 - Alignment check: stayed local-only and no-send; no account creation, external submission, or compensation claim occurred.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
 
+- Refreshed WEEKLY_MONEY_REVIEW.md to the 2026-09-01 → 2026-09-07 window, kept the scoreboard at 0 shipped externally / $0 realized revenue, and aligned the weekly decision surface around CI-1 cash runway plus FE-1 compare-only.
+- Goal check: advanced Command Center / revenue-review hygiene by making the weekly money surface current and decision-ready without widening the lane set.
+- Alignment check: stayed local-only and no-send; no posting, sending, spending, secrets, account actions, or public uploads occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-09-06
 
 - Recovered the repo sync/rebase after the overnight Pi reboot, refreshed the Anchorage CI-1 decision brief / next-step note / project status / NOW, and repaired the malformed Anchorage tracker row boundary while keeping the live source surface anchored to the 2026-09-05 Lever recheck.
