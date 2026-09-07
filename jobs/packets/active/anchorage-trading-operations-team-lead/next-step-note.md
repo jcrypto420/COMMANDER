@@ -4,7 +4,7 @@
 
 ## Why this note exists
 
-The packet, decision brief, source note, and application-form preflight answer bank are current after the 2026-09-05 source recheck. This note captures the smallest safe next move after the 2026-09-06 morning re-entry: keep the role in decision-surface mode until Josh answers the two open gates. The current Lever snapshot still shows 28 postings, `Trading Operations Team Lead`, `United States`, `remote`, and `compensation: null`.
+The packet, decision brief, source note, and application-form preflight answer bank are current after the 2026-09-05 source recheck. This note captures the smallest safe next move after the 2026-09-07 morning re-entry: keep the role in decision-surface mode until Josh answers the two open gates. The current Lever snapshot still shows 28 postings, `Trading Operations Team Lead`, `United States`, `remote`, and `compensation: null`.
 
 ## Open gates
 
