@@ -2,7 +2,7 @@
 
 **Status:** draft-only companion to the live CI-1 packet.
 **Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill.
-**Morning sync:** 2026-09-07 re-entry — repo sync/rebase recovered cleanly after the overnight Pi reboot; the live packet, source note, preflight bank, and next-step note remain current from the 2026-09-05 source recheck.
+**Morning sync:** 2026-09-08 re-entry — repo sync/rebase recovered cleanly after the overnight Pi reboot; the live packet, source note, preflight bank, and next-step note remain current from the 2026-09-05 source recheck.
 
 ## Why this one
 

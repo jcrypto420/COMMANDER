@@ -2,6 +2,13 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-09-08
+
+- Recovered the repo sync/rebase after the overnight Pi reboot, then refreshed the Anchorage CI-1 draft-ahead packet/brief/next-step note/project/queue/tracker surfaces to the 2026-09-08 morning re-entry while keeping the live source surface anchored to the 2026-09-05 Lever recheck.
+- Goal check: advanced Career / income defense + portfolio leverage by keeping the Anchorage decision surface current for Josh’s morning read, with no submit/send/account action taken.
+- Alignment check: stayed local-only and no-send; no account creation, external submission, or compensation claim occurred.
+- Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus local repo edits only.
+
 ## 2026-09-07
 
 - Recovered the repo sync/rebase after the overnight Pi reboot, then refreshed the Anchorage CI-1 draft-ahead packet/brief/next-step note/project and queue surfaces to the 2026-09-07 morning re-entry while keeping the live source surface anchored to the 2026-09-05 Lever recheck.
