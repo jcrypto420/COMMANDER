@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>weekly back v3</title>
+<style>
+  :root { --ink:#26221c; --faded:#6e6659; --red:#9e2b25; --paper:#f4eddd; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink); font:14px/1.5 Georgia, serif; width:860px; margin:0 auto; padding:26px 44px 26px; }
+  .ears { display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; padding-bottom:4px; }
+  .masthead { text-align:center; font-family:Didot, 'Bodoni 72', Georgia, serif; font-size:40px; font-weight:700; letter-spacing:1.5px; line-height:1; padding:2px 0 4px; }
+  .mastline { text-align:center; font:italic 12.5px Georgia, serif; color:var(--faded); padding-bottom:8px; }
+  .mastline span { color:var(--faded); }
+  .drule { border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); height:5px; margin-bottom:2px; }
+  .dateline { display:flex; justify-content:space-between; font:11px 'Courier New', monospace; text-transform:uppercase; letter-spacing:1.5px; padding:6px 0; border-bottom:1px solid var(--ink); }
+  .mockline { text-align:center; font:700 10.5px 'Courier New', monospace; letter-spacing:2px; color:var(--red); padding:6px 0; border-bottom:1px dotted var(--faded); margin-bottom:14px; }
+  h3 { font:700 12px 'Courier New', monospace; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; }
+  h3 em { color:var(--faded); font-style:normal; font-weight:400; letter-spacing:.5px; }
+  .chartbox { border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:8px 0 4px; margin-bottom:6px; }
+  .legend { font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:.5px; padding:2px 0 14px; line-height:1.6; }
+  .legend b { color:var(--ink); }
+  .row { display:flex; margin-bottom:4px; }
+  .row > div { flex:1; padding-right:18px; }
+  .row > div + div { border-left:1px solid var(--ink); padding-left:18px; padding-right:0; }
+  .agate { width:100%; border-collapse:collapse; font:700 12.5px 'Courier New', monospace; }
+  .agate th { font:700 10px 'Courier New', monospace; letter-spacing:1px; text-transform:uppercase; color:var(--faded); text-align:left; padding:3px 6px; border-bottom:1px solid var(--ink); }
+  .agate td { padding:4.5px 6px; border-bottom:1px dotted var(--faded); }
+  .agate th.n, .agate td.n { text-align:right; }
+  .agate .body { font-weight:400; font-family:Georgia, serif; font-size:13px; }
+  .agate .r { color:var(--red); }
+  .foot { border-top:3px solid var(--ink); margin-top:12px; padding-top:6px; display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; gap:24px; }
+  .foot i { font:italic 12px Georgia, serif; text-transform:none; letter-spacing:0; white-space:nowrap; }
+</style></head><body>
+  <div class="ears">
+    <div>Vol. I &middot; Week 28</div>
+    <div>Side B &middot; everything, sourced</div>
+  </div>
+  <div class="masthead">The Ledger</div>
+  <div class="mastline">[Name Pending] &middot; the complete week, cell by cell</div>
+  <div class="drule"></div>
+  <div class="dateline">
+    <div>Week of July 6&ndash;12, 2026</div>
+    <div>Oklahoma City</div>
+    <div>Every cell traces to a capture</div>
+  </div>
+  <div class="mockline">LAYOUT MOCK &mdash; NUMBERS ILLUSTRATIVE UNTIL WEEK ONE COMPLETES</div>
+
+  <h3>Highs: called vs. actual <em>&middot; heavy ink = official &middot; red = KFOR &middot; shade = the whole field</em></h3>
+  <div class="chartbox">
+    <svg viewBox="0 0 764 190" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">
+      <polygon points="60,84 172,114 284,62 396,40 508,54 620,32 732,62 732,118 620,88 508,110 396,96 284,118 172,170 60,140" fill="#26221c" opacity="0.09"/>
+      <polyline points="60,126 172,156 284,104 396,68 508,82 620,68 732,104" fill="none" stroke="#9e2b25" stroke-width="2"/>
+      <polyline points="60,112 172,142 284,90 396,61 508,75 620,47 732,90" fill="none" stroke="#26221c" stroke-width="3"/>
+      <g font-family="Courier New" font-size="12" font-weight="700" fill="#26221c" text-anchor="middle">
+        <text x="60" y="100">94</text><text x="172" y="130">91</text><text x="284" y="78">96</text>
+        <text x="396" y="49">98</text><text x="508" y="63">97</text><text x="620" y="35">99</text><text x="732" y="78">96</text>
+      </g>
+      <g font-family="Courier New" font-size="10" fill="#6e6659" text-anchor="middle">
+        <text x="60" y="184">MON</text><text x="172" y="184">TUE</text><text x="284" y="184">WED</text>
+        <text x="396" y="184">THU</text><text x="508" y="184">FRI</text><text x="620" y="184">SAT</text><text x="732" y="184">SUN</text>
+      </g>
+    </svg>
+  </div>
+  <div class="legend">Wide shade = the field disagreed &mdash; somebody was wrong by supper. Tuesday the entire board chased a high that never came.</div>
+
+  <div class="row">
+    <div>
+      <h3>Rain calls vs. the sky <em>&middot; ink depth = called chance</em></h3>
+      <svg viewBox="0 0 380 236" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">
+        <g font-family="Courier New" font-size="10" fill="#6e6659" text-anchor="middle">
+          <text x="130" y="14">M</text><text x="167" y="14">T</text><text x="204" y="14">W</text>
+          <text x="241" y="14">T</text><text x="278" y="14">F</text><text x="315" y="14">S</text><text x="352" y="14">S</text>
+        </g>
+        <g font-family="Courier New" font-size="11" font-weight="700" fill="#26221c" text-anchor="end">
+          <text x="102" y="42">KFOR</text><text x="102" y="70">GFS</text><text x="102" y="98">NEWS 9</text>
+          <text x="102" y="126">NWS</text><text x="102" y="154">ECMWF</text><text x="102" y="182">KOCO</text>
+        </g>
+        <g stroke="#26221c" stroke-width="0.8">
+          <circle cx="130" cy="38" r="8.5" fill="#26221c" opacity=".12"/><circle cx="167" cy="38" r="8.5" fill="#26221c" opacity=".55"/><circle cx="204" cy="38" r="8.5" fill="#26221c" opacity=".1"/><circle cx="241" cy="38" r="8.5" fill="#26221c" opacity=".1"/><circle cx="278" cy="38" r="8.5" fill="#26221c" opacity=".1"/><circle cx="315" cy="38" r="8.5" fill="#26221c" opacity=".28"/><circle cx="352" cy="38" r="8.5" fill="#26221c" opacity=".1"/>
+          <circle cx="130" cy="66" r="8.5" fill="#26221c" opacity=".1"/><circle cx="167" cy="66" r="8.5" fill="#26221c" opacity=".42"/><circle cx="204" cy="66" r="8.5" fill="#26221c" opacity=".1"/><circle cx="241" cy="66" r="8.5" fill="#26221c" opacity=".08"/><circle cx="278" cy="66" r="8.5" fill="#26221c" opacity=".1"/><circle cx="315" cy="66" r="8.5" fill="#26221c" opacity=".12"/><circle cx="352" cy="66" r="8.5" fill="#26221c" opacity=".1"/>
+          <circle cx="130" cy="94" r="8.5" fill="#26221c" opacity=".14"/><circle cx="167" cy="94" r="8.5" fill="#26221c" opacity=".47"/><circle cx="204" cy="94" r="8.5" fill="#26221c" opacity=".12"/><circle cx="241" cy="94" r="8.5" fill="#26221c" opacity=".1"/><circle cx="278" cy="94" r="8.5" fill="#26221c" opacity=".14"/><circle cx="315" cy="94" r="8.5" fill="#26221c" opacity=".16"/><circle cx="352" cy="94" r="8.5" fill="#26221c" opacity=".12"/>
+          <circle cx="130" cy="122" r="8.5" fill="#26221c" opacity=".12"/><circle cx="167" cy="122" r="8.5" fill="#26221c" opacity=".38"/><circle cx="204" cy="122" r="8.5" fill="#26221c" opacity=".1"/><circle cx="241" cy="122" r="8.5" fill="#26221c" opacity=".12"/><circle cx="278" cy="122" r="8.5" fill="#26221c" opacity=".1"/><circle cx="315" cy="122" r="8.5" fill="#26221c" opacity=".14"/><circle cx="352" cy="122" r="8.5" fill="#26221c" opacity=".1"/>
+          <circle cx="130" cy="150" r="8.5" fill="#26221c" opacity=".19"/><circle cx="167" cy="150" r="8.5" fill="#26221c" opacity=".6"/><circle cx="204" cy="150" r="8.5" fill="#26221c" opacity=".14"/><circle cx="241" cy="150" r="8.5" fill="#26221c" opacity=".35"/><circle cx="278" cy="150" r="8.5" fill="#26221c" opacity=".14"/><circle cx="315" cy="150" r="8.5" fill="#26221c" opacity=".38"/><circle cx="352" cy="150" r="8.5" fill="#26221c" opacity=".14"/>
+          <circle cx="130" cy="178" r="8.5" fill="#26221c" opacity=".1"/><circle cx="167" cy="178" r="8.5" fill="#26221c" opacity=".33"/><circle cx="204" cy="178" r="8.5" fill="#26221c" opacity=".1"/><circle cx="241" cy="178" r="8.5" fill="#26221c" opacity=".1"/><circle cx="278" cy="178" r="8.5" fill="#26221c" opacity=".08"/><circle cx="315" cy="178" r="8.5" fill="#26221c" opacity=".12"/><circle cx="352" cy="178" r="8.5" fill="#26221c" opacity=".1"/>
+        </g>
+        <line x1="112" y1="196" x2="368" y2="196" stroke="#26221c" stroke-width="1"/>
+        <text x="102" y="220" font-family="Courier New" font-size="11" font-weight="700" text-anchor="end" fill="#9e2b25">THE SKY</text>
+        <g stroke="#26221c" stroke-width="1.2">
+          <circle cx="130" cy="216" r="6.5" fill="none"/>
+          <circle cx="167" cy="216" r="6.5" fill="#26221c"/>
+          <circle cx="204" cy="216" r="6.5" fill="none"/>
+          <circle cx="241" cy="216" r="6.5" fill="none"/>
+          <circle cx="278" cy="216" r="6.5" fill="none"/>
+          <circle cx="315" cy="216" r="6.5" fill="none"/>
+          <circle cx="352" cy="216" r="6.5" fill="none"/>
+        </g>
+      </svg>
+      <div class="legend"><b>Filled = it rained.</b> One wet day; the field called five. Tuesday&rsquo;s rain arrived 9:40 AM, six hours before any window.</div>
+    </div>
+    <div>
+      <h3>Hype index <em>&middot; rain overcall, pts &middot; season</em></h3>
+      <svg viewBox="0 0 380 214" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">
+        <g font-family="Courier New" font-size="11" font-weight="700" fill="#26221c" text-anchor="end">
+          <text x="88" y="26">FOX 25</text><text x="88" y="56">ECMWF</text><text x="88" y="86">KOCO</text>
+          <text x="88" y="116">NWS</text><text x="88" y="146">NEWS 9</text><text x="88" y="176">GFS</text><text x="88" y="206">KFOR</text>
+        </g>
+        <g fill="#9e2b25">
+          <rect x="96" y="14" width="252" height="15" opacity=".9"/><rect x="96" y="44" width="196" height="15" opacity=".75"/>
+          <rect x="96" y="74" width="126" height="15" opacity=".6"/><rect x="96" y="104" width="98" height="15" opacity=".5"/>
+          <rect x="96" y="134" width="70" height="15" opacity=".42"/><rect x="96" y="164" width="56" height="15" opacity=".36"/>
+          <rect x="96" y="194" width="42" height="15" opacity=".3"/>
+        </g>
+        <g font-family="Courier New" font-size="11" font-weight="700" fill="#26221c">
+          <text x="354" y="26">+18</text><text x="298" y="56">+14</text><text x="228" y="86">+9</text>
+          <text x="200" y="116">+7</text><text x="172" y="146">+5</text><text x="158" y="176">+4</text><text x="144" y="206">+3</text>
+        </g>
+      </svg>
+      <div class="legend">Points of rain probability promised above what fell. The Hype Index never resets.</div>
+    </div>
+  </div>
+
+  <h3>The week, night by night <em>&middot; every verdict sourced to an archived capture</em></h3>
+  <table class="agate">
+    <tr><th>Night</th><th class="n">Official Hi/Lo</th><th class="n">Rain</th><th>Winner</th><th>Best call</th><th>Worst call</th></tr>
+    <tr><td>MON JUL 6</td><td class="n">94/73</td><td class="n">DRY</td><td>KOCO 6&ndash;0</td><td class="body">KOCO 94&deg; exact</td><td class="body">Fox 25, +3&deg; warm</td></tr>
+    <tr><td>TUE JUL 7</td><td class="n">91/71</td><td class="n">0.42"</td><td>GFS 5&ndash;1</td><td class="body">GFS 92&deg;, &minus;1</td><td class="body">the field: rain hit 9:40 AM</td></tr>
+    <tr><td>WED JUL 8</td><td class="n">96/72</td><td class="n">DRY</td><td>KFOR 6&ndash;0</td><td class="body">KFOR 96&deg; exact</td><td class="body">ECMWF, +2&deg; warm</td></tr>
+    <tr><td>THU JUL 9 <span class="r">&#9654;</span></td><td class="n">98/77</td><td class="n">TRACE</td><td>KFOR 3&ndash;0</td><td class="body">KFOR 99&deg;, 77&deg; low exact</td><td class="body">ECMWF, 37% rain</td></tr>
+    <tr><td>FRI JUL 10</td><td class="n">97/76</td><td class="n">DRY</td><td>NEWS 9 5&ndash;1</td><td class="body">News 9 97&deg; exact</td><td class="body">NWS, +2&deg; warm</td></tr>
+    <tr><td>SAT JUL 11</td><td class="n">99/77</td><td class="n">DRY</td><td>KFOR 5&ndash;1</td><td class="body">KFOR 98&deg;, &minus;1</td><td class="body">ECMWF 40% &middot; Fox 25 102&deg;</td></tr>
+    <tr><td>SUN JUL 12</td><td class="n">96/74</td><td class="n">DRY</td><td>GFS 4&ndash;2</td><td class="body">GFS 96&deg; exact</td><td class="body">Fox 25, +3&deg; warm</td></tr>
+  </table>
+  <div class="legend" style="padding-top:6px"><span style="color:#9e2b25">&#9654;</span> = REAL GRADED NIGHT &middot; ALL OTHER ROWS ILLUSTRATIVE</div>
+
+  <div class="foot">
+    <div>Verdicts settle on the NWS daily climate report (Will Rogers) &middot; error = |high miss| + |low miss| + Brier-scored rain call &middot; methodology public &middot; receipts archived and hashed</div>
+    <div><i>The sky keeps score. We keep receipts.</i></div>
+  </div>
+</body></html>

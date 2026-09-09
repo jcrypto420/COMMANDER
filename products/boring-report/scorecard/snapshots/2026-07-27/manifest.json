@@ -1,0 +1,26 @@
+{
+  "retrieved_at": "2026-07-27T23:55:37.881091+00:00",
+  "sources": {
+    "chainlink-feeds-mainnet.json": {
+      "url": "https://reference-data-directory.vercel.app/feeds-mainnet.json",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 419937,
+      "sha256": "8ec97aa6a4633553eae6244c5f343d2388f299ed4b7d0491eb796fba0344862d"
+    },
+    "aave-oracle.sol": {
+      "url": "https://raw.githubusercontent.com/aave/aave-v3-core/master/contracts/misc/AaveOracle.sol",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 5067,
+      "sha256": "e41aeccc496f8d751017c8a9832022414cd022d92313eaf63926a37369994564"
+    },
+    "morpho-i-oracle.sol": {
+      "url": "https://raw.githubusercontent.com/morpho-org/morpho-blue/main/src/interfaces/IOracle.sol",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 747,
+      "sha256": "757c9870385af7a880cb12ae47b4aba8a936bab4a7bdeff50647d605237fc178"
+    }
+  }
+}

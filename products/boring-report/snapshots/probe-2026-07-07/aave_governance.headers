@@ -1,0 +1,23 @@
+HTTP/2 200 
+server: nginx
+date: Tue, 07 Jul 2026 20:03:41 GMT
+content-type: text/html; charset=utf-8
+vary: Accept-Encoding
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+x-discourse-route: list/latest
+x-discourse-crawler-view: true
+vary: Accept
+cross-origin-opener-policy: same-origin-allow-popups
+cache-control: no-cache, no-store
+content-security-policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src 'nonce-h2Fnu3muMdzbh47fqlhxP9avV' 'strict-dynamic' 'wasm-unsafe-eval'; worker-src 'self' blob: https://europe1.discourse-cdn.com/flex013/assets/; frame-ancestors 'self'; manifest-src 'self'
+x-discourse-cached: skip
+x-request-id: bbc1eb9f-d858-4ce9-9880-6419b3d332a8
+x-discourse-trackview: 1
+cdck-proxy-id: app-router-tieadvanced02.dub1
+strict-transport-security: max-age=31536000
+cdck-proxy-id: app-balancer-tieinterceptor1b.dub1
+

@@ -1,0 +1,112 @@
+{
+  "captured_at_utc": "2026-07-10T01:44:26.467581+00:00",
+  "captured_at_central": "2026-07-09T20:44:26.461737-05:00",
+  "sources": {
+    "nws_forecast": {
+      "url": "https://api.weather.gov/gridpoints/OUN/97,94/forecast",
+      "retrieved_at": "2026-07-10T01:44:26.467596+00:00",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 13665,
+      "sha256": "847a8b3b2762898691d5d448fef6d3e62237b6b7b3c5c24d748e3a368e98e9b2",
+      "file": "nws_forecast.json"
+    },
+    "openmeteo_models": {
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=35.4676&longitude=-97.5164&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&temperature_unit=fahrenheit&timezone=America%2FChicago&forecast_days=3&models=ecmwf_ifs025,gfs_seamless",
+      "retrieved_at": "2026-07-10T01:44:26.749046+00:00",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 846,
+      "sha256": "89e96ba7f538868e1a969048e8a498b1b00c85e02863c9eae726213d257872b3",
+      "file": "openmeteo_models.json"
+    },
+    "obs_kokc": {
+      "url": "https://api.weather.gov/stations/KOKC/observations/latest",
+      "retrieved_at": "2026-07-10T01:44:27.613466+00:00",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 4310,
+      "sha256": "b64a7fefe6b32934f44d2ea99fe8c7b1a7e15275248543f4a6622690b4e19c5a",
+      "file": "obs_kokc.json"
+    },
+    "obs_kpwa": {
+      "url": "https://api.weather.gov/stations/KPWA/observations/latest",
+      "retrieved_at": "2026-07-10T01:44:28.142837+00:00",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 4306,
+      "sha256": "c1a39dc388f09931d6a1a7f649580319cf589ab244adafde914666536aed8d8a",
+      "file": "obs_kpwa.json"
+    },
+    "obs_ktik": {
+      "url": "https://api.weather.gov/stations/KTIK/observations/latest",
+      "retrieved_at": "2026-07-10T01:44:28.639278+00:00",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 4621,
+      "sha256": "937e26afe049543921ac17fa79d3a6be4b07bb6971ff9edec42d80eb75519389",
+      "file": "obs_ktik.json"
+    },
+    "obs_koun": {
+      "url": "https://api.weather.gov/stations/KOUN/observations/latest",
+      "retrieved_at": "2026-07-10T01:44:28.990623+00:00",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 4618,
+      "sha256": "d25f93fb485d034fe43967b4474cc418222bdc41b4ff78ae7f1657082775ede4",
+      "file": "obs_koun.json"
+    },
+    "nws_cli_okc": {
+      "url": "https://api.weather.gov/products/types/CLI/locations/OKC",
+      "retrieved_at": "2026-07-10T01:44:29.341657+00:00",
+      "status": 200,
+      "file": "nws_cli_okc.json",
+      "count": 2
+    },
+    "koco": {
+      "url": "https://www.koco.com/weather",
+      "retrieved_at": "2026-07-10T01:44:30.579555+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 606781,
+      "sha256": "df9734f0b8e96eaae5da1529cf4858594f6bc32caa98fa98191b5606284d49a2",
+      "file": "koco.html.gz"
+    },
+    "news9": {
+      "url": "https://www.news9.com/weather",
+      "retrieved_at": "2026-07-10T01:44:31.085417+00:00",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 310453,
+      "sha256": "fe27685db538c3b64937fc9e4fd06ef6f962e48c644854f9fb4de31f6a72f1e9",
+      "file": "news9.html.gz"
+    },
+    "okcfox": {
+      "url": "https://okcfox.com/weather",
+      "retrieved_at": "2026-07-10T01:44:31.795903+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 722189,
+      "sha256": "2c37e4f16d33f515871b9f00fd0be6647d5be9cd8ed613047b1a00022aea68cd",
+      "file": "okcfox.html.gz"
+    },
+    "kfor": {
+      "url": "https://kfor.com/weather/",
+      "retrieved_at": "2026-07-10T01:44:32.188758+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 646523,
+      "sha256": "3911795567e50ebababcd68842ba8d38343752b40d7b3c2a6d1328b24ab24c21",
+      "file": "kfor.html.gz"
+    },
+    "kfor_7day": {
+      "url": "https://media.psg.nexstardigital.net/kfor/weather/7day.jpg",
+      "retrieved_at": "2026-07-10T01:44:32.413490+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 221101,
+      "sha256": "7004c5a9f2cd571ad36cceba0f521cbb988e3ab204c422db4c33d3c330ddd373",
+      "file": "kfor_7day.jpg"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs><filter id="noise"><feTurbulence baseFrequency="0.75" numOctaves="4"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer></filter><style>text{font-family:Arial,Helvetica,sans-serif}</style></defs>
+<rect width="1080" height="1920" fill="#050506"/><rect width="1080" height="1920" filter="url(#noise)" opacity=".7"/>
+<rect x="44" y="44" width="992" height="1832" fill="none" stroke="#45c7ea" stroke-width="8"/>
+<text x="72" y="108" font-size="26" fill="#45c7ea" font-weight="900" letter-spacing=".22em">BAD SAMPLE / 007</text>
+<text x="72" y="170" font-size="22" fill="#d8d0c3" opacity=".75" letter-spacing=".16em">SIGNAL CHECK</text>
+<rect x="170" y="360" width="220" height="290" rx="24" fill="#070708" stroke="#45c7ea" stroke-width="7"/><text x="280" y="520" text-anchor="middle" font-size="44" fill="#e8e0d3" font-weight="900">PFP</text><rect x="430" y="360" width="220" height="290" rx="24" fill="#070708" stroke="#45c7ea" stroke-width="7"/><text x="540" y="520" text-anchor="middle" font-size="44" fill="#e8e0d3" font-weight="900">STICKER</text><rect x="690" y="360" width="220" height="290" rx="24" fill="#070708" stroke="#45c7ea" stroke-width="7"/><text x="800" y="520" text-anchor="middle" font-size="44" fill="#e8e0d3" font-weight="900">TEE</text>
+<rect x="78" y="845" width="924" height="475" rx="18" fill="#080809" stroke="#2d2d2d" stroke-width="3"/>
+<text x="115" y="990" font-size="92" fill="#e8e0d3" font-weight="950" letter-spacing="-.04em">NO HYPE</text>
+<text x="115" y="1112" font-size="92" fill="#45c7ea" font-weight="950" letter-spacing="-.04em">JUST VOTE</text>
+<text x="115" y="1230" font-size="58" fill="#e8e0d3" font-weight="800" letter-spacing="-.02em">A / B / C</text>
+<rect x="78" y="1428" width="924" height="180" rx="16" fill="#45c7ea"/>
+<text x="116" y="1542" font-size="54" fill="#050506" font-weight="950">KEEP / KILL</text>
+<text x="72" y="1788" font-size="25" fill="#d8d0c3" opacity=".78" letter-spacing=".18em">@BEBAD4GOOD</text>
+</svg>

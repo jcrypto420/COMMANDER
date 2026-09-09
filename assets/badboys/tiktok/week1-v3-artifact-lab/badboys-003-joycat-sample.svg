@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs><filter id="noise"><feTurbulence baseFrequency="0.75" numOctaves="4"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer></filter><style>text{font-family:Arial,Helvetica,sans-serif}</style></defs>
+<rect width="1080" height="1920" fill="#050506"/><rect width="1080" height="1920" filter="url(#noise)" opacity=".7"/>
+<rect x="44" y="44" width="992" height="1832" fill="none" stroke="#d7aa25" stroke-width="8"/>
+<text x="72" y="108" font-size="26" fill="#d7aa25" font-weight="900" letter-spacing=".22em">BAD SAMPLE / 003</text>
+<text x="72" y="170" font-size="22" fill="#d8d0c3" opacity=".75" letter-spacing=".16em">CHARACTER SAMPLE</text>
+<g transform="translate(540 520)"><circle r="245" fill="#100d04" stroke="#d7aa25" stroke-width="11"/><path d="M-170 -92 L-95 -245 L-28 -90" fill="#d7aa25"/><path d="M35 -90 L105 -245 L175 -92" fill="#d7aa25"/><circle cx="-65" cy="-5" r="31" fill="#020202"/><circle cx="65" cy="-5" r="31" fill="#020202"/><path d="M-110 95 Q0 180 110 95" fill="none" stroke="#020202" stroke-width="26" stroke-linecap="round"/></g>
+<rect x="78" y="845" width="924" height="475" rx="18" fill="#080809" stroke="#2d2d2d" stroke-width="3"/>
+<text x="115" y="990" font-size="92" fill="#e8e0d3" font-weight="950" letter-spacing="-.04em">JOYCAT</text>
+<text x="115" y="1112" font-size="92" fill="#d7aa25" font-weight="950" letter-spacing="-.04em">UNBOTHERED</text>
+<text x="115" y="1230" font-size="58" fill="#e8e0d3" font-weight="800" letter-spacing="-.02em">main or side problem</text>
+<rect x="78" y="1428" width="924" height="180" rx="16" fill="#d7aa25"/>
+<text x="116" y="1542" font-size="54" fill="#050506" font-weight="950">KEEP / KILL</text>
+<text x="72" y="1788" font-size="25" fill="#d8d0c3" opacity=".78" letter-spacing=".18em">@BEBAD4GOOD</text>
+</svg>

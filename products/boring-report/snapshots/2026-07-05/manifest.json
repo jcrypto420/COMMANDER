@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-07-06T00:41:52.490447+00:00",
+  "source_date": "2026-07-05",
+  "defillama": {
+    "url": "https://stablecoins.llama.fi/stablecoins?includePrices=true",
+    "status": 200,
+    "content_type": "application/json",
+    "retrieved_at": "2026-07-06T00:41:51.804978+00:00",
+    "bytes": 508459
+  },
+  "coingecko": {
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=tether,usd-coin,usds,dai,usd1-wlfi,ethena-usde,hashnote-usyc,blackrock-usd-institutional-digital-liquidity-fund,global-dollar,paypal-usd&vs_currencies=usd",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-07-06T00:41:52.306676+00:00",
+    "bytes": 319
+  },
+  "top10_assets": [
+    {
+      "name": "Tether",
+      "symbol": "USDT",
+      "gecko_id": "tether",
+      "snapshot_key": "1"
+    },
+    {
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "gecko_id": "usd-coin",
+      "snapshot_key": "2"
+    },
+    {
+      "name": "Sky Dollar",
+      "symbol": "USDS",
+      "gecko_id": "usds",
+      "snapshot_key": "209"
+    },
+    {
+      "name": "Dai",
+      "symbol": "DAI",
+      "gecko_id": "dai",
+      "snapshot_key": "5"
+    },
+    {
+      "name": "World Liberty Financial USD",
+      "symbol": "USD1",
+      "gecko_id": "usd1-wlfi",
+      "snapshot_key": "262"
+    },
+    {
+      "name": "Ethena USDe",
+      "symbol": "USDe",
+      "gecko_id": "ethena-usde",
+      "snapshot_key": "146"
+    },
+    {
+      "name": "Circle USYC",
+      "symbol": "USYC",
+      "gecko_id": "hashnote-usyc",
+      "snapshot_key": "237"
+    },
+    {
+      "name": "BlackRock USD",
+      "symbol": "BUIDL",
+      "gecko_id": "blackrock-usd-institutional-digital-liquidity-fund",
+      "snapshot_key": "173"
+    },
+    {
+      "name": "Global Dollar",
+      "symbol": "USDG",
+      "gecko_id": "global-dollar",
+      "snapshot_key": "286"
+    },
+    {
+      "name": "PayPal USD",
+      "symbol": "PYUSD",
+      "gecko_id": "paypal-usd",
+      "snapshot_key": "120"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<rect width="1024" height="1024" fill="#000000"/>
+<circle cx="512" cy="512" r="360" fill="#120e04" stroke="#d9ad25" stroke-width="28"/>
+<path d="M270 360 L368 145 L450 360" fill="#d9ad25"/><path d="M575 360 L670 145 L760 360" fill="#d9ad25"/>
+<circle cx="410" cy="490" r="44" fill="#050506"/><circle cx="610" cy="490" r="44" fill="#050506"/>
+<path d="M350 610 Q512 720 675 610" fill="none" stroke="#050506" stroke-width="36" stroke-linecap="round"/>
+<text x="512" y="850" text-anchor="middle" font-size="66" fill="#d9ad25" font-weight="900">JOYCAT</text>
+</svg>

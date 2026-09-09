@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Commander Mission Control apple icon">
+  <rect width="512" height="512" rx="120" fill="#050507"/>
+  <rect x="72" y="72" width="368" height="368" rx="100" fill="rgba(255,255,255,0.03)" stroke="rgba(0,217,146,0.45)" stroke-width="10"/>
+  <path d="M192 170h136c31 0 54 22 54 52 0 22-12 40-31 48 23 7 40 26 40 54 0 37-28 62-70 62H192V170Zm58 80h56c17 0 29-11 29-27 0-17-12-28-29-28h-56v55Zm0 121h63c18 0 31-12 31-29 0-17-13-30-31-30h-63v59Z" fill="#b7ffe5"/>
+</svg>

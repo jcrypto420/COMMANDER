@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.026" numOctaves="3" seed="21"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.075"/></feComponentTransfer></filter>
+    <style>.small{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:4px}.body{font-family:Arial Black,Impact,sans-serif;font-weight:900}</style>
+  </defs>
+  <rect width="1080" height="1920" fill="#090909"/>
+  <rect width="1080" height="1920" filter="url(#rough)" opacity="0.9"/>
+  <rect x="46" y="46" width="988" height="1828" fill="none" stroke="#62d2ff" stroke-width="10"/>
+  <rect x="78" y="78" width="924" height="1764" fill="none" stroke="#fff" stroke-width="2" opacity="0.32"/>
+  <text x="90" y="120" class="small" font-size="32" fill="#62d2ff">BAD BOYS / DAY 21 / PRODUCT POLL</text>
+  <rect x="150" y="390" width="200" height="240" rx="24" fill="#000" stroke="#62d2ff" stroke-width="5" opacity="0.86"/><text x="190" y="530" class="body" font-size="34" fill="white">PFP</text><rect x="410" y="390" width="200" height="240" rx="24" fill="#000" stroke="#62d2ff" stroke-width="5" opacity="0.86"/><text x="450" y="530" class="body" font-size="34" fill="white">TEE</text><rect x="670" y="390" width="200" height="240" rx="24" fill="#000" stroke="#62d2ff" stroke-width="5" opacity="0.86"/><text x="710" y="530" class="body" font-size="34" fill="white">STICKER</text>
+  <rect x="90" y="900" width="900" height="465" rx="34" fill="#000" opacity="0.70" stroke="#62d2ff" stroke-width="5"/>
+  <text x="130" y="1025" font-family="Arial Black, Impact, sans-serif" font-size="70" font-weight="900" fill="white" letter-spacing="-2"><tspan x="130" dy="0">Product test complete?</tspan><tspan x="130" dy="78.4">Not yet. But we’re close.</tspan></text>
+  <rect x="90" y="1460" width="900" height="200" rx="26" fill="#62d2ff" opacity="0.92"/>
+  <text x="130" y="1538" class="body" font-size="38" fill="#050505">CTA</text>
+  <text x="130" y="1598" class="body" font-size="39" fill="#050505">Which lane feels most real?</text>
+  <text x="90" y="1785" class="small" font-size="28" fill="#fff" opacity="0.7">BE BAD FOR DA GOOD OF HUMANITY · @BEBAD4GOOD</text>
+</svg>

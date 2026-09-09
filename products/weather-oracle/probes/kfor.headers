@@ -1,0 +1,15 @@
+HTTP/2 403 
+server: Varnish
+retry-after: 0
+content-type: text/html
+accept-ranges: bytes
+date: Wed, 08 Jul 2026 23:57:23 GMT
+via: 1.1 varnish
+x-served-by: cache-dfw-kdal2120137-DFW
+x-cache: MISS
+x-cache-hits: 0
+strict-transport-security: max-age=300; includeSubDomains
+nxs-debug: state=ERROR,vcl=31
+set-cookie: _pxhd=b11995155c0092afac04858ad5efd620de67bf26428df1f814184e4d1db00883:c37cda73-7b28-11f1-8b14-53db1d639e30; Max-Age=31536000; path=/; SameSite=Lax
+content-length: 6516
+

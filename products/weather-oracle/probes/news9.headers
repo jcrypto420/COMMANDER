@@ -1,0 +1,15 @@
+HTTP/2 200 
+content-type: text/html;charset=UTF-8
+date: Wed, 08 Jul 2026 23:57:24 GMT
+x-envoy-upstream-service-time: 319
+x-envoy-decorator-operation: brightspot-frontend-verify.griffin.svc.cluster.local:80/*
+server: istio-envoy
+strict-transport-security: max-age=31536000; includeSubDomains
+cache-control: max-age=60
+x-powered-by: Brightspot
+vary: Accept-Encoding
+x-cache: Miss from cloudfront
+via: 1.1 51c38732238a648e26b568fd53a2bee6.cloudfront.net (CloudFront)
+x-amz-cf-pop: DFW59-P4
+x-amz-cf-id: e2pIs2XR0GRiJTX7qwfABi1Dd68vzbDLSSHJ1NCE-7FWQQ8ct2G5Sw==
+

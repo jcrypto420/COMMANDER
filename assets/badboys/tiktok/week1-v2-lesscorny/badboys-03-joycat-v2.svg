@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="78%"><stop offset="0" stop-color="#24252b"/><stop offset=".55" stop-color="#101216"/><stop offset="1" stop-color="#050506"/></radialGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .09"/></feComponentTransfer></filter>
+<filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
+<style>text{font-family:Inter,Arial,Helvetica,sans-serif} .meta{letter-spacing:.18em} .tight{letter-spacing:-.018em}</style>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" filter="url(#grain)" opacity=".6"/>
+<rect x="48" y="48" width="984" height="1824" fill="none" stroke="#d9ad25" stroke-width="9"/>
+<text x="86" y="118" class="meta" font-size="27" fill="#d9ad25" font-weight="750">BAD BOYS / 03 / JOYCAT</text>
+<g transform="translate(540 450)" filter="url(#shadow)">
+<circle r="216" fill="#100d05" stroke="#d9ad25" stroke-width="9"/>
+<path d="M-145 -92 L-88 -198 L-35 -94" fill="#d9ad25"/><path d="M36 -94 L91 -198 L146 -92" fill="#d9ad25"/>
+<circle cx="-58" cy="-10" r="25" fill="#050506"/><circle cx="58" cy="-10" r="25" fill="#050506"/>
+<path d="M-92 70 Q0 132 92 70" fill="none" stroke="#050506" stroke-width="18" stroke-linecap="round"/>
+<text x="0" y="230" text-anchor="middle" font-size="40" font-weight="900" fill="#d9ad25">JOYCAT</text>
+</g>
+<rect x="82" y="850" width="916" height="510" rx="30" fill="#050506" fill-opacity=".88" stroke="#d9ad25" stroke-width="4" filter="url(#shadow)"/>
+<text x="122" y="1010" font-size="76" font-weight="800" fill="#f7f3ea" class="tight">JOYCAT</text>
+<text x="122" y="1092" font-size="76" font-weight="800" fill="#f7f3ea" class="tight">STAYS UNBOTHERED.</text>
+<rect x="82" y="1458" width="916" height="190" rx="24" fill="#d9ad25" opacity=".95"/>
+<text x="126" y="1535" font-size="34" font-weight="850" fill="#050506">POST CAPTION</text>
+<text x="126" y="1600" font-size="38" font-weight="650" fill="#050506">guest character or main problem?</text>
+<text x="86" y="1788" class="meta" font-size="26" fill="#d7d1c7" opacity=".82">@BEBAD4GOOD</text>
+</svg>

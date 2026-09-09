@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-07-08T14:50:35.144283+00:00",
+  "source_date": "2026-07-08",
+  "defillama": {
+    "url": "https://stablecoins.llama.fi/stablecoins?includePrices=true",
+    "status": 200,
+    "content_type": "application/json",
+    "retrieved_at": "2026-07-08T14:50:34.650815+00:00",
+    "bytes": 520394
+  },
+  "coingecko": {
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=tether,usd-coin,usds,dai,usd1-wlfi,ethena-usde,global-dollar,paypal-usd,ripple-usd,usdd,first-digital-usd,crvusd,f-x-protocol-fxusd,gho,liquity-bold-2,hashnote-usyc,blackrock-usd-institutional-digital-liquidity-fund,ondo-us-dollar-yield&vs_currencies=usd&include_last_updated_at=true",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "retrieved_at": "2026-07-08T14:50:35.141698+00:00",
+    "bytes": 1085
+  },
+  "coingecko_ids_requested": [
+    "tether",
+    "usd-coin",
+    "usds",
+    "dai",
+    "usd1-wlfi",
+    "ethena-usde",
+    "global-dollar",
+    "paypal-usd",
+    "ripple-usd",
+    "usdd",
+    "first-digital-usd",
+    "crvusd",
+    "f-x-protocol-fxusd",
+    "gho",
+    "liquity-bold-2",
+    "hashnote-usyc",
+    "blackrock-usd-institutional-digital-liquidity-fund",
+    "ondo-us-dollar-yield"
+  ]
+}
