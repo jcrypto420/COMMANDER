@@ -1218,3 +1218,8 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Career / income defense + portfolio leverage — the CI-1 primary decision surface is current for Josh’s hold/tweak/kill read, with a fresh source recheck and the title change reflected in every companion file; no application, outreach, account, spend, publication, or external send occurred.
 - Alignment check: the queue still points at one draft-only CI-1 decision surface, local-only, no send/publish/account action.
 - Estimated spend: $0.00 incremental API spend; one public no-login source recheck plus local repo edits only.
+
+- Advanced FE-1 with a fresh 2026-09-22 Aave V3 compare-only handoff: refreshed the reentry note to today's date, verified the scorecard verifier still passes cleanly (3 baseline + 91 Aave snapshots hashed, outputs exact), and the four focused tests still pass. Drafted a new WBTC-first snapshot preflight note at `products/boring-report/scorecard/output/aave-v3-wbtc-preflight-note-2026-09-22.md` that defines the exact capture shape for the next bounded asset (WBTC source, decimals, and latestRoundData snapshots plus manifest), using the existing 2026-08-14 WBTC baseline row as the cited reference. No new snapshot run, no publication, payment, account, or external send.
+- Goal check: advanced Family Freedom Engine / Boring Report — the compare-only surface is still current and the next-pass shape is now concrete; WBTC-first stays queued behind the fresh verified bundle gate.
+- Alignment check: stayed local-only, no-send, no publication, no payment, no account action; used openai-codex / gpt-5.4-mini plus local verifier execution.
+- Estimated spend: $0.00 incremental API spend; local test execution and repo edits only.
