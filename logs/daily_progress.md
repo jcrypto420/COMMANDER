@@ -1227,3 +1227,8 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Family Freedom Engine / Boring Report — the compare-only surface now has a filled-in result note that documents the completed WETH comparison literally; WBTC-first stays queued behind the fresh verified bundle gate.
 - Alignment check: stayed local-only, no-send, no publication, no payment, no account action; used the current session model plus local repo edits only.
 - Estimated spend: $0.00 incremental API spend; local repo edits only.
+
+- Advanced FE-1 with a concrete WBTC snapshot capture checklist at `products/boring-report/scorecard/output/aave-v3-wbtc-capture-checklist-2026-09-22.md`. This converts the reusable templates into an operator-ready 6-step run sheet: prerequisites, WBTC anchors from the official Aave V3 source (asset `0x2260fac5e5542a773db6da181b568c2e2d8d4093`, expected feed `0x5424384b256154046e9667ddfaaa5e550145215e`, expected decimals `8`), the exact RPC capture steps for source/decimals/latestRoundData, manifest build, and pre-comparison verification gates. No new snapshot run, no publication, payment, account, or external send.
+- Goal check: advanced Family Freedom Engine / Boring Report — the next WBTC-first capture now has a concrete operator checklist that turns the reusable preflight note and result-note template into a single bounded run shape.
+- Alignment check: stayed local-only, no-send, no publication, no payment, no account action; used the current session model plus local repo edits only.
+- Estimated spend: $0.00 incremental API spend; local repo edits only.
