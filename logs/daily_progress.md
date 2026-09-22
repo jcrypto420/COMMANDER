@@ -1203,6 +1203,18 @@ One short entry per working day. What advanced + estimated spend.
 ## 2026-09-03
 
 - Rechecked the Anchorage CI-1 decision surface against the official no-login Lever feed at 14:35 UTC, confirmed the role is still live/remote-US with compensation still undisclosed, and propagated that literal result into the source note, packet, decision brief, application-form preflight, next-step note, tracker row, queue wording, project status, NOW, and the job tracker.
-- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the CI-1 packet now has a fresh morning source recheck and the decision surface is current for Josh’s hold/tweak/kill read.
+- Goal check: advanced Career / income defense + portfolio leverage — still draft-only, but the CI-1 packet now has a fresh morning source recheck and the decision surface is current for Josh's hold/tweak/kill read.
 - Alignment check: stayed inside the approval-gated CI-1 draft lane, made no external submissions or account actions, and kept the role in decision-surface mode only.
 - Estimated spend: $0.00 incremental API spend; used the current `openai-codex` / `gpt-5.4-mini` session plus one public no-login source recheck and local repo edits only.
+
+## 2026-09-22
+
+- Ran the official-source recheck for the active CI-1 Anchorage Digital decision surface after the overnight Pi reboot. The public Lever jobs page still lists the role as open (posting ID `b3c332bc`), Remote — United States, under Global Operations → Trading Operations, but the live title has changed from **"Trading Operations Team Lead"** to **"Trading Operations, Transformation Lead"** — same posting ID, same remote-US scope.
+- The `api.lever.co/v0/postings/anchorage?mode=json` endpoint returned HTTP 200 with 21 postings but did not return usable title/location/compensation fields on this fetch; the authoritative source for this recheck is the rendered public jobs page.
+- The title change to "Transformation Lead" is a positive fit signal: it emphasizes process/transformation leadership over direct people-management ownership, which aligns better with Josh's honest positioning. Updated the source note, packet, decision brief, application-form preflight, and next-step note to reflect the new title, the new recheck date, and a change-table contrast against the 2026-09-05 state.
+- Compensation is still not disclosed on the public page. The role remains gated on the remote floor ($120K min / $150K preferred) and Josh's scope verdict.
+- Anchorage's board also now lists a secondary live candidate — **"Member of Trading Operations"** (ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States) — flagged in the packet and next-step note as the next Anchorage CI-1 candidate if the Transformation Lead gate stays closed. Not yet packaged.
+- Quick scan of other Tier 1 boards (Kalshi, Crypto.com, Circle, Centrifuge, Fireblocks via Greenhouse/Lever) did not return parseable live posting lists this run; Anchorage remains the primary live CI-1 surface today.
+- Goal check: advanced Career / income defense + portfolio leverage — the CI-1 primary decision surface is current for Josh’s hold/tweak/kill read, with a fresh source recheck and the title change reflected in every companion file; no application, outreach, account, spend, publication, or external send occurred.
+- Alignment check: the queue still points at one draft-only CI-1 decision surface, local-only, no send/publish/account action.
+- Estimated spend: $0.00 incremental API spend; one public no-login source recheck plus local repo edits only.
