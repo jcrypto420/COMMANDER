@@ -3,7 +3,7 @@
 **Status:** DRAFT / decision surface — not applied, not sent, and no account action taken; see `application-form-preflight.md` for the remaining pay/scope answer bank.
 **Official source:** [Anchorage Digital Lever posting](https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408) — United States, remote.
 **Title note:** the posting was previously titled "Trading Operations Team Lead"; the live title as of the 2026-09-22 recheck is **"Trading Operations, Transformation Lead"** (same posting ID, same remote-US scope). See `source-recheck-note.md`.
-**Source check:** official public Lever jobs page fetched without login on 2026-09-22; the role was still listed as open, remote-US, under Global Operations → Trading Operations; compensation is not disclosed. See `source-recheck-note.md`.
+**Source check:** official public Lever jobs page fetched without login on 2026-09-22; the role was still listed as open, remote-US, under Global Operations → Trading Operations; total Anchorage postings: 20 (down from 28 on 2026-09-05); compensation is not disclosed. See `source-recheck-note.md`.
 **Morning sync:** 2026-09-22 morning re-entry — repo sync/rebase recovered cleanly after the overnight Pi reboot; the live no-login source surface was rechecked and shows a title change from "Team Lead" to "Transformation Lead" while scope remains remote-US; the packet is updated to reflect the new title.
 **Compensation:** not disclosed on the public page on the 2026-09-22 recheck. Confirm the base is at least $120K remote (preferably $150K+) before any application discussion.
 
