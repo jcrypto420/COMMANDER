@@ -2,6 +2,15 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-09-23
+
+- Git sync: fetched all remotes, rebased onto origin/main (removed generated `dashboard/state.json` blocker during rebase), pulled --rebase to ensure absolute latest.
+- **DRAFT-AHEAD COMPLETE:** created the secondary CI-1 candidate packet for Anchorage Digital **Member of Trading Operations** (posting ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`) — `packet.md`, `decision-brief.md`, and `source-recheck-note.md` all written and source-verified against the live Lever posting on 2026-09-23. This is the prepared fallback surface if the Transformation Lead gate stays closed.
+- Updated `jobs/TRACKER.md` to add the new Anchorage Member row (score 8, secondary fallback) alongside the existing primary Transformation Lead row.
+- Updated `TASK_QUEUE.md` CI-1 row to document the draft-ahead completion.
+- All work stayed local-only and no-send; no account creation, external submission, or compensation claim occurred. No morning report composed or delivered.
+- Estimated spend: $0.00 incremental API spend; used public no-login Lever source fetch plus local repo edits only.
+
 ## 2026-09-08
 
 - Recovered the repo sync/rebase after the overnight Pi reboot, then refreshed the Anchorage CI-1 draft-ahead packet/brief/next-step note/project/queue/tracker surfaces to the 2026-09-08 morning re-entry while keeping the live source surface anchored to the 2026-09-05 Lever recheck.
