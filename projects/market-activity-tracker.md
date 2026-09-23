@@ -1,8 +1,8 @@
 # Market Activity Tracker
 
-## Status — 2026-09-01
+## Status — 2026-09-23
 - **State:** PARKED (`MA-1` blocked) — draft-only config prep stays current; reopen after CI-1 loop runs smoothly for a week
-- **Last advanced:** 2026-09-01 — config-wiring draft note was tightened against the live fetcher/config shape
+- **Last advanced:** 2026-09-23 — config-wiring draft note refreshed to match the live `configs/market_watchlist.json` shape and hard-coded fetcher lists, with a new 2026-09-23 public-source preflight and a concrete 12-step build sequence
 - **Next action (on reopen):** wire `configs/market_watchlist.json` into `scripts/fetch_market_activity.py`, then add daily snapshots
 - **Waiting on:** reopen condition
 - **Draft artifact:** `projects/market-activity-config-wiring-draft.md`

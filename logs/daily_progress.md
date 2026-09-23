@@ -10,6 +10,8 @@ One short entry per working day. What advanced + estimated spend.
 - Updated `TASK_QUEUE.md` CI-1 row to document the draft-ahead completion.
 - All work stayed local-only and no-send; no account creation, external submission, or compensation claim occurred. No morning report composed or delivered.
 - Estimated spend: $0.00 incremental API spend; used public no-login Lever source fetch plus local repo edits only.
+- **DRAFT-ONLY PASS (MA-1):** refreshed the Market Activity config-wiring draft at `projects/market-activity-config-wiring-draft.md` to match the live `configs/market_watchlist.json` shape and the current hard-coded fetcher lists, with a new 2026-09-23 public-source preflight (CoinGecko keyless pool ~10–30 calls/min, DefiLlama free/public, GitHub public+UA+sleep) and a concrete 12-step config-wiring build sequence; the lane stays parked behind the CI-1 week-smooth reopen condition and the draft now has a reusable build sequence for when the lane reopens. No external calls beyond the public-source preflight research, no posting/sending/accounts/spending.
+- Estimated spend: $0.00 incremental API spend; used `gpt-5.4-mini` via `openai-codex` (Hermes `--profile commander`) plus local repo edits only.
 
 ## 2026-09-08
 
