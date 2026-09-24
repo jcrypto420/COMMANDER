@@ -4,7 +4,7 @@
 
 **Official source:** [Anchorage Digital Lever posting](https://jobs.lever.co/anchorage/0f13c760-a28f-4750-8b6f-2b6d5e5b10cf) — United States, remote.
 
-**Morning sync:** 2026-09-23 morning run — packet drafted ahead per draft-ahead rule; live source fetched on 2026-09-23 without login.
+**Morning sync:** 2026-09-24 re-entry — packet drafted ahead on 2026-09-23; both Anchorage postings re-fetched from the live no-login Lever pages on 2026-09-24 and confirmed still open. **NEW 2026-09-24:** this posting also carries an in-person onboarding requirement — "we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions" — captured on today's recheck, not in the 2026-09-23 note. See `source-recheck-note.md`.
 
 **Compensation:** not disclosed on the public page on the 2026-09-23 recheck. Confirm the base is at least $120K remote (preferably $150K+) before any application discussion. This role explicitly requires weekend/holiday rotational coverage — factor that into the scope verdict.
 
@@ -25,6 +25,7 @@ This is the second live Anchorage role surfaced on the 2026-09-22 recheck and is
 
 - Josh has not directly managed a global trading-operations team — but this role is an IC seat, so that gap is less central here than for the Transformation Lead role.
 - Public source data does not disclose pay, so the compensation screen is unfinished.
+- The posting now carries an **in-person onboarding requirement** ("mandating all new hires complete an in-person onboarding process - no exceptions") — captured on the 2026-09-24 recheck, not in the 2026-09-23 note. Same implications as the primary candidate: may require travel to an Anchorage office for onboarding, or may indicate ongoing in-person presence. Needs Josh's disposition.
 - The posting requires rotational weekend and holiday coverage — confirm this is acceptable before advancing.
 - The posting asks for 3+ years supporting institutional settlement across traditional and crypto assets; frame Josh's syndicated-loan trade workflow at S&P Global as the traditional-asset anchor and his S&P crypto research + hands-on DeFi as the crypto-native anchor.
 
