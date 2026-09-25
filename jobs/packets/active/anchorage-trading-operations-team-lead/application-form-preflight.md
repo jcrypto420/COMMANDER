@@ -1,8 +1,8 @@
 # Anchorage Digital — Application Form Preflight
 
-**Status:** draft-only; no application sent, no account created, no outreach sent. Answer bank refreshed on 2026-09-22 after the latest no-login source recheck; the live feed still does not disclose compensation.
+**Status:** draft-only; no application sent, no account created, no outreach sent. Answer bank refreshed on 2026-09-25 after the latest no-login source recheck (both Anchorage postings re-fetched and confirmed still live); the live feed still does not disclose compensation. **2026-09-25 source state:** both postings carry an in-person onboarding requirement — "we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions" — confirmed on the live pages today; see `source-recheck-note.md`.
 **Purpose:** compact answer bank for the two remaining checks before Josh decides whether to advance Anchorage past draft-only.
-**Title note:** the role was previously titled "Trading Operations Team Lead"; the live title as of 2026-09-22 is **"Trading Operations, Transformation Lead"** (same posting ID, same remote-US scope).
+**Title note:** the role was previously titled "Trading Operations Team Lead"; the live title as of the 2026-09-25 recheck is **"Trading Operations, Transformation Lead"** (same posting ID, same remote-US scope); the in-person onboarding requirement is confirmed present on the live page as of today.
 
 ## Still open
 

@@ -30,4 +30,4 @@ The packet, decision brief, source note, and application-form preflight answer b
 
 ## Secondary live candidate noted
 
-Anchorage's board also lists **"Member of Trading Operations"** (posting ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States, Full-Time - Remote, Global Operations dept.) as of 2026-09-22. If the Transformation Lead gate stays closed, this is the next Anchorage CI-1 candidate to package. Not yet drafted.
+Anchorage's board also lists **"Member of Trading Operations"** (posting ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States, Full-Time - Remote, Global Operations dept.) as of 2026-09-25. Draft-ahead complete: `packet.md` + `decision-brief.md` + `source-recheck-note.md` are written and source-verified; same in-person onboarding requirement applies.

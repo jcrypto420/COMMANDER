@@ -1252,3 +1252,12 @@ One short entry per working day. What advanced + estimated spend.
 - Goal check: advanced Family Freedom Engine / Boring Report — the next WBTC-first capture now has a concrete operator checklist that turns the reusable preflight note and result-note template into a single bounded run shape.
 - Alignment check: stayed local-only, no-send, no publication, no payment, no account action; used the current session model plus local repo edits only.
 - Estimated spend: $0.00 incremental API spend; local repo edits only.
+
+## 2026-09-25
+
+- Organization reset loop ran as scheduled cron. Synced repo (clean working tree, `feat/command-center-scaffolding` up to date with remote, remote `HEAD` matches local `2f1f0fe`). Verified the full source-of-truth set: `README.md`, `GOALS.md`, `NOW.md`, `TASK_QUEUE.md`, `MORNING_REPORT.md`, `jobs/TRACKER.md`, both Anchorage packet folders on disk. Ground truth on disk is consistent: primary Anchorage rechecked 2026-09-22 (title change) and 2026-09-24 (in-person onboarding finding); secondary Anchorage drafted 2026-09-23 and rechecked 2026-09-24 (same in-person onboarding finding); both source notes checked 2026-09-24 14:45 UTC.
+- Corrected three stale top-of-truth lines still anchored to the 2026-09-22 recheck and omitting the in-person onboarding finding: `TASK_QUEUE.md` CI-1 row, `MORNING_REPORT.md` CI-1 line, and `NOW.md` active-focus date (2026-09-22 → 2026-09-25). Each fix was the minimum line change; no other doc widened.
+- Left all parked lanes unchanged (WO-2, BB-25, PS-1, BB-26, BB-24/17/23, MA-1): each already has a clear reopen condition and no new actions owed.
+- No new actions taken today: no application submitted, no outreach sent, no account created, no travel committed, no publication/payment/account action. Both Anchorage packets remain draft-only decision surfaces gated on pay/scope and Josh's in-person onboarding go/no-go.
+- Goal check: advanced Career / income defense + portfolio leverage (CI-1 refreshed to 2026-09-24 ground truth) and Family Freedom Engine / Boring Report (FE-1 compare-only surface current; WBTC-first queued behind fresh verified bundle).
+- Estimated spend: $0.00 incremental API spend; used public no-login Lever source state already on file plus local repo edits only.
