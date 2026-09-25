@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft-only support artifact for `MA-1`. 2026-09-23 draft update: refreshed to match the live config and fetcher shape and public-source preflight.
+Draft-only support artifact for `MA-1`. 2026-09-25 update: the config-wiring build step is now implemented and smoke-tested in `scripts/fetch_market_activity.py`; the fetcher reads `configs/market_watchlist.json` as source of truth (verified with a live run that wrote `dashboard/market_activity.json` at 5,257 bytes, 0 warnings). Lane stays `todo` and parked behind the CI-1 week-smooth reopen condition; next action is daily snapshots when reopened.
 
 ## Why this exists
 
