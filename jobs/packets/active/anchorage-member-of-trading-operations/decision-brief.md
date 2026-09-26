@@ -2,12 +2,13 @@
 
 **Status:** draft-only companion to the live CI-1 secondary candidate.
 **Verdict requested:** advance only if the Transformation Lead gate stays closed; otherwise hold.
-**Morning sync:** 2026-09-24 re-entry — drafted ahead on 2026-09-23; both Anchorage postings re-fetched from the live no-login Lever pages on 2026-09-24 and confirmed still open. Fresh detail captured: this posting also carries the **in-person onboarding requirement** ("mandating all new hires complete an in-person onboarding process - no exceptions") — now reflected below.
+**Morning sync:** 2026-09-26 re-entry — drafted ahead on 2026-09-23; both Anchorage postings re-fetched from the live no-login Lever pages on 2026-09-26 and confirmed still open. **Rechecked 2026-09-26:** this posting still shows **United States / Remote — United States** (it did NOT change to Singapore like the Transformation Lead role). Fresh detail captured: this posting also carries the **in-person onboarding requirement** ("mandating all new hires complete an in-person onboarding process - no exceptions") — reconfirmed on the 2026-09-26 recheck.
 
 ## Why this one (as fallback)
 
-- **Remote US** and officially live (reverified 2026-09-24).
+- **Remote US** and officially live (reverified 2026-09-26).
 - Second live Anchorage role surfaced on the 2026-09-22 recheck; same Global Operations → Trading Operations department as the primary candidate.
+- **Still shows United States / Remote — United States on the 2026-09-26 recheck** (unlike the Transformation Lead role, which changed to Singapore).
 - Exact overlap with Josh's strongest evidence: institutional settlement, exception handling, funding details, reconciliation mindset, controls, and multi-party coordination.
 - Crypto-native institutional platform; not sales and not an engineering masquerade.
 - Individual-contributor framing: does not assert prior global-team leadership, which avoids the most honest stretch item from the Transformation Lead packet.
@@ -24,9 +25,9 @@ Requirements from the live page:
 
 Bonus points: Python, SQL, low-code platforms; passion for building early-stage startups.
 
-## In-person onboarding — NEW 2026-09-24 finding
+## In-person onboarding — CONFIRMED 2026-09-26
 
-The live posting states: **"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions."** Same implications as the primary candidate:
+The live posting states: **"we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions."** Confirmed on the 2026-09-26 recheck. Same implications as the primary candidate:
 
 - If "remote" means remote work after a one-time onboarding event, Josh would need to travel to one of Anchorage's offices (New York, Porto, Singapore, or Sioux Falls) for that event.
 - If ongoing in-person presence is required, it conflicts with the remote-US framing.
@@ -38,11 +39,11 @@ The live posting states: **"we have a security policy mandating all new hires co
 
 **Real stretch:** the posting asks for 3+ years supporting institutional settlement across traditional and crypto assets — frame Josh's S&P syndicated-loan work as the traditional-asset anchor and his S&P crypto research + DeFi hands-on as the crypto-native anchor. Rotational weekend and holiday coverage is also a new requirement not present in the Transformation Lead role.
 
-**New concern (2026-09-24):** the in-person onboarding mandate. Needs Josh's disposition before advancing.
+**Open concern (2026-09-26):** the in-person onboarding mandate. Needs Josh's disposition before advancing.
 
 ## Compensation gate
 
-The official public posting does **not** disclose a salary on the 2026-09-24 recheck. Because it is remote, it must clear at least the $120K remote floor (and preferably $150K+) before an application is worthwhile.
+The official public posting does **not** disclose a salary on the 2026-09-26 recheck. Because it is remote, it must clear at least the $120K remote floor (and preferably $150K+) before an application is worthwhile.
 
 ## Recommendation
 
@@ -56,5 +57,5 @@ Source: [official Anchorage Digital posting](https://jobs.lever.co/anchorage/0f1
 
 - Compensation not disclosed — same unresolved screen as the primary candidate.
 - Rotational weekend/holiday coverage — needs Josh's go/no-go.
-- In-person onboarding mandate — needs Josh's go/no-go; may affect the "remote" framing.
+- In-person onboarding mandate — needs Josh's go/no-go; may affect the "remote" framing; confirmed on 2026-09-26 recheck.
 - Coverage of spot, lending, and derivatives operations — Josh's direct experience is settlement/reconciliation-centric; frame honestly.

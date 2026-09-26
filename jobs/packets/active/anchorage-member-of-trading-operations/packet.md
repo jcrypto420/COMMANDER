@@ -2,9 +2,9 @@
 
 **Status:** DRAFT / secondary candidate — not applied, not sent, and no account action taken; this is the backup CI-1 surface if the Transformation Lead gate stays closed.
 
-**Official source:** [Anchorage Digital Lever posting](https://jobs.lever.co/anchorage/0f13c760-a28f-4750-8b6f-2b6d5e5b10cf) — United States, remote.
+**Official source:** [Anchorage Digital Lever posting](https://jobs.lever.co/anchorage/0f13c760-a28f-4750-8b6f-2b6d5e5b10cf) — United States, remote, in-person onboarding required.
 
-**Morning sync:** 2026-09-24 re-entry — packet drafted ahead on 2026-09-23; both Anchorage postings re-fetched from the live no-login Lever pages on 2026-09-24 and confirmed still open. **NEW 2026-09-24:** this posting also carries an in-person onboarding requirement — "we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions" — captured on today's recheck, not in the 2026-09-23 note. See `source-recheck-note.md`.
+**Morning sync:** 2026-09-26 re-entry — packet drafted ahead on 2026-09-23; both Anchorage postings re-fetched from the live no-login Lever pages on 2026-09-26 and confirmed still open. **Rechecked 2026-09-26:** this posting still shows **United States / Remote — United States** (it did NOT change to Singapore like the Transformation Lead role). This posting also carries an in-person onboarding requirement — "we have a security policy mandating all new hires complete an in-person onboarding process - no exceptions" — confirmed on today's recheck. See `source-recheck-note.md`.
 
 **Compensation:** not disclosed on the public page on the 2026-09-23 recheck. Confirm the base is at least $120K remote (preferably $150K+) before any application discussion. This role explicitly requires weekend/holiday rotational coverage — factor that into the scope verdict.
 
