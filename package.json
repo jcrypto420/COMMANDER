@@ -1,0 +1,21 @@
+{
+  "name": "commander-mission-control",
+  "private": true,
+  "scripts": {
+    "dashboard:state": "python3 scripts/build_dashboard_state.py",
+    "market:state": "python3 scripts/fetch_market_activity.py",
+    "dev": "next dev -H 127.0.0.1 -p 3010",
+    "dev:lan": "next dev -H 0.0.0.0 -p 3011",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3010",
+    "start:lan": "next start -H 0.0.0.0 -p 3011",
+    "export:badboys": "node scripts/export_badboys_svgs_to_png.js"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "marked": "^18.0.5",
+    "next": "^16.2.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

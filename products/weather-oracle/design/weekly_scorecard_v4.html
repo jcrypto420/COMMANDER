@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>weekly scorecard v4</title>
+<style>
+  :root { --ink:#26221c; --faded:#6e6659; --red:#9e2b25; --paper:#f4eddd;
+          --warm:#c65d21; --warmhot:#a83415; --cool:#2a7f7a; --coolcold:#1d5f74; --gold:#a8770f; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink); font:14px/1.5 Georgia, serif; width:860px; margin:0 auto; padding:26px 44px 26px; }
+  .ears { display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; padding-bottom:4px; }
+  .masthead { text-align:center; font-family:Didot, 'Bodoni 72', Georgia, serif; font-size:40px; font-weight:700; letter-spacing:1.5px; line-height:1; padding:2px 0 4px; }
+  .mastline { text-align:center; font:italic 12.5px Georgia, serif; color:var(--faded); padding-bottom:8px; }
+  .drule { border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); height:5px; margin-bottom:2px; }
+  .dateline { display:flex; justify-content:space-between; font:11px 'Courier New', monospace; text-transform:uppercase; letter-spacing:1.5px; padding:6px 0; border-bottom:1px solid var(--ink); }
+  .mockline { text-align:center; font:700 10.5px 'Courier New', monospace; letter-spacing:2px; color:var(--red); padding:6px 0; border-bottom:1px dotted var(--faded); margin-bottom:14px; }
+  h3 { font:700 12px 'Courier New', monospace; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; color:var(--ink); }
+  h3 em { color:var(--faded); font-style:normal; font-weight:400; letter-spacing:.5px; }
+  .punch { border-collapse:collapse; font:700 16px 'Courier New', monospace; width:100%; }
+  .punch th { font:700 10px 'Courier New', monospace; letter-spacing:1px; color:var(--faded); padding:4px 0; border-bottom:1px solid var(--ink); text-align:center; }
+  .punch th:first-child { text-align:left; }
+  .punch th.wk { border-left:1px solid var(--ink); }
+  .punch td { padding:8px 0; text-align:center; border-bottom:1px dotted var(--faded); }
+  .punch td:first-child { text-align:left; font-size:13px; }
+  .punch td.wk { border-left:1px solid var(--ink); font-size:14px; }
+  .w1 { color:var(--warm); } .w2 { color:var(--warm); } .w3 { color:var(--warmhot); background:rgba(168,52,21,.08); }
+  .c1 { color:var(--cool); } .c2 { color:var(--cool); } .c3 { color:var(--coolcold); background:rgba(29,95,116,.08); }
+  .hit { display:inline-block; width:26px; height:26px; line-height:23px; border:2px solid var(--gold); border-radius:50%; color:var(--gold); font-size:14px; }
+  .legend { font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:.5px; padding:6px 0 16px; line-height:1.8; }
+  .legend b { color:var(--ink); }
+  .legend .lw { color:var(--warm); font-weight:700; } .legend .lc { color:var(--cool); font-weight:700; } .legend .lg { color:var(--gold); font-weight:700; }
+  .row2 { display:flex; border-top:1px solid var(--ink); margin-bottom:4px; }
+  .row2 > div { flex:1; padding:12px 18px 8px 0; }
+  .row2 > div + div { border-left:1px solid var(--ink); padding-left:18px; padding-right:0; }
+  .agate { border-collapse:collapse; font:700 13px 'Courier New', monospace; width:100%; }
+  .agate th { font:700 10px 'Courier New', monospace; letter-spacing:1px; text-transform:uppercase; color:var(--faded); text-align:left; padding:3px 6px; border-bottom:1px solid var(--ink); }
+  .agate td { padding:4.5px 6px; border-bottom:1px dotted var(--faded); }
+  .agate th.n, .agate td.n { text-align:right; }
+  .agate .w { color:var(--warm); } .agate .c { color:var(--cool); } .agate .hot { color:var(--warmhot); }
+  .sky td { border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); font-size:14px; }
+  .hype { display:flex; align-items:center; gap:0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:10px 0; margin-bottom:10px; }
+  .hype .lbl { font:700 12px 'Courier New', monospace; letter-spacing:2px; text-transform:uppercase; padding-right:16px; white-space:nowrap; }
+  .hbar { display:flex; flex-direction:column; gap:5px; flex:1; }
+  .hbar > div { display:flex; align-items:center; gap:8px; font:700 11px 'Courier New', monospace; }
+  .hbar .name { width:64px; text-align:right; color:var(--ink); }
+  .hbar .bar { height:11px; background:var(--warm); }
+  .foot { border-top:3px solid var(--ink); margin-top:8px; padding-top:6px; display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; gap:24px; }
+  .foot i { font:italic 12px Georgia, serif; text-transform:none; letter-spacing:0; white-space:nowrap; }
+</style></head><body>
+  <div class="ears">
+    <div>Vol. I &middot; Week 28</div>
+    <div>Side B &middot; the scorecard</div>
+  </div>
+  <div class="masthead">The Ledger</div>
+  <div class="mastline">[Name Pending] &middot; every station, every day, every miss</div>
+  <div class="drule"></div>
+  <div class="dateline">
+    <div>Week of July 6&ndash;12, 2026</div>
+    <div>Oklahoma City</div>
+    <div>Every cell traces to a capture</div>
+  </div>
+  <div class="mockline">LAYOUT MOCK &mdash; NUMBERS ILLUSTRATIVE UNTIL WEEK ONE COMPLETES</div>
+
+  <h3>The punch card <em>&middot; high-temp miss, called minus actual &middot; warm ink ran hot, cool ink ran cold</em></h3>
+  <table class="punch">
+    <tr><th>Forecaster</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th><th>SUN</th><th class="wk">AVG</th><th>HITS</th></tr>
+    <tr><td>KFOR 4WARN</td><td class="c1">&minus;1</td><td class="w1">+1</td><td><span class="hit">0</span></td><td class="w1">+1</td><td class="c1">&minus;1</td><td class="c1">&minus;1</td><td class="c1">&minus;1</td><td class="wk">0.9&deg;</td><td>1</td></tr>
+    <tr><td>GFS &#9679;</td><td class="w1">+1</td><td class="w1">+1</td><td class="c1">&minus;1</td><td class="w1">+1</td><td class="w1">+1</td><td class="c2">&minus;2</td><td><span class="hit">0</span></td><td class="wk">1.0&deg;</td><td>1</td></tr>
+    <tr><td>NEWS 9</td><td><span class="hit">0</span></td><td class="w2">+2</td><td class="w1">+1</td><td class="w2">+2</td><td><span class="hit">0</span></td><td class="c1">&minus;1</td><td class="w1">+1</td><td class="wk">1.0&deg;</td><td>2</td></tr>
+    <tr><td>KOCO 5</td><td><span class="hit">0</span></td><td class="c1">&minus;1</td><td class="c1">&minus;1</td><td class="c2">&minus;2</td><td class="c2">&minus;2</td><td class="c2">&minus;2</td><td class="c2">&minus;2</td><td class="wk">1.4&deg;</td><td>1</td></tr>
+    <tr><td>ECMWF &#9679;</td><td class="w2">+2</td><td class="w2">+2</td><td class="w2">+2</td><td class="w2">+2</td><td class="w2">+2</td><td class="w1">+1</td><td class="w2">+2</td><td class="wk">1.9&deg;</td><td>0</td></tr>
+    <tr><td>NWS NORMAN</td><td class="w2">+2</td><td class="w3">+3</td><td class="w1">+1</td><td class="w3">+3</td><td class="w2">+2</td><td class="w2">+2</td><td class="w1">+1</td><td class="wk">2.0&deg;</td><td>0</td></tr>
+    <tr><td>FOX 25</td><td class="w3">+3</td><td class="w3">+4</td><td class="w3">+3</td><td class="w3">+4</td><td class="w3">+3</td><td class="w3">+3</td><td class="w3">+3</td><td class="wk">3.3&deg;</td><td>0</td></tr>
+  </table>
+  <div class="legend"><b>Read the colors:</b> <span class="lw">warm ink = called it too hot</span> &middot; <span class="lc">cool ink = too cold</span> &middot; <span class="lg">gold ring = exact</span> &middot; shaded = missed by 3+ &middot; AVG = average miss, HITS = exact calls. A row that glows one color is a habit, not luck.</div>
+
+  <div class="row2">
+    <div style="flex:1.05">
+      <h3>The standings <em>&middot; July &middot; W&ndash;L, percentage, lean</em></h3>
+      <table class="agate">
+        <tr><th></th><th>Forecaster</th><th class="n">W&ndash;L</th><th class="n">Pct</th><th class="n">Lean</th></tr>
+        <tr><td>1</td><td>KFOR 4WARN</td><td class="n">26&ndash;16</td><td class="n">.619</td><td class="n c">&minus;0.3</td></tr>
+        <tr><td>2</td><td>GFS &#9679;</td><td class="n">25&ndash;17</td><td class="n">.595</td><td class="n">+0.1</td></tr>
+        <tr><td>3</td><td>NEWS 9</td><td class="n">23&ndash;19</td><td class="n">.548</td><td class="n w">+0.9</td></tr>
+        <tr><td>4</td><td>NWS NORMAN</td><td class="n">21&ndash;21</td><td class="n">.500</td><td class="n w">+2.0</td></tr>
+        <tr><td>5</td><td>ECMWF &#9679;</td><td class="n">19&ndash;23</td><td class="n">.452</td><td class="n w">+1.9</td></tr>
+        <tr><td>6</td><td>KOCO 5</td><td class="n">18&ndash;24</td><td class="n">.429</td><td class="n c">&minus;1.4</td></tr>
+        <tr><td>7</td><td>FOX 25</td><td class="n">15&ndash;27</td><td class="n">.357</td><td class="n hot">+3.3</td></tr>
+      </table>
+      <div class="legend" style="padding-bottom:0">W&ndash;L: nightly round-robin &mdash; each board plays the other six, closest call wins the matchup. 42 games a week. LEAN: average signed miss &mdash; how to correct each channel in your head.</div>
+    </div>
+    <div style="flex:1">
+      <h3>Exhibit A: Saturday <em>&middot; the week&rsquo;s most contested day</em></h3>
+      <table class="agate">
+        <tr><th>Forecaster</th><th class="n">Called</th><th class="n">Rain</th><th class="n">Miss</th></tr>
+        <tr><td>KFOR 4WARN</td><td class="n">98</td><td class="n">10%</td><td class="n c">&minus;1</td></tr>
+        <tr><td>GFS &#9679;</td><td class="n">97</td><td class="n">5%</td><td class="n c">&minus;2</td></tr>
+        <tr><td>NEWS 9</td><td class="n">98</td><td class="n">20%</td><td class="n c">&minus;1</td></tr>
+        <tr><td>NWS NORMAN</td><td class="n">101</td><td class="n">20%</td><td class="n w">+2</td></tr>
+        <tr><td>ECMWF &#9679;</td><td class="n">100</td><td class="n hot">40%</td><td class="n w">+1</td></tr>
+        <tr><td>KOCO 5</td><td class="n">97</td><td class="n">15%</td><td class="n c">&minus;2</td></tr>
+        <tr><td>FOX 25</td><td class="n hot">102</td><td class="n">30%</td><td class="n hot">+3</td></tr>
+        <tr class="sky"><td>THE SKY</td><td class="n">99</td><td class="n">DRY</td><td class="n">&mdash;</td></tr>
+      </table>
+      <div class="legend" style="padding-bottom:0">Receipts: graphics &amp; pages archived nightly, hashed &middot; SHA256 1A43790C&hellip; +6 more &middot; originals on file.</div>
+    </div>
+  </div>
+
+  <div class="hype">
+    <div class="lbl">Hype index<br><span style="font-weight:400;color:var(--faded);font-size:10px">RAIN OVERCALL, PTS</span></div>
+    <div class="hbar">
+      <div><span class="name">FOX 25</span><span class="bar" style="width:252px;background:var(--warmhot)"></span><span>+18</span></div>
+      <div><span class="name">ECMWF</span><span class="bar" style="width:196px"></span><span>+14</span></div>
+      <div><span class="name">KOCO</span><span class="bar" style="width:126px"></span><span>+9</span></div>
+      <div><span class="name">NWS</span><span class="bar" style="width:98px"></span><span>+7</span></div>
+      <div><span class="name">NEWS 9</span><span class="bar" style="width:70px;opacity:.75"></span><span>+5</span></div>
+      <div><span class="name">GFS</span><span class="bar" style="width:56px;opacity:.65"></span><span>+4</span></div>
+      <div><span class="name">KFOR</span><span class="bar" style="width:42px;opacity:.55"></span><span>+3</span></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div>Verdicts settle on the NWS daily climate report (Will Rogers) &middot; methodology public &middot; channels graded, named humans never</div>
+    <div><i>The sky keeps score. We keep receipts.</i></div>
+  </div>
+</body></html>

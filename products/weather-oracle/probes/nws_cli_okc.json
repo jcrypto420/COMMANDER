@@ -1,0 +1,197 @@
+{
+    "@context": {
+        "@version": "1.1",
+        "@vocab": "https://api.weather.gov/ontology#"
+    },
+    "@graph": [
+        {
+            "@id": "https://api.weather.gov/products/c7e6995d-d549-4c7a-9b57-10cbd8cd9106",
+            "id": "c7e6995d-d549-4c7a-9b57-10cbd8cd9106",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-08T22:12:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/6ddac709-752a-4564-96a4-bfea53ecf3db",
+            "id": "6ddac709-752a-4564-96a4-bfea53ecf3db",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-08T21:12:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/289a2d10-4000-43f9-9593-43faccc69380",
+            "id": "289a2d10-4000-43f9-9593-43faccc69380",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-08T06:31:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/398f1d31-6f78-4beb-9a5f-4ce24dcf5779",
+            "id": "398f1d31-6f78-4beb-9a5f-4ce24dcf5779",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-07T22:10:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/bb3d05d0-7514-4833-bc56-d4634700481d",
+            "id": "bb3d05d0-7514-4833-bc56-d4634700481d",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-07T21:10:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/823e9ec9-f538-4b0b-818e-7caf8dedd652",
+            "id": "823e9ec9-f538-4b0b-818e-7caf8dedd652",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-07T06:27:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/8144105f-9e4b-4418-b45f-e492375c73dc",
+            "id": "8144105f-9e4b-4418-b45f-e492375c73dc",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-06T22:13:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/4c6135b2-89b1-48f7-859e-d70da4ab2b60",
+            "id": "4c6135b2-89b1-48f7-859e-d70da4ab2b60",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-06T21:11:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/88f28179-ba8f-478e-9c5b-5b81b319c386",
+            "id": "88f28179-ba8f-478e-9c5b-5b81b319c386",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-06T06:27:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/2bffb323-4d21-4158-a842-38f1e4a4114c",
+            "id": "2bffb323-4d21-4158-a842-38f1e4a4114c",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-05T22:12:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/c88bebbd-92e1-4059-a413-c2c470a21b5f",
+            "id": "c88bebbd-92e1-4059-a413-c2c470a21b5f",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-05T21:12:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/a7465211-92de-4d83-b64e-3c8b0cc7b08e",
+            "id": "a7465211-92de-4d83-b64e-3c8b0cc7b08e",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-05T06:28:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/fed2659a-7554-41b1-bca8-8c88e50aa04d",
+            "id": "fed2659a-7554-41b1-bca8-8c88e50aa04d",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-04T22:22:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/9fa8c0be-868d-4900-bd5e-617df562e037",
+            "id": "9fa8c0be-868d-4900-bd5e-617df562e037",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-04T21:12:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/44bc2c72-ee7a-4bb0-8e43-7477e1e1e667",
+            "id": "44bc2c72-ee7a-4bb0-8e43-7477e1e1e667",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-04T06:33:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/6fc0641d-e099-4bcb-a61d-ccc6ff586ac1",
+            "id": "6fc0641d-e099-4bcb-a61d-ccc6ff586ac1",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-03T22:12:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/6cdd4353-14de-4c5a-8462-15431985ba6c",
+            "id": "6cdd4353-14de-4c5a-8462-15431985ba6c",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-03T21:11:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/4de5f279-062c-4ce8-b8b4-bcb519263595",
+            "id": "4de5f279-062c-4ce8-b8b4-bcb519263595",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-03T06:29:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/06d0071d-6623-40bc-b940-4b1069f63558",
+            "id": "06d0071d-6623-40bc-b940-4b1069f63558",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-02T22:11:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/796e2e22-9917-4c16-8b3a-126448933689",
+            "id": "796e2e22-9917-4c16-8b3a-126448933689",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-02T21:10:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        },
+        {
+            "@id": "https://api.weather.gov/products/8e9730e5-6eca-49e8-9722-0fb2d8528faf",
+            "id": "8e9730e5-6eca-49e8-9722-0fb2d8528faf",
+            "wmoCollectiveId": "CDUS44",
+            "issuingOffice": "KOUN",
+            "issuanceTime": "2026-07-02T06:26:00+00:00",
+            "productCode": "CLI",
+            "productName": "Climatological Report (Daily)"
+        }
+    ]
+}

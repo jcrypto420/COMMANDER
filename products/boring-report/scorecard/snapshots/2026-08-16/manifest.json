@@ -1,0 +1,37 @@
+{
+  "protocol": "Aave V3",
+  "network": "Ethereum mainnet",
+  "oracle_address": "0x54586bE62E3c3580375aE3723C145253060Ca0C2",
+  "oracle_source": "https://raw.githubusercontent.com/aave/aave-address-book/main/src/AaveV3Ethereum.sol",
+  "retrieved_at": "2026-08-16T23:02:31.643640+00:00",
+  "sources": {
+    "aave-v3-ethereum.sol": {
+      "url": "https://raw.githubusercontent.com/aave/aave-address-book/main/src/AaveV3Ethereum.sol",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 66180,
+      "sha256": "296d81fb06bbef680126b527b5c6316c882c2e4329146bfeb14e40173662c6ab"
+    },
+    "rpc-source-weth-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 103,
+      "sha256": "6665fec4ed800b65822660468bbcf6ab88a95dd1e78361ffd79ab48bfa9858ad"
+    },
+    "rpc-feed-decimals-weth-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 103,
+      "sha256": "2649b788efe6b43a6c0000ed7ac73f1823e9ec2e73eaa4c63f765efa96fa6c18"
+    },
+    "rpc-feed-latestRoundData-weth-01.json": {
+      "url": "https://ethereum.publicnode.com",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 359,
+      "sha256": "b1661e4cc15ba8bdcfde6adc9dcd70381e9ee1fd3e2efa9b5f4fb61f2f6ca6cb"
+    }
+  }
+}

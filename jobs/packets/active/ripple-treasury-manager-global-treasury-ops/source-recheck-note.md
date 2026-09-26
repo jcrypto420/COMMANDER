@@ -1,0 +1,30 @@
+# Ripple Treasury Manager — Source Recheck Note
+
+**Status:** draft-only support note; no submission, no outreach, no account action.
+**Checked:** 2026-08-21 13:29Z
+**Packet:** `packet.md`
+
+## Live no-login recheck
+
+Official Ripple careers page returned on the fresh no-login recheck:
+- HTTP status: 200
+- Content type: `text/html; charset=utf-8`
+- Body size: 125,044 bytes
+
+Literal source signals still present in the page body:
+- `New York`
+- `$144,000`
+- `$180,000`
+- `Treasury Manager`
+- `RLUSD`
+- `KYC`
+
+## Why this matters
+
+This keeps the Ripple decision surface honest without changing the verdict surface itself. The role still appears live, still appears New York-based, and still carries the same treasury / RLUSD / KYC operating scope that makes it the strongest current non-Coinbase CI-1 lead.
+
+## Use
+
+- Reference this note when Josh asks whether the packet is still current.
+- Do not treat this as approval to apply, send, or create accounts.
+- Keep the next step as Josh’s hold / tweak / kill verdict.

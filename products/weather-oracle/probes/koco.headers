@@ -1,0 +1,23 @@
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+x-app-version: 1.15.0
+cache-control: max-age=0, must-revalidate
+expires: Wed, 08 Jul 2026 23:57:23 GMT
+x-gdpr-site: 0
+referrer-policy: no-referrer-when-downgrade
+x-xss-protection: 1; mode=block
+content-security-policy: upgrade-insecure-requests; default-src https: data: 'unsafe-inline' 'unsafe-eval' https:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob:; style-src data: 'unsafe-inline' https:; img-src data: https: blob:; font-src data: https:; connect-src https: wss: blob:; media-src data: https: blob:; object-src https:; child-src https: data: blob:; form-action https:; frame-ancestors 'none';
+link: </_assets/fre/scopes/htv/_next/static/css/96a5cba860562f2c.css>; rel=preload; as="style"
+via: 1.1 varnish, 1.1 varnish
+accept-ranges: bytes
+age: 0
+date: Wed, 08 Jul 2026 23:57:23 GMT
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+x-served-by: cache-iad-kjyo7100124-IAD, cache-dfw-kdal2120037-DFW
+x-cache: MISS, MISS
+x-cache-hits: 0, 0
+x-timer: S1783555044.551330,VS0,VE390
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+content-length: 606193
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>daily v2</title>
+<style>
+  :root { --ink:#1a1917; --muted:#6b6862; --faint:#98948c; --accent:#a32d2d; --rule:#d8d4cc; --bg:#faf8f3; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,"Helvetica Neue",sans-serif; width:860px; margin:0 auto; padding:40px 48px 30px; }
+  .rule3 { border-top:3px solid var(--ink); }
+  .mast { display:flex; justify-content:space-between; align-items:baseline; padding:10px 0 8px; border-bottom:1px solid var(--ink); margin-bottom:16px; }
+  .mast h1 { font-family:Georgia,serif; font-size:30px; font-weight:700; } .mast h1 span { color:var(--faint); }
+  .mast .date { font-size:13px; color:var(--muted); text-align:right; }
+  .verdict { font-family:Georgia,serif; font-size:19px; line-height:1.45; margin:4px 0 18px; }
+  .verdict b { color:var(--accent); }
+  .cols { display:flex; gap:32px; margin-bottom:18px; }
+  .cols > div { flex:1; }
+  h2 { font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+  h2 span { color:var(--faint); font-weight:400; letter-spacing:.2px; text-transform:none; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th { font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--faint); text-align:left; padding:4px 8px; border-bottom:1px solid var(--ink); }
+  td { padding:7px 8px; border-bottom:1px solid var(--rule); font-size:15px; }
+  th.n, td.n { text-align:right; }
+  .who { font-weight:700; } .rec { font-weight:700; font-size:16px; }
+  .today-big { font-family:Georgia,serif; font-size:44px; font-weight:700; line-height:1; }
+  .today-sub { font-size:14px; color:var(--muted); margin-top:6px; line-height:1.6; }
+  .strip { border:1px solid var(--rule); background:#fff; padding:12px 10px 6px; margin-bottom:16px; }
+  .fine { border-left:3px solid var(--accent); background:#fff; border-top:1px solid var(--rule); border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); padding:10px 14px; font-size:14.5px; margin-bottom:18px; }
+  .fine b { letter-spacing:1px; font-size:11px; color:var(--accent); }
+  .foot { border-top:3px solid var(--ink); padding-top:8px; font-size:11px; color:var(--faint); display:flex; justify-content:space-between; }
+  .foot i { font-family:Georgia,serif; color:var(--muted); }
+</style></head><body>
+  <div class="rule3"></div>
+  <div class="mast">
+    <h1><span>[NAME PENDING]</span> · Daily</h1>
+    <div class="date">Friday, July 10, 2026 · No. 191 · Oklahoma City</div>
+  </div>
+
+  <div class="verdict"><b>Last night:</b> KFOR took the field, 3–0 — missed the high by one and hit the low on the number. ECMWF's 37% rain call met a dry sky and is under review.</div>
+
+  <div class="cols">
+    <div>
+      <h2>Standings <span>· July · round-robin, per night</span></h2>
+      <table>
+        <tr><th></th><th>Forecaster</th><th class="n">W–L</th><th class="n">Pct</th></tr>
+        <tr><td>1</td><td class="who">KFOR 4Warn</td><td class="n rec">3–0</td><td class="n">1.000</td></tr>
+        <tr><td>2</td><td class="who">GFS <span style="font-size:10px;border:1px solid var(--ink);padding:1px 4px;letter-spacing:1px">ROBOT</span></td><td class="n rec">2–1</td><td class="n">.667</td></tr>
+        <tr><td>3</td><td class="who">ECMWF <span style="font-size:10px;border:1px solid var(--ink);padding:1px 4px;letter-spacing:1px">ROBOT</span></td><td class="n rec">1–2</td><td class="n">.333</td></tr>
+        <tr><td>4</td><td class="who">NWS Norman</td><td class="n rec">0–3</td><td class="n">.000</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Today, weighted <span>· blend of ECMWF + GFS + HRRR + NWS</span></h2>
+      <div class="today-big">99°</div>
+      <div class="today-sub">Peak around 4pm · dry<br>
+      KOCO, News 9, Fox 25 join the board as their archives grade in.</div>
+    </div>
+  </div>
+
+  <h2>The day, hour by hour <span>· temperature line · rain-chance bars · gust flags</span></h2>
+  <div class="strip"><svg viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block"><rect x="25.0" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="72.7" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="120.5" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="168.2" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="215.9" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="263.7" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="311.4" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="359.1" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="406.9" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="454.6" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="502.3" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="550.1" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="597.8" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="645.5" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="693.3" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><rect x="741.0" y="168.0" width="18" height="0.0" fill="#b9cfe2"/><polyline points="34.0,116.0 81.7,103.2 129.5,89.7 177.2,77.1 224.9,65.5 272.7,55.8 320.4,48.7 368.1,42.7 415.9,40.5 463.6,40.0 511.3,40.9 559.1,43.5 606.8,47.6 654.5,57.1 702.3,69.4 750.0,79.4" fill="none" stroke="#1a1917" stroke-width="2.5"/><text x="34.0" y="107.0" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1917">79°</text><text x="34.0" y="184" text-anchor="middle" font-size="10" fill="#98948c">7am</text><text x="81.7" y="184" text-anchor="middle" font-size="10" fill="#98948c">8am</text><text x="129.5" y="184" text-anchor="middle" font-size="10" fill="#98948c">9am</text><text x="177.2" y="68.1" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1917">89°</text><text x="177.2" y="184" text-anchor="middle" font-size="10" fill="#98948c">10am</text><text x="224.9" y="184" text-anchor="middle" font-size="10" fill="#98948c">11am</text><text x="272.7" y="184" text-anchor="middle" font-size="10" fill="#98948c">12pm</text><text x="320.4" y="39.7" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1917">97°</text><text x="320.4" y="184" text-anchor="middle" font-size="10" fill="#98948c">1pm</text><text x="320.4" y="18" text-anchor="middle" font-size="11" fill="#a32d2d" font-weight="700">⚑ gusts to 31 mph</text><text x="368.1" y="184" text-anchor="middle" font-size="10" fill="#98948c">2pm</text><text x="415.9" y="184" text-anchor="middle" font-size="10" fill="#98948c">3pm</text><text x="463.6" y="31.0" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1917">99°</text><text x="463.6" y="184" text-anchor="middle" font-size="10" fill="#98948c">4pm</text><text x="511.3" y="184" text-anchor="middle" font-size="10" fill="#98948c">5pm</text><text x="559.1" y="184" text-anchor="middle" font-size="10" fill="#98948c">6pm</text><text x="606.8" y="38.6" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1917">97°</text><text x="606.8" y="184" text-anchor="middle" font-size="10" fill="#98948c">7pm</text><text x="654.5" y="184" text-anchor="middle" font-size="10" fill="#98948c">8pm</text><text x="702.3" y="184" text-anchor="middle" font-size="10" fill="#98948c">9pm</text><text x="750.0" y="70.4" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1917">89°</text><text x="750.0" y="184" text-anchor="middle" font-size="10" fill="#98948c">10pm</text><text x="28" y="168" text-anchor="end" font-size="9" fill="#98948c">rain %</text></svg></div>
+
+  <div class="fine"><b>THE FINE PRINT&nbsp;&nbsp;</b> Gusts near 31 mph around 1pm — secure the trampoline before lunch, not after.</div>
+
+  <div class="foot">
+    <div>Every number traces to archived captures (2026-07-10_0929). Forecasts recorded before outcomes, never after.</div>
+    <div><i>The sky keeps score. We keep receipts.</i></div>
+  </div>
+</body></html>

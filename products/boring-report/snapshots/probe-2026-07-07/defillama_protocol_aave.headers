@@ -1,0 +1,15 @@
+HTTP/2 200 
+date: Tue, 07 Jul 2026 19:56:51 GMT
+content-type: application/json
+content-length: 18
+access-control-allow-headers: Content-Type, authorization
+access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+access-control-allow-origin: *
+expires: Tue, 07 Jul 2026 20:56:51 GMT
+server: cloudflare
+vary: Accept-Encoding
+accept-ranges: bytes
+last-modified: Tue, 07 Jul 2026 19:56:51 GMT
+cf-cache-status: EXPIRED
+cf-ray: a1796a311e32321a-DFW
+

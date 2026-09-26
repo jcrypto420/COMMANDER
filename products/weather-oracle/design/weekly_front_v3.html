@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>weekly front v3</title>
+<style>
+  :root { --ink:#26221c; --faded:#6e6659; --red:#9e2b25; --paper:#f4eddd; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink); font:15px/1.5 Georgia, serif; width:860px; margin:0 auto; padding:26px 44px 26px; }
+  .ears { display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; padding-bottom:4px; }
+  .masthead { text-align:center; font-family:Didot, 'Bodoni 72', Georgia, serif; font-size:58px; font-weight:700; letter-spacing:2px; line-height:1; padding:2px 0 6px; }
+  .masthead span { color:var(--faded); }
+  .mastline { text-align:center; font:italic 13px Georgia, serif; color:var(--faded); padding-bottom:8px; }
+  .drule { border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); height:5px; margin-bottom:2px; }
+  .dateline { display:flex; justify-content:space-between; font:11px 'Courier New', monospace; text-transform:uppercase; letter-spacing:1.5px; padding:6px 0; border-bottom:1px solid var(--ink); }
+  .mockline { text-align:center; font:700 10.5px 'Courier New', monospace; letter-spacing:2px; color:var(--red); padding:6px 0; border-bottom:1px dotted var(--faded); margin-bottom:14px; }
+  .headline { font-family:'Futura-CondensedExtraBold', 'Arial Narrow', Impact, sans-serif; font-size:54px; line-height:.98; text-transform:uppercase; letter-spacing:.5px; margin-bottom:8px; }
+  .deck { font:italic 16.5px/1.55 Georgia, serif; margin-bottom:16px; max-width:700px; }
+  .deck .rot { color:var(--red); }
+  .cols { display:flex; margin-bottom:14px; border-top:1px solid var(--ink); }
+  .cols > div { padding:12px 18px 10px 0; }
+  .cols > div + div { border-left:1px solid var(--ink); padding-left:18px; }
+  h3 { font:700 12px 'Courier New', monospace; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
+  h3 em { color:var(--faded); font-style:normal; font-weight:400; letter-spacing:.5px; }
+  .agate { width:100%; border-collapse:collapse; font:700 14px 'Courier New', monospace; }
+  .agate td { padding:4.5px 6px; border-bottom:1px dotted var(--faded); }
+  .agate td.n { text-align:right; }
+  .agate .r { color:var(--red); }
+  .agate .up { color:#3c5a2e; } .agate .dn { color:var(--red); }
+  .note { font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; padding-top:6px; letter-spacing:.5px; }
+  .receipt img { width:100%; border:1px solid var(--ink); display:block; }
+  .said-did { display:flex; border:1px solid var(--ink); border-top:none; }
+  .said-did div { flex:1; padding:7px 12px; font:13px Georgia, serif; }
+  .said-did div:first-child { border-right:1px solid var(--ink); }
+  .said-did b { display:block; font:700 10px 'Courier New', monospace; letter-spacing:2px; color:var(--red); }
+  .cap { font:11px 'Courier New', monospace; color:var(--faded); padding-top:6px; text-transform:uppercase; letter-spacing:.5px; }
+  .wire { background:#efe6d2; border:1px solid var(--faded); padding:9px 14px; font:12.5px/1.7 'Courier New', monospace; text-transform:uppercase; margin-bottom:14px; }
+  .foot { border-top:3px solid var(--ink); padding-top:6px; display:flex; justify-content:space-between; font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:1px; gap:24px; }
+  .foot i { font:italic 12px Georgia, serif; text-transform:none; letter-spacing:0; white-space:nowrap; }
+</style></head><body>
+  <div class="ears">
+    <div>Vol. I &middot; Week 28</div>
+    <div>Oklahoma City &middot; free</div>
+  </div>
+  <div class="masthead"><span>[Name Pending]</span></div>
+  <div class="mastline">The week&rsquo;s complete record of who called it &mdash; and who didn&rsquo;t</div>
+  <div class="drule"></div>
+  <div class="dateline">
+    <div>Week of July 6&ndash;12, 2026</div>
+    <div>Weekly review &middot; side A</div>
+    <div>Graded nightly &middot; archived forever</div>
+  </div>
+  <div class="mockline">LAYOUT MOCK &mdash; NUMBERS ILLUSTRATIVE UNTIL WEEK ONE COMPLETES</div>
+
+  <div class="headline">The robots had<br>a bad week</div>
+  <div class="deck">KFOR went 26&ndash;16 to take the July lead, built on three exact lows. The European model ran <span class="rot">two degrees warm</span> all week and finished fifth. The only measurable rain fell Tuesday at 9:40 AM &mdash; six hours before every channel&rsquo;s window. Nobody won Tuesday.</div>
+
+  <div class="cols">
+    <div style="flex:1.1">
+      <h3>The standings <em>&middot; July, through week 28</em></h3>
+      <table class="agate">
+        <tr><td>1</td><td>KFOR 4WARN</td><td class="n">26&ndash;16</td><td class="n">.619</td><td class="n up">&#9650;2</td></tr>
+        <tr><td>2</td><td>GFS <span class="r">&#9679;</span></td><td class="n">25&ndash;17</td><td class="n">.595</td><td class="n dn">&#9660;1</td></tr>
+        <tr><td>3</td><td>NEWS 9</td><td class="n">23&ndash;19</td><td class="n">.548</td><td class="n">&mdash;</td></tr>
+        <tr><td>4</td><td>NWS NORMAN</td><td class="n">21&ndash;21</td><td class="n">.500</td><td class="n up">&#9650;1</td></tr>
+        <tr><td>5</td><td>ECMWF <span class="r">&#9679;</span></td><td class="n">19&ndash;23</td><td class="n">.452</td><td class="n dn">&#9660;2</td></tr>
+        <tr><td>6</td><td>KOCO 5</td><td class="n">18&ndash;24</td><td class="n">.429</td><td class="n">&mdash;</td></tr>
+        <tr><td>7</td><td>FOX 25</td><td class="n">15&ndash;27</td><td class="n">.357</td><td class="n">&mdash;</td></tr>
+      </table>
+      <div class="note">&#9679; = robot &middot; monthly pennant &middot; seasonal championship &middot; trust weights roll 30 days, never reset</div>
+    </div>
+    <div style="flex:1">
+      <h3>Receipt of the week</h3>
+      <div class="receipt">
+        <img src="kfor_7day.jpg" alt="Archived broadcast 7-day graphic">
+        <div class="said-did">
+          <div><b>THEY SAID</b>Saturday: 40% storms</div>
+          <div><b>IT DID</b>Dry. Dew point 48.</div>
+        </div>
+        <div class="cap">Archived Wed 8:12 PM &middot; sha256 1a43790c&hellip; &middot; the original file is the receipt</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wire">WORST CALL OF THE WEEK &mdash; ECMWF, SATURDAY: CALLED 40% STORMS &middot; OFFICIAL: DRY, DEW POINT 48. NOW LEADS THE HYPE INDEX AT +14.</div>
+
+  <div class="foot">
+    <div>Grading: nightly round-robin on highs, lows, and rain calls (Brier-scored) &middot; methodology public &middot; channels graded, named humans never &middot; full ledger overleaf</div>
+    <div><i>The sky keeps score. We keep receipts.</i></div>
+  </div>
+</body></html>

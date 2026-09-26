@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Commander Command Center v0</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #050507;
+    --panel: #0f1011;
+    --panel2: #15171a;
+    --line: rgba(255,255,255,.08);
+    --line2: rgba(255,255,255,.14);
+    --text: #f7f8f8;
+    --muted: #8a8f98;
+    --soft: #d0d6e0;
+    --green: #00d992;
+    --violet: #7170ff;
+    --amber: #fbbf24;
+    --red: #fb7185;
+    --blue: #5ad3ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    background:
+      radial-gradient(circle at 10% -10%, rgba(113,112,255,.22), transparent 32%),
+      radial-gradient(circle at 90% 0%, rgba(0,217,146,.18), transparent 34%),
+      radial-gradient(circle at 50% 115%, rgba(90,211,255,.10), transparent 40%),
+      var(--bg);
+    letter-spacing: -0.01em;
+  }
+  .shell { max-width: 1420px; margin: 0 auto; padding: 18px; }
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    border: 1px solid var(--line); background: rgba(15,16,17,.78);
+    border-radius: 18px; padding: 14px 16px; backdrop-filter: blur(12px);
+    box-shadow: 0 20px 80px rgba(0,0,0,.28);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .mark { width: 34px; height: 34px; border-radius: 10px; border: 1px solid rgba(0,217,146,.65); background: rgba(0,217,146,.08); box-shadow: 0 0 22px rgba(0,217,146,.24); display:grid; place-items:center; color: var(--green); font-family:'JetBrains Mono'; font-weight:700; }
+  .kicker { font-family: 'JetBrains Mono'; color: var(--green); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
+  h1 { margin: 2px 0 0; font-size: clamp(28px, 4vw, 48px); line-height: 1; letter-spacing: -0.045em; font-weight: 600; }
+  .status-strip { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px; }
+  .pill { border:1px solid var(--line); border-radius:999px; padding:7px 10px; color:var(--soft); background:rgba(255,255,255,.025); font-family:'JetBrains Mono'; font-size:11px; white-space:nowrap; }
+  .pill.good { border-color:rgba(0,217,146,.4); color:#b7ffe5; }
+  .pill.warn { border-color:rgba(251,191,36,.42); color:#fde68a; }
+  .dot { display:inline-block; width:7px; height:7px; border-radius:99px; margin-right:6px; background:var(--green); box-shadow:0 0 12px var(--green); }
+
+  .grid { display:grid; grid-template-columns: 1.15fr .85fr; gap:14px; margin-top:14px; }
+  .row { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:14px; margin-top:14px; }
+  .card { border:1px solid var(--line); background:rgba(15,16,17,.74); border-radius:18px; padding:16px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.015), 0 18px 60px rgba(0,0,0,.25); }
+  .card.hot { border-color:rgba(0,217,146,.35); background:linear-gradient(180deg, rgba(0,217,146,.08), rgba(15,16,17,.78)); }
+  .card.violet { border-color:rgba(113,112,255,.35); background:linear-gradient(180deg, rgba(113,112,255,.10), rgba(15,16,17,.78)); }
+  .label { font-family:'JetBrains Mono'; text-transform:uppercase; letter-spacing:.16em; font-size:11px; color:var(--muted); margin-bottom:10px; }
+  .label.green { color:var(--green); }
+  .big { font-size: clamp(24px, 3vw, 40px); line-height:1.05; letter-spacing:-.04em; font-weight:600; margin-bottom:10px; }
+  .muted { color:var(--muted); line-height:1.5; }
+  .money { display:flex; align-items:flex-end; gap:12px; margin-top:18px; }
+  .metric { font-size:42px; line-height:1; font-weight:600; letter-spacing:-.05em; }
+  .metric-sub { color:var(--muted); font-family:'JetBrains Mono'; font-size:12px; padding-bottom:5px; }
+  .progress { height:10px; border-radius:999px; background:rgba(255,255,255,.06); overflow:hidden; margin-top:14px; border:1px solid var(--line); }
+  .bar { height:100%; width:16%; background:linear-gradient(90deg,var(--green),var(--violet)); box-shadow:0 0 18px rgba(0,217,146,.45); }
+
+  .brief { display:grid; gap:10px; }
+  .brief-item { display:flex; gap:10px; align-items:flex-start; padding:10px; border:1px solid rgba(255,255,255,.06); border-radius:12px; background:rgba(255,255,255,.025); }
+  .icon { width:26px; height:26px; border-radius:8px; display:grid; place-items:center; flex:0 0 auto; background:rgba(113,112,255,.14); color:#c7c6ff; }
+  .mono { font-family:'JetBrains Mono'; font-size:12px; color:var(--soft); }
+
+  .task-table { display:grid; gap:8px; }
+  .task { display:grid; grid-template-columns: 64px 1fr auto; gap:10px; align-items:center; padding:10px; border:1px solid rgba(255,255,255,.06); border-radius:12px; background:rgba(255,255,255,.023); }
+  .id { font-family:'JetBrains Mono'; color:var(--green); font-size:12px; }
+  .task-title { color:var(--soft); font-size:14px; }
+  .badge { border-radius:999px; padding:5px 8px; font-family:'JetBrains Mono'; font-size:10px; border:1px solid var(--line); color:var(--muted); }
+  .badge.doing { color:#b7ffe5; border-color:rgba(0,217,146,.38); }
+  .badge.blocked { color:#fecdd3; border-color:rgba(251,113,133,.38); }
+  .badge.done { color:#c7d2fe; border-color:rgba(113,112,255,.32); }
+
+  .services { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .svc { padding:12px; border:1px solid rgba(255,255,255,.06); border-radius:14px; background:rgba(255,255,255,.025); min-height:78px; }
+  .svc-name { display:flex; justify-content:space-between; gap:8px; color:var(--text); font-weight:600; margin-bottom:6px; }
+  .svc small { color:var(--muted); line-height:1.35; }
+  .tiny-dot { width:8px; height:8px; border-radius:99px; background:var(--green); margin-top:4px; box-shadow:0 0 10px rgba(0,217,146,.7); }
+  .tiny-dot.gray { background:#62666d; box-shadow:none; }
+  .tiny-dot.warn { background:var(--amber); box-shadow:0 0 10px rgba(251,191,36,.6); }
+
+  .terminal { font-family:'JetBrains Mono'; font-size:12px; line-height:1.55; color:#b7ffe5; background:#050607; border:1px solid rgba(0,217,146,.22); border-radius:14px; padding:14px; overflow:auto; min-height:180px; }
+  .cmd { color:var(--green); }
+  .comment { color:#62666d; }
+
+  .approval { display:flex; justify-content:space-between; gap:10px; align-items:center; padding:12px; border:1px solid rgba(251,191,36,.36); border-radius:14px; background:rgba(251,191,36,.07); margin-top:10px; }
+  .approval b { color:#fde68a; }
+  .button { border:1px solid rgba(0,217,146,.4); color:#b7ffe5; border-radius:10px; padding:9px 11px; font-family:'JetBrains Mono'; font-size:11px; background:rgba(0,217,146,.07); white-space:nowrap; }
+
+  @media (max-width: 980px) { .grid, .row { grid-template-columns:1fr; } .status-strip { justify-content:flex-start; } .topbar { align-items:flex-start; flex-direction:column; } }
+</style>
+</head>
+<body>
+  <main class="shell">
+    <section class="topbar">
+      <div class="brand">
+        <div class="mark">C</div>
+        <div>
+          <div class="kicker">Commander / private cockpit</div>
+          <h1>Money, agents, infra — one command surface.</h1>
+        </div>
+      </div>
+      <div class="status-strip">
+        <div class="pill good"><span class="dot"></span>Telegram live</div>
+        <div class="pill good">Hermes gateway active</div>
+        <div class="pill good">7am brief → Telegram</div>
+        <div class="pill warn">LAN/Tailscale only</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card hot">
+        <div class="label green">Today's money move</div>
+        <div class="big">Turn Commander into the operating layer — not another dashboard rabbit hole.</div>
+        <div class="muted">Recommended build: private read-only dashboard first. It should surface decisions, tasks, Hermes health, morning briefs, and Sovereignty Stack links without exposing ports or secrets.</div>
+        <div class="money">
+          <div class="metric">$6.9K</div>
+          <div class="metric-sub">69-day sprint target</div>
+        </div>
+        <div class="progress"><div class="bar"></div></div>
+      </div>
+
+      <div class="card violet">
+        <div class="label">60-second review</div>
+        <div class="brief">
+          <div class="brief-item"><div class="icon">🌅</div><div><b>Morning brief</b><div class="mono">MORNING_REPORT.md → Telegram at 7am</div></div></div>
+          <div class="brief-item"><div class="icon">✅</div><div><b>Next decision</b><div class="mono">APPROVE DASHBOARD V0 BUILD</div></div></div>
+          <div class="brief-item"><div class="icon">🔒</div><div><b>Safety</b><div class="mono">no public ports / no secrets / no spending</div></div></div>
+        </div>
+        <div class="approval"><span><b>Approval phrase:</b><br><span class="mono">APPROVE DASHBOARD V0 BUILD</span></span><span class="button">draft only</span></div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="card">
+        <div class="label">Task board</div>
+        <div class="task-table">
+          <div class="task"><div class="id">BB-24</div><div class="task-title">Refocus on real Bad Boys assets</div><div class="badge doing">doing</div></div>
+          <div class="task"><div class="id">TG-1</div><div class="task-title">Telegram phone channel</div><div class="badge done">done</div></div>
+          <div class="task"><div class="id">CC-14</div><div class="task-title">Command Center Dashboard v0</div><div class="badge doing">new</div></div>
+          <div class="task"><div class="id">WO-1</div><div class="task-title">Weather Oracle revenue scan</div><div class="badge">todo</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="label">Hermes / agents</div>
+        <div class="terminal"><span class="cmd">commander.status</span>
+provider: OpenAI Codex
+model: gpt-5.5 / cheap fallback planned
+gateway: active
+telegram: allowed user 398335714
+cron: daily-money-loop → 07:00
+subagents: none active
+
+<span class="comment">future: kanban worker queue + active agent monitor</span></div>
+      </div>
+
+      <div class="card">
+        <div class="label">Sovereignty Stack</div>
+        <div class="services">
+          <div class="svc"><div class="svc-name">CasaOS <span class="tiny-dot"></span></div><small>visual infra layer / Docker manager</small></div>
+          <div class="svc"><div class="svc-name">Grafana <span class="tiny-dot"></span></div><small>dashboard backend / ticker panels</small></div>
+          <div class="svc"><div class="svc-name">Immich <span class="tiny-dot"></span></div><small>photo backup on external HDD</small></div>
+          <div class="svc"><div class="svc-name">Ticker API <span class="tiny-dot warn"></span></div><small>crypto feed integration candidate</small></div>
+          <div class="svc"><div class="svc-name">Kuma <span class="tiny-dot gray"></span></div><small>uptime source to connect</small></div>
+          <div class="svc"><div class="svc-name">Tailscale <span class="tiny-dot"></span></div><small>private remote access only</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="label">Learning / QOL loop</div>
+        <div class="task-table">
+          <div class="task"><div class="id">LEARN</div><div class="task-title">One concept/day: dashboards as decision systems, not decoration</div><div class="badge doing">today</div></div>
+          <div class="task"><div class="id">QOL</div><div class="task-title">Phone-first summaries; laptop only for review/build sessions</div><div class="badge doing">active</div></div>
+          <div class="task"><div class="id">SYS</div><div class="task-title">Keep Pi low-upkeep; avoid public exposure; reduce log digging</div><div class="badge done">rule</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="label">Integration path</div>
+        <div class="brief">
+          <div class="brief-item"><div class="icon">1</div><div><b>Static prototype</b><div class="muted">This file. Visual target only.</div></div></div>
+          <div class="brief-item"><div class="icon">2</div><div><b>Read-only state builder</b><div class="muted">Parse repo docs + Hermes status into JSON.</div></div></div>
+          <div class="brief-item"><div class="icon">3</div><div><b>Private service</b><div class="muted">LAN/Tailscale web UI after approval.</div></div></div>
+          <div class="brief-item"><div class="icon">4</div><div><b>Actions with approvals</b><div class="muted">Buttons create packets; risky actions still gated.</div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

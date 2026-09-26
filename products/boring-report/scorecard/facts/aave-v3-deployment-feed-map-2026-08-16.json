@@ -1,0 +1,31 @@
+{
+  "artifact_type": "deployment-feed-map",
+  "protocol": "Aave V3",
+  "network": "Ethereum mainnet",
+  "oracle_address": "0x54586bE62E3c3580375aE3723C145253060Ca0C2",
+  "oracle_source": "https://raw.githubusercontent.com/aave/aave-address-book/main/src/AaveV3Ethereum.sol",
+  "retrieved_at": "2026-08-16T23:02:31.643640+00:00",
+  "scope": "Second bounded deployment feed-map observation for the same preferred asset subset on Ethereum mainnet; not a completeness claim.",
+  "assets": [
+    {
+      "symbol": "WETH",
+      "asset_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "feed_address": "0x5424384b256154046e9667ddfaaa5e550145215e",
+      "feed_decimals": "8",
+      "latest_round_id": "36893488147419126059",
+      "latest_round_timestamp": "1786920059",
+      "latest_round_answer": "186759000000",
+      "snapshots": {
+        "source": "products/boring-report/scorecard/snapshots/2026-08-16/aave-v3-ethereum.sol",
+        "asset_source": "products/boring-report/scorecard/snapshots/2026-08-16/rpc-source-weth-01.json",
+        "feed_decimals": "products/boring-report/scorecard/snapshots/2026-08-16/rpc-feed-decimals-weth-01.json",
+        "feed_latest_round_data": "products/boring-report/scorecard/snapshots/2026-08-16/rpc-feed-latestRoundData-weth-01.json"
+      }
+    }
+  ],
+  "notes": [
+    "Feed address and decimals stayed unchanged from the 2026-08-14 baseline; only the latest round fields advanced.",
+    "This remains a deployment-specific, source-cited draft artifact and makes no heartbeat, staleness, completeness, or financial-advice claim.",
+    "No public posting, payment, settlement, account creation, or external send occurred."
+  ]
+}

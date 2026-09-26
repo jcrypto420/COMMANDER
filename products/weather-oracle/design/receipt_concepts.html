@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>receipt concepts</title>
+<style>
+  :root { --ink:#26221c; --faded:#6e6659; --red:#9e2b25; --paper:#f4eddd; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--paper); color:var(--ink); font:14px/1.5 Georgia, serif; width:860px; margin:0 auto; padding:26px 44px 26px; }
+  .drule { border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); height:5px; margin-bottom:8px; }
+  .concept-tag { font:700 11px 'Courier New', monospace; letter-spacing:2px; color:#fff; background:var(--ink); display:inline-block; padding:3px 10px; margin-bottom:10px; }
+  h3 { font:700 12px 'Courier New', monospace; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; }
+  h3 em { color:var(--faded); font-style:normal; font-weight:400; letter-spacing:.5px; }
+  .section { margin-bottom:34px; }
+  .agate { border-collapse:collapse; font:700 14px 'Courier New', monospace; }
+  .agate th { font:700 10px 'Courier New', monospace; letter-spacing:1px; text-transform:uppercase; color:var(--faded); text-align:left; padding:3px 8px; border-bottom:1px solid var(--ink); }
+  .agate td { padding:5px 8px; border-bottom:1px dotted var(--faded); }
+  .agate th.n, .agate td.n { text-align:right; }
+  .agate .r { color:var(--red); }
+  .sky td { border-top:2px solid var(--ink); border-bottom:2px solid var(--ink); font-size:15px; }
+  .legend { font:11px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:.5px; padding-top:8px; line-height:1.7; }
+  .legend b { color:var(--ink); }
+  .thumb { display:flex; gap:12px; align-items:center; margin-top:12px; padding:8px 10px; border:1px dotted var(--faded); }
+  .thumb img { width:120px; border:1px solid var(--ink); display:block; filter:grayscale(1) contrast(1.05); }
+  .thumb .cap { font:10.5px 'Courier New', monospace; color:var(--faded); text-transform:uppercase; letter-spacing:.5px; line-height:1.7; }
+  .punch { border-collapse:collapse; font:700 15px 'Courier New', monospace; }
+  .punch th { font:700 10px 'Courier New', monospace; letter-spacing:1px; color:var(--faded); padding:4px 0; border-bottom:1px solid var(--ink); text-align:center; width:64px; }
+  .punch th:first-child { text-align:left; width:110px; }
+  .punch td { padding:7px 0; text-align:center; border-bottom:1px dotted var(--faded); }
+  .punch td:first-child { text-align:left; font-size:13px; }
+  .hit { display:inline-block; width:24px; height:24px; line-height:22px; border:2px solid var(--red); border-radius:50%; color:var(--red); font-size:13px; }
+  .big { color:var(--red); }
+  .na { color:var(--faded); opacity:.5; }
+  .bias { border-collapse:collapse; font:700 14px 'Courier New', monospace; }
+  .bias th { font:700 10px 'Courier New', monospace; letter-spacing:1px; text-transform:uppercase; color:var(--faded); text-align:left; padding:3px 8px; border-bottom:1px solid var(--ink); }
+  .bias td { padding:5px 8px; border-bottom:1px dotted var(--faded); }
+  .bias td.n { text-align:right; }
+</style></head><body>
+
+  <div class="section">
+    <div class="concept-tag">CONCEPT 1 — FRONT PAGE: "EXHIBIT A" BECOMES ONE CONTESTED DAY, WHOLE FIELD</div>
+    <h3>Exhibit A: Saturday, July 11 <em>&middot; every board, one day, one official answer</em></h3>
+    <table class="agate" style="width:520px">
+      <tr><th>Forecaster</th><th class="n">Called</th><th class="n">Rain</th><th class="n">Miss</th></tr>
+      <tr><td>KFOR 4WARN</td><td class="n">98</td><td class="n">10%</td><td class="n">&minus;1</td></tr>
+      <tr><td>GFS &#9679;</td><td class="n">97</td><td class="n">5%</td><td class="n">&minus;2</td></tr>
+      <tr><td>NEWS 9</td><td class="n">98</td><td class="n">20%</td><td class="n">&minus;1</td></tr>
+      <tr><td>NWS NORMAN</td><td class="n">101</td><td class="n">20%</td><td class="n">+2</td></tr>
+      <tr><td>ECMWF &#9679;</td><td class="n">100</td><td class="n r">40%</td><td class="n">+1</td></tr>
+      <tr><td>KOCO 5</td><td class="n">97</td><td class="n">15%</td><td class="n">&minus;2</td></tr>
+      <tr><td>FOX 25</td><td class="n r">102</td><td class="n">30%</td><td class="n r">+3</td></tr>
+      <tr class="sky"><td>THE SKY</td><td class="n">99</td><td class="n">DRY</td><td class="n">&mdash;</td></tr>
+    </table>
+    <div class="thumb">
+      <img src="kfor_7day.jpg" alt="archived graphic thumbnail">
+      <div class="cap">RECEIPTS: BROADCAST GRAPHICS &amp; PAGES ARCHIVED WED&ndash;SAT &middot; SHA256 1A43790C&hellip; +6 MORE &middot; ORIGINALS ON FILE, HASHED</div>
+    </div>
+    <div class="legend">The week&rsquo;s most contested day replaces the raw broadcast art. The archived graphic drops to a provenance footnote &mdash; the receipt still exists, it just stops art-directing the page.</div>
+  </div>
+
+  <div class="drule"></div>
+
+  <div class="section">
+    <div class="concept-tag">CONCEPT 2 — SIDE B HERO: "THE PUNCH CARD" &middot; EVERY STATION &times; EVERY DAY</div>
+    <h3>The punch card <em>&middot; high-temp miss, called minus actual &middot; circle = exact hit</em></h3>
+    <table class="punch" style="width:100%">
+      <tr><th>Forecaster</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th><th>SUN</th><th style="text-align:right">WEEK</th></tr>
+      <tr><td>KFOR 4WARN</td><td>&minus;1</td><td>+2</td><td><span class="hit">0</span></td><td>+1</td><td>&minus;1</td><td>&minus;1</td><td>&minus;1</td><td style="text-align:right">26&ndash;16</td></tr>
+      <tr><td>GFS &#9679;</td><td>+1</td><td>+1</td><td>&minus;1</td><td>+1</td><td>+1</td><td>&minus;2</td><td><span class="hit">0</span></td><td style="text-align:right">25&ndash;17</td></tr>
+      <tr><td>NEWS 9</td><td><span class="hit">0</span></td><td>+2</td><td>+1</td><td>+2</td><td><span class="hit">0</span></td><td>&minus;1</td><td>+1</td><td style="text-align:right">23&ndash;19</td></tr>
+      <tr><td>NWS NORMAN</td><td>+2</td><td>+3</td><td>+1</td><td>+3</td><td>+2</td><td>+2</td><td>+1</td><td style="text-align:right">21&ndash;21</td></tr>
+      <tr><td>ECMWF &#9679;</td><td>+2</td><td>+2</td><td>+2</td><td>+2</td><td>+2</td><td>+1</td><td>+2</td><td style="text-align:right">19&ndash;23</td></tr>
+      <tr><td>KOCO 5</td><td><span class="hit">0</span></td><td>&minus;1</td><td>&minus;1</td><td>&minus;2</td><td>&minus;2</td><td>&minus;2</td><td>&minus;2</td><td style="text-align:right">18&ndash;24</td></tr>
+      <tr><td>FOX 25</td><td>+3</td><td class="big">+4</td><td>+3</td><td class="big">+4</td><td>+3</td><td>+3</td><td>+3</td><td style="text-align:right">15&ndash;27</td></tr>
+    </table>
+    <div class="legend"><b>Read it like a scorecard:</b> circled zero = called it exactly &middot; red = missed by 4+ &middot; the pattern IS the story &mdash; NWS and ECMWF above zero all week (running warm), KOCO below (running cool), Fox 25 just running. No caption required.</div>
+  </div>
+
+  <div class="drule"></div>
+
+  <div class="section">
+    <div class="concept-tag">CONCEPT 3 — STANDINGS GET A "LEAN" COLUMN &middot; BIAS AS A STAT</div>
+    <h3>The standings <em>&middot; with each board&rsquo;s habitual lean</em></h3>
+    <table class="bias" style="width:520px">
+      <tr><th></th><th>Forecaster</th><th class="n">W&ndash;L</th><th class="n">Pct</th><th class="n">Lean</th></tr>
+      <tr><td>1</td><td>KFOR 4WARN</td><td class="n">26&ndash;16</td><td class="n">.619</td><td class="n">&minus;0.3 COOL</td></tr>
+      <tr><td>2</td><td>GFS &#9679;</td><td class="n">25&ndash;17</td><td class="n">.595</td><td class="n">+0.1</td></tr>
+      <tr><td>5</td><td>ECMWF &#9679;</td><td class="n">19&ndash;23</td><td class="n">.452</td><td class="n" style="color:#9e2b25">+1.9 WARM</td></tr>
+      <tr><td>7</td><td>FOX 25</td><td class="n">15&ndash;27</td><td class="n">.357</td><td class="n" style="color:#9e2b25">+3.3 WARM</td></tr>
+    </table>
+    <div class="legend">Average signed miss, season to date. One number that tells a reader how to mentally correct each channel: &ldquo;Fox 25 says 102, so it&rsquo;s 99.&rdquo; This is the single most useful stat we can print.</div>
+  </div>
+
+  <div class="legend" style="border-top:3px solid var(--ink); padding-top:8px;">ALL NUMBERS ILLUSTRATIVE &middot; CONCEPT SHEET FOR JOSH REVIEW &middot; 2026-07-10</div>
+</body></html>

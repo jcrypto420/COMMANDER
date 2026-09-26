@@ -1,0 +1,72 @@
+# Secrets — NEVER commit
+.env
+*.env
+!configs/*_template.env
+*.key
+*.pem
+*.p12
+*_secret*
+*secret*.json
+*.wallet
+*wallet*seed*
+secrets/
+credentials/
+
+# Hermes runtime / state
+.hermes/
+*.sqlite
+*.sqlite3
+*.db
+sessions/
+memories/
+
+# Generated dashboard/runtime state (local source-of-truth cache, not GitHub history)
+dashboard/state.json
+dashboard/commander_inbox.jsonl
+dashboard/market_activity.json
+runtime/
+
+# Local helper scripts that touch secrets/runtime profile state
+scripts/set_telegram_token.py
+
+# Private/generated one-off exports
+exports/home-inspection-*
+
+# Generated creative scratch/output that has not been curated for review
+assets/badboys/generated/
+
+# Logs (keep the dir + templates, ignore generated content)
+logs/*
+!logs/.gitkeep
+!logs/*.md
+!logs/*.csv
+
+# Local model / cache junk
+*.gguf
+models/
+.ollama/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.log
+
+# Python / Node
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.next/
+out/
+mirror/
+
+# Local review drop (mirror protocol) — never commit
+exports/review/
+
+# Cartoon-lab QC scratch (probe frames, contact sheets) — local only
+assets/badboys/cartoon-lab/*/tests/

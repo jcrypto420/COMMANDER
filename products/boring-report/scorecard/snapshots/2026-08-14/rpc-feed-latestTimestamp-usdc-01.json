@@ -1,0 +1,26 @@
+{
+  "fetched_at": "2026-08-14T23:09:32.993Z",
+  "url": "https://ethereum.publicnode.com",
+  "status": 200,
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0x3f73f03aa83b2a48ed27e964ed0fdb590332095b",
+        "data": "0x8205bf6a"
+      },
+      "latest"
+    ]
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+      "code": 3,
+      "message": "execution reverted",
+      "data": "0x"
+    }
+  }
+}

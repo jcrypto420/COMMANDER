@@ -1,0 +1,138 @@
+{
+  "issue": "zero",
+  "city": "OKC (Will Rogers, official)",
+  "generated_at": "2026-07-09T22:48:57.382384+00:00",
+  "grade_scale": [
+    [
+      1.0,
+      "A"
+    ],
+    [
+      1.5,
+      "A-"
+    ],
+    [
+      2.0,
+      "B+"
+    ],
+    [
+      2.5,
+      "B"
+    ],
+    [
+      3.0,
+      "B-"
+    ],
+    [
+      3.5,
+      "C+"
+    ],
+    [
+      4.0,
+      "C"
+    ],
+    [
+      5.0,
+      "D"
+    ],
+    [
+      99.0,
+      "F"
+    ]
+  ],
+  "days": [
+    {
+      "date": "2026-07-04",
+      "official_high": 100,
+      "ECMWF": 98.0,
+      "ECMWF_miss": -2.0,
+      "GFS": 101.9,
+      "GFS_miss": 1.9
+    },
+    {
+      "date": "2026-07-05",
+      "official_high": 88,
+      "ECMWF": 88.7,
+      "ECMWF_miss": 0.7,
+      "GFS": 89.9,
+      "GFS_miss": 1.9
+    },
+    {
+      "date": "2026-07-06",
+      "official_high": 92,
+      "ECMWF": 89.7,
+      "ECMWF_miss": -2.3,
+      "GFS": 94.3,
+      "GFS_miss": 2.3
+    },
+    {
+      "date": "2026-07-07",
+      "official_high": 93,
+      "ECMWF": 92.8,
+      "ECMWF_miss": -0.2,
+      "GFS": 95.6,
+      "GFS_miss": 2.6
+    },
+    {
+      "date": "2026-07-08",
+      "official_high": 98,
+      "ECMWF": 100.2,
+      "ECMWF_miss": 2.2,
+      "GFS": 100.9,
+      "GFS_miss": 2.9
+    },
+    {
+      "date": "2026-07-09",
+      "official_high": 98,
+      "ECMWF": 100.4,
+      "ECMWF_miss": 2.4,
+      "GFS": 99.4,
+      "GFS_miss": 1.4
+    }
+  ],
+  "scores": {
+    "ECMWF": {
+      "days": 6,
+      "avg_abs_miss": 1.6,
+      "bias": 0.1,
+      "grade": "B+"
+    },
+    "GFS": {
+      "days": 6,
+      "avg_abs_miss": 2.2,
+      "bias": 2.2,
+      "grade": "B"
+    }
+  },
+  "matchup_for": "2026-07-09",
+  "matchup": [
+    [
+      "NWS Norman",
+      101,
+      15,
+      "captures/2026-07-08_2012/nws_forecast.json"
+    ],
+    [
+      "ECMWF (robot)",
+      100.3,
+      37,
+      "captures/2026-07-08_2012/openmeteo_models.json"
+    ],
+    [
+      "GFS (robot)",
+      99.4,
+      8,
+      "captures/2026-07-08_2012/openmeteo_models.json"
+    ],
+    [
+      "KFOR 4Warn",
+      99,
+      10,
+      "captures/2026-07-08_2012/kfor_7day.jpg (vision-read)"
+    ]
+  ],
+  "provenance": {
+    "model_day1_forecasts": "previous-runs-api.open-meteo.com (prevruns_hourly.json)",
+    "official_highs": "api.weather.gov CLI products (cli_products.json), latest issuance per date"
+  }
+}

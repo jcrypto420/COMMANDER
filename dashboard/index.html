@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Commander Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{color-scheme:dark;--bg:#050507;--panel:#0f1011;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.15);--text:#f7f8f8;--soft:#d0d6e0;--muted:#8a8f98;--low:#62666d;--green:#00d992;--violet:#7170ff;--amber:#fbbf24;--red:#fb7185;--blue:#5ad3ff}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 8% -8%,rgba(113,112,255,.22),transparent 32%),radial-gradient(circle at 92% -4%,rgba(0,217,146,.18),transparent 34%),radial-gradient(circle at 50% 116%,rgba(90,211,255,.10),transparent 40%),var(--bg);letter-spacing:-.01em}.shell{max-width:1500px;margin:0 auto;padding:18px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid var(--line);background:rgba(15,16,17,.80);border-radius:20px;padding:15px 16px;backdrop-filter:blur(12px);box-shadow:0 20px 80px rgba(0,0,0,.28)}.brand{display:flex;align-items:center;gap:12px;min-width:0}.mark{width:36px;height:36px;border-radius:11px;border:1px solid rgba(0,217,146,.65);background:rgba(0,217,146,.08);box-shadow:0 0 22px rgba(0,217,146,.24);display:grid;place-items:center;color:var(--green);font-family:'JetBrains Mono';font-weight:700}.kicker,.label{font-family:'JetBrains Mono';text-transform:uppercase;letter-spacing:.16em;font-size:11px;color:var(--muted)}.kicker{color:var(--green);margin-bottom:4px}h1{margin:0;font-size:clamp(28px,4vw,50px);line-height:1;letter-spacing:-.05em;font-weight:600}.status-strip{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--soft);background:rgba(255,255,255,.025);font-family:'JetBrains Mono';font-size:11px;white-space:nowrap}.good{border-color:rgba(0,217,146,.4)!important;color:#b7ffe5!important}.warn{border-color:rgba(251,191,36,.42)!important;color:#fde68a!important}.bad{border-color:rgba(251,113,133,.42)!important;color:#fecdd3!important}.dot{display:inline-block;width:7px;height:7px;border-radius:99px;margin-right:6px;background:var(--green);box-shadow:0 0 12px var(--green)}.grid{display:grid;grid-template-columns:1.13fr .87fr;gap:14px;margin-top:14px}.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}.card{border:1px solid var(--line);background:rgba(15,16,17,.74);border-radius:18px;padding:16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.015),0 18px 60px rgba(0,0,0,.25)}.hot{border-color:rgba(0,217,146,.35);background:linear-gradient(180deg,rgba(0,217,146,.08),rgba(15,16,17,.78))}.violet{border-color:rgba(113,112,255,.35);background:linear-gradient(180deg,rgba(113,112,255,.10),rgba(15,16,17,.78))}.label{margin-bottom:10px}.label.green{color:var(--green)}.big{font-size:clamp(24px,3vw,40px);line-height:1.05;letter-spacing:-.04em;font-weight:600;margin-bottom:10px}.muted{color:var(--muted);line-height:1.5}.mono{font-family:'JetBrains Mono';font-size:12px;color:var(--soft)}.metric-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:16px}.metric{border:1px solid rgba(255,255,255,.06);border-radius:14px;background:rgba(255,255,255,.025);padding:12px}.metric b{font-size:24px;letter-spacing:-.04em}.metric span{display:block;margin-top:4px;color:var(--muted);font-family:'JetBrains Mono';font-size:10px}.brief,.stack{display:grid;gap:10px}.brief-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid rgba(255,255,255,.06);border-radius:12px;background:rgba(255,255,255,.025)}.icon{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;flex:0 0 auto;background:rgba(113,112,255,.14);color:#c7c6ff}.task-table{display:grid;gap:8px;max-height:420px;overflow:auto;padding-right:2px}.task{display:grid;grid-template-columns:68px 1fr auto;gap:10px;align-items:center;padding:10px;border:1px solid rgba(255,255,255,.06);border-radius:12px;background:rgba(255,255,255,.023)}.id{font-family:'JetBrains Mono';color:var(--green);font-size:12px}.task-title{color:var(--soft);font-size:14px}.task-sub{color:var(--muted);font-size:11px;margin-top:3px}.badge{border-radius:999px;padding:5px 8px;font-family:'JetBrains Mono';font-size:10px;border:1px solid var(--line);color:var(--muted)}.badge.doing{color:#b7ffe5;border-color:rgba(0,217,146,.38)}.badge.blocked{color:#fecdd3;border-color:rgba(251,113,133,.38)}.badge.done{color:#c7d2fe;border-color:rgba(113,112,255,.32)}.badge.todo{color:#fde68a;border-color:rgba(251,191,36,.32)}.terminal{font-family:'JetBrains Mono';font-size:12px;line-height:1.55;color:#b7ffe5;background:#050607;border:1px solid rgba(0,217,146,.22);border-radius:14px;padding:14px;overflow:auto;min-height:210px;white-space:pre-wrap}.cmd{color:var(--green)}.comment{color:#62666d}.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.svc{padding:12px;border:1px solid rgba(255,255,255,.06);border-radius:14px;background:rgba(255,255,255,.025);min-height:78px}.svc-name{display:flex;justify-content:space-between;gap:8px;color:var(--text);font-weight:600;margin-bottom:6px}.svc small{color:var(--muted);line-height:1.35}.tiny-dot{width:8px;height:8px;border-radius:99px;background:var(--green);margin-top:4px;box-shadow:0 0 10px rgba(0,217,146,.7)}.tiny-dot.gray{background:#62666d;box-shadow:none}.tiny-dot.warn{background:var(--amber);box-shadow:0 0 10px rgba(251,191,36,.6)}.approval{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px;border:1px solid rgba(251,191,36,.36);border-radius:14px;background:rgba(251,191,36,.07);margin-top:10px}.approval b{color:#fde68a}.button{border:1px solid rgba(0,217,146,.4);color:#b7ffe5;border-radius:10px;padding:9px 11px;font-family:'JetBrains Mono';font-size:11px;background:rgba(0,217,146,.07);white-space:nowrap}.footer{margin:14px 0 0;color:var(--low);font-family:'JetBrains Mono';font-size:11px;text-align:center}@media(max-width:1050px){.grid,.row{grid-template-columns:1fr}.metric-row{grid-template-columns:repeat(2,minmax(0,1fr))}.status-strip{justify-content:flex-start}.topbar{align-items:flex-start;flex-direction:column}}@media(max-width:560px){.metric-row,.services{grid-template-columns:1fr}.task{grid-template-columns:56px 1fr}.task .badge{grid-column:2}.shell{padding:10px}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <section class="topbar">
+    <div class="brand"><div class="mark">C</div><div><div class="kicker">Commander / private cockpit</div><h1>Money, agents, infra — one command surface.</h1></div></div>
+    <div id="statusStrip" class="status-strip"><div class="pill warn">loading state.json</div></div>
+  </section>
+
+  <section class="grid">
+    <div class="card hot">
+      <div class="label green">Today's money move</div>
+      <div id="moneyMove" class="big">Loading Commander state…</div>
+      <div id="activeFocus" class="muted"></div>
+      <div class="metric-row">
+        <div class="metric"><b id="sprintTarget">$6.9K</b><span>69-day sprint</span></div>
+        <div class="metric"><b id="doingCount">0</b><span>doing</span></div>
+        <div class="metric"><b id="blockedCount">0</b><span>blocked</span></div>
+        <div class="metric"><b id="dirtyCount">0</b><span>git changes</span></div>
+      </div>
+    </div>
+    <div class="card violet">
+      <div class="label">60-second review</div>
+      <div id="reviewList" class="brief"></div>
+      <div class="approval"><span><b>Next command:</b><br><span id="approvalPhrase" class="mono">Keep dashboard read-only until action layer is approved.</span></span><span class="button">private</span></div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="card"><div class="label">Task board</div><div id="tasks" class="task-table"></div></div>
+    <div class="card"><div class="label">Hermes / agents</div><div id="hermesTerminal" class="terminal"></div></div>
+    <div class="card"><div class="label">Sovereignty Stack</div><div id="services" class="services"></div></div>
+  </section>
+
+  <section class="grid">
+    <div class="card"><div class="label">Approval queue</div><div id="approvals" class="task-table"></div></div>
+    <div class="card"><div class="label">Learning / QOL loop</div><div id="learning" class="brief"></div></div>
+  </section>
+  <div id="footer" class="footer"></div>
+</main>
+<script>
+const fallback = {
+  generated_at: new Date().toISOString(),
+  host: {name:'commandcenter', lan_ip:'192.168.1.189'},
+  goals: {sprint_target:'$6.9K in 69 days', passive_income_target:'$6.9K/mo', weekly_time_budget:'10–20 hrs', weekly_cash_budget:'~$100/wk'},
+  focus: {active:'Command Center Dashboard v0', money_move:'Build a useful private dashboard, not a decorative toy.', review:['Open: dashboard/index.html','Decide: keep building read-only first']},
+  tasks: {doing:[], blocked:[], todo:[], approval:[], counts:{doing:0, blocked:0, todo:0, done:0}},
+  hermes: {provider:'OpenAI Codex', model:'gpt-5.5', telegram:'configured', gateway:'running', scheduled_jobs:'1 active'},
+  cron: {daily_loop_active:true, next_run:'unknown', deliver:'telegram:398335714', last_run:'unknown'},
+  git: {branch:'unknown', head:'unknown', dirty_count:0, changes:[]},
+  sovereignty: {services:[], docker:{available:false, containers:[]}},
+  learning: {today:'Dashboards are decision systems.', qol:'Telegram quick steering; dashboard cockpit review.', system_rule:'Private/Tailscale first.'},
+  safety:['no public ports','no secrets displayed','no spending']
+};
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function badgeClass(s){return ['doing','blocked','done','todo'].includes(s)?s:''}
+function taskRow(t){return `<div class="task"><div class="id">${esc(t.id)}</div><div><div class="task-title">${esc(t.task)}</div><div class="task-sub">${esc(t.project||'')} · ${esc(t.next_action||'')}</div></div><div class="badge ${badgeClass(t.status)}">${esc(t.status)}</div></div>`}
+function brief(icon,title,text){return `<div class="brief-item"><div class="icon">${icon}</div><div><b>${esc(title)}</b><div class="mono">${esc(text)}</div></div></div>`}
+function render(s){
+  const strip = [];
+  strip.push(`<div class="pill ${s.hermes?.telegram==='configured'?'good':'warn'}"><span class="dot"></span>Telegram ${esc(s.hermes?.telegram||'unknown')}</div>`);
+  strip.push(`<div class="pill ${s.hermes?.gateway==='running'?'good':'warn'}">Hermes ${esc(s.hermes?.gateway||'unknown')}</div>`);
+  strip.push(`<div class="pill ${s.cron?.daily_loop_active?'good':'warn'}">7am brief → ${esc(s.cron?.deliver||'unknown')}</div>`);
+  strip.push(`<div class="pill warn">LAN ${esc(s.host?.lan_ip||'unknown')}</div>`);
+  document.getElementById('statusStrip').innerHTML = strip.join('');
+  document.getElementById('moneyMove').textContent = s.focus?.money_move || 'No money move found';
+  document.getElementById('activeFocus').textContent = s.focus?.active || '';
+  document.getElementById('sprintTarget').textContent = s.goals?.sprint_target || '$6.9K';
+  document.getElementById('doingCount').textContent = s.tasks?.counts?.doing ?? 0;
+  document.getElementById('blockedCount').textContent = s.tasks?.counts?.blocked ?? 0;
+  document.getElementById('dirtyCount').textContent = s.git?.dirty_count ?? 0;
+  const review = (s.focus?.review?.length ? s.focus.review : ['No review items found']).slice(0,4);
+  document.getElementById('reviewList').innerHTML = review.map((x,i)=>brief(['🌅','👀','✅','🔒'][i]||'•', i===0?'Open / review':i===1?'Decision':'Context', x)).join('');
+  document.getElementById('approvalPhrase').textContent = (s.tasks?.approval?.[0]?.next_action) || 'Keep dashboard read-only; approve action layer later.';
+  const taskItems = [...(s.tasks?.doing||[]), ...(s.tasks?.blocked||[]), ...(s.tasks?.todo||[]).slice(0,5)];
+  document.getElementById('tasks').innerHTML = taskItems.length ? taskItems.map(taskRow).join('') : '<div class="muted">No tasks parsed.</div>';
+  document.getElementById('hermesTerminal').innerHTML = `<span class="cmd">commander.status</span>\nprovider: ${esc(s.hermes?.provider)}\nmodel: ${esc(s.hermes?.model)}\ngateway: ${esc(s.hermes?.gateway)}\ntelegram: ${esc(s.hermes?.telegram)}\ncron: daily-money-loop → ${esc(s.cron?.next_run)}\ndelivery: ${esc(s.cron?.deliver)}\nlast run: ${esc(s.cron?.last_run)}\ngit: ${esc(s.git?.branch)} @ ${esc(s.git?.head)} (${esc(s.git?.dirty_count)} changes)\n\n<span class="comment">subagent monitor: next stage hooks Hermes kanban/process state</span>`;
+  const services = s.sovereignty?.services || [];
+  document.getElementById('services').innerHTML = services.map(v=>`<div class="svc"><div class="svc-name">${esc(v.name)} <span class="tiny-dot ${v.present?'':'gray'}"></span></div><small>${esc(v.status)}</small></div>`).join('') || '<div class="muted">No sovereignty services found.</div>';
+  const approvals = s.tasks?.approval || [];
+  document.getElementById('approvals').innerHTML = approvals.length ? approvals.map(taskRow).join('') : '<div class="muted">No approval-gated active tasks parsed.</div>';
+  document.getElementById('learning').innerHTML = brief('🧠','Today',s.learning?.today||'') + brief('🏡','QOL',s.learning?.qol||'') + brief('🛡️','System rule',s.learning?.system_rule||'') + brief('🔒','Safety',(s.safety||[]).join(' / '));
+  document.getElementById('footer').textContent = `Generated ${s.generated_at} · ${s.host?.name||''} · ${s.host?.cwd||''}`;
+}
+fetch('state.json', {cache:'no-store'}).then(r=>r.ok?r.json():fallback).then(render).catch(()=>render(fallback));
+</script>
+</body>
+</html>

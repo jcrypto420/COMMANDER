@@ -1,0 +1,38 @@
+HTTP/2 301 
+date: Tue, 07 Jul 2026 20:03:55 GMT
+content-type: text/html
+content-length: 162
+location: https://tether.to/en/transparency/
+server: cloudflare
+cache-control: public, no-cache, must-revalidate
+x-locale-prefix: /en
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+referrer-policy: same-origin
+x-download-options: noopen
+strict-transport-security: max-age=31536000; includeSubdomains;
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+content-security-policy: frame-ancestors 'none';
+cf-cache-status: DYNAMIC
+cf-ray: a179748fff4f6b46-DFW
+
+HTTP/2 200 
+date: Tue, 07 Jul 2026 20:03:56 GMT
+content-type: text/html
+server: cloudflare
+last-modified: Thu, 18 Jun 2026 14:36:48 GMT
+vary: Accept-Encoding
+cf-cache-status: DYNAMIC
+cache-control: public, no-cache, must-revalidate
+x-locale-prefix: /en
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+referrer-policy: same-origin
+x-download-options: noopen
+strict-transport-security: max-age=31536000; includeSubdomains;
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+content-security-policy: frame-ancestors 'none';
+cf-ray: a1797492794f6b46-DFW
+
