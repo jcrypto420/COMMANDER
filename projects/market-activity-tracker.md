@@ -1,11 +1,11 @@
 # Market Activity Tracker
 
-## Status — 2026-09-23
-- **State:** PARKED (`MA-1` blocked) — draft-only config prep stays current; reopen after CI-1 loop runs smoothly for a week
-- **Last advanced:** 2026-09-23 — config-wiring draft note refreshed to match the live `configs/market_watchlist.json` shape and hard-coded fetcher lists, with a new 2026-09-23 public-source preflight and a concrete 12-step build sequence
-- **Next action (on reopen):** wire `configs/market_watchlist.json` into `scripts/fetch_market_activity.py`, then add daily snapshots
-- **Waiting on:** reopen condition
-- **Draft artifact:** `projects/market-activity-config-wiring-draft.md`
+## Status — 2026-09-26
+- **State:** PARKED (`MA-1` blocked) — config-wiring step implemented and smoke-tested; daily-snapshots design drafted; reopen after CI-1 loop runs smoothly for a week
+- **Last advanced:** 2026-09-26 — new daily-snapshots design note `projects/market-activity-snapshots-draft.md` written; converts the vague "add daily snapshots" next action into a concrete, build-ready design (Option A: single capped history file, fetcher history-write first, then `/market` change-vs-yesterday panel)
+- **Next action (on reopen):** implement the fetcher history-write step in `scripts/fetch_market_activity.py` (write `dashboard/market_activity_history.json` with `latest` + capped `snapshots[]` array), verify with a live run, then add a small `/market` "change vs yesterday" panel
+- **Waiting on:** reopen condition (CI-1 week-smooth)
+- **Draft artifacts:** `projects/market-activity-config-wiring-draft.md` (config-wiring, current — step implemented), `projects/market-activity-snapshots-draft.md` (daily-snapshots design, new 2026-09-26)
 
 ## Why this replaces the current angle
 

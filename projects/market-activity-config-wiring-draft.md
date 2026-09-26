@@ -71,4 +71,4 @@ Draft-only support artifact for `MA-1`. 2026-09-25 update: the config-wiring bui
 
 ## Reopen condition
 
-Stay parked until the CI-1 week-smooth reopen condition is met. When reopened, wire config into the fetcher, then add snapshots so the tracker shows change over time instead of latest state only.
+Stay parked until the CI-1 week-smooth reopen condition is met. When reopened, wire config into the fetcher, then add snapshots so the tracker shows change over time instead of latest state only. The daily-snapshots design note at `projects/market-activity-snapshots-draft.md` (written 2026-09-26) converts the snapshots step into a concrete, build-ready design: recommended Option A (single capped history file `dashboard/market_activity_history.json`, 30-day cap, same-day overwrite), fetcher history-write step first, then a `/market` "change vs yesterday" panel.

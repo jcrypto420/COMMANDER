@@ -23,6 +23,11 @@ One short entry per working day. What advanced + estimated spend.
 - All work stayed local-only and no-send; no account creation, external submission, compensation claim, or travel commitment occurred. No morning report composed or delivered.
 - Estimated spend: $0.00 incremental API spend; used public no-login Lever source fetches (2 pages via web_extract) plus local repo edits only.
 
+- **DRAFT-ONLY DESIGN COMPLETE (MA-1):** wrote the daily-snapshots design note at `projects/market-activity-snapshots-draft.md`. The config-wiring build step is already implemented and smoke-tested in `scripts/fetch_market_activity.py`; this new note converts the vague "add daily snapshots" next action into a concrete, reviewable design for when the lane reopens. Recommendation: Option A (single capped history file `dashboard/market_activity_history.json` with 30-day cap, same-day overwrite for duplicate dates, `latest` + `snapshots[]` shape), fetcher history-write step first, then a small `/market` "change vs yesterday" panel derived from the existing latest snapshot plus dated history. Documented explicit non-goals: no public exposure, no alerts/Telegram delivery, no RSS wiring, no new thresholds, no keys/accounts/paid endpoints/trading. No API keys, accounts, posting, sending, spending, or trading introduced; no external calls beyond public no-login source research already on file.
+- Goal check: advanced Family Freedom Engine / Boring Report lane surface only; MA-1 stays parked behind the CI-1 week-smooth reopen condition.
+- Alignment check: stayed local-only, no-send, no publication, no payment, no account action; used the current session model plus local repo edits only.
+- Estimated spend: $0.00 incremental API spend; used the current session model plus local repo edits only.
+
 ## 2026-09-24
 
 - Git sync: fetched all remotes, rebased onto origin/main (removed generated `dashboard/state.json` blocker during rebase), pulled --rebase to ensure absolute latest. Working tree clean.
