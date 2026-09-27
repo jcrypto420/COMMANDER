@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cartoon-lab-review",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["scripts/range_server.py", "8934"],
+      "port": 8934
+    }
+  ]
+}

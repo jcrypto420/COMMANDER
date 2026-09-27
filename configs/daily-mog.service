@@ -1,0 +1,22 @@
+[Unit]
+Description=THE DAILY MOG — generate live data + auto-print on boot
+After=network-online.target time-sync.target
+Wants=network-online.target time-sync.target
+# This Pi has no battery-backed RTC (hwclock: "Cannot access the Hardware
+# Clock via any known method"). On boot the system clock restores a stale
+# saved timestamp until NTP corrects it — network-online.target alone does
+# NOT wait for that correction, only for the network interface being up.
+# time-sync.target does, but only if systemd-time-wait-sync.service is
+# enabled (it ships disabled on Debian/Raspbian — enable it separately:
+# `sudo systemctl enable systemd-time-wait-sync.service`). Without both
+# fixes, this unit can run with yesterday's date still in the system clock
+# (this bit us on 2026-07-07 — it printed "July 6" content on July 7).
+
+[Service]
+Type=oneshot
+User=josh
+WorkingDirectory=/home/josh/COMMANDER
+ExecStart=/usr/bin/env bash /home/josh/COMMANDER/scripts/run_daily_mog_boot.sh
+
+[Install]
+WantedBy=multi-user.target

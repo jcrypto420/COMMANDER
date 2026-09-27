@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>weekly front</title>
+<style>
+  :root { --ink:#1a1917; --muted:#6b6862; --faint:#98948c; --accent:#a32d2d; --rule:#d8d4cc; --bg:#faf8f3; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,"Helvetica Neue",sans-serif; width:860px; margin:0 auto; padding:40px 48px 30px; }
+  .rule3 { border-top:3px solid var(--ink); }
+  .mock { position:absolute; top:14px; right:48px; font-size:10px; letter-spacing:1.5px; color:#fff; background:var(--accent); padding:3px 10px; }
+  .mast { display:flex; justify-content:space-between; align-items:baseline; padding:10px 0 8px; border-bottom:1px solid var(--ink); margin-bottom:18px; }
+  .mast h1 { font-family:Georgia,serif; font-size:23px; font-weight:700; white-space:nowrap; } .mast h1 span { color:var(--faint); }
+  .mast .date { font-size:13px; color:var(--muted); text-align:right; }
+  .lede { font-family:Georgia,serif; font-size:20px; line-height:1.5; margin:2px 0 14px; }
+  .lede b { color:var(--accent); }
+  .body-copy { font-size:15px; color:var(--muted); line-height:1.65; margin-bottom:22px; max-width:660px; }
+  .body-copy b { color:var(--ink); }
+  h2 { font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+  h2 span { color:var(--faint); font-weight:400; letter-spacing:.2px; text-transform:none; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th { font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--faint); text-align:left; padding:4px 8px; border-bottom:1px solid var(--ink); }
+  td { padding:8px; border-bottom:1px solid var(--rule); font-size:15px; }
+  th.n, td.n { text-align:right; }
+  .who { font-weight:700; } .rec { font-weight:700; font-size:16px; }
+  .chip { font-size:9px; border:1px solid var(--ink); padding:1px 4px; letter-spacing:1px; margin-left:6px; vertical-align:1px; }
+  .chip.r { background:var(--ink); color:#fff; }
+  .up { color:#2e6b2e; font-weight:700; } .dn { color:var(--accent); font-weight:700; }
+  .cols { display:flex; gap:34px; margin-bottom:20px; }
+  .cols > div:first-child { flex:1.15; } .cols > div:last-child { flex:1; }
+  .receipt img { width:100%; border:1px solid var(--ink); display:block; }
+  .cap { font-size:12px; color:var(--muted); padding-top:6px; line-height:1.5; }
+  .said-did { display:flex; gap:0; margin-top:8px; border:1px solid var(--rule); }
+  .said-did div { flex:1; padding:8px 12px; font-size:13px; }
+  .said-did div:first-child { border-right:1px solid var(--rule); }
+  .said-did b { display:block; font-size:10px; letter-spacing:1px; color:var(--accent); }
+  .foot { border-top:3px solid var(--ink); padding-top:8px; font-size:11px; color:var(--faint); display:flex; justify-content:space-between; }
+  .foot i { font-family:Georgia,serif; color:var(--muted); }
+</style></head><body>
+  <div class="mock">LAYOUT MOCK · NUMBERS ILLUSTRATIVE UNTIL WEEK ONE COMPLETES</div>
+  <div class="rule3"></div>
+  <div class="mast">
+    <h1><span>[NAME PENDING]</span> · Weekly Review</h1>
+    <div class="date">Week 28 · July 6–12, 2026 · Oklahoma City · Side A</div>
+  </div>
+
+  <div class="lede"><b>The robots had a bad week, and one station knew it.</b></div>
+  <div class="body-copy">
+    KFOR went <b>26–16</b> and takes the July lead on the strength of three exact
+    lows — the quiet stat nobody brags about on air. The European model spent
+    the week two degrees warm and paid for it. The only measurable rain fell
+    Tuesday at 9:40 in the morning, a full six hours before the window every
+    channel had circled; nobody wins Tuesday. <b>Doghouse of the week:</b> a 40%
+    Saturday that produced the driest air since June. Full ledger overleaf.
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Standings <span>· July, through week 28 · round-robin per night</span></h2>
+      <table>
+        <tr><th></th><th>Forecaster</th><th class="n">W–L</th><th class="n">Pct</th><th class="n">Wk</th></tr>
+        <tr><td>1</td><td class="who">KFOR 4Warn</td><td class="n rec">26–16</td><td class="n">.619</td><td class="n up">▲2</td></tr>
+        <tr><td>2</td><td class="who">GFS<span class="chip r">ROBOT</span></td><td class="n rec">25–17</td><td class="n">.595</td><td class="n dn">▼1</td></tr>
+        <tr><td>3</td><td class="who">News 9</td><td class="n rec">23–19</td><td class="n">.548</td><td class="n">—</td></tr>
+        <tr><td>4</td><td class="who">NWS Norman</td><td class="n rec">21–21</td><td class="n">.500</td><td class="n up">▲1</td></tr>
+        <tr><td>5</td><td class="who">ECMWF<span class="chip r">ROBOT</span></td><td class="n rec">19–23</td><td class="n">.452</td><td class="n dn">▼2</td></tr>
+        <tr><td>6</td><td class="who">KOCO 5</td><td class="n rec">18–24</td><td class="n">.429</td><td class="n">—</td></tr>
+        <tr><td>7</td><td class="who">Fox 25</td><td class="n rec">15–27</td><td class="n">.357</td><td class="n">—</td></tr>
+      </table>
+      <div class="cap">Monthly pennant · seasonal championship (severe season is the marquee) · trust weights roll 30 days and never reset.</div>
+    </div>
+    <div>
+      <h2>Receipt of the week</h2>
+      <div class="receipt">
+        <img src="kfor_7day.jpg" alt="Archived broadcast 7-day graphic">
+        <div class="said-did">
+          <div><b>THEY SAID</b>Saturday: 40% storms</div>
+          <div><b>IT DID</b>Bone dry. Dew point 48.</div>
+        </div>
+        <div class="cap">Archived Wednesday 8:12 PM · sha256 1a43790c… · the original file is the receipt.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div>Grading: nightly round-robin on highs, lows, and rain calls (Brier-scored) · methodology public · channels graded, named humans never.</div>
+    <div><i>The sky keeps score. We keep receipts.</i></div>
+  </div>
+</body></html>

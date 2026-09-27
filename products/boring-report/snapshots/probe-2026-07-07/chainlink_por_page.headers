@@ -1,0 +1,19 @@
+HTTP/2 200 
+date: Tue, 07 Jul 2026 20:03:22 GMT
+content-type: text/html; charset=utf-8
+content-length: 91
+cf-ray: a17973bdff6ddad6-DFW
+cf-cache-status: DYNAMIC
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="addresses"
+etag: "8d8951132f4e1f7042e173f4b984385d"
+last-modified: Tue, 07 Jul 2026 20:03:22 GMT
+server: cloudflare
+strict-transport-security: max-age=0; includeSubDomains
+vary: Accept-Encoding, X-Middleware-Prefetch
+x-vercel-cache: MISS
+x-vercel-id: cle1::p2ffz-1783454602029-dd453b98eeea
+

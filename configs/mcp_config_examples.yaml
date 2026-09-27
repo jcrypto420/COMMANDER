@@ -1,0 +1,32 @@
+# MCP config EXAMPLES — start minimal, add one server at a time.
+# VERIFY exact schema: https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp
+# See MCP_PLAN.md and SECURITY.md.
+
+# === Phase 1: minimal (start here) ===
+mcp_servers:
+  # Read-only filesystem scoped to this repo.
+  filesystem_readonly:
+    command: VERIFY          # e.g. npx -y @modelcontextprotocol/server-filesystem
+    args:
+      - "."                  # scope: command-center repo only
+    permissions:
+      read: true
+      write: false
+      delete: false
+
+# === Phase 2: after base system stable + approvals proven (commented out) ===
+#  github:
+#    command: VERIFY
+#    env:
+#      GITHUB_TOKEN: ${GITHUB_TOKEN}   # from local .env, never committed
+#    permissions:
+#      read_issues: true
+#      write_issues: approval_required
+#      push: approval_required
+
+# === Phase 3: later, deliberately (commented out) ===
+#  browser: { command: VERIFY, sandbox: true }
+#  database: { command: VERIFY }
+
+# Hard limits: no financial-account, wallet/private-key, autonomous-spending,
+# or broad Gmail/calendar tools yet (SECURITY.md).

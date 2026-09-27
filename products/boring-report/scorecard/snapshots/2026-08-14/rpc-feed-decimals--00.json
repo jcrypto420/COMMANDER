@@ -1,0 +1,25 @@
+{
+  "fetched_at": "2026-08-14T23:07:23.897Z",
+  "url": "https://ethereum.publicnode.com",
+  "status": 200,
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "eth_call",
+    "params": [
+      {
+        "to": "0xfaaa5e550145215e",
+        "data": "0x313ce567"
+      },
+      "latest"
+    ]
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+      "code": -32602,
+      "message": "invalid argument 0: hex string has length 16, want 40 for common.Address"
+    }
+  }
+}

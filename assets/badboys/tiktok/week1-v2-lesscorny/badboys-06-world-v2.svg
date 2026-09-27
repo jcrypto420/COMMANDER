@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="78%"><stop offset="0" stop-color="#24252b"/><stop offset=".55" stop-color="#101216"/><stop offset="1" stop-color="#050506"/></radialGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .09"/></feComponentTransfer></filter>
+<filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".55"/></filter>
+<style>text{font-family:Inter,Arial,Helvetica,sans-serif} .meta{letter-spacing:.18em} .tight{letter-spacing:-.018em}</style>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" filter="url(#grain)" opacity=".6"/>
+<rect x="48" y="48" width="984" height="1824" fill="none" stroke="#65da55" stroke-width="9"/>
+<text x="86" y="118" class="meta" font-size="27" fill="#65da55" font-weight="750">BAD BOYS / 06 / WORLD SIGNAL</text>
+<g>
+<rect x="105" y="330" width="270" height="280" rx="24" fill="#070708" stroke="#65da55" stroke-width="6"/><text x="240" y="438" text-anchor="middle" font-size="40" fill="#65da55" font-weight="900">ROBLOX</text><text x="240" y="508" text-anchor="middle" font-size="32" fill="#f7f3ea">badge world</text>
+<rect x="405" y="330" width="270" height="280" rx="24" fill="#070708" stroke="#65da55" stroke-width="6"/><text x="540" y="438" text-anchor="middle" font-size="40" fill="#65da55" font-weight="900">COMIC</text><text x="540" y="508" text-anchor="middle" font-size="32" fill="#f7f3ea">short lore</text>
+<rect x="705" y="330" width="270" height="280" rx="24" fill="#070708" stroke="#65da55" stroke-width="6"/><text x="840" y="438" text-anchor="middle" font-size="40" fill="#65da55" font-weight="900">TOY</text><text x="840" y="508" text-anchor="middle" font-size="32" fill="#f7f3ea">desk object</text>
+</g>
+<rect x="82" y="850" width="916" height="510" rx="30" fill="#050506" fill-opacity=".88" stroke="#65da55" stroke-width="4" filter="url(#shadow)"/>
+<text x="122" y="1010" font-size="76" font-weight="800" fill="#f7f3ea" class="tight">PICK THE</text>
+<text x="122" y="1092" font-size="76" font-weight="800" fill="#f7f3ea" class="tight">FIRST WORLD.</text>
+<rect x="82" y="1458" width="916" height="190" rx="24" fill="#65da55" opacity=".95"/>
+<text x="126" y="1535" font-size="34" font-weight="850" fill="#050506">POST CAPTION</text>
+<text x="126" y="1600" font-size="38" font-weight="650" fill="#050506">roblox / comic / toy</text>
+<text x="86" y="1788" class="meta" font-size="26" fill="#d7d1c7" opacity=".82">@BEBAD4GOOD</text>
+</svg>
