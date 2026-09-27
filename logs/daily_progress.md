@@ -2,6 +2,14 @@
 
 One short entry per working day. What advanced + estimated spend.
 
+## 2026-09-27
+
+- Git sync: fetched all remotes, rebased onto `origin/feat/command-center-scaffolding` (the branch origin/main points to), resolved 16 merge conflicts across scaffold files (took upstream versions for new scaffold files: app/, docs/, next.config.mjs, package.json, package-lock.json, scripts/, projects/command-center-dashboard-v0.md, COMMANDER_OPERATING_RHYTHM_V1.md, WEEKLY_MONEY_REVIEW.md, .gitignore) and preserved local versions for operational files (NOW.md, TASK_QUEUE.md, logs/daily_progress.md, logs/model_usage.csv). Working tree clean after recovery from overnight Pi power-off/reboot; branch is now `feat/command-center-scaffolding` at commit `c6af5a9`.
+- **CI-1 DRAFT-AHEAD COMPLETION (secondary):** created the missing `next-step-note.md` for Anchorage Digital **Member of Trading Operations** (posting ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`) — `packet.md` + `decision-brief.md` + `source-recheck-note.md` + `next-step-note.md` now all exist and are source-verified against the live Lever posting. The secondary candidate is now fully drafted-ahead as the backup CI-1 surface if the Transformation Lead gate stays closed. This role still shows **United States / Remote-US** on the 2026-09-26 recheck (did NOT change to Singapore like the primary), has in-person onboarding confirmed, compensation not disclosed, and requires rotational weekend/holiday coverage.
+- **CI-1 TASK QUEUE UPDATE:** refreshed the CI-1 row in `TASK_QUEUE.md` to clearly separate the PRIMARY decision surface (Transformation Lead, Singapore location change, 4 open Josh decisions) from the SECONDARY draft-ahead (Member of Trading Operations, US location retained, fully packeted, ready as fallback). Both candidates remain in `todo` status with approval=yes.
+- All work stayed local-only and no-send; no account creation, external submission, compensation claim, or travel commitment occurred. No morning report composed or delivered.
+- Estimated spend: $0.00 incremental API spend; used local repo edits plus existing 2026-09-26 source recheck notes already on file.
+
 ## 2026-09-23
 
 - Git sync: fetched all remotes, rebased onto origin/main (removed generated `dashboard/state.json` blocker during rebase), pulled --rebase to ensure absolute latest.
