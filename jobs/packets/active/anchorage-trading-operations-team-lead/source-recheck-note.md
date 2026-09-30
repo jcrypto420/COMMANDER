@@ -1,12 +1,12 @@
 # Anchorage Trading Operations Transformation Lead — Source Recheck Note
 
 **Status:** public-source preflight only; no application, outreach, account, or payment action.
-**Checked:** 2026-09-26 07:15 UTC (morning loop fresh recheck)
+**Checked:** 2026-09-30 09:30 UTC (morning loop fresh recheck after overnight Pi reboot)
 **Official source:** https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408
 
 ## Live no-login source evidence
 
-Fetched Anchorage Digital's official public jobs page at the individual posting URL on the 2026-09-26 recheck:
+|Fetched Anchorage Digital's official public jobs page at the individual posting URL on the 2026-09-30 recheck (fresh re-fetch after overnight Pi reboot):
 
 - The posting ID `b3c332bc-ffc5-4a2f-ab3e-de136d326408` is **still live**.
 - **Title:** Trading Operations, Transformation Lead (unchanged).
@@ -28,28 +28,27 @@ The posting states: **"we have a security policy mandating all new hires complet
 
 - If the role is based in Singapore with remote work option, Josh would need to travel to Singapore for the mandatory in-person onboarding event.
 - The combination of Singapore location + mandatory in-person onboarding + "Remote" label needs Josh's explicit go/no-go — this is materially different from the prior United States / Remote-US framing.
-- This needs Josh's explicit go/no-go before any application discussion.
+- This is now the stable baseline (unchanged since the 2026-09-26 recheck); Josh's explicit go/no-go is still needed before any application discussion.
 
 ### Compensation
 
 Not disclosed on the public page (no salary range visible).
 
-## What changed since the 2026-09-24 recheck
+## What changed since the 2026-09-26 recheck
 
-| Field | 2026-09-24 | 2026-09-26 |
-|---|---|---|
+|| Field | 2026-09-26 | 2026-09-30 (fresh recheck after overnight Pi reboot) |
+|---|---|---|----|
 | Title | Trading Operations, Transformation Lead | Trading Operations, Transformation Lead (unchanged) |
 | Posting ID | b3c332bc-ffc5-4a2f-ab3e-de136d326408 | b3c332bc-ffc5-4a2f-ab3e-de136d326408 (unchanged) |
-| **Location** | **United States** | **Singapore ← CHANGED** |
-| Workplace | Remote — United States | Remote (Full-Time - Remote) — location now Singapore |
+| **Location** | **Singapore** | **Singapore (unchanged)** |
+| Workplace | Remote (Full-Time - Remote) — location now Singapore | Remote (Full-Time - Remote) — location still Singapore (unchanged) |
 | In-person onboarding | Present | Present (unchanged) |
-| Total Anchorage postings | 20 | unverified this pass |
 | Compensation | not disclosed | not disclosed (unchanged) |
 
 ## Interpretation
 
-The role's title and scope framing are unchanged, but the **location changed from United States to Singapore** — a material scope change not present in the 2026-09-24 note. The in-person onboarding requirement is confirmed and now paired with a Singapore base. This is a significant pivot from the prior remote-US framing and needs Josh's disposition before any application discussion.
+The role's title and scope framing are unchanged since the 2026-09-26 recheck, and the **location remains Singapore as of the 2026-09-30 recheck** — the material scope change from United States → Singapore first observed on 2026-09-26 is now part of the baseline. The role still has not changed back to United States, and the in-person onboarding requirement is still present. The open decision question is unchanged: Josh's go/no-go on Singapore-based remote work and mandatory in-person onboarding travel to Singapore is still needed before any application discussion.
 
 ## Guardrail
 
-This note verifies the live public state of the Anchorage Trading Operations, Transformation Lead role as of 2026-09-26. It is not an approval to apply, create an account, contact Anchorage, or make salary claims.
+This note verifies the live public state of the Anchorage Trading Operations, Transformation Lead role as of 2026-09-30. It is not an approval to apply, create an account, contact Anchorage, or make salary claims.

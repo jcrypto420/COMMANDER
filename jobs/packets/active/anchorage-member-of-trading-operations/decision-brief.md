@@ -2,13 +2,13 @@
 
 **Status:** draft-only companion to the live CI-1 secondary candidate.
 **Verdict requested:** advance only if the Transformation Lead gate stays closed; otherwise hold.
-**Morning sync:** 2026-09-26 re-entry — drafted ahead on 2026-09-23; both Anchorage postings re-fetched from the live no-login Lever pages on 2026-09-26 and confirmed still open. **Rechecked 2026-09-26:** this posting still shows **United States / Remote — United States** (it did NOT change to Singapore like the Transformation Lead role). Fresh detail captured: this posting also carries the **in-person onboarding requirement** ("mandating all new hires complete an in-person onboarding process - no exceptions") — reconfirmed on the 2026-09-26 recheck.
+**Morning sync:** 2026-09-30 re-entry after overnight Pi reboot — drafted ahead on 2026-09-23; both Anchorage postings **fresh re-fetched from the live no-login Lever pages on 2026-09-30** and confirmed still open. **Rechecked 2026-09-30:** this posting still shows **United States / Remote — United States** (unchanged from the 2026-09-26 recheck — it did NOT change to Singapore, unlike the Transformation Lead role). The 2026-09-26 finding is now baseline. Fresh detail captured on the 2026-09-30 recheck: this posting also still carries the **in-person onboarding requirement** ("mandating all new hires complete an in-person onboarding process - no exceptions") — reconfirmed unchanged.
 
 ## Why this one (as fallback)
 
-- **Remote US** and officially live (reverified 2026-09-26).
+- **Remote US** and officially live (reverified 2026-09-30).
 - Second live Anchorage role surfaced on the 2026-09-22 recheck; same Global Operations → Trading Operations department as the primary candidate.
-- **Still shows United States / Remote — United States on the 2026-09-26 recheck** (unlike the Transformation Lead role, which changed to Singapore).
+- **Still shows United States / Remote — United States on the 2026-09-30 recheck** (unchanged from 2026-09-26 — unlike the Transformation Lead role, which changed to Singapore on 2026-09-26 and has not changed back). The 2026-09-26 finding is now baseline and confirmed as of today.
 - Exact overlap with Josh's strongest evidence: institutional settlement, exception handling, funding details, reconciliation mindset, controls, and multi-party coordination.
 - Crypto-native institutional platform; not sales and not an engineering masquerade.
 - Individual-contributor framing: does not assert prior global-team leadership, which avoids the most honest stretch item from the Transformation Lead packet.
@@ -57,5 +57,5 @@ Source: [official Anchorage Digital posting](https://jobs.lever.co/anchorage/0f1
 
 - Compensation not disclosed — same unresolved screen as the primary candidate.
 - Rotational weekend/holiday coverage — needs Josh's go/no-go.
-- In-person onboarding mandate — needs Josh's go/no-go; may affect the "remote" framing; confirmed on 2026-09-26 recheck.
+- In-person onboarding mandate — needs Josh's go/no-go; may affect the "remote" framing; confirmed on 2026-09-26 recheck, reconfirmed unchanged on 2026-09-30 recheck.
 - Coverage of spot, lending, and derivatives operations — Josh's direct experience is settlement/reconciliation-centric; frame honestly.

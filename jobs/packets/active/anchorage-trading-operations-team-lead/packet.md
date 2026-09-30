@@ -3,8 +3,8 @@
 **Status:** DRAFT / decision surface — not applied, not sent, and no account action taken; see `application-form-preflight.md` for the remaining pay/scope answer bank.
 **Official source:** [Anchorage Digital Lever posting](https://jobs.lever.co/anchorage/b3c332bc-ffc5-4a2f-ab3e-de136d326408) — Singapore, remote.
 **Title note:** the posting was previously titled "Trading Operations Team Lead"; the live title is **\"Trading Operations, Transformation Lead\"** (same posting ID). See `source-recheck-note.md`.
-**Source check:** official public Lever jobs page fetched without login on 2026-09-26 (morning loop fresh recheck); the role was still listed as open, but **location changed from United States to Singapore** — a material scope change. **Compensation is not disclosed.** See `source-recheck-note.md`.
-**Morning sync:** 2026-09-26 morning re-entry — repo sync/rebase recovered cleanly after the overnight Pi reboot; the live no-login source surface was rechecked. **NEW 2026-09-26 finding:** the location field now shows **Singapore** instead of the United States documented in prior rechecks — this is a material scope change. The in-person onboarding requirement is confirmed. The packet is updated to reflect the new location.
+**Source check:** official public Lever jobs page fetched without login on 2026-09-30 (morning loop fresh recheck after overnight Pi reboot); the role was still listed as open, with the location showing **Singapore** (changed from United States on 2026-09-26, unchanged since). **Compensation is not disclosed.** See `source-recheck-note.md`.
+**Morning sync:** 2026-09-30 morning re-entry after overnight Pi reboot — repo sync/rebase recovered cleanly; both Anchorage postings **fresh re-fetched from the live no-login Lever pages on 2026-09-30** and confirmed still open. **No change from the 2026-09-26 recheck:** the location field still shows **Singapore** (changed from United States on 2026-09-26, unchanged since); the in-person onboarding requirement is still present. The packet is updated to reflect the current live state.
 **Compensation:** not disclosed on the public page on the 2026-09-26 recheck. Confirm the base is at least $120K (preferably $150K+) before any application discussion — and confirm whether Singapore-based remote is acceptable given Josh's current location/circumstances.
 
 ## Role in one line
@@ -76,4 +76,4 @@ Then prepare final resume and application-form answers. Never submit, send, crea
 
 ## Secondary live candidate noted
 
-Anchorage's board also lists **\"Member of Trading Operations\"** (posting ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States) as of 2026-09-26. This is a separate CI-1 candidate and should be scanned if the Transformation Lead gate stays closed. Not yet packaged.
+Anchorage's board also lists **"Member of Trading Operations"** (posting ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States) as of 2026-09-26. This is a separate CI-1 candidate and the prepared secondary CI-1 surface if the Transformation Lead gate stays closed: `packet.md` + `decision-brief.md` + `source-recheck-note.md` + `next-step-note.md` all exist and are source-verified against the live Lever posting. Same in-person onboarding requirement applies.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T20:59:50.630082+00:00",
+  "generated_at": "2026-09-30T14:11:42.898039+00:00",
   "host": {
     "name": "commandcenter",
     "lan_ip": "192.168.1.189",
@@ -12,406 +12,171 @@
     "weekly_cash_budget": "~$100/week"
   },
   "focus": {
-    "active": "Command Center reliability + 69-day revenue sprint discovery.",
+    "active": "`CI-1 Daily job/application process` continues, but Coinbase is done; the decision lane now shifts to the next best-fit role in `jobs/TRACKER.md`.",
     "next3": [
-      "Tomorrow hard start: review `projects/tomorrow-hard-start-2026-06-29.md`,",
-      "If Josh approves the real-asset setup, Josh creates TikTok `bebad4good` from",
-      "Build Command Center Dashboard v0 from `projects/command-center-dashboard-v0.md`"
+      "`CI-1` (doing): **Coinbase is already applied and archived.** Check `jobs/TRACKER.md` first, then pick the next best-fit role and build the packet same-day.",
+      "`CC-24`: morning dispatch = 5 phone-screen lines, ONE bolded decision (keep the morning brief locked in `MORNING_REPORT.md`).",
+      "Push lanes (midday/evening): `BR-0` Boring Report PRD Milestone P0 (new product greenlit 2026-07-05 — see `projects/boring-report-prd.md`), `BB-24` sellable artifact, `PS-1` fall offer draft."
     ],
-    "money_move": "Made the morning loop easier to scan: one top-level brief, one decision, clear status, no log-diving.",
+    "money_move": "Clean the operating loop before adding more features.",
     "review": [
-      "Open: `assets/badboys/account-ready-real-assets-v0/review-gallery.html`",
-      "Decide: `APPROVE REAL ASSET ACCOUNT PREP` or `RUN IN-1 LEAD VERIFY`"
+      "Open: NOW.md"
     ]
   },
   "tasks": {
     "all": [
       {
-        "id": "CC-1",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Create repo scaffolding",
-        "status": "done",
-        "next_action": "—",
-        "approval": "no"
-      },
-      {
-        "id": "CC-2",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Inventory the Pi",
-        "status": "done",
-        "next_action": "aarch64, Debian 12, 31G free",
-        "approval": "no"
-      },
-      {
-        "id": "CC-3",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Verify Hermes install command vs live docs",
-        "status": "done",
-        "next_action": "verified 2026-06-27",
-        "approval": "no"
-      },
-      {
-        "id": "CC-4",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Install Hermes on Pi",
-        "status": "done",
-        "next_action": "v0.17.0 in ~/.local/bin",
-        "approval": "yes"
-      },
-      {
-        "id": "CC-5",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Create `commander` profile + provider",
-        "status": "done",
-        "next_action": "Codex/ChatGPT OAuth",
-        "approval": "yes"
-      },
-      {
-        "id": "CC-6",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Run first safe Hermes task (read-only)",
-        "status": "done",
-        "next_action": "summary passed",
-        "approval": "no"
-      },
-      {
-        "id": "CC-7",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Add OpenRouter as cheap fallback tier",
-        "status": "done",
-        "next_action": "fallback: codex → gemini-2.5-flash → llama-3.1-8b",
-        "approval": "yes"
-      },
-      {
-        "id": "CC-8",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Daily make-money loop as cron (draft-only)",
-        "status": "done",
-        "next_action": "live; fires 7am daily; test run produced correct draft",
-        "approval": "yes"
-      },
-      {
-        "id": "CC-9",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Gateway service (cron scheduler)",
-        "status": "done",
-        "next_action": "user-level (non-root), linger on, NO listening ports",
-        "approval": "yes"
-      },
-      {
-        "id": "CC-10",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Private phone access (Tailscale-first)",
-        "status": "todo",
-        "next_action": "try Tailscale SSH / dashboard before any chat platform",
-        "approval": "yes"
-      },
-      {
-        "id": "CC-11",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Apply approved onboarding intake doc updates",
-        "status": "done",
-        "next_action": "GOALS/NOW/project files updated from INTAKE.md",
-        "approval": "no"
-      },
-      {
-        "id": "CC-12",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Model delegation and token-budget workflow",
-        "status": "done",
-        "next_action": "project-lead protocol added to MODEL_DELEGATION.md",
-        "approval": "no"
-      },
-      {
-        "id": "CC-13",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Test model-specific worker pattern",
-        "status": "todo",
-        "next_action": "run one cheap read-only worker and log result",
-        "approval": "no"
-      },
-      {
-        "id": "CC-14",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Command Center Dashboard v0",
-        "status": "doing",
-        "next_action": "static prototype + integration plan drafted; next build read-only state generator",
-        "approval": "no"
-      },
-      {
-        "id": "CC-15",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Commander operating rhythm v1",
-        "status": "done",
-        "next_action": "drafted `COMMANDER_OPERATING_RHYTHM_V1.md",
-        "approval": "no"
-      },
-      {
-        "id": "CC-16",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Weekly Money / Revenue Review Telegram report",
-        "status": "done",
-        "next_action": "cron `weekly-money-review` live Mondays 8am; first run created `WEEKLY_MONEY_REVIEW.md",
-        "approval": "yes"
-      },
-      {
-        "id": "REV-1",
-        "project": "Revenue Sprint",
-        "priority": "1",
-        "task": "Choose first 69-day revenue sprint experiment",
-        "status": "done",
-        "next_action": "selected Bad Boys/Joycat/Mog primary sprint; see `SPRINT_69.md",
-        "approval": "no"
-      },
-      {
-        "id": "IN-1",
+        "id": "CI-1",
         "project": "Career/Income",
-        "priority": "2",
-        "task": "First lead list + 1 outreach draft",
-        "status": "done",
-        "next_action": "draft saved in `projects/in-1-lead-list-outreach-draft-2026-06-29.md`; verify named leads before any sending",
+        "priority": "1",
+        "task": "Job search per `jobs/SEARCH_PLAYBOOK.md",
+        "status": "doing",
+        "next_action": "Chainlink Sr Solutions Eng CLOSED, successor role checked+REJECTED (bad fit, sales-heavy — see tracker). The 2026-07-02 slate has fully decayed; NEXT: fresh Tier-1 discovery pass per SEARCH_PLAYBOOK.md, not another stale row",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-24",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "5-line daily dispatch",
+        "status": "todo",
+        "next_action": "keep the 5-line morning brief locked in `MORNING_REPORT.md` and `projects/command-center-dashboard-v0.md`; tomorrow verify the 07:30 dispatch lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and ONE bolded decision, then archive",
         "approval": "no"
       },
       {
-        "id": "BB-1",
+        "id": "BB-25",
         "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Public Joycat/Mog/Mogcoin research + asset inventory",
-        "status": "done",
-        "next_action": "strategist package inspected; brand consistency draft next",
+        "priority": "1",
+        "task": "CARTOON LAB pilot — P4 \"T+2\" IN PRODUCTION",
+        "status": "doing",
+        "next_action": "Gate 1 passed (all 4 shipped). Josh rigs puppet+banker (Blender brief staged); Claude: storyboard, narrator casting, audio; then Gate 2 final cut",
         "approval": "no"
       },
       {
-        "id": "BB-2",
+        "id": "BB-26",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "Hermes idea-bank + MoA critics cron",
+        "status": "todo",
+        "next_action": "weekly cron: 10 premises → MoA premise-critic → script cards → MoA corny-detector → bank for Josh's gate; pinned gpt-5.4-mini, moa for critic passes only",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "First audience/sales launch loop draft",
-        "status": "done",
-        "next_action": "approval packet drafted; waiting on Josh review for any public action",
+        "task": "First sellable artifact (sticker-pack v0)",
+        "status": "todo",
+        "next_action": "pick artifact + storefront path; DROP timing now gated on cartoon-lab signal (see growth mechanics)",
         "approval": "no"
-      },
-      {
-        "id": "BB-3",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Inventory Josh-provided Bad Boys assets",
-        "status": "done",
-        "next_action": "received 27 files; inventory.md updated",
-        "approval": "no"
-      },
-      {
-        "id": "BB-4",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Ops plan for content creation, post scheduling, and long-term planning",
-        "status": "done",
-        "next_action": "reusable draft workflow documented; account creation stays approval-gated",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-5",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "TikTok account-creation packet",
-        "status": "done",
-        "next_action": "platform, handle, bio, icon, and first-post rules drafted",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-6",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "First TikTok post batch",
-        "status": "done",
-        "next_action": "7-day batch drafted; ready for approval packet refinement",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-7",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Reusable weekly TikTok batch template",
-        "status": "done",
-        "next_action": "fill-in template created for future weeks",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-8",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "30-day TikTok rollout plan",
-        "status": "done",
-        "next_action": "month-long identity → mascot → product → world-building sequence",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-9",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "30-day day-by-day TikTok map",
-        "status": "done",
-        "next_action": "concrete daily queue for the rollout",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-10",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "30-day rollout approval packet",
-        "status": "done",
-        "next_action": "month approval language and checklist ready",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-11",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "TikTok posting / scheduling SOP",
-        "status": "done",
-        "next_action": "repeatable posting workflow and review questions ready",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-12",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "TikTok production board",
-        "status": "done",
-        "next_action": "asset queue and status tracker for the month rollout",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-13",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "TikTok asset checklist",
-        "status": "done",
-        "next_action": "exact filenames and creation order for the 30-day rollout",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-14",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Week 1 TikTok prompt pack",
-        "status": "done",
-        "next_action": "exact generation prompts for the first seven assets",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-15",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Asset prompt manifest",
-        "status": "done",
-        "next_action": "map filenames to the prompt source docs",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-16",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Month 1 draft PNG assets",
-        "status": "done",
-        "next_action": "all 30 SVGs exported to TikTok-ready PNGs; posting remains approval-gated",
-        "approval": "yes"
       },
       {
         "id": "BB-17",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "Week 1 manual posting packet",
-        "status": "doing",
-        "next_action": "v1 hardmode SVGs + captions drafted; export/approval next",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-18",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Product backlog v0",
-        "status": "done",
-        "next_action": "first revenue candidates ranked; sticker/PFP pack selected as fastest signal product",
-        "approval": "no"
-      },
-      {
-        "id": "BB-19",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Week 1 v2 less-corny TikTok pack",
-        "status": "done",
-        "next_action": "colder hooks + 7 SVGs drafted after Josh rejected corny v1 hooks",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-20",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "First sticker/PFP mini-pack draft",
-        "status": "done",
-        "next_action": "six-pack SVG source + preview sheet created; public release approval-gated",
-        "approval": "yes"
-      },
-      {
-        "id": "BB-21",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Mogging marketing tactics study",
-        "status": "done",
-        "next_action": "public sources checked; artifact-first tactic playbook created",
-        "approval": "no"
-      },
-      {
-        "id": "BB-22",
-        "project": "Bad Boys/Joycat",
-        "priority": "2",
-        "task": "Week 1 v3 artifact-lab TikTok pack",
-        "status": "done",
-        "next_action": "no-hook artifact format drafted after v2 still felt corny",
+        "task": "Week 1 posting packet",
+        "status": "todo",
+        "next_action": "rebuild packet around real assets + bone-circle avatar so it is post-ready the day Josh creates the account",
         "approval": "yes"
       },
       {
         "id": "BB-23",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "TikTok account creation runbook",
-        "status": "blocked",
-        "next_action": "Josh must perform credentials/verification/2FA; Pi browser unavailable",
+        "task": "TikTok account creation",
+        "status": "todo",
+        "next_action": "JOSH action (~30 min): create account per runbook; credentials/2FA stay Josh-only",
         "approval": "yes"
       },
       {
-        "id": "BB-24",
-        "project": "Bad Boys/Joycat",
-        "priority": "1",
-        "task": "Refocus on real assets",
+        "id": "PS-1",
+        "project": "Primoscapes",
+        "priority": "2",
+        "task": "Fall Native Prairie prep",
         "status": "doing",
-        "next_action": "generated TikTok packs demoted; real asset account-ready pack created",
+        "next_action": "Offer v0 (\"Native Prairie Patch Install\") + real lead-channel list DONE (`projects/primoscapes.md`) — verified local orgs, no invented contacts, no outreach sent. BLOCKED on Josh: pricing model/number, licensing/insurance status, public name confirm",
         "approval": "yes"
       },
       {
-        "id": "TG-1",
+        "id": "DF-1",
+        "project": "DeFi/Chainlink",
+        "priority": "2",
+        "task": "DeFi product lab",
+        "status": "done→archive",
+        "next_action": "co-ideation session 2026-07-05 produced 8 ranked concepts; Josh selected the merged \"boring ratings\" brand — see BR-0",
+        "approval": "no"
+      },
+      {
+        "id": "BR-1",
+        "project": "Boring Report",
+        "priority": "1",
+        "task": "W28 v0 fixes + Gate 1",
+        "status": "doing",
+        "next_action": "USYC/BUIDL/USDY asset-class fix DONE (Claude); generator/verifier de-duplicated to one scoring source; report regenerated + verified. NEXT: Josh reads W28 on Gate Deck (ship/kill/one-liner) — first flawless-streak week starts on his verdict",
+        "approval": "no"
+      },
+      {
+        "id": "CC-19",
         "project": "Command Center",
         "priority": "1",
-        "task": "Telegram phone approval channel",
-        "status": "done",
-        "next_action": "live and locked to Josh's Telegram ID; daily + weekly report delivery enabled",
+        "task": "Midday + evening cron loops",
+        "status": "todo",
+        "next_action": "jobs live; morning loop recreated 07:30 pinned (drift-guard fix). Verify 1pm/6pm commits land 2026-07-03, then archive",
+        "approval": "no"
+      },
+      {
+        "id": "CC-18",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Loop sync protocol",
+        "status": "todo",
+        "next_action": "embedded in cron prompts step 0/8; verify no skipped pull on 2026-07-03, then archive",
+        "approval": "no"
+      },
+      {
+        "id": "CC-21",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Hermes self-audit",
+        "status": "todo",
+        "next_action": "skills/cron audit + `model_usage.csv` proved UNRELIABLE (claimed codex while OpenRouter billed $9.87 in 5 days incl. GPT-5.5 at $2.66 — log from response metadata, not assumption) + NEW RULE: Telegram alert whenever a fallback provider serves a call + conflict-resolution prefers REMOTE + auth.json backup (crash wiped codex creds 07-03 17:16)",
+        "approval": "no"
+      },
+      {
+        "id": "CC-22",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Mission Control: Gate Deck + PWA",
+        "status": "todo",
+        "next_action": "GATE DECK + PWA SHIPPED 2026-07-05 by Claude (/gate-deck live, manifest live, verdicts → capture-only inbox; Hermes had built only the nav link). Remaining: lane-status cards; HERMES RULE: read gate verdicts from dashboard/commander_inbox.jsonl (lane=gate-verdict) every loop",
+        "approval": "no"
+      },
+      {
+        "id": "CC-23",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Hermes browser chat",
+        "status": "todo",
+        "next_action": "phase 1 DONE 2026-07-02 (loopback :3012 + SSH tunnel, commander profile). Phase 2: password_hash + LAN bind + user systemd service (show unit file first)",
         "approval": "yes"
+      },
+      {
+        "id": "CC-10",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Private phone access (Tailscale-first)",
+        "status": "todo",
+        "next_action": "try Tailscale SSH / dashboard before any chat platform",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-13",
+        "project": "Command Center",
+        "priority": "3",
+        "task": "Test model-specific worker pattern",
+        "status": "todo",
+        "next_action": "run one cheap read-only worker and log result",
+        "approval": "no"
       },
       {
         "id": "WO-1",
@@ -419,157 +184,539 @@
         "priority": "4",
         "task": "Revenue-option scan before build",
         "status": "todo",
-        "next_action": "identify profitable/grant/leverage angles",
+        "next_action": "filler lane for silent running; identify profitable/grant/leverage angles",
+        "approval": "no"
+      },
+      {
+        "id": "MA-1",
+        "project": "Market Activity",
+        "priority": "3",
+        "task": "Market activity tracker",
+        "status": "blocked",
+        "next_action": "reopen after CI-1 + push lanes run smoothly for a week",
         "approval": "no"
       }
     ],
     "doing": [
       {
-        "id": "CC-14",
+        "id": "CI-1",
+        "project": "Career/Income",
+        "priority": "1",
+        "task": "Job search per `jobs/SEARCH_PLAYBOOK.md",
+        "status": "doing",
+        "next_action": "Chainlink Sr Solutions Eng CLOSED, successor role checked+REJECTED (bad fit, sales-heavy — see tracker). The 2026-07-02 slate has fully decayed; NEXT: fresh Tier-1 discovery pass per SEARCH_PLAYBOOK.md, not another stale row",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-25",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "CARTOON LAB pilot — P4 \"T+2\" IN PRODUCTION",
+        "status": "doing",
+        "next_action": "Gate 1 passed (all 4 shipped). Josh rigs puppet+banker (Blender brief staged); Claude: storyboard, narrator casting, audio; then Gate 2 final cut",
+        "approval": "no"
+      },
+      {
+        "id": "PS-1",
+        "project": "Primoscapes",
+        "priority": "2",
+        "task": "Fall Native Prairie prep",
+        "status": "doing",
+        "next_action": "Offer v0 (\"Native Prairie Patch Install\") + real lead-channel list DONE (`projects/primoscapes.md`) — verified local orgs, no invented contacts, no outreach sent. BLOCKED on Josh: pricing model/number, licensing/insurance status, public name confirm",
+        "approval": "yes"
+      },
+      {
+        "id": "BR-1",
+        "project": "Boring Report",
+        "priority": "1",
+        "task": "W28 v0 fixes + Gate 1",
+        "status": "doing",
+        "next_action": "USYC/BUIDL/USDY asset-class fix DONE (Claude); generator/verifier de-duplicated to one scoring source; report regenerated + verified. NEXT: Josh reads W28 on Gate Deck (ship/kill/one-liner) — first flawless-streak week starts on his verdict",
+        "approval": "no"
+      }
+    ],
+    "blocked": [
+      {
+        "id": "MA-1",
+        "project": "Market Activity",
+        "priority": "3",
+        "task": "Market activity tracker",
+        "status": "blocked",
+        "next_action": "reopen after CI-1 + push lanes run smoothly for a week",
+        "approval": "no"
+      }
+    ],
+    "todo": [
+      {
+        "id": "CC-24",
         "project": "Command Center",
         "priority": "1",
-        "task": "Command Center Dashboard v0",
-        "status": "doing",
-        "next_action": "static prototype + integration plan drafted; next build read-only state generator",
+        "task": "5-line daily dispatch",
+        "status": "todo",
+        "next_action": "keep the 5-line morning brief locked in `MORNING_REPORT.md` and `projects/command-center-dashboard-v0.md`; tomorrow verify the 07:30 dispatch lands in exactly 5 lines with `Open:` / `Decide:` on line 4 and ONE bolded decision, then archive",
+        "approval": "no"
+      },
+      {
+        "id": "BB-26",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "Hermes idea-bank + MoA critics cron",
+        "status": "todo",
+        "next_action": "weekly cron: 10 premises → MoA premise-critic → script cards → MoA corny-detector → bank for Josh's gate; pinned gpt-5.4-mini, moa for critic passes only",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-24",
+        "project": "Bad Boys/Joycat",
+        "priority": "2",
+        "task": "First sellable artifact (sticker-pack v0)",
+        "status": "todo",
+        "next_action": "pick artifact + storefront path; DROP timing now gated on cartoon-lab signal (see growth mechanics)",
         "approval": "no"
       },
       {
         "id": "BB-17",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "Week 1 manual posting packet",
-        "status": "doing",
-        "next_action": "v1 hardmode SVGs + captions drafted; export/approval next",
+        "task": "Week 1 posting packet",
+        "status": "todo",
+        "next_action": "rebuild packet around real assets + bone-circle avatar so it is post-ready the day Josh creates the account",
         "approval": "yes"
       },
-      {
-        "id": "BB-24",
-        "project": "Bad Boys/Joycat",
-        "priority": "1",
-        "task": "Refocus on real assets",
-        "status": "doing",
-        "next_action": "generated TikTok packs demoted; real asset account-ready pack created",
-        "approval": "yes"
-      }
-    ],
-    "blocked": [
       {
         "id": "BB-23",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "TikTok account creation runbook",
-        "status": "blocked",
-        "next_action": "Josh must perform credentials/verification/2FA; Pi browser unavailable",
-        "approval": "yes"
-      }
-    ],
-    "todo": [
-      {
-        "id": "CC-10",
-        "project": "Command Center",
-        "priority": "1",
-        "task": "Private phone access (Tailscale-first)",
+        "task": "TikTok account creation",
         "status": "todo",
-        "next_action": "try Tailscale SSH / dashboard before any chat platform",
+        "next_action": "JOSH action (~30 min): create account per runbook; credentials/2FA stay Josh-only",
         "approval": "yes"
       },
       {
-        "id": "CC-13",
+        "id": "CC-19",
         "project": "Command Center",
         "priority": "1",
-        "task": "Test model-specific worker pattern",
+        "task": "Midday + evening cron loops",
         "status": "todo",
-        "next_action": "run one cheap read-only worker and log result",
+        "next_action": "jobs live; morning loop recreated 07:30 pinned (drift-guard fix). Verify 1pm/6pm commits land 2026-07-03, then archive",
         "approval": "no"
       },
       {
-        "id": "WO-1",
-        "project": "Weather Oracle",
-        "priority": "4",
-        "task": "Revenue-option scan before build",
+        "id": "CC-18",
+        "project": "Command Center",
+        "priority": "1",
+        "task": "Loop sync protocol",
         "status": "todo",
-        "next_action": "identify profitable/grant/leverage angles",
+        "next_action": "embedded in cron prompts step 0/8; verify no skipped pull on 2026-07-03, then archive",
+        "approval": "no"
+      },
+      {
+        "id": "CC-21",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Hermes self-audit",
+        "status": "todo",
+        "next_action": "skills/cron audit + `model_usage.csv` proved UNRELIABLE (claimed codex while OpenRouter billed $9.87 in 5 days incl. GPT-5.5 at $2.66 — log from response metadata, not assumption) + NEW RULE: Telegram alert whenever a fallback provider serves a call + conflict-resolution prefers REMOTE + auth.json backup (crash wiped codex creds 07-03 17:16)",
         "approval": "no"
       }
     ],
     "approval": [
       {
-        "id": "CC-10",
-        "project": "Command Center",
+        "id": "CI-1",
+        "project": "Career/Income",
         "priority": "1",
-        "task": "Private phone access (Tailscale-first)",
+        "task": "Job search per `jobs/SEARCH_PLAYBOOK.md",
+        "status": "doing",
+        "next_action": "Chainlink Sr Solutions Eng CLOSED, successor role checked+REJECTED (bad fit, sales-heavy — see tracker). The 2026-07-02 slate has fully decayed; NEXT: fresh Tier-1 discovery pass per SEARCH_PLAYBOOK.md, not another stale row",
+        "approval": "yes"
+      },
+      {
+        "id": "BB-26",
+        "project": "Bad Boys/Joycat",
+        "priority": "1",
+        "task": "Hermes idea-bank + MoA critics cron",
         "status": "todo",
-        "next_action": "try Tailscale SSH / dashboard before any chat platform",
+        "next_action": "weekly cron: 10 premises → MoA premise-critic → script cards → MoA corny-detector → bank for Josh's gate; pinned gpt-5.4-mini, moa for critic passes only",
         "approval": "yes"
       },
       {
         "id": "BB-17",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "Week 1 manual posting packet",
-        "status": "doing",
-        "next_action": "v1 hardmode SVGs + captions drafted; export/approval next",
+        "task": "Week 1 posting packet",
+        "status": "todo",
+        "next_action": "rebuild packet around real assets + bone-circle avatar so it is post-ready the day Josh creates the account",
         "approval": "yes"
       },
       {
         "id": "BB-23",
         "project": "Bad Boys/Joycat",
         "priority": "2",
-        "task": "TikTok account creation runbook",
-        "status": "blocked",
-        "next_action": "Josh must perform credentials/verification/2FA; Pi browser unavailable",
+        "task": "TikTok account creation",
+        "status": "todo",
+        "next_action": "JOSH action (~30 min): create account per runbook; credentials/2FA stay Josh-only",
         "approval": "yes"
       },
       {
-        "id": "BB-24",
-        "project": "Bad Boys/Joycat",
-        "priority": "1",
-        "task": "Refocus on real assets",
+        "id": "PS-1",
+        "project": "Primoscapes",
+        "priority": "2",
+        "task": "Fall Native Prairie prep",
         "status": "doing",
-        "next_action": "generated TikTok packs demoted; real asset account-ready pack created",
+        "next_action": "Offer v0 (\"Native Prairie Patch Install\") + real lead-channel list DONE (`projects/primoscapes.md`) — verified local orgs, no invented contacts, no outreach sent. BLOCKED on Josh: pricing model/number, licensing/insurance status, public name confirm",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-23",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Hermes browser chat",
+        "status": "todo",
+        "next_action": "phase 1 DONE 2026-07-02 (loopback :3012 + SSH tunnel, commander profile). Phase 2: password_hash + LAN bind + user systemd service (show unit file first)",
+        "approval": "yes"
+      },
+      {
+        "id": "CC-10",
+        "project": "Command Center",
+        "priority": "2",
+        "task": "Private phone access (Tailscale-first)",
+        "status": "todo",
+        "next_action": "try Tailscale SSH / dashboard before any chat platform",
         "approval": "yes"
       }
     ],
     "counts": {
-      "doing": 3,
+      "doing": 4,
       "blocked": 1,
-      "todo": 3,
-      "done": 37
+      "todo": 13,
+      "done": 0
     }
   },
+  "projects": [
+    {
+      "id": "badboys-cartoon-lab",
+      "title": "BAD BOYS CARTOON LAB — Studio Pipeline v1 (2026-07-03)",
+      "path": "projects/badboys-cartoon-lab.md",
+      "status_lines": [
+        "State: ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+        "Last advanced: 2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at assets/badboys/rig/RIGBRIEF.md",
+        "GATE 1 PASSED 2026-07-03 (evening): Josh SHIPPED all four pilots via widget verdict. Production order: P4 \"T+2\" first, then P2 → P1 → P3.",
+        "Next action: STAGE 2 COMPLETE — T+2 storyboard + animatic spec at assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md (timed to actual VO stems, loop-seamed, Blender action list included). Stage 4 waits ONLY on the reworked banker rig from the Blender chat"
+      ],
+      "state": "ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+      "last_advanced": "2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at assets/badboys/rig/RIGBRIEF.md",
+      "next_action": "STAGE 2 COMPLETE — T+2 storyboard + animatic spec at assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md (timed to actual VO stems, loop-seamed, Blender action list included). Stage 4 waits ONLY on the reworked banker rig from the Blender chat",
+      "waiting_on": ""
+    },
+    {
+      "id": "badboys-joycat",
+      "title": "Bad Boys / Joycat Creative Business",
+      "path": "projects/badboys-joycat.md",
+      "status_lines": [
+        "State: REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+        "Last advanced: 2026-06-30 — avatar background test done; bone-circle.png recommended",
+        "Next action: CARTOON LAB is the engine now (badboys-cartoon-lab.md) — BB-25 pilot in flight; BB-23 account creation is the publishing cork; BB-24 sticker drop waits for content signal",
+        "Waiting on: nothing for drafts; Josh's account decision for anything public"
+      ],
+      "state": "REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+      "last_advanced": "2026-06-30 — avatar background test done; bone-circle.png recommended",
+      "next_action": "CARTOON LAB is the engine now (badboys-cartoon-lab.md) — BB-25 pilot in flight; BB-23 account creation is the publishing cork; BB-24 sticker drop waits for content signal",
+      "waiting_on": "nothing for drafts; Josh's account decision for anything public"
+    },
+    {
+      "id": "boring-report-prd",
+      "title": "PRD — \"THE BORING REPORT\" (working title, Josh names it at Gate N1)",
+      "path": "projects/boring-report-prd.md",
+      "status_lines": [
+        "State: APPROVED for internal build (Josh, DeFi product lab session) — merges DF-1 concepts #1 Oracle Risk Scorecard + #3 Boring Report + #6 PoR Watch into one brand",
+        "Next action: Hermes executes Milestone P0 (data-source probe + methodology skeleton)",
+        "Waiting on: nothing for P0; Josh's name verdict at Gate N1"
+      ],
+      "state": "APPROVED for internal build (Josh, DeFi product lab session) — merges DF-1 concepts #1 Oracle Risk Scorecard + #3 Boring Report + #6 PoR Watch into one brand",
+      "last_advanced": "",
+      "next_action": "Hermes executes Milestone P0 (data-source probe + methodology skeleton)",
+      "waiting_on": "nothing for P0; Josh's name verdict at Gate N1"
+    },
+    {
+      "id": "career-income",
+      "title": "Career / Income (Priority 1)",
+      "path": "projects/career-income.md",
+      "status_lines": [
+        "State: ACTIVE — primary sprint lane (CI-1, doing)",
+        "Last advanced: 2026-07-06 — Coinbase Billing Ops packet refreshed into jobs/packets/active/coinbase-billing-ops/ with packet, cover letter, and resume docx",
+        "Next action: Josh reads the refreshed Coinbase packet and either approves ship / kill / wording tweaks",
+        "Waiting on: Josh’s verdict on the Coinbase packet and any salary/work-auth wording tweaks"
+      ],
+      "state": "ACTIVE — primary sprint lane (CI-1, doing)",
+      "last_advanced": "2026-07-06 — Coinbase Billing Ops packet refreshed into jobs/packets/active/coinbase-billing-ops/ with packet, cover letter, and resume docx",
+      "next_action": "Josh reads the refreshed Coinbase packet and either approves ship / kill / wording tweaks",
+      "waiting_on": "Josh’s verdict on the Coinbase packet and any salary/work-auth wording tweaks"
+    },
+    {
+      "id": "command-center-dashboard-v0",
+      "title": "Commander Dashboard / Command Center UI v0",
+      "path": "projects/command-center-dashboard-v0.md",
+      "status_lines": [
+        "Current focus: CC-22 draft is still built locally — lane cards parsed from projects/.md, Gate Deck verdict flow wired to the inbox API, and install icons added.",
+        "CC-24 is now mirrored in the live morning report with the exact 5-line shape: Status, Shipped this week, CI-1 update, Open: / Decide:, and Decision:.",
+        "Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with Open: / Decide: on line 4 and one bolded decision.",
+        "Safety: local docs only; no posting, sending, spending, or secrets."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with Open: / Decide: on line 4 and one bolded decision.",
+      "waiting_on": ""
+    },
+    {
+      "id": "defi-chainlink-research",
+      "title": "DeFi / Chainlink / Research Dashboards (Priority 5)",
+      "path": "projects/defi-chainlink-research.md",
+      "status_lines": [
+        "State: GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+        "Last advanced: 2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+        "Next action: DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+        "Waiting on: nothing; concepts only, no financial actions"
+      ],
+      "state": "GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+      "last_advanced": "2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+      "next_action": "DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+      "waiting_on": "nothing; concepts only, no financial actions"
+    },
+    {
+      "id": "market-activity-tracker",
+      "title": "Market Activity Tracker",
+      "path": "projects/market-activity-tracker.md",
+      "status_lines": [
+        "State: PARKED (MA-1 blocked) — reopen after CI-1 loop runs smoothly for a week",
+        "Last advanced: 2026-06-29 — product thesis drafted (local-first market cockpit)",
+        "Next action (on reopen): scope v0 local dashboard from the thesis",
+        "Waiting on: reopen condition"
+      ],
+      "state": "PARKED (MA-1 blocked) — reopen after CI-1 loop runs smoothly for a week",
+      "last_advanced": "2026-06-29 — product thesis drafted (local-first market cockpit)",
+      "next_action": "",
+      "waiting_on": "reopen condition"
+    },
+    {
+      "id": "primoscapes",
+      "title": "Primoscapes (Priority 3)",
+      "path": "projects/primoscapes.md",
+      "status_lines": [
+        "State: ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+        "Last advanced: 2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+        "Next action: Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+        "Waiting on: Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+      ],
+      "state": "ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+      "last_advanced": "2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+      "next_action": "Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+      "waiting_on": "Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+    },
+    {
+      "id": "sovereignty-stack",
+      "title": "Sovereignty Stack (Priority 7)",
+      "path": "projects/sovereignty-stack.md",
+      "status_lines": [
+        "State: support-only — no tinkering unless it serves the money system",
+        "Last advanced: Mission Control dashboard service live on LAN port 3011",
+        "Next action: CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+        "Waiting on: Josh approval for Tailscale setup"
+      ],
+      "state": "support-only — no tinkering unless it serves the money system",
+      "last_advanced": "Mission Control dashboard service live on LAN port 3011",
+      "next_action": "CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+      "waiting_on": "Josh approval for Tailscale setup"
+    },
+    {
+      "id": "weather-oracle",
+      "title": "Weather Oracle MVP (Priority 4)",
+      "path": "projects/weather-oracle.md",
+      "status_lines": [
+        "State: warm — WO-1 revenue-option scan queued (good silent-running draft lane)",
+        "Last advanced: 2026-06-29 — reframed to revenue-first via intake",
+        "Next action: run WO-1 — identify profitable/grant/leverage angles before any build",
+        "Waiting on: nothing"
+      ],
+      "state": "warm — WO-1 revenue-option scan queued (good silent-running draft lane)",
+      "last_advanced": "2026-06-29 — reframed to revenue-first via intake",
+      "next_action": "run WO-1 — identify profitable/grant/leverage angles before any build",
+      "waiting_on": "nothing"
+    }
+  ],
+  "lanes": [
+    {
+      "id": "badboys-cartoon-lab",
+      "title": "BAD BOYS CARTOON LAB — Studio Pipeline v1 (2026-07-03)",
+      "path": "projects/badboys-cartoon-lab.md",
+      "status_lines": [
+        "State: ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+        "Last advanced: 2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at assets/badboys/rig/RIGBRIEF.md",
+        "GATE 1 PASSED 2026-07-03 (evening): Josh SHIPPED all four pilots via widget verdict. Production order: P4 \"T+2\" first, then P2 → P1 → P3.",
+        "Next action: STAGE 2 COMPLETE — T+2 storyboard + animatic spec at assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md (timed to actual VO stems, loop-seamed, Blender action list included). Stage 4 waits ONLY on the reworked banker rig from the Blender chat"
+      ],
+      "state": "ACTIVE — Josh greenlit crude/edgy cartoon shorts as the Bad Boys engine",
+      "last_advanced": "2026-07-03 late — Pilot 4 added (BAD BOY BANKERS series, Josh's premise); rig brief staged at assets/badboys/rig/RIGBRIEF.md",
+      "next_action": "STAGE 2 COMPLETE — T+2 storyboard + animatic spec at assets/badboys/cartoon-lab/t2-ep1/STORYBOARD.md (timed to actual VO stems, loop-seamed, Blender action list included). Stage 4 waits ONLY on the reworked banker rig from the Blender chat",
+      "waiting_on": ""
+    },
+    {
+      "id": "badboys-joycat",
+      "title": "Bad Boys / Joycat Creative Business",
+      "path": "projects/badboys-joycat.md",
+      "status_lines": [
+        "State: REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+        "Last advanced: 2026-06-30 — avatar background test done; bone-circle.png recommended",
+        "Next action: CARTOON LAB is the engine now (badboys-cartoon-lab.md) — BB-25 pilot in flight; BB-23 account creation is the publishing cork; BB-24 sticker drop waits for content signal",
+        "Waiting on: nothing for drafts; Josh's account decision for anything public"
+      ],
+      "state": "REOPENED — Josh named this a push lane in the 2026-07-02 calibration",
+      "last_advanced": "2026-06-30 — avatar background test done; bone-circle.png recommended",
+      "next_action": "CARTOON LAB is the engine now (badboys-cartoon-lab.md) — BB-25 pilot in flight; BB-23 account creation is the publishing cork; BB-24 sticker drop waits for content signal",
+      "waiting_on": "nothing for drafts; Josh's account decision for anything public"
+    },
+    {
+      "id": "boring-report-prd",
+      "title": "PRD — \"THE BORING REPORT\" (working title, Josh names it at Gate N1)",
+      "path": "projects/boring-report-prd.md",
+      "status_lines": [
+        "State: APPROVED for internal build (Josh, DeFi product lab session) — merges DF-1 concepts #1 Oracle Risk Scorecard + #3 Boring Report + #6 PoR Watch into one brand",
+        "Next action: Hermes executes Milestone P0 (data-source probe + methodology skeleton)",
+        "Waiting on: nothing for P0; Josh's name verdict at Gate N1"
+      ],
+      "state": "APPROVED for internal build (Josh, DeFi product lab session) — merges DF-1 concepts #1 Oracle Risk Scorecard + #3 Boring Report + #6 PoR Watch into one brand",
+      "last_advanced": "",
+      "next_action": "Hermes executes Milestone P0 (data-source probe + methodology skeleton)",
+      "waiting_on": "nothing for P0; Josh's name verdict at Gate N1"
+    },
+    {
+      "id": "career-income",
+      "title": "Career / Income (Priority 1)",
+      "path": "projects/career-income.md",
+      "status_lines": [
+        "State: ACTIVE — primary sprint lane (CI-1, doing)",
+        "Last advanced: 2026-07-06 — Coinbase Billing Ops packet refreshed into jobs/packets/active/coinbase-billing-ops/ with packet, cover letter, and resume docx",
+        "Next action: Josh reads the refreshed Coinbase packet and either approves ship / kill / wording tweaks",
+        "Waiting on: Josh’s verdict on the Coinbase packet and any salary/work-auth wording tweaks"
+      ],
+      "state": "ACTIVE — primary sprint lane (CI-1, doing)",
+      "last_advanced": "2026-07-06 — Coinbase Billing Ops packet refreshed into jobs/packets/active/coinbase-billing-ops/ with packet, cover letter, and resume docx",
+      "next_action": "Josh reads the refreshed Coinbase packet and either approves ship / kill / wording tweaks",
+      "waiting_on": "Josh’s verdict on the Coinbase packet and any salary/work-auth wording tweaks"
+    },
+    {
+      "id": "command-center-dashboard-v0",
+      "title": "Commander Dashboard / Command Center UI v0",
+      "path": "projects/command-center-dashboard-v0.md",
+      "status_lines": [
+        "Current focus: CC-22 draft is still built locally — lane cards parsed from projects/.md, Gate Deck verdict flow wired to the inbox API, and install icons added.",
+        "CC-24 is now mirrored in the live morning report with the exact 5-line shape: Status, Shipped this week, CI-1 update, Open: / Decide:, and Decision:.",
+        "Next action: keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with Open: / Decide: on line 4 and one bolded decision.",
+        "Safety: local docs only; no posting, sending, spending, or secrets."
+      ],
+      "state": "",
+      "last_advanced": "",
+      "next_action": "keep the dashboard draft local until Josh approves a live service restart; tomorrow verify the 07:30 dispatch still lands in exactly 5 lines with Open: / Decide: on line 4 and one bolded decision.",
+      "waiting_on": ""
+    },
+    {
+      "id": "defi-chainlink-research",
+      "title": "DeFi / Chainlink / Research Dashboards (Priority 5)",
+      "path": "projects/defi-chainlink-research.md",
+      "status_lines": [
+        "State: GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+        "Last advanced: 2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+        "Next action: DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+        "Waiting on: nothing; concepts only, no financial actions"
+      ],
+      "state": "GRADUATED — DF-1 lab session (2026-07-05) selected the product: THE BORING REPORT (oracle scorecard + stablecoin weekly + PoR watch, one brand). Build spec: projects/boring-report-prd.md; lane continues as career proof-point feeder",
+      "last_advanced": "2026-06-30 — ALL THREE S&P reports confirmed (Josh ruling 2026-07-03)",
+      "next_action": "DF-1 ideation memo — 10 DeFi product concepts from Josh's edge, ranked build-cost vs revenue path; career proof points continue as side effect",
+      "waiting_on": "nothing; concepts only, no financial actions"
+    },
+    {
+      "id": "market-activity-tracker",
+      "title": "Market Activity Tracker",
+      "path": "projects/market-activity-tracker.md",
+      "status_lines": [
+        "State: PARKED (MA-1 blocked) — reopen after CI-1 loop runs smoothly for a week",
+        "Last advanced: 2026-06-29 — product thesis drafted (local-first market cockpit)",
+        "Next action (on reopen): scope v0 local dashboard from the thesis",
+        "Waiting on: reopen condition"
+      ],
+      "state": "PARKED (MA-1 blocked) — reopen after CI-1 loop runs smoothly for a week",
+      "last_advanced": "2026-06-29 — product thesis drafted (local-first market cockpit)",
+      "next_action": "",
+      "waiting_on": "reopen condition"
+    },
+    {
+      "id": "primoscapes",
+      "title": "Primoscapes (Priority 3)",
+      "path": "projects/primoscapes.md",
+      "status_lines": [
+        "State: ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+        "Last advanced: 2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+        "Next action: Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+        "Waiting on: Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+      ],
+      "state": "ACTIVE draft lane (PS-1) — offer + lead-channel doc drafted below",
+      "last_advanced": "2026-07-06 — first fall offer one-pager + real (not invented) OKC lead-channel list, grounded in verified local orgs",
+      "next_action": "Josh reviews the offer + fills the pricing/licensing gaps flagged below; no outreach happens until he approves",
+      "waiting_on": "Josh's pricing inputs (material cost, target hourly rate, insurance status) and his read on the offer name/scope"
+    },
+    {
+      "id": "sovereignty-stack",
+      "title": "Sovereignty Stack (Priority 7)",
+      "path": "projects/sovereignty-stack.md",
+      "status_lines": [
+        "State: support-only — no tinkering unless it serves the money system",
+        "Last advanced: Mission Control dashboard service live on LAN port 3011",
+        "Next action: CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+        "Waiting on: Josh approval for Tailscale setup"
+      ],
+      "state": "support-only — no tinkering unless it serves the money system",
+      "last_advanced": "Mission Control dashboard service live on LAN port 3011",
+      "next_action": "CC-10 Tailscale-first private phone/laptop access when Josh opens it",
+      "waiting_on": "Josh approval for Tailscale setup"
+    },
+    {
+      "id": "weather-oracle",
+      "title": "Weather Oracle MVP (Priority 4)",
+      "path": "projects/weather-oracle.md",
+      "status_lines": [
+        "State: warm — WO-1 revenue-option scan queued (good silent-running draft lane)",
+        "Last advanced: 2026-06-29 — reframed to revenue-first via intake",
+        "Next action: run WO-1 — identify profitable/grant/leverage angles before any build",
+        "Waiting on: nothing"
+      ],
+      "state": "warm — WO-1 revenue-option scan queued (good silent-running draft lane)",
+      "last_advanced": "2026-06-29 — reframed to revenue-first via intake",
+      "next_action": "run WO-1 — identify profitable/grant/leverage angles before any build",
+      "waiting_on": "nothing"
+    }
+  ],
   "hermes": {
-    "raw_ok": true,
-    "provider": "OpenAI Codex",
-    "model": "gpt-5.5",
-    "telegram": "configured",
-    "gateway": "running",
-    "scheduled_jobs": "2 active, 2 total",
-    "active_sessions": "2 session(s)"
+    "raw_ok": false,
+    "provider": "unknown",
+    "model": "unknown",
+    "telegram": "unknown",
+    "gateway": "unknown",
+    "scheduled_jobs": "unknown",
+    "active_sessions": "unknown"
   },
   "cron": {
     "ok": true,
     "daily_loop_active": true,
-    "next_run": "2026-06-30T07:00:00-05:00",
-    "deliver": "telegram:398335714",
-    "last_run": "2026-06-29T07:02:41.435280-05:00  ok"
+    "next_run": "2026-09-30T13:00:00-05:00",
+    "deliver": "local",
+    "last_run": "2026-09-29T13:05:58.989212-05:00  ok"
   },
   "git": {
     "branch": "feat/command-center-scaffolding",
-    "head": "6062923",
-    "dirty_count": 18,
+    "head": "dd71d75",
+    "dirty_count": 2,
     "changes": [
-      "M NOW.md",
-      " M TASK_QUEUE.md",
-      " M logs/daily_progress.md",
-      " M logs/model_usage.csv",
-      " M package-lock.json",
-      " M package.json",
-      "?? .next/",
-      "?? COMMANDER_OPERATING_RHYTHM_V1.md",
-      "?? WEEKLY_MONEY_REVIEW.md",
-      "?? app/",
-      "?? assets/badboys/generated/",
-      "?? dashboard/"
+      "?? projects/mogai-mvp.md",
+      "?? runtime/"
     ]
   },
   "sovereignty": {
@@ -621,62 +768,62 @@
       "containers": [
         {
           "name": "resource-service",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:8789->8789/tcp, [::]:8789->8789/tcp"
         },
         {
           "name": "wallet-service",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:8788->8788/tcp, [::]:8788->8788/tcp"
         },
         {
           "name": "ticker-service",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp"
         },
         {
           "name": "big-bear-nexterm",
-          "status": "Restarting (1) 51 seconds ago",
-          "ports": ""
+          "status": "Up 3 seconds",
+          "ports": "0.0.0.0:6989->6989/tcp, [::]:6989->6989/tcp"
         },
         {
           "name": "grafana",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:3010->3000/tcp, [::]:3010->3000/tcp"
         },
         {
           "name": "navidrome",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:4533->4533/tcp, [::]:4533->4533/tcp"
         },
         {
           "name": "prometheus",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp"
         },
         {
           "name": "node-exporter",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp"
         },
         {
           "name": "homepage",
-          "status": "Up 18 hours (healthy)",
+          "status": "Up 12 hours (healthy)",
           "ports": "0.0.0.0:3005->3000/tcp, [::]:3005->3000/tcp"
         },
         {
           "name": "big-bear-glances",
-          "status": "Up 18 hours",
+          "status": "Up 12 hours",
           "ports": "0.0.0.0:61208->61208/tcp, [::]:61208->61208/tcp, 61209/tcp"
         },
         {
           "name": "immich-server",
-          "status": "Up 18 hours (healthy)",
+          "status": "Up 12 hours (healthy)",
           "ports": "0.0.0.0:2283->2283/tcp, [::]:2283->2283/tcp"
         },
         {
           "name": "immich-postgres",
-          "status": "Up 18 hours (healthy)",
+          "status": "Up 12 hours (healthy)",
           "ports": "5432/tcp"
         }
       ],

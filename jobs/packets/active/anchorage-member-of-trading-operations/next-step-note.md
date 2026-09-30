@@ -6,7 +6,7 @@
 
 The packet, decision brief, and source note were drafted ahead on 2026-09-23 and refreshed on 2026-09-26 after the latest no-login source recheck. This note captures the smallest safe next move for the secondary CI-1 surface.
 
-**Source state as of 2026-09-26:** the official Anchorage public jobs page still lists the role as open under Global Operations → Trading Operations, Full-Time - Remote, location: United States. Compensation is not disclosed. The in-person onboarding requirement is confirmed on the live page. This posting did NOT change to Singapore like the Transformation Lead role.
+**Source state as of 2026-09-30 recheck:** the official Anchorage public jobs page still lists the role as open under Global Operations → Trading Operations, Full-Time - Remote, location: United States (unchanged since 2026-09-26 — it did NOT change to Singapore, unlike the Transformation Lead role). Compensation is not disclosed. The in-person onboarding requirement is confirmed on the live page and reconfirmed unchanged on the 2026-09-30 recheck. This posting did NOT change to Singapore like the Transformation Lead role.
 
 ## Relationship to primary candidate
 

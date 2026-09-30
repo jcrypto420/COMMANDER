@@ -8,9 +8,9 @@ The packet, decision brief, source note, and application-form preflight answer b
 
 **Title change:** the role was previously titled "Trading Operations Team Lead"; the live title as of the 2026-09-26 recheck is **"Trading Operations, Transformation Lead"** (same posting ID `b3c332bc`). The packet and brief reflect the current title.
 
-**Location change — CRITICAL 2026-09-26:** the role's location changed from **United States** to **Singapore**. This is a material scope change not present in any prior recheck. The "Remote" label may indicate remote work, but the Singapore base + mandatory in-person onboarding is a significantly different proposition from the prior US-remote framing.
+**Location change — baseline as of 2026-09-30 recheck:** the role's location changed from **United States** to **Singapore** on 2026-09-26 and has not changed back as of the 2026-09-30 fresh recheck. This is now the stable baseline — a material scope condition, not a new finding.
 
-**Source state as of 2026-09-26:** the official Anchorage public jobs page still lists the role as open under Global Operations → Trading Operations, Full-Time - Remote, location: Singapore. Compensation is not disclosed. Both Anchorage postings carry the in-person onboarding requirement.
+**Source state as of 2026-09-30 recheck:** the official Anchorage public jobs page still lists the role as open under Global Operations → Trading Operations, Full-Time - Remote, location: Singapore (unchanged since 2026-09-26). Compensation is not disclosed. Both Anchorage postings carry the in-person onboarding requirement (unchanged since 2026-09-26).
 
 ## Open gates
 

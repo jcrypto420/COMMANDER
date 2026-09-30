@@ -2,7 +2,7 @@
 
 **Status:** draft-only companion to the live CI-1 packet.
 **Verdict requested:** **ADVANCE ANCHORAGE** / hold / kill.
-**Morning sync:** 2026-09-26 re-entry — repo sync/rebase recovered cleanly after the overnight Pi reboot; both Anchorage postings re-fetched from the live no-login Lever pages and confirmed still open. **CRITICAL NEW 2026-09-26 FINDING:** the primary Transformation Lead role's location changed from **United States** to **Singapore** — a material scope change that fundamentally alters the remote-US premise documented in prior rechecks. Fresh detail also confirmed: both postings carry an **in-person onboarding requirement** ("mandating all new hires complete an in-person onboarding process - no exceptions").
+**Morning sync:** 2026-09-30 re-entry after overnight Pi reboot — repo sync/rebase recovered cleanly; both Anchorage postings **fresh re-fetched from the live no-login Lever pages on 2026-09-30** and confirmed still open. **No change from the 2026-09-26 recheck:** Transformation Lead still Singapore, Remote; Member of Trading Operations still United States, Remote. Both postings still carry the in-person onboarding requirement. **The 2026-09-26 CRITICAL finding is now baseline:** the primary role's location changed from United States to Singapore on 2026-09-26 and has not changed back — this is the live state as of today.
 **Title change notice:** the role was previously titled "Trading Operations Team Lead"; the live title as of the 2026-09-26 recheck is **"Trading Operations, Transformation Lead"** (same posting ID `b3c332bc`, location now Singapore).
 
 ## Why this one
@@ -23,15 +23,14 @@ Anchorage's live posting lists this role under Global Operations → Trading Ope
 - "Have 'executive presence,' i.e. confidence and composure interfacing with financial investors and C-level executives."
 - **7+ years experience** supporting post trade activities of institutional clients in both traditional asset classes and crypto assets (listed under "You may be a fit for this role if" — aspirational threshold, not a hard gate).
 
-## Location change — CRITICAL 2026-09-26 finding
+## Location — baseline as of 2026-09-30 recheck
 
-**The location field now shows Singapore, not United States.**
+**The location field still shows Singapore as of the 2026-09-30 fresh recheck** — unchanged from the 2026-09-26 recheck where it first changed from United States. This is now the stable baseline: the role has not changed back to United States in the 4 days since the change was first observed.
 
-This is a material change from all prior rechecks (2026-09-22, 2026-09-24, and earlier) which showed "United States" / "Remote — United States". Implications:
-
+This is a material baseline condition, not a new finding. Implications:
 - If the role is Singapore-based with remote work option, Josh would need to travel to Singapore for the mandatory in-person onboarding event.
 - The combination of Singapore location + mandatory in-person onboarding + the "Remote" label is a significantly different proposition from the prior US-remote framing.
-- This needs Josh's explicit go/no-go before any application discussion — it was not visible in any prior recheck and changes the practical shape of the role.
+- This needs Josh's explicit go/no-go before any application discussion — it was not visible in any recheck prior to 2026-09-26 and remains the live state today.
 
 ## In-person onboarding — CONFIRMED
 
@@ -47,13 +46,13 @@ The live posting states: **"we have a security policy mandating all new hires co
 
 **Real stretch:** direct crypto trading-ops ownership and formal global people management. We frame Josh as a senior operator ready to lead transformation — not as someone who has already done the precise job.
 
-**New concerns (2026-09-26):**
-1. Location changed from United States to Singapore — fundamentally alters the remote-US premise.
-2. The in-person onboarding mandate (confirmed).
+**Baseline concerns (since 2026-09-26, confirmed unchanged on 2026-09-30 recheck):**
+1. Location is Singapore (changed from United States on 2026-09-26, unchanged since) — fundamentally alters the remote-US premise.
+2. The in-person onboarding mandate (confirmed on 2026-09-26, unchanged since).
 
 ## Compensation gate
 
-The official public posting does **not** disclose a salary on the 2026-09-26 recheck. Because the location is now Singapore, compensation analysis is more complex — Singapore-based roles have different market dynamics than US-remote roles. The role must clear Josh's compensation floor before an application is worthwhile; the Singapore location may affect what "acceptable" means.
+The official public posting does **not** disclose a salary on the 2026-09-30 recheck. Because the location is Singapore (unchanged since the 2026-09-26 recheck), compensation analysis is more complex — Singapore-based roles have different market dynamics than US-remote roles. The role must clear Josh's compensation floor before an application is worthwhile; the Singapore location may affect what "acceptable" means.
 
 ## Recommendation
 
@@ -69,4 +68,4 @@ Source: [official Anchorage Digital posting](https://jobs.lever.co/anchorage/b3c
 
 ## Secondary candidate also live
 
-Anchorage's board also lists **"Member of Trading Operations"** (ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States) as of 2026-09-26. Draft-ahead complete; ready as the next CI-1 surface if the Transformation Lead gate stays closed. Same in-person onboarding requirement applies.
+Anchorage's board also lists **"Member of Trading Operations"** (ID `0f13c760-a28f-4750-8b6f-2b6d5e5b10cf`, Remote — United States) as of 2026-09-30. Draft-ahead complete; ready as the next CI-1 surface if the Transformation Lead gate stays closed. Same in-person onboarding requirement applies.
